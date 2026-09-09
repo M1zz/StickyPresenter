@@ -17,7 +17,7 @@
   <main>
     <div class="wrap">
 
-      <div class="card">
+      <div class="card" id="en">
         <p class="lang">English</p>
         <h2>Getting Started</h2>
         <p>StickyPresenter lives in your menu bar (the 📝 icon). Click it to create
@@ -49,12 +49,46 @@
         Hover the timer's row in the panel to see its location (a dashed outline), or press
         <code>Align</code> to bring it back next to the panel.</p>
 
+        <h3 id="remote">Remote Controller (iPhone)</h3>
+        <p>The <a href="remote.html">Remote Controller</a> app runs your timers from your iPhone:
+        start and pause, add or subtract 30 seconds, resize the widget, drag it somewhere else on
+        your Mac's screen, hide it, or start a preset timer. It needs StickyPresenter running on a
+        Mac on the same Wi-Fi.</p>
+        <p><strong>Connecting for the first time.</strong> Open the app and it lists the Macs it
+        finds nearby. Pick yours, then click the timer icon in your Mac's menu bar and enter the
+        four-digit <code>Pairing Code</code> shown under <code>Remote</code>. Once it matches, the
+        Mac remembers that iPhone — from then on the app connects on its own when you open it. To
+        move to a different Mac, tap the connection indicator at the top right of the remote and
+        choose <code>Disconnect and choose again</code>.</p>
+        <p><strong>It can't find my Mac.</strong> In order, check:</p>
+        <ul>
+          <li>StickyPresenter is running on the Mac — look for the icon in the menu bar. Closing
+          every window does not quit it, but quitting it does stop the remote from finding it.</li>
+          <li>Both devices are on the <strong>same Wi-Fi</strong>. A guest network, or one device
+          on cellular, will not work.</li>
+          <li>Local Network is allowed on the iPhone — Settings → Privacy &amp; Security →
+          Local Network → Remote Controller.</li>
+          <li>Local Network is allowed on the Mac — System Settings → Privacy &amp; Security →
+          Local Network → StickyPresenter.</li>
+          <li>Turn off any VPN. It commonly hides other devices on the same network.</li>
+        </ul>
+        <p><strong>It says the pairing code doesn't match.</strong> Check that you typed the code
+        currently shown under menu bar → <code>Remote</code> on the Mac. If you have pressed
+        <code>New Pairing Code</code>, the code has changed. The same message also appears when the
+        Mac is asleep or off the Wi-Fi and never answers.</p>
+        <p><strong>Can someone else control my timers?</strong> Not unless you give them the code.
+        The Mac only accepts remotes that enter the right code, plus remotes that have passed the
+        code before. If you have shown the code to someone and want to undo that, use menu bar →
+        <code>Remote</code> → <code>New Pairing Code</code> to draw a fresh code, or
+        <code>Forget Paired Remotes</code> to clear every remembered remote. See the
+        <a href="remote-privacy.html">Remote Controller privacy policy</a> for details.</p>
+
         <h3>Contact</h3>
         <p>Questions, bugs, or feature requests? Email
         <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> and we'll get back to you.</p>
       </div>
 
-      <div class="card">
+      <div class="card" id="ko">
         <p class="lang">한국어</p>
         <h2>시작하기</h2>
         <p>StickyPresenter는 메뉴바(📝 아이콘)에서 동작합니다. 아이콘을 눌러 스티키 노트를 만들거나
@@ -75,6 +109,38 @@
         패널에서 해당 타이머 행에 마우스를 올리면 점선으로 위치를 보여줍니다. <code>불러오기(Align)</code>를
         누르면 패널 옆으로 다시 가져옵니다.</p>
 
+        <h3>리모컨 앱 (iPhone)</h3>
+        <p><a href="remote.html">Remote Controller</a> 앱으로 iPhone에서 타이머를 조작합니다 —
+        시작·일시정지, 30초 더하기/빼기, 위젯 크기 조절, Mac 화면 위에서 위치 옮기기, 감추기,
+        프리셋 타이머 시작. 같은 Wi-Fi의 Mac에서 StickyPresenter가 실행 중이어야 합니다.</p>
+        <p><strong>처음 연결하기.</strong> 앱을 열면 주변에서 찾은 Mac 목록이 나옵니다.
+        내 Mac을 고른 다음, Mac 메뉴 막대의 타이머 아이콘을 눌러 <code>Remote</code> 안에 떠 있는
+        네 자리 <code>Pairing Code</code>를 입력하세요. 한 번 맞추면 Mac이 그 iPhone을 기억하므로
+        다음부터는 앱만 열면 저절로 붙습니다. 다른 Mac으로 옮기려면 리모컨 오른쪽 위의 연결
+        표시를 눌러 <code>연결 해제하고 다시 고르기</code>를 선택하세요.</p>
+        <p><strong>Mac을 찾지 못할 때</strong> 순서대로 확인하세요.</p>
+        <ul>
+          <li>Mac에서 StickyPresenter가 실행 중인지 — 메뉴 막대의 아이콘으로 확인합니다.
+          창을 모두 닫아도 앱은 남아 있지만, 종료하면 리모컨이 찾지 못합니다.</li>
+          <li>두 기기가 <strong>같은 Wi-Fi</strong>인지. 게스트 네트워크이거나 한쪽이 셀룰러면
+          찾지 못합니다.</li>
+          <li>iPhone의 로컬 네트워크 허용 — 설정 → 개인정보 보호 및 보안 → 로컬 네트워크 →
+          Remote Controller.</li>
+          <li>Mac의 로컬 네트워크 허용 — 시스템 설정 → 개인정보 보호 및 보안 → 로컬 네트워크 →
+          StickyPresenter.</li>
+          <li>VPN을 끄세요. 같은 네트워크의 기기를 못 찾게 하는 흔한 원인입니다.</li>
+        </ul>
+        <p><strong>연결 코드가 맞지 않는다고 나옵니다.</strong> Mac 메뉴 막대 →
+        <code>Remote</code>에 지금 떠 있는 코드를 그대로 넣었는지 확인하세요.
+        <code>New Pairing Code</code>를 누른 적이 있으면 코드가 바뀌어 있습니다. Mac을 껐거나
+        Wi-Fi가 끊겨 응답이 없을 때도 같은 안내가 나옵니다.</p>
+        <p><strong>다른 사람이 제 타이머를 조작할 수도 있나요?</strong> 코드를 알려주지 않는 한
+        조작할 수 없습니다. Mac은 코드가 맞는 리모컨과 전에 코드를 통과한 리모컨의 연결만
+        받아들입니다. 코드를 보여준 적이 있어 되돌리고 싶다면 Mac 메뉴 막대 →
+        <code>Remote</code>에서 <code>New Pairing Code</code>로 코드를 새로 뽑거나,
+        <code>Forget Paired Remotes</code>로 기억해 둔 리모컨을 모두 지우세요. 자세한 내용은
+        <a href="remote-privacy.html">Remote Controller 개인정보 처리방침</a>을 참고하세요.</p>
+
         <h3>문의</h3>
         <p>질문·버그·기능 제안은 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> 으로
         보내주세요.</p>
@@ -85,7 +151,7 @@
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="privacy.html">Privacy Policy</a>
+    © 2026 StickyPresenter · <a href="privacy.html">Privacy Policy</a> · <a href="remote.html">iPhone Remote</a>
   </footer>
 </body>
 </html>
