@@ -1,0 +1,139 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 New Sticky Note";
+"menu.newFromClipboard" = "📋 New from Clipboard";
+"menu.teleprompter" = "📺 Teleprompter Mode";
+"menu.timers" = "⏱ Timers";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Show All Notes";
+"menu.hideAll" = "🙈 Hide All Notes";
+"menu.defaultColor" = "🎨 Default Color";
+"menu.removeAll" = "🗑 Remove All Notes";
+"menu.remote" = "📱 Remote";
+"menu.contact" = "💬 Contact the Developer";
+"menu.contact.email" = "✉️ Email (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram DM (@lee25_ios)";
+"menu.quit" = "Quit StickyPresenter";
+
+"color.yellow" = "🟡 Yellow";
+"color.pink" = "🩷 Pink";
+"color.green" = "🟢 Green";
+"color.blue" = "🔵 Blue";
+"color.purple" = "🟣 Purple";
+"color.orange" = "🟠 Orange";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Pairing Code:   %@";
+"remote.none" = "No remote connected";
+"remote.connected" = "Connected remotes: %d";
+"remote.newCode" = "New Pairing Code";
+"remote.forget" = "Forget Paired Remotes";
+"remote.forget.count" = "Forget Paired Remotes (%d)";
+"remote.forget.title" = "Forget all paired remotes?";
+"remote.forget.message" = "Connected remotes will be disconnected. They will need the pairing code again.";
+"remote.forget.confirm" = "Forget";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Cancel";
+"alert.removeAll.title" = "Remove All Notes?";
+"alert.removeAll.message" = "This will permanently delete all sticky notes.";
+"alert.removeAll.confirm" = "Remove All";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 StickyPresenter Guide\n\n📌 Drag to move a note\n🖱 Hover to show controls\n🎨 Adjust color · opacity · font size\n🔒 Lock button prevents editing\n\n⌘⌃N  New sticky note\n⌘⌃T  Open timers\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Show all notes\n⌘⌃H  Hide all notes\n\n💡 You can also create a sticky note\n   right from the timer controls!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Paste your script here...\n\nThe teleprompter will auto-scroll through your text.\n\nUse the controls to adjust speed and font size.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Preview mode";
+"Edit text" = "Edit text";
+"Mirror text (for teleprompter glass)" = "Mirror text (for teleprompter glass)";
+"Font" = "Font";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Lock editing";
+"Unlock editing" = "Unlock editing";
+"Empty note" = "Empty note";
+"note.charCount" = "%d chars";
+"note.opacity" = "Opacity: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Timer";
+"window.timer.named" = "Timer – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "New Sticky Note";
+"Quick Start" = "Quick Start";
+"No timers" = "No timers";
+"Tap a preset or enter a time" = "Tap a preset or enter a time";
+"Show" = "Show";
+"Hide" = "Hide";
+"Show / hide widget" = "Show / hide widget";
+"Align" = "Align";
+"Align widget next to the panel" = "Align widget next to the panel";
+"Window" = "Window";
+"Open in a window (screen share / AirPlay)" = "Open in a window (screen share / AirPlay)";
+"Delete timer" = "Delete timer";
+"Reuse this timer with another duration" = "Reuse this timer with another duration";
+"Add Timer" = "Add Timer";
+"Drag to resize" = "Drag to resize";
+"timer.theme" = "Theme: %@";
+"timer.widgetSize" = "Widget size: %@ (%dpt)";
+"timer.restartAs" = "Restart this timer as %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "System";
+"theme.light" = "Light";
+"theme.dark" = "Dark";
+"theme.chameleon" = "Chameleon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Focus";
+"pomodoro.break" = "Break";
+"preview.pomodoro" = "↻ Focus %1$@ · Break %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%dhr";
+"unit.min" = "%dmin";
+"unit.sec" = "%dsec";
+"unit.zeroSec" = "0sec";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Edit quick presets";
+"Quick Presets" = "Quick Presets";
+"Reset" = "Reset";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Same format as the input field —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Add preset";
+"Add a preset" = "Add a preset";
+"No readable preset — buttons stay hidden" = "No readable preset — buttons stay hidden";
+"Remove preset" = "Remove preset";
+"Keep at least one preset" = "Keep at least one preset";
+"preset.restore" = "Restore %@";
+"preset.max" = "Up to %d presets";
+
+/* ===== Music ===== */
+"mood.focus" = "Focus";
+"mood.calm" = "Calm";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Upbeat";
+"mood.focus.hint" = "Steady instrumentals — deep work and rehearsal";
+"mood.calm.hint" = "Ambient and solo piano — winding down before a talk";
+"mood.jazz.hint" = "Café jazz and bossa nova — relaxed, conversational rooms";
+"mood.upbeat.hint" = "Light pop and funk — warm-ups and breaks";
+"Play music" = "Play music";
+"Pause music" = "Pause music";
+"Next Track" = "Next Track";
+"Play With Timer" = "Play With Timer";
+"Refresh" = "Refresh";
+"music.empty" = "No tracks — add audio to the %@ folder";
+"music.openFolder" = "Open %@ Folder";
+"music.count.one" = "%1$d track · %2$@";
+"music.count.other" = "%1$d tracks · %2$@";
+"music.chip.none" = " (no tracks)";
+"music.chip.one" = " · %d track";
+"music.chip.other" = " · %d tracks";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Settings";
+"settings.support" = "Support";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Timers";

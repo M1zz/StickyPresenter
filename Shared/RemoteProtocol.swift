@@ -10,6 +10,72 @@ public enum RemoteService {
     /// 1~15자, 소문자·숫자·하이픈만 허용된다는 제약이 있어 짧게 잡았다.
     /// Info.plist 의 NSBonjourServices 에도 `_sp-timer._tcp` / `._udp` 로 같이 올라가 있어야 한다.
     public static let type = "sp-timer"
+
+    /// Mac 이 광고(`discoveryInfo`)에 싣는 키.
+    /// MultipeerConnectivity 는 discoveryInfo 전체를 400바이트로 제한하므로 키를 짧게 잡았다.
+    public enum DiscoveryKey {
+        /// Mac 을 가리키는 **바뀌지 않는** 식별자.
+        /// 컴퓨터 이름은 바뀌기도 하고 겹치기도 해서("MacBook Pro" 가 회의실에 셋)
+        /// 짝을 기억하는 기준으로 쓸 수 없다.
+        public static let hostID = "hid"
+    }
+}
+
+// MARK: - 페어링
+//
+// 같은 Wi-Fi 에 Mac 이 여러 대면 리모컨은 그 전부를 발견한다. 예전에는 발견하는 족족 초대장을
+// 보내고 Mac 도 오는 대로 다 받아서, 발표자 A 의 리모컨이 B 의 Mac 타이머까지 같이 움직였다.
+//
+// 이제 리모컨은 **사용자가 고른 Mac 한 대**에만 초대장을 보내고, 그 초대장에 Mac 메뉴 막대에
+// 떠 있는 4자리 코드를 실어 보낸다. Mac 은 코드가 맞는 초대만 받는다.
+// 한 번 통과하면 Mac 이 그 리모컨의 `remoteID` 를 기억하므로 다음부터는 코드 없이 붙는다.
+//
+// ⚠️ 이 규약이 들어오면서 **컨텍스트 없는 초대는 거절**된다. 페어링을 모르는 옛 리모컨 앱은
+//    새 Mac 앱에 붙지 못한다 — 두 앱을 같은 릴리즈로 함께 올려야 하는 이유다.
+
+/// 리모컨이 초대장(`invitePeer(_:to:withContext:timeout:)`)에 싣는 신원.
+/// 초대 컨텍스트는 작아야 하므로 필드를 최소로 유지한다.
+public struct PairingRequest: Codable, Sendable {
+    /// 리모컨을 가리키는 바뀌지 않는 식별자. Mac 이 이걸로 "이미 허락한 기기" 를 알아본다.
+    public var remoteID: String
+    /// Mac 쪽 기록에 남길 이름 (예: "leeo의 iPhone").
+    public var remoteName: String
+    /// Mac 메뉴 막대의 4자리 코드. 이미 페어링된 기기는 nil 로 두고 `remoteID` 만으로 붙는다.
+    public var code: String?
+
+    public init(remoteID: String, remoteName: String, code: String?) {
+        self.remoteID = remoteID
+        self.remoteName = remoteName
+        self.code = code
+    }
+
+    public func encoded() throws -> Data { try JSONEncoder().encode(self) }
+    public static func decode(_ data: Data) throws -> PairingRequest {
+        try JSONDecoder().decode(PairingRequest.self, from: data)
+    }
+}
+
+/// 4자리 연결 코드. 앞자리가 0 이어도 자릿수를 잃지 않도록 정수가 아니라 문자열로 다룬다.
+public enum PairingCode {
+    public static let length = 4
+
+    public static func random() -> String {
+        (0..<length).map { _ in String(Int.random(in: 0...9)) }.joined()
+    }
+
+    /// 숫자만 남기고 4자리로 자른다 — 숫자 패드에도 붙여넣기가 들어온다.
+    /// `isNumber` 는 "½" 이나 아라비아 숫자까지 참이라, 코드로 쓸 0~9 만 남긴다.
+    public static func normalized(_ input: String) -> String {
+        String(input.filter(isDigit).prefix(length))
+    }
+
+    public static func isComplete(_ code: String) -> Bool {
+        code.count == length && code.allSatisfy(isDigit)
+    }
+
+    private static func isDigit(_ character: Character) -> Bool {
+        character.isASCII && character.isNumber
+    }
 }
 
 // MARK: - 상태 (Mac → iOS)

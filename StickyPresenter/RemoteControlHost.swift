@@ -10,6 +10,16 @@ import AppKit
 //
 // 샌드박스 앱이라 entitlements 에 network.client / network.server 가,
 // Info.plist 에 NSBonjourServices 와 NSLocalNetworkUsageDescription 이 있어야 동작한다.
+//
+// ## 아무 리모컨이나 받지 않는다
+//
+// 회의실처럼 같은 Wi-Fi 에 Mac 이 여러 대 있으면, 예전 구현은 들어온 초대를 전부 자동
+// 수락해서 발표자 A 의 리모컨이 B 의 Mac 타이머까지 같이 움직였다. 이제는 리모컨이 초대장에
+// 4자리 코드(`pairingCode`, 메뉴 막대에 떠 있다)를 실어 보내야 하고, 코드가 맞은 리모컨만
+// `pairedRemotes` 에 기록해 다음부터는 코드 없이 받아준다. 규약은 `PairingRequest` 참고.
+//
+// 리모컨 **여러 대**가 한 Mac 에 붙는 건 그대로 허용한다 (발표자 + 진행 스태프).
+// 격리는 페어링 단계에서 이미 끝났으므로 붙은 뒤에 더 나눌 이유가 없다.
 
 @MainActor
 final class RemoteControlHost: NSObject, ObservableObject {
@@ -18,16 +28,83 @@ final class RemoteControlHost: NSObject, ObservableObject {
     /// 지금 붙어 있는 리모컨 수 — 메뉴/UI에서 연결 상태를 보여주는 데 쓴다.
     @Published private(set) var connectedCount = 0
 
+    /// 메뉴 막대에 띄우는 4자리 연결 코드. 리모컨이 이걸 맞춰야 처음 붙을 수 있다.
+    @Published private(set) var pairingCode: String
+
+    /// 코드 없이 붙어도 되는 리모컨 (`remoteID` → 마지막으로 본 기기 이름).
+    private var pairedRemotes: [String: String]
+
+    /// 이 Mac 을 가리키는 바뀌지 않는 식별자. 컴퓨터 이름을 바꿔도 리모컨이 짝을 놓치지 않도록,
+    /// 이름이 아니라 이 값을 광고에 실어 보낸다.
+    private let hostID: String
+
     private let peerID: MCPeerID
     private var session: MCSession?
     private var advertiser: MCNearbyServiceAdvertiser?
     private var broadcastTimer: Foundation.Timer?
 
+    private enum Keys {
+        static let hostID = "remote.hostID"
+        static let pairingCode = "remote.pairingCode"
+        static let pairedRemotes = "remote.pairedRemotes"
+    }
+
     private override init() {
+        let defaults = UserDefaults.standard
+
         let name = Host.current().localizedName ?? "Mac"
         // MCPeerID displayName 은 63바이트 제한이 있다. 긴 컴퓨터 이름에서 터진다.
         self.peerID = MCPeerID(displayName: String(name.prefix(30)))
+
+        // 셋 다 재실행·이름 변경을 건너 살아남아야 한다. 하나라도 매번 새로 뽑으면
+        // 리모컨이 기억해 둔 짝을 잃고 발표 직전에 코드를 다시 물어보게 된다.
+        if let saved = defaults.string(forKey: Keys.hostID) {
+            self.hostID = saved
+        } else {
+            let generated = UUID().uuidString
+            defaults.set(generated, forKey: Keys.hostID)
+            self.hostID = generated
+        }
+
+        if let saved = defaults.string(forKey: Keys.pairingCode), PairingCode.isComplete(saved) {
+            self.pairingCode = saved
+        } else {
+            let generated = PairingCode.random()
+            defaults.set(generated, forKey: Keys.pairingCode)
+            self.pairingCode = generated
+        }
+
+        self.pairedRemotes = defaults.dictionary(forKey: Keys.pairedRemotes) as? [String: String] ?? [:]
+
         super.init()
+    }
+
+    // MARK: 페어링
+
+    /// 기억해 둔 리모컨 수 — 메뉴에 "3대 지우기" 처럼 보여주는 데 쓴다.
+    var pairedCount: Int { pairedRemotes.count }
+
+    /// 코드를 새로 뽑는다 (남에게 코드를 보여준 뒤 되돌리고 싶을 때).
+    /// 이미 페어링된 리모컨은 코드 없이 붙으므로 그대로 남는다 — 같이 끊으려면 `unpairAll()`.
+    func regeneratePairingCode() {
+        pairingCode = PairingCode.random()
+        UserDefaults.standard.set(pairingCode, forKey: Keys.pairingCode)
+    }
+
+    /// 기억해 둔 리모컨을 모두 잊고, 지금 붙어 있는 연결도 끊는다.
+    func unpairAll() {
+        pairedRemotes.removeAll()
+        UserDefaults.standard.set(pairedRemotes, forKey: Keys.pairedRemotes)
+        // MCSession 은 피어 하나만 골라 끊을 수 없다. 세션을 새로 열어 전부 떨군다.
+        guard session != nil else { return }
+        stop()
+        start()
+    }
+
+    /// 코드가 맞았을 때 그 리모컨을 기억해 둔다 — 다음부터는 코드를 묻지 않는다.
+    private func remember(_ request: PairingRequest) {
+        pairedRemotes[request.remoteID] = request.remoteName
+        UserDefaults.standard.set(pairedRemotes, forKey: Keys.pairedRemotes)
     }
 
     // MARK: 수명주기
@@ -39,8 +116,12 @@ final class RemoteControlHost: NSObject, ObservableObject {
         session.delegate = self
         self.session = session
 
+        // 리모컨이 "지난번 그 Mac" 을 알아볼 수 있도록 식별자를 광고에 싣는다.
+        // 이름(peerID.displayName)은 바뀌거나 겹칠 수 있어 짝의 기준이 되지 못한다.
         let advertiser = MCNearbyServiceAdvertiser(
-            peer: peerID, discoveryInfo: nil, serviceType: RemoteService.type
+            peer: peerID,
+            discoveryInfo: [RemoteService.DiscoveryKey.hostID: hostID],
+            serviceType: RemoteService.type
         )
         advertiser.delegate = self
         advertiser.startAdvertisingPeer()
@@ -217,9 +298,35 @@ extension RemoteControlHost: MCNearbyServiceAdvertiserDelegate {
                                 didReceiveInvitationFromPeer peerID: MCPeerID,
                                 withContext context: Data?,
                                 invitationHandler: @escaping (Bool, MCSession?) -> Void) {
-        // 같은 로컬 네트워크에 있고 서비스 타입까지 맞는 상대만 여기 도달한다.
-        // 발표 직전에 수락 다이얼로그를 띄우는 건 오히려 방해가 되므로 자동 수락한다.
-        Task { @MainActor in invitationHandler(true, self.session) }
+        // 같은 로컬 네트워크에 있고 서비스 타입까지 맞으면 **누구든** 여기 도달한다.
+        // 옆자리 발표자의 리모컨도 마찬가지라, 자동 수락하면 남의 타이머가 같이 움직인다.
+        // 그래서 신원(`PairingRequest`)을 확인해 아는 리모컨과 코드가 맞은 리모컨만 받는다.
+        //
+        // 발표 직전에 Mac 을 만지게 만드는 수락 다이얼로그는 여전히 띄우지 않는다 —
+        // 확인은 리모컨 쪽에서 코드를 한 번 입력하는 것으로 끝난다.
+        Task { @MainActor in
+            guard let context, let request = try? PairingRequest.decode(context) else {
+                // 컨텍스트가 없는 초대 = 페어링을 모르는 옛 리모컨 앱. 두 앱을 함께 올려야 한다.
+                NSLog("[Remote] 신원이 없는 초대를 거절함 (리모컨 앱 업데이트 필요)")
+                invitationHandler(false, nil)
+                return
+            }
+
+            if self.pairedRemotes[request.remoteID] != nil {
+                self.remember(request)   // 기기 이름이 바뀌었을 수 있으니 갱신해 둔다
+                invitationHandler(true, self.session)
+                return
+            }
+
+            guard request.code == self.pairingCode else {
+                NSLog("[Remote] 코드가 맞지 않아 거절함: \(request.remoteName)")
+                invitationHandler(false, nil)
+                return
+            }
+
+            self.remember(request)
+            invitationHandler(true, self.session)
+        }
     }
 
     nonisolated func advertiser(_ advertiser: MCNearbyServiceAdvertiser,

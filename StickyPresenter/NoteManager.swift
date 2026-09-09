@@ -172,7 +172,7 @@ class NoteManager: ObservableObject {
         panel.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
         panel.isFloatingPanel = true
         panel.hidesOnDeactivate = false
-        panel.title = "Timers"
+        panel.title = L("window.timers")
         panel.titlebarAppearsTransparent = true
         panel.isMovableByWindowBackground = true
         panel.isOpaque = false
@@ -306,7 +306,7 @@ class NoteManager: ObservableObject {
         // aspectRatio 는 설정하지 않는다 — AppKit의 리사이즈 경로에서만 의미가 있고,
         // 우리가 직접 계산해 넘기는 setFrame 값과 어긋날 여지만 남는다.
         // 정사각 비율은 ResizeHandleNSView 가 시작 시점의 비율을 잡아 직접 유지한다.
-        window.title = "Timer – \(entry.name)"
+        window.title = L("window.timer.named", entry.name)
 
         let widgetHostingView = NSHostingView(rootView:
             TimerWidgetView(entry: entry)
@@ -422,13 +422,16 @@ class NoteManager: ObservableObject {
         // 누른 지점에 따라 창이 다르게 움직이고 끈 것보다 크게 자란다.
         // `contentAspectRatio` 도 같은 이유로 설정하지 않는다: AppKit이 우리가 계산해 넘긴
         // 프레임을 다시 정사각형으로 늘려 크기가 부풀었다. 정사각 비율은 그립이 직접 유지한다.
+        // `.miniaturizable` 은 넣지 않는다. 버튼을 숨겨도 ⌘M 은 살아 있는데, 이 앱은
+        // `.accessory` 라 Dock 아이콘이 없다 — 최소화한 타이머를 되찾을 길이 마땅치 않다.
+        // `.closable` 은 버튼을 숨겨도 ⌘W 를 살려 두므로 남긴다.
         let window = NSWindow(
             contentRect: frame,
-            styleMask: [.titled, .closable, .miniaturizable],
+            styleMask: [.titled, .closable],
             backing: .buffered,
             defer: false
         )
-        window.title = entry.name.isEmpty ? "Timer" : "Timer – \(entry.name)"  // 캡처 목록용 이름(보이진 않음)
+        window.title = entry.name.isEmpty ? L("window.timer") : L("window.timer.named", entry.name)  // 캡처 목록용 이름(보이진 않음)
         window.level = .floating
         window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
         window.isMovableByWindowBackground = true
@@ -439,8 +442,19 @@ class NoteManager: ObservableObject {
         window.sharingType = .readOnly
         window.isReleasedWhenClosed = false  // Swift ARC와 충돌 방지 (이중 해제 크래시)
 
+        // 신호등 버튼을 숨긴다. 발표 화면에 띄우는 창이라 macOS 크롬이 그대로 보이면
+        // 다른 창들과 달리 이것만 앱 창처럼 튄다 (스티키 노트도 같은 이유로 숨긴다).
+        //
+        // `.titled` 자체는 유지해야 한다 — borderless 창은 화면 공유·AirPlay 의
+        // "윈도우 추가" 목록에 이름을 달고 올라오지 않는다. 이 창이 존재하는 이유가 그거다.
+        window.standardWindowButton(.closeButton)?.isHidden = true
+        window.standardWindowButton(.miniaturizeButton)?.isHidden = true
+        window.standardWindowButton(.zoomButton)?.isHidden = true
+
+        // 타이틀바 닫기 버튼을 숨겼으니 닫을 길을 대신 준다 —
+        // 위젯 창과 같은, 호버하면 우상단에 뜨는 X 다.
         let hostingView = NSHostingView(rootView:
-            TimerWidgetView(entry: entry)   // 타이틀바 닫기 버튼이 있으므로 onClose 불필요
+            TimerWidgetView(entry: entry, onClose: { [weak window] in window?.close() })
         )
         if #available(macOS 13.0, *) { hostingView.sizingOptions = [] }
         window.contentView = hostingView

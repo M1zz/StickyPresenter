@@ -129,6 +129,16 @@ enum WidgetTheme: String, CaseIterable {
         }
     }
 
+    /// 도움말 풍선에 찍히는 이름. `rawValue` 는 저장용 키라 지역화하지 않는다.
+    var localizedName: String {
+        switch self {
+        case .system:    return L("theme.system")
+        case .light:     return L("theme.light")
+        case .dark:      return L("theme.dark")
+        case .chameleon: return L("theme.chameleon")
+        }
+    }
+
     var next: WidgetTheme {
         switch self {
         case .system:    return .light
@@ -145,7 +155,7 @@ enum PomodoroPhase {
     case focus
     case rest
 
-    var title: String { self == .focus ? "Focus" : "Break" }
+    var title: String { self == .focus ? L("pomodoro.focus") : L("pomodoro.break") }
     var icon: String { self == .focus ? "brain.head.profile" : "cup.and.saucer.fill" }
     var next: PomodoroPhase { self == .focus ? .rest : .focus }
 
@@ -502,10 +512,10 @@ struct TimerListView: View {
     private var previewText: String? {
         guard !inputText.trimmingCharacters(in: .whitespaces).isEmpty else { return nil }
         if let p = parsedPomodoro {
-            return "↻ Focus \(formatPreviewTime(p.focusSeconds)) · Break \(formatPreviewTime(p.breakSeconds))"
+            return L("preview.pomodoro", formatPreviewTime(p.focusSeconds), formatPreviewTime(p.breakSeconds))
         }
         guard parsedSeconds > 0 else { return nil }
-        return "→ " + formatPreviewTime(parsedSeconds)
+        return L("preview.duration", formatPreviewTime(parsedSeconds))
     }
 
     private func formatPreviewTime(_ t: TimeInterval) -> String {
@@ -513,10 +523,10 @@ struct TimerListView: View {
         let m = (Int(t) % 3600) / 60
         let s = Int(t) % 60
         var parts: [String] = []
-        if h > 0 { parts.append("\(h)hr") }
-        if m > 0 { parts.append("\(m)min") }
-        if s > 0 { parts.append("\(s)sec") }
-        return parts.isEmpty ? "0sec" : parts.joined(separator: " ")
+        if h > 0 { parts.append(L("unit.hr", h)) }
+        if m > 0 { parts.append(L("unit.min", m)) }
+        if s > 0 { parts.append(L("unit.sec", s)) }
+        return parts.isEmpty ? L("unit.zeroSec") : parts.joined(separator: " ")
     }
 
     var body: some View {
@@ -766,7 +776,7 @@ struct TimerRowView: View {
                     HStack(spacing: 6) {
                         // 위젯 표시/감추기 토글 (눈동자 통합)
                         Button(action: toggleWidgetVisibility) {
-                            Text(entry.isWidgetHidden ? "Show" : "Hide")
+                            Text(entry.isWidgetHidden ? L("Show") : L("Hide"))
                                 .modifier(CtrlButtonStyle(
                                     fg: entry.isWidgetHidden ? .secondary : Color.accentColor,
                                     bg: entry.isWidgetHidden ? Color.primary.opacity(0.06) : Color.accentColor.opacity(0.12)))
@@ -797,7 +807,7 @@ struct TimerRowView: View {
                                 .modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
                         }
                         .buttonStyle(.plain)
-                        .help("Theme: \(entry.theme.rawValue)")
+                        .help(L("timer.theme", entry.theme.localizedName))
 
                         // 프리셋 크기 S / M / L
                         HStack(spacing: 3) {
@@ -815,7 +825,7 @@ struct TimerRowView: View {
                                         )
                                 }
                                 .buttonStyle(.plain)
-                                .help("Widget size: \(size.rawValue) (\(Int(size.side))pt)")
+                                .help(L("timer.widgetSize", size.rawValue, Int(size.side)))
                             }
                         }
 
@@ -866,7 +876,7 @@ struct TimerRowView: View {
                     Text(preset.label).modifier(PresetButtonStyle())
                 }
                 .buttonStyle(.plain)
-                .help("Restart this timer as \(preset.label)")
+                .help(L("timer.restartAs", preset.label))
             }
         }
         .transition(.opacity.combined(with: .move(edge: .top)))
@@ -1158,7 +1168,7 @@ struct PresetEditorView: View {
                         .foregroundStyle(.secondary)
                 }
                 .buttonStyle(.plain)
-                .help("Restore \(TimerPresetStore.defaults.joined(separator: " / "))")
+                .help(L("preset.restore", TimerPresetStore.defaults.joined(separator: " / ")))
             }
             .foregroundStyle(Color.accentColor.opacity(0.8))
 
@@ -1191,7 +1201,7 @@ struct PresetEditorView: View {
             }
             .buttonStyle(.plain)
             .disabled(!store.canAdd)
-            .help(store.canAdd ? "Add a preset" : "Up to \(TimerPresetStore.maxCount) presets")
+            .help(store.canAdd ? L("Add a preset") : L("preset.max", TimerPresetStore.maxCount))
 
             if store.usable.isEmpty {
                 Label("No readable preset — buttons stay hidden", systemImage: "exclamationmark.triangle.fill")
@@ -1227,7 +1237,7 @@ struct PresetEditorView: View {
             }
             .buttonStyle(.plain)
             .disabled(!store.canRemove)
-            .help(store.canRemove ? "Remove preset" : "Keep at least one preset")
+            .help(store.canRemove ? L("Remove preset") : L("Keep at least one preset"))
         }
     }
 

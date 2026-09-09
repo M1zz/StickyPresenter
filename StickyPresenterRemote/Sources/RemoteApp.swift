@@ -62,12 +62,34 @@ struct RemoteRootView: View {
 
     /// 연결 상태는 점 하나로만 알린다.
     /// 상태 문구까지 툴바에 넣으면 기기 이름이 길 때 제목을 밀어내고 잘린다.
+    ///
+    /// 붙어 있을 때만 눌리는 메뉴가 된다 — 짝을 푸는 곳이 여기 말고는 없고,
+    /// 연결 상태를 보는 자리와 연결을 끊는 자리가 같은 편이 찾기 쉽다.
+    @ViewBuilder
     private var statusDot: some View {
+        if case .connected(let name) = client.status {
+            Menu {
+                Section(name) {
+                    Button(role: .destructive) {
+                        client.unpair()
+                    } label: {
+                        Label("연결 해제하고 다시 고르기", systemImage: "xmark.circle")
+                    }
+                }
+            } label: {
+                statusLabel(name)
+            }
+        } else {
+            statusLabel(nil)
+        }
+    }
+
+    private func statusLabel(_ name: String?) -> some View {
         HStack(spacing: 6) {
             Circle()
                 .fill(client.isConnected ? .green : .orange)
                 .frame(width: 8, height: 8)
-            if case .connected(let name) = client.status {
+            if let name {
                 Text(name)
                     .font(.caption)
                     .foregroundStyle(.secondary)
@@ -123,11 +145,18 @@ struct EmptyTimersView: View {
 
 // MARK: - Disconnected
 
-/// 연결이 안 됐을 때 **무엇을 확인해야 하는지**까지 같이 보여준다.
-/// MultipeerConnectivity 는 실패해도 원인을 알려주지 않아서, 상태 문구만 띄우면
-/// 사용자가 손댈 곳을 찾지 못한다. 실제로 걸리는 지점들을 순서대로 나열한다.
+/// 아직 붙지 않았을 때. 하는 일이 둘이다.
+///
+/// 1. **주변 Mac 을 고르게 한다.** 예전에는 찾는 족족 자동으로 붙어서, 같은 Wi-Fi 에 Mac 이
+///    여러 대면 옆 사람 Mac 에 붙는 일이 생겼다. 이제 고르는 건 사람이 한다.
+/// 2. **하나도 못 찾았을 때 무엇을 확인해야 하는지 알려준다.** MultipeerConnectivity 는
+///    실패해도 원인을 알려주지 않아서, 상태 문구만 띄우면 사용자가 손댈 곳을 찾지 못한다.
+///
+/// 목록이 비었을 때만 점검표를 보여준다 — Mac 이 이미 보이는데 "Wi-Fi 를 확인하세요" 를
+/// 같이 띄우면 정작 눌러야 할 목록에서 눈을 뗀다.
 struct DisconnectedView: View {
     @EnvironmentObject private var client: RemoteClient
+    @State private var pairingTarget: RemoteClient.DiscoveredHost?
 
     private struct Check: Identifiable {
         let id = UUID()
@@ -156,28 +185,40 @@ struct DisconnectedView: View {
         ]
     }
 
+    private var hasHosts: Bool { !client.discovered.isEmpty }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 22) {
                 header
-                checklist
-                settingsButton
+                if let message = client.pairingError {
+                    errorBanner(message)
+                }
+                if hasHosts {
+                    hostList
+                } else {
+                    checklist
+                    settingsButton
+                }
             }
             .padding(20)
             .frame(maxWidth: .infinity)
         }
         .background(Color(.systemGroupedBackground))
+        .sheet(item: $pairingTarget) { host in
+            PairingSheet(host: host)
+        }
     }
 
     private var header: some View {
         VStack(spacing: 10) {
-            Image(systemName: isFailed ? "exclamationmark.triangle" : "wifi.slash")
+            Image(systemName: headerSymbol)
                 .font(.system(size: 42, weight: .light))
                 // 삼항으로 섞으면 Color 와 계층 스타일의 타입이 달라 컴파일되지 않는다.
                 .foregroundStyle(isFailed ? AnyShapeStyle(.orange) : AnyShapeStyle(.tertiary))
-                .symbolEffect(.pulse, isActive: !isFailed)
+                .symbolEffect(.pulse, isActive: !isFailed && !hasHosts)
 
-            Text(isFailed ? "연결할 수 없습니다" : "Mac을 찾는 중")
+            Text(headerTitle)
                 .font(.title3.weight(.semibold))
 
             Text(subtitle)
@@ -189,16 +230,28 @@ struct DisconnectedView: View {
         .padding(.top, 28)
     }
 
-    /// 제목이 이미 "찾는 중"이라고 말하므로 상태 문구를 그대로 되풀이하지 않는다.
+    private var headerSymbol: String {
+        if isFailed { return "exclamationmark.triangle" }
+        return hasHosts ? "desktopcomputer" : "wifi.slash"
+    }
+
+    private var headerTitle: String {
+        if isFailed { return "연결할 수 없습니다" }
+        return hasHosts ? "연결할 Mac 고르기" : "Mac을 찾는 중"
+    }
+
+    /// 제목이 이미 할 말을 했으므로 상태 문구를 그대로 되풀이하지 않는다.
     /// 상태마다 제목이 담지 못하는 정보만 덧붙인다.
     private var subtitle: String {
         switch client.status {
-        case .searching:
-            return "주변에서 StickyPresenter가 켜진 Mac을 찾고 있습니다"
         case .connecting(let name):
             return "\(name)에 연결하는 중입니다"
         case .failed(let message):
             return message
+        case .searching:
+            return hasHosts
+                ? "Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다"
+                : "주변에서 StickyPresenter가 켜진 Mac을 찾고 있습니다"
         case .connected:
             return ""
         }
@@ -208,6 +261,94 @@ struct DisconnectedView: View {
         if case .failed = client.status { return true }
         return false
     }
+
+    private func errorBanner(_ message: String) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: "exclamationmark.circle.fill")
+                .foregroundStyle(.orange)
+            Text(message)
+                .font(.footnote)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+        }
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(.secondarySystemGroupedBackground))
+        )
+    }
+
+    // MARK: 주변 Mac 목록
+
+    private var hostList: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(Array(client.discovered.enumerated()), id: \.element.id) { index, host in
+                if index > 0 {
+                    Divider().padding(.leading, 36)
+                }
+                hostRow(host)
+            }
+        }
+        .padding(.vertical, 4)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color(.secondarySystemGroupedBackground))
+        )
+    }
+
+    private func hostRow(_ host: RemoteClient.DiscoveredHost) -> some View {
+        Button {
+            client.pairingError = nil
+            pairingTarget = host
+        } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "desktopcomputer")
+                    .font(.body)
+                    .foregroundStyle(host.isPairable ? AnyShapeStyle(.tint) : AnyShapeStyle(.tertiary))
+                    .frame(width: 24)
+
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(host.name)
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(.primary)
+                    Text(hostSubtitle(host))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                // 기기 이름이 길면 두 줄로 흐른다. 잘리지 않게 세로로 늘어나도록 둔다.
+                .fixedSize(horizontal: false, vertical: true)
+
+                Spacer(minLength: 0)
+
+                if isConnecting(to: host) {
+                    ProgressView()
+                } else if host.isPairable {
+                    Image(systemName: "chevron.right")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(.tertiary)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .disabled(!host.isPairable)
+    }
+
+    private func hostSubtitle(_ host: RemoteClient.DiscoveredHost) -> String {
+        guard host.isPairable else { return "Mac 앱 업데이트가 필요합니다" }
+        if isConnecting(to: host) { return "연결하는 중…" }
+        if let hostID = host.hostID, hostID == client.pairedHostID { return "지난번에 연결한 Mac" }
+        return "연결 코드 \(PairingCode.length)자리가 필요합니다"
+    }
+
+    private func isConnecting(to host: RemoteClient.DiscoveredHost) -> Bool {
+        if case .connecting(let name) = client.status { return name == host.name }
+        return false
+    }
+
+    // MARK: 못 찾았을 때
 
     private var checklist: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -256,6 +397,104 @@ struct DisconnectedView: View {
                 .frame(maxWidth: .infinity, minHeight: 38)
         }
         .buttonStyle(.bordered)
+    }
+}
+
+// MARK: - Pairing
+
+/// 고른 Mac 의 4자리 코드를 받는 화면.
+///
+/// 코드를 한 번 넣으면 Mac 이 이 리모컨을 기억하므로, 다음 발표부터는 이 화면을 볼 일이 없다.
+/// 그래서 입력을 짧게 끝내는 데만 집중한다 — 열자마자 숫자 패드가 올라오고, 4자리가 차면
+/// 버튼이 켜진다.
+struct PairingSheet: View {
+    @EnvironmentObject private var client: RemoteClient
+    @Environment(\.dismiss) private var dismiss
+
+    let host: RemoteClient.DiscoveredHost
+
+    @State private var code = ""
+    @FocusState private var isCodeFocused: Bool
+
+    var body: some View {
+        NavigationStack {
+            VStack(spacing: 20) {
+                VStack(spacing: 8) {
+                    Image(systemName: "desktopcomputer")
+                        .font(.system(size: 38, weight: .light))
+                        .foregroundStyle(.tint)
+                    Text(host.name)
+                        .font(.title3.weight(.semibold))
+                        .multilineTextAlignment(.center)
+                    Text("Mac 메뉴 막대의 타이머 아이콘을 누르고 **Remote** 안의 **Pairing Code** 를 입력하세요.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(.top, 24)
+
+                TextField("0000", text: $code)
+                    .keyboardType(.numberPad)
+                    // `.oneTimeCode` 는 넣지 않는다 — 이 코드는 문자로 오지 않는데
+                    // 자동 채우기가 엉뚱한 인증번호를 들이민다.
+                    .multilineTextAlignment(.center)
+                    // 자릿수를 눈으로 세기 좋게 넓게 벌린다. 고정폭이라 숫자가 바뀌어도 흔들리지 않는다.
+                    .font(.system(size: 40, weight: .semibold, design: .rounded))
+                    .kerning(10)
+                    .focused($isCodeFocused)
+                    .onChange(of: code) { _, newValue in
+                        // 숫자 패드로도 붙여넣기가 들어온다. 들어오는 대로 걸러 4자리로 맞춘다.
+                        let cleaned = PairingCode.normalized(newValue)
+                        if cleaned != newValue { code = cleaned }
+                    }
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(Color(.secondarySystemGroupedBackground))
+                    )
+
+                if let message = client.pairingError {
+                    Text(message)
+                        .font(.footnote)
+                        .foregroundStyle(.orange)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+
+                Button {
+                    isCodeFocused = false
+                    client.connect(to: host, code: code)
+                } label: {
+                    Text(isConnecting ? "연결하는 중…" : "연결")
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(!PairingCode.isComplete(code) || isConnecting)
+
+                Spacer(minLength: 0)
+            }
+            .padding(20)
+            .background(Color(.systemGroupedBackground))
+            .navigationTitle("연결 코드")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("취소") { dismiss() }
+                }
+            }
+        }
+        .onAppear { isCodeFocused = true }
+        // 붙는 순간 이 화면은 할 일이 끝났다. 사용자가 닫을 때까지 기다릴 이유가 없다.
+        .onChange(of: client.isConnected) { _, connected in
+            if connected { dismiss() }
+        }
+    }
+
+    private var isConnecting: Bool {
+        if case .connecting = client.status { return true }
+        return false
     }
 }
 

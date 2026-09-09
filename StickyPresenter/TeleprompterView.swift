@@ -63,7 +63,7 @@ struct TeleprompterView: View {
                     .foregroundColor(.white.opacity(0.6))
             }
             .buttonStyle(.plain)
-            .help(isEditing ? "Preview mode" : "Edit text")
+            .help(isEditing ? L("Preview mode") : L("Edit text"))
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 8)

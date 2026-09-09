@@ -25,10 +25,10 @@ enum MusicMood: String, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .focus:  return "Focus"
-        case .calm:   return "Calm"
-        case .jazz:   return "Jazz"
-        case .upbeat: return "Upbeat"
+        case .focus:  return L("mood.focus")
+        case .calm:   return L("mood.calm")
+        case .jazz:   return L("mood.jazz")
+        case .upbeat: return L("mood.upbeat")
         }
     }
 
@@ -53,10 +53,10 @@ enum MusicMood: String, CaseIterable, Identifiable {
     /// 툴팁·안내문에 쓰는 설명
     var hint: String {
         switch self {
-        case .focus:  return "Steady instrumentals — deep work and rehearsal"
-        case .calm:   return "Ambient and solo piano — winding down before a talk"
-        case .jazz:   return "Café jazz and bossa nova — relaxed, conversational rooms"
-        case .upbeat: return "Light pop and funk — warm-ups and breaks"
+        case .focus:  return L("mood.focus.hint")
+        case .calm:   return L("mood.calm.hint")
+        case .jazz:   return L("mood.jazz.hint")
+        case .upbeat: return L("mood.upbeat.hint")
         }
     }
 }
@@ -389,18 +389,18 @@ struct MusicBar: View {
                 }
                 .buttonStyle(.plain)
                 .disabled(isEmpty)
-                .help(player.isPlaying ? "Pause music" : "Play music")
+                .help(player.isPlaying ? L("Pause music") : L("Play music"))
 
                 // 곡명 또는 안내
                 Group {
                     if isEmpty {
-                        Text("No tracks — add audio to the \(player.mood.label) folder")
+                        Text(L("music.empty", player.mood.label))
                             .foregroundStyle(.tertiary)
                     } else if let title = player.currentTitle, player.isPlaying {
                         Text(title)
                             .foregroundStyle(.secondary)
                     } else {
-                        Text("\(currentTracks.count) track\(currentTracks.count == 1 ? "" : "s") · \(player.mood.label)")
+                        Text(L(currentTracks.count == 1 ? "music.count.one" : "music.count.other", currentTracks.count, player.mood.label))
                             .foregroundStyle(.tertiary)
                     }
                 }
@@ -426,7 +426,7 @@ struct MusicBar: View {
                     Divider()
                     Toggle("Play With Timer", isOn: $player.followsTimer)
                     Divider()
-                    Button("Open \(player.mood.label) Folder") {
+                    Button(L("music.openFolder", player.mood.label)) {
                         library.revealInFinder(player.mood)
                     }
                     Button("Refresh") { player.reloadLibrary() }
@@ -475,6 +475,6 @@ struct MusicBar: View {
             )
         }
         .buttonStyle(.plain)
-        .help(mood.hint + (count == 0 ? " (no tracks)" : " · \(count) track\(count == 1 ? "" : "s")"))
+        .help(mood.hint + (count == 0 ? L("music.chip.none") : L(count == 1 ? "music.chip.one" : "music.chip.other", count)))
     }
 }
