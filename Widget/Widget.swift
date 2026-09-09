@@ -147,7 +147,7 @@ struct StickyPresenterWidgetEntryView: View {
         VStack(spacing: 6) {
             Image(systemName: "timer")
                 .font(.system(size: 24))
-            Text("실행 중인 타이머 없음")
+            Text(L("widget.empty"))
                 .font(.caption)
                 .multilineTextAlignment(.center)
         }
@@ -163,9 +163,9 @@ struct StickyPresenterWidgetEntryView: View {
     }
 
     private func detailText(_ snapshot: TimerSnapshot, finished: Bool) -> String {
-        let total = "총 \(TimerSnapshot.formatted(snapshot.targetSeconds))"
-        if finished { return "\(total) · 완료" }
-        return snapshot.isRunning ? "\(total) · 진행 중" : "\(total) · 일시정지"
+        let total = L("widget.total", TimerSnapshot.formatted(snapshot.targetSeconds))
+        if finished { return L("widget.finished", total) }
+        return snapshot.isRunning ? L("widget.running", total) : L("widget.paused", total)
     }
 }
 
@@ -179,8 +179,8 @@ struct StickyPresenterWidget: Widget {
             StickyPresenterWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .configurationDisplayName("발표 타이머")
-        .description("진행 중인 발표 타이머의 남은 시간을 보여줍니다.")
+        .configurationDisplayName(L("widget.displayName"))
+        .description(L("widget.description"))
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

@@ -1,0 +1,139 @@
+/* ===== 메뉴 막대 ===== */
+"menu.newNote" = "📌 새 스티키 노트";
+"menu.newFromClipboard" = "📋 클립보드로 만들기";
+"menu.teleprompter" = "📺 텔레프롬프터";
+"menu.timers" = "⏱ 타이머";
+"menu.pomodoro" = "🍅 뽀모도로 (25/5)";
+"menu.showAll" = "👁 모든 노트 보이기";
+"menu.hideAll" = "🙈 모든 노트 감추기";
+"menu.defaultColor" = "🎨 기본 색상";
+"menu.removeAll" = "🗑 모든 노트 지우기";
+"menu.remote" = "📱 리모컨";
+"menu.contact" = "💬 개발자에게 연락";
+"menu.contact.email" = "✉️ 이메일 (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 인스타그램 DM (@lee25_ios)";
+"menu.quit" = "StickyPresenter 종료";
+
+"color.yellow" = "🟡 노랑";
+"color.pink" = "🩷 분홍";
+"color.green" = "🟢 초록";
+"color.blue" = "🔵 파랑";
+"color.purple" = "🟣 보라";
+"color.orange" = "🟠 주황";
+
+/* ===== 리모컨 하위 메뉴 ===== */
+"remote.pairingCode" = "연결 코드:   %@";
+"remote.none" = "연결된 리모컨 없음";
+"remote.connected" = "연결된 리모컨 %d대";
+"remote.newCode" = "연결 코드 새로 만들기";
+"remote.forget" = "기억한 리모컨 지우기";
+"remote.forget.count" = "기억한 리모컨 지우기 (%d)";
+"remote.forget.title" = "기억한 리모컨을 모두 지울까요?";
+"remote.forget.message" = "연결되어 있는 리모컨도 끊어집니다. 다시 연결하려면 연결 코드를 새로 입력해야 합니다.";
+"remote.forget.confirm" = "지우기";
+
+/* ===== 알림창 ===== */
+"alert.cancel" = "취소";
+"alert.removeAll.title" = "모든 노트를 지울까요?";
+"alert.removeAll.message" = "스티키 노트가 모두 영구히 삭제됩니다.";
+"alert.removeAll.confirm" = "모두 지우기";
+
+/* ===== 첫 실행 안내 노트 ===== */
+"guide.note" = "👋 StickyPresenter 사용법\n\n📌 끌어서 노트 옮기기\n🖱 마우스를 올리면 조절 버튼\n🎨 색상 · 투명도 · 글자 크기\n🔒 잠금 버튼으로 편집 막기\n\n⌘⌃N  새 스티키 노트\n⌘⌃T  타이머 열기\n⌘⌃B  뽀모도로 (25/5)\n⌘⌃P  텔레프롬프터\n⌘⌃S  모든 노트 보이기\n⌘⌃H  모든 노트 감추기\n\n💡 타이머 창에서도 스티키 노트를\n   바로 만들 수 있어요!";
+
+/* ===== 텔레프롬프터 ===== */
+"teleprompter.placeholder" = "여기에 대본을 붙여 넣으세요...\n\n텔레프롬프터가 대본을 자동으로 넘겨 줍니다.\n\n아래 조절 막대로 속도와 글자 크기를 맞추세요.";
+"📺 TELEPROMPTER" = "📺 텔레프롬프터";
+"Preview mode" = "미리보기";
+"Edit text" = "대본 편집";
+"Mirror text (for teleprompter glass)" = "좌우 반전 (텔레프롬프터 유리용)";
+"Font" = "글자";
+
+/* ===== 스티키 노트 ===== */
+"Lock editing" = "편집 잠그기";
+"Unlock editing" = "편집 잠금 풀기";
+"Empty note" = "빈 노트";
+"note.charCount" = "%d자";
+"note.opacity" = "투명도: %d%%";
+
+/* ===== 타이머 창 제목 ===== */
+"window.timer" = "타이머";
+"window.timer.named" = "타이머 – %@";
+
+/* ===== 타이머 패널 ===== */
+"New Sticky Note" = "새 스티키 노트";
+"Quick Start" = "빠른 시작";
+"No timers" = "타이머 없음";
+"Tap a preset or enter a time" = "프리셋을 누르거나 시간을 입력하세요";
+"Show" = "보이기";
+"Hide" = "감추기";
+"Show / hide widget" = "위젯 보이기 / 감추기";
+"Align" = "정렬";
+"Align widget next to the panel" = "위젯을 패널 옆으로 불러오기";
+"Window" = "윈도우";
+"Open in a window (screen share / AirPlay)" = "윈도우로 열기 (화면 공유 / AirPlay)";
+"Delete timer" = "타이머 삭제";
+"Reuse this timer with another duration" = "이 타이머를 다른 시간으로 다시 쓰기";
+"Add Timer" = "타이머 추가";
+"Drag to resize" = "끌어서 크기 조절";
+"timer.theme" = "테마: %@";
+"timer.widgetSize" = "위젯 크기: %1$@ (%2$dpt)";
+"timer.restartAs" = "%@ 로 다시 시작";
+
+/* ===== 테마 이름 ===== */
+"theme.system" = "시스템";
+"theme.light" = "밝게";
+"theme.dark" = "어둡게";
+"theme.chameleon" = "카멜레온";
+
+/* ===== 뽀모도로 ===== */
+"pomodoro.focus" = "집중";
+"pomodoro.break" = "휴식";
+"preview.pomodoro" = "↻ 집중 %1$@ · 휴식 %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d시간";
+"unit.min" = "%d분";
+"unit.sec" = "%d초";
+"unit.zeroSec" = "0초";
+
+/* ===== 빠른 프리셋 편집 ===== */
+"Edit quick presets" = "빠른 프리셋 편집";
+"Quick Presets" = "빠른 프리셋";
+"Reset" = "되돌리기";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "입력창과 같은 형식 —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "프리셋 추가";
+"Add a preset" = "프리셋 추가하기";
+"No readable preset — buttons stay hidden" = "읽을 수 있는 프리셋이 없어 버튼이 숨겨집니다";
+"Remove preset" = "프리셋 삭제";
+"Keep at least one preset" = "프리셋은 최소 하나 남겨야 합니다";
+"preset.restore" = "%@ 로 되돌리기";
+"preset.max" = "프리셋은 최대 %d개";
+
+/* ===== 배경음악 ===== */
+"mood.focus" = "집중";
+"mood.calm" = "차분";
+"mood.jazz" = "재즈";
+"mood.upbeat" = "활기";
+"mood.focus.hint" = "잔잔한 연주곡 — 몰입과 리허설";
+"mood.calm.hint" = "앰비언트와 솔로 피아노 — 발표 전 마음 가라앉히기";
+"mood.jazz.hint" = "카페 재즈와 보사노바 — 편안하고 이야기하기 좋은 자리";
+"mood.upbeat.hint" = "가벼운 팝과 펑크 — 워밍업과 쉬는 시간";
+"Play music" = "음악 재생";
+"Pause music" = "음악 일시정지";
+"Next Track" = "다음 곡";
+"Play With Timer" = "타이머와 함께 재생";
+"Refresh" = "새로 읽기";
+"music.empty" = "곡이 없습니다 — %@ 폴더에 음원을 넣으세요";
+"music.openFolder" = "%@ 폴더 열기";
+"music.count.one" = "%1$d곡 · %2$@";
+"music.count.other" = "%1$d곡 · %2$@";
+"music.chip.none" = " (곡 없음)";
+"music.chip.one" = " · %d곡";
+"music.chip.other" = " · %d곡";
+
+/* ===== 설정 / 지원 ===== */
+"settings.title" = "설정";
+"settings.support" = "지원";
+
+/* ===== 타이머 패널 제목 ===== */
+"window.timers" = "타이머";

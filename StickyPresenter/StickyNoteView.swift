@@ -115,7 +115,7 @@ struct StickyNoteView: View {
                         .foregroundColor(note.color.textColor.opacity(0.6))
                 }
                 .buttonStyle(.plain)
-                .help(note.isLocked ? "Unlock editing" : "Lock editing")
+                .help(note.isLocked ? L("Unlock editing") : L("Lock editing"))
             }
         }
         .padding(.horizontal, 10)
@@ -129,7 +129,7 @@ struct StickyNoteView: View {
         Group {
             if note.isLocked {
                 ScrollView {
-                    Text(note.text.isEmpty ? "Empty note" : note.text)
+                    Text(note.text.isEmpty ? L("Empty note") : note.text)
                         .font(.system(size: note.fontSize))
                         .foregroundColor(note.color.textColor)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -151,7 +151,7 @@ struct StickyNoteView: View {
     // MARK: - Footer
     private var footerBar: some View {
         HStack {
-            Text("\(note.text.count) chars")
+            Text(L("note.charCount", note.text.count))
                 .font(.system(size: 9, design: .monospaced))
                 .foregroundColor(note.color.textColor.opacity(0.3))
             
@@ -199,7 +199,7 @@ struct StickyNoteView: View {
     // MARK: - Opacity Popover
     private var opacityPopover: some View {
         VStack(spacing: 8) {
-            Text("Opacity: \(Int(note.opacity * 100))%")
+            Text(L("note.opacity", Int(note.opacity * 100)))
                 .font(.system(size: 11))
                 .foregroundColor(.secondary)
             

@@ -8,10 +8,10 @@ struct StickyPresenterSupportView: View {
                 Section {
                     LeeoSupportSection<StickyPresenterSpec>()
                 } header: {
-                    Text("지원")
+                    Text(L("settings.support"))
                 }
             }
-            .navigationTitle("설정")
+            .navigationTitle(L("settings.title"))
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif

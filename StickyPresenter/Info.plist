@@ -18,18 +18,25 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.8</string>
+	<key>CFBundleVersion</key>
+	<string>10</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
-	<key>CFBundleVersion</key>
-	<string>3</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_sp-timer._tcp</string>
+		<string>_sp-timer._udp</string>
+	</array>
 	<key>NSHighResolutionCapable</key>
 	<true/>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>iPhone에서 타이머를 원격으로 조작하기 위해 같은 네트워크의 기기를 찾습니다.</string>
 	<key>NSMainStoryboardFile</key>
 	<string></string>
 	<key>NSSupportsAutomaticTermination</key>
