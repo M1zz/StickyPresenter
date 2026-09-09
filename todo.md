@@ -1,10 +1,43 @@
 # StickyPresenter Todo
 
 ## 진행 중
+- [x] 한국어 · 영어 지역화 (Localizable.strings, en/ko)
+  - 화면 문구는 `L("key")`(= `NSLocalizedString`) 또는 SwiftUI 리터럴로 통일.
+    `L()` 은 `Shared/Localization.swift` 에 있고 앱·위젯이 함께 쓴다 (각자 자기 번들을 본다).
+  - 문자열표는 `StickyPresenter/Resources/{en,ko}.lproj/` 와 `Widget/Resources/{en,ko}.lproj/`.
+    `InfoPlist.strings` 에 로컬 네트워크 권한 안내문도 언어별로 넣었다.
+  - `project.yml` 에 `developmentLanguage: en` — knownRegions 는 xcodegen 이 lproj 에서 채운다.
+  - **`.strings` 를 새로 추가하면 `xcodegen generate` 를 다시 돌릴 것** (변형 그룹이 안 생기면 번들에 안 들어간다).
+  - 숫자·기호만 있는 문구(`+30s`, `24pt`, 입력 예시 `5:30 · 1h 20m`)는 일부러 번역하지 않았다.
+- [x] App Store 스크린샷 (한국어·영어 각 4장) — `Screenshots/{ko,en}/`
+  - 원본 창 캡처는 `Screenshots/raw/`, 합성기는 `Tools/MakeScreenshots.swift`.
+    `swift Tools/MakeScreenshots.swift Screenshots/raw <출력폴더>` 로 문구·배치만 고쳐 다시 뽑을 수 있다.
+  - 창 캡처는 `screencapture -o -l<windowid>` 로 **창 단위**로 떴다 — 전체 화면을 찍으면
+    다른 앱 내용이 같이 들어간다.
+  - 언어 전환은 `앱바이너리 -AppleLanguages '(ko)'` 로 실행. LSUIElement 앱이라
+    `open -a` 대신 실행 파일을 직접 띄우는 편이 확실하다.
+- [x] 문서 페이지 언어별 앵커 (`docs/{privacy,support,remote-privacy,remote}.html`)
+  - 영어 카드 `id="en"`, 한국어 카드 `id="ko"` — App Store Connect 로케일별 URL 로 쓴다.
+- [x] 영문 App Store 문구 — `AppStore/StickyPresenter.en-US.md`, `AppStore/StickyPresenterRemote.en-US.md`
+  - 이름·부제·프로모션·키워드·설명·What's New. 필드별 글자 수 제한 안에 드는지 확인함.
+  - 한국어판은 App Store Connect 에만 있다 — 문구를 고치면 두 로케일을 함께 볼 것.
+- [x] 문서 페이지 영문 섹션의 페어링 설명 수정 (1.0.8 에서 한국어만 고쳐져 있었다)
+  - `privacy/support/remote-privacy/remote.html` 영문에 "there is no pairing code" 가 남아 있었다.
+    영문 개인정보 처리방침이 사실과 달랐던 것이라 네 파일 모두 네 자리 코드 방식으로 고쳤다.
 - [x] 뽀모도로 타이머 (집중 ↔ 휴식 무한 반복) — 1.0.4
 - [x] 타이머 시작/종료 시 앱 크래시 버그 분석 및 수정
 
 ## 배포 전 남은 일
+- ⚠️ **리모컨 페어링은 Mac 앱과 리모컨 앱을 같은 릴리즈로 함께 올려야 한다.**
+  새 Mac 앱은 신원(`PairingRequest`)이 없는 초대를 거절하므로, 옛 리모컨 앱(1.0.7 이하)은
+  새 Mac 앱에 붙지 못한다. 한쪽만 심사를 통과해 먼저 나가면 그 사이 리모컨이 먹통이 된다.
+  → 두 앱을 같이 제출하고, 승인 뒤 **같은 날 함께 출시**할 것.
+- [ ] 페어링 실기기 확인 (계산이 아니라 손으로 해야 하는 항목)
+  - Mac 두 대 + iPhone 두 대를 같은 Wi-Fi 에 두고 서로 엇갈려 붙지 않는지
+  - 코드를 틀리게 넣었을 때 안내가 나오고, 맞게 넣으면 붙는지
+  - 앱을 껐다 켜면 코드 없이 자동으로 붙는지 (짝 기억)
+  - Mac 앱을 껐다 켜도 짝이 유지되는지 / `Forget Paired Remotes` 로 끊기는지
+  - 리모컨 두 대가 한 Mac 에 동시에 붙는지
 - ⚠️ **리모컨 앱은 iPhone 전용(`TARGETED_DEVICE_FAMILY: "1"`)으로 둘 것.**
   iPad(`"1,2"`)까지 넣으면 App Store 가 멀티태스킹을 위해 네 방향을 모두 지원하라며 거절한다
   ("you need to include all of the Portrait, PortraitUpsideDown, LandscapeLeft, LandscapeRight").
@@ -15,12 +48,23 @@
 - ⚠️ **빌드 번호는 절대 되돌리지 말 것** — `CFBundleVersion` 은 `MARKETING_VERSION` 과 무관하게
   앱 전체에서 단조 증가해야 한다. 1.0.5 를 빌드 1로 올렸다가 업로드가 거절됐다
   ("must contain a higher version than that of the previously uploaded version [6]").
-  1.0.4 가 6, 1.0.5 가 7, 1.0.6 이 **8**. 그러므로 1.0.7 은 **9**, 다음 업로드는 10 이상.
+  1.0.4 가 6, 1.0.5 가 7, 1.0.6 이 **8**, 1.0.7 이 **9**. 그러므로 1.0.8 은 **10**, 다음 업로드는 11 이상.
+  **마케팅 버전이 올라가도 예외는 없다** — 1.0.8 을 빌드 1 로 올렸다가 같은 사유로 또 거절당했다
+  ("must contain a higher version than that of the previously uploaded version [9]").
+  1.0.5 때와 같은 실수를 두 번 했으니, 다음부터는 마케팅 버전과 무관하게 직전 빌드 번호 + 1 로만 정할 것.
   올리기 전에 **원격 브랜치를 먼저 당겨** 마지막 버전 커밋을 확인할 것 — 로컬이 뒤처진 채로
   다음 번호를 계산하면 이미 쓴 번호를 다시 쓰게 된다. 실제로 1.0.6(8)을 못 본 채 8을
   다시 골랐다가 거절당했다 ("higher version than the previously uploaded version [8]").
-  (리모컨 앱은 별도 앱이라 자기 안에서만 증가하면 된다 — 1.0 이 2, 1.0.7 이 3.)
+  (리모컨 앱은 **규칙이 다르다** — iOS 는 마케팅 버전이 올라가면 빌드 번호를 1 로 되돌릴 수 있다.
+   같은 마케팅 버전 안에서만 유일하면 된다. 1.0 이 2, 1.0.7 이 3, **1.0.8 은 1**.
+   Mac 앱 규칙을 리모컨에 그대로 적용하지 말 것 — 둘의 빌드 번호는 서로 맞출 필요가 없다.)
   올릴 때는 `StickyPresenter/Info.plist` 와 `project.yml`(WidgetExtension) 두 곳을 함께.
+- [ ] `v1.0.8` 태그 생성 (버전 상향·릴리즈 노트는 완료)
+  - Mac 앱 **1.0.8 (10)** — `StickyPresenter/Info.plist` + `project.yml`(WidgetExtension) 두 곳, `xcodegen generate` 반영 완료.
+    (빌드 1 로 먼저 올렸다가 거절당해 10 으로 정정함.)
+    리모컨 앱 **1.0.8 (1)** — `StickyPresenterRemote/project.yml`, `xcodegen generate` 반영 완료.
+    페어링 때문에 **두 앱을 같은 날 함께 출시**할 것.
+  - Release 빌드로 산출물의 `CFBundleShortVersionString`/`CFBundleVersion` 을 직접 읽어 확인함 (앱 본체·위젯 익스텐션·리모컨 셋 다).
 - [ ] `v1.0.7` 태그 생성 (버전 상향·릴리즈 노트는 완료)
   - Mac 앱 **1.0.7 (9)** — `StickyPresenter/Info.plist` + `project.yml`(WidgetExtension) 두 곳.
     리모컨 앱 **1.0.7 (3)** — `StickyPresenterRemote/project.yml`. 1.0.6 은 건너뛴다.
@@ -32,6 +76,7 @@
 - [ ] 실제 앱에서 손으로 확인 (계산은 격리 하네스로 검증함)
   - 뽀모도로 구간 전환 (메뉴바 🍅 · ⌘⌃B · 입력창 `25/5`)
   - Window 창 우하단 모서리 드래그 감각 (아래 "리사이즈 감각" 항목의 기대 동작대로인지)
+  - Window 창에서 신호등 버튼이 사라졌는지, 호버하면 우상단 X 로 닫히는지, ⌘W 도 되는지
 - [ ] 배포본에 음원을 **번들할지** 결정
   - 현재 16곡은 로컬 앱 컨테이너에만 있음 — 리포지토리·앱 번들에는 없음
   - 전 곡 Kevin MacLeod / CC-BY 4.0 → 번들 시 앱 내 크레딧 표기 화면 필요 (`CREDITS.txt` 참고)
@@ -252,6 +297,17 @@
   - 구간 색: 집중 토마토 / 휴식 민트 — 행 남은 시간·위젯 링·배지에 공통 적용, `#n` 사이클 표시
   - 메뉴바 `🍅 Pomodoro (25/5)` + ⌘⌃B(keyCode 11), `NoteManager.startPomodoro(_:)`
   - 알림 센터 위젯 스냅샷 이름은 `displayName`(예: `25m/5m · Focus`)
+- [x] Mac 앱 아이콘을 리모컨(iOS) 아이콘과 같은 모티프로 교체
+  - 타이머 위젯이 원형 → 둥근 사각형으로 바뀌면서 동그란 시계 아이콘이 앱과 어긋나 있었다
+  - `Tools/MakeMacIcon.swift` 신설 — 리모컨의 `StickyPresenterRemote/MakeIcon.swift` 와 같은
+    "둥근 사각형 진행 표시(절반) + 1/4 지점 점" 을 그린다. 비율(여백 0.205 / 모서리 0.235 / 획 0.078)도 동일
+  - macOS 는 iOS 와 달리 앱이 직접 모서리를 깎고 여백을 둬야 하므로, 옛 아이콘에서 실측한
+    몸통 840/1024 · 모서리 반지름 0.2214 를 그대로 유지 (독에서 형제 앱들과 크기가 어긋나지 않게)
+  - 축소본이 아니라 16 … 1024 각 크기를 직접 렌더링
+  - 그라데이션(#FFDB5E → #FFAE10)은 옛 아이콘 값 그대로. 리모컨 생성기가 이 파일 결과에서
+    색을 다시 샘플링하는 구조라, 재생성해 보니 리모컨 아이콘은 바이트 단위로 동일 (연쇄 안정)
+  - `docs/icon.png` (소개 페이지 아이콘) 도 512 판으로 갱신
+
 - [x] 타이머 배경음악 (분위기별 파일 기반 플레이어)
   - `TimerMusic.swift` — `MusicMood`(집중/차분/재즈/활기), `MusicLibrary`, `MusicPlayer`, `MusicBar`
   - 음원은 번들하지 않고 앱 컨테이너 `Application Support/StickyPresenter/Music/<분위기>` 를 스캔

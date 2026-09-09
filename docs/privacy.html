@@ -17,7 +17,7 @@
   <main>
     <div class="wrap">
 
-      <div class="card">
+      <div class="card" id="en">
         <p class="lang">English</p>
         <h2>Summary</h2>
         <p><strong>StickyPresenter does not collect, store, transmit, or share any personal
@@ -45,9 +45,12 @@
         A connected iPhone exchanges only timer information (name, remaining time, state, widget
         size, theme, and the widget's position on your screens) and the commands you tap; the
         connection is encrypted and direct between the two devices. Your notes and teleprompter
-        scripts are never sent. Any device on the same network running the Remote Controller app
-        can connect and control the timers — there is no pairing code — so on an untrusted
-        network, quit StickyPresenter to stop being discoverable. See the
+        scripts are never sent. Connecting requires a <strong>four-digit pairing code</strong>: only an
+        iPhone that matches the code shown under menu bar → <code>Remote</code>, or one the Mac has
+        remembered from passing that code before, can connect. You can clear every remembered
+        device with <code>Forget Paired Remotes</code> at any time, or draw a fresh code with
+        <code>New Pairing Code</code>. Quitting StickyPresenter also stops the service being
+        advertised. See the
         <a href="remote-privacy.html">Remote Controller privacy policy</a> for details.</p>
 
         <h3>Internet</h3>
@@ -65,7 +68,7 @@
         <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
       </div>
 
-      <div class="card">
+      <div class="card" id="ko">
         <p class="lang">한국어</p>
         <h2>요약</h2>
         <p><strong>StickyPresenter는 어떠한 개인정보도 수집·저장·전송·공유하지 않습니다.</strong>
@@ -90,9 +93,11 @@
         광고합니다. macOS가 로컬 네트워크 접근 허용을 물을 수 있습니다. 연결된 iPhone과는 타이머
         정보(이름, 남은 시간, 상태, 위젯 크기, 테마, 화면상의 위젯 위치)와 사용자가 누른 명령만
         주고받으며, 연결은 두 기기 사이의 직접 연결이고 암호화됩니다. 노트와 텔레프롬프터 대본은
-        전송되지 않습니다. 페어링 코드가 없으므로 같은 네트워크에서 Remote Controller를 실행한
-        기기는 연결해 타이머를 조작할 수 있습니다 — 신뢰할 수 없는 네트워크에서는
-        StickyPresenter를 종료하면 검색되지 않습니다. 자세한 내용은
+        전송되지 않습니다. 연결은 네 자리 페어링 코드로 보호됩니다 — Mac 메뉴 막대 →
+        <code>Remote</code>에 떠 있는 코드를 맞춘 iPhone과, 전에 그 코드를 통과해 Mac이 기억해 둔
+        iPhone만 연결할 수 있습니다. 기억해 둔 기기는 <code>Forget Paired Remotes</code>로
+        언제든 지울 수 있고, <code>New Pairing Code</code>로 코드를 새로 뽑을 수 있습니다.
+        StickyPresenter를 종료하면 서비스 광고도 멈춥니다. 자세한 내용은
         <a href="remote-privacy.html">Remote Controller 개인정보 처리방침</a>을 참고하세요.</p>
 
         <h3>인터넷</h3>
