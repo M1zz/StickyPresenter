@@ -78,6 +78,7 @@
 		85B18F240C26BA63598B84FC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		8833C5645EA406C1B6D374FD /* StickyPresenterSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterSupportView.swift; sourceTree = "<group>"; };
 		8D466572AD7F3D57FAAA5F5E /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		962CE7CA4EF42EEAECBF1CC5 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chameleon.swift; sourceTree = "<group>"; };
 		BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterApp.swift; sourceTree = "<group>"; };
 		BF9684AB311403806FC69164 /* SharedTimerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTimerStore.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		93B576DEF5BFEEBEEF479A36 = {
 			isa = PBXGroup;
 			children = (
+				F7B2D12EADF5CEDB11E68579 /* Config */,
 				DA0B2E4013F037079BEEEDA4 /* Shared */,
 				7BCAE0F27A18C7ABDB17C839 /* StickyPresenter */,
 				DCCA3FAB764E76769CF9EDF1 /* Widget */,
@@ -184,6 +186,14 @@
 				9D41BDA28319F0C8059713DD /* Resources */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		F7B2D12EADF5CEDB11E68579 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				962CE7CA4EF42EEAECBF1CC5 /* Version.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +410,7 @@
 		};
 		6C94744B406D49F37763DD88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962CE7CA4EF42EEAECBF1CC5 /* Version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -463,7 +474,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -474,7 +484,6 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenter.Widget;
 				PRODUCT_NAME = WidgetExtension;
 				SDKROOT = macosx;
@@ -492,7 +501,6 @@
 				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -503,7 +511,6 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenter.Widget;
 				PRODUCT_NAME = WidgetExtension;
 				SDKROOT = macosx;
@@ -542,6 +549,7 @@
 		};
 		AA32BC10683C9CED54488CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962CE7CA4EF42EEAECBF1CC5 /* Version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

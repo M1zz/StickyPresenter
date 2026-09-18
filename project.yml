@@ -8,6 +8,14 @@ options:
   # (knownRegions 를 적지 않으면 xcodegen 이 lproj 디렉터리에서 알아서 채운다.)
   developmentLanguage: en
 
+# 버전·빌드번호의 단일 소스 (→ Config/Version.xcconfig). DeployBar 가 배포할 때 그 파일을 고친다.
+# 프로젝트 레벨 baseConfiguration 이라 앱·위젯 두 타겟이 같은 값을 쓴다.
+# ⚠️ MARKETING_VERSION·CURRENT_PROJECT_VERSION 을 아래 타겟 settings 에 다시 넣지 말 것.
+#    타겟 빌드 설정은 xcconfig 보다 우선해서, 넣는 순간 그 파일이 조용히 무시된다.
+configFiles:
+  Debug: Config/Version.xcconfig
+  Release: Config/Version.xcconfig
+
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
@@ -65,16 +73,9 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.leeo.StickyPresenter.Widget
         PRODUCT_NAME: WidgetExtension
-        # 임베드된 익스텐션은 컨테이너 앱과 버전이 같아야 App Store 검증을 통과한다.
-        # StickyPresenter/Info.plist의 값과 함께 올릴 것.
-        #
-        # CURRENT_PROJECT_VERSION(빌드 번호)은 MARKETING_VERSION 과 **무관하게**
-        # 앱 전체에서 단조 증가해야 한다. 새 버전이라고 1로 되돌리면 업로드가 거절된다.
-        #   "must contain a higher version than that of the previously uploaded version"
-        # 6(1.0.4), 7(1.0.5), 8(1.0.6), 9(1.0.7), 10(1.0.8) 다음이므로 1.0.9 는 11. 다음 업로드는 12 이상.
-        # (1.0.8 도 1 로 되돌렸다가 [9] 를 사유로 거절당했다 — 마케팅 버전이 올라가도 예외는 없다.)
-        MARKETING_VERSION: "1.0.9"
-        CURRENT_PROJECT_VERSION: "11"
+        # 버전·빌드 번호는 여기 두지 않는다 → Config/Version.xcconfig (위 configFiles).
+        # 임베드된 익스텐션은 컨테이너 앱과 버전이 같아야 App Store 검증을 통과하는데,
+        # 두 타겟이 그 한 파일을 함께 읽으므로 어긋날 수 없다.
         SWIFT_VERSION: "5.9"
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         INFOPLIST_FILE: Widget/Info.plist
