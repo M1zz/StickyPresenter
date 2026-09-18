@@ -1,6 +1,11 @@
 # StickyPresenter Todo
 
 ## 진행 중
+- [x] 1.0.9 (11) 버전 상향 — Mac 앱·위젯. 리모컨은 1.0.8 이후 바뀐 게 없어 1.0.8(1) 그대로.
+  - CHANGELOG `[1.0.9]` 작성, 영문 App Store What's New 를 1.0.9 로 교체.
+  - `[미출시]` 에 있던 다국어·배포 자료는 1.0.8(10) 커밋(3944788)에 이미 들어간 것이라 1.0.8 로 옮겼다.
+- [ ] App Store Connect 한국어 What's New 에 CHANGELOG `[1.0.9]` 내용 넣기
+- [ ] Archive · 업로드 (빌드 11)
 - [x] 브랜치 정리 — main 에 합쳐진 `feat/timer-music-and-resize-fix` 를 로컬·원격 모두 삭제
 - [x] macOS 27 에서 타이머 창이 끌어지지 않던 문제 (`WindowDraggable`, TimerView.swift)
   - `isMovableByWindowBackground` 대신 SwiftUI `DragGesture` + `setFrameOrigin` (macOS 15+).
