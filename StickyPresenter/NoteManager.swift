@@ -151,7 +151,9 @@ class NoteManager: ObservableObject {
         )
         window.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.maximumWindow)))
         window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary]
-        window.isMovableByWindowBackground = true
+        // 끌어 옮기기는 TimerWidgetView 의 WindowDraggable 이 맡는다 (macOS 15+).
+        // 둘 다 켜 두면 한 번의 끌기를 AppKit 과 제스처가 함께 처리해 창이 엉뚱하게 움직인다.
+        window.isMovableByWindowBackground = WindowDraggable.usesWindowBackground
         window.isOpaque = false
         window.backgroundColor = .clear
         window.hasShadow = true
@@ -434,7 +436,9 @@ class NoteManager: ObservableObject {
         window.title = entry.name.isEmpty ? L("window.timer") : L("window.timer.named", entry.name)  // 캡처 목록용 이름(보이진 않음)
         window.level = .floating
         window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
-        window.isMovableByWindowBackground = true
+        // 끌어 옮기기는 TimerWidgetView 의 WindowDraggable 이 맡는다 (macOS 15+).
+        // 둘 다 켜 두면 한 번의 끌기를 AppKit 과 제스처가 함께 처리해 창이 엉뚱하게 움직인다.
+        window.isMovableByWindowBackground = WindowDraggable.usesWindowBackground
         window.titlebarAppearsTransparent = true
         window.titleVisibility = .hidden        // 제목 텍스트 숨김
         window.isOpaque = false                 // 윗부분(제목표시줄) 투명

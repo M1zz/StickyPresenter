@@ -1,6 +1,23 @@
 # StickyPresenter Todo
 
 ## 진행 중
+- [x] 브랜치 정리 — main 에 합쳐진 `feat/timer-music-and-resize-fix` 를 로컬·원격 모두 삭제
+- [x] macOS 27 에서 타이머 창이 끌어지지 않던 문제 (`WindowDraggable`, TimerView.swift)
+  - `isMovableByWindowBackground` 대신 SwiftUI `DragGesture` + `setFrameOrigin` (macOS 15+).
+  - macOS 26 에서 배경 끌기를 끈 상태로 macOS 27 증상을 재현해 cliclick 합성 드래그로 확인:
+    이동 1:1, 클릭만 했을 때 창 고정, 리사이즈 그립, "창으로 열기" 창의 이동과 닫기 버튼.
+  - `performDrag` / `WindowDragGesture` / 투명 NSView 방식은 시도 후 버렸다 — 이유는 코드 주석.
+- [x] macOS 27.0 (26A428) 에서 확인 (2026-09-18, cliclick 합성 드래그)
+  - 수정 전 main: 위젯 창이 끌어도 전혀 움직이지 않는다 — 증상 재현.
+  - 수정본: 위젯 창 · "창으로 열기" 창 모두 1:1 이동, Finder 가 앞에 있을 때 첫 클릭 끌기,
+    제목표시줄 영역 끌기, 그립 리사이즈(수정 전과 같은 1:1), 끌기 직후 그립 잡기, 닫기 버튼.
+  - 그립은 호버해야 생긴다 — 커서를 순간이동시켜 호버 없이 누르면 창이 끌린다 (합성 이벤트에서만).
+- [ ] 실제 마우스·트랙패드로 한 번 더 손으로 확인
+- [ ] (기존 문제) "창으로 열기" 창을 막 연 직후, 한 번도 클릭하지 않은 상태에서 그립을 누르면
+  첫 클릭은 창 활성화에만 쓰이고 리사이즈가 안 된다. 수정 전 코드도 같다.
+  `ResizeHandleNSView` 에 `acceptsFirstMouse` → true 를 주면 풀릴 것.
+- [ ] (기존 문제) 아주 빠른 합성 이벤트에서 리사이즈 그립이 mouseUp 을 놓쳐 이후 마우스 이동에
+  크기가 따라 바뀌는 경우가 있다. 수정 전 코드에서도 6번 중 4번 재현. 실제 마우스에서 보이면 손볼 것.
 - [x] 한국어 · 영어 지역화 (Localizable.strings, en/ko)
   - 화면 문구는 `L("key")`(= `NSLocalizedString`) 또는 SwiftUI 리터럴로 통일.
     `L()` 은 `Shared/Localization.swift` 에 있고 앱·위젯이 함께 쓴다 (각자 자기 번들을 본다).
