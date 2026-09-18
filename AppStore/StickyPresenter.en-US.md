@@ -62,27 +62,15 @@ StickyPresenter collects nothing. No account, no analytics, no tracking, no ads,
 
 Requires macOS 14 or later.
 
-## What's New — 1.0.8 (4000자)
+## What's New — 1.0.9 (4000자)
 
-Fixed a problem where a remote could grab the wrong Mac when several people present on the same Wi-Fi, and added background music for the time before you start.
+Timer windows can be dragged again on macOS 27, and the close button now sits where it does on every other Mac window.
 
-PAIRING CODE FOR THE REMOTE (behavior change)
-• The remote now talks to one Mac — yours. Until now it connected to any Mac it found, so in a meeting room one person's remote could drive someone else's timer.
-• You enter a code once. Pick your Mac from the list, then type the four-digit code shown on the Mac under menu bar → Remote. After that the Mac remembers your iPhone and connects on its own.
-• Several remotes on one Mac still work — a presenter and a stage manager each enter the code once.
-• You can undo it: New Pairing Code draws a fresh code, Forget Paired Remotes clears every remembered device.
-• Renaming your Mac no longer breaks the pairing.
-• Note: this needs the updated remote app. The new Mac app turns away older remotes that send no code.
+MACOS 27
+• Fixed timer widgets and timer windows that would not move when dragged on macOS 27. The spot you grab stays under the cursor.
+• Works on the first click, even while another app is in front.
 
-TIMER WINDOW
-• Removed the traffic-light buttons — the timer window now looks like the sticky notes and widgets rather than an ordinary app window. Close it with the X that appears on hover, or ⌘W.
-
-BACKGROUND MUSIC
-• A music bar under the timers, with four moods: Focus, Calm, Jazz, Upbeat.
-• Turn on Play With Timer and the music starts and stops with the countdown.
-• You add your own audio files — the app makes a folder for each mood on first launch.
-
-FIXES
-• Dragging a timer widget's corner now follows the cursor properly, and behaves the same wherever you grab it.
-• The red border after a timer finishes now flashes five times and clears, instead of flashing forever.
-• New app icon, matching the rounded-square timer widget.
+CLOSE BUTTON
+• Moved to the top-left, as the same red button macOS uses to close a window. Hover over the timer to see it, and over the button to see the ×.
+• Timer widgets now have one too. It hides the widget while the timer keeps running — bring it back with Show in the timer panel.
+• ⌘W still closes a timer window.
