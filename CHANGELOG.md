@@ -25,6 +25,12 @@
 - App Store 스크린샷을 한국어·영어 각 4장씩 `Screenshots/` 에 넣었다.
   합성은 `Tools/MakeScreenshots.swift` 가 맡는다 — 문구만 고쳐 다시 뽑을 수 있다.
 
+### 수정
+- **macOS 27 에서 타이머 창이 끌어지지 않던 문제.** 창 옮기기를 AppKit 의
+  `isMovableByWindowBackground` 에 맡기던 것을, macOS 15 이상에서는 SwiftUI 제스처로 받아
+  창 위치를 직접 옮기도록 바꿨다 (위젯 창과 "창으로 열기" 창 모두). 누른 지점이 커서에
+  그대로 붙어 따라오고, 비활성 상태에서도 첫 클릭부터 끌린다. macOS 14 는 예전 방식 그대로.
+
 ---
 
 ## [1.0.8] - 2026-08-27

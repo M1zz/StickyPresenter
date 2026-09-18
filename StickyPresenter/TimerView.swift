@@ -1128,6 +1128,87 @@ final class ResizeHandleNSView: NSView {
     }
 }
 
+// MARK: - Window Drag
+/// 타이머 창을 아무 곳이나 잡고 끌어 옮기게 한다.
+///
+/// 예전에는 창의 `isMovableByWindowBackground` 에만 맡겼다. 그 방식은 NSHostingView 가
+/// 클릭 지점에서 `mouseDownCanMoveWindow == true` 를 돌려줘야 동작하는데, 이 값은
+/// SwiftUI 내부 구현에 달려 있어 macOS 27 에서 창이 더 이상 끌리지 않게 됐다.
+/// 그래서 macOS 15 부터는 SwiftUI 제스처로 받아 창 위치를 직접 옮긴다.
+/// 14 에서는 예전 방식이 그대로 동작하므로 창 설정(`isMovableByWindowBackground`)에 맡긴다.
+///
+/// 위치는 **화면 좌표**(`NSEvent.mouseLocation`)로 계산한다. 제스처의 translation 은
+/// 뷰 좌표라 창이 움직이면 기준도 같이 움직여 떨린다. 리사이즈 그립과 같은 방식이다.
+///
+/// 이 제스처는 SwiftUI 콘텐츠에만 걸린다. 리사이즈 그립(ResizeHandleNSView)은 NSView 라
+/// 클릭을 직접 받고, 닫기 버튼은 자식 제스처라 이 제스처보다 먼저 이긴다.
+///
+/// 시도했다가 버린 방법 (macOS 26 에서 합성 마우스 이벤트로 확인):
+/// - `performDrag(with:)`, `WindowDragGesture`: 끌기를 창 서버에 넘기는 방식이라, 마우스가
+///   끌기 시작 전에 떨어지면 끌기가 끝나지 않고 놓은 뒤에도 창이 커서를 따라다녔다.
+///   `WindowDragGesture` 는 시작 문턱만큼 창이 커서보다 뒤처지기도 한다.
+/// - 창 전체를 덮는 투명 NSView 에서 직접 처리: 그 NSView 까지 클릭이 내려오게 하려고
+///   링·배경을 `.allowsHitTesting(false)` 로 두면 그립 위 클릭이 창에 아예 오지 않아 리사이즈가 죽었다.
+struct WindowDraggable: ViewModifier {
+    /// 타이머 창의 `isMovableByWindowBackground` 값. 제스처를 쓰는 15 이상에서는 꺼야 한다 —
+    /// 둘 다 켜 두면 AppKit 과 제스처가 같은 끌기를 동시에 잡는다.
+    static var usesWindowBackground: Bool {
+        if #available(macOS 15.0, *) { return false }
+        return true
+    }
+
+    /// 끌기를 시작한 순간의 창과, 그때의 창 원점·마우스 위치 (둘 다 화면 좌표)
+    private struct DragStart {
+        weak var window: NSWindow?
+        let origin: NSPoint
+        let mouse: NSPoint
+    }
+    @State private var dragStart: DragStart?
+
+    func body(content: Content) -> some View {
+        if #available(macOS 15.0, *) {
+            content
+                .gesture(drag)
+                // 이 앱은 `.accessory` 라 거의 늘 비활성 상태다. 이게 없으면 첫 클릭이
+                // 창 활성화에만 쓰여 "한 번 눌렀다 다시 끌어야" 움직인다.
+                .allowsWindowActivationEvents()
+        } else {
+            content
+        }
+    }
+
+    private var drag: some Gesture {
+        // 문턱 0 — 누른 지점이 커서에 그대로 붙어 따라온다.
+        DragGesture(minimumDistance: 0)
+            .onChanged { _ in
+                // 시작점은 **마우스를 누른 순간에만** 새로 잡는다 (첫 onChanged 는 mouseDown 처리 중에 불린다).
+                // onEnded 에만 기대면 안 된다: 리사이즈 그립을 누르면 이 제스처도 같이 시작되는데,
+                // 그립의 추적 루프가 mouseUp 을 먹어 onEnded 가 오지 않는다. 그러면 옛 시작점이 남아
+                // 다음 끌기에서 창이 엉뚱한 곳으로 튄다.
+                // 창도 이 이벤트에서 얻는다 — WindowReader 는 비동기로 채워져 첫 끌기 때 비어 있을 수 있다.
+                if let event = NSApp.currentEvent, event.type == .leftMouseDown {
+                    if let window = event.window, !Self.pressedOnResizeHandle(event, in: window) {
+                        dragStart = DragStart(window: window, origin: window.frame.origin,
+                                              mouse: NSEvent.mouseLocation)
+                    } else {
+                        dragStart = nil
+                    }
+                }
+                guard let start = dragStart, let window = start.window else { return }
+                let mouse = NSEvent.mouseLocation
+                window.setFrameOrigin(NSPoint(x: start.origin.x + mouse.x - start.mouse.x,
+                                              y: start.origin.y + mouse.y - start.mouse.y))
+            }
+            .onEnded { _ in dragStart = nil }
+    }
+
+    /// 리사이즈 그립 위에서 누른 것이면 그립 몫이다 — 창을 옮기지 않는다.
+    private static func pressedOnResizeHandle(_ event: NSEvent, in window: NSWindow) -> Bool {
+        guard let content = window.contentView, let frame = content.superview else { return false }
+        return content.hitTest(frame.convert(event.locationInWindow, from: nil)) is ResizeHandleNSView
+    }
+}
+
 // MARK: - Quick Preset Editor
 /// 프리셋 줄 옆 ✏︎ 버튼. 팝오버를 띄우는 일만 한다.
 struct PresetEditButton: View {
@@ -1508,6 +1589,7 @@ struct TimerWidgetView: View {
         .onHover { hovering in
             withAnimation { isHovered = hovering }
         }
+        .modifier(WindowDraggable())
         .onChange(of: entry.isFinished) { finished in updatePulse(finished) }
         .onChange(of: entry.progress) { progress in handleQuarter(progress) }
         .onAppear {
@@ -1658,7 +1740,7 @@ struct TimerWidgetView: View {
         ZStack(alignment: .bottomTrailing) {
             // 투명 핸들: mouseDown 시 trackEvents로 네이티브 레이트의 리사이즈 수행.
             // 창 모서리까지 빈틈없이 닿아야 한다 — 틈을 두면 그 부분은
-            // isMovableByWindowBackground 영역이라 리사이즈 대신 창이 끌려간다.
+            // 창 이동 영역(WindowDraggable)이라 리사이즈 대신 창이 끌려간다.
             NativeResizeHandle()
 
             CornerGrip()
@@ -1668,7 +1750,7 @@ struct TimerWidgetView: View {
                 .padding(9)          // 그립 그림만 안쪽으로 — 히트 영역은 모서리까지 유지
                 .allowsHitTesting(false)
         }
-        // 히트 영역 48×48. 이 바깥은 전부 isMovableByWindowBackground 영역이라
+        // 히트 영역 48×48. 이 바깥은 전부 창 이동 영역(WindowDraggable)이라
         // 빗나가면 리사이즈가 아니라 "창 이동"이 되고, 그러면 좌상단이 마우스를 따라 움직인다.
         // 33이면 둥근 모서리에서 빗나가기 쉬워 키웠다. (그림은 여전히 13×13)
         .frame(width: 48, height: 48)
