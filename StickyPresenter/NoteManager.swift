@@ -310,8 +310,13 @@ class NoteManager: ObservableObject {
         // 정사각 비율은 ResizeHandleNSView 가 시작 시점의 비율을 잡아 직접 유지한다.
         window.title = L("window.timer.named", entry.name)
 
+        // 위젯의 닫기는 패널의 "감추기"와 같다 — 창만 숨기고 타이머는 계속 돈다.
+        // 타이머까지 지우면 되돌릴 수 없으니, 패널의 "보이기"로 그 자리에 다시 띄울 수 있게 둔다.
         let widgetHostingView = NSHostingView(rootView:
-            TimerWidgetView(entry: entry)
+            TimerWidgetView(entry: entry, onClose: { [weak entry] in
+                entry?.widgetPanel?.orderOut(nil)
+                entry?.isWidgetHidden = true
+            })
         )
         widgetHostingView.wantsLayer = true
         widgetHostingView.layer?.backgroundColor = CGColor(gray: 0, alpha: 0)

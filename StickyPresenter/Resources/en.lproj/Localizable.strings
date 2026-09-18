@@ -76,6 +76,7 @@
 "Reuse this timer with another duration" = "Reuse this timer with another duration";
 "Add Timer" = "Add Timer";
 "Drag to resize" = "Drag to resize";
+"Close" = "Close";
 "timer.theme" = "Theme: %@";
 "timer.widgetSize" = "Widget size: %@ (%dpt)";
 "timer.restartAs" = "Restart this timer as %@";
