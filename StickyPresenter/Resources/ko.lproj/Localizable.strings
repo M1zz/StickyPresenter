@@ -76,6 +76,7 @@
 "Reuse this timer with another duration" = "이 타이머를 다른 시간으로 다시 쓰기";
 "Add Timer" = "타이머 추가";
 "Drag to resize" = "끌어서 크기 조절";
+"Close" = "닫기";
 "timer.theme" = "테마: %@";
 "timer.widgetSize" = "위젯 크기: %1$@ (%2$dpt)";
 "timer.restartAs" = "%@ 로 다시 시작";

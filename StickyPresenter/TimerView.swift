@@ -1209,6 +1209,51 @@ struct WindowDraggable: ViewModifier {
     }
 }
 
+// MARK: - Window Close Button
+/// 타이머 위젯·"윈도우" 창의 닫기 버튼. "윈도우" 창의 신호등은 발표 화면에서 튀어 숨겼고(NoteManager)
+/// 위젯은 테두리 없는 창이라 원래 없으므로,
+/// 그 자리에 **macOS 닫기 버튼과 같은 모양**(14pt 빨간 원, 버튼에 올렸을 때만 ×)을 대신 둔다.
+/// 다른 Mac 창을 닫던 손버릇 그대로 왼쪽 위에서 닫을 수 있게 하려는 것.
+///
+/// 링 위에 올라가므로 배경색 테두리(halo)를 둘러 링에서 떼어 보이게 한다.
+/// 누르는 영역은 그림보다 넓게(26pt) 잡는다 — 이 밖은 창 이동(WindowDraggable) 영역이라
+/// 빗나가면 창이 끌린다.
+struct WindowCloseButton: View {
+    var halo: Color
+    let action: () -> Void
+    @State private var isHovered = false
+
+    /// macOS 창 닫기 버튼의 빨강 (#FF5F57)
+    private static let red = Color(red: 1, green: 0.373, blue: 0.341)
+
+    var body: some View {
+        Button(action: action) {
+            ZStack {
+                Circle().fill(Self.red)
+                Circle().strokeBorder(Color.black.opacity(0.15), lineWidth: 0.5)
+                Image(systemName: "xmark")
+                    .font(.system(size: 7, weight: .black))
+                    .foregroundStyle(Color(red: 0.35, green: 0, blue: 0).opacity(0.8))
+                    .opacity(isHovered ? 1 : 0)
+            }
+            .frame(width: 14, height: 14)
+            .background(Circle().fill(halo).padding(-2.5))
+            .frame(width: 26, height: 26)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(PressDimStyle())
+        .onHover { isHovered = $0 }
+        .accessibilityLabel(L("Close"))
+    }
+
+    /// 누르는 동안 살짝 어두워진다 — macOS 신호등 버튼과 같은 반응.
+    private struct PressDimStyle: ButtonStyle {
+        func makeBody(configuration: Configuration) -> some View {
+            configuration.label.brightness(configuration.isPressed ? -0.15 : 0)
+        }
+    }
+}
+
 // MARK: - Quick Preset Editor
 /// 프리셋 줄 옆 ✏︎ 버튼. 팝오버를 띄우는 일만 한다.
 struct PresetEditButton: View {
@@ -1426,7 +1471,7 @@ struct AddTimerRow: View {
 // MARK: - Timer Widget View (floating display — 시간만 표시, 액션은 패널에서)
 struct TimerWidgetView: View {
     @ObservedObject var entry: TimerEntry
-    var onClose: (() -> Void)? = nil   // windowed 모드에서만 닫기 버튼 표시
+    var onClose: (() -> Void)? = nil   // 있으면 호버 시 좌상단에 닫기 버튼 (위젯: 감추기, 윈도우: 창 닫기)
     @State private var isHovered = false
     @State private var finishPulse = false   // 완료 시 빨간 테두리 펄스
     // 카멜레온 모드용 — 이 뷰가 올라간 창과, 그 뒤 화면에서 읽어낸 팔레트
@@ -1570,19 +1615,12 @@ struct TimerWidgetView: View {
                         .transition(.opacity)
                 }
 
-                // 닫기 버튼 (windowed 모드, 호버 시 우상단)
+                // 닫기 버튼 (호버 시 좌상단 — macOS 창의 닫기 버튼 자리)
                 if isHovered, let onClose {
-                    Button(action: onClose) {
-                        Image(systemName: "xmark")
-                            .font(.system(size: 10, weight: .bold))
-                            .foregroundStyle(.white)
-                            .frame(width: 20, height: 20)
-                            .background(Circle().fill(Color(red: 1, green: 0.27, blue: 0.23)))
-                    }
-                    .buttonStyle(.plain)
-                    .padding(8)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .transition(.opacity)
+                    let center = closeButtonCenter(scale: scale)
+                    WindowCloseButton(halo: bgColor, action: onClose)
+                        .position(x: center, y: center)
+                        .transition(.opacity)
                 }
             }
         }
@@ -1764,11 +1802,29 @@ struct TimerWidgetView: View {
     }
 
     // MARK: - Ring + Time (scale에 비례)
-    private func ringContent(side: CGFloat, scale: CGFloat) -> some View {
+    /// 링의 선 두께, 창 가장자리에서 링 중심선까지의 거리, 모서리 반지름.
+    private static func ringMetrics(scale: CGFloat) -> (lineWidth: CGFloat, inset: CGFloat, radius: CGFloat) {
         let lineWidth = max(4, 10 * scale)
         // 배경(cornerRadius 24)과 동심을 이루도록 인셋만큼 반지름을 줄인다.
         let inset = lineWidth / 2 + max(3, 7 * scale)
-        let radius = max(6, 24 - inset)
+        return (lineWidth, inset, max(6, 24 - inset))
+    }
+
+    /// 닫기 버튼 중심 (좌상단에서 x, y 같은 거리).
+    ///
+    /// 링의 출발점(0%, 좌상단 꼭짓점의 대각선 지점)에 올린다. 기본 크기 200pt 에서 이 점은
+    /// (15.5, 15.5) 로 macOS 창의 닫기 버튼 중심 (16, 16) 과 거의 같다 — 그래서 늘 닫기 버튼이
+    /// 있던 자리에 나타나면서도, 링과 어긋나 겹치지 않고 링을 여미는 걸쇠처럼 보인다.
+    /// 창이 커지면 링을 따라 안쪽으로 들어간다. 작은 창에서는 둥근 모서리 밖으로
+    /// 삐져나가지 않도록 14 에서 멈춘다.
+    private func closeButtonCenter(scale: CGFloat) -> CGFloat {
+        let ring = Self.ringMetrics(scale: scale)
+        let cornerInset = ring.radius * (1 - CGFloat(2).squareRoot() / 2)
+        return max(14, ring.inset + cornerInset)
+    }
+
+    private func ringContent(side: CGFloat, scale: CGFloat) -> some View {
+        let (lineWidth, inset, radius) = Self.ringMetrics(scale: scale)
 
         return ZStack {
             RoundedRectProgress(cornerRadius: radius)
