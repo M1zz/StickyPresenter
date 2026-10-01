@@ -42,6 +42,8 @@ targets:
     info:
       path: Sources/Info.plist
       properties:
+        # 수출 규정: 운영체제 암호화(HTTPS 등)만 쓴다 — 심사 때 암호화 질문을 건너뛴다
+        ITSAppUsesNonExemptEncryption: false
         CFBundleDisplayName: Remote Controller
         # 값을 그대로 적으면 plist 쪽이 이겨서 위의 MARKETING_VERSION /
         # CURRENT_PROJECT_VERSION 이 무시된다. 버전은 한 곳에서만 관리한다.
