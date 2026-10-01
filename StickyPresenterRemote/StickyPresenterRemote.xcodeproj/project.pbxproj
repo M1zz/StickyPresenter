@@ -17,6 +17,7 @@
 		351BC74F4AB16F25C0288CF7 /* StickyPresenterRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StickyPresenterRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E63ACA9C91C08DE2F60D7A /* RemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteClient.swift; sourceTree = "<group>"; };
 		A33A3FC5F8ED9CE541B90283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF42665C0A7A85C0A778446 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		AFCF09A7AEFAD8E25CE0980C /* RemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApp.swift; sourceTree = "<group>"; };
 		B9EE070E32987838405727BC /* RemoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProtocol.swift; sourceTree = "<group>"; };
 		DBDD214FE0506DEFA8BAAD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +51,18 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		9436FDA3E4266209C6DBE6B2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				ADF42665C0A7A85C0A778446 /* Version.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		9862E9FA345A7700C95086F5 = {
 			isa = PBXGroup;
 			children = (
+				9436FDA3E4266209C6DBE6B2 /* Config */,
 				16C08B0AB27E62581F7DD00B /* Sources */,
 				DCA31628B631421C3529F489 /* StickyPresenter */,
 				1A1025612DE1AFDEA5E32B06 /* Products */,
@@ -150,6 +160,7 @@
 /* Begin XCBuildConfiguration section */
 		29CC4A1D20A353EB388D85F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF42665C0A7A85C0A778446 /* Version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -217,14 +228,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenter.Remote;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -234,6 +243,7 @@
 		};
 		C45461AC0EAC0BDFDAD36F7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF42665C0A7A85C0A778446 /* Version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -294,14 +304,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenter.Remote;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
