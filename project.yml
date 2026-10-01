@@ -96,6 +96,27 @@ targets:
           SWIFT_OPTIMIZATION_LEVEL: "-O"
           COPY_PHASE_STRIP: NO
 
+  # 순수 로직 단위 테스트. 앱을 호스트로 띄우지 않고 검사 대상 파일을 직접 컴파일한다 —
+  # 앱을 띄우면 메뉴 막대·패널·Bonjour 광고까지 켜져 테스트가 느려지고 흔들린다.
+  # 그래서 여기 넣는 파일은 AppKit 창이나 싱글턴에 기대지 않아야 한다 (TimerCore · NoteStore).
+  StickyPresenterTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: StickyPresenterTests
+      - path: StickyPresenter/TimerCore.swift
+      - path: StickyPresenter/NoteStore.swift
+      - path: Shared/Localization.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.leeo.StickyPresenterTests
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: QGAQ3AY3R3
+
 # 스킴을 명시하지 않으면 xcodegen 이 재생성할 때마다 xcshareddata 가 비워져
 # `xcodebuild -scheme StickyPresenter` 가 "does not contain a scheme" 로 실패한다.
 # (그동안은 Xcode 가 열릴 때 자동 생성해 준 추적되지 않는 파일에 의존하고 있었다)
@@ -106,5 +127,9 @@ schemes:
         StickyPresenter: all
     run:
       config: Debug
+    test:
+      config: Debug
+      targets:
+        - StickyPresenterTests
     archive:
       config: Release

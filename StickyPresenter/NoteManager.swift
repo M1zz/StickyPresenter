@@ -1,5 +1,6 @@
 import SwiftUI
 import AppKit
+import Combine
 
 // MARK: - Screen Map
 //
@@ -19,6 +20,19 @@ enum ScreenMap {
         let frames = NSScreen.screens.map(\.visibleFrame)
         guard let first = frames.first else { return .zero }
         return frames.dropFirst().reduce(first) { $0.union($1) }
+    }
+
+    /// 새 창을 놓을 기본 화면의 `visibleFrame`. 화면 정보를 못 얻으면(디스플레이가 잠든 채
+    /// 로그인 항목으로 켜질 때 등) `.zero` 를 돌려준다 — 화면 배열을 바로 첨자로 읽으면 트랩한다.
+    static func mainVisibleFrame() -> CGRect {
+        (NSScreen.main ?? NSScreen.screens.first)?.visibleFrame ?? .zero
+    }
+
+    /// `mainVisibleFrame` 의 `frame` 판. 비어 있으면 흔한 노트북 해상도로 가정한다 —
+    /// 창을 어딘가에는 놓아야 하고, 화면이 붙으면 사용자가 옮길 수 있다.
+    static func mainFrame() -> CGRect {
+        let frame = (NSScreen.main ?? NSScreen.screens.first)?.frame ?? .zero
+        return frame.isEmpty ? CGRect(x: 0, y: 0, width: 1440, height: 900) : frame
     }
 
     /// 리모컨에 보낼 화면 배치.
@@ -70,7 +84,23 @@ class NoteManager: ObservableObject {
     static let shared = NoteManager()
 
     @Published var notes: [StickyNote] = []
-    @Published var defaultColor: NoteColor = .yellow
+    /// 새 노트의 기본 색. 메뉴에서 고른 값을 다음 실행에도 기억한다.
+    @Published var defaultColor: NoteColor = NoteColor(
+        rawValue: UserDefaults.standard.string(forKey: "note.defaultColor") ?? ""
+    ) ?? .yellow {
+        didSet { UserDefaults.standard.set(defaultColor.rawValue, forKey: "note.defaultColor") }
+    }
+
+    // MARK: 저장
+    private let store = NoteFileStore.default
+    /// 닫은 노트 — 메뉴의 "닫은 노트 다시 열기"가 꺼내 쓴다. 노트와 같은 파일에 저장된다.
+    private var recentlyClosed: [NoteRecord] = []
+    /// 노트 내용이 바뀔 때마다 저장을 예약하는 구독, 창 이동·크기 변경 관찰자.
+    private var noteObservers: [UUID: [Any]] = [:]
+    private var pendingSave: DispatchWorkItem?
+
+    /// 되살릴 노트가 있는지 — 메뉴 항목을 켜고 끄는 데 쓴다.
+    var canReopenClosedNote: Bool { !recentlyClosed.isEmpty }
 
     private var teleprompterPanel: NSPanel?
     private var timerListPanel: NSPanel?
@@ -191,6 +221,126 @@ class NoteManager: ObservableObject {
         let note = StickyNote(text: text, color: color, position: position, size: size)
         notes.append(note)
         showNote(note)
+        scheduleSave()
+    }
+
+    /// 기본 화면의 무작위 자리에 새 노트를 만든다. (메뉴 · 단축키 · 타이머 패널 버튼 공용)
+    func addNoteAtRandomPosition(text: String = "") {
+        let size = CGSize(width: 280, height: 220)
+        let origin = randomNoteOrigin(in: ScreenMap.mainVisibleFrame(), noteSize: size)
+        addNote(text: text, color: defaultColor, position: origin, size: size)
+    }
+
+    // MARK: - Persistence
+
+    /// 지난 실행의 노트를 되살린다. 되살린 노트가 있으면 true.
+    ///
+    /// 앱 시작 때 한 번만 부른다. 저장 파일이 깨져 있었다면 옆에 옮겨 두고 알린다 —
+    /// 조용히 빈 화면으로 시작하면 사용자는 노트가 왜 사라졌는지 알 길이 없다.
+    @discardableResult
+    func restoreNotes() -> Bool {
+        switch store.load() {
+        case .empty:
+            return false
+        case .recovered(let backup):
+            let alert = NSAlert()
+            alert.messageText = L("alert.notesCorrupt.title")
+            alert.informativeText = L("alert.notesCorrupt.message", backup.lastPathComponent)
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: L("alert.ok"))
+            alert.addButton(withTitle: L("alert.notesCorrupt.reveal"))
+            NSApp.activate(ignoringOtherApps: true)
+            if alert.runModal() == .alertSecondButtonReturn {
+                NSWorkspace.shared.activateFileViewerSelecting([backup])
+            }
+            return false
+        case .loaded(let archive):
+            recentlyClosed = archive.recentlyClosed
+            for record in archive.notes where !notes.contains(where: { $0.id == record.id }) {
+                let note = StickyNote(record: record)
+                placeOnVisibleScreen(note)
+                notes.append(note)
+                showNote(note)
+            }
+            return !archive.notes.isEmpty
+        }
+    }
+
+    /// 저장된 자리가 지금 붙은 화면 밖이면 기본 화면 안으로 데려온다.
+    private func placeOnVisibleScreen(_ note: StickyNote) {
+        let frame = visibleNoteFrame(CGRect(origin: note.position, size: note.size),
+                                     screens: NSScreen.screens.map(\.visibleFrame),
+                                     fallback: ScreenMap.mainVisibleFrame())
+        note.position = frame.origin
+        note.size = frame.size
+    }
+
+    /// 잠시 뒤 한 번에 저장한다. 타이핑처럼 잦은 변경이 매번 디스크를 건드리지 않게 모은다.
+    func scheduleSave() {
+        pendingSave?.cancel()
+        let work = DispatchWorkItem { [weak self] in self?.saveNow() }
+        pendingSave = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6, execute: work)
+    }
+
+    /// 지금 바로 저장한다. 앱이 끝날 때처럼 기다릴 수 없을 때 쓴다.
+    func saveNow() {
+        pendingSave?.cancel()
+        pendingSave = nil
+        let archive = NoteArchive(notes: notes.map(\.record), recentlyClosed: recentlyClosed)
+        do {
+            try store.save(archive)
+        } catch {
+            NSLog("StickyPresenter: failed to save notes — \(error.localizedDescription)")
+        }
+    }
+
+    /// 노트의 변경(글·색·투명도·잠금)과 창의 이동·크기 변경을 저장으로 잇는다.
+    private func observe(_ note: StickyNote, panel: NSPanel) {
+        stopObserving(note)
+        let change = note.objectWillChange.sink { [weak self] _ in self?.scheduleSave() }
+        let center = NotificationCenter.default
+        let frameChanged: (Notification) -> Void = { [weak self, weak note, weak panel] _ in
+            guard let note, let panel else { return }
+            note.position = panel.frame.origin
+            note.size = panel.frame.size
+            self?.scheduleSave()
+        }
+        let moved = center.addObserver(forName: NSWindow.didMoveNotification, object: panel,
+                                       queue: .main, using: frameChanged)
+        let resized = center.addObserver(forName: NSWindow.didEndLiveResizeNotification, object: panel,
+                                         queue: .main, using: frameChanged)
+        noteObservers[note.id] = [change, moved, resized]
+    }
+
+    private func stopObserving(_ note: StickyNote) {
+        for token in noteObservers.removeValue(forKey: note.id) ?? [] {
+            if let cancellable = token as? AnyCancellable {
+                cancellable.cancel()
+            } else {
+                NotificationCenter.default.removeObserver(token)
+            }
+        }
+    }
+
+    // MARK: - Reopen Closed Note
+
+    /// 가장 최근에 닫은 노트를 원래 자리에 다시 띄운다.
+    func reopenLastClosedNote() {
+        var archive = NoteArchive(recentlyClosed: recentlyClosed)
+        guard let record = archive.popClosed() else { return }
+        recentlyClosed = archive.recentlyClosed
+        let note = StickyNote(record: record)
+        placeOnVisibleScreen(note)
+        notes.append(note)
+        showNote(note)
+        scheduleSave()
+    }
+
+    private func stashClosed(_ closing: [StickyNote]) {
+        var archive = NoteArchive(recentlyClosed: recentlyClosed)
+        archive.stashClosed(closing.map(\.record))
+        recentlyClosed = archive.recentlyClosed
     }
 
     // MARK: - Show Single Note
@@ -213,27 +363,36 @@ class NoteManager: ObservableObject {
         )
         panel.orderFront(nil)
         note.panel = panel
+        observe(note, panel: panel)
     }
 
     func showAllNotes() { for note in notes { showNote(note) } }
     func hideAllNotes() { for note in notes { note.panel?.orderOut(nil) } }
 
+    /// 노트를 닫는다. 글이 있던 노트는 되살리기 목록에 남는다 — 발표 중 손이 미끄러져
+    /// 닫기 버튼을 눌러도 메뉴의 "닫은 노트 다시 열기"로 그대로 돌아온다.
     func removeNote(_ note: StickyNote) {
+        stashClosed([note])     // 창이 닫히기 전에 — 저장 형태가 창의 실제 자리를 읽는다
+        stopObserving(note)
         let panel = note.panel
         note.panel = nil
         // contentView = nil 동기 실행: SwiftUI 구독 즉시 해제 후 notes 변경
         panel?.contentView = nil
         notes.removeAll { $0.id == note.id }
         DispatchQueue.main.async { panel?.close() }
+        scheduleSave()
     }
 
     func removeAllNotes() {
+        stashClosed(notes)
+        notes.forEach(stopObserving)
         let panelsToClose = notes.compactMap { $0.panel }
         for note in notes { note.panel = nil }
         // contentView = nil 동기 실행 후 notes 변경
         panelsToClose.forEach { $0.contentView = nil }
         notes.removeAll()
         DispatchQueue.main.async { panelsToClose.forEach { $0.close() } }
+        scheduleSave()
     }
 
     // MARK: - Global Hotkey toggle (⌘⌃T)
@@ -263,8 +422,7 @@ class NoteManager: ObservableObject {
             existing.orderFront(nil)
             return
         }
-        let screen = NSScreen.main ?? NSScreen.screens[0]
-        let sf = screen.frame
+        let sf = ScreenMap.mainFrame()
         let w: CGFloat = 360, h: CGFloat = 380
         let frame = NSRect(x: sf.maxX - w - 40, y: sf.maxY - h - 80, width: w, height: h)
         let panel = createTimerListPanel(frame: frame)
@@ -294,8 +452,7 @@ class NoteManager: ObservableObject {
 
     // MARK: - Timer Widget
     func showTimerWidget(for entry: TimerEntry) {
-        let screen = NSScreen.main ?? NSScreen.screens[0]
-        let sf = screen.frame
+        let sf = ScreenMap.mainFrame()
         let side: CGFloat = 200   // 시간만 표시하는 정사각형 위젯
         let offset = CGFloat(timerWidgetWindows.count) * 24
         let x = sf.maxX - side - 360 - offset
@@ -369,7 +526,7 @@ class NoteManager: ObservableObject {
         let y = listFrame.maxY - wSize.height - index * (wSize.height + gap)
 
         // 화면 안으로 클램핑
-        let sf = (widgetPanel.screen ?? NSScreen.main ?? NSScreen.screens[0]).visibleFrame
+        let sf = widgetPanel.screen?.visibleFrame ?? ScreenMap.mainVisibleFrame()
         let clampedX = max(sf.minX, min(x, sf.maxX - wSize.width))
         let clampedY = max(sf.minY, min(y, sf.maxY - wSize.height))
 
@@ -416,8 +573,8 @@ class NoteManager: ObservableObject {
             existing.orderFront(nil)
             return
         }
-        let screen = NSScreen.main ?? NSScreen.screens[0]
-        let sf = screen.visibleFrame
+        var sf = ScreenMap.mainVisibleFrame()
+        if sf.isEmpty { sf = ScreenMap.mainFrame() }
         let side: CGFloat = 200   // 타이머 콘텐츠 정사각형 크기
         let frame = NSRect(x: sf.midX - side / 2, y: sf.midY - side / 2, width: side, height: side)
 
@@ -482,8 +639,7 @@ class NoteManager: ObservableObject {
     // MARK: - Teleprompter
     func openTeleprompter(with text: String) {
         closeTeleprompter()
-        let screen = NSScreen.main ?? NSScreen.screens[0]
-        let sf = screen.frame
+        let sf = ScreenMap.mainFrame()
         let w: CGFloat = 600, h: CGFloat = 400
         let frame = NSRect(x: (sf.width - w) / 2, y: sf.height - h - 80, width: w, height: h)
         let panel = createFloatingPanel(frame: frame)

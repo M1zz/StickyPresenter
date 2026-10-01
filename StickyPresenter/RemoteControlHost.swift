@@ -256,6 +256,9 @@ final class RemoteControlHost: NSObject, ObservableObject {
             manager.timerListManager.remove(e)
 
         case .addPreset(let seconds, let name):
+            // 네트워크로 들어온 값이다 — 입력창과 같은 범위(1초 ~ 99:59:59) 밖이면 받지 않는다.
+            // 상한 없이 받으면 시간 표기에서 Int 변환이 트랩한다 (TimerCore.maxTimerSeconds).
+            guard seconds.isFinite, seconds >= 1, seconds <= maxTimerSeconds else { return }
             let e = TimerEntry(name: name, targetSeconds: seconds)
             e.setRunning(true)
             manager.timerListManager.add(e)

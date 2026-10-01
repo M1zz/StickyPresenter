@@ -51,6 +51,8 @@ struct StickyNoteView: View {
                         )
                 }
                 .buttonStyle(.plain)
+                .help(L("note.close.help"))
+                .accessibilityLabel(L("note.close"))
 
                 // Color picker button
                 Button(action: { showColorPicker.toggle() }) {
@@ -60,6 +62,8 @@ struct StickyNoteView: View {
                         .overlay(Circle().stroke(Color.white.opacity(0.5), lineWidth: 0.5))
                 }
                 .buttonStyle(.plain)
+                .help(L("note.color.help"))
+                .accessibilityLabel(L("note.color.help"))
                 .popover(isPresented: $showColorPicker) {
                     colorPickerPopover
                 }
@@ -76,6 +80,8 @@ struct StickyNoteView: View {
                         )
                 }
                 .buttonStyle(.plain)
+                .help(L("note.opacity.help"))
+                .accessibilityLabel(L("note.opacity.help"))
                 .popover(isPresented: $showOpacitySlider) {
                     opacityPopover
                 }
@@ -93,6 +99,8 @@ struct StickyNoteView: View {
                         .background(RoundedRectangle(cornerRadius: 3).fill(note.color.headerColor.opacity(0.4)))
                 }
                 .buttonStyle(.plain)
+                .help(L("note.fontSmaller"))
+                .accessibilityLabel(L("note.fontSmaller"))
 
                 Text("\(Int(note.fontSize))")
                     .font(.system(size: 9, design: .monospaced))
@@ -107,6 +115,8 @@ struct StickyNoteView: View {
                         .background(RoundedRectangle(cornerRadius: 3).fill(note.color.headerColor.opacity(0.4)))
                 }
                 .buttonStyle(.plain)
+                .help(L("note.fontLarger"))
+                .accessibilityLabel(L("note.fontLarger"))
 
                 // Lock toggle
                 Button(action: { note.isLocked.toggle() }) {
@@ -116,6 +126,7 @@ struct StickyNoteView: View {
                 }
                 .buttonStyle(.plain)
                 .help(note.isLocked ? L("Unlock editing") : L("Lock editing"))
+                .accessibilityLabel(note.isLocked ? L("Unlock editing") : L("Lock editing"))
             }
         }
         .padding(.horizontal, 10)
@@ -191,6 +202,7 @@ struct StickyNoteView: View {
                         )
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel(color.localizedName)
             }
         }
         .padding(12)

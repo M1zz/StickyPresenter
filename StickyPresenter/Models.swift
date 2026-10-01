@@ -27,6 +27,9 @@ enum NoteColor: String, CaseIterable, Codable {
         }
     }
     
+    /// 접근성 라벨·메뉴에 쓰는 이름 (이모지 없이).
+    var localizedName: String { L("colorName.\(rawValue)") }
+
     var textColor: Color {
         return Color(red: 0.2, green: 0.2, blue: 0.2)
     }
@@ -48,8 +51,10 @@ class StickyNote: ObservableObject, Identifiable {
     let id: UUID
     @Published var text: String
     @Published var color: NoteColor
-    @Published var position: CGPoint
-    @Published var size: CGSize
+    // 자리·크기는 창이 들고 있고, 여기는 저장용 사본이다. 화면이 이 값을 그리지 않으므로
+    // `@Published` 로 두면 창을 끄는 매 순간 노트 뷰가 쓸데없이 다시 그려진다.
+    var position: CGPoint
+    var size: CGSize
     @Published var opacity: Double
     @Published var fontSize: CGFloat
     @Published var isLocked: Bool
@@ -77,5 +82,38 @@ class StickyNote: ObservableObject, Identifiable {
         self.fontSize = fontSize
         self.isLocked = isLocked
         self.isPinned = isPinned
+    }
+}
+
+// MARK: - Persistence bridge
+
+extension NoteColor {
+    init(_ key: NoteColorKey) { self = NoteColor(rawValue: key.rawValue) ?? .yellow }
+    var key: NoteColorKey { NoteColorKey(rawValue: rawValue) ?? .yellow }
+}
+
+extension StickyNote {
+    convenience init(record r: NoteRecord) {
+        self.init(
+            id: r.id,
+            text: r.text,
+            color: NoteColor(r.color),
+            position: CGPoint(x: r.x, y: r.y),
+            size: CGSize(width: r.width, height: r.height),
+            opacity: r.opacity,
+            fontSize: CGFloat(r.fontSize),
+            isLocked: r.isLocked
+        )
+    }
+
+    /// 지금 모습 그대로의 저장 형태. 창이 떠 있으면 창의 실제 자리를 쓴다 —
+    /// 사용자가 끌어 옮긴 뒤 아직 `position` 이 갱신되지 않았을 수 있어서다.
+    var record: NoteRecord {
+        let frame = panel?.frame ?? CGRect(origin: position, size: size)
+        return NoteRecord(
+            id: id, text: text, color: color.key,
+            x: frame.minX, y: frame.minY, width: frame.width, height: frame.height,
+            opacity: opacity, fontSize: Double(fontSize), isLocked: isLocked
+        )
     }
 }

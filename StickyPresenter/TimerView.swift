@@ -43,19 +43,6 @@ struct TimerPreset: Identifiable, Equatable {
     var label: String { shortTimeLabel(seconds) }
 }
 
-/// 프리셋 버튼·뽀모도로 라벨에 쓰는 짧은 시간 표기.
-func shortTimeLabel(_ t: TimeInterval) -> String {
-    let total = Int(t.rounded())
-    if total >= 3600 {
-        let h = total / 3600, m = (total % 3600) / 60, s = total % 60
-        if m == 0 && s == 0 { return "\(h)h" }
-        if s == 0 { return "\(h)h \(m)m" }
-        return String(format: "%d:%02d:%02d", h, m, s)
-    }
-    if total > 0 && total % 60 == 0 { return "\(total / 60)m" }
-    return total >= 60 ? String(format: "%d:%02d", total / 60, total % 60) : "\(total)s"
-}
-
 // MARK: - Quick Preset Store
 /// 프리셋 목록의 단일 출처. 값은 UserDefaults 에 **원문 배열**로 저장한다 —
 /// 초로 환산해 저장하면 "1h 20m" 이라고 적은 걸 다시 열었을 때 "80m" 으로 바뀌어 보인다.
@@ -149,46 +136,6 @@ enum WidgetTheme: String, CaseIterable {
     }
 }
 
-// MARK: - Pomodoro
-/// 뽀모도로 구간 — 집중과 휴식 둘뿐이며 서로를 무한히 오간다.
-enum PomodoroPhase {
-    case focus
-    case rest
-
-    var title: String { self == .focus ? L("pomodoro.focus") : L("pomodoro.break") }
-    var icon: String { self == .focus ? "brain.head.profile" : "cup.and.saucer.fill" }
-    var next: PomodoroPhase { self == .focus ? .rest : .focus }
-
-    /// 집중은 토마토색, 휴식은 민트색 — 위젯을 흘깃 봐도 지금이 어느 구간인지 알 수 있게.
-    var color: Color {
-        self == .focus
-            ? Color(red: 0.91, green: 0.30, blue: 0.24)
-            : Color(red: 0.16, green: 0.68, blue: 0.53)
-    }
-}
-
-/// 집중 ↔ 휴식 길이. 이 설정을 가진 타이머는 완료 없이 두 구간을 계속 반복한다.
-struct PomodoroConfig: Equatable {
-    var focusSeconds: TimeInterval
-    var breakSeconds: TimeInterval
-
-    func seconds(for phase: PomodoroPhase) -> TimeInterval {
-        max(1, phase == .focus ? focusSeconds : breakSeconds)
-    }
-
-    /// "25m/5m" 형태의 짧은 이름 (행·위젯 제목용)
-    var label: String { "\(Self.shortUnit(focusSeconds))/\(Self.shortUnit(breakSeconds))" }
-
-    private static func shortUnit(_ t: TimeInterval) -> String {
-        let total = Int(t.rounded())
-        if total % 60 == 0 { return "\(total / 60)m" }
-        return total >= 60 ? String(format: "%d:%02d", total / 60, total % 60) : "\(total)s"
-    }
-
-    /// 메뉴바 · ⌘⌃B로 시작하는 기본값 (25분 집중 / 5분 휴식)
-    static let classic = PomodoroConfig(focusSeconds: 25 * 60, breakSeconds: 5 * 60)
-}
-
 // MARK: - Timer Entry (Model)
 class TimerEntry: ObservableObject, Identifiable {
     let id = UUID()
@@ -246,6 +193,8 @@ class TimerEntry: ObservableObject, Identifiable {
     // SwiftUI가 @ObservedObject 구독을 해제하는 타이밍과 충돌 시 crash 발생.
     // Foundation Timer.invalidate()는 RunLoop에서 즉시 동기적으로 제거되므로 안전함.
     private var ticker: Foundation.Timer?
+    /// 틱 사이에 실제로 흐른 시간을 세는 벽시계. 실행 중일 때만 의미가 있다.
+    private var clock = TickClock()
 
     init(name: String, targetSeconds: TimeInterval, pomodoro: PomodoroConfig? = nil) {
         self.name = name
@@ -273,7 +222,7 @@ class TimerEntry: ObservableObject, Identifiable {
 
     func addSeconds(_ s: TimeInterval = 30) {
         guard !isInvalidated else { return }
-        targetSeconds += s
+        targetSeconds = min(targetSeconds + s, maxTimerSeconds)
         WidgetSync.refresh()
     }
 
@@ -285,7 +234,7 @@ class TimerEntry: ObservableObject, Identifiable {
 
     func addMinute() {
         guard !isInvalidated else { return }
-        targetSeconds += 60
+        targetSeconds = min(targetSeconds + 60, maxTimerSeconds)
         WidgetSync.refresh()
     }
 
@@ -299,7 +248,7 @@ class TimerEntry: ObservableObject, Identifiable {
         // 프리셋으로 다시 쓰면 한 번 울리고 끝나는 일반 타이머가 된다.
         pomodoro = nil
         elapsed = 0
-        targetSeconds = max(1, seconds)
+        targetSeconds = min(max(1, seconds), maxTimerSeconds)
         if let newName { name = newName }
         setRunning(true)   // 내부에서 WidgetSync·MusicPlayer 동기화까지 처리
     }
@@ -335,14 +284,21 @@ class TimerEntry: ObservableObject, Identifiable {
 
     private func startTicker() {
         guard ticker == nil else { return }
+        clock = TickClock()
         // Timer(timeInterval:repeats:block:)으로 생성 후 .common 모드로 직접 등록.
         // .common은 UI 인터랙션 중에도 타이머가 발화하도록 함.
         let t = Foundation.Timer(timeInterval: 1, repeats: true) { [weak self] _ in
             guard let self, !self.isInvalidated else { return }
-            self.elapsed += 1
+            // 1초씩 더하지 않고 실제로 흐른 초를 더한다 — 잠자기·메인 스레드 지연에도
+            // 발표 타이머가 실제 시각에 맞춰 끝나도록 (TickClock 주석 참고).
+            let passed = self.clock.consume()
+            guard passed > 0 else { return }
+            self.elapsed = min(self.elapsed + TimeInterval(passed), self.targetSeconds)
             guard self.elapsed >= self.targetSeconds else { return }
 
             // 뽀모도로는 멈추지 않는다 — 집중이 끝나면 휴식으로, 휴식이 끝나면 다시 집중으로.
+            // 잠자기처럼 한 구간보다 길게 건너뛰었어도 한 구간만 넘긴다. 깨어난 사람이
+            // 지금 어느 구간인지 따라갈 수 있어야 하고, 알림음이 연달아 쏟아지면 안 된다.
             if let config = self.pomodoro {
                 self.advancePomodoroPhase(config)
                 return
@@ -435,67 +391,12 @@ class TimerListManager: ObservableObject {
     }
 }
 
-// MARK: - Parse input text → seconds
-func parseTimerInput(_ raw: String) -> TimeInterval {
-    let text = raw.trimmingCharacters(in: .whitespaces).lowercased()
-    guard !text.isEmpty else { return 0 }
-
-    // 1. 콜론 형식: M:SS 또는 H:MM:SS
-    let colonRegex = try? NSRegularExpression(pattern: "^(\\d+):(\\d{1,2})(?::(\\d{1,2}))?$")
-    if let match = colonRegex?.firstMatch(in: text, range: NSRange(text.startIndex..., in: text)) {
-        let vals = (1...3).compactMap { i -> Double? in
-            guard let r = Range(match.range(at: i), in: text) else { return nil }
-            return Double(text[r])
-        }
-        if vals.count == 2 { return vals[0] * 60 + vals[1] }
-        if vals.count == 3 { return vals[0] * 3600 + vals[1] * 60 + vals[2] }
-    }
-
-    // 2. 단어/축약 형식
-    var total: TimeInterval = 0
-    let patterns: [(String, TimeInterval)] = [
-        ("(\\d+)\\s*hours?",     3600),
-        ("(\\d+)\\s*hr",         3600),
-        ("(\\d+)\\s*h(?![a-z])", 3600),
-        ("(\\d+)\\s*minutes?",   60),
-        ("(\\d+)\\s*mins?",      60),
-        ("(\\d+)\\s*m(?![a-z])", 60),
-        ("(\\d+)\\s*seconds?",   1),
-        ("(\\d+)\\s*secs?",      1),
-        ("(\\d+)\\s*s(?![a-z])", 1),
-    ]
-    for (pattern, mul) in patterns {
-        guard let regex = try? NSRegularExpression(pattern: pattern) else { continue }
-        for match in regex.matches(in: text, range: NSRange(text.startIndex..., in: text)) {
-            if let r = Range(match.range(at: 1), in: text), let v = Double(text[r]) {
-                total += v * mul
-            }
-        }
-    }
-    if total > 0 { return total }
-
-    // 3. 순수 숫자 → 분
-    if let v = Double(text), v > 0 { return v * 60 }
-
-    return 0
-}
-
-// MARK: - Parse pomodoro input ("25/5", "50m / 10m", "1:30/5")
-/// 슬래시로 나뉜 두 시간을 각각 집중·휴식으로 읽는다. 한쪽이라도 해석되지 않으면 nil.
-func parsePomodoroInput(_ raw: String) -> PomodoroConfig? {
-    let parts = raw.split(separator: "/", maxSplits: 1, omittingEmptySubsequences: false)
-    guard parts.count == 2 else { return nil }
-    let focus = parseTimerInput(String(parts[0]))
-    let rest  = parseTimerInput(String(parts[1]))
-    guard focus > 0, rest > 0 else { return nil }
-    return PomodoroConfig(focusSeconds: focus, breakSeconds: rest)
-}
-
 // MARK: - Timer List View (main panel)
 struct TimerListView: View {
     @ObservedObject var manager: TimerListManager
     @ObservedObject private var presetStore = TimerPresetStore.shared
     @State private var inputText = ""
+    @State private var showInputHelp = false
     @FocusState private var focused: Bool
 
     private var parsedSeconds: TimeInterval {
@@ -554,6 +455,23 @@ struct TimerListView: View {
                             }
                             .buttonStyle(.plain)
                             .transition(.scale(scale: 0.6).combined(with: .opacity))
+                        } else {
+                            // 입력 형식 안내 — "25/5" 뽀모도로처럼 눈에 보이지 않는 문법이 있다.
+                            Button(action: { showInputHelp.toggle() }) {
+                                Image(systemName: "questionmark.circle")
+                                    .font(.system(size: 13))
+                                    .foregroundStyle(.secondary)
+                            }
+                            .buttonStyle(.plain)
+                            .help(L("timer.inputHelp.tooltip"))
+                            .accessibilityLabel(L("timer.inputHelp.tooltip"))
+                            .popover(isPresented: $showInputHelp, arrowEdge: .bottom) {
+                                TimerInputHelpView { example in
+                                    inputText = example
+                                    showInputHelp = false
+                                    focused = true
+                                }
+                            }
                         }
                     }
                     .padding(.horizontal, 12)
@@ -702,14 +620,53 @@ struct TimerListView: View {
     }
 
     private func addNewStickyNote() {
-        let screenFrame = NSScreen.main?.visibleFrame ?? .zero
-        let randomX = CGFloat.random(in: screenFrame.minX + 50...screenFrame.maxX - 300)
-        let randomY = CGFloat.random(in: screenFrame.minY + 50...screenFrame.maxY - 250)
-        NoteManager.shared.addNote(
-            text: "",
-            color: NoteManager.shared.defaultColor,
-            position: CGPoint(x: randomX, y: randomY)
-        )
+        NoteManager.shared.addNoteAtRandomPosition()
+    }
+}
+
+// MARK: - Timer Input Help
+/// 입력창이 알아듣는 형식 목록. 예시를 누르면 입력창에 채워 준다 — 읽고 따라 치는 것보다
+/// 한 번 눌러 미리보기 문구가 어떻게 바뀌는지 보는 편이 빨리 익는다.
+struct TimerInputHelpView: View {
+    let onPick: (String) -> Void
+
+    private let examples: [(String, String)] = [
+        ("10", "timer.inputHelp.minutes"),
+        ("5:30", "timer.inputHelp.colon"),
+        ("1:15:00", "timer.inputHelp.hms"),
+        ("1h 20m", "timer.inputHelp.units"),
+        ("45s", "timer.inputHelp.seconds"),
+        ("25/5", "timer.inputHelp.pomodoro"),
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(L("timer.inputHelp.title"))
+                .font(.system(size: 12, weight: .semibold))
+            ForEach(examples.indices, id: \.self) { i in
+                let (example, key) = examples[i]
+                Button(action: { onPick(example) }) {
+                    HStack(spacing: 10) {
+                        Text(example)
+                            .font(.system(size: 12, weight: .semibold, design: .monospaced))
+                            .frame(width: 64, alignment: .leading)
+                        Text(L(key))
+                            .font(.system(size: 11))
+                            .foregroundStyle(.secondary)
+                        Spacer(minLength: 0)
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+            }
+            Divider()
+            Text(L("timer.inputHelp.footer"))
+                .font(.system(size: 10))
+                .foregroundStyle(.tertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(14)
+        .frame(width: 280)
     }
 }
 
@@ -802,7 +759,7 @@ struct TimerRowView: View {
                     // 3행 — 테마 · (빈칸) · 삭제
                     HStack(spacing: 6) {
                         // 테마 전환 (시스템 → 라이트 → 다크 순환)
-                        Button(action: { entry.theme = entry.theme.next }) {
+                        Button(action: advanceTheme) {
                             Image(systemName: entry.theme.icon)
                                 .modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
                         }
@@ -906,6 +863,16 @@ struct TimerRowView: View {
 
     // 표시/감추기 토글: Show는 숨긴 그 자리에서 그대로 다시 보이게 함 (위치 이동 없음).
     // 위치 정렬은 Align 버튼 전용.
+    /// 다음 테마로. 카멜레온 차례인데 화면 기록 권한이 없으면 먼저 이유를 설명하고,
+    /// 사용자가 건너뛰면 카멜레온을 지나 다음 테마로 간다.
+    private func advanceTheme() {
+        var next = entry.theme.next
+        if next == .chameleon, !ScreenCapturePrimer.confirmChameleon() {
+            next = next.next
+        }
+        entry.theme = next
+    }
+
     private func toggleWidgetVisibility() {
         if entry.isWidgetHidden {
             entry.widgetPanel?.orderFront(nil)

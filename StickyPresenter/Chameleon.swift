@@ -318,3 +318,40 @@ extension NSScreen {
         deviceDescription[NSDeviceDescriptionKey("NSScreenNumber")] as? CGDirectDisplayID
     }
 }
+
+// MARK: - Permission Primer
+/// 카멜레온 테마로 넘어가기 전에 화면 기록 권한이 왜 필요한지 먼저 설명한다.
+///
+/// 예전에는 테마 버튼을 누르는 순간 시스템의 "화면 기록" 경고가 설명 없이 떴다.
+/// 타이머 앱이 화면을 녹화하겠다고 하면 놀라서 거부하기 쉽고, 한 번 거부하면 시스템이
+/// 다시 묻지 않아 카멜레온이 조용히 동작하지 않는다 (`ChameleonSampler.isDenied`).
+@MainActor
+enum ScreenCapturePrimer {
+    /// 권한이 이미 있으면 바로 true. 없으면 설명을 보여 주고, 사용자가 계속하기로 하면 true.
+    /// false 면 카멜레온을 건너뛴다.
+    static func confirmChameleon() -> Bool {
+        if CGPreflightScreenCaptureAccess() { return true }
+
+        let alert = NSAlert()
+        alert.messageText = L("chameleon.permission.title")
+        alert.informativeText = L("chameleon.permission.message")
+        alert.alertStyle = .informational
+        alert.addButton(withTitle: L("chameleon.permission.continue"))
+        alert.addButton(withTitle: L("chameleon.permission.openSettings"))
+        alert.addButton(withTitle: L("chameleon.permission.skip"))
+        NSApp.activate(ignoringOtherApps: true)
+
+        switch alert.runModal() {
+        case .alertFirstButtonReturn:
+            return true     // 시스템 프롬프트는 카멜레온 루프가 띄운다 (ensureAuthorization)
+        case .alertSecondButtonReturn:
+            // 한 번 거부한 사람은 시스템 설정에서 직접 켜야 한다 — 그 화면으로 바로 보낸다.
+            if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture") {
+                NSWorkspace.shared.open(url)
+            }
+            return true
+        default:
+            return false
+        }
+    }
+}

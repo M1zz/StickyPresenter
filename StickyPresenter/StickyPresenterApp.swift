@@ -12,8 +12,10 @@ struct StickyPresenterApp: App {
     }
 
     var body: some Scene {
+        // 메뉴 막대 앱이라 이 장면을 여는 길은 없다 — App 에 장면이 하나는 있어야 해서 둔다.
+        // 실제 설정 창은 AppDelegate.showSettings() 가 띄운다.
         Settings {
-            StickyPresenterSupportView()
+            SettingsView(onShowGuide: { (NSApp.delegate as? AppDelegate)?.showGuide() })
                 .leeoSatisfactionCheck(StickyPresenterSpec.self)
         }
     }
@@ -24,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
     var noteManager = NoteManager.shared
     var settingsWindow: NSWindow?
+    var guideWindow: NSWindow?
     /// 리모컨 하위 메뉴. 연결 코드와 연결 수가 계속 바뀌므로 열릴 때마다 다시 그린다.
     var remoteMenu: NSMenu?
     
@@ -50,18 +53,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Hide dock icon — menu bar only app
         NSApp.setActivationPolicy(.accessory)
 
-        // 최초 실행 시에만 사용법 스티키 노트 표시
+        // 지난 실행의 노트를 되살린다. 노트는 바뀔 때마다 notes.json 에 저장된다 (NoteStore.swift).
+        noteManager.restoreNotes()
+
+        // 최초 실행 시에만 사용법 스티키 노트와 사용 가이드 창을 띄운다.
         let isFirstLaunch = !UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
         if isFirstLaunch {
             UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
-            let screenFrame = NSScreen.main?.visibleFrame ?? .zero
+            let screenFrame = ScreenMap.mainVisibleFrame()
             noteManager.addNote(
                 text: L("guide.note"),
                 color: .yellow,
                 position: CGPoint(x: screenFrame.minX + 60, y: screenFrame.midY - 100)
             )
-        } else {
-            noteManager.showAllNotes()
+            // 패널·노트가 자리 잡은 뒤에 띄워야 가이드 창이 맨 앞에 온다.
+            DispatchQueue.main.async { [weak self] in self?.showGuide() }
         }
 
         // 앱 시작 시 타이머 항상 열기
@@ -73,35 +79,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ notification: Notification) {
+        // 예약해 둔 저장(0.6초 뒤)을 기다릴 수 없다 — 방금 친 글자까지 지금 쓴다.
+        noteManager.saveNow()
         // 앱이 없으면 타이머도 멈춘 것 — 위젯에 남은 카운트다운을 정리한다.
         SharedTimerStore.save(nil)
     }
 
     // MARK: - Global Hotkeys (⌘⌃ prefix for all)
+    /// Carbon 전역 단축키로 등록한다 (GlobalHotKeys.swift). 예전의 NSEvent 전역 모니터는
+    /// 손쉬운 사용 권한이 없으면 Keynote 가 앞에 있을 때 키를 받지 못했다.
     private func setupGlobalHotkey() {
-        NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { [weak self] event in
-            self?.handleHotkeyEvent(event)
-        }
-        NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak self] event in
-            self?.handleHotkeyEvent(event)
-            return event
-        }
-    }
-
-    private func handleHotkeyEvent(_ event: NSEvent) {
-        let flags = event.modifierFlags.intersection(.deviceIndependentFlagsMask)
-        guard flags == [.command, .control] else { return }
-        DispatchQueue.main.async { [weak self] in
+        GlobalHotKeys.shared.register { [weak self] action in
             guard let self else { return }
-            switch event.keyCode {
-            case 45: self.addNewNote()           // ⌘⌃N
-            case 9:  self.addNoteFromClipboard() // ⌘⌃V
-            case 35: self.openTeleprompter()     // ⌘⌃P
-            case 17: self.noteManager.toggleTimerHotkey() // ⌘⌃T
-            case 11: self.noteManager.startPomodoro()     // ⌘⌃B
-            case 1:  self.noteManager.showAllNotes()      // ⌘⌃S
-            case 4:  self.noteManager.hideAllNotes()      // ⌘⌃H
-            default: break
+            switch action {
+            case .newNote:           self.addNewNote()
+            case .noteFromClipboard: self.addNoteFromClipboard()
+            case .teleprompter:      self.openTeleprompter()
+            case .timers:            self.noteManager.toggleTimerHotkey()
+            case .pomodoro:          self.noteManager.startPomodoro()
+            case .showNotes:         self.noteManager.showAllNotes()
+            case .hideNotes:         self.noteManager.hideAllNotes()
             }
         }
     }
@@ -147,6 +144,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let hideItem = NSMenuItem(title: L("menu.hideAll"), action: #selector(hideAllNotes), keyEquivalent: "h")
         hideItem.keyEquivalentModifierMask = [.command, .control]
         menu.addItem(hideItem)
+
+        // 닫은 노트 되살리기 — 되살릴 것이 없으면 흐리게 (validateMenuItem).
+        menu.addItem(NSMenuItem(title: L("menu.reopenClosed"), action: #selector(reopenClosedNote), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
         
         // Color submenu
@@ -188,13 +188,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         menu.addItem(NSMenuItem.separator())
 
-        // MARK: - Contact the Developer
-        let contactMenu = NSMenu()
-        contactMenu.addItem(NSMenuItem(title: L("menu.contact.email"), action: #selector(contactByEmail), keyEquivalent: ""))
-        contactMenu.addItem(NSMenuItem(title: L("menu.contact.instagram"), action: #selector(contactByInstagram), keyEquivalent: ""))
-        let contactItem = NSMenuItem(title: L("menu.contact"), action: nil, keyEquivalent: "")
-        contactItem.submenu = contactMenu
-        menu.addItem(contactItem)
+        // MARK: - Help
+        // 기능 설명·지원 페이지·문의를 한곳에. 문의는 원래 최상위에 있던 하위 메뉴를 옮겨 왔다.
+        let helpMenu = NSMenu()
+        helpMenu.addItem(NSMenuItem(title: L("menu.guide"), action: #selector(showGuide), keyEquivalent: ""))
+        helpMenu.addItem(NSMenuItem(title: L("menu.supportSite"), action: #selector(openSupportSite), keyEquivalent: ""))
+        helpMenu.addItem(NSMenuItem.separator())
+        helpMenu.addItem(NSMenuItem(title: L("menu.contact.email"), action: #selector(contactByEmail), keyEquivalent: ""))
+        helpMenu.addItem(NSMenuItem(title: L("menu.contact.instagram"), action: #selector(contactByInstagram), keyEquivalent: ""))
+        let helpItem = NSMenuItem(title: L("menu.help"), action: nil, keyEquivalent: "")
+        helpItem.submenu = helpMenu
+        menu.addItem(helpItem)
+
+        menu.addItem(NSMenuItem(title: L("menu.settings"), action: #selector(showSettings), keyEquivalent: ","))
 
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: L("menu.quit"), action: #selector(quitApp), keyEquivalent: "q"))
@@ -267,30 +273,73 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func addNewNote() {
-        let screenFrame = NSScreen.main?.visibleFrame ?? .zero
-        let randomX = CGFloat.random(in: screenFrame.minX + 50...screenFrame.maxX - 300)
-        let randomY = CGFloat.random(in: screenFrame.minY + 50...screenFrame.maxY - 250)
-        
-        noteManager.addNote(
-            text: "",
-            color: noteManager.defaultColor,
-            position: CGPoint(x: randomX, y: randomY)
-        )
+        noteManager.addNoteAtRandomPosition()
     }
-    
+
     @objc func addNoteFromClipboard() {
-        let pasteboard = NSPasteboard.general
-        let text = pasteboard.string(forType: .string) ?? ""
-        
-        let screenFrame = NSScreen.main?.visibleFrame ?? .zero
-        let randomX = CGFloat.random(in: screenFrame.minX + 50...screenFrame.maxX - 300)
-        let randomY = CGFloat.random(in: screenFrame.minY + 50...screenFrame.maxY - 250)
-        
-        noteManager.addNote(
-            text: text,
-            color: noteManager.defaultColor,
-            position: CGPoint(x: randomX, y: randomY)
+        noteManager.addNoteAtRandomPosition(text: NSPasteboard.general.string(forType: .string) ?? "")
+    }
+
+    @objc func reopenClosedNote() {
+        noteManager.reopenLastClosedNote()
+    }
+
+    // MARK: - Guide & Settings Windows
+
+    /// 사용 가이드 창. 이미 떠 있으면 앞으로 가져온다.
+    @objc func showGuide() {
+        if let guideWindow {
+            present(guideWindow)
+            return
+        }
+        let window = makeUtilityWindow(title: L("window.guide"))
+        window.contentView = NSHostingView(rootView: GuideView(onClose: { [weak window] in window?.close() }))
+        window.center()
+        guideWindow = window
+        present(window)
+    }
+
+    /// 설정 창 (⌘,).
+    @objc func showSettings() {
+        if let settingsWindow {
+            present(settingsWindow)
+            return
+        }
+        let window = makeUtilityWindow(title: L("settings.title"))
+        window.contentView = NSHostingView(rootView:
+            SettingsView(onShowGuide: { [weak self] in self?.showGuide() })
+                .leeoSatisfactionCheck(StickyPresenterSpec.self)
         )
+        window.center()
+        settingsWindow = window
+        present(window)
+    }
+
+    /// 일반 앱 창. 노트·타이머 패널(최상위 레벨)보다 아래지만 다른 앱 창보다는 위에 뜨도록
+    /// `.floating` 으로 둔다 — accessory 앱의 창은 다른 앱을 누르면 금세 뒤로 숨어 버린다.
+    private func makeUtilityWindow(title: String) -> NSWindow {
+        let window = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 480, height: 480),
+            styleMask: [.titled, .closable],
+            backing: .buffered,
+            defer: false
+        )
+        window.title = title
+        window.level = .floating
+        window.isReleasedWhenClosed = false  // Swift ARC와 충돌 방지 (이중 해제 크래시)
+        window.collectionBehavior = [.moveToActiveSpace, .fullScreenAuxiliary]
+        return window
+    }
+
+    private func present(_ window: NSWindow) {
+        NSApp.activate(ignoringOtherApps: true)
+        window.makeKeyAndOrderFront(nil)
+    }
+
+    @objc func openSupportSite() {
+        if let url = URL(string: "https://m1zz.github.io/StickyPresenter/support.html") {
+            NSWorkspace.shared.open(url)
+        }
     }
     
     @objc func openTimer() {
@@ -350,6 +399,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @objc func quitApp() {
         NSApp.terminate(nil)
+    }
+}
+
+// MARK: - NSMenuItemValidation
+
+extension AppDelegate: NSMenuItemValidation {
+    func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
+        switch menuItem.action {
+        case #selector(reopenClosedNote):
+            return noteManager.canReopenClosedNote
+        case #selector(setNextNoteColor(_:)):
+            // 지금 기본 색에 체크 표시 — 무엇이 골라져 있는지 메뉴만 봐도 알 수 있게.
+            let color = menuItem.representedObject as? NoteColor
+            menuItem.state = color == noteManager.defaultColor ? .on : .off
+            return true
+        default:
+            return true
+        }
     }
 }
 

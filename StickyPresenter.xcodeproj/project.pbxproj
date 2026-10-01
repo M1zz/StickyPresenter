@@ -11,31 +11,40 @@
 		10490E49D9FD3DC6069F101F /* TimerMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE47C9171723666D4987B6 /* TimerMusic.swift */; };
 		1E58EBD355CD262905414C5B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99E57239D4D71B87840235 /* TimerView.swift */; };
 		2E61AA6885F159A58591C278 /* StickyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BDEA48650FA7A04F708DB /* StickyNoteView.swift */; };
+		3FA28E76FC2A4BC08D77CD3A /* GlobalHotKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAEEDA08C1A4BFF91AE75F8 /* GlobalHotKeys.swift */; };
 		4520B10FC76C4332457425D1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B18F240C26BA63598B84FC /* Models.swift */; };
 		527464F65BA38CE5061C8CAF /* RemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E05D8C7A25A123688734D95 /* RemoteProtocol.swift */; };
 		566692F340340208C97269A2 /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9205B987B4BB72ED1752239A /* LeeoKit */; };
 		651F1EABC44F17252FC30D69 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867222F23B73DA3053C389C6 /* Localizable.strings */; };
+		663CD9EDB210A090210C8919 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5824EB647E0895095951927 /* GuideView.swift */; };
 		67CA2B74D4B805FEEA4EEB41 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693CDC6530CDA0FE07D952D5 /* WidgetBundle.swift */; };
 		67D3A00AFE0F87842E702003 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D466572AD7F3D57FAAA5F5E /* Widget.swift */; };
+		70BCE66460F7DED7CAFEF3F6 /* TimerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862BBC3F743F7EB985DBECE9 /* TimerCore.swift */; };
 		74C5E04A0EAFD46C9EDEC500 /* SharedTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9684AB311403806FC69164 /* SharedTimerStore.swift */; };
+		7BB7E24BBAE124472846CE8F /* TimerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862BBC3F743F7EB985DBECE9 /* TimerCore.swift */; };
 		913A9E80196553D08A72B789 /* StickyPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C95EA063E261ED87C0981 /* StickyPresenterSpec.swift */; };
 		9247BED7BC2C17F8896286B4 /* WidgetSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA15621F87984BF287F7FA /* WidgetSync.swift */; };
+		94BC1E989051F2259B5E5F1D /* NoteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987495B8A98BC8CE3F35D826 /* NoteStoreTests.swift */; };
 		9D6A8492D0BBAE1E570437AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E634D877A12C3F0D9819D2E /* InfoPlist.strings */; };
 		9FF93CE7F5C60CE0290F7437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FC43C738503D17298F0CA1 /* Assets.xcassets */; };
+		A9E321BD80F7EBA0B59A0CA4 /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F47FD18CEA1EE37E4824 /* NoteStore.swift */; };
 		A9EF416AACC3D9A7D56A6617 /* SharedTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9684AB311403806FC69164 /* SharedTimerStore.swift */; };
 		B5D0F89CCD92645255B1CB9A /* Chameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */; };
 		B5D2738A610477EAFEF6E4E1 /* StickyPresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */; };
 		B63BDC58CD1293E445AB75E6 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A806401B4BBE35486188185 /* Localization.swift */; };
-		BC840BD162FFD3FABCABF04E /* StickyPresenterSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833C5645EA406C1B6D374FD /* StickyPresenterSupportView.swift */; };
 		BD8A0E985F4D66222881B1A3 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4329275C9703866DAC1970 /* NoteManager.swift */; };
 		BE31FD5D6A30DDD8F23DAB90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C2E058AF8A1FEEEF2198FE /* Localizable.strings */; };
 		C49175346F5F311A0A3ADCFB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A806401B4BBE35486188185 /* Localization.swift */; };
 		C98F6A75B3B17F66D056B410 /* TimerSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67845E0D54867A0253FA4103 /* TimerSnapshot.swift */; };
+		CD2B192D329A506196BAF7F3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B3C7FA190F28E9F076E6D /* SettingsView.swift */; };
+		D0244E9101869D1179EAFC8F /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F47FD18CEA1EE37E4824 /* NoteStore.swift */; };
+		E47B5DA45D96A0E8FE9FD1D0 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A806401B4BBE35486188185 /* Localization.swift */; };
 		E9BFA213E83CB28DC1EA35A5 /* RemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E05D8C7A25A123688734D95 /* RemoteProtocol.swift */; };
 		EB726DD65BF02AA8752E7FAC /* RemoteControlHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F4580427FCCBD2EA23BB00 /* RemoteControlHost.swift */; };
 		F70D0A179ADFB07064549AF1 /* TeleprompterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071E9DE16ADEA99C6891E0B /* TeleprompterView.swift */; };
 		F9CA84B6EA1EA015CC5974F6 /* TimerSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67845E0D54867A0253FA4103 /* TimerSnapshot.swift */; };
 		FD24403C7B6C1997E5A41B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410D2C3E3B48D9CF561B79A0 /* Assets.xcassets */; };
+		FD6A714E61A86468E6ED7A9D /* TimerCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9078113A530A93CFC52F7438 /* TimerCoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +74,9 @@
 /* Begin PBXFileReference section */
 		018C95EA063E261ED87C0981 /* StickyPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterSpec.swift; sourceTree = "<group>"; };
 		13C3EEFCEFE7D5C993A311A0 /* StickyPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1534F47FD18CEA1EE37E4824 /* NoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStore.swift; sourceTree = "<group>"; };
 		312675C1518292474C1BFBC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		312B3C7FA190F28E9F076E6D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3E05D8C7A25A123688734D95 /* RemoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProtocol.swift; sourceTree = "<group>"; };
 		410D2C3E3B48D9CF561B79A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DA15621F87984BF287F7FA /* WidgetSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSync.swift; sourceTree = "<group>"; };
@@ -76,15 +87,20 @@
 		749CA46C847BD62EFF75A4B8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7A806401B4BBE35486188185 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		85B18F240C26BA63598B84FC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		8833C5645EA406C1B6D374FD /* StickyPresenterSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterSupportView.swift; sourceTree = "<group>"; };
+		862BBC3F743F7EB985DBECE9 /* TimerCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCore.swift; sourceTree = "<group>"; };
 		8D466572AD7F3D57FAAA5F5E /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		9078113A530A93CFC52F7438 /* TimerCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCoreTests.swift; sourceTree = "<group>"; };
 		962CE7CA4EF42EEAECBF1CC5 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		987495B8A98BC8CE3F35D826 /* NoteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStoreTests.swift; sourceTree = "<group>"; };
 		B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chameleon.swift; sourceTree = "<group>"; };
+		BAAEEDA08C1A4BFF91AE75F8 /* GlobalHotKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKeys.swift; sourceTree = "<group>"; };
 		BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterApp.swift; sourceTree = "<group>"; };
 		BF9684AB311403806FC69164 /* SharedTimerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTimerStore.swift; sourceTree = "<group>"; };
 		C47DA7B7091E5ED0295E1749 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C5824EB647E0895095951927 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		C9EFE16B5CE392B1F3E77188 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D93BDEA48650FA7A04F708DB /* StickyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteView.swift; sourceTree = "<group>"; };
+		DE399B498CBCA502822BEAC0 /* StickyPresenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickyPresenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF99E57239D4D71B87840235 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E071E9DE16ADEA99C6891E0B /* TeleprompterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleprompterView.swift; sourceTree = "<group>"; };
 		E3F4580427FCCBD2EA23BB00 /* RemoteControlHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlHost.swift; sourceTree = "<group>"; };
@@ -111,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				13C3EEFCEFE7D5C993A311A0 /* StickyPresenter.app */,
+				DE399B498CBCA502822BEAC0 /* StickyPresenterTests.xctest */,
 				F5EC97CF9B635926B756EDE7 /* WidgetExtension.appex */,
 			);
 			name = Products;
@@ -121,15 +138,19 @@
 			children = (
 				410D2C3E3B48D9CF561B79A0 /* Assets.xcassets */,
 				B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */,
+				BAAEEDA08C1A4BFF91AE75F8 /* GlobalHotKeys.swift */,
+				C5824EB647E0895095951927 /* GuideView.swift */,
 				F1F693E1CBCB5DD0A681806F /* Info.plist */,
 				85B18F240C26BA63598B84FC /* Models.swift */,
 				EF4329275C9703866DAC1970 /* NoteManager.swift */,
+				1534F47FD18CEA1EE37E4824 /* NoteStore.swift */,
 				E3F4580427FCCBD2EA23BB00 /* RemoteControlHost.swift */,
+				312B3C7FA190F28E9F076E6D /* SettingsView.swift */,
 				D93BDEA48650FA7A04F708DB /* StickyNoteView.swift */,
 				BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */,
 				018C95EA063E261ED87C0981 /* StickyPresenterSpec.swift */,
-				8833C5645EA406C1B6D374FD /* StickyPresenterSupportView.swift */,
 				E071E9DE16ADEA99C6891E0B /* TeleprompterView.swift */,
+				862BBC3F743F7EB985DBECE9 /* TimerCore.swift */,
 				64BE47C9171723666D4987B6 /* TimerMusic.swift */,
 				DF99E57239D4D71B87840235 /* TimerView.swift */,
 				52DA15621F87984BF287F7FA /* WidgetSync.swift */,
@@ -144,6 +165,7 @@
 				F7B2D12EADF5CEDB11E68579 /* Config */,
 				DA0B2E4013F037079BEEEDA4 /* Shared */,
 				7BCAE0F27A18C7ABDB17C839 /* StickyPresenter */,
+				E027B0E0A96BD64F63622FE9 /* StickyPresenterTests */,
 				DCCA3FAB764E76769CF9EDF1 /* Widget */,
 				3ADF417140C9F07A946E64C3 /* Products */,
 			);
@@ -188,6 +210,15 @@
 			path = Widget;
 			sourceTree = "<group>";
 		};
+		E027B0E0A96BD64F63622FE9 /* StickyPresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				987495B8A98BC8CE3F35D826 /* NoteStoreTests.swift */,
+				9078113A530A93CFC52F7438 /* TimerCoreTests.swift */,
+			);
+			path = StickyPresenterTests;
+			sourceTree = "<group>";
+		};
 		F7B2D12EADF5CEDB11E68579 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +252,23 @@
 			productReference = 13C3EEFCEFE7D5C993A311A0 /* StickyPresenter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		98164F9936A973D437226725 /* StickyPresenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 216F45D8C6274CE3C4F40BB9 /* Build configuration list for PBXNativeTarget "StickyPresenterTests" */;
+			buildPhases = (
+				7BA104EE4821F1B883F68103 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickyPresenterTests;
+			packageProductDependencies = (
+			);
+			productName = StickyPresenterTests;
+			productReference = DE399B498CBCA502822BEAC0 /* StickyPresenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E4F6564706096DCB21306D05 /* WidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B7691E65272FF4D9887FDB4 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
@@ -252,6 +300,10 @@
 						DevelopmentTeam = QGAQ3AY3R3;
 						ProvisioningStyle = Automatic;
 					};
+					98164F9936A973D437226725 = {
+						DevelopmentTeam = QGAQ3AY3R3;
+						ProvisioningStyle = Automatic;
+					};
 					E4F6564706096DCB21306D05 = {
 						DevelopmentTeam = QGAQ3AY3R3;
 						ProvisioningStyle = Automatic;
@@ -277,6 +329,7 @@
 			projectRoot = "";
 			targets = (
 				44900E0A1F5605936678A9A9 /* StickyPresenter */,
+				98164F9936A973D437226725 /* StickyPresenterTests */,
 				E4F6564706096DCB21306D05 /* WidgetExtension */,
 			);
 		};
@@ -310,21 +363,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D0F89CCD92645255B1CB9A /* Chameleon.swift in Sources */,
+				3FA28E76FC2A4BC08D77CD3A /* GlobalHotKeys.swift in Sources */,
+				663CD9EDB210A090210C8919 /* GuideView.swift in Sources */,
 				B63BDC58CD1293E445AB75E6 /* Localization.swift in Sources */,
 				4520B10FC76C4332457425D1 /* Models.swift in Sources */,
 				BD8A0E985F4D66222881B1A3 /* NoteManager.swift in Sources */,
+				D0244E9101869D1179EAFC8F /* NoteStore.swift in Sources */,
 				EB726DD65BF02AA8752E7FAC /* RemoteControlHost.swift in Sources */,
 				527464F65BA38CE5061C8CAF /* RemoteProtocol.swift in Sources */,
+				CD2B192D329A506196BAF7F3 /* SettingsView.swift in Sources */,
 				74C5E04A0EAFD46C9EDEC500 /* SharedTimerStore.swift in Sources */,
 				2E61AA6885F159A58591C278 /* StickyNoteView.swift in Sources */,
 				B5D2738A610477EAFEF6E4E1 /* StickyPresenterApp.swift in Sources */,
 				913A9E80196553D08A72B789 /* StickyPresenterSpec.swift in Sources */,
-				BC840BD162FFD3FABCABF04E /* StickyPresenterSupportView.swift in Sources */,
 				F70D0A179ADFB07064549AF1 /* TeleprompterView.swift in Sources */,
+				70BCE66460F7DED7CAFEF3F6 /* TimerCore.swift in Sources */,
 				10490E49D9FD3DC6069F101F /* TimerMusic.swift in Sources */,
 				C98F6A75B3B17F66D056B410 /* TimerSnapshot.swift in Sources */,
 				1E58EBD355CD262905414C5B /* TimerView.swift in Sources */,
 				9247BED7BC2C17F8896286B4 /* WidgetSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA104EE4821F1B883F68103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47B5DA45D96A0E8FE9FD1D0 /* Localization.swift in Sources */,
+				A9E321BD80F7EBA0B59A0CA4 /* NoteStore.swift in Sources */,
+				94BC1E989051F2259B5E5F1D /* NoteStoreTests.swift in Sources */,
+				7BB7E24BBAE124472846CE8F /* TimerCore.swift in Sources */,
+				FD6A714E61A86468E6ED7A9D /* TimerCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +451,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		57909BD89FF5371898484CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenterTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
 		61589A6A844DBA4D2E70611E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +700,26 @@
 			};
 			name = Debug;
 		};
+		E762BEF2E3E34722C13EEE7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenterTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -619,6 +728,15 @@
 			buildConfigurations = (
 				93C4389DC69FA5650A16B8C6 /* Debug */,
 				7AAEF37159C981E6BD4F19CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		216F45D8C6274CE3C4F40BB9 /* Build configuration list for PBXNativeTarget "StickyPresenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E762BEF2E3E34722C13EEE7D /* Debug */,
+				57909BD89FF5371898484CA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

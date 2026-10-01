@@ -2,9 +2,8 @@
 #
 # 배포 전 검사 — 실패하면 0이 아닌 값으로 끝나 아카이브를 막는다.
 #
-# ⚠️ **이 앱에는 테스트 타겟이 없다.** 그래서 이 검사가 지킬 수 있는 것은
-#    "적어도 컴파일은 된다"와 "버전이 한곳에서 온다"까지다. 초록불이 떠도 동작이 옳다는 뜻이 아니다.
-#    테스트 타겟이 생기면 아래 build 를 test 로 바꾼다.
+# 테스트 타겟(StickyPresenterTests)은 순수 로직만 본다 — 타이머 입력 해석·벽시계 틱,
+# 노트 저장 형식·깨진 파일 복구·화면 자리 계산. 창·메뉴·리모컨 동작은 여전히 손으로 확인한다.
 #
 # Release 로 짓는 이유: 배포는 Release 로 나가고, #if DEBUG 안에만 있는 코드를 밖에서
 # 부르면 Debug 만 통과하고 Release 에서 깨진다.
@@ -52,4 +51,17 @@ if ! xcodebuild -project "$PROJECT" -scheme "$SCHEME" \
 fi
 rm -f "$LOG"
 
-echo "✅ Release 빌드 통과 (⚠️ 테스트 타겟이 없어 컴파일만 확인했습니다)"
+# 3) 단위 테스트. 노트 저장 형식이 깨지면 사용자 글이 사라지므로 배포를 막는다.
+LOG="$(mktemp -t predeploy)"
+if ! xcodebuild -project "$PROJECT" -scheme "$SCHEME" \
+     -destination 'platform=macOS' \
+     CODE_SIGNING_ALLOWED=NO \
+     -quiet test > "$LOG" 2>&1; then
+  echo "❌ 단위 테스트 실패"
+  grep -E "error:|failed" "$LOG" | tail -40
+  rm -f "$LOG"
+  exit 1
+fi
+rm -f "$LOG"
+
+echo "✅ Release 빌드 · 단위 테스트 통과"

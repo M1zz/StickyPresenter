@@ -17,6 +17,8 @@ enum WidgetSync {
     static func refresh() {
         let entries = NoteManager.shared.timerListManager.entries
         SharedTimerStore.save(primaryEntry(in: entries)?.snapshot)
+        // 실행 상태가 바뀌는 모든 자리가 이 함수를 거치므로 App Nap 붙잡기도 여기서 맞춘다.
+        TimerActivity.update(anyRunning: entries.contains { $0.isRunning })
     }
 }
 
