@@ -1,5 +1,9 @@
 # StickyPresenter — App Store (English, U.S.)
 
+> ⚠️ **1.1.0 부터 원본은 레포 최상단 `APPSTORE.md` 다** (한국어·영어, DeployBar 가 읽어 올린다).
+> 이 파일은 1.0.9 까지의 기록으로만 남긴다. 아래 개인정보 문단("no internet requests")은
+> 설정 창의 피드백 보내기가 생기면서 더 이상 사실이 아니다.
+
 App Store Connect 의 **English (U.S.)** 로케일에 그대로 붙여 넣는 문구.
 한국어판은 스토어에만 있고 이 파일에는 없다 — 고칠 때 두 로케일을 함께 볼 것.
 
