@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy · Remote Controller</title>
   <meta name="description" content="Privacy Policy · Remote Controller" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/remote-privacy.html" />
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/en/remote-privacy.html" />
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote-privacy.html" />
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote-privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote-privacy.html" />
-  <link rel="icon" href="remote-icon.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../remote-icon.png" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <header>
-    <img class="icon" src="remote-icon.png" alt="StickyPresenter Remote Controller app icon" />
+    <img class="icon" src="../remote-icon.png" alt="StickyPresenter Remote Controller app icon" />
     <h1>Privacy Policy</h1>
     <p>StickyPresenter Remote Controller (iOS) · Last updated: October 8, 2026</p>
     <nav class="langnav" aria-label="Language / 언어">
-      <a href="ko/remote-privacy.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="en/remote-privacy.html" hreflang="en" lang="en">English</a>
+      <a href="../ko/remote-privacy.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="../en/remote-privacy.html" hreflang="en" lang="en" aria-current="true">English</a>
     </nav>
   </header>
 
@@ -27,7 +27,6 @@
     <div class="wrap">
 
       <div class="card" id="en">
-        <p class="lang">English</p>
         <h2>Summary</h2>
         <p><strong>Remote Controller does not collect, store, transmit, or share any personal
         data.</strong> There are no accounts, no analytics, no advertising, and no third-party
@@ -95,67 +94,6 @@
         <h3>Contact</h3>
         <p>For any privacy questions, contact
         <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
-      </div>
-
-      <div class="card" id="ko" lang="ko">
-        <p class="lang">한국어</p>
-        <h2>요약</h2>
-        <p><strong>Remote Controller는 어떠한 개인정보도 수집·저장·전송·공유하지 않습니다.</strong>
-        계정, 분석 도구, 광고, 제3자 SDK가 전혀 없습니다. 이 앱은 사용자의 로컬 네트워크에 있는
-        StickyPresenter 실행 중인 Mac 하고만 통신하며, 당사나 인터넷상의 어떤 서버로도 데이터를
-        보내지 않습니다.</p>
-
-        <h3>수집하는 데이터</h3>
-        <p>없음. 개인정보, 사용 통계, 식별자, 원격 측정 정보를 일절 수집하지 않습니다.</p>
-
-        <h3>iPhone에 남는 것</h3>
-        <p>코드를 다시 묻지 않고 연결하려고, 앱은 iPhone에 두 가지 값만 저장합니다. 이 설치에서 무작위로
-        만든 식별자와, 짝을 맺은 Mac의 식별자입니다. 사용자나 Apple 계정과는 아무 관계가 없고,
-        짝을 맺은 Mac 하고만 주고받으며, 연결을 해제하거나 앱을 지우면 사라집니다.</p>
-
-        <h3>로컬 네트워크</h3>
-        <p>이 앱의 목적 자체가 Mac의 타이머를 조작하는 것이라 <strong>로컬 네트워크</strong> 접근
-        권한이 필요합니다. Apple의 MultipeerConnectivity를 사용해, 같은 네트워크에서
-        StickyPresenter 타이머 서비스(<code>_sp-timer</code>)를 광고하는 Mac을 찾아 연결합니다.
-        연결은 iPhone과 Mac 사이의 직접 연결이며 암호화됩니다. 권한을 거부하면 Mac을 찾을 수 없어
-        앱의 다른 기능도 동작하지 않습니다.</p>
-
-        <h3>주고받는 정보</h3>
-        <p>리모컨 화면을 그리고 사용자의 조작을 반영하는 데 필요한 것만 오갑니다.</p>
-        <ul>
-          <li>타이머 정보 — 이름, 남은 시간과 목표 시간, 실행/완료/감춤 상태, 뽀모도로 구간과
-          사이클, 위젯 크기, 테마, 그리고 Mac 화면 배치 안에서의 위젯 위치.</li>
-          <li>사용자의 명령 — 시작·일시정지·초기화, 30초 더하기/빼기, 크기 조절, 위치 이동,
-          감추기, 정렬, 삭제, 프리셋 타이머 만들기.</li>
-          <li>기기 이름 — 검색 과정에서 iPhone의 기기 이름이 Mac에 보이고, Mac의 컴퓨터 이름이
-          앱에 표시됩니다. Apple의 MultipeerConnectivity가 상대를 식별하는 방식이며, 같은
-          네트워크에서 이 서비스를 찾는 기기에는 보일 수 있습니다.</li>
-        </ul>
-        <p>스티키 노트와 텔레프롬프터 대본은 iPhone으로 전송되지 않습니다.</p>
-
-        <h3>누가 연결할 수 있나</h3>
-        <p>연결하려면 <strong>네 자리 페어링 코드</strong>가 필요합니다. 코드는 Mac 메뉴 막대의
-        타이머 아이콘 → <code>Remote</code>에 떠 있고, 처음 연결할 때 이 앱에서 한 번 입력합니다.
-        코드가 맞으면 Mac이 그 iPhone을 기억해 다음부터는 코드 없이 연결됩니다.</p>
-        <p>같은 로컬 네트워크에 있어도 코드를 모르는 기기는 연결하지 못합니다. 이 앱은 주변에서
-        찾은 Mac 목록을 보여줄 뿐이고, 짝을 맺은 Mac 한 대와만 주고받습니다. Mac 쪽에서는
-        <code>New Pairing Code</code>로 코드를 새로 뽑거나 <code>Forget Paired Remotes</code>로
-        기억해 둔 기기를 모두 지울 수 있고, 이 앱에서는 연결 표시를 눌러 짝을 풀 수 있습니다.
-        오가는 것은 위의 타이머 정보뿐이고 조작할 수 있는 것도 타이머뿐입니다. Mac에서
-        StickyPresenter를 종료하면 더 이상 검색되지 않습니다.</p>
-
-        <h3>인터넷·광고·추적</h3>
-        <p>앱은 어떤 인터넷 요청도 하지 않습니다. 광고, 추적, 제3자 SDK가 없으며, 추적할 것이
-        없으므로 앱 추적 투명성(ATT) 프레임워크도 사용하지 않습니다.</p>
-
-        <h3>아동</h3>
-        <p>아동을 포함해 누구로부터도 정보를 수집하지 않습니다.</p>
-
-        <h3>변경</h3>
-        <p>본 정책이 변경되면 이 페이지에 새로운 "최종 업데이트" 날짜와 함께 게시됩니다.</p>
-
-        <h3>문의</h3>
-        <p>개인정보 관련 문의: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></p>
       </div>
 
       <p style="text-align:center"><a class="back" href="remote.html">← Back to Remote Controller</a></p>
