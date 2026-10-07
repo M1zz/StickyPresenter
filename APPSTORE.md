@@ -71,11 +71,15 @@ macOS 14 이상에서 사용할 수 있습니다.
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/support.html#ko
+https://m1zz.github.io/StickyPresenter/ko/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/privacy.html#ko
+https://m1zz.github.io/StickyPresenter/ko/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/ko/
 
 ## 영어(미국) (en-US)
 
@@ -145,11 +149,15 @@ presentation,teleprompter,countdown,speech,pomodoro,speaker,script,clock,overlay
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/support.html#en
+https://m1zz.github.io/StickyPresenter/en/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/privacy.html#en
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
 
 ## 연령 등급
 

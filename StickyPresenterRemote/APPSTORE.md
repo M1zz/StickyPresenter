@@ -54,11 +54,15 @@ Mac을 찾지 못하면 흔한 원인을 체크리스트로 보여 줍니다.
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/remote.html#ko
+https://m1zz.github.io/StickyPresenter/ko/remote.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/remote-privacy.html#ko
+https://m1zz.github.io/StickyPresenter/ko/remote-privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/ko/remote.html
 
 ## 영어(미국) (en-US)
 
@@ -110,8 +114,12 @@ REQUIREMENTS
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/remote.html#en
+https://m1zz.github.io/StickyPresenter/en/remote.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/remote-privacy.html#en
+https://m1zz.github.io/StickyPresenter/en/remote-privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/remote.html
