@@ -4,6 +4,20 @@ DeployBar 가 배포할 때 이 파일의 `## <버전>` ▸ `### 앱스토어 (.
 App Store Connect 의 '이 버전의 새로운 기능' 칸에 그대로 올린다.
 개발자용 상세 기록은 CHANGELOG.md 에 둔다.
 
+## 1.1.1
+
+### 앱스토어 (한국어)
+
+설정에서 보낸 의견과 개발자 답장을 볼 수 있어요
+의견을 보낼 때 어떤 상황이었는지 차근차근 물어봐요
+설정에서 개인정보처리방침과 지원 페이지를 바로 열 수 있어요
+
+### App Store (English)
+
+See replies to your feedback in Settings
+Feedback now asks what happened
+Privacy and support links are in Settings
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)
