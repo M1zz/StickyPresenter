@@ -4,6 +4,9 @@ options:
   deploymentTarget:
     iOS: "17.0"
   createIntermediateGroups: true
+  # 화면 문구는 Sources/{en,ko}.lproj/Localizable.strings (키는 한국어 원문). Mac 앱과 같은 방식이다.
+  # .xcstrings 로 두면 xcodegen 이 그 언어를 knownRegions 에 넣지 않아 ko.lproj 가 빠진다.
+  developmentLanguage: en
 
 # 버전·빌드 번호의 단일 소스 — DeployBar 가 배포할 때 이 파일을 고친다.
 configFiles:

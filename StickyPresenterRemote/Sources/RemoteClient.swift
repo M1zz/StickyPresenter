@@ -41,8 +41,8 @@ final class RemoteClient: NSObject, ObservableObject {
 
         var label: String {
             switch self {
-            case .searching:            return "Mac 찾는 중…"
-            case .connecting(let name): return "\(name)에 연결 중…"
+            case .searching:            return String(localized: "Mac 찾는 중…")
+            case .connecting(let name): return String(localized: "\(name)에 연결 중…")
             case .connected(let name):  return name
             case .failed(let message):  return message
             }
@@ -146,17 +146,17 @@ final class RemoteClient: NSObject, ObservableObject {
     func connect(to host: DiscoveredHost, code: String) {
         let code = PairingCode.normalized(code)
         guard PairingCode.isComplete(code) else {
-            pairingError = "연결 코드 \(PairingCode.length)자리를 모두 입력해 주세요."
+            pairingError = String(localized: "연결 코드 \(PairingCode.length)자리를 모두 입력해 주세요.")
             return
         }
         guard host.isPairable else {
-            pairingError = "이 Mac 은 StickyPresenter 업데이트가 필요합니다."
+            pairingError = String(localized: "이 Mac 은 StickyPresenter 업데이트가 필요합니다.")
             return
         }
         // 보낸 초대는 도로 거둘 수 없다. 답(수락·거절·시간 초과)이 올 때까지 기다려야
         // 하는데, 아무 말 없이 무시하면 버튼이 먹지 않는 것처럼 보인다.
         if let pending = pendingPeer, pending != host.peerID {
-            pairingError = "\(pending.displayName)에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요."
+            pairingError = String(localized: "\(pending.displayName)에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요.")
             return
         }
         pairingError = nil
@@ -252,7 +252,7 @@ extension RemoteClient: MCNearbyServiceBrowserDelegate {
     nonisolated func browser(_ browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: Error) {
         Task { @MainActor in
             // 로컬 네트워크 권한을 거부하면 여기로 떨어진다.
-            self.status = .failed("검색 실패 — 설정 > 개인정보 보호에서 로컬 네트워크 권한을 확인하세요")
+            self.status = .failed(String(localized: "검색 실패 — 설정 > 개인정보 보호에서 로컬 네트워크 권한을 확인하세요"))
         }
     }
 }
@@ -309,8 +309,8 @@ extension RemoteClient: MCSessionDelegate {
         // 그걸 페어링 해제로 읽으면 발표 직전에 멀쩡한 짝을 잃는다. 목록에 그대로 두면
         // 사용자가 눌러서 코드를 다시 넣을 수 있고, 그 편이 되돌리기 쉽다.
         pairingError = wasAutomatic
-            ? "\(peerID.displayName)에 자동으로 연결하지 못했습니다. 목록에서 다시 골라 주세요."
-            : "연결 코드가 맞지 않거나 Mac 이 응답하지 않았습니다. Mac 메뉴 막대의 코드를 확인해 주세요."
+            ? String(localized: "\(peerID.displayName)에 자동으로 연결하지 못했습니다. 목록에서 다시 골라 주세요.")
+            : String(localized: "연결 코드가 맞지 않거나 Mac 이 응답하지 않았습니다. Mac 메뉴 막대의 코드를 확인해 주세요.")
     }
 
     nonisolated func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {

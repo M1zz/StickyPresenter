@@ -168,20 +168,20 @@ struct DisconnectedView: View {
     private var checks: [Check] {
         [
             Check(symbol: "menubar.arrow.up.rectangle",
-                  title: "Mac에서 StickyPresenter가 켜져 있나요?",
-                  detail: "메뉴 막대에 타이머 아이콘이 보여야 합니다. 창을 모두 닫아도 앱은 메뉴 막대에 남아 있습니다."),
+                  title: String(localized: "Mac에서 StickyPresenter가 켜져 있나요?"),
+                  detail: String(localized: "메뉴 막대에 타이머 아이콘이 보여야 합니다. 창을 모두 닫아도 앱은 메뉴 막대에 남아 있습니다.")),
             Check(symbol: "wifi",
-                  title: "두 기기가 같은 Wi-Fi인가요?",
-                  detail: "네트워크가 다르거나 게스트 Wi-Fi에 붙어 있으면 서로를 찾지 못합니다."),
+                  title: String(localized: "두 기기가 같은 Wi-Fi인가요?"),
+                  detail: String(localized: "네트워크가 다르거나 게스트 Wi-Fi에 붙어 있으면 서로를 찾지 못합니다.")),
             Check(symbol: "lock.shield",
-                  title: "iPhone의 로컬 네트워크 접근을 허용했나요?",
-                  detail: "설정 → 개인정보 보호 및 보안 → 로컬 네트워크에서 Remote Controller를 켜주세요."),
+                  title: String(localized: "iPhone의 로컬 네트워크 접근을 허용했나요?"),
+                  detail: String(localized: "설정 → 개인정보 보호 및 보안 → 로컬 네트워크에서 Remote Controller를 켜주세요.")),
             Check(symbol: "desktopcomputer",
-                  title: "Mac에서도 허용이 필요할 수 있어요",
-                  detail: "시스템 설정 → 개인정보 보호 및 보안 → 로컬 네트워크에서 StickyPresenter를 확인하세요."),
+                  title: String(localized: "Mac에서도 허용이 필요할 수 있어요"),
+                  detail: String(localized: "시스템 설정 → 개인정보 보호 및 보안 → 로컬 네트워크에서 StickyPresenter를 확인하세요.")),
             Check(symbol: "network.badge.shield.half.filled",
-                  title: "VPN을 쓰고 있나요?",
-                  detail: "VPN이 켜져 있으면 같은 네트워크의 기기를 찾지 못할 수 있습니다. 잠시 꺼보세요.")
+                  title: String(localized: "VPN을 쓰고 있나요?"),
+                  detail: String(localized: "VPN이 켜져 있으면 같은 네트워크의 기기를 찾지 못할 수 있습니다. 잠시 꺼보세요."))
         ]
     }
 
@@ -236,8 +236,8 @@ struct DisconnectedView: View {
     }
 
     private var headerTitle: String {
-        if isFailed { return "연결할 수 없습니다" }
-        return hasHosts ? "연결할 Mac 고르기" : "Mac을 찾는 중"
+        if isFailed { return String(localized: "연결할 수 없습니다") }
+        return hasHosts ? String(localized: "연결할 Mac 고르기") : String(localized: "Mac을 찾는 중")
     }
 
     /// 제목이 이미 할 말을 했으므로 상태 문구를 그대로 되풀이하지 않는다.
@@ -245,13 +245,13 @@ struct DisconnectedView: View {
     private var subtitle: String {
         switch client.status {
         case .connecting(let name):
-            return "\(name)에 연결하는 중입니다"
+            return String(localized: "\(name)에 연결하는 중입니다")
         case .failed(let message):
             return message
         case .searching:
             return hasHosts
-                ? "Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다"
-                : "주변에서 StickyPresenter가 켜진 Mac을 찾고 있습니다"
+                ? String(localized: "Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다")
+                : String(localized: "주변에서 StickyPresenter가 켜진 Mac을 찾고 있습니다")
         case .connected:
             return ""
         }
@@ -337,10 +337,10 @@ struct DisconnectedView: View {
     }
 
     private func hostSubtitle(_ host: RemoteClient.DiscoveredHost) -> String {
-        guard host.isPairable else { return "Mac 앱 업데이트가 필요합니다" }
-        if isConnecting(to: host) { return "연결하는 중…" }
-        if let hostID = host.hostID, hostID == client.pairedHostID { return "지난번에 연결한 Mac" }
-        return "연결 코드 \(PairingCode.length)자리가 필요합니다"
+        guard host.isPairable else { return String(localized: "Mac 앱 업데이트가 필요합니다") }
+        if isConnecting(to: host) { return String(localized: "연결하는 중…") }
+        if let hostID = host.hostID, hostID == client.pairedHostID { return String(localized: "지난번에 연결한 Mac") }
+        return String(localized: "연결 코드 \(PairingCode.length)자리가 필요합니다")
     }
 
     private func isConnecting(to host: RemoteClient.DiscoveredHost) -> Bool {
@@ -467,7 +467,7 @@ struct PairingSheet: View {
                     isCodeFocused = false
                     client.connect(to: host, code: code)
                 } label: {
-                    Text(isConnecting ? "연결하는 중…" : "연결")
+                    Text(isConnecting ? String(localized: "연결하는 중…") : String(localized: "연결"))
                         .frame(maxWidth: .infinity, minHeight: 44)
                 }
                 .buttonStyle(.borderedProminent)
@@ -511,7 +511,7 @@ struct PresetRow: View {
     /// (버튼에 보일 글자, 타이머 이름, 초).
     /// 이름은 Mac 앱의 프리셋과 **같은 표기**를 쓴다 — 여기서 "5분"으로 만들면
     /// Mac 목록과 알림 센터 위젯에 "5m"과 "5분"이 섞여 보인다.
-    private static let presets: [(label: String, name: String, seconds: Double)] =
+    private static let presets: [(label: LocalizedStringKey, name: String, seconds: Double)] =
         [("3분", "3m", 180), ("5분", "5m", 300), ("10분", "10m", 600), ("15분", "15m", 900)]
 
     var body: some View {
@@ -617,7 +617,7 @@ struct TimerRemoteRow: View {
     private var transport: some View {
         HStack(spacing: 10) {
             // 아이콘으로 두면 좁은 화면에서도 글자가 깨지지 않고 뜻이 바로 읽힌다.
-            circleButton("gobackward.30", label: "30초 빼기") {
+            circleButton("gobackward.30", label: String(localized: "30초 빼기")) {
                 client.send(.subtractSeconds(timer.id))
             }
 
@@ -629,9 +629,9 @@ struct TimerRemoteRow: View {
                     .frame(maxWidth: .infinity, minHeight: 44)
             }
             .buttonStyle(.borderedProminent)
-            .accessibilityLabel(timer.isRunning ? "일시정지" : "시작")
+            .accessibilityLabel(timer.isRunning ? String(localized: "일시정지") : String(localized: "시작"))
 
-            circleButton("goforward.30", label: "30초 더하기") {
+            circleButton("goforward.30", label: String(localized: "30초 더하기")) {
                 client.send(.addSeconds(timer.id))
             }
         }
@@ -683,17 +683,17 @@ struct TimerRemoteRow: View {
 
     private var secondaryActions: some View {
         HStack(spacing: 8) {
-            actionButton("초기화", systemImage: "arrow.counterclockwise") {
+            actionButton(String(localized: "초기화"), systemImage: "arrow.counterclockwise") {
                 client.send(.reset(timer.id))
             }
-            actionButton(timer.isHidden ? "표시" : "감추기",
+            actionButton(timer.isHidden ? String(localized: "표시") : String(localized: "감추기"),
                          systemImage: timer.isHidden ? "eye" : "eye.slash") {
                 client.send(.toggleHidden(timer.id))
             }
-            actionButton("정렬", systemImage: "rectangle.righthalf.inset.filled") {
+            actionButton(String(localized: "정렬"), systemImage: "rectangle.righthalf.inset.filled") {
                 client.send(.align(timer.id))
             }
-            actionButton("삭제", systemImage: "trash", role: .destructive) {
+            actionButton(String(localized: "삭제"), systemImage: "trash", role: .destructive) {
                 client.send(.remove(timer.id))
             }
         }
@@ -790,10 +790,10 @@ struct WidgetPositionPad: View {
 
     /// 화면이 여러 대일 때는 지금 어느 화면에 있는지가 위치보다 먼저 궁금하다.
     private var hint: String {
-        guard placement != nil else { return "위젯 창 없음" }
+        guard placement != nil else { return String(localized: "위젯 창 없음") }
         let all = desktop?.screens ?? []
-        guard all.count > 1, let id = placement?.screenID else { return "끌어서 옮기기" }
-        return "화면 \(id + 1)/\(all.count) · 끌어서 옮기기"
+        guard all.count > 1, let id = placement?.screenID else { return String(localized: "끌어서 옮기기") }
+        return String(localized: "화면 \(id + 1)/\(all.count) · 끌어서 옮기기")
     }
 
     // MARK: 판
