@@ -24,10 +24,9 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 # 앱 언어 코드 → App Store Connect 로케일 (deploy.env LOCALES=ko,en-US)
 STORE = {"en": "en-US"}
 
-# ⚠️ 리모컨 화면은 한국어로만 그려진다(Sources/RemoteApp.swift 에 문구가 박혀 있다).
-#    영어 그림에 한국어 화면을 넣으면 글자가 섞이므로, 영어는 기기 화면 대신
-#    앱 아이콘과 Mac 위젯 모양(숫자만)으로 꾸민다. 앱이 영어를 갖추면 캡처를 넣고 이 표를 지운다.
-DEVICE_LANGS = {"ko"}
+# 기기 화면을 넣을 언어. 리모컨은 한국어·영어로 그려진다(Sources/{ko,en}.lproj).
+# 원본은 raw/creative/<언어>/01-timer.png · 02-pomodoro.png — 그 언어 화면이어야 한다.
+DEVICE_LANGS = {"ko", "en"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
