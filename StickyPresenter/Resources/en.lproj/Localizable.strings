@@ -243,3 +243,42 @@
 "guide.support" = "Support Page";
 "guide.next" = "Next";
 "guide.done" = "Get Started";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone remote is temporarily unavailable";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Welcome to StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter lives in your menu bar";
+"onboarding.menubar.body" = "There’s no Dock icon. Notes, timers, the teleprompter, and settings are all in the note icon at the top right of your screen.";
+"onboarding.menubar.icon" = "Look for this icon in the menu bar";
+"onboarding.hotkeys.title" = "Keys that work during your talk";
+"onboarding.hotkeys.body" = "These shortcuts work even while Keynote or PowerPoint is in full screen, without leaving your slides.";
+"onboarding.launch.title" = "Ready before you present";
+"onboarding.launch.body" = "Open StickyPresenter when you log in, so your notes and timers are already waiting when you walk on stage.";
+"onboarding.launch.later" = "You can change this any time in Settings.";
+"onboarding.back" = "Back";
+"onboarding.openGuide" = "Open the User Guide";
+"onboarding.start" = "Get Started";
+"onboarding.page" = "Page %d of %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro in one line";
+"tip.pomodoro.message" = "Type 25/5 for 25 minutes of focus and a 5‑minute break, repeating until you stop.";
+"tip.pomodoro.try" = "Try 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Start Timer";
+"intent.timer.description" = "Starts a countdown timer that floats above your slides.";
+"intent.timer.minutes" = "Minutes";
+"intent.timer.summary ${minutes}" = "Start a ${minutes}-minute timer";
+"intent.timer.short" = "Start Timer";
+"intent.pomodoro.title" = "Start Pomodoro";
+"intent.pomodoro.description" = "Starts a 25‑minute focus / 5‑minute break Pomodoro timer.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "New Sticky Note";
+"intent.note.description" = "Adds a new sticky note to your screen.";
+"intent.note.short" = "New Note";
+"intent.timers.title" = "Show Timers";
+"intent.timers.description" = "Opens the timer panel.";
+"intent.timers.short" = "Timers";

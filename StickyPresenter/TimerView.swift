@@ -1,5 +1,6 @@
 import SwiftUI
 import AppKit
+import TipKit
 
 // MARK: - Widget Size
 /// 타이머 창 프리셋 크기. 모서리 드래그로 자유롭게 조절할 수도 있지만,
@@ -398,6 +399,7 @@ struct TimerListView: View {
     @State private var inputText = ""
     @State private var showInputHelp = false
     @FocusState private var focused: Bool
+    private let pomodoroTip = PomodoroInputTip()
 
     private var parsedSeconds: TimeInterval {
         parseTimerInput(inputText.trimmingCharacters(in: .whitespaces))
@@ -497,6 +499,14 @@ struct TimerListView: View {
                         .padding(.leading, 12)
                         .transition(.opacity.combined(with: .move(edge: .top)))
                 }
+
+                // 타이머를 몇 번 만들어 본 사람에게 "25/5" 문법을 알려준다 (FeatureTips.swift).
+                TipView(pomodoroTip, arrowEdge: .top) { action in
+                    guard action.id == PomodoroInputTip.tryActionID else { return }
+                    inputText = "25/5"
+                    focused = true
+                }
+                .padding(.top, 4)
             }
             .animation(.spring(response: 0.25, dampingFraction: 0.8), value: hasValidInput)
             .animation(.easeInOut(duration: 0.15), value: previewText)
@@ -528,6 +538,7 @@ struct TimerListView: View {
                                     let entry = TimerEntry(name: preset.label, targetSeconds: preset.seconds)
                                     entry.setRunning(true)
                                     manager.add(entry)
+                                    PomodoroInputTip.record(isPomodoro: false)
                                 }) {
                                     Text(preset.label).modifier(PresetButtonStyle())
                                 }
@@ -572,6 +583,7 @@ struct TimerListView: View {
                             let entry = TimerEntry(name: label, targetSeconds: secs)
                             entry.setRunning(true)
                             manager.add(entry)
+                            PomodoroInputTip.record(isPomodoro: false)
                         }
                     }
                     .padding(.horizontal, 16)
@@ -604,6 +616,7 @@ struct TimerListView: View {
         let entry = TimerEntry(name: raw, targetSeconds: secs)
         entry.setRunning(true)
         manager.add(entry)
+        PomodoroInputTip.record(isPomodoro: false)
         inputText = ""
         focused = true
     }
@@ -617,6 +630,7 @@ struct TimerListView: View {
         )
         entry.setRunning(true)
         manager.add(entry)
+        PomodoroInputTip.record(isPomodoro: true)
     }
 
     private func addNewStickyNote() {

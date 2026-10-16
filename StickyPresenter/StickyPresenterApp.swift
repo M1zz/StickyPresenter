@@ -1,6 +1,7 @@
 import SwiftUI
 import AppKit
 import LeeoKit
+import TipKit
 
 // MARK: - App Entry Point
 @main
@@ -8,8 +9,10 @@ struct StickyPresenterApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     init() {
-        // 사용량 기록 · 크래시 진단 · 익명 사용 통계. 실패해도 앱 동작에는 영향이 없다.
-        LeeoKit.bootstrap(StickyPresenterSpec.self)
+        // 사용량 기록 · 크래시 진단 · 익명 사용 통계 · 원격 킬스위치. 실패해도 앱 동작에는 영향이 없다.
+        LeeoKit.bootstrap(StickyPresenterSpec.self, flags: StickyPresenterFlag.self)
+        // 사용 팁(TipKit). 표시 빈도는 TipKit 이 관리한다 — 한 번 닫은 팁은 다시 뜨지 않는다.
+        try? Tips.configure()
     }
 
     var body: some Scene {
@@ -28,6 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var noteManager = NoteManager.shared
     var settingsWindow: NSWindow?
     var guideWindow: NSWindow?
+    var onboardingWindow: NSWindow?
     /// 리모컨 하위 메뉴. 연결 코드와 연결 수가 계속 바뀌므로 열릴 때마다 다시 그린다.
     var remoteMenu: NSMenu?
     
@@ -49,7 +53,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         // iOS 리모컨이 붙을 수 있도록 광고 시작.
         // 로컬 네트워크 권한 프롬프트는 실제로 상대를 찾을 때 처음 뜬다.
-        RemoteControlHost.shared.start()
+        // 원격 킬스위치로 꺼져 있으면 광고하지 않는다 (StickyPresenterFlags.swift).
+        if LeeoRemoteFlags.isEnabled(StickyPresenterFlag.remoteControlEnabled) {
+            RemoteControlHost.shared.start()
+        }
 
         // Hide dock icon — menu bar only app
         NSApp.setActivationPolicy(.accessory)
@@ -57,7 +64,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // 지난 실행의 노트를 되살린다. 노트는 바뀔 때마다 notes.json 에 저장된다 (NoteStore.swift).
         noteManager.restoreNotes()
 
-        // 최초 실행 시에만 사용법 스티키 노트와 사용 가이드 창을 띄운다.
+        // 최초 실행 시에만 사용법 스티키 노트와 첫 실행 안내 창을 띄운다.
         let isFirstLaunch = !UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
         if isFirstLaunch {
             UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
@@ -67,8 +74,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 color: .yellow,
                 position: CGPoint(x: screenFrame.minX + 60, y: screenFrame.midY - 100)
             )
-            // 패널·노트가 자리 잡은 뒤에 띄워야 가이드 창이 맨 앞에 온다.
-            DispatchQueue.main.async { [weak self] in self?.showGuide() }
+            // 패널·노트가 자리 잡은 뒤에 띄워야 안내 창이 맨 앞에 온다.
+            DispatchQueue.main.async { [weak self] in self?.showOnboarding() }
+        } else if !UserDefaults.standard.bool(forKey: OnboardingView.seenKey) {
+            // 첫 실행 안내가 생기기 전부터 쓰던 사람 — 이미 아는 내용을 다시 띄우지 않는다.
+            UserDefaults.standard.set(true, forKey: OnboardingView.seenKey)
         }
 
         // 앱 시작 시 타이머 항상 열기
@@ -220,6 +230,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         guard let menu = remoteMenu else { return }
         menu.removeAllItems()
 
+        // 원격 킬스위치로 꺼진 실행에서는 광고를 시작하지 않았다. 코드를 보여 주면
+        // 사용자는 맞는 코드를 넣고도 붙지 않는 이유를 찾아 헤맨다 — 쓸 수 없다고 바로 말한다.
+        guard LeeoRemoteFlags.isEnabled(StickyPresenterFlag.remoteControlEnabled) else {
+            let off = NSMenuItem(title: L("remote.unavailable"), action: nil, keyEquivalent: "")
+            off.isEnabled = false
+            menu.addItem(off)
+            return
+        }
+
         let host = RemoteControlHost.shared
 
         // 한 자씩 띄워 적는다 — 옆 사람에게 불러주기도, 눈으로 옮겨 적기도 편하다.
@@ -297,6 +316,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.contentView = NSHostingView(rootView: GuideView(onClose: { [weak window] in window?.close() }))
         window.center()
         guideWindow = window
+        present(window)
+    }
+
+    /// 첫 실행 안내. 마지막 장에서 사용 가이드로 이어진다.
+    func showOnboarding() {
+        if let onboardingWindow {
+            present(onboardingWindow)
+            return
+        }
+        let window = makeUtilityWindow(title: L("onboarding.window"))
+        window.contentView = NSHostingView(rootView: OnboardingView(
+            onShowGuide: { [weak self, weak window] in
+                window?.close()
+                self?.showGuide()
+            },
+            onFinish: { [weak window] in window?.close() }
+        ))
+        window.center()
+        onboardingWindow = window
         present(window)
     }
 

@@ -448,6 +448,7 @@ class NoteManager: ObservableObject {
         )
         entry.setRunning(true)
         timerListManager.add(entry)
+        PomodoroInputTip.record(isPomodoro: true)
     }
 
     // MARK: - Timer Widget

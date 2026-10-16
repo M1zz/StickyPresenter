@@ -243,3 +243,42 @@
 "guide.support" = "지원 페이지";
 "guide.next" = "다음";
 "guide.done" = "시작하기";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone 리모컨을 잠시 쓸 수 없습니다";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "StickyPresenter에 오신 걸 환영합니다";
+"onboarding.menubar.title" = "StickyPresenter는 메뉴 막대에 있어요";
+"onboarding.menubar.body" = "Dock 아이콘이 없습니다. 노트·타이머·텔레프롬프터·설정은 모두 화면 오른쪽 위 노트 아이콘 안에 있습니다.";
+"onboarding.menubar.icon" = "메뉴 막대에서 이 아이콘을 찾으세요";
+"onboarding.hotkeys.title" = "발표 중에 쓰는 단축키";
+"onboarding.hotkeys.body" = "Keynote나 PowerPoint가 전체 화면이어도, 슬라이드에서 벗어나지 않고 바로 듣습니다.";
+"onboarding.launch.title" = "발표 전에 미리 켜 두기";
+"onboarding.launch.body" = "로그인할 때 StickyPresenter를 열어 두면, 무대에 오를 때 노트와 타이머가 이미 기다리고 있습니다.";
+"onboarding.launch.later" = "설정에서 언제든 바꿀 수 있습니다.";
+"onboarding.back" = "이전";
+"onboarding.openGuide" = "사용 가이드 보기";
+"onboarding.start" = "시작하기";
+"onboarding.page" = "%d / %d쪽";
+
+/* Tips */
+"tip.pomodoro.title" = "뽀모도로는 한 줄이면 돼요";
+"tip.pomodoro.message" = "25/5 라고 치면 25분 집중, 5분 휴식을 멈출 때까지 되풀이합니다.";
+"tip.pomodoro.try" = "25/5 넣어 보기";
+
+/* App Shortcuts */
+"intent.timer.title" = "타이머 시작";
+"intent.timer.description" = "슬라이드 위에 뜨는 카운트다운 타이머를 시작합니다.";
+"intent.timer.minutes" = "분";
+"intent.timer.summary ${minutes}" = "${minutes}분 타이머 시작";
+"intent.timer.short" = "타이머 시작";
+"intent.pomodoro.title" = "뽀모도로 시작";
+"intent.pomodoro.description" = "25분 집중 · 5분 휴식 뽀모도로 타이머를 시작합니다.";
+"intent.pomodoro.short" = "뽀모도로";
+"intent.note.title" = "새 스티키 노트";
+"intent.note.description" = "화면에 새 스티키 노트를 붙입니다.";
+"intent.note.short" = "새 노트";
+"intent.timers.title" = "타이머 보기";
+"intent.timers.description" = "타이머 패널을 엽니다.";
+"intent.timers.short" = "타이머";
