@@ -61,7 +61,7 @@ iPhone 리모컨 (별도 무료 앱)
 발표 중에는 Mac에 손이 닿지 않습니다. Remote Controller for Sticky 앱을 쓰면 iPhone에서 타이머를 시작하고 멈추고, 30초씩 더하거나 빼고, 위젯 크기와 테마를 바꾸고, 슬라이드를 가리는 위젯을 옮길 수 있습니다. 네 자리 코드로 내 Mac과만 연결되어 Mac이 여러 대 있는 회의실에서도 엇갈리지 않습니다.
 
 개인정보
-계정, 광고, 사용 분석이 없습니다. 노트와 대본은 Mac 밖으로 나가지 않습니다. 인터넷에 연결하는 건 설정에서 직접 피드백을 보낼 때뿐이고, 리모컨과는 같은 네트워크 안에서 암호화된 직접 연결로만 주고받습니다.
+계정도 광고도 없습니다. 노트와 대본은 Mac 밖으로 나가지 않습니다. 앱을 몇 대에서 쓰는지 알 수 있는 익명 사용 통계만 보내고, 그 밖에 인터넷에 연결하는 건 설정에서 직접 피드백을 보낼 때뿐입니다. 리모컨과는 같은 네트워크 안에서 암호화된 직접 연결로만 주고받습니다.
 
 macOS 14 이상에서 사용할 수 있습니다.
 
@@ -139,7 +139,7 @@ IPHONE REMOTE (SEPARATE FREE APP)
 During a talk your Mac is out of reach. Remote Controller for Sticky puts the timer in your hand: start and pause, add or subtract 30 seconds, change the widget's size and theme, or move it off a slide it's covering. It pairs with your Mac using a four-digit code, so in a room full of Macs it only ever talks to yours.
 
 PRIVACY
-No account, no ads, no analytics. Your notes and scripts never leave your Mac. The app goes online only when you choose to send feedback from Settings, and it talks to the iPhone remote over a direct, encrypted connection on your local network.
+No account, no ads. Your notes and scripts never leave your Mac. Apart from anonymous usage statistics, the app goes online only when you choose to send feedback from Settings, and it talks to the iPhone remote over a direct, encrypted connection on your local network.
 
 Requires macOS 14 or later.
 
