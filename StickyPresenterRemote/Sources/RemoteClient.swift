@@ -1,6 +1,7 @@
 import Foundation
 import MultipeerConnectivity
 import UIKit
+import LeeoKit
 
 // MARK: - Remote Client (iOS 쪽)
 //
@@ -228,7 +229,9 @@ extension RemoteClient: MCNearbyServiceBrowserDelegate {
             // 짝으로 기억해 둔 Mac 이면 코드를 묻지 않는다.
             // `autoAttempted` 로 한 번만 시도한다 — 거절당한 Mac 에 계속 던지면
             // 사용자가 목록에서 다른 Mac 을 고를 틈도 없이 초대만 반복된다.
-            guard let hostID = host.hostID, hostID == self.pairedHostID,
+            // 원격 킬스위치로 꺼져 있으면 저절로 붙지 않는다 — 목록에서 골라 코드를 넣는 길은 남는다.
+            guard LeeoRemoteFlags.isEnabled(RemoteFlag.autoReconnectEnabled),
+                  let hostID = host.hostID, hostID == self.pairedHostID,
                   !self.autoAttempted.contains(peerID) else { return }
             self.autoAttempted.insert(peerID)
             self.invite(host, code: nil)

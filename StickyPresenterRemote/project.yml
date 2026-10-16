@@ -13,6 +13,12 @@ configFiles:
   Debug: Config/Version.xcconfig
   Release: Config/Version.xcconfig
 
+# 피드백 · 리뷰 요청 · 익명 통계 · 크래시 진단 · 원격 킬스위치. Mac 앱과 같은 패키지·버전 줄.
+packages:
+  LeeoKit:
+    url: https://github.com/M1zz/LeeoKit.git
+    from: 3.16.1
+
 targets:
   StickyPresenterRemote:
     type: application
@@ -22,6 +28,16 @@ targets:
       # Mac 앱과 **같은 파일**을 참조한다. 복사본을 두면 한쪽만 고쳤을 때
       # 디코딩이 조용히 깨지므로 반드시 원본을 공유할 것.
       - path: ../Shared/RemoteProtocol.swift
+    dependencies:
+      - package: LeeoKit
+    # 피드백 · 통계 · 킬스위치가 쓰는 FeedbackHub CloudKit 컨테이너 (Mac 앱과 같은 컨테이너).
+    entitlements:
+      path: Sources/StickyPresenterRemote.entitlements
+      properties:
+        com.apple.developer.icloud-container-identifiers:
+          - iCloud.com.Ysoup.FeedbackHub
+        com.apple.developer.icloud-services:
+          - CloudKit
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.leeo.StickyPresenter.Remote
@@ -59,3 +75,37 @@ targets:
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+
+  # 순수 로직 단위 테스트. 앱을 호스트로 띄우지 않고 검사 대상 파일을 직접 컴파일한다 —
+  # 앱을 띄우면 Mac 찾기(로컬 네트워크)까지 켜져 테스트가 느려지고 흔들린다.
+  # 그래서 여기 넣는 파일은 UIKit 화면이나 LeeoKit 에 기대지 않아야 한다.
+  StickyPresenterRemoteTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+      - path: Sources/PendingCommands.swift
+      - path: ../Shared/RemoteProtocol.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.leeo.StickyPresenter.RemoteTests
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        DEVELOPMENT_TEAM: QGAQ3AY3R3
+        CODE_SIGN_STYLE: Automatic
+
+# 스킴을 적어 두지 않으면 xcodegen 이 재생성할 때마다 공유 스킴이 사라져
+# `xcodebuild -scheme StickyPresenterRemote` 가 "does not contain a scheme" 로 실패한다.
+schemes:
+  StickyPresenterRemote:
+    build:
+      targets:
+        StickyPresenterRemote: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - StickyPresenterRemoteTests
+    archive:
+      config: Release

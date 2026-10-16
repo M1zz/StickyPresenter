@@ -1,23 +1,49 @@
 import SwiftUI
 import UIKit
+import LeeoKit
+import TipKit
 
 @main
 struct StickyPresenterRemoteApp: App {
     @StateObject private var client = RemoteClient()
     @Environment(\.scenePhase) private var scenePhase
+    @AppStorage(RemoteOnboardingView.seenKey) private var hasSeenOnboarding = false
+
+    init() {
+        // 사용량 기록 · 크래시 진단 · 익명 사용 통계 · 원격 킬스위치. 실패해도 리모컨 동작에는 영향이 없다.
+        LeeoKit.bootstrap(RemoteSpec.self, flags: RemoteFlag.self)
+        // 사용 팁. 표시 빈도·닫힘 기억은 TipKit 이 맡는다.
+        try? Tips.configure()
+        // 첫 실행 안내가 생기기 전에 이미 Mac 과 짝을 맺은 사람에게는 안내를 띄우지 않는다.
+        let defaults = UserDefaults.standard
+        if defaults.string(forKey: "remote.pairedHostID") != nil {
+            defaults.set(true, forKey: RemoteOnboardingView.seenKey)
+        }
+    }
 
     var body: some Scene {
         WindowGroup {
             RemoteRootView()
                 .environmentObject(client)
-                .onAppear { client.start() }
+                // 첫 실행에는 안내를 마친 뒤에 찾기를 시작한다 — 로컬 네트워크 허용 질문이
+                // 찾기와 함께 뜨므로, 무엇을 왜 묻는지 먼저 알려 준다.
+                .onAppear { if hasSeenOnboarding { client.start() } }
                 .onChange(of: scenePhase) { _, phase in
                     // 백그라운드에서 세션을 붙들고 있으면 iOS 가 곧 끊어버리고,
                     // 복귀했을 때 죽은 세션으로 계속 시도하게 된다. 깨끗이 끊고 다시 찾는다.
                     switch phase {
-                    case .active:     client.start()
+                    case .active:     if hasSeenOnboarding { client.start() }
                     case .background: client.stop()
                     default:          break
+                    }
+                }
+                .fullScreenCover(isPresented: Binding(
+                    get: { !hasSeenOnboarding },
+                    set: { if !$0 { hasSeenOnboarding = true } }
+                )) {
+                    RemoteOnboardingView {
+                        hasSeenOnboarding = true
+                        client.start()
                     }
                 }
         }
@@ -28,6 +54,9 @@ struct StickyPresenterRemoteApp: App {
 
 struct RemoteRootView: View {
     @EnvironmentObject private var client: RemoteClient
+    @ObservedObject private var inbox = RemoteIntentInbox.shared
+    @AppStorage(RemoteOnboardingView.seenKey) private var hasSeenOnboarding = false
+    @State private var showSettings = false
 
     var body: some View {
         NavigationStack {
@@ -35,8 +64,54 @@ struct RemoteRootView: View {
                 .navigationTitle("Remote Controller")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button { showSettings = true } label: {
+                            Image(systemName: "gearshape")
+                        }
+                        .accessibilityLabel("설정")
+                    }
                     ToolbarItem(placement: .topBarTrailing) { statusDot }
                 }
+                .safeAreaInset(edge: .bottom) { pendingBanner }
+        }
+        .sheet(isPresented: $showSettings) {
+            RemoteSettingsView(onShowIntro: {
+                client.stop()
+                hasSeenOnboarding = false
+            })
+        }
+        // 조건이 맞으면(몇 번 써 보고 타이머를 시작해 본 뒤) 한 번 "즐겁게 쓰고 계신가요?" 를 묻는다.
+        .leeoSatisfactionCheck(RemoteSpec.self)
+        // 단축어로 맡겨 둔 명령은 Mac 과 붙는 순간 보낸다.
+        .onChange(of: client.isConnected) { _, _ in flushPendingCommands() }
+        .onChange(of: inbox.queue.isEmpty) { _, _ in flushPendingCommands() }
+    }
+
+    private func flushPendingCommands() {
+        guard client.isConnected, !inbox.queue.isEmpty else { return }
+        for command in inbox.drain() {
+            client.send(command)
+        }
+        LeeoEngagement.shared.registerSignificantEvent()
+    }
+
+    /// 단축어로 시작한 타이머가 연결을 기다리는 중이라는 것. 안 보이면 왜 아무 일도 없는지 모른다.
+    @ViewBuilder
+    private var pendingBanner: some View {
+        if !inbox.queue.isEmpty, !client.isConnected {
+            HStack(spacing: 10) {
+                ProgressView()
+                Text("Mac에 연결되면 타이머를 시작합니다")
+                    .font(.footnote)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: 0)
+                Button("취소") { inbox.cancel() }
+                    .font(.footnote.weight(.semibold))
+            }
+            .padding(12)
+            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
+            .padding(.horizontal, 16)
+            .padding(.bottom, 8)
         }
     }
 
@@ -49,7 +124,8 @@ struct RemoteRootView: View {
         } else {
             List {
                 ForEach(client.timers) { timer in
-                    Section { TimerRemoteRow(timer: timer) }
+                    // 위치 판 팁은 첫 타이머에만 — 같은 풍선이 줄마다 뜨지 않게.
+                    Section { TimerRemoteRow(timer: timer, showsMoveTip: timer.id == client.timers.first?.id) }
                 }
                 Section("새 타이머") {
                     PresetRow()
@@ -98,6 +174,9 @@ struct RemoteRootView: View {
                     .frame(maxWidth: 110, alignment: .trailing)
             }
         }
+        // 점의 색만으로는 VoiceOver 가 상태를 읽지 못한다.
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(name.map { String(localized: "\($0)에 연결됨") } ?? String(localized: "연결 안 됨"))
     }
 }
 
@@ -443,6 +522,8 @@ struct PairingSheet: View {
                     .font(.system(size: 40, weight: .semibold, design: .rounded))
                     .kerning(10)
                     .focused($isCodeFocused)
+                    // 자리표시 "0000" 을 "영 영 영 영" 으로 읽지 않게 칸의 이름을 준다.
+                    .accessibilityLabel("연결 코드")
                     .onChange(of: code) { _, newValue in
                         // 숫자 패드로도 붙여넣기가 들어온다. 들어오는 대로 걸러 4자리로 맞춘다.
                         let cleaned = PairingCode.normalized(newValue)
@@ -524,6 +605,8 @@ struct PresetRow: View {
             ForEach(Self.presets, id: \.name) { preset in
                 Button {
                     client.send(.addPreset(seconds: preset.seconds, name: preset.name))
+                    LeeoEngagement.shared.registerSignificantEvent()
+                    Task { await MoveWidgetTip.controlled.donate() }
                 } label: {
                     Text(preset.label)
                         .font(.subheadline.weight(.medium))
@@ -543,6 +626,7 @@ struct PresetRow: View {
 struct TimerRemoteRow: View {
     @EnvironmentObject private var client: RemoteClient
     let timer: RemoteTimer
+    var showsMoveTip = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
@@ -610,6 +694,16 @@ struct TimerRemoteRow: View {
             ProgressView(value: timer.progress)
                 .tint(timer.isFinished ? .red : .accentColor)
         }
+        // "05:00" 을 "오 콜론 영영" 처럼 읽지 않게 한 문장으로 묶는다.
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("남은 시간")
+        .accessibilityValue(spokenRemaining)
+    }
+
+    private var spokenRemaining: String {
+        let time = Duration.seconds(Int(timer.remaining))
+            .formatted(.units(allowed: [.hours, .minutes, .seconds], width: .wide))
+        return String(localized: "\(time), \(Int(timer.progress * 100))% 진행")
     }
 
     // MARK: 재생 제어
@@ -622,7 +716,10 @@ struct TimerRemoteRow: View {
             }
 
             Button {
+                // 멈춰 있던 타이머를 시작하는 것만 '만족했을 법한 행동'으로 센다.
+                if !timer.isRunning { LeeoEngagement.shared.registerSignificantEvent() }
                 client.send(.toggleRun(timer.id))
+                Task { await MoveWidgetTip.controlled.donate() }
             } label: {
                 Image(systemName: timer.isRunning ? "pause.fill" : "play.fill")
                     .font(.title3)
@@ -671,11 +768,18 @@ struct TimerRemoteRow: View {
 
     // MARK: 창 위치
 
+    @ViewBuilder
     private var positionPad: some View {
-        WidgetPositionPad(desktop: client.desktop,
-                          placement: timer.placement,
-                          isHidden: timer.isHidden) { x, y in
+        let pad = WidgetPositionPad(desktop: client.desktop,
+                                    placement: timer.placement,
+                                    isHidden: timer.isHidden) { x, y in
             client.send(.moveWidget(timer.id, x: x, y: y))
+            MoveWidgetTip.hasMovedWidget = true
+        }
+        if showsMoveTip {
+            pad.popoverTip(MoveWidgetTip(), arrowEdge: .bottom)
+        } else {
+            pad
         }
     }
 
@@ -775,6 +879,15 @@ struct WidgetPositionPad: View {
             GeometryReader { geo in
                 pad(in: geo.size)
             }
+            // 끌기는 VoiceOver 로 할 수 없다. 대신 자리 이름으로 옮기는 동작을 준다.
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("타이머 창 위치")
+            .accessibilityValue(hint)
+            .accessibilityAction(named: Text("왼쪽 위로 옮기기")) { moveInCurrentScreen(0.0, 0.0) }
+            .accessibilityAction(named: Text("오른쪽 위로 옮기기")) { moveInCurrentScreen(1.0, 0.0) }
+            .accessibilityAction(named: Text("가운데로 옮기기")) { moveInCurrentScreen(0.5, 0.5) }
+            .accessibilityAction(named: Text("왼쪽 아래로 옮기기")) { moveInCurrentScreen(0.0, 1.0) }
+            .accessibilityAction(named: Text("오른쪽 아래로 옮기기")) { moveInCurrentScreen(1.0, 1.0) }
             // 실제 배치 비율 그대로 — 판의 구석이 데스크탑의 구석과 같은 자리를 뜻해야 한다.
             .aspectRatio(CGFloat(desktop?.aspect ?? 16.0 / 10.0), contentMode: .fit)
             .frame(maxWidth: .infinity, maxHeight: 150)
@@ -894,6 +1007,19 @@ struct WidgetPositionPad: View {
                 onMove(Double(point.x), Double(point.y))
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
             }
+    }
+
+    // MARK: 손쉬운 사용
+
+    /// 지금 창이 있는 화면 안의 상대 위치(0…1)로 옮긴다. 화면 가장자리 값은 `clamp` 가
+    /// 창 크기만큼 안으로 들여 주므로 Mac 이 하는 계산과 같은 자리에 멈춘다.
+    private func moveInCurrentScreen(_ fx: Double, _ fy: Double) {
+        guard let placement else { return }
+        let current = CGPoint(x: placement.x, y: placement.y)
+        guard let screen = screen(nearest: current) else { return }
+        let target = clamp(CGPoint(x: screen.x + screen.width * fx,
+                                   y: screen.y + screen.height * fy), placement)
+        onMove(Double(target.x), Double(target.y))
     }
 
     // MARK: 좌표

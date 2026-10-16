@@ -9,32 +9,75 @@
 /* Begin PBXBuildFile section */
 		06C96CF0E19E8D7948C0FA28 /* RemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE070E32987838405727BC /* RemoteProtocol.swift */; };
 		0E0DBEAD47CAA750BA1AD617 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD3A8DBED7284C9A8C1CE062 /* Localizable.strings */; };
+		157CABBB6EFBC831B38787C6 /* RemoteOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD392207E8145849F24F519 /* RemoteOnboardingView.swift */; };
+		167330F4F02C476E45C13C54 /* RemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EE070E32987838405727BC /* RemoteProtocol.swift */; };
+		27F55089A8A708CBA472AF91 /* RemoteTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7ECD9C09AE74D3B9F6721 /* RemoteTips.swift */; };
+		2AC4034403D1D897AF5D9D40 /* PendingCommandQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6DF30F5B36060C062DC30 /* PendingCommandQueueTests.swift */; };
+		36889C9985D1426304587366 /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 871AEE3EB6825D8365096919 /* LeeoKit */; };
+		42A175D7F46F1A95CFD69653 /* RemoteShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EC8BC453356805648721C7 /* RemoteShortcuts.swift */; };
 		506154922BACDBC8228173B5 /* RemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF09A7AEFAD8E25CE0980C /* RemoteApp.swift */; };
 		7BA01B7E3EC264C43A1D214F /* RemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E63ACA9C91C08DE2F60D7A /* RemoteClient.swift */; };
+		7BD3A7E9B710AA02E9069D4D /* RemoteProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71164E2E48251299244D654E /* RemoteProtocolTests.swift */; };
 		8A75839F453BCEC9CCF6C3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33A3FC5F8ED9CE541B90283 /* Assets.xcassets */; };
+		9FE09D2C06B3B8BE7114CF28 /* RemoteSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBE7A2F16B664DAEDA3C87 /* RemoteSpec.swift */; };
+		A2A056540578E7F6380CAC40 /* RemoteSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BE6593C8EFC65AD672D5C /* RemoteSettingsView.swift */; };
+		B276F01F8BABB8849CF69171 /* AppShortcuts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4953DD735451EB602F8C7C16 /* AppShortcuts.strings */; };
+		C37109C733169D440EDEE771 /* PendingCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405F348627AA4B63F0643EA /* PendingCommands.swift */; };
+		D297397E61389B9B22B9BAB7 /* PendingCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405F348627AA4B63F0643EA /* PendingCommands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07EC8BC453356805648721C7 /* RemoteShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteShortcuts.swift; sourceTree = "<group>"; };
+		08E7ECD9C09AE74D3B9F6721 /* RemoteTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTips.swift; sourceTree = "<group>"; };
+		0A0576BE373401817CFB8E21 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		2A516E287A23D21904FDD474 /* StickyPresenterRemoteTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StickyPresenterRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		351BC74F4AB16F25C0288CF7 /* StickyPresenterRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StickyPresenterRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF8A81F624FCFAE305A48F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		71164E2E48251299244D654E /* RemoteProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProtocolTests.swift; sourceTree = "<group>"; };
+		80A6DF30F5B36060C062DC30 /* PendingCommandQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingCommandQueueTests.swift; sourceTree = "<group>"; };
 		80E63ACA9C91C08DE2F60D7A /* RemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteClient.swift; sourceTree = "<group>"; };
+		863946E32B2CBC57124F81B0 /* StickyPresenterRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StickyPresenterRemote.entitlements; sourceTree = "<group>"; };
+		A2D8484682B41222FEAFEED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		A33A3FC5F8ED9CE541B90283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A96F8E84AB43096AA54ACB7F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AADBE7A2F16B664DAEDA3C87 /* RemoteSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSpec.swift; sourceTree = "<group>"; };
 		ADF42665C0A7A85C0A778446 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		AFCF09A7AEFAD8E25CE0980C /* RemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApp.swift; sourceTree = "<group>"; };
+		B405F348627AA4B63F0643EA /* PendingCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingCommands.swift; sourceTree = "<group>"; };
 		B9EE070E32987838405727BC /* RemoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProtocol.swift; sourceTree = "<group>"; };
+		D95BE6593C8EFC65AD672D5C /* RemoteSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSettingsView.swift; sourceTree = "<group>"; };
 		DBDD214FE0506DEFA8BAAD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFD392207E8145849F24F519 /* RemoteOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteOnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AADBF25CD0D7FD9734C9E1CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36889C9985D1426304587366 /* LeeoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		16C08B0AB27E62581F7DD00B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4953DD735451EB602F8C7C16 /* AppShortcuts.strings */,
 				A33A3FC5F8ED9CE541B90283 /* Assets.xcassets */,
 				DBDD214FE0506DEFA8BAAD9F /* Info.plist */,
 				CD3A8DBED7284C9A8C1CE062 /* Localizable.strings */,
+				B405F348627AA4B63F0643EA /* PendingCommands.swift */,
 				AFCF09A7AEFAD8E25CE0980C /* RemoteApp.swift */,
 				80E63ACA9C91C08DE2F60D7A /* RemoteClient.swift */,
+				DFD392207E8145849F24F519 /* RemoteOnboardingView.swift */,
+				D95BE6593C8EFC65AD672D5C /* RemoteSettingsView.swift */,
+				07EC8BC453356805648721C7 /* RemoteShortcuts.swift */,
+				AADBE7A2F16B664DAEDA3C87 /* RemoteSpec.swift */,
+				08E7ECD9C09AE74D3B9F6721 /* RemoteTips.swift */,
+				863946E32B2CBC57124F81B0 /* StickyPresenterRemote.entitlements */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -43,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				351BC74F4AB16F25C0288CF7 /* StickyPresenterRemote.app */,
+				2A516E287A23D21904FDD474 /* StickyPresenterRemoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,8 +113,18 @@
 				9436FDA3E4266209C6DBE6B2 /* Config */,
 				16C08B0AB27E62581F7DD00B /* Sources */,
 				DCA31628B631421C3529F489 /* StickyPresenter */,
+				CCBF5A16044557C2D36FF5F8 /* Tests */,
 				1A1025612DE1AFDEA5E32B06 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		CCBF5A16044557C2D36FF5F8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80A6DF30F5B36060C062DC30 /* PendingCommandQueueTests.swift */,
+				71164E2E48251299244D654E /* RemoteProtocolTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		DCA31628B631421C3529F489 /* StickyPresenter */ = {
@@ -85,12 +139,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3119A71F24DEC58C9774FB6C /* StickyPresenterRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE10A7C92C8EA8E65095DE0 /* Build configuration list for PBXNativeTarget "StickyPresenterRemoteTests" */;
+			buildPhases = (
+				E1D6AE0F3D2E257F9DEBA0AC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickyPresenterRemoteTests;
+			packageProductDependencies = (
+			);
+			productName = StickyPresenterRemoteTests;
+			productReference = 2A516E287A23D21904FDD474 /* StickyPresenterRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FF57DDE5BCEC674D2D623297 /* StickyPresenterRemote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0F85DF00E5F87192EE9C8C3 /* Build configuration list for PBXNativeTarget "StickyPresenterRemote" */;
 			buildPhases = (
 				ADBAFA562CDC1323111C97EA /* Sources */,
 				4DC062D096A983CE0F78AAF9 /* Resources */,
+				AADBF25CD0D7FD9734C9E1CB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,6 +170,7 @@
 			);
 			name = StickyPresenterRemote;
 			packageProductDependencies = (
+				871AEE3EB6825D8365096919 /* LeeoKit */,
 			);
 			productName = StickyPresenterRemote;
 			productReference = 351BC74F4AB16F25C0288CF7 /* StickyPresenterRemote.app */;
@@ -112,6 +185,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					3119A71F24DEC58C9774FB6C = {
+						DevelopmentTeam = QGAQ3AY3R3;
+						ProvisioningStyle = Automatic;
+					};
 					FF57DDE5BCEC674D2D623297 = {
 						DevelopmentTeam = QGAQ3AY3R3;
 						ProvisioningStyle = Automatic;
@@ -129,11 +206,15 @@
 			);
 			mainGroup = 9862E9FA345A7700C95086F5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E0F34122414B04E2AA9D077A /* XCRemoteSwiftPackageReference "LeeoKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FF57DDE5BCEC674D2D623297 /* StickyPresenterRemote */,
+				3119A71F24DEC58C9774FB6C /* StickyPresenterRemoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B276F01F8BABB8849CF69171 /* AppShortcuts.strings in Resources */,
 				8A75839F453BCEC9CCF6C3AD /* Assets.xcassets in Resources */,
 				0E0DBEAD47CAA750BA1AD617 /* Localizable.strings in Resources */,
 			);
@@ -155,15 +237,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37109C733169D440EDEE771 /* PendingCommands.swift in Sources */,
 				506154922BACDBC8228173B5 /* RemoteApp.swift in Sources */,
 				7BA01B7E3EC264C43A1D214F /* RemoteClient.swift in Sources */,
+				157CABBB6EFBC831B38787C6 /* RemoteOnboardingView.swift in Sources */,
 				06C96CF0E19E8D7948C0FA28 /* RemoteProtocol.swift in Sources */,
+				A2A056540578E7F6380CAC40 /* RemoteSettingsView.swift in Sources */,
+				42A175D7F46F1A95CFD69653 /* RemoteShortcuts.swift in Sources */,
+				9FE09D2C06B3B8BE7114CF28 /* RemoteSpec.swift in Sources */,
+				27F55089A8A708CBA472AF91 /* RemoteTips.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D6AE0F3D2E257F9DEBA0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC4034403D1D897AF5D9D40 /* PendingCommandQueueTests.swift in Sources */,
+				D297397E61389B9B22B9BAB7 /* PendingCommands.swift in Sources */,
+				167330F4F02C476E45C13C54 /* RemoteProtocol.swift in Sources */,
+				7BD3A7E9B710AA02E9069D4D /* RemoteProtocolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4953DD735451EB602F8C7C16 /* AppShortcuts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D8484682B41222FEAFEED2 /* en */,
+				0A0576BE373401817CFB8E21 /* ko */,
+			);
+			name = AppShortcuts.strings;
+			sourceTree = "<group>";
+		};
 		CD3A8DBED7284C9A8C1CE062 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -244,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/StickyPresenterRemote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
@@ -258,6 +367,25 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
+		};
+		C22D323871F08140D7D00810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenter.RemoteTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		C45461AC0EAC0BDFDAD36F7D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -320,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/StickyPresenterRemote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
@@ -335,6 +464,25 @@
 			};
 			name = Debug;
 		};
+		FAEA871DFF0FC6FCE4CFBABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.StickyPresenter.RemoteTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +491,15 @@
 			buildConfigurations = (
 				29CC4A1D20A353EB388D85F3 /* Debug */,
 				C45461AC0EAC0BDFDAD36F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AAE10A7C92C8EA8E65095DE0 /* Build configuration list for PBXNativeTarget "StickyPresenterRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22D323871F08140D7D00810 /* Debug */,
+				FAEA871DFF0FC6FCE4CFBABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -357,6 +514,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0F34122414B04E2AA9D077A /* XCRemoteSwiftPackageReference "LeeoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.16.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		871AEE3EB6825D8365096919 /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0F34122414B04E2AA9D077A /* XCRemoteSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 290B68E9B070DA9C2AA0D0D2 /* Project object */;
 }
