@@ -2,7 +2,8 @@
 #
 # 배포 전 검사 — 리모컨 앱(iPhone). 실패하면 0이 아닌 값으로 끝나 아카이브를 막는다.
 #
-# 테스트 타겟이 없어 Release 컴파일만 본다. 배포는 Release 로 나가고, #if DEBUG 안에만 있는
+# Release 컴파일만 본다. 단위 시험(StickyPresenterRemoteTests)은 시뮬레이터가 있어야 해서 여기서 돌리지 않는다
+# — 개발 중 `xcodebuild test -scheme StickyPresenterRemote -destination 'platform=iOS Simulator,…'`. 배포는 Release 로 나가고, #if DEBUG 안에만 있는
 # 코드를 밖에서 부르면 Debug 만 통과하고 Release 에서 깨진다. 서명은 끈다 — 서명은 DeployBar 의 아카이브가 한다.
 #
 # 리모컨은 ../Shared/RemoteProtocol.swift 를 Mac 앱과 같이 쓴다. 한쪽만 고쳐 프로토콜이 어긋나면
