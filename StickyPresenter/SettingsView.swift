@@ -13,6 +13,7 @@ struct SettingsView: View {
     @ObservedObject private var notes = NoteManager.shared
     @State private var launchAtLogin = SMAppService.mainApp.status == .enabled
     @State private var launchError: String?
+    @State private var showRoadmap = false
     let onShowGuide: () -> Void
 
     var body: some View {
@@ -47,6 +48,8 @@ struct SettingsView: View {
 
             Section {
                 LeeoSupportSection<StickyPresenterSpec>()
+                // 앞으로 만들 기능 — 원본은 StickyPresenterRoadmap.swift
+                Button(LeeoRoadmapText.entry) { showRoadmap = true }
             } header: {
                 Text(L("settings.support"))
             }
@@ -58,6 +61,7 @@ struct SettingsView: View {
         .formStyle(.grouped)
         .frame(width: 460)
         .frame(minHeight: 460)
+        .sheet(isPresented: $showRoadmap) { RoadmapScreen() }
     }
 
     /// "1.0.10 (12)" — 문의 메일에 적어 달라고 할 때 사용자가 찾을 수 있는 자리.

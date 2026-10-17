@@ -33,6 +33,7 @@
 		9FF93CE7F5C60CE0290F7437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FC43C738503D17298F0CA1 /* Assets.xcassets */; };
 		A9E321BD80F7EBA0B59A0CA4 /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F47FD18CEA1EE37E4824 /* NoteStore.swift */; };
 		A9EF416AACC3D9A7D56A6617 /* SharedTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9684AB311403806FC69164 /* SharedTimerStore.swift */; };
+		AA42B5AEE6DA8E74DF352BF0 /* StickyPresenterRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967999A33F8954CC021BE23 /* StickyPresenterRoadmap.swift */; };
 		B5D0F89CCD92645255B1CB9A /* Chameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */; };
 		B5D2738A610477EAFEF6E4E1 /* StickyPresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */; };
 		B63BDC58CD1293E445AB75E6 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A806401B4BBE35486188185 /* Localization.swift */; };
@@ -102,6 +103,7 @@
 		962CE7CA4EF42EEAECBF1CC5 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		987495B8A98BC8CE3F35D826 /* NoteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStoreTests.swift; sourceTree = "<group>"; };
 		A2880FC7EADE7AACD21DC871 /* FeatureTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTips.swift; sourceTree = "<group>"; };
+		A967999A33F8954CC021BE23 /* StickyPresenterRoadmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterRoadmap.swift; sourceTree = "<group>"; };
 		B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chameleon.swift; sourceTree = "<group>"; };
 		BAAEEDA08C1A4BFF91AE75F8 /* GlobalHotKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKeys.swift; sourceTree = "<group>"; };
 		BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPresenterApp.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				D93BDEA48650FA7A04F708DB /* StickyNoteView.swift */,
 				BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */,
 				BF4614316425C461E1140E10 /* StickyPresenterFlags.swift */,
+				A967999A33F8954CC021BE23 /* StickyPresenterRoadmap.swift */,
 				018C95EA063E261ED87C0981 /* StickyPresenterSpec.swift */,
 				E071E9DE16ADEA99C6891E0B /* TeleprompterView.swift */,
 				862BBC3F743F7EB985DBECE9 /* TimerCore.swift */,
@@ -396,6 +399,7 @@
 				2E61AA6885F159A58591C278 /* StickyNoteView.swift in Sources */,
 				B5D2738A610477EAFEF6E4E1 /* StickyPresenterApp.swift in Sources */,
 				03D4665B98F599A843678C5E /* StickyPresenterFlags.swift in Sources */,
+				AA42B5AEE6DA8E74DF352BF0 /* StickyPresenterRoadmap.swift in Sources */,
 				913A9E80196553D08A72B789 /* StickyPresenterSpec.swift in Sources */,
 				F70D0A179ADFB07064549AF1 /* TeleprompterView.swift in Sources */,
 				70BCE66460F7DED7CAFEF3F6 /* TimerCore.swift in Sources */,
@@ -797,7 +801,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.16.1;
+				minimumVersion = 3.20.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

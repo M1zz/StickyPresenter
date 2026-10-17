@@ -282,3 +282,23 @@
 "intent.timers.title" = "타이머 보기";
 "intent.timers.description" = "타이머 패널을 엽니다.";
 "intent.timers.short" = "타이머";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "VoiceOver로 더 편하게";
+"roadmap.a11y.voiceover.detail" = "VoiceOver가 노트와 단추를 빠짐없이, 알맞은 순서로 읽어 줘요.";
+"roadmap.a11y.contrast.title" = "보기 편한 색과 대비";
+"roadmap.a11y.contrast.detail" = "대비를 높이거나 색을 구별하기 어려워도 노트 색을 알아볼 수 있어요.";
+"roadmap.a11y.motion.title" = "움직임 줄이기";
+"roadmap.a11y.motion.detail" = "움직임 줄이기를 켜면 화면 효과가 차분해져요.";
+"roadmap.lang.more.title" = "더 많은 언어";
+"roadmap.lang.more.detail" = "한국어와 영어 말고도 더 많은 나라 말로 쓸 수 있게 해요.";
+"roadmap.whatsnew.title" = "업데이트 소식";
+"roadmap.whatsnew.detail" = "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요.";
+"roadmap.feedback.reply.title" = "보낸 의견에 답장 받기";
+"roadmap.feedback.reply.detail" = "보내 주신 의견에 단 답장을 앱 안에서 볼 수 있어요.";
+"roadmap.sync.icloud.title" = "여러 Mac에서 같은 노트";
+"roadmap.sync.icloud.detail" = "iCloud로 다른 Mac에서도 같은 노트를 이어서 써요.";
+"roadmap.backup.title" = "노트 내보내기와 불러오기";
+"roadmap.backup.detail" = "노트를 파일로 저장해 두고 다른 Mac에서 다시 불러와요.";
+"roadmap.notifications.title" = "타이머 끝 알림";
+"roadmap.notifications.detail" = "타이머가 끝나면 다른 앱을 보고 있어도 알림으로 알려 줘요.";

@@ -282,3 +282,23 @@
 "intent.timers.title" = "Show Timers";
 "intent.timers.description" = "Opens the timer panel.";
 "intent.timers.short" = "Timers";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Better VoiceOver support";
+"roadmap.a11y.voiceover.detail" = "VoiceOver reads every note and button in a sensible order.";
+"roadmap.a11y.contrast.title" = "Easier-to-see colors";
+"roadmap.a11y.contrast.detail" = "Note colors stay easy to tell apart, even with Increase Contrast or color blindness.";
+"roadmap.a11y.motion.title" = "Reduced motion";
+"roadmap.a11y.motion.detail" = "With Reduce Motion on, animations get calmer.";
+"roadmap.lang.more.title" = "More languages";
+"roadmap.lang.more.detail" = "Use the app in more languages, not just English and Korean.";
+"roadmap.whatsnew.title" = "What’s new";
+"roadmap.whatsnew.detail" = "After an update, see what’s new the first time you open the app.";
+"roadmap.feedback.reply.title" = "Replies to your feedback";
+"roadmap.feedback.reply.detail" = "Read our replies to your feedback right in the app.";
+"roadmap.sync.icloud.title" = "Notes on all your Macs";
+"roadmap.sync.icloud.detail" = "Pick up the same notes on your other Macs with iCloud.";
+"roadmap.backup.title" = "Export and import notes";
+"roadmap.backup.detail" = "Save your notes to a file and load them again on another Mac.";
+"roadmap.notifications.title" = "Timer alerts";
+"roadmap.notifications.detail" = "Get a notification when a timer ends, even while you’re in another app.";
