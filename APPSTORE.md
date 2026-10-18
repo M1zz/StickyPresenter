@@ -67,7 +67,7 @@ macOS 14 이상에서 사용할 수 있습니다.
 
 ### 키워드
 
-프레젠테이션,텔레프롬프터,프롬프터,대본,원고,스피치,뽀모도로,포모도로,카운트다운,강의,강연,리허설,시간관리,메뉴바,플로팅,슬라이드,집중,스티커,강사,연설,세미나,수업
+발표타이머,발표메모,강사,연설,세미나,텔레프롬프터,프롬프터,프레젠테이션,슬라이드,카운트다운,뽀모도로,화면메모,대본,스피치,강연,강의,플로팅,리허설,원고,스티커,발표연습,수업
 
 ### 지원 URL
 
@@ -145,7 +145,7 @@ Requires macOS 14 or later.
 
 ### 키워드
 
-presentation,teleprompter,countdown,speech,pomodoro,speaker,script,clock,overlay,rehearsal,slides
+presentation,teleprompter,slides,countdown,pomodoro,rehearsal,presenter,overlay,script,speaker,cue
 
 ### 지원 URL
 
