@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 // MARK: - Teleprompter View
 struct TeleprompterView: View {
@@ -254,7 +255,12 @@ struct TeleprompterView: View {
         let t = Timer(timeInterval: 1.0 / 60.0, repeats: true) { _ in
             DispatchQueue.main.async {
                 scrollOffset = min(scrollOffset + scrollSpeed / 60.0, maxOffset)
-                if scrollOffset >= maxOffset { isScrolling = false }
+                if scrollOffset >= maxOffset, isScrolling {
+                    let readThrough = maxOffset > 0
+                    isScrolling = false
+                    // 원고를 끝까지 읽었다 — 만족도 질문의 근거
+                    if readThrough { LeeoEngagement.shared.registerSignificantEvent() }
+                }
             }
         }
         RunLoop.main.add(t, forMode: .common)

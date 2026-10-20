@@ -1,6 +1,7 @@
 import SwiftUI
 import AppKit
 import TipKit
+import LeeoKit
 
 // MARK: - Widget Size
 /// 타이머 창 프리셋 크기. 모서리 드래그로 자유롭게 조절할 수도 있지만,
@@ -309,6 +310,7 @@ class TimerEntry: ObservableObject, Identifiable {
             self.stopTicker()
             self.isRunning = false
             self.playFinishSound()   // 완료 청각 피드백 (위젯이 숨겨져 있어도 울림)
+            LeeoEngagement.shared.registerSignificantEvent()   // 발표를 시간 안에 마쳤다 — 만족도 질문의 근거
             WidgetSync.refresh()     // 데스크톱 위젯을 "완료" 표시로 전환
             // 완료 차임이 배경음악에 묻히지 않도록 페이드아웃
             MusicPlayer.shared.syncWithTimers()
@@ -365,6 +367,8 @@ class TimerEntry: ObservableObject, Identifiable {
 // MARK: - Timer List Manager
 class TimerListManager: ObservableObject {
     @Published var entries: [TimerEntry] = []
+    /// 끝난 타이머를 지운 횟수 — 발표를 마치고 정리한 때. 만족도 질문을 이때 한다 (TimerListView).
+    @Published private(set) var finishedTimersClosed = 0
     var onAdd: ((TimerEntry) -> Void)?
     var onRemove: ((TimerEntry) -> Void)?
 
@@ -379,6 +383,7 @@ class TimerListManager: ObservableObject {
         // Foundation ticker가 발화해 objectWillChange 를 전송하면
         // SwiftUI 가 이미 해제 중인 @ObservedObject 구독자를 순회하다 crash.
         // isInvalidated = true 도 함께 세팅되므로 이후 어떤 프로퍼티 변경도 UI를 갱신하지 않음.
+        let wasFinished = entry.isFinished
         entry.invalidate()
 
         // SwiftUI 버튼 액션 클로저가 살아있는 동안 window나 entries를 건드리면
@@ -386,6 +391,7 @@ class TimerListManager: ObservableObject {
         DispatchQueue.main.async {
             self.onRemove?(entry)
             self.entries.removeAll { $0.id == entry.id }
+            if wasFinished { self.finishedTimersClosed += 1 }
             WidgetSync.refresh()
             MusicPlayer.shared.syncWithTimers()
         }
@@ -399,6 +405,7 @@ struct TimerListView: View {
     @State private var inputText = ""
     @State private var showInputHelp = false
     @FocusState private var focused: Bool
+    @State private var showReviewGate = false
     private let pomodoroTip = PomodoroInputTip()
 
     private var parsedSeconds: TimeInterval {
@@ -597,6 +604,21 @@ struct TimerListView: View {
         .frame(minWidth: 280, minHeight: 180)
         .background(.regularMaterial)
         .background(ignoresSafeAreaEdges: .all)
+        .onChange(of: manager.finishedTimersClosed) { _ in askForReviewAfterTalk() }
+        .leeoReviewGate(StickyPresenterSpec.self, isPresented: $showReviewGate)
+    }
+
+    /// 끝난 타이머를 지운 때 — 발표를 마치고 정리하는 순간에 "즐겁게 쓰고 계신가요?"를 묻는다.
+    /// 화면을 공유 중일 수 있으니 아직 도는 타이머가 하나라도 있으면 묻지 않는다.
+    private func askForReviewAfterTalk() {
+        guard LeeoReviewRequest.shouldRequest() else { return }
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 1_000_000_000)
+            guard !showReviewGate, !manager.entries.contains(where: { $0.isRunning }),
+                  LeeoReviewRequest.shouldRequest() else { return }
+            LeeoReviewRequest.markRequested()
+            showReviewGate = true
+        }
     }
 
     private func submit() {
