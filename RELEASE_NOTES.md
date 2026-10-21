@@ -18,6 +18,36 @@ See replies to your feedback in Settings
 Feedback now asks what happened
 Privacy and support links are in Settings
 
+### 앱스토어 (영어(영국))
+
+See replies to your feedback in Settings
+Feedback now asks what happened
+Privacy and support links are in Settings
+
+### 앱스토어 (일본어)
+
+設定から、送ったご意見への返信を読めます
+ご意見を送るとき、状況を順に尋ねます
+設定からプライバシーとサポートを開けます
+
+### 앱스토어 (简体中文)
+
+可在设置中查看你的反馈和开发者的回复
+发送反馈时，会一步步询问当时的情况
+可在设置中直接打开隐私政策和支持页面
+
+### 앱스토어 (스페인어)
+
+Respuestas a tus comentarios en Ajustes
+Al comentar, te preguntamos qué pasó
+Abre privacidad y soporte desde Ajustes
+
+### 앱스토어 (독일어)
+
+Antworten auf Feedback in Einstellungen
+Feedback fragt jetzt nach dem Hergang
+Datenschutz und Support in Einstellungen
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

@@ -337,6 +337,11 @@
 				Base,
 				en,
 				ko,
+				en-GB,
+				ja,
+				zh-Hans,
+				es,
+				de,
 			);
 			mainGroup = 93B576DEF5BFEEBEEF479A36;
 			minimizedProjectReferenceProxies = 1;
