@@ -1,0 +1,7 @@
+"widget.displayName" = "Präsentations-Timer";
+"widget.description" = "Zeigt die verbleibende Zeit deines laufenden Präsentations-Timers.";
+"widget.empty" = "Kein Timer aktiv";
+"widget.total" = "Gesamt %@";
+"widget.finished" = "%@ · Fertig";
+"widget.running" = "%@ · Läuft";
+"widget.paused" = "%@ · Pausiert";

@@ -1,0 +1,7 @@
+"widget.displayName" = "Temporizador de presentación";
+"widget.description" = "Muestra el tiempo restante del temporizador de presentación en marcha.";
+"widget.empty" = "Ningún temporizador en marcha";
+"widget.total" = "Total %@";
+"widget.finished" = "%@ · Terminado";
+"widget.running" = "%@ · En marcha";
+"widget.paused" = "%@ · En pausa";

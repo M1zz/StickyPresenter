@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 新しい付箋";
+"menu.newFromClipboard" = "📋 クリップボードから作成";
+"menu.teleprompter" = "📺 プロンプターモード";
+"menu.timers" = "⏱ タイマー";
+"menu.pomodoro" = "🍅 ポモドーロ (25/5)";
+"menu.showAll" = "👁 すべての付箋を表示";
+"menu.hideAll" = "🙈 すべての付箋を非表示";
+"menu.defaultColor" = "🎨 デフォルトの色";
+"menu.removeAll" = "🗑 すべての付箋を削除";
+"menu.remote" = "📱 リモコン";
+"menu.contact.email" = "✉️ メール (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram DM (@lee25_ios)";
+"menu.quit" = "StickyPresenterを終了";
+
+"color.yellow" = "🟡 イエロー";
+"color.pink" = "🩷 ピンク";
+"color.green" = "🟢 グリーン";
+"color.blue" = "🔵 ブルー";
+"color.purple" = "🟣 パープル";
+"color.orange" = "🟠 オレンジ";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "ペアリングコード:   %@";
+"remote.none" = "接続中のリモコンはありません";
+"remote.connected" = "接続中のリモコン: %d台";
+"remote.newCode" = "新しいペアリングコード";
+"remote.forget" = "ペアリング済みのリモコンを解除";
+"remote.forget.count" = "ペアリング済みのリモコンを解除 (%d)";
+"remote.forget.title" = "ペアリング済みのリモコンをすべて解除しますか？";
+"remote.forget.message" = "接続中のリモコンは切断されます。再び使うにはペアリングコードが必要です。";
+"remote.forget.confirm" = "解除";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "キャンセル";
+"alert.removeAll.title" = "すべての付箋を削除しますか？";
+"alert.removeAll.message" = "すべての付箋が閉じられます。文字が入力されている付箋は、メニューの「閉じた付箋を開く」で元に戻せます。";
+"alert.removeAll.confirm" = "すべて削除";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 StickyPresenter ガイド\n\n📌 ドラッグで付箋を移動\n🖱 カーソルを重ねるとボタンが表示\n🎨 色・不透明度・文字サイズを調整\n🔒 ロックボタンで編集を防止\n\n⌘⌃N  新しい付箋\n⌘⌃T  タイマーを開く\n⌘⌃B  ポモドーロ (25/5)\n⌘⌃P  プロンプター\n⌘⌃S  すべての付箋を表示\n⌘⌃H  すべての付箋を非表示\n\n💡 タイマーの操作部分からも\n   付箋をすぐ作れます！";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "ここに原稿を貼り付けてください...\n\nテキストは自動でスクロールします。\n\nスピードや文字サイズはコントロールで調整できます。";
+"📺 TELEPROMPTER" = "📺 プロンプター";
+"Preview mode" = "プレビューモード";
+"Edit text" = "テキストを編集";
+"Mirror text (for teleprompter glass)" = "テキストを反転 (プロンプター用ガラス向け)";
+"Font" = "フォント";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "編集をロック";
+"Unlock editing" = "編集のロックを解除";
+"Empty note" = "空の付箋";
+"note.charCount" = "%d文字";
+"note.opacity" = "不透明度: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "タイマー";
+"window.timer.named" = "タイマー – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "新しい付箋";
+"Quick Start" = "クイックスタート";
+"No timers" = "タイマーなし";
+"Tap a preset or enter a time" = "プリセットを選ぶか、時間を入力してください";
+"Show" = "表示";
+"Hide" = "非表示";
+"Show / hide widget" = "ウィジェットを表示/非表示";
+"Align" = "整列";
+"Align widget next to the panel" = "ウィジェットをパネルの横に並べる";
+"Window" = "ウインドウ";
+"Open in a window (screen share / AirPlay)" = "ウインドウで開く (画面共有 / AirPlay)";
+"Delete timer" = "タイマーを削除";
+"Reuse this timer with another duration" = "このタイマーを別の時間で再利用";
+"Add Timer" = "タイマーを追加";
+"Drag to resize" = "ドラッグしてサイズ変更";
+"Close" = "閉じる";
+"timer.theme" = "テーマ: %@";
+"timer.widgetSize" = "ウィジェットのサイズ: %@ (%dpt)";
+"timer.restartAs" = "このタイマーを%@で再開始";
+
+/* ===== Theme names ===== */
+"theme.system" = "システム";
+"theme.light" = "ライト";
+"theme.dark" = "ダーク";
+"theme.chameleon" = "カメレオン";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "集中";
+"pomodoro.break" = "休憩";
+"preview.pomodoro" = "↻ 集中 %1$@ · 休憩 %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d時間";
+"unit.min" = "%d分";
+"unit.sec" = "%d秒";
+"unit.zeroSec" = "0秒";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "クイックプリセットを編集";
+"Quick Presets" = "クイックプリセット";
+"Reset" = "リセット";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "入力欄と同じ形式で入力できます —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "プリセットを追加";
+"Add a preset" = "プリセットを追加";
+"No readable preset — buttons stay hidden" = "読み取れるプリセットがありません — ボタンは表示されません";
+"Remove preset" = "プリセットを削除";
+"Keep at least one preset" = "プリセットは1つ以上残してください";
+"preset.restore" = "%@を元に戻す";
+"preset.max" = "プリセットは最大%d個です";
+
+/* ===== Music ===== */
+"mood.focus" = "集中";
+"mood.calm" = "リラックス";
+"mood.jazz" = "ジャズ";
+"mood.upbeat" = "アップテンポ";
+"mood.focus.hint" = "落ち着いたインストゥルメンタル — 集中作業やリハーサル向け";
+"mood.calm.hint" = "アンビエントとソロピアノ — 本番前に気持ちを落ち着けたいときに";
+"mood.jazz.hint" = "カフェジャズとボサノバ — くつろいだ雰囲気の会場に";
+"mood.upbeat.hint" = "軽快なポップとファンク — ウォームアップや休憩に";
+"Play music" = "音楽を再生";
+"Pause music" = "音楽を一時停止";
+"Next Track" = "次のトラック";
+"Play With Timer" = "タイマーと連動して再生";
+"Refresh" = "更新";
+"music.empty" = "トラックがありません — %@フォルダにオーディオを追加してください";
+"music.openFolder" = "%@フォルダを開く";
+"music.count.one" = "%1$d曲 · %2$@";
+"music.count.other" = "%1$d曲 · %2$@";
+"music.chip.none" = " (トラックなし)";
+"music.chip.one" = " · %d曲";
+"music.chip.other" = " · %d曲";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "設定";
+"settings.support" = "サポート";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "タイマー";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ 閉じた付箋を開く";
+"menu.help" = "❓ ヘルプ";
+"menu.guide" = "📖 ユーザガイド";
+"menu.supportSite" = "🌐 サポートページを開く";
+"menu.settings" = "⚙️ 設定…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "保存した付箋を読み込めませんでした";
+"alert.notesCorrupt.message" = "付箋のファイルが破損しているため、StickyPresenterは空の状態で起動します。元のファイルは%@として残してあります。復元が必要な場合は、開発者までお送りください。";
+"alert.notesCorrupt.reveal" = "Finderで表示";
+"window.guide" = "StickyPresenter ユーザガイド";
+"settings.general" = "一般";
+"settings.launchAtLogin" = "ログイン時に開く";
+"settings.launchAtLogin.failed" = "ログイン項目を変更できませんでした: %@";
+"settings.launchAtLogin.approval" = "「システム設定」▸「一般」▸「ログイン項目」でStickyPresenterを許可してください。";
+"settings.defaultColor" = "新しい付箋の色";
+"settings.help" = "ヘルプ";
+"settings.showGuide" = "ユーザガイドを開く";
+"settings.openSupport" = "サポートページを開く";
+"settings.revealNotes" = "付箋ファイルを表示";
+"settings.revealNotes.help" = "付箋はこのMacにのみ保存されます。このファイルを使ってバックアップしたり、別のMacに移したりできます。";
+"settings.version" = "バージョン";
+"colorName.yellow" = "イエロー";
+"colorName.pink" = "ピンク";
+"colorName.green" = "グリーン";
+"colorName.blue" = "ブルー";
+"colorName.purple" = "パープル";
+"colorName.orange" = "オレンジ";
+"note.close" = "付箋を閉じる";
+"note.close.help" = "付箋を閉じる (メニューの「閉じた付箋を開く」で元に戻せます)";
+"note.color.help" = "付箋の色を変更";
+"note.opacity.help" = "不透明度を調整";
+"note.fontSmaller" = "文字を小さく";
+"note.fontLarger" = "文字を大きく";
+"teleprompter.close" = "プロンプターを閉じる";
+"teleprompter.rewind" = "最初に戻る";
+"teleprompter.play" = "再生";
+"teleprompter.pause" = "一時停止";
+"teleprompter.speed" = "スクロール速度";
+"timer.inputHelp.tooltip" = "入力できる形式を表示";
+"timer.inputHelp.title" = "入力できる形式";
+"timer.inputHelp.minutes" = "数字だけなら分として扱います (10分)";
+"timer.inputHelp.colon" = "分:秒 (5分30秒)";
+"timer.inputHelp.hms" = "時:分:秒";
+"timer.inputHelp.units" = "単位つき (1時間20分)";
+"timer.inputHelp.seconds" = "秒 (45秒)";
+"timer.inputHelp.pomodoro" = "集中/休憩を繰り返すポモドーロ";
+"timer.inputHelp.footer" = "例をクリックすると入力欄に入ります。タイマーは最大99:59:59まで設定できます。";
+"chameleon.permission.title" = "カメレオンには画面収録の許可が必要です";
+"chameleon.permission.message" = "カメレオンは、タイマーのすぐ後ろにある画面の色を1秒ごとに読み取り、背景をその色に合わせます。画像は色の判定にのみ使用し、保存したり外部に送信したりすることはありません。\n\n「続ける」を選ぶと、macOSが許可を求めます。以前に許可しなかった場合は、「システム設定」でStickyPresenterをオンにしてください。";
+"chameleon.permission.continue" = "続ける";
+"chameleon.permission.openSettings" = "システム設定を開く";
+"chameleon.permission.skip" = "スキップ";
+"hotkey.newNote" = "新しい付箋";
+"hotkey.noteFromClipboard" = "クリップボードから付箋を作成";
+"hotkey.teleprompter" = "プロンプター";
+"hotkey.timers" = "タイマーを表示/非表示";
+"hotkey.pomodoro" = "ポモドーロを開始 (25/5)";
+"hotkey.showNotes" = "すべての付箋を表示";
+"hotkey.hideNotes" = "すべての付箋を非表示";
+"guide.welcome.title" = "はじめに";
+"guide.welcome.summary" = "StickyPresenterは、Keynoteのフルスクリーン表示中でも手前に浮かぶ付箋・タイマー・プロンプターを提供します。";
+"guide.welcome.1" = "どのウインドウも、プレゼンアプリからフォーカスを奪うことなく、フルスクリーンのスライドの上に表示されます。";
+"guide.welcome.2" = "操作はすべてメニューバーの付箋アイコンから行います。Dockにアイコンは表示されません。";
+"guide.welcome.3" = "付箋は入力するたびにこのMacへ保存され、次回も同じ場所に表示されます。";
+"guide.welcome.4" = "このガイドは、メニューバー ▸ ヘルプ ▸ ユーザガイドからいつでも開けます。";
+"guide.notes.title" = "付箋";
+"guide.notes.summary" = "原稿やリマインダーをスライドの上に貼っておけます。";
+"guide.notes.1" = "付箋の上でドラッグすると移動します。端をドラッグするとサイズを変更できます。";
+"guide.notes.2" = "付箋にカーソルを重ねると、色・不透明度・文字サイズのボタンが表示されます。";
+"guide.notes.3" = "付箋をロックしておけば、発表中に誤って変更してしまう心配がありません。";
+"guide.notes.4" = "うっかり閉じてしまっても、メニューの「閉じた付箋を開く」で直近20件まで元に戻せます。";
+"guide.notes.5" = "原稿をコピーして⌘⌃Vを押すと、新しい付箋になります。";
+"guide.timers.title" = "タイマー";
+"guide.timers.summary" = "画面の隅の小さなウィジェットで、残り時間をいつでも確認できます。";
+"guide.timers.1" = "タイマーウインドウに時間を入力してReturnキーを押します。入力欄の横の「？」で入力形式を確認できます。";
+"guide.timers.2" = "タイマーがないときは、クイックスタートのボタンを1回クリックするだけで開始できます。鉛筆アイコンでその時間を変更できます。";
+"guide.timers.3" = "「表示/非表示」と「整列」で、ウィジェットを隠したり、タイマーウインドウの横に並べたりできます。";
+"guide.timers.4" = "「ウインドウ」を押すとタイマーが通常のウインドウとして開くので、画面共有やAirPlayでそのウインドウだけを共有できます。";
+"guide.timers.5" = "テーマボタンを押すたびに、ライト、ダーク、そして背後の画面に色を合わせるカメレオンの順に切り替わります。カメレオンには画面収録の許可が必要です。";
+"guide.timers.6" = "ミュージックバーでは、準備中にBGMを流せます。曲は自分でフォルダに追加します。";
+"guide.pomodoro.title" = "ポモドーロ";
+"guide.pomodoro.summary" = "止めるまで、集中と休憩を交互に繰り返します。";
+"guide.pomodoro.1" = "25/5 や 50m/10m のように、集中と休憩の時間をスラッシュで区切って入力するとポモドーロが始まります。";
+"guide.pomodoro.2" = "切り替わるたびに違うチャイムが鳴り、ウィジェットは集中中が赤、休憩中が緑になります。";
+"guide.pomodoro.3" = "どこにいても⌘⌃Bを押せば、25分の集中と5分の休憩が始まります。";
+"guide.teleprompter.title" = "プロンプター";
+"guide.teleprompter.summary" = "原稿が一定の速さでスクロールするので、カメラを見ながら読み上げられます。";
+"guide.teleprompter.1" = "原稿をコピーして⌘⌃Pを押すと、プロンプターで開きます。鉛筆アイコンでその場で編集できます。";
+"guide.teleprompter.2" = "「再生」を押すとスクロールが始まり、原稿の最後で自動的に止まります。";
+"guide.teleprompter.3" = "反転を使うと、反射ガラスを使うプロンプター機材向けに文字が左右反転します。";
+"guide.teleprompter.4" = "速度・文字サイズ・反転の設定は、次回も引き継がれます。";
+"guide.remote.title" = "iPhoneリモコン";
+"guide.remote.summary" = "ステージ上でも、iPhoneからタイマーを開始・停止できます。";
+"guide.remote.1" = "iPhoneで、App Storeから「Remote Controller for Sticky」を入手してください。";
+"guide.remote.2" = "アプリでこのMacを選び、メニューバー ▸ リモコンに表示される4桁のコードを入力します。";
+"guide.remote.3" = "iPhoneとMacは同じWi‑Fiに接続する必要があります。初回以降は、コードなしで接続されます。";
+"guide.remote.4" = "1台のMacを複数のリモコンで操作できるので、発表者と進行担当の両方で使えます。";
+"guide.shortcuts.title" = "ショートカット";
+"guide.shortcuts.summary" = "ほかのアプリが前面にあるときも、プレゼン中でも、どこでも使えます。";
+"guide.shortcuts.taken" = "ほかのアプリが使用中";
+"guide.shortcuts.note" = "Command (⌘) と Control (⌃) を同時に押したまま操作します。「ほかのアプリが使用中」と表示されたショートカットは、そのアプリを終了すると再び使えるようになります。";
+"guide.support" = "サポートページ";
+"guide.next" = "次へ";
+"guide.done" = "はじめる";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhoneリモコンは現在ご利用いただけません";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "StickyPresenterへようこそ";
+"onboarding.menubar.title" = "StickyPresenterはメニューバーにいます";
+"onboarding.menubar.body" = "Dockにアイコンは表示されません。付箋、タイマー、プロンプター、設定は、画面右上の付箋アイコンにまとまっています。";
+"onboarding.menubar.icon" = "メニューバーでこのアイコンを探してください";
+"onboarding.hotkeys.title" = "発表中も使えるキー操作";
+"onboarding.hotkeys.body" = "KeynoteやPowerPointがフルスクリーンのときでも、スライドから離れずにこれらのショートカットを使えます。";
+"onboarding.launch.title" = "発表前から準備万端";
+"onboarding.launch.body" = "ログイン時にStickyPresenterを開いておけば、ステージに立つ時にはもう付箋とタイマーが待っています。";
+"onboarding.launch.later" = "この設定は、あとから「設定」でいつでも変更できます。";
+"onboarding.back" = "戻る";
+"onboarding.openGuide" = "ユーザガイドを開く";
+"onboarding.start" = "はじめる";
+"onboarding.page" = "%d / %d ページ";
+
+/* Tips */
+"tip.pomodoro.title" = "ポモドーロはひと言で開始";
+"tip.pomodoro.message" = "25/5 と入力すると、25分の集中と5分の休憩が、止めるまで繰り返されます。";
+"tip.pomodoro.try" = "25/5 を試す";
+
+/* App Shortcuts */
+"intent.timer.title" = "タイマーを開始";
+"intent.timer.description" = "スライドの上に浮かぶカウントダウンタイマーを開始します。";
+"intent.timer.minutes" = "分";
+"intent.timer.summary ${minutes}" = "${minutes}分のタイマーを開始";
+"intent.timer.short" = "タイマー開始";
+"intent.pomodoro.title" = "ポモドーロを開始";
+"intent.pomodoro.description" = "25分の集中と5分の休憩を繰り返すポモドーロタイマーを開始します。";
+"intent.pomodoro.short" = "ポモドーロ";
+"intent.note.title" = "新しい付箋";
+"intent.note.description" = "画面に新しい付箋を追加します。";
+"intent.note.short" = "新規付箋";
+"intent.timers.title" = "タイマーを表示";
+"intent.timers.description" = "タイマーパネルを開きます。";
+"intent.timers.short" = "タイマー";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "VoiceOverへの対応を強化";
+"roadmap.a11y.voiceover.detail" = "VoiceOverが、すべての付箋とボタンを自然な順序で読み上げます。";
+"roadmap.a11y.contrast.title" = "見やすい色づかい";
+"roadmap.a11y.contrast.detail" = "「コントラストを上げる」を使っている場合や色覚の特性があっても、付箋の色を見分けやすくします。";
+"roadmap.a11y.motion.title" = "視差効果の軽減";
+"roadmap.a11y.motion.detail" = "「視差効果を減らす」がオンのときは、アニメーションを控えめにします。";
+"roadmap.lang.more.title" = "対応言語の追加";
+"roadmap.lang.more.detail" = "英語と韓国語以外の言語でもアプリを使えるようになります。";
+"roadmap.whatsnew.title" = "新機能のお知らせ";
+"roadmap.whatsnew.detail" = "アップデート後、最初にアプリを開いたときに新機能を確認できます。";
+"roadmap.feedback.reply.title" = "ご意見への返信";
+"roadmap.feedback.reply.detail" = "お寄せいただいたご意見への返信を、アプリ内で読めます。";
+"roadmap.sync.icloud.title" = "すべてのMacで付箋を共有";
+"roadmap.sync.icloud.detail" = "iCloudを使って、ほかのMacでも同じ付箋の続きから使えます。";
+"roadmap.backup.title" = "付箋の書き出しと読み込み";
+"roadmap.backup.detail" = "付箋をファイルに保存し、別のMacで読み込めます。";
+"roadmap.notifications.title" = "タイマーの通知";
+"roadmap.notifications.detail" = "ほかのアプリを使っていても、タイマーが終了したら通知でお知らせします。";
