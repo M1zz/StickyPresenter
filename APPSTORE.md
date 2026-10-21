@@ -549,6 +549,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 프랑스어 (fr)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Notes, minuteur et prompteur
+
+### 프로모션 텍스트
+
+Votre texte et votre compte à rebours au-dessus de Keynote en plein écran. Notes enregistrées automatiquement, guide intégré pour découvrir chaque fonction.
+
+### 설명
+
+Quand on présente, les deux choses dont on a le plus besoin sont aussi les plus difficiles à voir : son texte et l’heure. StickyPresenter les garde toutes deux en surimpression au-dessus de ce qui s’affiche à l’écran, y compris Keynote en plein écran, sans jamais avoir à quitter vos diapositives pour les consulter.
+
+L’app vit dans la barre des menus : pas d’icône dans le Dock, pas de fenêtres supplémentaires à gérer.
+
+NOTES FLOTTANTES
+• Restent au premier plan des présentations en plein écran, là où une fenêtre classique ne peut pas les suivre
+• Six couleurs, opacité et taille du texte réglables
+• Verrouillez une note pour qu’un clic malencontreux ne la modifie pas en pleine intervention
+• Transformez instantanément le contenu du presse-papiers en nouvelle note
+• Les notes s’enregistrent au fil de la frappe et se rouvrent exactement là où vous les avez laissées
+• Une note fermée par erreur ? Rouvrez-la depuis le menu
+
+MINUTEURS À COMPTE À REBOURS
+• Des widgets carrés que vous pouvez agrandir jusqu’à les lire depuis le fond de la salle
+• Thèmes Système, Clair et Sombre, plus Caméléon, qui s’accorde à l’écran situé derrière
+• Le widget vire au rouge quand le temps presse, puis sonne et fait clignoter son contour à la fin
+• Ouvrez n’importe quel minuteur dans sa propre fenêtre et partagez uniquement celle-ci par partage d’écran ou AirPlay
+• Saisissez les durées comme vous les pensez, par exemple 5:30 ou 1h 20m. Tapez 25/5 pour un Pomodoro qui alterne concentration et pauses
+• Un widget du Centre de notifications garde le compte à rebours à portée de balayage
+
+PROMPTEUR
+• Défilement automatique fluide, avec vitesse et taille du texte réglables
+• Mode miroir pour les prompteurs à vitre réfléchissante
+• S’arrête tout seul à la fin du texte et mémorise vos réglages
+
+MUSIQUE DE FOND
+• Quatre ambiances : Concentration, Calme, Jazz et Entraînant
+• Démarre et s’arrête avec votre minuteur, en fondu à l’entrée comme à la sortie
+• Les morceaux sont les vôtres : l’app crée un dossier par ambiance et lit tout ce que vous y déposez
+
+DES RACCOURCIS QUI FONCTIONNENT PARTOUT
+• Les raccourcis Commande-Contrôle ouvrent les notes, les minuteurs et le prompteur même quand une autre app est au premier plan
+• Aucune autorisation d’accessibilité requise
+
+SIMPLE À PRENDRE EN MAIN
+• Un guide intégré s’ouvre au premier lancement et reste à un clic dans le menu Aide
+• Option d’ouverture à la connexion pour être prêt avant chaque intervention
+
+TÉLÉCOMMANDE IPHONE (APP GRATUITE SÉPARÉE)
+Pendant une intervention, votre Mac est hors de portée. Remote Controller for Sticky met le minuteur au creux de votre main : démarrez et mettez en pause, ajoutez ou retirez 30 secondes, changez la taille et le thème du widget, ou écartez-le d’une diapositive qu’il masque. L’appairage se fait avec un code à quatre chiffres : même dans une salle remplie de Mac, la télécommande ne parle qu’au vôtre.
+
+CONFIDENTIALITÉ
+Pas de compte, pas de publicité. Vos notes et vos textes ne quittent jamais votre Mac. Hormis des statistiques d’utilisation anonymes, l’app ne se connecte à Internet que lorsque vous choisissez d’envoyer un commentaire depuis les Réglages, et elle dialogue avec la télécommande iPhone par une connexion directe et chiffrée sur votre réseau local.
+
+Nécessite macOS 14 ou ultérieur.
+
+### 키워드
+
+présentation,diaporama,exposé,orateur,pomodoro,répétition,conférence,discours,chrono,décompte,script
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

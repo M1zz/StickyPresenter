@@ -48,6 +48,12 @@ Antworten auf Feedback in Einstellungen
 Feedback fragt jetzt nach dem Hergang
 Datenschutz und Support in Einstellungen
 
+### 앱스토어 (프랑스어)
+
+Voyez les réponses à vos avis
+L’envoi d’un avis pose des questions
+Confidentialité et aide dans Réglages
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)
