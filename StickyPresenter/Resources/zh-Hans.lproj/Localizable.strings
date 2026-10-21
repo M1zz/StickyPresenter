@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 新建便签";
+"menu.newFromClipboard" = "📋 从剪贴板新建";
+"menu.teleprompter" = "📺 提词器模式";
+"menu.timers" = "⏱ 计时器";
+"menu.pomodoro" = "🍅 番茄钟 (25/5)";
+"menu.showAll" = "👁 显示所有便签";
+"menu.hideAll" = "🙈 隐藏所有便签";
+"menu.defaultColor" = "🎨 默认颜色";
+"menu.removeAll" = "🗑 移除所有便签";
+"menu.remote" = "📱 遥控器";
+"menu.contact.email" = "✉️ 电子邮件 (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram 私信 (@lee25_ios)";
+"menu.quit" = "退出 StickyPresenter";
+
+"color.yellow" = "🟡 黄色";
+"color.pink" = "🩷 粉色";
+"color.green" = "🟢 绿色";
+"color.blue" = "🔵 蓝色";
+"color.purple" = "🟣 紫色";
+"color.orange" = "🟠 橙色";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "配对码：   %@";
+"remote.none" = "没有已连接的遥控器";
+"remote.connected" = "已连接的遥控器：%d 个";
+"remote.newCode" = "生成新配对码";
+"remote.forget" = "忘记已配对的遥控器";
+"remote.forget.count" = "忘记已配对的遥控器 (%d)";
+"remote.forget.title" = "要忘记所有已配对的遥控器吗？";
+"remote.forget.message" = "已连接的遥控器将断开连接，之后需要重新输入配对码。";
+"remote.forget.confirm" = "忘记";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "取消";
+"alert.removeAll.title" = "要移除所有便签吗？";
+"alert.removeAll.message" = "所有便签都会被关闭。有内容的便签可以通过菜单中的“重新打开已关闭的便签”找回。";
+"alert.removeAll.confirm" = "全部移除";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 StickyPresenter 使用指南\n\n📌 拖动即可移动便签\n🖱 鼠标悬停时显示控件\n🎨 可调整颜色 · 不透明度 · 字号\n🔒 点按锁定按钮可防止误编辑\n\n⌘⌃N  新建便签\n⌘⌃T  打开计时器\n⌘⌃B  番茄钟 (25/5)\n⌘⌃P  提词器\n⌘⌃S  显示所有便签\n⌘⌃H  隐藏所有便签\n\n💡 在计时器控件中\n   也能直接新建便签！";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "在此粘贴你的讲稿...\n\n提词器会自动滚动播放文字。\n\n可通过控件调整速度和字号。";
+"📺 TELEPROMPTER" = "📺 提词器";
+"Preview mode" = "预览模式";
+"Edit text" = "编辑文字";
+"Mirror text (for teleprompter glass)" = "镜像文字（用于提词器反射玻璃）";
+"Font" = "字体";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "锁定编辑";
+"Unlock editing" = "解锁编辑";
+"Empty note" = "空便签";
+"note.charCount" = "%d 字";
+"note.opacity" = "不透明度：%d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "计时器";
+"window.timer.named" = "计时器 – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "新建便签";
+"Quick Start" = "快速开始";
+"No timers" = "没有计时器";
+"Tap a preset or enter a time" = "点按预设或输入时间";
+"Show" = "显示";
+"Hide" = "隐藏";
+"Show / hide widget" = "显示／隐藏小组件";
+"Align" = "对齐";
+"Align widget next to the panel" = "将小组件对齐到面板旁边";
+"Window" = "窗口";
+"Open in a window (screen share / AirPlay)" = "在窗口中打开（屏幕共享 / AirPlay）";
+"Delete timer" = "删除计时器";
+"Reuse this timer with another duration" = "用其他时长重新使用此计时器";
+"Add Timer" = "添加计时器";
+"Drag to resize" = "拖动调整大小";
+"Close" = "关闭";
+"timer.theme" = "主题：%@";
+"timer.widgetSize" = "小组件大小：%@ (%dpt)";
+"timer.restartAs" = "以 %@ 重新开始此计时器";
+
+/* ===== Theme names ===== */
+"theme.system" = "跟随系统";
+"theme.light" = "浅色";
+"theme.dark" = "深色";
+"theme.chameleon" = "变色龙";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "专注";
+"pomodoro.break" = "休息";
+"preview.pomodoro" = "↻ 专注 %1$@ · 休息 %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d小时";
+"unit.min" = "%d分钟";
+"unit.sec" = "%d秒";
+"unit.zeroSec" = "0秒";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "编辑快速预设";
+"Quick Presets" = "快速预设";
+"Reset" = "重置";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "格式与输入框相同 —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "添加预设";
+"Add a preset" = "添加一个预设";
+"No readable preset — buttons stay hidden" = "没有可识别的预设 — 按钮将保持隐藏";
+"Remove preset" = "移除预设";
+"Keep at least one preset" = "至少保留一个预设";
+"preset.restore" = "恢复 %@";
+"preset.max" = "最多 %d 个预设";
+
+/* ===== Music ===== */
+"mood.focus" = "专注";
+"mood.calm" = "舒缓";
+"mood.jazz" = "爵士";
+"mood.upbeat" = "轻快";
+"mood.focus.hint" = "平稳的纯音乐 — 适合深度工作和排练";
+"mood.calm.hint" = "氛围音乐和钢琴独奏 — 上台前放松心情";
+"mood.jazz.hint" = "咖啡馆爵士和波萨诺瓦 — 轻松、适合交流的场合";
+"mood.upbeat.hint" = "轻快流行和放克 — 热身和休息时听";
+"Play music" = "播放音乐";
+"Pause music" = "暂停音乐";
+"Next Track" = "下一首";
+"Play With Timer" = "随计时器播放";
+"Refresh" = "刷新";
+"music.empty" = "没有曲目 — 请把音频文件添加到“%@”文件夹";
+"music.openFolder" = "打开“%@”文件夹";
+"music.count.one" = "%1$d 首 · %2$@";
+"music.count.other" = "%1$d 首 · %2$@";
+"music.chip.none" = "（无曲目）";
+"music.chip.one" = " · %d 首";
+"music.chip.other" = " · %d 首";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "设置";
+"settings.support" = "支持";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "计时器";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ 重新打开已关闭的便签";
+"menu.help" = "❓ 帮助";
+"menu.guide" = "📖 使用指南";
+"menu.supportSite" = "🌐 打开支持页面";
+"menu.settings" = "⚙️ 设置…";
+"alert.ok" = "好";
+"alert.notesCorrupt.title" = "无法读取已保存的便签";
+"alert.notesCorrupt.message" = "便签文件已损坏，StickyPresenter 将以空白状态启动。原文件已另存为 %@。如需恢复，请把它发给开发者。";
+"alert.notesCorrupt.reveal" = "在访达中显示";
+"window.guide" = "StickyPresenter 使用指南";
+"settings.general" = "通用";
+"settings.launchAtLogin" = "登录时打开";
+"settings.launchAtLogin.failed" = "无法更改登录项：%@";
+"settings.launchAtLogin.approval" = "请在“系统设置”▸“通用”▸“登录项”中允许 StickyPresenter。";
+"settings.defaultColor" = "新便签颜色";
+"settings.help" = "帮助";
+"settings.showGuide" = "打开使用指南";
+"settings.openSupport" = "打开支持页面";
+"settings.revealNotes" = "显示便签文件";
+"settings.revealNotes.help" = "便签只保存在这台 Mac 上。可以用这个文件备份，或迁移到另一台 Mac。";
+"settings.version" = "版本";
+"colorName.yellow" = "黄色";
+"colorName.pink" = "粉色";
+"colorName.green" = "绿色";
+"colorName.blue" = "蓝色";
+"colorName.purple" = "紫色";
+"colorName.orange" = "橙色";
+"note.close" = "关闭便签";
+"note.close.help" = "关闭便签（可通过菜单中的“重新打开已关闭的便签”找回）";
+"note.color.help" = "更改便签颜色";
+"note.opacity.help" = "调整不透明度";
+"note.fontSmaller" = "缩小文字";
+"note.fontLarger" = "放大文字";
+"teleprompter.close" = "关闭提词器";
+"teleprompter.rewind" = "回到开头";
+"teleprompter.play" = "播放";
+"teleprompter.pause" = "暂停";
+"teleprompter.speed" = "滚动速度";
+"timer.inputHelp.tooltip" = "查看输入格式";
+"timer.inputHelp.title" = "你可以这样输入";
+"timer.inputHelp.minutes" = "单个数字表示分钟（10 分钟）";
+"timer.inputHelp.colon" = "分:秒（5 分 30 秒）";
+"timer.inputHelp.hms" = "时:分:秒";
+"timer.inputHelp.units" = "带单位（1 小时 20 分钟）";
+"timer.inputHelp.seconds" = "秒（45 秒）";
+"timer.inputHelp.pomodoro" = "专注／休息番茄钟循环";
+"timer.inputHelp.footer" = "点按示例即可填入。计时器最长可设为 99:59:59。";
+"chameleon.permission.title" = "“变色龙”需要屏幕录制权限";
+"chameleon.permission.message" = "“变色龙”每秒读取一次计时器后方屏幕的颜色，并让背景与之匹配。图像只用于计算颜色，不会被保存或发送到任何地方。\n\n继续后，macOS 会请求权限。如果你之前拒绝过，请在“系统设置”中开启 StickyPresenter。";
+"chameleon.permission.continue" = "继续";
+"chameleon.permission.openSettings" = "打开系统设置";
+"chameleon.permission.skip" = "跳过";
+"hotkey.newNote" = "新建便签";
+"hotkey.noteFromClipboard" = "从剪贴板新建便签";
+"hotkey.teleprompter" = "提词器";
+"hotkey.timers" = "显示或隐藏计时器";
+"hotkey.pomodoro" = "开始番茄钟 (25/5)";
+"hotkey.showNotes" = "显示所有便签";
+"hotkey.hideNotes" = "隐藏所有便签";
+"guide.welcome.title" = "快速入门";
+"guide.welcome.summary" = "StickyPresenter 为你提供悬浮在 Keynote 之上的便签、计时器和提词器，全屏时也不例外。";
+"guide.welcome.1" = "所有窗口都悬浮在全屏幻灯片之上，且不会抢走演示软件的焦点。";
+"guide.welcome.2" = "一切功能都在菜单栏的便签图标里，没有 Dock 图标。";
+"guide.welcome.3" = "便签会在你输入时保存在这台 Mac 上，下次打开仍在原来的位置。";
+"guide.welcome.4" = "随时可以从菜单栏 ▸ 帮助 ▸ 使用指南重新打开本指南。";
+"guide.notes.title" = "便签";
+"guide.notes.summary" = "把讲稿或提醒钉在幻灯片上方。";
+"guide.notes.1" = "在便签任意位置拖动即可移动，拖动边缘可调整大小。";
+"guide.notes.2" = "鼠标悬停在便签上，会显示颜色、不透明度和字号按钮。";
+"guide.notes.3" = "锁定便签后，演讲时就不会误改内容。";
+"guide.notes.4" = "不小心关掉了便签？用菜单中的“重新打开已关闭的便签”可找回最近 20 个。";
+"guide.notes.5" = "复制讲稿后按 ⌘⌃V，即可变成一张新便签。";
+"guide.timers.title" = "计时器";
+"guide.timers.summary" = "屏幕一角的小组件帮你随时掌握时间。";
+"guide.timers.1" = "在“计时器”窗口中输入时间并按下回车。输入框旁的问号会列出可用格式。";
+"guide.timers.2" = "没有计时器时，点按一下“快速开始”按钮就能开始。用铅笔图标可修改这些时间。";
+"guide.timers.3" = "“显示／隐藏”可以隐藏小组件，“对齐”可以让小组件整齐排在“计时器”窗口旁边。";
+"guide.timers.4" = "“窗口”会把计时器作为普通窗口打开，这样屏幕共享或 AirPlay 时可以只分享这个窗口。";
+"guide.timers.5" = "主题按钮可在浅色、深色和“变色龙”之间切换，“变色龙”会匹配后方屏幕的颜色。“变色龙”需要屏幕录制权限。";
+"guide.timers.6" = "音乐栏可在你准备时播放背景音乐，曲目需要你自己添加到文件夹中。";
+"guide.pomodoro.title" = "番茄钟";
+"guide.pomodoro.summary" = "专注与休息交替进行，直到你停止。";
+"guide.pomodoro.1" = "用斜杠输入专注和休息时间，如 25/5 或 50m/10m，即可开始番茄钟。";
+"guide.pomodoro.2" = "每次切换都会响起不同的提示音，小组件专注时变红，休息时变绿。";
+"guide.pomodoro.3" = "在任何地方按 ⌘⌃B，即可开始 25 分钟专注加 5 分钟休息。";
+"guide.teleprompter.title" = "提词器";
+"guide.teleprompter.summary" = "讲稿匀速滚动，让你面对镜头也能照着念。";
+"guide.teleprompter.1" = "复制讲稿后按 ⌘⌃P，即可在提词器中打开。点按铅笔图标可在其中编辑。";
+"guide.teleprompter.2" = "点按“播放”开始滚动，到讲稿末尾会自动停止。";
+"guide.teleprompter.3" = "“镜像”会翻转文字，适用于带反射玻璃的提词器设备。";
+"guide.teleprompter.4" = "速度、字号和镜像设置都会记住，下次直接沿用。";
+"guide.remote.title" = "iPhone 遥控器";
+"guide.remote.summary" = "在台上用 iPhone 开始和停止计时器。";
+"guide.remote.1" = "在 iPhone 上从 App Store 下载“Remote Controller for Sticky”。";
+"guide.remote.2" = "在 App 中选择这台 Mac，然后输入菜单栏 ▸ 遥控器中显示的四位数字码。";
+"guide.remote.3" = "iPhone 和 Mac 需要连接同一个 Wi‑Fi。首次配对后，之后无需再输入码即可连接。";
+"guide.remote.4" = "多个遥控器可以同时控制一台 Mac，演讲者和舞台监督都能使用。";
+"guide.shortcuts.title" = "快捷键";
+"guide.shortcuts.summary" = "无论其他 App 在最前面，还是你正在演示，这些快捷键都能使用。";
+"guide.shortcuts.taken" = "已被其他 App 占用";
+"guide.shortcuts.note" = "请同时按住 Command (⌘) 和 Control (⌃)。标有“已被其他 App 占用”的快捷键，在那个 App 退出后即可恢复使用。";
+"guide.support" = "支持页面";
+"guide.next" = "下一步";
+"guide.done" = "开始使用";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone 遥控器暂时无法使用";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "欢迎使用 StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter 就在你的菜单栏里";
+"onboarding.menubar.body" = "它没有 Dock 图标。便签、计时器、提词器和设置都在屏幕右上角的便签图标里。";
+"onboarding.menubar.icon" = "请在菜单栏中找到这个图标";
+"onboarding.hotkeys.title" = "演讲时也能用的快捷键";
+"onboarding.hotkeys.body" = "即使 Keynote 或 PowerPoint 处于全屏，这些快捷键也能使用，无需离开幻灯片。";
+"onboarding.launch.title" = "演讲前就准备好";
+"onboarding.launch.body" = "登录时自动打开 StickyPresenter，这样你一上台，便签和计时器就已经就位。";
+"onboarding.launch.later" = "你可以随时在“设置”中更改。";
+"onboarding.back" = "返回";
+"onboarding.openGuide" = "打开使用指南";
+"onboarding.start" = "开始使用";
+"onboarding.page" = "第 %d 页，共 %d 页";
+
+/* Tips */
+"tip.pomodoro.title" = "一行输入开始番茄钟";
+"tip.pomodoro.message" = "输入 25/5，即专注 25 分钟、休息 5 分钟，循环往复直到你停止。";
+"tip.pomodoro.try" = "试试 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "开始计时";
+"intent.timer.description" = "开始一个悬浮在幻灯片之上的倒计时。";
+"intent.timer.minutes" = "分钟";
+"intent.timer.summary ${minutes}" = "开始 ${minutes} 分钟计时";
+"intent.timer.short" = "开始计时";
+"intent.pomodoro.title" = "开始番茄钟";
+"intent.pomodoro.description" = "开始 25 分钟专注 / 5 分钟休息的番茄钟。";
+"intent.pomodoro.short" = "番茄钟";
+"intent.note.title" = "新建便签";
+"intent.note.description" = "在屏幕上添加一张新便签。";
+"intent.note.short" = "新便签";
+"intent.timers.title" = "显示计时器";
+"intent.timers.description" = "打开计时器面板。";
+"intent.timers.short" = "计时器";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "更好的旁白支持";
+"roadmap.a11y.voiceover.detail" = "旁白会按合理的顺序朗读每张便签和每个按钮。";
+"roadmap.a11y.contrast.title" = "更易辨认的颜色";
+"roadmap.a11y.contrast.detail" = "即使开启“增强对比度”或有色觉障碍，便签颜色也依然容易区分。";
+"roadmap.a11y.motion.title" = "减少动态效果";
+"roadmap.a11y.motion.detail" = "开启“减弱动态效果”后，动画会更平缓。";
+"roadmap.lang.more.title" = "更多语言";
+"roadmap.lang.more.detail" = "支持更多语言，不再只有英语和韩语。";
+"roadmap.whatsnew.title" = "新功能介绍";
+"roadmap.whatsnew.detail" = "更新后首次打开 App 时，查看有哪些新内容。";
+"roadmap.feedback.reply.title" = "意见回复";
+"roadmap.feedback.reply.detail" = "直接在 App 中查看我们对你意见的回复。";
+"roadmap.sync.icloud.title" = "所有 Mac 上的便签";
+"roadmap.sync.icloud.detail" = "通过 iCloud，在你的其他 Mac 上接着使用同样的便签。";
+"roadmap.backup.title" = "导出和导入便签";
+"roadmap.backup.detail" = "把便签保存为文件，再在另一台 Mac 上载入。";
+"roadmap.notifications.title" = "计时器提醒";
+"roadmap.notifications.detail" = "计时器结束时发送通知，即使你正在使用其他 App。";

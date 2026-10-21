@@ -1,0 +1,7 @@
+"widget.displayName" = "プレゼンタイマー";
+"widget.description" = "実行中のプレゼンタイマーの残り時間を表示します。";
+"widget.empty" = "実行中のタイマーはありません";
+"widget.total" = "合計 %@";
+"widget.finished" = "%@ · 完了";
+"widget.running" = "%@ · 実行中";
+"widget.paused" = "%@ · 一時停止中";

@@ -1,0 +1,7 @@
+"widget.displayName" = "Minuteur de présentation";
+"widget.description" = "Affiche le temps restant du minuteur de présentation en cours.";
+"widget.empty" = "Aucun minuteur en cours";
+"widget.total" = "Total %@";
+"widget.finished" = "%@ · Terminé";
+"widget.running" = "%@ · En cours";
+"widget.paused" = "%@ · En pause";

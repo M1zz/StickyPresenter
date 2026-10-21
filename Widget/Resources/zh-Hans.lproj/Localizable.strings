@@ -1,0 +1,7 @@
+"widget.displayName" = "演讲计时器";
+"widget.description" = "显示正在运行的演讲计时器的剩余时间。";
+"widget.empty" = "没有运行中的计时器";
+"widget.total" = "共 %@";
+"widget.finished" = "%@ · 已结束";
+"widget.running" = "%@ · 进行中";
+"widget.paused" = "%@ · 已暂停";
