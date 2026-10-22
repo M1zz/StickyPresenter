@@ -1,0 +1,7 @@
+"widget.displayName" = "Presentatietimer";
+"widget.description" = "Toont de resterende tijd van de lopende presentatietimer.";
+"widget.empty" = "Geen timer actief";
+"widget.total" = "Totaal %@";
+"widget.finished" = "%@ · Klaar";
+"widget.running" = "%@ · Actief";
+"widget.paused" = "%@ · Gepauzeerd";

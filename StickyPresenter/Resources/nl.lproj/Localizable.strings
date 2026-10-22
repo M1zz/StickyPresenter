@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Nieuwe notitie";
+"menu.newFromClipboard" = "📋 Nieuw vanaf klembord";
+"menu.teleprompter" = "📺 Teleprompterstand";
+"menu.timers" = "⏱ Timers";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Toon alle notities";
+"menu.hideAll" = "🙈 Verberg alle notities";
+"menu.defaultColor" = "🎨 Standaardkleur";
+"menu.removeAll" = "🗑 Verwijder alle notities";
+"menu.remote" = "📱 Afstandsbediening";
+"menu.contact.email" = "✉️ E-mail (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram-bericht (@lee25_ios)";
+"menu.quit" = "Stop StickyPresenter";
+
+"color.yellow" = "🟡 Geel";
+"color.pink" = "🩷 Roze";
+"color.green" = "🟢 Groen";
+"color.blue" = "🔵 Blauw";
+"color.purple" = "🟣 Paars";
+"color.orange" = "🟠 Oranje";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Koppelcode:   %@";
+"remote.none" = "Geen afstandsbediening verbonden";
+"remote.connected" = "Verbonden afstandsbedieningen: %d";
+"remote.newCode" = "Nieuwe koppelcode";
+"remote.forget" = "Gekoppelde afstandsbedieningen vergeten";
+"remote.forget.count" = "Gekoppelde afstandsbedieningen vergeten (%d)";
+"remote.forget.title" = "Alle gekoppelde afstandsbedieningen vergeten?";
+"remote.forget.message" = "Verbonden afstandsbedieningen worden losgekoppeld en hebben de koppelcode opnieuw nodig.";
+"remote.forget.confirm" = "Vergeet";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Annuleer";
+"alert.removeAll.title" = "Alle notities verwijderen?";
+"alert.removeAll.message" = "Alle notities worden gesloten. Notities met tekst haal je terug met ‘Heropen gesloten notitie’ in het menu.";
+"alert.removeAll.confirm" = "Verwijder alles";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Handleiding StickyPresenter\n\n📌 Sleep om een notitie te verplaatsen\n🖱 Beweeg de muis erover om de knoppen te tonen\n🎨 Pas kleur · doorzichtigheid · lettergrootte aan\n🔒 Met de slotknop kan niets worden gewijzigd\n\n⌘⌃N  Nieuwe notitie\n⌘⌃T  Open timers\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Toon alle notities\n⌘⌃H  Verberg alle notities\n\n💡 Je kunt ook een notitie maken\n   direct vanuit de timerknoppen!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Plak hier je script...\n\nDe teleprompter scrolt de tekst automatisch.\n\nGebruik de knoppen om snelheid en lettergrootte aan te passen.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Voorvertoning";
+"Edit text" = "Tekst bewerken";
+"Mirror text (for teleprompter glass)" = "Tekst spiegelen (voor teleprompterglas)";
+"Font" = "Lettertype";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Bewerken vergrendelen";
+"Unlock editing" = "Bewerken ontgrendelen";
+"Empty note" = "Lege notitie";
+"note.charCount" = "%d tekens";
+"note.opacity" = "Dekking: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Timer";
+"window.timer.named" = "Timer – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Nieuwe notitie";
+"Quick Start" = "Snelstart";
+"No timers" = "Geen timers";
+"Tap a preset or enter a time" = "Tik op een voorinstelling of voer een tijd in";
+"Show" = "Toon";
+"Hide" = "Verberg";
+"Show / hide widget" = "Widget tonen/verbergen";
+"Align" = "Lijn uit";
+"Align widget next to the panel" = "Lijn de widget uit naast het paneel";
+"Window" = "Venster";
+"Open in a window (screen share / AirPlay)" = "Open in een venster (scherm delen / AirPlay)";
+"Delete timer" = "Verwijder timer";
+"Reuse this timer with another duration" = "Gebruik deze timer opnieuw met een andere duur";
+"Add Timer" = "Voeg timer toe";
+"Drag to resize" = "Sleep om het formaat te wijzigen";
+"Close" = "Sluit";
+"timer.theme" = "Thema: %@";
+"timer.widgetSize" = "Widgetgrootte: %@ (%d pt)";
+"timer.restartAs" = "Start deze timer opnieuw als %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Systeem";
+"theme.light" = "Licht";
+"theme.dark" = "Donker";
+"theme.chameleon" = "Kameleon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Focus";
+"pomodoro.break" = "Pauze";
+"preview.pomodoro" = "↻ Focus %1$@ · Pauze %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d uur";
+"unit.min" = "%d min.";
+"unit.sec" = "%d sec.";
+"unit.zeroSec" = "0 sec.";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Snelle voorinstellingen bewerken";
+"Quick Presets" = "Snelle voorinstellingen";
+"Reset" = "Zet terug";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Zelfde notatie als het invoerveld —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Voeg voorinstelling toe";
+"Add a preset" = "Voeg een voorinstelling toe";
+"No readable preset — buttons stay hidden" = "Geen leesbare voorinstelling – de knoppen blijven verborgen";
+"Remove preset" = "Verwijder voorinstelling";
+"Keep at least one preset" = "Houd minstens één voorinstelling";
+"preset.restore" = "Herstel %@";
+"preset.max" = "Maximaal %d voorinstellingen";
+
+/* ===== Music ===== */
+"mood.focus" = "Focus";
+"mood.calm" = "Kalm";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Opgewekt";
+"mood.focus.hint" = "Rustige instrumentale muziek – voor geconcentreerd werk en oefenen";
+"mood.calm.hint" = "Ambient en solopiano – om tot rust te komen voor een praatje";
+"mood.jazz.hint" = "Café-jazz en bossanova – voor ontspannen zalen en gesprekken";
+"mood.upbeat.hint" = "Lichte pop en funk – voor opwarmen en pauzes";
+"Play music" = "Speel muziek af";
+"Pause music" = "Pauzeer muziek";
+"Next Track" = "Volgend nummer";
+"Play With Timer" = "Speel af met timer";
+"Refresh" = "Ververs";
+"music.empty" = "Geen nummers – voeg audio toe aan de map %@";
+"music.openFolder" = "Open map %@";
+"music.count.one" = "%1$d nummer · %2$@";
+"music.count.other" = "%1$d nummers · %2$@";
+"music.chip.none" = " (geen nummers)";
+"music.chip.one" = " · %d nummer";
+"music.chip.other" = " · %d nummers";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Instellingen";
+"settings.support" = "Ondersteuning";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Timers";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Heropen gesloten notitie";
+"menu.help" = "❓ Help";
+"menu.guide" = "📖 Gebruikershandleiding";
+"menu.supportSite" = "🌐 Open ondersteuningspagina";
+"menu.settings" = "⚙️ Instellingen…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Je opgeslagen notities konden niet worden gelezen";
+"alert.notesCorrupt.message" = "Het notitiebestand is beschadigd, dus StickyPresenter start leeg. Het originele bestand is bewaard als %@. Heb je het nodig om te herstellen, stuur het dan naar de ontwikkelaar.";
+"alert.notesCorrupt.reveal" = "Toon in Finder";
+"window.guide" = "Gebruikershandleiding StickyPresenter";
+"settings.general" = "Algemeen";
+"settings.launchAtLogin" = "Open bij inloggen";
+"settings.launchAtLogin.failed" = "Het inlogonderdeel kon niet worden gewijzigd: %@";
+"settings.launchAtLogin.approval" = "Sta StickyPresenter toe in Systeeminstellingen ▸ Algemeen ▸ Inloggen.";
+"settings.defaultColor" = "Kleur van nieuwe notities";
+"settings.help" = "Help";
+"settings.showGuide" = "Open gebruikershandleiding";
+"settings.openSupport" = "Open ondersteuningspagina";
+"settings.revealNotes" = "Toon notitiebestand";
+"settings.revealNotes.help" = "Notities worden alleen op deze Mac bewaard. Gebruik dit bestand om ze te back-uppen of naar een andere Mac te verplaatsen.";
+"settings.version" = "Versie";
+"colorName.yellow" = "Geel";
+"colorName.pink" = "Roze";
+"colorName.green" = "Groen";
+"colorName.blue" = "Blauw";
+"colorName.purple" = "Paars";
+"colorName.orange" = "Oranje";
+"note.close" = "Sluit notitie";
+"note.close.help" = "Sluit notitie (haal hem terug met ‘Heropen gesloten notitie’ in het menu)";
+"note.color.help" = "Wijzig notitiekleur";
+"note.opacity.help" = "Pas dekking aan";
+"note.fontSmaller" = "Kleinere tekst";
+"note.fontLarger" = "Grotere tekst";
+"teleprompter.close" = "Sluit teleprompter";
+"teleprompter.rewind" = "Terug naar begin";
+"teleprompter.play" = "Speel af";
+"teleprompter.pause" = "Pauzeer";
+"teleprompter.speed" = "Scrollsnelheid";
+"timer.inputHelp.tooltip" = "Toon invoernotaties";
+"timer.inputHelp.title" = "Je kunt invoeren";
+"timer.inputHelp.minutes" = "Een getal betekent minuten (10 min)";
+"timer.inputHelp.colon" = "Minuten:seconden (5 min 30 sec)";
+"timer.inputHelp.hms" = "Uren:minuten:seconden";
+"timer.inputHelp.units" = "Met eenheden (1 uur 20 min)";
+"timer.inputHelp.seconds" = "Seconden (45 sec)";
+"timer.inputHelp.pomodoro" = "Pomodoro-cyclus van focus en pauze";
+"timer.inputHelp.footer" = "Klik op een voorbeeld om het in te vullen. Timers kunnen maximaal 99:59:59 duren.";
+"chameleon.permission.title" = "Kameleon heeft toestemming voor schermopname nodig";
+"chameleon.permission.message" = "Kameleon leest één keer per seconde de kleur van het scherm vlak achter de timer en past de achtergrond daarop aan. De afbeelding wordt alleen gebruikt om een kleur te bepalen en wordt nergens opgeslagen of naartoe gestuurd.\n\nAls je doorgaat, vraagt macOS om toestemming. Heb je die eerder geweigerd, zet StickyPresenter dan aan in Systeeminstellingen.";
+"chameleon.permission.continue" = "Ga door";
+"chameleon.permission.openSettings" = "Open Systeeminstellingen";
+"chameleon.permission.skip" = "Sla over";
+"hotkey.newNote" = "Nieuwe notitie";
+"hotkey.noteFromClipboard" = "Nieuwe notitie vanaf klembord";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Timers tonen of verbergen";
+"hotkey.pomodoro" = "Start pomodoro (25/5)";
+"hotkey.showNotes" = "Toon alle notities";
+"hotkey.hideNotes" = "Verberg alle notities";
+"guide.welcome.title" = "Aan de slag";
+"guide.welcome.summary" = "StickyPresenter geeft je notities, timers en een teleprompter die boven Keynote zweven, ook op volledig scherm.";
+"guide.welcome.1" = "Elk venster zweeft boven dia’s op volledig scherm zonder de focus van je presentatie-app af te pakken.";
+"guide.welcome.2" = "Alles zit in het notitiesymbool in de menubalk. Er is geen symbool in het Dock.";
+"guide.welcome.3" = "Notities worden tijdens het typen op deze Mac bewaard en staan de volgende keer op dezelfde plek.";
+"guide.welcome.4" = "Open deze handleiding op elk moment via menubalk ▸ Help ▸ Gebruikershandleiding.";
+"guide.notes.title" = "Plaknotities";
+"guide.notes.summary" = "Zet je script of herinneringen boven op je dia’s.";
+"guide.notes.1" = "Sleep ergens op een notitie om hem te verplaatsen. Sleep aan een rand om het formaat te wijzigen.";
+"guide.notes.2" = "Beweeg de muis over een notitie om de knoppen voor kleur, dekking en tekstgrootte te tonen.";
+"guide.notes.3" = "Vergrendel een notitie zodat er tijdens je presentatie niets per ongeluk verandert.";
+"guide.notes.4" = "Een notitie per ongeluk gesloten? ‘Heropen gesloten notitie’ in het menu brengt de laatste 20 terug.";
+"guide.notes.5" = "Kopieer je script en druk op ⌘⌃V om er een nieuwe notitie van te maken.";
+"guide.timers.title" = "Timers";
+"guide.timers.summary" = "Houd de tijd in de gaten met een klein widgetje in de hoek.";
+"guide.timers.1" = "Voer een tijd in het venster Timers in en druk op Return. Het vraagteken naast het veld toont de notaties.";
+"guide.timers.2" = "Zonder timers start één klik op een Snelstart-knop er een. Met het potlood pas je die tijden aan.";
+"guide.timers.3" = "Tonen/verbergen en Uitlijnen verbergen een widget of zetten widgets naast het venster Timers.";
+"guide.timers.4" = "Venster opent de timer als gewoon venster, zodat je alleen dat venster kunt delen via scherm delen of AirPlay.";
+"guide.timers.5" = "De themaknop wisselt tussen licht, donker en Kameleon, dat zich aanpast aan het scherm erachter. Kameleon heeft toestemming voor schermopname nodig.";
+"guide.timers.6" = "De muziekbalk speelt achtergrondmuziek terwijl je je voorbereidt. De nummers zet je zelf in een map.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Wissel focus- en pauzesessies af tot je stopt.";
+"guide.pomodoro.1" = "Typ focus- en pauzetijd met een schuine streep, zoals 25/5 of 50m/10m, om een pomodoro te starten.";
+"guide.pomodoro.2" = "Bij elke wissel klinkt een andere toon en de widget wordt rood bij focus en groen bij pauze.";
+"guide.pomodoro.3" = "Druk ergens op ⌘⌃B om 25 minuten focus met pauzes van 5 minuten te starten.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Je script scrolt in een gelijkmatig tempo, zodat je kunt lezen terwijl je in de camera kijkt.";
+"guide.teleprompter.1" = "Kopieer je script en druk op ⌘⌃P om het in de teleprompter te openen. Met het potlood bewerk je het daar.";
+"guide.teleprompter.2" = "Druk op Speel af om te beginnen met scrollen. Aan het einde van het script stopt het vanzelf.";
+"guide.teleprompter.3" = "Spiegelen draait de tekst om voor teleprompterapparatuur met reflecterend glas.";
+"guide.teleprompter.4" = "Snelheid, tekstgrootte en spiegeling worden onthouden voor de volgende keer.";
+"guide.remote.title" = "iPhone-afstandsbediening";
+"guide.remote.summary" = "Start en stop timers vanaf je iPhone terwijl je op het podium staat.";
+"guide.remote.1" = "Haal Remote Controller for Sticky uit de App Store op je iPhone.";
+"guide.remote.2" = "Kies deze Mac in de app en voer de code van vier cijfers in uit menubalk ▸ Afstandsbediening.";
+"guide.remote.3" = "Je iPhone en Mac moeten op hetzelfde wifi-netwerk zitten. Na de eerste keer verbinden ze zonder code.";
+"guide.remote.4" = "Meerdere afstandsbedieningen kunnen één Mac bedienen, dus zowel de spreker als de podiummanager kan hem gebruiken.";
+"guide.shortcuts.title" = "Sneltoetsen";
+"guide.shortcuts.summary" = "Ze werken overal, ook als een andere app vooraan staat of je aan het presenteren bent.";
+"guide.shortcuts.taken" = "Gebruikt door een andere app";
+"guide.shortcuts.note" = "Houd Command (⌘) en Control (⌃) tegelijk ingedrukt. Een sneltoets met de aanduiding ‘Gebruikt door een andere app’ werkt weer zodra die app wordt afgesloten.";
+"guide.support" = "Ondersteuningspagina";
+"guide.next" = "Volgende";
+"guide.done" = "Aan de slag";
+
+/* Remote kill switch */
+"remote.unavailable" = "De iPhone-afstandsbediening is tijdelijk niet beschikbaar";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Welkom bij StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter zit in je menubalk";
+"onboarding.menubar.body" = "Er is geen symbool in het Dock. Notities, timers, teleprompter en instellingen zitten allemaal in het notitiesymbool rechtsboven op je scherm.";
+"onboarding.menubar.icon" = "Zoek dit symbool in de menubalk";
+"onboarding.hotkeys.title" = "Toetsen die tijdens je praatje werken";
+"onboarding.hotkeys.body" = "Deze sneltoetsen werken zelfs als Keynote of PowerPoint op volledig scherm staat, zonder dat je je dia’s hoeft te verlaten.";
+"onboarding.launch.title" = "Klaar voor je presenteert";
+"onboarding.launch.body" = "Open StickyPresenter bij het inloggen, zodat je notities en timers al klaarstaan als je het podium op loopt.";
+"onboarding.launch.later" = "Je kunt dit altijd wijzigen in Instellingen.";
+"onboarding.back" = "Terug";
+"onboarding.openGuide" = "Open gebruikershandleiding";
+"onboarding.start" = "Aan de slag";
+"onboarding.page" = "Pagina %d van %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro in één regel";
+"tip.pomodoro.message" = "Typ 25/5 voor 25 minuten focus en 5 minuten pauze, steeds opnieuw tot je stopt.";
+"tip.pomodoro.try" = "Probeer 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Start timer";
+"intent.timer.description" = "Start een afteltimer die boven je dia’s zweeft.";
+"intent.timer.minutes" = "Minuten";
+"intent.timer.summary ${minutes}" = "Start een timer van ${minutes} minuten";
+"intent.timer.short" = "Start timer";
+"intent.pomodoro.title" = "Start pomodoro";
+"intent.pomodoro.description" = "Start een pomodoro-timer met 25 minuten focus en 5 minuten pauze.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Nieuwe notitie";
+"intent.note.description" = "Voegt een nieuwe notitie toe aan je scherm.";
+"intent.note.short" = "Nieuwe notitie";
+"intent.timers.title" = "Toon timers";
+"intent.timers.description" = "Opent het timerpaneel.";
+"intent.timers.short" = "Timers";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Betere ondersteuning voor VoiceOver";
+"roadmap.a11y.voiceover.detail" = "VoiceOver leest elke notitie en knop voor in een logische volgorde.";
+"roadmap.a11y.contrast.title" = "Kleuren die makkelijker te zien zijn";
+"roadmap.a11y.contrast.detail" = "Notitiekleuren blijven goed te onderscheiden, ook met Hoger contrast of kleurenblindheid.";
+"roadmap.a11y.motion.title" = "Minder beweging";
+"roadmap.a11y.motion.detail" = "Met Beperk beweging aan worden animaties rustiger.";
+"roadmap.lang.more.title" = "Meer talen";
+"roadmap.lang.more.detail" = "Gebruik de app in meer talen, niet alleen Engels en Koreaans.";
+"roadmap.whatsnew.title" = "Wat is er nieuw";
+"roadmap.whatsnew.detail" = "Zie na een update wat er nieuw is wanneer je de app voor het eerst opent.";
+"roadmap.feedback.reply.title" = "Antwoorden op je feedback";
+"roadmap.feedback.reply.detail" = "Lees onze antwoorden op je feedback direct in de app.";
+"roadmap.sync.icloud.title" = "Notities op al je Macs";
+"roadmap.sync.icloud.detail" = "Ga op je andere Macs verder met dezelfde notities via iCloud.";
+"roadmap.backup.title" = "Notities exporteren en importeren";
+"roadmap.backup.detail" = "Bewaar je notities in een bestand en laad ze weer op een andere Mac.";
+"roadmap.notifications.title" = "Timermeldingen";
+"roadmap.notifications.detail" = "Ontvang een melding als een timer afloopt, ook als je in een andere app zit.";

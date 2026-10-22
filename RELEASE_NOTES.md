@@ -126,6 +126,12 @@ Se svar på tilbakemeldingen din
 Tilbakemelding spør nå hva som skjedde
 Personvern og støtte i Innstillinger
 
+### 앱스토어 (네덜란드어)
+
+Bekijk antwoorden op je feedback
+Feedback vraagt nu wat er gebeurde
+Privacy en support in Instellingen
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

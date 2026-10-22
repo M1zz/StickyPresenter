@@ -1563,6 +1563,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 네덜란드어 (nl)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Notities en timer voor je talk
+
+### 프로모션 텍스트
+
+Houd je script en aftelling boven Keynote op volledig scherm. Notities worden automatisch bewaard en een ingebouwde handleiding laat elke functie zien.
+
+### 설명
+
+Tijdens een presentatie zijn de twee dingen die je het hardst nodig hebt ook het moeilijkst te zien: je script en de klok. StickyPresenter laat beide zweven boven alles wat op het scherm staat, ook Keynote op volledig scherm, zodat je je dia’s nooit hoeft te verlaten om te kijken.
+
+De app zit stilletjes in de menubalk: geen symbool in het Dock en geen extra vensters om te beheren.
+
+ZWEVENDE PLAKNOTITIES
+• Blijven bovenaan bij presentaties op volledig scherm, waar een gewoon venster niet meekomt
+• Zes kleuren, met instelbare dekking en lettergrootte
+• Vergrendel een notitie zodat een verkeerde klik hem midden in je praatje niet verandert
+• Maak van de inhoud van het klembord meteen een nieuwe notitie
+• Worden bewaard terwijl je typt en staan weer precies waar je ze achterliet
+• Een notitie per ongeluk gesloten? Open hem opnieuw via het menu
+
+AFTELTIMERS
+• Vierkante widgets die je zo groot maakt dat je ze achter in de zaal kunt lezen
+• Thema’s Systeem, Licht en Donker, plus Kameleon, dat zich aanpast aan het scherm erachter
+• Wordt rood als de tijd bijna om is en geeft aan het eind een toon en een knipperende rand
+• Open elke timer in een eigen venster en deel alleen dat venster via scherm delen of AirPlay
+• Voer tijden in zoals je ze denkt, zoals 5:30 of 1h 20m. Typ 25/5 voor een pomodoro die focus en pauze afwisselt
+• Een widget in het Berichtencentrum houdt de aftelling binnen handbereik
+
+TELEPROMPTER
+• Vloeiend automatisch scrollen met instelbare snelheid en lettergrootte
+• Spiegelstand voor teleprompterapparatuur met reflecterend glas
+• Stopt vanzelf aan het einde van de tekst en onthoudt je instellingen
+
+ACHTERGRONDMUZIEK
+• Vier sferen: Focus, Kalm, Jazz en Opgewekt
+• Start en stopt samen met je timer, met zacht in- en uitfaden
+• De nummers zijn van jou: de app maakt per sfeer een map en speelt alles af wat je erin zet
+
+SNELTOETSEN DIE OVERAL WERKEN
+• De sneltoetsen met Command-Control openen notities, timers en teleprompter, ook als een andere app vooraan staat
+• Geen toestemming voor toegankelijkheid nodig
+
+MAKKELIJK BEGINNEN
+• Een ingebouwde handleiding opent bij de eerste start en staat altijd één klik weg in het menu Help
+• Optioneel openen bij het inloggen, zodat je klaar bent voor elke presentatie
+
+IPHONE-AFSTANDSBEDIENING (APARTE GRATIS APP)
+Tijdens een presentatie staat je Mac buiten bereik. Remote Controller for Sticky legt de timer in je hand: start en pauzeer, voeg 30 seconden toe of haal ze eraf, wijzig de grootte en het thema van de widget of schuif een widget weg die een dia afdekt. Koppelen gaat met een code van vier cijfers: ook in een zaal vol Macs praat de afstandsbediening alleen met die van jou.
+
+PRIVACY
+Geen account, geen advertenties. Je notities en scripts verlaten je Mac nooit. Behalve anonieme gebruiksstatistieken maakt de app alleen verbinding met internet als jij zelf feedback verstuurt vanuit Instellingen, en praat ze met de iPhone-afstandsbediening via een directe, versleutelde verbinding op je lokale netwerk.
+
+Vereist macOS 14 of nieuwer.
+
+### 키워드
+
+presentatie,dia's,spreker,pomodoro,lezing,college,congres,toespraak,stopwatch,script,repetitie
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.
