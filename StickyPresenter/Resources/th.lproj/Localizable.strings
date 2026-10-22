@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 โน้ตใหม่";
+"menu.newFromClipboard" = "📋 สร้างจากคลิปบอร์ด";
+"menu.teleprompter" = "📺 โหมดเทเลพรอมป์เตอร์";
+"menu.timers" = "⏱ ตัวจับเวลา";
+"menu.pomodoro" = "🍅 โพโมโดโร (25/5)";
+"menu.showAll" = "👁 แสดงโน้ตทั้งหมด";
+"menu.hideAll" = "🙈 ซ่อนโน้ตทั้งหมด";
+"menu.defaultColor" = "🎨 สีเริ่มต้น";
+"menu.removeAll" = "🗑 ลบโน้ตทั้งหมด";
+"menu.remote" = "📱 รีโมต";
+"menu.contact.email" = "✉️ อีเมล (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 DM Instagram (@lee25_ios)";
+"menu.quit" = "ออกจาก StickyPresenter";
+
+"color.yellow" = "🟡 เหลือง";
+"color.pink" = "🩷 ชมพู";
+"color.green" = "🟢 เขียว";
+"color.blue" = "🔵 น้ำเงิน";
+"color.purple" = "🟣 ม่วง";
+"color.orange" = "🟠 ส้ม";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "รหัสจับคู่:   %@";
+"remote.none" = "ไม่มีรีโมตที่เชื่อมต่ออยู่";
+"remote.connected" = "รีโมตที่เชื่อมต่ออยู่: %d";
+"remote.newCode" = "สร้างรหัสจับคู่ใหม่";
+"remote.forget" = "ลืมรีโมตที่จับคู่ไว้";
+"remote.forget.count" = "ลืมรีโมตที่จับคู่ไว้ (%d)";
+"remote.forget.title" = "ลืมรีโมตที่จับคู่ไว้ทั้งหมดหรือไม่";
+"remote.forget.message" = "รีโมตที่เชื่อมต่ออยู่จะถูกตัดการเชื่อมต่อ และต้องป้อนรหัสจับคู่อีกครั้ง";
+"remote.forget.confirm" = "ลืม";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "ยกเลิก";
+"alert.removeAll.title" = "ลบโน้ตทั้งหมดหรือไม่";
+"alert.removeAll.message" = "โน้ตทั้งหมดจะถูกปิด โน้ตที่มีข้อความเรียกกลับมาได้ด้วย “เปิดโน้ตที่ปิดไปอีกครั้ง” ในเมนู";
+"alert.removeAll.confirm" = "ลบทั้งหมด";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 คู่มือ StickyPresenter\n\n📌 ลากเพื่อย้ายโน้ต\n🖱 วางเมาส์เพื่อแสดงปุ่มควบคุม\n🎨 ปรับสี · ความโปร่งใส · ขนาดตัวอักษร\n🔒 ปุ่มล็อกป้องกันการแก้ไข\n\n⌘⌃N  โน้ตใหม่\n⌘⌃T  เปิดตัวจับเวลา\n⌘⌃B  โพโมโดโร (25/5)\n⌘⌃P  เทเลพรอมป์เตอร์\n⌘⌃S  แสดงโน้ตทั้งหมด\n⌘⌃H  ซ่อนโน้ตทั้งหมด\n\n💡 สร้างโน้ตได้จากปุ่มควบคุม\n   ของตัวจับเวลาโดยตรงเช่นกัน!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "วางสคริปต์ของคุณที่นี่...\n\nเทเลพรอมป์เตอร์จะเลื่อนข้อความให้อัตโนมัติ\n\nใช้ปุ่มควบคุมเพื่อปรับความเร็วและขนาดตัวอักษร";
+"📺 TELEPROMPTER" = "📺 เทเลพรอมป์เตอร์";
+"Preview mode" = "โหมดตัวอย่าง";
+"Edit text" = "แก้ไขข้อความ";
+"Mirror text (for teleprompter glass)" = "กลับด้านข้อความ (สำหรับกระจกเทเลพรอมป์เตอร์)";
+"Font" = "แบบอักษร";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "ล็อกการแก้ไข";
+"Unlock editing" = "ปลดล็อกการแก้ไข";
+"Empty note" = "โน้ตว่างเปล่า";
+"note.charCount" = "%d ตัวอักษร";
+"note.opacity" = "ความทึบ: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "ตัวจับเวลา";
+"window.timer.named" = "ตัวจับเวลา – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "โน้ตใหม่";
+"Quick Start" = "เริ่มอย่างรวดเร็ว";
+"No timers" = "ไม่มีตัวจับเวลา";
+"Tap a preset or enter a time" = "แตะค่าที่ตั้งไว้ หรือป้อนเวลา";
+"Show" = "แสดง";
+"Hide" = "ซ่อน";
+"Show / hide widget" = "แสดง/ซ่อนวิดเจ็ต";
+"Align" = "จัดแนว";
+"Align widget next to the panel" = "จัดวิดเจ็ตไว้ข้างแผง";
+"Window" = "หน้าต่าง";
+"Open in a window (screen share / AirPlay)" = "เปิดในหน้าต่าง (แชร์หน้าจอ / AirPlay)";
+"Delete timer" = "ลบตัวจับเวลา";
+"Reuse this timer with another duration" = "ใช้ตัวจับเวลานี้ซ้ำด้วยระยะเวลาอื่น";
+"Add Timer" = "เพิ่มตัวจับเวลา";
+"Drag to resize" = "ลากเพื่อปรับขนาด";
+"Close" = "ปิด";
+"timer.theme" = "ธีม: %@";
+"timer.widgetSize" = "ขนาดวิดเจ็ต: %@ (%dpt)";
+"timer.restartAs" = "เริ่มตัวจับเวลานี้ใหม่เป็น %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "ระบบ";
+"theme.light" = "สว่าง";
+"theme.dark" = "มืด";
+"theme.chameleon" = "กิ้งก่า";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "โฟกัส";
+"pomodoro.break" = "พัก";
+"preview.pomodoro" = "↻ โฟกัส %1$@ · พัก %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d ชม.";
+"unit.min" = "%d นาที";
+"unit.sec" = "%d วิ";
+"unit.zeroSec" = "0 วิ";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "แก้ไขค่าที่ตั้งไว้แบบด่วน";
+"Quick Presets" = "ค่าที่ตั้งไว้แบบด่วน";
+"Reset" = "รีเซ็ต";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "รูปแบบเดียวกับช่องป้อนข้อมูล —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "เพิ่มค่าที่ตั้งไว้";
+"Add a preset" = "เพิ่มค่าที่ตั้งไว้";
+"No readable preset — buttons stay hidden" = "ไม่มีค่าที่ตั้งไว้ที่อ่านได้ — ปุ่มจะถูกซ่อนไว้";
+"Remove preset" = "ลบค่าที่ตั้งไว้";
+"Keep at least one preset" = "เก็บค่าที่ตั้งไว้อย่างน้อยหนึ่งค่า";
+"preset.restore" = "กู้คืน %@";
+"preset.max" = "สูงสุด %d ค่า";
+
+/* ===== Music ===== */
+"mood.focus" = "โฟกัส";
+"mood.calm" = "ผ่อนคลาย";
+"mood.jazz" = "แจ๊ส";
+"mood.upbeat" = "คึกคัก";
+"mood.focus.hint" = "เพลงบรรเลงสม่ำเสมอ — เหมาะกับการทำงานจดจ่อและซ้อมพูด";
+"mood.calm.hint" = "แอมเบียนต์และเปียโนเดี่ยว — ผ่อนคลายก่อนขึ้นพูด";
+"mood.jazz.hint" = "แจ๊สสไตล์คาเฟ่และบอสซาโนวา — เหมาะกับห้องบรรยากาศสบายๆ";
+"mood.upbeat.hint" = "ป๊อปเบาๆ และฟังก์ — สำหรับวอร์มอัปและช่วงพัก";
+"Play music" = "เล่นเพลง";
+"Pause music" = "หยุดเพลงชั่วคราว";
+"Next Track" = "เพลงถัดไป";
+"Play With Timer" = "เล่นพร้อมตัวจับเวลา";
+"Refresh" = "รีเฟรช";
+"music.empty" = "ไม่มีเพลง — เพิ่มไฟล์เสียงลงในโฟลเดอร์ %@";
+"music.openFolder" = "เปิดโฟลเดอร์ %@";
+"music.count.one" = "%1$d เพลง · %2$@";
+"music.count.other" = "%1$d เพลง · %2$@";
+"music.chip.none" = " (ไม่มีเพลง)";
+"music.chip.one" = " · %d เพลง";
+"music.chip.other" = " · %d เพลง";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "การตั้งค่า";
+"settings.support" = "สนับสนุน";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "ตัวจับเวลา";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ เปิดโน้ตที่ปิดไปอีกครั้ง";
+"menu.help" = "❓ ความช่วยเหลือ";
+"menu.guide" = "📖 คู่มือผู้ใช้";
+"menu.supportSite" = "🌐 เปิดหน้าสนับสนุน";
+"menu.settings" = "⚙️ การตั้งค่า…";
+"alert.ok" = "ตกลง";
+"alert.notesCorrupt.title" = "อ่านโน้ตที่บันทึกไว้ไม่ได้";
+"alert.notesCorrupt.message" = "ไฟล์โน้ตเสียหาย StickyPresenter จึงเริ่มต้นแบบว่างเปล่า ไฟล์ต้นฉบับถูกเก็บไว้ในชื่อ %@ หากต้องการกู้คืน โปรดส่งไฟล์นี้ให้ผู้พัฒนา";
+"alert.notesCorrupt.reveal" = "แสดงใน Finder";
+"window.guide" = "คู่มือผู้ใช้ StickyPresenter";
+"settings.general" = "ทั่วไป";
+"settings.launchAtLogin" = "เปิดเมื่อเข้าสู่ระบบ";
+"settings.launchAtLogin.failed" = "เปลี่ยนรายการเข้าสู่ระบบไม่ได้: %@";
+"settings.launchAtLogin.approval" = "อนุญาต StickyPresenter ที่ การตั้งค่าระบบ ▸ ทั่วไป ▸ รายการเข้าสู่ระบบ";
+"settings.defaultColor" = "สีของโน้ตใหม่";
+"settings.help" = "ความช่วยเหลือ";
+"settings.showGuide" = "เปิดคู่มือผู้ใช้";
+"settings.openSupport" = "เปิดหน้าสนับสนุน";
+"settings.revealNotes" = "แสดงไฟล์โน้ต";
+"settings.revealNotes.help" = "โน้ตถูกเก็บไว้บน Mac เครื่องนี้เท่านั้น ใช้ไฟล์นี้เพื่อสำรองข้อมูลหรือย้ายไปยัง Mac เครื่องอื่น";
+"settings.version" = "เวอร์ชัน";
+"colorName.yellow" = "เหลือง";
+"colorName.pink" = "ชมพู";
+"colorName.green" = "เขียว";
+"colorName.blue" = "น้ำเงิน";
+"colorName.purple" = "ม่วง";
+"colorName.orange" = "ส้ม";
+"note.close" = "ปิดโน้ต";
+"note.close.help" = "ปิดโน้ต (เรียกกลับมาได้ด้วย “เปิดโน้ตที่ปิดไปอีกครั้ง” ในเมนู)";
+"note.color.help" = "เปลี่ยนสีโน้ต";
+"note.opacity.help" = "ปรับความทึบ";
+"note.fontSmaller" = "ตัวอักษรเล็กลง";
+"note.fontLarger" = "ตัวอักษรใหญ่ขึ้น";
+"teleprompter.close" = "ปิดเทเลพรอมป์เตอร์";
+"teleprompter.rewind" = "กลับไปที่จุดเริ่มต้น";
+"teleprompter.play" = "เล่น";
+"teleprompter.pause" = "หยุดชั่วคราว";
+"teleprompter.speed" = "ความเร็วในการเลื่อน";
+"timer.inputHelp.tooltip" = "แสดงรูปแบบการป้อนข้อมูล";
+"timer.inputHelp.title" = "คุณพิมพ์ได้ดังนี้";
+"timer.inputHelp.minutes" = "ตัวเลขหมายถึงนาที (10 นาที)";
+"timer.inputHelp.colon" = "นาที:วินาที (5 นาที 30 วินาที)";
+"timer.inputHelp.hms" = "ชั่วโมง:นาที:วินาที";
+"timer.inputHelp.units" = "พร้อมหน่วย (1 ชม. 20 นาที)";
+"timer.inputHelp.seconds" = "วินาที (45 วินาที)";
+"timer.inputHelp.pomodoro" = "วงจรโพโมโดโรโฟกัส/พัก";
+"timer.inputHelp.footer" = "คลิกตัวอย่างเพื่อกรอกให้อัตโนมัติ ตัวจับเวลาตั้งได้สูงสุด 99:59:59";
+"chameleon.permission.title" = "กิ้งก่าต้องได้รับสิทธิ์การบันทึกหน้าจอ";
+"chameleon.permission.message" = "กิ้งก่าอ่านสีของหน้าจอที่อยู่หลังตัวจับเวลาวินาทีละครั้ง แล้วปรับพื้นหลังให้เข้ากัน ภาพนี้ใช้เพื่อหาค่าสีเท่านั้น ไม่มีการบันทึกหรือส่งไปที่ใด\n\nเมื่อดำเนินการต่อ macOS จะขอสิทธิ์ หากเคยปฏิเสธไว้ ให้เปิด StickyPresenter ใน การตั้งค่าระบบ";
+"chameleon.permission.continue" = "ดำเนินการต่อ";
+"chameleon.permission.openSettings" = "เปิดการตั้งค่าระบบ";
+"chameleon.permission.skip" = "ข้าม";
+"hotkey.newNote" = "โน้ตใหม่";
+"hotkey.noteFromClipboard" = "สร้างโน้ตใหม่จากคลิปบอร์ด";
+"hotkey.teleprompter" = "เทเลพรอมป์เตอร์";
+"hotkey.timers" = "แสดงหรือซ่อนตัวจับเวลา";
+"hotkey.pomodoro" = "เริ่มโพโมโดโร (25/5)";
+"hotkey.showNotes" = "แสดงโน้ตทั้งหมด";
+"hotkey.hideNotes" = "ซ่อนโน้ตทั้งหมด";
+"guide.welcome.title" = "เริ่มต้นใช้งาน";
+"guide.welcome.summary" = "StickyPresenter มีโน้ต ตัวจับเวลา และเทเลพรอมป์เตอร์ที่ลอยอยู่เหนือ Keynote แม้ในโหมดเต็มหน้าจอ";
+"guide.welcome.1" = "ทุกหน้าต่างลอยอยู่เหนือสไลด์เต็มหน้าจอ โดยไม่แย่งโฟกัสจากแอปนำเสนอของคุณ";
+"guide.welcome.2" = "ทุกอย่างอยู่ที่ไอคอนโน้ตในแถบเมนู ไม่มีไอคอนบน Dock";
+"guide.welcome.3" = "โน้ตจะถูกบันทึกลงใน Mac เครื่องนี้ขณะที่คุณพิมพ์ และกลับมาอยู่ที่เดิมในครั้งต่อไป";
+"guide.welcome.4" = "เปิดคู่มือนี้ได้ทุกเมื่อจากแถบเมนู ▸ ความช่วยเหลือ ▸ คู่มือผู้ใช้";
+"guide.notes.title" = "โน้ตกระดาษ";
+"guide.notes.summary" = "ปักสคริปต์หรือข้อความเตือนไว้เหนือสไลด์";
+"guide.notes.1" = "ลากตรงไหนก็ได้บนโน้ตเพื่อย้าย ลากที่ขอบเพื่อปรับขนาด";
+"guide.notes.2" = "วางเมาส์บนโน้ตเพื่อแสดงปุ่มปรับสี ความทึบ และขนาดตัวอักษร";
+"guide.notes.3" = "ล็อกโน้ตเพื่อไม่ให้มีอะไรเปลี่ยนโดยไม่ตั้งใจขณะนำเสนอ";
+"guide.notes.4" = "ปิดโน้ตไปโดยไม่ตั้งใจใช่ไหม “เปิดโน้ตที่ปิดไปอีกครั้ง” ในเมนูจะเรียก 20 โน้ตล่าสุดกลับมา";
+"guide.notes.5" = "คัดลอกสคริปต์แล้วกด ⌘⌃V เพื่อเปลี่ยนเป็นโน้ตใหม่";
+"guide.timers.title" = "ตัวจับเวลา";
+"guide.timers.summary" = "จับตาดูเวลาด้วยวิดเจ็ตเล็กๆ ที่มุมจอ";
+"guide.timers.1" = "พิมพ์เวลาในหน้าต่างตัวจับเวลาแล้วกด Return เครื่องหมายคำถามข้างช่องจะแสดงรูปแบบที่ใช้ได้";
+"guide.timers.2" = "เมื่อไม่มีตัวจับเวลา คลิกปุ่ม “เริ่มอย่างรวดเร็ว” หนึ่งครั้งก็เริ่มได้ ใช้ไอคอนดินสอเพื่อเปลี่ยนเวลาเหล่านั้น";
+"guide.timers.3" = "“แสดง/ซ่อน” และ “จัดแนว” ใช้ซ่อนวิดเจ็ต หรือจัดวิดเจ็ตให้เรียงอยู่ข้างหน้าต่างตัวจับเวลา";
+"guide.timers.4" = "“หน้าต่าง” เปิดตัวจับเวลาเป็นหน้าต่างปกติ คุณจึงแชร์เฉพาะหน้าต่างนั้นผ่านการแชร์หน้าจอหรือ AirPlay ได้";
+"guide.timers.5" = "ปุ่มธีมสลับระหว่างสว่าง มืด และกิ้งก่า ซึ่งปรับสีตามหน้าจอที่อยู่ด้านหลัง กิ้งก่าต้องได้รับสิทธิ์การบันทึกหน้าจอ";
+"guide.timers.6" = "แถบเพลงเล่นเพลงประกอบขณะที่คุณเตรียมตัว คุณต้องเพิ่มเพลงลงในโฟลเดอร์เอง";
+"guide.pomodoro.title" = "โพโมโดโร";
+"guide.pomodoro.summary" = "สลับช่วงโฟกัสและช่วงพักไปเรื่อยๆ จนกว่าคุณจะหยุด";
+"guide.pomodoro.1" = "พิมพ์เวลาโฟกัสและเวลาพักคั่นด้วยเครื่องหมายทับ เช่น 25/5 หรือ 50m/10m เพื่อเริ่มโพโมโดโร";
+"guide.pomodoro.2" = "ทุกครั้งที่สลับจะมีเสียงเตือนต่างกัน และวิดเจ็ตจะเป็นสีแดงช่วงโฟกัส สีเขียวช่วงพัก";
+"guide.pomodoro.3" = "กด ⌘⌃B ที่ไหนก็ได้เพื่อเริ่มโฟกัส 25 นาที พัก 5 นาที";
+"guide.teleprompter.title" = "เทเลพรอมป์เตอร์";
+"guide.teleprompter.summary" = "สคริปต์เลื่อนด้วยจังหวะสม่ำเสมอ คุณจึงอ่านไปพร้อมมองกล้องได้";
+"guide.teleprompter.1" = "คัดลอกสคริปต์แล้วกด ⌘⌃P เพื่อเปิดในเทเลพรอมป์เตอร์ ใช้ไอคอนดินสอเพื่อแก้ไขที่นั่น";
+"guide.teleprompter.2" = "กดเล่นเพื่อเริ่มเลื่อน และจะหยุดเองเมื่อถึงท้ายสคริปต์";
+"guide.teleprompter.3" = "“กลับด้าน” พลิกข้อความสำหรับอุปกรณ์เทเลพรอมป์เตอร์ที่ใช้กระจกสะท้อน";
+"guide.teleprompter.4" = "ความเร็ว ขนาดตัวอักษร และการกลับด้านจะถูกจำไว้ใช้ครั้งหน้า";
+"guide.remote.title" = "รีโมต iPhone";
+"guide.remote.summary" = "เริ่มและหยุดตัวจับเวลาจาก iPhone ขณะอยู่บนเวที";
+"guide.remote.1" = "ดาวน์โหลด Remote Controller for Sticky จาก App Store บน iPhone";
+"guide.remote.2" = "เลือก Mac เครื่องนี้ในแอป แล้วป้อนรหัสสี่หลักจากแถบเมนู ▸ รีโมต";
+"guide.remote.3" = "iPhone และ Mac ต้องอยู่ใน Wi‑Fi เดียวกัน หลังจากครั้งแรกจะเชื่อมต่อได้โดยไม่ต้องใช้รหัส";
+"guide.remote.4" = "รีโมตหลายเครื่องควบคุม Mac เครื่องเดียวได้ ผู้พูดและผู้ดูแลเวทีจึงใช้ได้ทั้งคู่";
+"guide.shortcuts.title" = "ปุ่มลัด";
+"guide.shortcuts.summary" = "ใช้ได้ทุกที่ แม้จะมีแอปอื่นอยู่ด้านหน้าหรือกำลังนำเสนออยู่";
+"guide.shortcuts.taken" = "ถูกใช้โดยแอปอื่น";
+"guide.shortcuts.note" = "กด Command (⌘) และ Control (⌃) พร้อมกัน ปุ่มลัดที่ระบุว่า “ถูกใช้โดยแอปอื่น” จะกลับมาใช้ได้เมื่อแอปนั้นปิดลง";
+"guide.support" = "หน้าสนับสนุน";
+"guide.next" = "ถัดไป";
+"guide.done" = "เริ่มใช้งาน";
+
+/* Remote kill switch */
+"remote.unavailable" = "รีโมต iPhone ใช้งานไม่ได้ชั่วคราว";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "ยินดีต้อนรับสู่ StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter อยู่ในแถบเมนูของคุณ";
+"onboarding.menubar.body" = "ไม่มีไอคอนบน Dock โน้ต ตัวจับเวลา เทเลพรอมป์เตอร์ และการตั้งค่าทั้งหมดอยู่ที่ไอคอนโน้ตมุมขวาบนของหน้าจอ";
+"onboarding.menubar.icon" = "มองหาไอคอนนี้ในแถบเมนู";
+"onboarding.hotkeys.title" = "ปุ่มที่ใช้ได้ระหว่างการพูด";
+"onboarding.hotkeys.body" = "ปุ่มลัดเหล่านี้ใช้ได้แม้ Keynote หรือ PowerPoint อยู่ในโหมดเต็มหน้าจอ โดยไม่ต้องออกจากสไลด์";
+"onboarding.launch.title" = "พร้อมก่อนขึ้นนำเสนอ";
+"onboarding.launch.body" = "เปิด StickyPresenter เมื่อเข้าสู่ระบบ เพื่อให้โน้ตและตัวจับเวลารออยู่แล้วเมื่อคุณขึ้นเวที";
+"onboarding.launch.later" = "คุณเปลี่ยนได้ทุกเมื่อในการตั้งค่า";
+"onboarding.back" = "ย้อนกลับ";
+"onboarding.openGuide" = "เปิดคู่มือผู้ใช้";
+"onboarding.start" = "เริ่มต้นใช้งาน";
+"onboarding.page" = "หน้า %d จาก %d";
+
+/* Tips */
+"tip.pomodoro.title" = "โพโมโดโรในบรรทัดเดียว";
+"tip.pomodoro.message" = "พิมพ์ 25/5 เพื่อโฟกัส 25 นาที พัก 5 นาที วนไปจนกว่าคุณจะหยุด";
+"tip.pomodoro.try" = "ลอง 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "เริ่มตัวจับเวลา";
+"intent.timer.description" = "เริ่มตัวจับเวลานับถอยหลังที่ลอยอยู่เหนือสไลด์ของคุณ";
+"intent.timer.minutes" = "นาที";
+"intent.timer.summary ${minutes}" = "เริ่มตัวจับเวลา ${minutes} นาที";
+"intent.timer.short" = "เริ่มตัวจับเวลา";
+"intent.pomodoro.title" = "เริ่มโพโมโดโร";
+"intent.pomodoro.description" = "เริ่มตัวจับเวลาโพโมโดโรแบบโฟกัส 25 นาที / พัก 5 นาที";
+"intent.pomodoro.short" = "โพโมโดโร";
+"intent.note.title" = "โน้ตใหม่";
+"intent.note.description" = "เพิ่มโน้ตใหม่บนหน้าจอของคุณ";
+"intent.note.short" = "โน้ตใหม่";
+"intent.timers.title" = "แสดงตัวจับเวลา";
+"intent.timers.description" = "เปิดแผงตัวจับเวลา";
+"intent.timers.short" = "ตัวจับเวลา";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "รองรับ VoiceOver ดียิ่งขึ้น";
+"roadmap.a11y.voiceover.detail" = "VoiceOver อ่านทุกโน้ตและทุกปุ่มตามลำดับที่เหมาะสม";
+"roadmap.a11y.contrast.title" = "สีที่มองเห็นง่ายขึ้น";
+"roadmap.a11y.contrast.detail" = "สีของโน้ตยังแยกแยะได้ง่าย แม้เปิดเพิ่มคอนทราสต์หรือมีภาวะตาบอดสี";
+"roadmap.a11y.motion.title" = "ลดการเคลื่อนไหว";
+"roadmap.a11y.motion.detail" = "เมื่อเปิดลดการเคลื่อนไหว แอนิเมชันจะนุ่มนวลขึ้น";
+"roadmap.lang.more.title" = "ภาษาเพิ่มเติม";
+"roadmap.lang.more.detail" = "ใช้แอปได้หลายภาษามากขึ้น ไม่ใช่แค่อังกฤษและเกาหลี";
+"roadmap.whatsnew.title" = "มีอะไรใหม่";
+"roadmap.whatsnew.detail" = "หลังอัปเดต คุณจะเห็นสิ่งใหม่ๆ เมื่อเปิดแอปครั้งแรก";
+"roadmap.feedback.reply.title" = "คำตอบสำหรับความคิดเห็นของคุณ";
+"roadmap.feedback.reply.detail" = "อ่านคำตอบต่อความคิดเห็นของคุณได้ในแอปโดยตรง";
+"roadmap.sync.icloud.title" = "โน้ตบน Mac ทุกเครื่อง";
+"roadmap.sync.icloud.detail" = "ใช้โน้ตชุดเดียวกันบน Mac เครื่องอื่นผ่าน iCloud";
+"roadmap.backup.title" = "ส่งออกและนำเข้าโน้ต";
+"roadmap.backup.detail" = "บันทึกโน้ตเป็นไฟล์ แล้วโหลดกลับบน Mac เครื่องอื่น";
+"roadmap.notifications.title" = "การแจ้งเตือนตัวจับเวลา";
+"roadmap.notifications.detail" = "รับการแจ้งเตือนเมื่อตัวจับเวลาสิ้นสุด แม้คุณกำลังอยู่ในแอปอื่น";

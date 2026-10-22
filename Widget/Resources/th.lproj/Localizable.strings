@@ -1,0 +1,7 @@
+"widget.displayName" = "ตัวจับเวลาการนำเสนอ";
+"widget.description" = "แสดงเวลาที่เหลือของตัวจับเวลาการนำเสนอที่กำลังทำงาน";
+"widget.empty" = "ไม่มีตัวจับเวลาที่กำลังทำงาน";
+"widget.total" = "รวม %@";
+"widget.finished" = "%@ · สิ้นสุดแล้ว";
+"widget.running" = "%@ · กำลังทำงาน";
+"widget.paused" = "%@ · หยุดชั่วคราว";
