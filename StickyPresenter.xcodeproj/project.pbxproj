@@ -349,6 +349,7 @@
 				zh-Hant,
 				th,
 				vi,
+				cs,
 			);
 			mainGroup = 93B576DEF5BFEEBEEF479A36;
 			minimizedProjectReferenceProxies = 1;

@@ -1,0 +1,8 @@
+/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
+"Start a timer in ${applicationName}" = "Spustit časovač v ${applicationName}";
+"Start a ${applicationName} timer" = "Spustit časovač ${applicationName}";
+"Start a Pomodoro in ${applicationName}" = "Spustit pomodoro v ${applicationName}";
+"Start focusing with ${applicationName}" = "Soustředit se s ${applicationName}";
+"New sticky note in ${applicationName}" = "Nová poznámka v ${applicationName}";
+"Add a note in ${applicationName}" = "Přidat poznámku v ${applicationName}";
+"Show timers in ${applicationName}" = "Zobrazit časovače v ${applicationName}";

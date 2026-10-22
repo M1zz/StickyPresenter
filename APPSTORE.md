@@ -1095,6 +1095,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 체코어 (cs)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Poznámky a časovač k řeči
+
+### 프로모션 텍스트
+
+Mějte text vystoupení i odpočet času nad Keynote na celou obrazovku. Poznámky se ukládají samy a vestavěná příručka provede každou funkcí.
+
+### 설명
+
+Při vystoupení se dvě věci, které potřebujete nejvíc, nejhůř sledují: text a hodiny. StickyPresenter drží obojí nad vším, co je na obrazovce, včetně Keynote na celou obrazovku, takže kvůli nim nikdy nemusíte opustit snímky.
+
+Aplikace tiše pracuje v řádku nabídek: žádná ikona v Docku, žádná okna navíc, o která byste se starali.
+
+PLOVOUCÍ POZNÁMKY
+• Zůstávají navrchu i při prezentacích na celou obrazovku, kam se běžné okno nedostane
+• Šest barev, nastavitelná průhlednost a velikost písma
+• Zamkněte poznámku, aby ji nechtěné kliknutí nezměnilo uprostřed řeči
+• Obsah schránky okamžitě změníte v novou poznámku
+• Poznámky se ukládají při psaní a po opětovném spuštění jsou přesně tam, kde jste je nechali
+• Zavřeli jste poznámku omylem? Znovu ji otevřete z nabídky
+
+ODPOČÍTÁVACÍ ČASOVAČE
+• Čtvercové widgety, které lze zvětšit natolik, že je přečtete i z konce sálu
+• Motivy Systémový, Světlý a Tmavý a také Chameleon, který se přizpůsobí obrazovce za ním
+• Widget zčervená, když se čas krátí, a na konci zazní tón a zabliká okraj
+• Otevřete libovolný časovač ve vlastním okně a při sdílení obrazovky nebo přes AirPlay sdílejte jen ho
+• Čas zadávejte tak, jak ho myslíte, třeba 5:30 nebo 1h 20m. Zápis 25/5 spustí pomodoro střídající soustředění a pauzy
+• Widget v Centru oznámení vám drží odpočet na dohled
+
+TELEPROMPTER
+• Plynulé automatické posouvání s nastavitelnou rychlostí a velikostí písma
+• Zrcadlový režim pro teleprompter s odrazným sklem
+• Na konci textu se sám zastaví a pamatuje si vaše nastavení
+
+HUDBA NA POZADÍ
+• Čtyři nálady: Soustředění, Klid, Jazz a Energie
+• Spouští se a zastavuje s časovačem, zvuk plynule sílí a slábne
+• Skladby jsou vaše: aplikace vytvoří složku pro každou náladu a přehraje vše, co do ní vložíte
+
+ZKRATKY, KTERÉ FUNGUJÍ VŠUDE
+• Zkratky s Command a Control otevřou poznámky, časovače i teleprompter, i když je vpředu jiná aplikace
+• Nevyžadují oprávnění k zpřístupnění
+
+SNADNÝ START
+• Vestavěná příručka se otevře při prvním spuštění a zůstane na jedno kliknutí v nabídce Nápověda
+• Možnost otevřít při přihlášení, abyste byli připraveni před každým vystoupením
+
+DÁLKOVÉ OVLÁDÁNÍ Z iPhonu (SAMOSTATNÁ APLIKACE ZDARMA)
+Při vystoupení je Mac mimo dosah. Remote Controller for Sticky vám časovač vloží do ruky: spustíte a pozastavíte ho, přidáte nebo uberete 30 sekund, změníte velikost a motiv widgetu nebo odsunete widget, který zakrývá snímek. Párování probíhá čtyřmístným kódem: i v sále plném Maců komunikuje ovládání jen s tím vaším.
+
+SOUKROMÍ
+Žádný účet, žádné reklamy. Vaše poznámky a texty nikdy neopustí Mac. Kromě anonymních statistik používání se aplikace připojuje k internetu jen tehdy, když sami odešlete zpětnou vazbu z Nastavení, a s dálkovým ovládáním na iPhonu komunikuje přímým šifrovaným spojením ve vaší místní síti.
+
+Vyžaduje macOS 14 nebo novější.
+
+### 키워드
+
+prezentace,slajdy,řečník,pomodoro,přednáška,projev,stopky,odpočet,scénář,zkouška,konference,prompter
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

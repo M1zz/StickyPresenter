@@ -1,0 +1,7 @@
+"widget.displayName" = "Časovač prezentace";
+"widget.description" = "Zobrazuje zbývající čas právě běžícího časovače prezentace.";
+"widget.empty" = "Žádný časovač neběží";
+"widget.total" = "Celkem %@";
+"widget.finished" = "%@ · Dokončeno";
+"widget.running" = "%@ · Běží";
+"widget.paused" = "%@ · Pozastaveno";

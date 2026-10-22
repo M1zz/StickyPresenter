@@ -90,6 +90,12 @@ Xem phản hồi cho góp ý trong Cài đặt
 Góp ý sẽ hỏi bạn đã gặp chuyện gì
 Mở chính sách và hỗ trợ từ Cài đặt
 
+### 앱스토어 (체코어)
+
+Odpovědi na zpětnou vazbu v Nastavení
+Zpětná vazba se ptá, co se stalo
+Soukromí a podpora jsou v Nastavení
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

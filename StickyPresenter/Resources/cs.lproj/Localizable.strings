@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Nová poznámka";
+"menu.newFromClipboard" = "📋 Nová ze schránky";
+"menu.teleprompter" = "📺 Režim teleprompteru";
+"menu.timers" = "⏱ Časovače";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Zobrazit všechny poznámky";
+"menu.hideAll" = "🙈 Skrýt všechny poznámky";
+"menu.defaultColor" = "🎨 Výchozí barva";
+"menu.removeAll" = "🗑 Odstranit všechny poznámky";
+"menu.remote" = "📱 Dálkové ovládání";
+"menu.contact.email" = "✉️ E-mail (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Zpráva na Instagramu (@lee25_ios)";
+"menu.quit" = "Ukončit StickyPresenter";
+
+"color.yellow" = "🟡 Žlutá";
+"color.pink" = "🩷 Růžová";
+"color.green" = "🟢 Zelená";
+"color.blue" = "🔵 Modrá";
+"color.purple" = "🟣 Fialová";
+"color.orange" = "🟠 Oranžová";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Spárovací kód:   %@";
+"remote.none" = "Žádné připojené dálkové ovládání";
+"remote.connected" = "Připojená dálková ovládání: %d";
+"remote.newCode" = "Nový spárovací kód";
+"remote.forget" = "Zapomenout spárovaná ovládání";
+"remote.forget.count" = "Zapomenout spárovaná ovládání (%d)";
+"remote.forget.title" = "Zapomenout všechna spárovaná ovládání?";
+"remote.forget.message" = "Připojená ovládání budou odpojena a bude u nich potřeba znovu zadat spárovací kód.";
+"remote.forget.confirm" = "Zapomenout";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Zrušit";
+"alert.removeAll.title" = "Odstranit všechny poznámky?";
+"alert.removeAll.message" = "Všechny poznámky budou zavřeny. Poznámky s textem lze vrátit příkazem „Znovu otevřít zavřenou poznámku“ v nabídce.";
+"alert.removeAll.confirm" = "Odstranit vše";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Průvodce StickyPresenter\n\n📌 Poznámku přesunete tažením\n🖱 Najetím myši zobrazíte ovládací prvky\n🎨 Nastavte barvu · průhlednost · velikost písma\n🔒 Tlačítko zámku brání úpravám\n\n⌘⌃N  Nová poznámka\n⌘⌃T  Otevřít časovače\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Zobrazit všechny poznámky\n⌘⌃H  Skrýt všechny poznámky\n\n💡 Poznámku můžete vytvořit i\n   přímo z ovládání časovače!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Vložte sem svůj text...\n\nTeleprompter text posouvá automaticky.\n\nOvládacími prvky nastavíte rychlost a velikost písma.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Režim náhledu";
+"Edit text" = "Upravit text";
+"Mirror text (for teleprompter glass)" = "Zrcadlit text (pro sklo teleprompteru)";
+"Font" = "Písmo";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Zamknout úpravy";
+"Unlock editing" = "Odemknout úpravy";
+"Empty note" = "Prázdná poznámka";
+"note.charCount" = "Znaků: %d";
+"note.opacity" = "Průhlednost: %d %%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Časovač";
+"window.timer.named" = "Časovač – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Nová poznámka";
+"Quick Start" = "Rychlý start";
+"No timers" = "Žádné časovače";
+"Tap a preset or enter a time" = "Klepněte na předvolbu nebo zadejte čas";
+"Show" = "Zobrazit";
+"Hide" = "Skrýt";
+"Show / hide widget" = "Zobrazit nebo skrýt widget";
+"Align" = "Zarovnat";
+"Align widget next to the panel" = "Zarovnat widget vedle panelu";
+"Window" = "Okno";
+"Open in a window (screen share / AirPlay)" = "Otevřít v okně (sdílení obrazovky / AirPlay)";
+"Delete timer" = "Smazat časovač";
+"Reuse this timer with another duration" = "Použít tento časovač znovu s jinou délkou";
+"Add Timer" = "Přidat časovač";
+"Drag to resize" = "Tažením změníte velikost";
+"Close" = "Zavřít";
+"timer.theme" = "Motiv: %@";
+"timer.widgetSize" = "Velikost widgetu: %@ (%d b.)";
+"timer.restartAs" = "Spustit tento časovač znovu jako %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Systémový";
+"theme.light" = "Světlý";
+"theme.dark" = "Tmavý";
+"theme.chameleon" = "Chameleon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Soustředění";
+"pomodoro.break" = "Pauza";
+"preview.pomodoro" = "↻ Soustředění %1$@ · Pauza %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d h";
+"unit.min" = "%d min";
+"unit.sec" = "%d s";
+"unit.zeroSec" = "0 s";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Upravit rychlé předvolby";
+"Quick Presets" = "Rychlé předvolby";
+"Reset" = "Obnovit";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Stejný formát jako v poli pro zadání —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Přidat předvolbu";
+"Add a preset" = "Přidat předvolbu";
+"No readable preset — buttons stay hidden" = "Žádná čitelná předvolba – tlačítka zůstanou skrytá";
+"Remove preset" = "Odebrat předvolbu";
+"Keep at least one preset" = "Ponechte alespoň jednu předvolbu";
+"preset.restore" = "Obnovit %@";
+"preset.max" = "Nejvýše %d předvoleb";
+
+/* ===== Music ===== */
+"mood.focus" = "Soustředění";
+"mood.calm" = "Klid";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Energie";
+"mood.focus.hint" = "Vyrovnané instrumentální skladby – pro hlubokou práci a zkoušky";
+"mood.calm.hint" = "Ambient a sólový klavír – uvolnění před vystoupením";
+"mood.jazz.hint" = "Kavárenský jazz a bossa nova – pro uvolněné sály a besedy";
+"mood.upbeat.hint" = "Lehký pop a funk – pro rozcvičku a přestávky";
+"Play music" = "Přehrát hudbu";
+"Pause music" = "Pozastavit hudbu";
+"Next Track" = "Další skladba";
+"Play With Timer" = "Přehrávat s časovačem";
+"Refresh" = "Obnovit";
+"music.empty" = "Žádné skladby – přidejte zvuk do složky %@";
+"music.openFolder" = "Otevřít složku %@";
+"music.count.one" = "%1$d skladba · %2$@";
+"music.count.other" = "%1$d skladeb · %2$@";
+"music.chip.none" = " (žádné skladby)";
+"music.chip.one" = " · %d skladba";
+"music.chip.other" = " · skladeb: %d";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Nastavení";
+"settings.support" = "Podpora";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Časovače";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Znovu otevřít zavřenou poznámku";
+"menu.help" = "❓ Nápověda";
+"menu.guide" = "📖 Uživatelská příručka";
+"menu.supportSite" = "🌐 Otevřít stránku podpory";
+"menu.settings" = "⚙️ Nastavení…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Uložené poznámky se nepodařilo přečíst";
+"alert.notesCorrupt.message" = "Soubor s poznámkami je poškozený, proto se StickyPresenter spouští prázdný. Původní soubor byl zachován pod názvem %@. Pokud ho potřebujete obnovit, pošlete ho vývojáři.";
+"alert.notesCorrupt.reveal" = "Zobrazit ve Finderu";
+"window.guide" = "Uživatelská příručka StickyPresenter";
+"settings.general" = "Obecné";
+"settings.launchAtLogin" = "Otevřít při přihlášení";
+"settings.launchAtLogin.failed" = "Položku přihlášení se nepodařilo změnit: %@";
+"settings.launchAtLogin.approval" = "Povolte StickyPresenter v Nastavení systému ▸ Obecné ▸ Položky přihlášení.";
+"settings.defaultColor" = "Barva nových poznámek";
+"settings.help" = "Nápověda";
+"settings.showGuide" = "Otevřít uživatelskou příručku";
+"settings.openSupport" = "Otevřít stránku podpory";
+"settings.revealNotes" = "Zobrazit soubor s poznámkami";
+"settings.revealNotes.help" = "Poznámky jsou uložené jen v tomto Macu. Pomocí tohoto souboru je můžete zálohovat nebo přenést na jiný Mac.";
+"settings.version" = "Verze";
+"colorName.yellow" = "Žlutá";
+"colorName.pink" = "Růžová";
+"colorName.green" = "Zelená";
+"colorName.blue" = "Modrá";
+"colorName.purple" = "Fialová";
+"colorName.orange" = "Oranžová";
+"note.close" = "Zavřít poznámku";
+"note.close.help" = "Zavřít poznámku (vrátíte ji příkazem „Znovu otevřít zavřenou poznámku“ v nabídce)";
+"note.color.help" = "Změnit barvu poznámky";
+"note.opacity.help" = "Nastavit průhlednost";
+"note.fontSmaller" = "Menší text";
+"note.fontLarger" = "Větší text";
+"teleprompter.close" = "Zavřít teleprompter";
+"teleprompter.rewind" = "Zpět na začátek";
+"teleprompter.play" = "Přehrát";
+"teleprompter.pause" = "Pozastavit";
+"teleprompter.speed" = "Rychlost posouvání";
+"timer.inputHelp.tooltip" = "Zobrazit formáty zadání";
+"timer.inputHelp.title" = "Můžete zadat";
+"timer.inputHelp.minutes" = "Číslo znamená minuty (10 min)";
+"timer.inputHelp.colon" = "Minuty:sekundy (5 min 30 s)";
+"timer.inputHelp.hms" = "Hodiny:minuty:sekundy";
+"timer.inputHelp.units" = "S jednotkami (1 h 20 min)";
+"timer.inputHelp.seconds" = "Sekundy (45 s)";
+"timer.inputHelp.pomodoro" = "Cyklus pomodoro soustředění/pauzy";
+"timer.inputHelp.footer" = "Kliknutím na příklad ho vyplníte. Časovač může trvat až 99:59:59.";
+"chameleon.permission.title" = "Chameleon potřebuje oprávnění k nahrávání obrazovky";
+"chameleon.permission.message" = "Chameleon jednou za sekundu zjistí barvu obrazovky přímo za časovačem a přizpůsobí jí pozadí. Obraz slouží jen k určení barvy, nikam se neukládá ani neodesílá.\n\nPokud budete pokračovat, macOS požádá o oprávnění. Pokud jste ho dříve odmítli, zapněte StickyPresenter v Nastavení systému.";
+"chameleon.permission.continue" = "Pokračovat";
+"chameleon.permission.openSettings" = "Otevřít Nastavení systému";
+"chameleon.permission.skip" = "Přeskočit";
+"hotkey.newNote" = "Nová poznámka";
+"hotkey.noteFromClipboard" = "Nová poznámka ze schránky";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Zobrazit nebo skrýt časovače";
+"hotkey.pomodoro" = "Spustit pomodoro (25/5)";
+"hotkey.showNotes" = "Zobrazit všechny poznámky";
+"hotkey.hideNotes" = "Skrýt všechny poznámky";
+"guide.welcome.title" = "Začínáme";
+"guide.welcome.summary" = "StickyPresenter nabízí poznámky, časovače a teleprompter, které se vznášejí nad Keynote, i na celou obrazovku.";
+"guide.welcome.1" = "Všechna okna se vznášejí nad snímky na celou obrazovku a neberou fokus vaší prezentační aplikaci.";
+"guide.welcome.2" = "Vše najdete v ikoně poznámky v řádku nabídek. V Docku žádná ikona není.";
+"guide.welcome.3" = "Poznámky se při psaní ukládají v tomto Macu a příště se objeví na stejném místě.";
+"guide.welcome.4" = "Tuto příručku znovu otevřete kdykoli z řádku nabídek ▸ Nápověda ▸ Uživatelská příručka.";
+"guide.notes.title" = "Lepicí poznámky";
+"guide.notes.summary" = "Připněte si text vystoupení nebo připomínky nad snímky.";
+"guide.notes.1" = "Poznámku přesunete tažením za libovolné místo. Tažením za okraj změníte její velikost.";
+"guide.notes.2" = "Najetím na poznámku zobrazíte tlačítka pro barvu, průhlednost a velikost textu.";
+"guide.notes.3" = "Poznámku zamkněte, aby se při prezentaci nic nezměnilo omylem.";
+"guide.notes.4" = "Zavřeli jste poznámku omylem? Příkaz „Znovu otevřít zavřenou poznámku“ v nabídce vrátí posledních 20.";
+"guide.notes.5" = "Zkopírujte svůj text a stisknutím ⌘⌃V z něj vytvořte novou poznámku.";
+"guide.timers.title" = "Časovače";
+"guide.timers.summary" = "Hlídejte čas pomocí malého widgetu v rohu obrazovky.";
+"guide.timers.1" = "V okně Časovače zadejte čas a stiskněte Return. Otazník vedle pole vypíše formáty.";
+"guide.timers.2" = "Když žádný časovač není, stačí jedno kliknutí na tlačítko Rychlý start. Tužkou tyto časy změníte.";
+"guide.timers.3" = "„Zobrazit/Skrýt“ a „Zarovnat“ widget schovají nebo seřadí widgety vedle okna Časovače.";
+"guide.timers.4" = "„Okno“ otevře časovač jako běžné okno, takže při sdílení obrazovky nebo přes AirPlay můžete sdílet jen ho.";
+"guide.timers.5" = "Tlačítko motivu přepíná mezi světlým, tmavým a Chameleonem, který se přizpůsobí obrazovce za ním. Chameleon potřebuje oprávnění k nahrávání obrazovky.";
+"guide.timers.6" = "Hudební lišta přehrává hudbu na pozadí, zatímco se připravujete. Skladby si přidáte sami do složky.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Střídejte fáze soustředění a pauzy, dokud neskončíte.";
+"guide.pomodoro.1" = "Čas soustředění a pauzy zadejte s lomítkem, třeba 25/5 nebo 50m/10m, a spustí se pomodoro.";
+"guide.pomodoro.2" = "Při každém přepnutí zazní jiný tón a widget bude při soustředění červený a při pauze zelený.";
+"guide.pomodoro.3" = "Stisknutím ⌘⌃B kdekoli spustíte 25 minut soustředění s pětiminutovými pauzami.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Text se posouvá stálým tempem, takže čtete a díváte se přitom do kamery.";
+"guide.teleprompter.1" = "Zkopírujte text a stisknutím ⌘⌃P ho otevřete v teleprompteru. Tužkou ho tam upravíte.";
+"guide.teleprompter.2" = "Stiskněte Přehrát a text se začne posouvat. Na konci se sám zastaví.";
+"guide.teleprompter.3" = "„Zrcadlit“ obrátí text pro teleprompter s odrazným sklem.";
+"guide.teleprompter.4" = "Rychlost, velikost textu i zrcadlení se pamatují pro příště.";
+"guide.remote.title" = "Dálkové ovládání z iPhonu";
+"guide.remote.summary" = "Spouštějte a zastavujte časovače z iPhonu přímo na pódiu.";
+"guide.remote.1" = "Stáhněte si Remote Controller for Sticky z App Storu v iPhonu.";
+"guide.remote.2" = "V aplikaci vyberte tento Mac a zadejte čtyřmístný kód z řádku nabídek ▸ Dálkové ovládání.";
+"guide.remote.3" = "iPhone a Mac musí být ve stejné Wi‑Fi. Po prvním spárování se připojí bez kódu.";
+"guide.remote.4" = "Jeden Mac může ovládat několik dálkových ovládání, takže ho může používat řečník i technik na pódiu.";
+"guide.shortcuts.title" = "Zkratky";
+"guide.shortcuts.summary" = "Fungují všude, i když je vpředu jiná aplikace nebo právě prezentujete.";
+"guide.shortcuts.taken" = "Používá jiná aplikace";
+"guide.shortcuts.note" = "Podržte zároveň Command (⌘) a Control (⌃). Zkratka s označením „Používá jiná aplikace“ začne znovu fungovat po ukončení této aplikace.";
+"guide.support" = "Stránka podpory";
+"guide.next" = "Další";
+"guide.done" = "Začít";
+
+/* Remote kill switch */
+"remote.unavailable" = "Dálkové ovládání z iPhonu je dočasně nedostupné";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Vítejte v StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter žije v řádku nabídek";
+"onboarding.menubar.body" = "V Docku žádná ikona není. Poznámky, časovače, teleprompter i nastavení najdete v ikoně poznámky vpravo nahoře na obrazovce.";
+"onboarding.menubar.icon" = "Hledejte tuto ikonu v řádku nabídek";
+"onboarding.hotkeys.title" = "Klávesy, které fungují během vystoupení";
+"onboarding.hotkeys.body" = "Tyto zkratky fungují i při Keynote nebo PowerPointu na celou obrazovku, aniž byste museli opustit snímky.";
+"onboarding.launch.title" = "Připraveno před vystoupením";
+"onboarding.launch.body" = "Otevírejte StickyPresenter při přihlášení, aby na vás poznámky a časovače čekaly už při příchodu na pódium.";
+"onboarding.launch.later" = "Kdykoli to můžete změnit v Nastavení.";
+"onboarding.back" = "Zpět";
+"onboarding.openGuide" = "Otevřít uživatelskou příručku";
+"onboarding.start" = "Začít";
+"onboarding.page" = "Strana %d z %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro na jeden řádek";
+"tip.pomodoro.message" = "Zadejte 25/5 pro 25 minut soustředění a 5 minut pauzy, stále dokola, dokud neskončíte.";
+"tip.pomodoro.try" = "Zkusit 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Spustit časovač";
+"intent.timer.description" = "Spustí odpočítávací časovač, který se vznáší nad vašimi snímky.";
+"intent.timer.minutes" = "Minuty";
+"intent.timer.summary ${minutes}" = "Spustit časovač na ${minutes} min";
+"intent.timer.short" = "Spustit časovač";
+"intent.pomodoro.title" = "Spustit pomodoro";
+"intent.pomodoro.description" = "Spustí časovač pomodoro s 25 minutami soustředění a 5 minutami pauzy.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Nová poznámka";
+"intent.note.description" = "Přidá na obrazovku novou poznámku.";
+"intent.note.short" = "Nová poznámka";
+"intent.timers.title" = "Zobrazit časovače";
+"intent.timers.description" = "Otevře panel časovačů.";
+"intent.timers.short" = "Časovače";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Lepší podpora VoiceOveru";
+"roadmap.a11y.voiceover.detail" = "VoiceOver čte každou poznámku a tlačítko ve smysluplném pořadí.";
+"roadmap.a11y.contrast.title" = "Barvy, které snáze rozlišíte";
+"roadmap.a11y.contrast.detail" = "Barvy poznámek zůstanou dobře rozlišitelné i se zvýšeným kontrastem nebo při barvosleposti.";
+"roadmap.a11y.motion.title" = "Omezení pohybu";
+"roadmap.a11y.motion.detail" = "Při zapnutém omezení pohybu jsou animace klidnější.";
+"roadmap.lang.more.title" = "Další jazyky";
+"roadmap.lang.more.detail" = "Používejte aplikaci ve více jazycích, nejen v angličtině a korejštině.";
+"roadmap.whatsnew.title" = "Co je nového";
+"roadmap.whatsnew.detail" = "Po aktualizaci uvidíte při prvním otevření aplikace, co je nového.";
+"roadmap.feedback.reply.title" = "Odpovědi na vaši zpětnou vazbu";
+"roadmap.feedback.reply.detail" = "Odpovědi na vaši zpětnou vazbu si přečtete přímo v aplikaci.";
+"roadmap.sync.icloud.title" = "Poznámky na všech vašich Macích";
+"roadmap.sync.icloud.detail" = "Pokračujte se stejnými poznámkami na dalších Macích přes iCloud.";
+"roadmap.backup.title" = "Export a import poznámek";
+"roadmap.backup.detail" = "Uložte poznámky do souboru a načtěte je na jiném Macu.";
+"roadmap.notifications.title" = "Upozornění časovače";
+"roadmap.notifications.detail" = "Dostaňte oznámení, když časovač skončí, i když jste v jiné aplikaci.";
