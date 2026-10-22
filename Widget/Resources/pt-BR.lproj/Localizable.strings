@@ -1,0 +1,7 @@
+"widget.displayName" = "Timer de apresentação";
+"widget.description" = "Mostra o tempo restante do timer de apresentação em andamento.";
+"widget.empty" = "Nenhum timer em andamento";
+"widget.total" = "Total %@";
+"widget.finished" = "%@ · Concluído";
+"widget.running" = "%@ · Em andamento";
+"widget.paused" = "%@ · Pausado";

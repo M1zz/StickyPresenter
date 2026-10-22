@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Nova nota";
+"menu.newFromClipboard" = "📋 Nova a partir da área de transferência";
+"menu.teleprompter" = "📺 Modo teleprompter";
+"menu.timers" = "⏱ Timers";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Mostrar todas as notas";
+"menu.hideAll" = "🙈 Ocultar todas as notas";
+"menu.defaultColor" = "🎨 Cor padrão";
+"menu.removeAll" = "🗑 Remover todas as notas";
+"menu.remote" = "📱 Controle remoto";
+"menu.contact.email" = "✉️ E-mail (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 DM no Instagram (@lee25_ios)";
+"menu.quit" = "Encerrar o StickyPresenter";
+
+"color.yellow" = "🟡 Amarelo";
+"color.pink" = "🩷 Rosa";
+"color.green" = "🟢 Verde";
+"color.blue" = "🔵 Azul";
+"color.purple" = "🟣 Roxo";
+"color.orange" = "🟠 Laranja";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Código de pareamento:   %@";
+"remote.none" = "Nenhum controle remoto conectado";
+"remote.connected" = "Controles remotos conectados: %d";
+"remote.newCode" = "Novo código de pareamento";
+"remote.forget" = "Esquecer controles remotos pareados";
+"remote.forget.count" = "Esquecer controles remotos pareados (%d)";
+"remote.forget.title" = "Esquecer todos os controles remotos pareados?";
+"remote.forget.message" = "Os controles remotos conectados serão desconectados e precisarão do código de pareamento de novo.";
+"remote.forget.confirm" = "Esquecer";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Cancelar";
+"alert.removeAll.title" = "Remover todas as notas?";
+"alert.removeAll.message" = "Todas as notas serão fechadas. As que têm texto podem ser recuperadas com “Reabrir nota fechada” no menu.";
+"alert.removeAll.confirm" = "Remover todas";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Guia do StickyPresenter\n\n📌 Arraste para mover a nota\n🖱 Passe o mouse para ver os controles\n🎨 Ajuste cor · opacidade · tamanho do texto\n🔒 O cadeado impede a edição\n\n⌘⌃N  Nova nota\n⌘⌃T  Abrir timers\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Mostrar todas as notas\n⌘⌃H  Ocultar todas as notas\n\n💡 Você também pode criar uma nota\n   direto dos controles do timer!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Cole seu roteiro aqui...\n\nO teleprompter vai rolar o texto automaticamente.\n\nUse os controles para ajustar a velocidade e o tamanho do texto.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Modo de pré-visualização";
+"Edit text" = "Editar texto";
+"Mirror text (for teleprompter glass)" = "Espelhar texto (para vidro de teleprompter)";
+"Font" = "Fonte";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Bloquear edição";
+"Unlock editing" = "Desbloquear edição";
+"Empty note" = "Nota vazia";
+"note.charCount" = "%d caracteres";
+"note.opacity" = "Opacidade: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Timer";
+"window.timer.named" = "Timer – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Nova nota";
+"Quick Start" = "Início rápido";
+"No timers" = "Nenhum timer";
+"Tap a preset or enter a time" = "Toque em um atalho ou digite um tempo";
+"Show" = "Mostrar";
+"Hide" = "Ocultar";
+"Show / hide widget" = "Mostrar/ocultar widget";
+"Align" = "Alinhar";
+"Align widget next to the panel" = "Alinhar o widget ao lado do painel";
+"Window" = "Janela";
+"Open in a window (screen share / AirPlay)" = "Abrir em uma janela (compartilhamento de tela / AirPlay)";
+"Delete timer" = "Excluir timer";
+"Reuse this timer with another duration" = "Reutilizar este timer com outra duração";
+"Add Timer" = "Adicionar timer";
+"Drag to resize" = "Arraste para redimensionar";
+"Close" = "Fechar";
+"timer.theme" = "Tema: %@";
+"timer.widgetSize" = "Tamanho do widget: %@ (%dpt)";
+"timer.restartAs" = "Reiniciar este timer como %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Sistema";
+"theme.light" = "Claro";
+"theme.dark" = "Escuro";
+"theme.chameleon" = "Camaleão";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Foco";
+"pomodoro.break" = "Pausa";
+"preview.pomodoro" = "↻ Foco %1$@ · Pausa %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d h";
+"unit.min" = "%d min";
+"unit.sec" = "%d s";
+"unit.zeroSec" = "0 s";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Editar atalhos rápidos";
+"Quick Presets" = "Atalhos rápidos";
+"Reset" = "Redefinir";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Mesmo formato do campo de entrada —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Adicionar atalho";
+"Add a preset" = "Adicionar um atalho";
+"No readable preset — buttons stay hidden" = "Nenhum atalho válido — os botões ficam ocultos";
+"Remove preset" = "Remover atalho";
+"Keep at least one preset" = "Mantenha pelo menos um atalho";
+"preset.restore" = "Restaurar %@";
+"preset.max" = "Até %d atalhos";
+
+/* ===== Music ===== */
+"mood.focus" = "Foco";
+"mood.calm" = "Calma";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Animado";
+"mood.focus.hint" = "Instrumentais constantes — trabalho concentrado e ensaio";
+"mood.calm.hint" = "Ambient e piano solo — para desacelerar antes da palestra";
+"mood.jazz.hint" = "Jazz de café e bossa nova — salas descontraídas e conversadas";
+"mood.upbeat.hint" = "Pop leve e funk — aquecimento e intervalos";
+"Play music" = "Tocar música";
+"Pause music" = "Pausar música";
+"Next Track" = "Próxima faixa";
+"Play With Timer" = "Tocar com o timer";
+"Refresh" = "Atualizar";
+"music.empty" = "Nenhuma faixa — adicione áudio à pasta %@";
+"music.openFolder" = "Abrir a pasta %@";
+"music.count.one" = "%1$d faixa · %2$@";
+"music.count.other" = "%1$d faixas · %2$@";
+"music.chip.none" = " (sem faixas)";
+"music.chip.one" = " · %d faixa";
+"music.chip.other" = " · %d faixas";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Ajustes";
+"settings.support" = "Suporte";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Timers";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Reabrir nota fechada";
+"menu.help" = "❓ Ajuda";
+"menu.guide" = "📖 Guia do usuário";
+"menu.supportSite" = "🌐 Abrir página de suporte";
+"menu.settings" = "⚙️ Ajustes…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Não foi possível ler suas notas salvas";
+"alert.notesCorrupt.message" = "O arquivo de notas está danificado, então o StickyPresenter está começando vazio. O arquivo original foi guardado como %@. Se precisar recuperá-lo, envie-o ao desenvolvedor.";
+"alert.notesCorrupt.reveal" = "Mostrar no Finder";
+"window.guide" = "Guia do usuário do StickyPresenter";
+"settings.general" = "Geral";
+"settings.launchAtLogin" = "Abrir ao iniciar sessão";
+"settings.launchAtLogin.failed" = "Não foi possível alterar o item de login: %@";
+"settings.launchAtLogin.approval" = "Permita o StickyPresenter em Ajustes do Sistema ▸ Geral ▸ Itens de Login.";
+"settings.defaultColor" = "Cor das novas notas";
+"settings.help" = "Ajuda";
+"settings.showGuide" = "Abrir o guia do usuário";
+"settings.openSupport" = "Abrir página de suporte";
+"settings.revealNotes" = "Mostrar arquivo de notas";
+"settings.revealNotes.help" = "As notas ficam guardadas só neste Mac. Use este arquivo para fazer backup ou levá-las a outro Mac.";
+"settings.version" = "Versão";
+"colorName.yellow" = "Amarelo";
+"colorName.pink" = "Rosa";
+"colorName.green" = "Verde";
+"colorName.blue" = "Azul";
+"colorName.purple" = "Roxo";
+"colorName.orange" = "Laranja";
+"note.close" = "Fechar nota";
+"note.close.help" = "Fechar nota (recupere com “Reabrir nota fechada” no menu)";
+"note.color.help" = "Mudar a cor da nota";
+"note.opacity.help" = "Ajustar opacidade";
+"note.fontSmaller" = "Texto menor";
+"note.fontLarger" = "Texto maior";
+"teleprompter.close" = "Fechar teleprompter";
+"teleprompter.rewind" = "Voltar ao início";
+"teleprompter.play" = "Reproduzir";
+"teleprompter.pause" = "Pausar";
+"teleprompter.speed" = "Velocidade de rolagem";
+"timer.inputHelp.tooltip" = "Mostrar formatos de entrada";
+"timer.inputHelp.title" = "Você pode digitar";
+"timer.inputHelp.minutes" = "Um número significa minutos (10 min)";
+"timer.inputHelp.colon" = "Minutos:segundos (5 min 30 s)";
+"timer.inputHelp.hms" = "Horas:minutos:segundos";
+"timer.inputHelp.units" = "Com unidades (1 h 20 min)";
+"timer.inputHelp.seconds" = "Segundos (45 s)";
+"timer.inputHelp.pomodoro" = "Ciclo Pomodoro de foco/pausa";
+"timer.inputHelp.footer" = "Clique em um exemplo para preenchê-lo. Os timers podem ter até 99:59:59.";
+"chameleon.permission.title" = "O Camaleão precisa da permissão de Gravação de Tela";
+"chameleon.permission.message" = "O Camaleão lê a cor da tela logo atrás do timer uma vez por segundo e combina o fundo com ela. A imagem serve apenas para calcular uma cor e nunca é salva nem enviada a lugar nenhum.\n\nSe você continuar, o macOS vai pedir permissão. Se você já negou antes, ative o StickyPresenter em Ajustes do Sistema.";
+"chameleon.permission.continue" = "Continuar";
+"chameleon.permission.openSettings" = "Abrir Ajustes do Sistema";
+"chameleon.permission.skip" = "Pular";
+"hotkey.newNote" = "Nova nota";
+"hotkey.noteFromClipboard" = "Nova nota da área de transferência";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Mostrar ou ocultar timers";
+"hotkey.pomodoro" = "Iniciar Pomodoro (25/5)";
+"hotkey.showNotes" = "Mostrar todas as notas";
+"hotkey.hideNotes" = "Ocultar todas as notas";
+"guide.welcome.title" = "Primeiros passos";
+"guide.welcome.summary" = "O StickyPresenter reúne notas, timers e um teleprompter que flutuam sobre o Keynote, até em tela cheia.";
+"guide.welcome.1" = "Todas as janelas flutuam sobre os slides em tela cheia sem tirar o foco do seu app de apresentação.";
+"guide.welcome.2" = "Tudo fica no ícone de nota na barra de menus. Não há ícone no Dock.";
+"guide.welcome.3" = "As notas são salvas neste Mac enquanto você digita e voltam ao mesmo lugar na próxima vez.";
+"guide.welcome.4" = "Abra este guia de novo quando quiser em barra de menus ▸ Ajuda ▸ Guia do usuário.";
+"guide.notes.title" = "Notas adesivas";
+"guide.notes.summary" = "Fixe seu roteiro ou lembretes sobre os slides.";
+"guide.notes.1" = "Arraste em qualquer ponto da nota para movê-la. Arraste uma borda para redimensionar.";
+"guide.notes.2" = "Passe o mouse sobre a nota para ver os botões de cor, opacidade e tamanho do texto.";
+"guide.notes.3" = "Bloqueie uma nota para que nada mude sem querer durante a apresentação.";
+"guide.notes.4" = "Fechou uma nota sem querer? “Reabrir nota fechada” no menu traz de volta as últimas 20.";
+"guide.notes.5" = "Copie seu roteiro e aperte ⌘⌃V para transformá-lo em uma nova nota.";
+"guide.timers.title" = "Timers";
+"guide.timers.summary" = "Acompanhe o tempo com um pequeno widget no canto da tela.";
+"guide.timers.1" = "Digite um tempo na janela Timers e aperte Return. O ponto de interrogação ao lado do campo lista os formatos.";
+"guide.timers.2" = "Sem nenhum timer, um clique em um botão de Início rápido já inicia um. Use o lápis para mudar esses tempos.";
+"guide.timers.3" = "Mostrar/Ocultar e Alinhar escondem um widget ou alinham os widgets ao lado da janela Timers.";
+"guide.timers.4" = "Janela abre o timer como uma janela comum, para você compartilhar só ela por compartilhamento de tela ou AirPlay.";
+"guide.timers.5" = "O botão de tema alterna entre claro, escuro e Camaleão, que acompanha a tela atrás dele. O Camaleão precisa da permissão de Gravação de Tela.";
+"guide.timers.6" = "A barra de música toca música de fundo enquanto você se prepara. As faixas você mesmo coloca em uma pasta.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Alterne sessões de foco e pausa até você parar.";
+"guide.pomodoro.1" = "Digite os tempos de foco e pausa com uma barra, como 25/5 ou 50m/10m, para iniciar um Pomodoro.";
+"guide.pomodoro.2" = "Um som diferente toca a cada troca, e o widget fica vermelho no foco e verde na pausa.";
+"guide.pomodoro.3" = "Aperte ⌘⌃B em qualquer lugar para iniciar 25 minutos de foco com pausas de 5 minutos.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Seu roteiro rola em ritmo constante para você ler olhando para a câmera.";
+"guide.teleprompter.1" = "Copie seu roteiro e aperte ⌘⌃P para abri-lo no teleprompter. Use o lápis para editá-lo ali.";
+"guide.teleprompter.2" = "Aperte Reproduzir para começar a rolar. Ele para sozinho no fim do roteiro.";
+"guide.teleprompter.3" = "Espelhar inverte o texto para equipamentos de teleprompter com vidro refletor.";
+"guide.teleprompter.4" = "Velocidade, tamanho do texto e espelhamento ficam salvos para a próxima vez.";
+"guide.remote.title" = "Controle remoto no iPhone";
+"guide.remote.summary" = "Inicie e pare timers pelo iPhone, direto do palco.";
+"guide.remote.1" = "Baixe o Remote Controller for Sticky na App Store, no seu iPhone.";
+"guide.remote.2" = "Escolha este Mac no app e digite o código de quatro dígitos de barra de menus ▸ Controle remoto.";
+"guide.remote.3" = "O iPhone e o Mac precisam estar no mesmo Wi‑Fi. Depois da primeira vez, eles se conectam sem código.";
+"guide.remote.4" = "Vários controles remotos podem controlar um mesmo Mac, então o apresentador e quem cuida do palco podem usar ao mesmo tempo.";
+"guide.shortcuts.title" = "Atalhos";
+"guide.shortcuts.summary" = "Funcionam em qualquer lugar, mesmo com outro app à frente ou durante a apresentação.";
+"guide.shortcuts.taken" = "Em uso por outro app";
+"guide.shortcuts.note" = "Segure Command (⌘) e Control (⌃) juntos. Um atalho marcado como “Em uso por outro app” volta a funcionar quando esse app é encerrado.";
+"guide.support" = "Página de suporte";
+"guide.next" = "Avançar";
+"guide.done" = "Começar";
+
+/* Remote kill switch */
+"remote.unavailable" = "O controle remoto do iPhone está temporariamente indisponível";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Boas-vindas ao StickyPresenter";
+"onboarding.menubar.title" = "O StickyPresenter fica na barra de menus";
+"onboarding.menubar.body" = "Não há ícone no Dock. Notas, timers, teleprompter e ajustes ficam todos no ícone de nota no canto superior direito da tela.";
+"onboarding.menubar.icon" = "Procure este ícone na barra de menus";
+"onboarding.hotkeys.title" = "Teclas que funcionam durante a apresentação";
+"onboarding.hotkeys.body" = "Estes atalhos funcionam até com o Keynote ou o PowerPoint em tela cheia, sem sair dos slides.";
+"onboarding.launch.title" = "Pronto antes de apresentar";
+"onboarding.launch.body" = "Abra o StickyPresenter ao iniciar a sessão, para que suas notas e timers já estejam esperando quando você subir ao palco.";
+"onboarding.launch.later" = "Você pode mudar isso a qualquer momento em Ajustes.";
+"onboarding.back" = "Voltar";
+"onboarding.openGuide" = "Abrir o guia do usuário";
+"onboarding.start" = "Começar";
+"onboarding.page" = "Página %d de %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro em uma linha";
+"tip.pomodoro.message" = "Digite 25/5 para 25 minutos de foco e 5 minutos de pausa, repetindo até você parar.";
+"tip.pomodoro.try" = "Experimente 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Iniciar timer";
+"intent.timer.description" = "Inicia um timer de contagem regressiva que flutua sobre os slides.";
+"intent.timer.minutes" = "Minutos";
+"intent.timer.summary ${minutes}" = "Iniciar um timer de ${minutes} minutos";
+"intent.timer.short" = "Iniciar timer";
+"intent.pomodoro.title" = "Iniciar Pomodoro";
+"intent.pomodoro.description" = "Inicia um timer Pomodoro com 25 minutos de foco e 5 de pausa.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Nova nota";
+"intent.note.description" = "Adiciona uma nova nota à tela.";
+"intent.note.short" = "Nova nota";
+"intent.timers.title" = "Mostrar timers";
+"intent.timers.description" = "Abre o painel de timers.";
+"intent.timers.short" = "Timers";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Melhor suporte ao VoiceOver";
+"roadmap.a11y.voiceover.detail" = "O VoiceOver lê cada nota e botão em uma ordem que faz sentido.";
+"roadmap.a11y.contrast.title" = "Cores mais fáceis de distinguir";
+"roadmap.a11y.contrast.detail" = "As cores das notas continuam fáceis de diferenciar, mesmo com Aumentar Contraste ou daltonismo.";
+"roadmap.a11y.motion.title" = "Redução de movimento";
+"roadmap.a11y.motion.detail" = "Com Reduzir Movimento ativado, as animações ficam mais suaves.";
+"roadmap.lang.more.title" = "Mais idiomas";
+"roadmap.lang.more.detail" = "Use o app em mais idiomas, não só em inglês e coreano.";
+"roadmap.whatsnew.title" = "Novidades";
+"roadmap.whatsnew.detail" = "Depois de uma atualização, veja as novidades na primeira vez que abrir o app.";
+"roadmap.feedback.reply.title" = "Respostas aos seus comentários";
+"roadmap.feedback.reply.detail" = "Leia as nossas respostas aos seus comentários direto no app.";
+"roadmap.sync.icloud.title" = "Notas em todos os seus Macs";
+"roadmap.sync.icloud.detail" = "Encontre as mesmas notas nos seus outros Macs com o iCloud.";
+"roadmap.backup.title" = "Exportar e importar notas";
+"roadmap.backup.detail" = "Salve suas notas em um arquivo e carregue-as de novo em outro Mac.";
+"roadmap.notifications.title" = "Avisos do timer";
+"roadmap.notifications.detail" = "Receba uma notificação quando um timer terminar, mesmo estando em outro app.";

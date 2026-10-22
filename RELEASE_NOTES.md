@@ -60,6 +60,12 @@ Leggi le risposte ai tuoi commenti
 I commenti chiedono cosa è successo
 Privacy e assistenza nelle Impostazioni
 
+### 앱스토어 (포르투갈어(브라질))
+
+Veja as respostas aos seus comentários
+Ao comentar, perguntamos o que houve
+Privacidade e suporte em Ajustes
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

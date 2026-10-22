@@ -705,6 +705,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 포르투갈어(브라질) (pt-BR)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Notas, timer e teleprompter
+
+### 프로모션 텍스트
+
+Deixe seu roteiro e a contagem regressiva sobre o Keynote em tela cheia. As notas se salvam sozinhas e um guia integrado apresenta cada recurso.
+
+### 설명
+
+Quando você apresenta, as duas coisas de que mais precisa são também as mais difíceis de enxergar: o roteiro e o relógio. O StickyPresenter mantém as duas flutuando sobre tudo o que está na tela, inclusive o Keynote em tela cheia, para você nunca precisar sair dos slides para consultá-las.
+
+Ele fica na barra de menus: sem ícone no Dock, sem janelas extras para administrar.
+
+NOTAS ADESIVAS
+• Ficam à frente de apresentações em tela cheia, onde uma janela comum não acompanharia
+• Seis cores, com opacidade e tamanho do texto ajustáveis
+• Bloqueie uma nota para que um clique sem querer não a altere durante a fala
+• Transforme na hora o conteúdo da área de transferência em uma nova nota
+• As notas são salvas enquanto você digita e reabrem exatamente onde estavam
+• Fechou uma nota sem querer? Reabra pelo menu
+
+TIMERS DE CONTAGEM REGRESSIVA
+• Widgets quadrados que você pode ampliar até ler do fundo da sala
+• Temas Sistema, Claro e Escuro, além do Camaleão, que acompanha a tela por trás
+• O widget fica vermelho quando o tempo aperta e, no fim, toca um alerta e pisca a borda
+• Abra qualquer timer em uma janela própria e compartilhe só ela por compartilhamento de tela ou AirPlay
+• Digite os tempos do jeito que pensa, como 5:30 ou 1h 20m. Digite 25/5 para um Pomodoro que alterna foco e pausa
+• Um widget da Central de Notificações mantém a contagem à vista
+
+TELEPROMPTER
+• Rolagem automática suave, com velocidade e tamanho do texto ajustáveis
+• Modo espelho para equipamentos de teleprompter com vidro refletor
+• Para sozinho no fim do texto e lembra os seus ajustes
+
+MÚSICA DE FUNDO
+• Quatro climas: Foco, Calma, Jazz e Animado
+• Começa e termina junto com o timer, com fade na entrada e na saída
+• As músicas são suas: o app cria uma pasta para cada clima e toca o que você colocar nela
+
+ATALHOS QUE FUNCIONAM EM QUALQUER LUGAR
+• Os atalhos Command-Control abrem notas, timers e teleprompter mesmo com outro app à frente
+• Não exige nenhuma permissão de acessibilidade
+
+FÁCIL DE COMEÇAR
+• Um guia integrado abre no primeiro uso e fica a um clique no menu Ajuda
+• Opção de abrir ao iniciar a sessão, para você estar pronto antes de cada apresentação
+
+CONTROLE REMOTO NO IPHONE (APP GRATUITO À PARTE)
+Durante a apresentação, o Mac fica fora de alcance. O Remote Controller for Sticky coloca o timer na sua mão: inicie e pause, some ou tire 30 segundos, mude o tamanho e o tema do widget ou afaste o que estiver cobrindo um slide. O pareamento usa um código de quatro dígitos: mesmo numa sala cheia de Macs, o controle remoto só fala com o seu.
+
+PRIVACIDADE
+Sem conta, sem anúncios. Suas notas e roteiros nunca saem do seu Mac. Além de estatísticas de uso anônimas, o app só se conecta à internet quando você escolhe enviar um comentário em Ajustes, e conversa com o controle remoto do iPhone por uma conexão direta e criptografada na sua rede local.
+
+Requer macOS 14 ou posterior.
+
+### 키워드
+
+apresentação,slides,palestra,pomodoro,aula,discurso,cronômetro,lembrete,roteiro,ensaio,orador
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.
