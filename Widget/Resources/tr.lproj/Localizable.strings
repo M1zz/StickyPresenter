@@ -1,0 +1,7 @@
+"widget.displayName" = "Sunum Zamanlayıcısı";
+"widget.description" = "Devam eden sunum zamanlayıcısının kalan süresini gösterir.";
+"widget.empty" = "Çalışan zamanlayıcı yok";
+"widget.total" = "Toplam %@";
+"widget.finished" = "%@ · Bitti";
+"widget.running" = "%@ · Çalışıyor";
+"widget.paused" = "%@ · Duraklatıldı";

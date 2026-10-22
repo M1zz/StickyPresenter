@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Yeni Not";
+"menu.newFromClipboard" = "📋 Panodan Yeni Not";
+"menu.teleprompter" = "📺 Teleprompter Modu";
+"menu.timers" = "⏱ Zamanlayıcılar";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Tüm Notları Göster";
+"menu.hideAll" = "🙈 Tüm Notları Gizle";
+"menu.defaultColor" = "🎨 Varsayılan Renk";
+"menu.removeAll" = "🗑 Tüm Notları Kaldır";
+"menu.remote" = "📱 Uzaktan Kumanda";
+"menu.contact.email" = "✉️ E-posta (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram DM (@lee25_ios)";
+"menu.quit" = "StickyPresenter’dan Çık";
+
+"color.yellow" = "🟡 Sarı";
+"color.pink" = "🩷 Pembe";
+"color.green" = "🟢 Yeşil";
+"color.blue" = "🔵 Mavi";
+"color.purple" = "🟣 Mor";
+"color.orange" = "🟠 Turuncu";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Eşleştirme Kodu:   %@";
+"remote.none" = "Bağlı uzaktan kumanda yok";
+"remote.connected" = "Bağlı uzaktan kumandalar: %d";
+"remote.newCode" = "Yeni Eşleştirme Kodu";
+"remote.forget" = "Eşleşen Uzaktan Kumandaları Unut";
+"remote.forget.count" = "Eşleşen Uzaktan Kumandaları Unut (%d)";
+"remote.forget.title" = "Eşleşen tüm uzaktan kumandalar unutulsun mu?";
+"remote.forget.message" = "Bağlı uzaktan kumandaların bağlantısı kesilir ve eşleştirme koduna yeniden ihtiyaç duyarlar.";
+"remote.forget.confirm" = "Unut";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "İptal";
+"alert.removeAll.title" = "Tüm notlar kaldırılsın mı?";
+"alert.removeAll.message" = "Tüm notlar kapatılır. Metin içeren notları menüdeki “Kapatılan Notu Yeniden Aç” ile geri getirebilirsiniz.";
+"alert.removeAll.confirm" = "Tümünü Kaldır";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 StickyPresenter Rehberi\n\n📌 Notu taşımak için sürükleyin\n🖱 Kontrolleri görmek için üzerine gelin\n🎨 Renk · opaklık · yazı boyutunu ayarlayın\n🔒 Kilit düğmesi düzenlemeyi engeller\n\n⌘⌃N  Yeni not\n⌘⌃T  Zamanlayıcıları aç\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Tüm notları göster\n⌘⌃H  Tüm notları gizle\n\n💡 Not oluşturmayı doğrudan\n   zamanlayıcı kontrollerinden de yapabilirsiniz!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Konuşma metninizi buraya yapıştırın...\n\nTeleprompter metni otomatik olarak kaydırır.\n\nHızı ve yazı boyutunu kontrollerle ayarlayın.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Önizleme modu";
+"Edit text" = "Metni düzenle";
+"Mirror text (for teleprompter glass)" = "Metni aynala (teleprompter camı için)";
+"Font" = "Yazı Tipi";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Düzenlemeyi kilitle";
+"Unlock editing" = "Düzenlemenin kilidini aç";
+"Empty note" = "Boş not";
+"note.charCount" = "%d karakter";
+"note.opacity" = "Opaklık: %%%d";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Zamanlayıcı";
+"window.timer.named" = "Zamanlayıcı – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Yeni Not";
+"Quick Start" = "Hızlı Başlat";
+"No timers" = "Zamanlayıcı yok";
+"Tap a preset or enter a time" = "Bir hazır ayara dokunun veya süre girin";
+"Show" = "Göster";
+"Hide" = "Gizle";
+"Show / hide widget" = "Widget’ı göster / gizle";
+"Align" = "Hizala";
+"Align widget next to the panel" = "Widget’ı panelin yanına hizala";
+"Window" = "Pencere";
+"Open in a window (screen share / AirPlay)" = "Pencerede aç (ekran paylaşımı / AirPlay)";
+"Delete timer" = "Zamanlayıcıyı sil";
+"Reuse this timer with another duration" = "Bu zamanlayıcıyı başka bir süreyle yeniden kullan";
+"Add Timer" = "Zamanlayıcı Ekle";
+"Drag to resize" = "Boyutlandırmak için sürükleyin";
+"Close" = "Kapat";
+"timer.theme" = "Tema: %@";
+"timer.widgetSize" = "Widget boyutu: %@ (%d pt)";
+"timer.restartAs" = "Bu zamanlayıcıyı %@ olarak yeniden başlat";
+
+/* ===== Theme names ===== */
+"theme.system" = "Sistem";
+"theme.light" = "Açık";
+"theme.dark" = "Koyu";
+"theme.chameleon" = "Bukalemun";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Odak";
+"pomodoro.break" = "Mola";
+"preview.pomodoro" = "↻ Odak %1$@ · Mola %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d sa";
+"unit.min" = "%d dk";
+"unit.sec" = "%d sn";
+"unit.zeroSec" = "0 sn";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Hızlı hazır ayarları düzenle";
+"Quick Presets" = "Hızlı Hazır Ayarlar";
+"Reset" = "Sıfırla";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Giriş alanıyla aynı biçim —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Hazır ayar ekle";
+"Add a preset" = "Bir hazır ayar ekle";
+"No readable preset — buttons stay hidden" = "Okunabilir hazır ayar yok — düğmeler gizli kalır";
+"Remove preset" = "Hazır ayarı kaldır";
+"Keep at least one preset" = "En az bir hazır ayar bırakın";
+"preset.restore" = "%@ ayarını geri yükle";
+"preset.max" = "En fazla %d hazır ayar";
+
+/* ===== Music ===== */
+"mood.focus" = "Odak";
+"mood.calm" = "Sakin";
+"mood.jazz" = "Caz";
+"mood.upbeat" = "Canlı";
+"mood.focus.hint" = "Sürekli enstrümantal müzik — derin çalışma ve prova için";
+"mood.calm.hint" = "Ambient ve solo piyano — konuşma öncesi sakinleşmek için";
+"mood.jazz.hint" = "Kafe cazı ve bossa nova — rahat, sohbete açık ortamlar için";
+"mood.upbeat.hint" = "Hafif pop ve funk — ısınma ve molalar için";
+"Play music" = "Müziği çal";
+"Pause music" = "Müziği duraklat";
+"Next Track" = "Sonraki Parça";
+"Play With Timer" = "Zamanlayıcıyla Birlikte Çal";
+"Refresh" = "Yenile";
+"music.empty" = "Parça yok — %@ klasörüne ses dosyası ekleyin";
+"music.openFolder" = "%@ Klasörünü Aç";
+"music.count.one" = "%1$d parça · %2$@";
+"music.count.other" = "%1$d parça · %2$@";
+"music.chip.none" = " (parça yok)";
+"music.chip.one" = " · %d parça";
+"music.chip.other" = " · %d parça";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Ayarlar";
+"settings.support" = "Destek";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Zamanlayıcılar";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Kapatılan Notu Yeniden Aç";
+"menu.help" = "❓ Yardım";
+"menu.guide" = "📖 Kullanım Kılavuzu";
+"menu.supportSite" = "🌐 Destek Sayfasını Aç";
+"menu.settings" = "⚙️ Ayarlar…";
+"alert.ok" = "Tamam";
+"alert.notesCorrupt.title" = "Kayıtlı notlarınız okunamadı";
+"alert.notesCorrupt.message" = "Not dosyası bozuk olduğundan StickyPresenter boş başlıyor. Özgün dosya %@ adıyla saklandı. Kurtarmanız gerekirse geliştiriciye gönderin.";
+"alert.notesCorrupt.reveal" = "Finder’da Göster";
+"window.guide" = "StickyPresenter Kullanım Kılavuzu";
+"settings.general" = "Genel";
+"settings.launchAtLogin" = "Oturum açılınca aç";
+"settings.launchAtLogin.failed" = "Oturum açma öğesi değiştirilemedi: %@";
+"settings.launchAtLogin.approval" = "Sistem Ayarları ▸ Genel ▸ Oturum Açma Öğeleri bölümünde StickyPresenter’a izin verin.";
+"settings.defaultColor" = "Yeni not rengi";
+"settings.help" = "Yardım";
+"settings.showGuide" = "Kullanım Kılavuzunu Aç";
+"settings.openSupport" = "Destek Sayfasını Aç";
+"settings.revealNotes" = "Not Dosyasını Göster";
+"settings.revealNotes.help" = "Notlar yalnızca bu Mac’te saklanır. Bu dosyayla yedek alabilir veya başka bir Mac’e taşıyabilirsiniz.";
+"settings.version" = "Sürüm";
+"colorName.yellow" = "Sarı";
+"colorName.pink" = "Pembe";
+"colorName.green" = "Yeşil";
+"colorName.blue" = "Mavi";
+"colorName.purple" = "Mor";
+"colorName.orange" = "Turuncu";
+"note.close" = "Notu kapat";
+"note.close.help" = "Notu kapat (menüdeki “Kapatılan Notu Yeniden Aç” ile geri getirin)";
+"note.color.help" = "Not rengini değiştir";
+"note.opacity.help" = "Opaklığı ayarla";
+"note.fontSmaller" = "Daha küçük yazı";
+"note.fontLarger" = "Daha büyük yazı";
+"teleprompter.close" = "Teleprompter’ı kapat";
+"teleprompter.rewind" = "Başa dön";
+"teleprompter.play" = "Oynat";
+"teleprompter.pause" = "Duraklat";
+"teleprompter.speed" = "Kaydırma hızı";
+"timer.inputHelp.tooltip" = "Giriş biçimlerini göster";
+"timer.inputHelp.title" = "Şunları yazabilirsiniz";
+"timer.inputHelp.minutes" = "Sayı dakika demektir (10 dk)";
+"timer.inputHelp.colon" = "Dakika:saniye (5 dk 30 sn)";
+"timer.inputHelp.hms" = "Saat:dakika:saniye";
+"timer.inputHelp.units" = "Birimlerle (1 sa 20 dk)";
+"timer.inputHelp.seconds" = "Saniye (45 sn)";
+"timer.inputHelp.pomodoro" = "Odak/mola Pomodoro döngüsü";
+"timer.inputHelp.footer" = "Doldurmak için bir örneğe tıklayın. Zamanlayıcılar en fazla 99:59:59 olabilir.";
+"chameleon.permission.title" = "Bukalemun için Ekran Kaydı izni gerekir";
+"chameleon.permission.message" = "Bukalemun, saniyede bir zamanlayıcının hemen arkasındaki ekranın rengini okur ve arka planı buna uydurur. Görüntü yalnızca renk hesaplamak için kullanılır; hiçbir yere kaydedilmez veya gönderilmez.\n\nDevam ederseniz macOS izin isteyecek. Daha önce reddettiyseniz Sistem Ayarları’nda StickyPresenter’ı açın.";
+"chameleon.permission.continue" = "Devam";
+"chameleon.permission.openSettings" = "Sistem Ayarlarını Aç";
+"chameleon.permission.skip" = "Atla";
+"hotkey.newNote" = "Yeni not";
+"hotkey.noteFromClipboard" = "Panodan yeni not";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Zamanlayıcıları göster veya gizle";
+"hotkey.pomodoro" = "Pomodoro’yu başlat (25/5)";
+"hotkey.showNotes" = "Tüm notları göster";
+"hotkey.hideNotes" = "Tüm notları gizle";
+"guide.welcome.title" = "Başlarken";
+"guide.welcome.summary" = "StickyPresenter, Keynote’un üzerinde tam ekranda bile süzülen notlar, zamanlayıcılar ve bir teleprompter sunar.";
+"guide.welcome.1" = "Her pencere, sunum uygulamanızın odağını çalmadan tam ekran slaytların üzerinde süzülür.";
+"guide.welcome.2" = "Her şey menü çubuğundaki not simgesinde. Dock’ta simge yok.";
+"guide.welcome.3" = "Notlar siz yazdıkça bu Mac’e kaydedilir ve bir sonraki sefer aynı yerde açılır.";
+"guide.welcome.4" = "Bu kılavuzu istediğiniz zaman menü çubuğu ▸ Yardım ▸ Kullanım Kılavuzu yoluyla yeniden açabilirsiniz.";
+"guide.notes.title" = "Yapışkan Notlar";
+"guide.notes.summary" = "Konuşma metninizi veya hatırlatmaları slaytların üzerine sabitleyin.";
+"guide.notes.1" = "Taşımak için notun herhangi bir yerinden sürükleyin. Boyutlandırmak için kenarından sürükleyin.";
+"guide.notes.2" = "Renk, opaklık ve yazı boyutu düğmelerini görmek için notun üzerine gelin.";
+"guide.notes.3" = "Sunum yaparken yanlışlıkla bir şey değişmesin diye notu kilitleyin.";
+"guide.notes.4" = "Bir notu yanlışlıkla mı kapattınız? Menüdeki “Kapatılan Notu Yeniden Aç” son 20 notu geri getirir.";
+"guide.notes.5" = "Konuşma metninizi kopyalayıp ⌘⌃V’ye basarak yeni bir nota dönüştürün.";
+"guide.timers.title" = "Zamanlayıcılar";
+"guide.timers.summary" = "Köşedeki küçük bir widget ile süreyi takip edin.";
+"guide.timers.1" = "Zamanlayıcılar penceresine bir süre yazıp Return’e basın. Alanın yanındaki soru işareti biçimleri listeler.";
+"guide.timers.2" = "Hiç zamanlayıcı yokken bir Hızlı Başlat düğmesine tek tıklamak bir tane başlatır. Kalemle bu süreleri değiştirin.";
+"guide.timers.3" = "Göster/Gizle ve Hizala, bir widget’ı gizler veya widget’ları Zamanlayıcılar penceresinin yanına dizer.";
+"guide.timers.4" = "Pencere, zamanlayıcıyı normal bir pencere olarak açar; böylece ekran paylaşımı veya AirPlay ile yalnızca o pencereyi paylaşabilirsiniz.";
+"guide.timers.5" = "Tema düğmesi açık, koyu ve arkasındaki ekrana uyum sağlayan Bukalemun arasında geçiş yapar. Bukalemun için Ekran Kaydı izni gerekir.";
+"guide.timers.6" = "Müzik çubuğu, hazırlanırken arka planda müzik çalar. Parçaları bir klasöre kendiniz eklersiniz.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Siz durana kadar odak ve mola oturumlarını sırayla yürütür.";
+"guide.pomodoro.1" = "Pomodoro başlatmak için odak ve mola sürelerini eğik çizgiyle yazın; örneğin 25/5 veya 50m/10m.";
+"guide.pomodoro.2" = "Her geçişte farklı bir ses çalar; widget odakta kırmızı, molada yeşil olur.";
+"guide.pomodoro.3" = "25 dakikalık odak ve 5 dakikalık molalarla başlamak için herhangi bir yerde ⌘⌃B’ye basın.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Konuşma metniniz sabit bir hızla kayar, böylece kameraya bakarak okuyabilirsiniz.";
+"guide.teleprompter.1" = "Konuşma metnini kopyalayıp ⌘⌃P’ye basarak teleprompter’da açın. Kalemle orada düzenleyin.";
+"guide.teleprompter.2" = "Kaydırmayı başlatmak için Oynat’a basın. Metnin sonunda kendiliğinden durur.";
+"guide.teleprompter.3" = "Aynala, yansıtıcı camlı teleprompter düzenekleri için metni ters çevirir.";
+"guide.teleprompter.4" = "Hız, yazı boyutu ve aynalama bir sonraki sefer için hatırlanır.";
+"guide.remote.title" = "iPhone Uzaktan Kumandası";
+"guide.remote.summary" = "Sahnedeyken zamanlayıcıları iPhone’unuzdan başlatıp durdurun.";
+"guide.remote.1" = "iPhone’unuzda App Store’dan Remote Controller for Sticky’yi edinin.";
+"guide.remote.2" = "Uygulamada bu Mac’i seçin, ardından menü çubuğu ▸ Uzaktan Kumanda bölümündeki dört haneli kodu girin.";
+"guide.remote.3" = "iPhone ve Mac’in aynı Wi‑Fi’de olması gerekir. İlk seferden sonra kodsuz bağlanırlar.";
+"guide.remote.4" = "Birden fazla uzaktan kumanda tek bir Mac’i yönetebilir; böylece konuşmacı da sahne görevlisi de kullanabilir.";
+"guide.shortcuts.title" = "Kısayollar";
+"guide.shortcuts.summary" = "Başka bir uygulama öndeyken veya sunum yaparken bile her yerde çalışırlar.";
+"guide.shortcuts.taken" = "Başka bir uygulama kullanıyor";
+"guide.shortcuts.note" = "Command (⌘) ve Control (⌃) tuşlarına aynı anda basılı tutun. “Başka bir uygulama kullanıyor” işaretli kısayol, o uygulama kapanınca yeniden çalışır.";
+"guide.support" = "Destek Sayfası";
+"guide.next" = "İleri";
+"guide.done" = "Başla";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone uzaktan kumandası geçici olarak kullanılamıyor";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "StickyPresenter’a Hoş Geldiniz";
+"onboarding.menubar.title" = "StickyPresenter menü çubuğunuzda yaşar";
+"onboarding.menubar.body" = "Dock’ta simge yok. Notlar, zamanlayıcılar, teleprompter ve ayarlar ekranınızın sağ üstündeki not simgesinde.";
+"onboarding.menubar.icon" = "Menü çubuğunda bu simgeyi arayın";
+"onboarding.hotkeys.title" = "Konuşmanız sırasında çalışan tuşlar";
+"onboarding.hotkeys.body" = "Bu kısayollar Keynote veya PowerPoint tam ekrandayken bile, slaytlarınızdan ayrılmadan çalışır.";
+"onboarding.launch.title" = "Sunumdan önce hazır";
+"onboarding.launch.body" = "StickyPresenter’ı oturum açılınca açın; sahneye çıktığınızda notlarınız ve zamanlayıcılarınız hazır beklesin.";
+"onboarding.launch.later" = "Bunu istediğiniz zaman Ayarlar’dan değiştirebilirsiniz.";
+"onboarding.back" = "Geri";
+"onboarding.openGuide" = "Kullanım Kılavuzunu Aç";
+"onboarding.start" = "Başla";
+"onboarding.page" = "Sayfa %d / %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Tek satırda Pomodoro";
+"tip.pomodoro.message" = "25 dakika odak ve 5 dakika mola için 25/5 yazın; siz durana kadar tekrar eder.";
+"tip.pomodoro.try" = "25/5’i dene";
+
+/* App Shortcuts */
+"intent.timer.title" = "Zamanlayıcı Başlat";
+"intent.timer.description" = "Slaytlarınızın üzerinde süzülen bir geri sayım zamanlayıcısı başlatır.";
+"intent.timer.minutes" = "Dakika";
+"intent.timer.summary ${minutes}" = "${minutes} dakikalık zamanlayıcı başlat";
+"intent.timer.short" = "Zamanlayıcı Başlat";
+"intent.pomodoro.title" = "Pomodoro Başlat";
+"intent.pomodoro.description" = "25 dakika odak / 5 dakika mola içeren bir Pomodoro zamanlayıcısı başlatır.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Yeni Not";
+"intent.note.description" = "Ekranınıza yeni bir not ekler.";
+"intent.note.short" = "Yeni Not";
+"intent.timers.title" = "Zamanlayıcıları Göster";
+"intent.timers.description" = "Zamanlayıcı panelini açar.";
+"intent.timers.short" = "Zamanlayıcılar";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Daha iyi VoiceOver desteği";
+"roadmap.a11y.voiceover.detail" = "VoiceOver her notu ve düğmeyi mantıklı bir sırayla okur.";
+"roadmap.a11y.contrast.title" = "Daha kolay seçilen renkler";
+"roadmap.a11y.contrast.detail" = "Karşıtlığı Artır açıkken veya renk körlüğünde bile not renkleri kolayca ayırt edilir.";
+"roadmap.a11y.motion.title" = "Hareketi azaltma";
+"roadmap.a11y.motion.detail" = "Hareketi Azalt açıkken animasyonlar daha sakin olur.";
+"roadmap.lang.more.title" = "Daha fazla dil";
+"roadmap.lang.more.detail" = "Uygulamayı yalnızca İngilizce ve Korece ile sınırlı kalmadan daha fazla dilde kullanın.";
+"roadmap.whatsnew.title" = "Yenilikler";
+"roadmap.whatsnew.detail" = "Güncellemeden sonra uygulamayı ilk açtığınızda nelerin yeni olduğunu görün.";
+"roadmap.feedback.reply.title" = "Geri bildiriminize yanıtlar";
+"roadmap.feedback.reply.detail" = "Geri bildiriminize verdiğimiz yanıtları doğrudan uygulamada okuyun.";
+"roadmap.sync.icloud.title" = "Tüm Mac’lerinizde notlar";
+"roadmap.sync.icloud.detail" = "iCloud ile diğer Mac’lerinizde aynı notlarla devam edin.";
+"roadmap.backup.title" = "Notları dışa ve içe aktarma";
+"roadmap.backup.detail" = "Notlarınızı bir dosyaya kaydedin ve başka bir Mac’te yeniden yükleyin.";
+"roadmap.notifications.title" = "Zamanlayıcı uyarıları";
+"roadmap.notifications.detail" = "Başka bir uygulamadayken bile zamanlayıcı bittiğinde bildirim alın.";

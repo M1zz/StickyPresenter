@@ -144,6 +144,12 @@ Se svar på din feedback i Inställningar
 Feedback frågar nu vad som hände
 Integritet och support i Inställningar
 
+### 앱스토어 (터키어)
+
+Ayarlar’da geri bildirim yanıtlarını gör
+Geri bildirim artık ne olduğunu soruyor
+Gizlilik ve destek Ayarlar’da
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

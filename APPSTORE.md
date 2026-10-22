@@ -1797,6 +1797,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 터키어 (tr)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Konuşma için not ve süre
+
+### 프로모션 텍스트
+
+Konuşma metninizi ve geri sayımı tam ekran Keynote’un üzerinde tutun. Notlar kendiliğinden kaydedilir; yerleşik rehber her özelliği tanıtır.
+
+### 설명
+
+Sunum yaparken en çok ihtiyaç duyduğunuz iki şey, görmesi en zor olanlardır: konuşma metniniz ve saat. StickyPresenter ikisini de ekrandaki her şeyin, tam ekran Keynote’un bile üzerinde süzülür tutar; böylece bakmak için slaytlarınızdan hiç ayrılmanız gerekmez.
+
+Menü çubuğunda sessizce yaşar: Dock’ta simge yok, yönetmeniz gereken ek pencere yok.
+
+SÜZÜLEN YAPIŞKAN NOTLAR
+• Sıradan bir pencerenin yetişemediği tam ekran sunumların önünde kalır
+• Altı renk; ayarlanabilir saydamlık ve yazı boyutu
+• Konuşmanın ortasında yanlış bir tıklama notu değiştirmesin diye kilitleyin
+• Pano içeriğini anında yeni bir nota dönüştürün
+• Yazdıkça kaydedilir ve tam bıraktığınız yerde açılır
+• Bir notu yanlışlıkla mı kapattınız? Menüden yeniden açın
+
+GERİ SAYIM ZAMANLAYICILARI
+• Salonun arkasından okunacak kadar büyütebileceğiniz kare widget’lar
+• Sistem, Açık ve Koyu temalar ile arkasındaki ekrana uyum sağlayan Bukalemun
+• Süre azalınca kırmızıya döner; bitince uyarı sesi çalar ve kenarlık yanıp söner
+• İstediğiniz zamanlayıcıyı kendi penceresinde açın ve ekran paylaşımı ya da AirPlay’de yalnızca onu paylaşın
+• Süreleri aklınızdan geçtiği gibi yazın; örneğin 5:30 veya 1h 20m. Odak ve molayı dönüşümlü yürüten Pomodoro için 25/5 yazın
+• Bildirim Merkezi widget’ı geri sayımı göz önünde tutar
+
+TELEPROMPTER
+• Hızı ve yazı boyutu ayarlanabilen akıcı otomatik kaydırma
+• Yansıtıcı camlı teleprompter düzenekleri için ayna modu
+• Metnin sonunda kendiliğinden durur ve ayarlarınızı hatırlar
+
+ARKA PLAN MÜZİĞİ
+• Dört atmosfer: Odak, Sakin, Caz ve Canlı
+• Zamanlayıcıyla birlikte başlar ve durur; ses yumuşakça açılıp kısılır
+• Parçalar sizin: uygulama her atmosfer için bir klasör oluşturur ve içine koyduğunuz her şeyi çalar
+
+HER YERDE ÇALIŞAN KISAYOLLAR
+• Command-Control kısayolları, başka bir uygulama öndeyken bile notları, zamanlayıcıları ve teleprompter’ı açar
+• Erişilebilirlik izni gerektirmez
+
+KOLAY BAŞLANGIÇ
+• Yerleşik rehber ilk açılışta belirir ve Yardım menüsünde her zaman bir tık uzaktadır
+• Her sunumdan önce hazır olmanız için oturum açılınca açma seçeneği
+
+iPhone UZAKTAN KUMANDASI (AYRI ÜCRETSİZ UYGULAMA)
+Sunum sırasında Mac erişiminizin dışında kalır. Remote Controller for Sticky zamanlayıcıyı avucunuza koyar: başlatın ve duraklatın, 30 saniye ekleyin ya da çıkarın, widget’ın boyutunu ve temasını değiştirin veya bir slaydı kapatan widget’ı kenara alın. Eşleştirme dört haneli bir kodla yapılır; Mac dolu bir salonda bile uzaktan kumanda yalnızca sizinkiyle konuşur.
+
+GİZLİLİK
+Hesap yok, reklam yok. Notlarınız ve konuşma metinleriniz Mac’inizden asla çıkmaz. Anonim kullanım istatistikleri dışında uygulama yalnızca siz Ayarlar’dan geri bildirim göndermeyi seçtiğinizde internete bağlanır; iPhone uzaktan kumandasıyla yerel ağınızda doğrudan, şifreli bir bağlantıyla konuşur.
+
+macOS 14 veya sonrası gerekir.
+
+### 키워드
+
+sunum,slayt,konuşmacı,pomodoro,ders,konferans,zamanlayıcı,kronometre,senaryo,prova,seminer,metin
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

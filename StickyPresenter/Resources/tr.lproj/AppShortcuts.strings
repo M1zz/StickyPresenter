@@ -1,0 +1,8 @@
+/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
+"Start a timer in ${applicationName}" = "${applicationName} ile zamanlayıcı başlat";
+"Start a ${applicationName} timer" = "${applicationName} zamanlayıcısı başlat";
+"Start a Pomodoro in ${applicationName}" = "${applicationName} ile Pomodoro başlat";
+"Start focusing with ${applicationName}" = "${applicationName} ile odaklanmaya başla";
+"New sticky note in ${applicationName}" = "${applicationName} ile yeni not oluştur";
+"Add a note in ${applicationName}" = "${applicationName} ile not ekle";
+"Show timers in ${applicationName}" = "${applicationName} ile zamanlayıcıları göster";
