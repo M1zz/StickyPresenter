@@ -54,6 +54,12 @@ Voyez les réponses à vos avis
 L’envoi d’un avis pose des questions
 Confidentialité et aide dans Réglages
 
+### 앱스토어 (이탈리아어)
+
+Leggi le risposte ai tuoi commenti
+I commenti chiedono cosa è successo
+Privacy e assistenza nelle Impostazioni
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)
