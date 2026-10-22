@@ -1329,6 +1329,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 핀란드어 (fi)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Laput ja ajastin esitykseen
+
+### 프로모션 텍스트
+
+Pidä puheesi ja lähtölaskenta koko näytön Keynoten päällä. Muistilaput tallentuvat itsestään, ja sisäänrakennettu opas esittelee jokaisen toiminnon.
+
+### 설명
+
+Esiintyessäsi kaksi tärkeintä asiaa ovat samalla vaikeimmin nähtäviä: puheesi ja kello. StickyPresenter pitää molemmat leijumassa kaiken näytöllä olevan päällä, myös koko näytön Keynoten, joten sinun ei koskaan tarvitse poistua dioista vilkaistaksesi niitä.
+
+Se asuu hiljaa valikkorivillä: ei kuvaketta Dockissa eikä ylimääräisiä ikkunoita hallittavaksi.
+
+LEIJUVAT MUISTILAPUT
+• Pysyvät päällimmäisinä koko näytön esityksissä, joissa tavallinen ikkuna ei pysy mukana
+• Kuusi väriä sekä säädettävä läpinäkyvyys ja kirjasinkoko
+• Lukitse lappu, jotta vahinkonapsautus ei muuta sitä kesken puheen
+• Muuta leikepöydän sisältö heti uudeksi lapuksi
+• Laput tallentuvat kirjoittaessasi ja avautuvat täsmälleen siihen, mihin ne jätit
+• Suljitko lapun vahingossa? Avaa se uudelleen valikosta
+
+LASKURIAJASTIMET
+• Neliönmuotoiset widgetit, jotka voi suurentaa niin isoiksi, että ne näkyvät salin perälle
+• Teemat Järjestelmä, Vaalea ja Tumma sekä Kameleontti, joka mukautuu takana olevaan näyttöön
+• Widget muuttuu punaiseksi ajan loppuessa, ja lopussa kuuluu merkkiääni ja reunus vilkkuu
+• Avaa mikä tahansa ajastin omaan ikkunaansa ja jaa pelkkä se näytön jaolla tai AirPlayllä
+• Syötä aika niin kuin ajattelet, esimerkiksi 5:30 tai 1h 20m. Kirjoita 25/5, niin saat pomodoron, joka vuorottelee keskittymistä ja taukoa
+• Ilmoituskeskuksen widget pitää lähtölaskennan silmäniskun päässä
+
+TELEPROMPTER
+• Tasainen automaattinen vieritys, jonka nopeutta ja kirjasinkokoa voi säätää
+• Peilaustila telepromptter-laitteille, joissa on heijastava lasi
+• Pysähtyy itsestään tekstin lopussa ja muistaa asetuksesi
+
+TAUSTAMUSIIKKI
+• Neljä tunnelmaa: Keskittyminen, Rauha, Jazz ja Eloisa
+• Käynnistyy ja pysähtyy ajastimen mukana, äänenvoimakkuus nousee ja laskee pehmeästi
+• Kappaleet ovat omiasi: appi luo kansion jokaiselle tunnelmalle ja soittaa kaiken, minkä sinne lisäät
+
+PIKANÄPPÄIMET, JOTKA TOIMIVAT KAIKKIALLA
+• Command-Control-pikanäppäimet avaavat laput, ajastimet ja telepromptterin, vaikka toinen appi olisi päällimmäisenä
+• Ei vaadi käyttöapuluvan myöntämistä
+
+HELPPO ALOITTAA
+• Sisäänrakennettu opas avautuu ensimmäisellä käynnistyskerralla ja on aina yhden napsautuksen päässä Ohje-valikossa
+• Valinnainen avaaminen kirjautumisen yhteydessä, jotta olet valmis ennen jokaista esiintymistä
+
+IPHONE-KAUKO-OHJAIN (ERILLINEN ILMAINEN APPI)
+Esityksen aikana Mac on ulottumattomissa. Remote Controller for Sticky antaa ajastimen käteesi: käynnistä ja keskeytä, lisää tai vähennä 30 sekuntia, vaihda widgetin kokoa ja teemaa tai siirrä dian peittävä widget pois. Parinmuodostus tehdään nelinumeroisella koodilla: vaikka salissa olisi täynnä Maceja, kauko-ohjain puhuu vain omasi kanssa.
+
+TIETOSUOJA
+Ei tiliä, ei mainoksia. Muistilappusi ja puheesi eivät koskaan poistu Macistasi. Anonyymeja käyttötilastoja lukuun ottamatta appi muodostaa yhteyden internetiin vain, kun itse päätät lähettää palautetta Asetuksista, ja se keskustelee iPhone-kauko-ohjaimen kanssa suoran, salatun yhteyden kautta paikallisessa verkossasi.
+
+Vaatii macOS 14:n tai uudemman.
+
+### 키워드
+
+diat,puhe,puhuja,pomodoro,luento,konferenssi,seminaari,laskuri,käsikirjoitus,harjoittelu,kello
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Uusi muistilappu";
+"menu.newFromClipboard" = "📋 Uusi leikepöydältä";
+"menu.teleprompter" = "📺 Telepromptertila";
+"menu.timers" = "⏱ Ajastimet";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Näytä kaikki muistilaput";
+"menu.hideAll" = "🙈 Piilota kaikki muistilaput";
+"menu.defaultColor" = "🎨 Oletusväri";
+"menu.removeAll" = "🗑 Poista kaikki muistilaput";
+"menu.remote" = "📱 Kauko-ohjain";
+"menu.contact.email" = "✉️ Sähköposti (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram-viesti (@lee25_ios)";
+"menu.quit" = "Lopeta StickyPresenter";
+
+"color.yellow" = "🟡 Keltainen";
+"color.pink" = "🩷 Vaaleanpunainen";
+"color.green" = "🟢 Vihreä";
+"color.blue" = "🔵 Sininen";
+"color.purple" = "🟣 Violetti";
+"color.orange" = "🟠 Oranssi";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Parituskoodi:   %@";
+"remote.none" = "Ei yhdistettyjä kauko-ohjaimia";
+"remote.connected" = "Yhdistetyt kauko-ohjaimet: %d";
+"remote.newCode" = "Uusi parituskoodi";
+"remote.forget" = "Unohda parilliset kauko-ohjaimet";
+"remote.forget.count" = "Unohda parilliset kauko-ohjaimet (%d)";
+"remote.forget.title" = "Unohdetaanko kaikki parilliset kauko-ohjaimet?";
+"remote.forget.message" = "Yhdistetyt kauko-ohjaimet katkaistaan, ja ne tarvitsevat parituskoodin uudelleen.";
+"remote.forget.confirm" = "Unohda";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Peruuta";
+"alert.removeAll.title" = "Poistetaanko kaikki muistilaput?";
+"alert.removeAll.message" = "Kaikki muistilaput suljetaan. Tekstiä sisältävät laput voi palauttaa valikon kohdalla ”Avaa suljettu muistilappu uudelleen”.";
+"alert.removeAll.confirm" = "Poista kaikki";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 StickyPresenterin opas\n\n📌 Siirrä lappua vetämällä\n🖱 Näytä säätimet viemällä hiiri päälle\n🎨 Säädä väriä · läpinäkyvyyttä · kirjasinkokoa\n🔒 Lukituspainike estää muokkauksen\n\n⌘⌃N  Uusi muistilappu\n⌘⌃T  Avaa ajastimet\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Näytä kaikki muistilaput\n⌘⌃H  Piilota kaikki muistilaput\n\n💡 Muistilapun voi luoda myös\n   suoraan ajastimen säätimistä!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Liitä puheesi tähän...\n\nTeleprompter vierittää tekstiä automaattisesti.\n\nSäätimillä muutat nopeutta ja kirjasinkokoa.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Esikatselutila";
+"Edit text" = "Muokkaa tekstiä";
+"Mirror text (for teleprompter glass)" = "Peilaa teksti (telepromptervalolle)";
+"Font" = "Kirjasin";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Lukitse muokkaus";
+"Unlock editing" = "Poista muokkauksen lukitus";
+"Empty note" = "Tyhjä muistilappu";
+"note.charCount" = "%d merkkiä";
+"note.opacity" = "Peittävyys: %d %%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Ajastin";
+"window.timer.named" = "Ajastin – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Uusi muistilappu";
+"Quick Start" = "Pikakäynnistys";
+"No timers" = "Ei ajastimia";
+"Tap a preset or enter a time" = "Napauta esiasetusta tai syötä aika";
+"Show" = "Näytä";
+"Hide" = "Piilota";
+"Show / hide widget" = "Näytä tai piilota widget";
+"Align" = "Tasaa";
+"Align widget next to the panel" = "Tasaa widget paneelin viereen";
+"Window" = "Ikkuna";
+"Open in a window (screen share / AirPlay)" = "Avaa ikkunassa (näytön jako / AirPlay)";
+"Delete timer" = "Poista ajastin";
+"Reuse this timer with another duration" = "Käytä tätä ajastinta uudelleen eri kestolla";
+"Add Timer" = "Lisää ajastin";
+"Drag to resize" = "Muuta kokoa vetämällä";
+"Close" = "Sulje";
+"timer.theme" = "Teema: %@";
+"timer.widgetSize" = "Widgetin koko: %@ (%d pt)";
+"timer.restartAs" = "Käynnistä tämä ajastin uudelleen: %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Järjestelmä";
+"theme.light" = "Vaalea";
+"theme.dark" = "Tumma";
+"theme.chameleon" = "Kameleontti";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Keskittyminen";
+"pomodoro.break" = "Tauko";
+"preview.pomodoro" = "↻ Keskittyminen %1$@ · Tauko %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d t";
+"unit.min" = "%d min";
+"unit.sec" = "%d s";
+"unit.zeroSec" = "0 s";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Muokkaa pika-asetuksia";
+"Quick Presets" = "Pika-asetukset";
+"Reset" = "Nollaa";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Sama muoto kuin syöttökentässä —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Lisää esiasetus";
+"Add a preset" = "Lisää esiasetus";
+"No readable preset — buttons stay hidden" = "Ei luettavaa esiasetusta – painikkeet pysyvät piilossa";
+"Remove preset" = "Poista esiasetus";
+"Keep at least one preset" = "Säilytä vähintään yksi esiasetus";
+"preset.restore" = "Palauta %@";
+"preset.max" = "Enintään %d esiasetusta";
+
+/* ===== Music ===== */
+"mood.focus" = "Keskittyminen";
+"mood.calm" = "Rauha";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Eloisa";
+"mood.focus.hint" = "Tasaista instrumentaalimusiikkia – syvään työhön ja harjoitteluun";
+"mood.calm.hint" = "Ambient ja soolopiano – rauhoittumiseen ennen puhetta";
+"mood.jazz.hint" = "Kahvilajazzia ja bossa novaa – rennoille tiloille ja keskusteluihin";
+"mood.upbeat.hint" = "Kevyttä poppia ja funkia – lämmittelyyn ja taukoihin";
+"Play music" = "Soita musiikkia";
+"Pause music" = "Keskeytä musiikki";
+"Next Track" = "Seuraava kappale";
+"Play With Timer" = "Soita ajastimen mukana";
+"Refresh" = "Päivitä";
+"music.empty" = "Ei kappaleita – lisää äänitiedostoja kansioon %@";
+"music.openFolder" = "Avaa kansio %@";
+"music.count.one" = "%1$d kappale · %2$@";
+"music.count.other" = "%1$d kappaletta · %2$@";
+"music.chip.none" = " (ei kappaleita)";
+"music.chip.one" = " · %d kappale";
+"music.chip.other" = " · %d kappaletta";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Asetukset";
+"settings.support" = "Tuki";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Ajastimet";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Avaa suljettu muistilappu uudelleen";
+"menu.help" = "❓ Ohje";
+"menu.guide" = "📖 Käyttöopas";
+"menu.supportSite" = "🌐 Avaa tukisivu";
+"menu.settings" = "⚙️ Asetukset…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Tallennettuja muistilappuja ei voitu lukea";
+"alert.notesCorrupt.message" = "Muistilappujen tiedosto on vioittunut, joten StickyPresenter käynnistyy tyhjänä. Alkuperäinen tiedosto säilytettiin nimellä %@. Jos tarvitset sen palautusta, lähetä se kehittäjälle.";
+"alert.notesCorrupt.reveal" = "Näytä Finderissa";
+"window.guide" = "StickyPresenterin käyttöopas";
+"settings.general" = "Yleiset";
+"settings.launchAtLogin" = "Avaa kirjautumisen yhteydessä";
+"settings.launchAtLogin.failed" = "Kirjautumiskohdetta ei voitu muuttaa: %@";
+"settings.launchAtLogin.approval" = "Salli StickyPresenter kohdassa Järjestelmäasetukset ▸ Yleiset ▸ Kirjautumiskohteet.";
+"settings.defaultColor" = "Uusien muistilappujen väri";
+"settings.help" = "Ohje";
+"settings.showGuide" = "Avaa käyttöopas";
+"settings.openSupport" = "Avaa tukisivu";
+"settings.revealNotes" = "Näytä muistilappujen tiedosto";
+"settings.revealNotes.help" = "Muistilaput tallennetaan vain tähän Maciin. Tällä tiedostolla voit varmuuskopioida ne tai siirtää ne toiseen Maciin.";
+"settings.version" = "Versio";
+"colorName.yellow" = "Keltainen";
+"colorName.pink" = "Vaaleanpunainen";
+"colorName.green" = "Vihreä";
+"colorName.blue" = "Sininen";
+"colorName.purple" = "Violetti";
+"colorName.orange" = "Oranssi";
+"note.close" = "Sulje muistilappu";
+"note.close.help" = "Sulje muistilappu (palauta se valikon kohdalla ”Avaa suljettu muistilappu uudelleen”)";
+"note.color.help" = "Vaihda muistilapun väriä";
+"note.opacity.help" = "Säädä peittävyyttä";
+"note.fontSmaller" = "Pienempi teksti";
+"note.fontLarger" = "Suurempi teksti";
+"teleprompter.close" = "Sulje teleprompter";
+"teleprompter.rewind" = "Takaisin alkuun";
+"teleprompter.play" = "Toista";
+"teleprompter.pause" = "Tauko";
+"teleprompter.speed" = "Vieritysnopeus";
+"timer.inputHelp.tooltip" = "Näytä syöttömuodot";
+"timer.inputHelp.title" = "Voit kirjoittaa";
+"timer.inputHelp.minutes" = "Luku tarkoittaa minuutteja (10 min)";
+"timer.inputHelp.colon" = "Minuutit:sekunnit (5 min 30 s)";
+"timer.inputHelp.hms" = "Tunnit:minuutit:sekunnit";
+"timer.inputHelp.units" = "Yksiköillä (1 t 20 min)";
+"timer.inputHelp.seconds" = "Sekunnit (45 s)";
+"timer.inputHelp.pomodoro" = "Pomodoro-sykli: keskittyminen/tauko";
+"timer.inputHelp.footer" = "Täytä esimerkki napsauttamalla sitä. Ajastimet voivat olla enintään 99:59:59.";
+"chameleon.permission.title" = "Kameleontti tarvitsee näytön tallennuksen luvan";
+"chameleon.permission.message" = "Kameleontti lukee kerran sekunnissa ajastimen takana olevan näytön värin ja sovittaa taustan siihen. Kuvaa käytetään vain värin laskemiseen, eikä sitä koskaan tallenneta tai lähetetä minnekään.\n\nJos jatkat, macOS pyytää lupaa. Jos olet aiemmin kieltäytynyt, ota StickyPresenter käyttöön Järjestelmäasetuksissa.";
+"chameleon.permission.continue" = "Jatka";
+"chameleon.permission.openSettings" = "Avaa Järjestelmäasetukset";
+"chameleon.permission.skip" = "Ohita";
+"hotkey.newNote" = "Uusi muistilappu";
+"hotkey.noteFromClipboard" = "Uusi muistilappu leikepöydältä";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Näytä tai piilota ajastimet";
+"hotkey.pomodoro" = "Käynnistä pomodoro (25/5)";
+"hotkey.showNotes" = "Näytä kaikki muistilaput";
+"hotkey.hideNotes" = "Piilota kaikki muistilaput";
+"guide.welcome.title" = "Aloitus";
+"guide.welcome.summary" = "StickyPresenter tarjoaa muistilaput, ajastimet ja telepromptterin, jotka leijuvat Keynoten päällä, myös koko näytön tilassa.";
+"guide.welcome.1" = "Jokainen ikkuna leijuu koko näytön dioilla viemättä kohdistusta esitysohjelmaltasi.";
+"guide.welcome.2" = "Kaikki on valikkorivin muistilappukuvakkeessa. Dockissa ei ole kuvaketta.";
+"guide.welcome.3" = "Muistilaput tallentuvat tähän Maciin kirjoittaessasi ja palaavat samaan paikkaan ensi kerralla.";
+"guide.welcome.4" = "Avaa tämä opas uudelleen milloin tahansa: valikkorivi ▸ Ohje ▸ Käyttöopas.";
+"guide.notes.title" = "Muistilaput";
+"guide.notes.summary" = "Kiinnitä puheesi tai muistutuksesi diojen päälle.";
+"guide.notes.1" = "Siirrä lappua vetämällä mistä tahansa kohdasta. Muuta kokoa vetämällä reunasta.";
+"guide.notes.2" = "Vie hiiri lapun päälle, niin näet värin, peittävyyden ja tekstikoon painikkeet.";
+"guide.notes.3" = "Lukitse lappu, jottei mikään muutu vahingossa esittäessäsi.";
+"guide.notes.4" = "Suljitko lapun vahingossa? Valikon kohta ”Avaa suljettu muistilappu uudelleen” palauttaa viimeiset 20.";
+"guide.notes.5" = "Kopioi puheesi ja paina ⌘⌃V, niin siitä tulee uusi muistilappu.";
+"guide.timers.title" = "Ajastimet";
+"guide.timers.summary" = "Pidä aika silmällä pienellä widgetillä nurkassa.";
+"guide.timers.1" = "Kirjoita aika Ajastimet-ikkunaan ja paina Return. Kentän vieressä oleva kysymysmerkki luettelee muodot.";
+"guide.timers.2" = "Kun ajastimia ei ole, yksi napsautus Pikakäynnistys-painikkeeseen käynnistää sellaisen. Kynällä muutat nämä ajat.";
+"guide.timers.3" = "Näytä/Piilota ja Tasaa piilottavat widgetin tai järjestävät widgetit Ajastimet-ikkunan viereen.";
+"guide.timers.4" = "Ikkuna avaa ajastimen tavallisena ikkunana, jolloin voit jakaa pelkän sen näytön jaolla tai AirPlayllä.";
+"guide.timers.5" = "Teemapainike kiertää vaalean, tumman ja Kameleontin, joka mukautuu takana olevaan näyttöön. Kameleontti tarvitsee näytön tallennuksen luvan.";
+"guide.timers.6" = "Musiikkipalkki soittaa taustamusiikkia valmistautuessasi. Lisäät kappaleet itse kansioon.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Vuorottele keskittymis- ja taukojaksoja, kunnes lopetat.";
+"guide.pomodoro.1" = "Kirjoita keskittymis- ja taukoajat vinoviivalla, esimerkiksi 25/5 tai 50m/10m, niin pomodoro alkaa.";
+"guide.pomodoro.2" = "Joka vaihdossa soi eri merkkiääni, ja widget on punainen keskittyessä ja vihreä tauolla.";
+"guide.pomodoro.3" = "Paina ⌘⌃B missä tahansa: 25 minuuttia keskittymistä ja 5 minuutin tauot.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Puheesi vierii tasaiseen tahtiin, joten voit lukea katsoessasi kameraan.";
+"guide.teleprompter.1" = "Kopioi puheesi ja paina ⌘⌃P avataksesi sen telepromptterissa. Kynällä muokkaat sitä siellä.";
+"guide.teleprompter.2" = "Aloita vieritys painamalla Toista. Se pysähtyy itsestään puheen lopussa.";
+"guide.teleprompter.3" = "Peilaus kääntää tekstin telepromptter-laitteille, joissa on heijastava lasi.";
+"guide.teleprompter.4" = "Nopeus, tekstikoko ja peilaus muistetaan ensi kerralle.";
+"guide.remote.title" = "iPhone-kauko-ohjain";
+"guide.remote.summary" = "Käynnistä ja pysäytä ajastimia iPhonella lavalla.";
+"guide.remote.1" = "Hanki Remote Controller for Sticky iPhonen App Storesta.";
+"guide.remote.2" = "Valitse tämä Mac apissa ja syötä nelinumeroinen koodi kohdasta valikkorivi ▸ Kauko-ohjain.";
+"guide.remote.3" = "iPhonen ja Macin pitää olla samassa Wi‑Fi-verkossa. Ensimmäisen kerran jälkeen ne yhdistyvät ilman koodia.";
+"guide.remote.4" = "Useampi kauko-ohjain voi ohjata samaa Maciä, joten sekä esiintyjä että lavastaja voivat käyttää sitä.";
+"guide.shortcuts.title" = "Pikanäppäimet";
+"guide.shortcuts.summary" = "Ne toimivat kaikkialla, vaikka toinen appi olisi päällimmäisenä tai esittäisit.";
+"guide.shortcuts.taken" = "Toisen apin käytössä";
+"guide.shortcuts.note" = "Pidä Command (⌘) ja Control (⌃) painettuna yhtä aikaa. Pikanäppäin, jossa lukee ”Toisen apin käytössä”, toimii taas, kun kyseinen appi suljetaan.";
+"guide.support" = "Tukisivu";
+"guide.next" = "Seuraava";
+"guide.done" = "Aloita";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone-kauko-ohjain ei ole tilapäisesti käytettävissä";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Tervetuloa StickyPresenteriin";
+"onboarding.menubar.title" = "StickyPresenter asuu valikkorivillä";
+"onboarding.menubar.body" = "Dockissa ei ole kuvaketta. Muistilaput, ajastimet, teleprompter ja asetukset ovat näytön oikeassa yläkulmassa olevassa muistilappukuvakkeessa.";
+"onboarding.menubar.icon" = "Etsi tätä kuvaketta valikkoriviltä";
+"onboarding.hotkeys.title" = "Näppäimet, jotka toimivat puheesi aikana";
+"onboarding.hotkeys.body" = "Nämä pikanäppäimet toimivat, vaikka Keynote tai PowerPoint olisi koko näytön tilassa, eikä sinun tarvitse poistua dioista.";
+"onboarding.launch.title" = "Valmiina ennen esitystä";
+"onboarding.launch.body" = "Avaa StickyPresenter kirjautuessasi, jotta muistilaput ja ajastimet odottavat jo, kun astut lavalle.";
+"onboarding.launch.later" = "Voit muuttaa tätä milloin tahansa Asetuksissa.";
+"onboarding.back" = "Takaisin";
+"onboarding.openGuide" = "Avaa käyttöopas";
+"onboarding.start" = "Aloita";
+"onboarding.page" = "Sivu %d/%d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro yhdellä rivillä";
+"tip.pomodoro.message" = "Kirjoita 25/5: 25 minuuttia keskittymistä ja 5 minuutin tauko, toistuen kunnes lopetat.";
+"tip.pomodoro.try" = "Kokeile 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Käynnistä ajastin";
+"intent.timer.description" = "Käynnistää diojesi päällä leijuvan laskuriajastimen.";
+"intent.timer.minutes" = "Minuutit";
+"intent.timer.summary ${minutes}" = "Käynnistä ${minutes} minuutin ajastin";
+"intent.timer.short" = "Käynnistä ajastin";
+"intent.pomodoro.title" = "Käynnistä pomodoro";
+"intent.pomodoro.description" = "Käynnistää pomodoro-ajastimen: 25 minuuttia keskittymistä ja 5 minuutin tauko.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Uusi muistilappu";
+"intent.note.description" = "Lisää näytölle uuden muistilapun.";
+"intent.note.short" = "Uusi muistilappu";
+"intent.timers.title" = "Näytä ajastimet";
+"intent.timers.description" = "Avaa ajastinpaneelin.";
+"intent.timers.short" = "Ajastimet";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Parempi VoiceOver-tuki";
+"roadmap.a11y.voiceover.detail" = "VoiceOver lukee jokaisen lapun ja painikkeen järkevässä järjestyksessä.";
+"roadmap.a11y.contrast.title" = "Helpommin erottuvat värit";
+"roadmap.a11y.contrast.detail" = "Lappujen värit pysyvät helposti erotettavina myös Lisää kontrastia -asetuksella ja värisokeuden kanssa.";
+"roadmap.a11y.motion.title" = "Vähemmän liikettä";
+"roadmap.a11y.motion.detail" = "Kun Vähennä liikettä on päällä, animaatiot rauhoittuvat.";
+"roadmap.lang.more.title" = "Lisää kieliä";
+"roadmap.lang.more.detail" = "Käytä appia useammalla kielellä, ei vain englanniksi ja koreaksi.";
+"roadmap.whatsnew.title" = "Uutta";
+"roadmap.whatsnew.detail" = "Päivityksen jälkeen näet uutuudet, kun avaat apin ensimmäisen kerran.";
+"roadmap.feedback.reply.title" = "Vastauksia palautteeseesi";
+"roadmap.feedback.reply.detail" = "Lue vastauksemme palautteeseesi suoraan apissa.";
+"roadmap.sync.icloud.title" = "Muistilaput kaikissa Maceissasi";
+"roadmap.sync.icloud.detail" = "Jatka samoilla muistilapuilla muilla Maceilla iCloudin kautta.";
+"roadmap.backup.title" = "Muistilappujen vienti ja tuonti";
+"roadmap.backup.detail" = "Tallenna muistilaput tiedostoon ja lataa ne uudelleen toisella Macilla.";
+"roadmap.notifications.title" = "Ajastinhälytykset";
+"roadmap.notifications.detail" = "Saa ilmoitus, kun ajastin päättyy, vaikka olisit toisessa apissa.";

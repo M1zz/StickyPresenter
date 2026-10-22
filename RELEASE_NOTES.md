@@ -108,6 +108,12 @@ Privatliv og support i Indstillinger
 Τα σχόλια ρωτούν τι συνέβη
 Απόρρητο και υποστήριξη στις Ρυθμίσεις
 
+### 앱스토어 (핀란드어)
+
+Lue palautteeseesi tulleet vastaukset
+Palaute kysyy nyt, mitä tapahtui
+Tietosuoja ja tuki avautuvat Asetuksista
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

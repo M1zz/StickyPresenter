@@ -1,0 +1,7 @@
+"widget.displayName" = "Esitysajastin";
+"widget.description" = "Näyttää käynnissä olevan esitysajastimen jäljellä olevan ajan.";
+"widget.empty" = "Ei käynnissä olevia ajastimia";
+"widget.total" = "Yhteensä %@";
+"widget.finished" = "%@ · Valmis";
+"widget.running" = "%@ · Käynnissä";
+"widget.paused" = "%@ · Tauolla";

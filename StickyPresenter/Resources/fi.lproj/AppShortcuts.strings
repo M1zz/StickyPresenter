@@ -1,0 +1,8 @@
+/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
+"Start a timer in ${applicationName}" = "Käynnistä ajastin: ${applicationName}";
+"Start a ${applicationName} timer" = "Käynnistä ${applicationName}-ajastin";
+"Start a Pomodoro in ${applicationName}" = "Käynnistä pomodoro: ${applicationName}";
+"Start focusing with ${applicationName}" = "Aloita keskittyminen: ${applicationName}";
+"New sticky note in ${applicationName}" = "Uusi muistilappu: ${applicationName}";
+"Add a note in ${applicationName}" = "Lisää muistilappu: ${applicationName}";
+"Show timers in ${applicationName}" = "Näytä ajastimet: ${applicationName}";
