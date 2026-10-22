@@ -1,0 +1,7 @@
+"widget.displayName" = "Præsentationstimer";
+"widget.description" = "Viser den resterende tid på den aktive præsentationstimer.";
+"widget.empty" = "Ingen timer kører";
+"widget.total" = "I alt %@";
+"widget.finished" = "%@ · Færdig";
+"widget.running" = "%@ · Kører";
+"widget.paused" = "%@ · På pause";

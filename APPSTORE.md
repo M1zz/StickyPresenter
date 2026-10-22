@@ -1173,6 +1173,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 덴마크어 (da)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Sedler og timer til oplægget
+
+### 프로모션 텍스트
+
+Hav dit manuskript og din nedtælling svævende over Keynote i fuld skærm. Sedlerne gemmes automatisk, og en indbygget guide viser dig alle funktioner.
+
+### 설명
+
+Når du præsenterer, er de to ting, du har mest brug for, de sværeste at se: dit manuskript og uret. StickyPresenter holder begge svævende over alt på skærmen, også Keynote i fuld skærm, så du aldrig behøver at forlade dine slides for at kigge.
+
+Appen bor stille i menulinjen: intet ikon i Dock og ingen ekstra vinduer at holde styr på.
+
+SVÆVENDE SEDLER
+• Bliver ovenpå fuldskærmspræsentationer, hvor et almindeligt vindue ikke kan følge med
+• Seks farver samt justerbar gennemsigtighed og skriftstørrelse
+• Lås en seddel, så et uheldigt klik ikke ændrer den midt i oplægget
+• Gør indholdet af udklipsholderen til en ny seddel med det samme
+• Sedlerne gemmes, mens du skriver, og åbner præcis dér, hvor du slap dem
+• Lukket en seddel ved en fejl? Åbn den igen fra menuen
+
+NEDTÆLLINGSTIMERE
+• Firkantede widgets, som du kan gøre store nok til at kunne læses bagerst i lokalet
+• Temaerne System, Lyst og Mørkt samt Kamæleon, der tilpasser sig skærmen bagved
+• Widgetten bliver rød, når tiden er ved at løbe ud, og ved tidens udløb lyder en tone, og kanten blinker
+• Åbn en vilkårlig timer i sit eget vindue, og del kun det vindue via skærmdeling eller AirPlay
+• Skriv tiden, som du tænker den, fx 5:30 eller 1h 20m. Skriv 25/5 for en pomodoro, der skifter mellem fokus og pause
+• En widget i Notifikationscenter holder nedtællingen inden for synsvidde
+
+TELEPROMPTER
+• Jævn automatisk rulning med justerbar hastighed og skriftstørrelse
+• Spejltilstand til teleprompterudstyr med reflekterende glas
+• Stopper af sig selv i slutningen af manuskriptet og husker dine indstillinger
+
+BAGGRUNDSMUSIK
+• Fire stemninger: Fokus, Ro, Jazz og Energi
+• Starter og stopper sammen med din timer, med bløde ind- og udtoninger
+• Numrene er dine egne: Appen opretter en mappe til hver stemning og afspiller alt, hvad du lægger i den
+
+GENVEJE, DER VIRKER OVERALT
+• Genvejene med Kommando-Control åbner sedler, timere og teleprompter, selv når et andet program er forrest
+• Kræver ingen adgang til Tilgængelighed
+
+NEM AT KOMME I GANG
+• En indbygget guide åbner ved første start og er altid et klik væk i menuen Hjælp
+• Valgmulighed om at åbne ved login, så du er klar før hvert oplæg
+
+IPHONE-FJERNBETJENING (SEPARAT GRATIS APP)
+Under et oplæg er din Mac uden for rækkevidde. Remote Controller for Sticky lægger timeren i din hånd: start og sæt på pause, læg 30 sekunder til eller træk dem fra, skift widgettens størrelse og tema, eller flyt en widget, der skjuler et slide. Parringen sker med en firecifret kode: Selv i et lokale fuld af Mac’er taler fjernbetjeningen kun med din.
+
+PRIVATLIV
+Ingen konto, ingen reklamer. Dine sedler og manuskripter forlader aldrig din Mac. Bortset fra anonym brugsstatistik går appen kun på internettet, når du selv vælger at sende feedback fra Indstillinger, og den taler med iPhone-fjernbetjeningen via en direkte, krypteret forbindelse på dit lokale netværk.
+
+Kræver macOS 14 eller nyere.
+
+### 키워드
+
+præsentation,slides,foredrag,taler,pomodoro,undervisning,konference,tale,stopur,nedtælling
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

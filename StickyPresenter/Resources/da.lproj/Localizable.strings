@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Ny seddel";
+"menu.newFromClipboard" = "📋 Ny fra udklipsholder";
+"menu.teleprompter" = "📺 Teleprompter-tilstand";
+"menu.timers" = "⏱ Timere";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Vis alle sedler";
+"menu.hideAll" = "🙈 Skjul alle sedler";
+"menu.defaultColor" = "🎨 Standardfarve";
+"menu.removeAll" = "🗑 Fjern alle sedler";
+"menu.remote" = "📱 Fjernbetjening";
+"menu.contact.email" = "✉️ E-mail (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram-besked (@lee25_ios)";
+"menu.quit" = "Afslut StickyPresenter";
+
+"color.yellow" = "🟡 Gul";
+"color.pink" = "🩷 Pink";
+"color.green" = "🟢 Grøn";
+"color.blue" = "🔵 Blå";
+"color.purple" = "🟣 Lilla";
+"color.orange" = "🟠 Orange";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Parringskode:   %@";
+"remote.none" = "Ingen fjernbetjening tilsluttet";
+"remote.connected" = "Tilsluttede fjernbetjeninger: %d";
+"remote.newCode" = "Ny parringskode";
+"remote.forget" = "Glem parrede fjernbetjeninger";
+"remote.forget.count" = "Glem parrede fjernbetjeninger (%d)";
+"remote.forget.title" = "Glem alle parrede fjernbetjeninger?";
+"remote.forget.message" = "Tilsluttede fjernbetjeninger afbrydes og skal bruge parringskoden igen.";
+"remote.forget.confirm" = "Glem";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Annuller";
+"alert.removeAll.title" = "Fjern alle sedler?";
+"alert.removeAll.message" = "Alle sedler lukkes. Sedler med tekst kan hentes tilbage med “Genåbn lukket seddel” i menuen.";
+"alert.removeAll.confirm" = "Fjern alle";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Guide til StickyPresenter\n\n📌 Træk for at flytte en seddel\n🖱 Hold musen over for at se knapperne\n🎨 Juster farve · gennemsigtighed · skriftstørrelse\n🔒 Låseknappen forhindrer redigering\n\n⌘⌃N  Ny seddel\n⌘⌃T  Åbn timere\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Vis alle sedler\n⌘⌃H  Skjul alle sedler\n\n💡 Du kan også oprette en seddel\n   direkte fra timerens knapper!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Indsæt dit manuskript her...\n\nTeleprompteren ruller teksten automatisk.\n\nBrug knapperne til at justere hastighed og skriftstørrelse.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Forhåndsvisning";
+"Edit text" = "Rediger tekst";
+"Mirror text (for teleprompter glass)" = "Spejlvend tekst (til teleprompterglas)";
+"Font" = "Skrifttype";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Lås redigering";
+"Unlock editing" = "Lås redigering op";
+"Empty note" = "Tom seddel";
+"note.charCount" = "%d tegn";
+"note.opacity" = "Gennemsigtighed: %d %%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Timer";
+"window.timer.named" = "Timer – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Ny seddel";
+"Quick Start" = "Hurtigstart";
+"No timers" = "Ingen timere";
+"Tap a preset or enter a time" = "Tryk på en forudindstilling, eller indtast en tid";
+"Show" = "Vis";
+"Hide" = "Skjul";
+"Show / hide widget" = "Vis/skjul widget";
+"Align" = "Juster";
+"Align widget next to the panel" = "Placér widget ved siden af panelet";
+"Window" = "Vindue";
+"Open in a window (screen share / AirPlay)" = "Åbn i et vindue (skærmdeling / AirPlay)";
+"Delete timer" = "Slet timer";
+"Reuse this timer with another duration" = "Brug denne timer igen med en anden varighed";
+"Add Timer" = "Tilføj timer";
+"Drag to resize" = "Træk for at ændre størrelse";
+"Close" = "Luk";
+"timer.theme" = "Tema: %@";
+"timer.widgetSize" = "Widgetstørrelse: %@ (%d pt)";
+"timer.restartAs" = "Genstart denne timer som %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "System";
+"theme.light" = "Lyst";
+"theme.dark" = "Mørkt";
+"theme.chameleon" = "Kamæleon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Fokus";
+"pomodoro.break" = "Pause";
+"preview.pomodoro" = "↻ Fokus %1$@ · Pause %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d t.";
+"unit.min" = "%d min.";
+"unit.sec" = "%d sek.";
+"unit.zeroSec" = "0 sek.";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Rediger hurtige forudindstillinger";
+"Quick Presets" = "Hurtige forudindstillinger";
+"Reset" = "Nulstil";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Samme format som indtastningsfeltet —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Tilføj forudindstilling";
+"Add a preset" = "Tilføj en forudindstilling";
+"No readable preset — buttons stay hidden" = "Ingen læsbar forudindstilling – knapperne forbliver skjult";
+"Remove preset" = "Fjern forudindstilling";
+"Keep at least one preset" = "Behold mindst én forudindstilling";
+"preset.restore" = "Gendan %@";
+"preset.max" = "Op til %d forudindstillinger";
+
+/* ===== Music ===== */
+"mood.focus" = "Fokus";
+"mood.calm" = "Ro";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Energi";
+"mood.focus.hint" = "Jævn instrumentalmusik – til dybt arbejde og øvning";
+"mood.calm.hint" = "Ambient og solopiano – til at falde til ro før et oplæg";
+"mood.jazz.hint" = "Cafejazz og bossa nova – til afslappede lokaler og samtaler";
+"mood.upbeat.hint" = "Let pop og funk – til opvarmning og pauser";
+"Play music" = "Afspil musik";
+"Pause music" = "Sæt musik på pause";
+"Next Track" = "Næste nummer";
+"Play With Timer" = "Afspil med timer";
+"Refresh" = "Opdater";
+"music.empty" = "Ingen numre – læg lydfiler i mappen %@";
+"music.openFolder" = "Åbn mappen %@";
+"music.count.one" = "%1$d nummer · %2$@";
+"music.count.other" = "%1$d numre · %2$@";
+"music.chip.none" = " (ingen numre)";
+"music.chip.one" = " · %d nummer";
+"music.chip.other" = " · %d numre";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Indstillinger";
+"settings.support" = "Support";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Timere";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Genåbn lukket seddel";
+"menu.help" = "❓ Hjælp";
+"menu.guide" = "📖 Brugervejledning";
+"menu.supportSite" = "🌐 Åbn supportsiden";
+"menu.settings" = "⚙️ Indstillinger…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Dine gemte sedler kunne ikke læses";
+"alert.notesCorrupt.message" = "Sedlernes fil er beskadiget, så StickyPresenter starter tomt. Den oprindelige fil er gemt som %@. Hvis du har brug for at få den gendannet, så send den til udvikleren.";
+"alert.notesCorrupt.reveal" = "Vis i Finder";
+"window.guide" = "Brugervejledning til StickyPresenter";
+"settings.general" = "Generelt";
+"settings.launchAtLogin" = "Åbn ved login";
+"settings.launchAtLogin.failed" = "Login-emnet kunne ikke ændres: %@";
+"settings.launchAtLogin.approval" = "Tillad StickyPresenter i Systemindstillinger ▸ Generelt ▸ Loginemner.";
+"settings.defaultColor" = "Farve til nye sedler";
+"settings.help" = "Hjælp";
+"settings.showGuide" = "Åbn brugervejledningen";
+"settings.openSupport" = "Åbn supportsiden";
+"settings.revealNotes" = "Vis sedlernes fil";
+"settings.revealNotes.help" = "Sedlerne gemmes kun på denne Mac. Brug filen til at tage backup eller flytte dem til en anden Mac.";
+"settings.version" = "Version";
+"colorName.yellow" = "Gul";
+"colorName.pink" = "Pink";
+"colorName.green" = "Grøn";
+"colorName.blue" = "Blå";
+"colorName.purple" = "Lilla";
+"colorName.orange" = "Orange";
+"note.close" = "Luk seddel";
+"note.close.help" = "Luk seddel (hent den tilbage med “Genåbn lukket seddel” i menuen)";
+"note.color.help" = "Skift seddelfarve";
+"note.opacity.help" = "Juster gennemsigtighed";
+"note.fontSmaller" = "Mindre tekst";
+"note.fontLarger" = "Større tekst";
+"teleprompter.close" = "Luk teleprompter";
+"teleprompter.rewind" = "Tilbage til start";
+"teleprompter.play" = "Afspil";
+"teleprompter.pause" = "Pause";
+"teleprompter.speed" = "Rullehastighed";
+"timer.inputHelp.tooltip" = "Vis indtastningsformater";
+"timer.inputHelp.title" = "Du kan skrive";
+"timer.inputHelp.minutes" = "Et tal betyder minutter (10 min.)";
+"timer.inputHelp.colon" = "Minutter:sekunder (5 min. 30 sek.)";
+"timer.inputHelp.hms" = "Timer:minutter:sekunder";
+"timer.inputHelp.units" = "Med enheder (1 t. 20 min.)";
+"timer.inputHelp.seconds" = "Sekunder (45 sek.)";
+"timer.inputHelp.pomodoro" = "Pomodoro-cyklus med fokus/pause";
+"timer.inputHelp.footer" = "Klik på et eksempel for at udfylde det. Timere kan være op til 99:59:59.";
+"chameleon.permission.title" = "Kamæleon kræver tilladelse til skærmoptagelse";
+"chameleon.permission.message" = "Kamæleon aflæser én gang i sekundet farven på skærmen lige bag timeren og tilpasser baggrunden. Billedet bruges kun til at finde en farve og bliver aldrig gemt eller sendt nogen steder.\n\nHvis du fortsætter, spørger macOS om tilladelse. Hvis du har afslået før, kan du slå StickyPresenter til i Systemindstillinger.";
+"chameleon.permission.continue" = "Fortsæt";
+"chameleon.permission.openSettings" = "Åbn Systemindstillinger";
+"chameleon.permission.skip" = "Spring over";
+"hotkey.newNote" = "Ny seddel";
+"hotkey.noteFromClipboard" = "Ny seddel fra udklipsholder";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Vis eller skjul timere";
+"hotkey.pomodoro" = "Start pomodoro (25/5)";
+"hotkey.showNotes" = "Vis alle sedler";
+"hotkey.hideNotes" = "Skjul alle sedler";
+"guide.welcome.title" = "Kom i gang";
+"guide.welcome.summary" = "StickyPresenter giver dig sedler, timere og en teleprompter, der svæver over Keynote, også i fuld skærm.";
+"guide.welcome.1" = "Alle vinduer svæver over slides i fuld skærm uden at tage fokus fra dit præsentationsprogram.";
+"guide.welcome.2" = "Alt ligger i seddelikonet i menulinjen. Der er intet ikon i Dock.";
+"guide.welcome.3" = "Sedler gemmes på denne Mac, mens du skriver, og dukker op samme sted næste gang.";
+"guide.welcome.4" = "Åbn guiden igen når som helst fra menulinjen ▸ Hjælp ▸ Brugervejledning.";
+"guide.notes.title" = "Sedler";
+"guide.notes.summary" = "Fastgør dit manuskript eller dine påmindelser oven på dine slides.";
+"guide.notes.1" = "Træk hvor som helst på en seddel for at flytte den. Træk i kanten for at ændre størrelsen.";
+"guide.notes.2" = "Hold musen over en seddel for at se knapperne til farve, gennemsigtighed og tekststørrelse.";
+"guide.notes.3" = "Lås en seddel, så intet ændres ved et uheld, mens du præsenterer.";
+"guide.notes.4" = "Lukkede du en seddel ved en fejl? “Genåbn lukket seddel” i menuen henter de seneste 20 tilbage.";
+"guide.notes.5" = "Kopiér dit manuskript, og tryk på ⌘⌃V for at gøre det til en ny seddel.";
+"guide.timers.title" = "Timere";
+"guide.timers.summary" = "Hold øje med tiden med en lille widget i hjørnet.";
+"guide.timers.1" = "Skriv en tid i vinduet Timere, og tryk på Retur. Spørgsmålstegnet ved siden af feltet viser formaterne.";
+"guide.timers.2" = "Når der ikke er nogen timere, starter ét klik på en Hurtigstart-knap en timer. Brug blyanten til at ændre tiderne.";
+"guide.timers.3" = "Vis/Skjul og Juster skjuler en widget eller stiller widgets op ved siden af vinduet Timere.";
+"guide.timers.4" = "Vindue åbner timeren som et almindeligt vindue, så du kan dele kun det vindue via skærmdeling eller AirPlay.";
+"guide.timers.5" = "Temaknappen skifter mellem lyst, mørkt og Kamæleon, som tilpasser sig skærmen bagved. Kamæleon kræver tilladelse til skærmoptagelse.";
+"guide.timers.6" = "Musiklinjen afspiller baggrundsmusik, mens du forbereder dig. Du lægger selv numrene i en mappe.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Skift mellem fokus og pause, indtil du stopper.";
+"guide.pomodoro.1" = "Skriv fokus- og pausetid med en skråstreg, som 25/5 eller 50m/10m, for at starte en pomodoro.";
+"guide.pomodoro.2" = "Der lyder en forskellig klang ved hvert skift, og widgetten bliver rød ved fokus og grøn ved pause.";
+"guide.pomodoro.3" = "Tryk på ⌘⌃B hvor som helst for at starte 25 minutters fokus med 5 minutters pauser.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Dit manuskript ruller i et jævnt tempo, så du kan læse, mens du ser ind i kameraet.";
+"guide.teleprompter.1" = "Kopiér dit manuskript, og tryk på ⌘⌃P for at åbne det i teleprompteren. Brug blyanten til at redigere det der.";
+"guide.teleprompter.2" = "Tryk på Afspil for at starte rulningen. Den stopper af sig selv, når manuskriptet er slut.";
+"guide.teleprompter.3" = "Spejlvend vender teksten til teleprompterudstyr med reflekterende glas.";
+"guide.teleprompter.4" = "Hastighed, tekststørrelse og spejlvending huskes til næste gang.";
+"guide.remote.title" = "iPhone-fjernbetjening";
+"guide.remote.summary" = "Start og stop timere fra din iPhone på scenen.";
+"guide.remote.1" = "Hent Remote Controller for Sticky i App Store på din iPhone.";
+"guide.remote.2" = "Vælg denne Mac i appen, og indtast den firecifrede kode fra menulinjen ▸ Fjernbetjening.";
+"guide.remote.3" = "Din iPhone og Mac skal være på samme Wi‑Fi. Efter første gang forbinder de uden kode.";
+"guide.remote.4" = "Flere fjernbetjeninger kan styre én Mac, så både taler og scenechef kan bruge den.";
+"guide.shortcuts.title" = "Genveje";
+"guide.shortcuts.summary" = "De virker overalt, selv når et andet program er forrest, eller du er midt i en præsentation.";
+"guide.shortcuts.taken" = "Bruges af et andet program";
+"guide.shortcuts.note" = "Hold Kommando (⌘) og Control (⌃) nede samtidig. En genvej markeret “Bruges af et andet program” virker igen, når det program afsluttes.";
+"guide.support" = "Supportside";
+"guide.next" = "Næste";
+"guide.done" = "Kom i gang";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone-fjernbetjeningen er midlertidigt utilgængelig";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Velkommen til StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter bor i din menulinje";
+"onboarding.menubar.body" = "Der er intet ikon i Dock. Sedler, timere, teleprompter og indstillinger ligger i seddelikonet øverst til højre på skærmen.";
+"onboarding.menubar.icon" = "Led efter dette ikon i menulinjen";
+"onboarding.hotkeys.title" = "Taster, der virker under dit oplæg";
+"onboarding.hotkeys.body" = "Disse genveje virker, selv når Keynote eller PowerPoint er i fuld skærm, uden at du forlader dine slides.";
+"onboarding.launch.title" = "Klar, før du præsenterer";
+"onboarding.launch.body" = "Åbn StickyPresenter ved login, så dine sedler og timere allerede venter, når du går på scenen.";
+"onboarding.launch.later" = "Du kan ændre det når som helst i Indstillinger.";
+"onboarding.back" = "Tilbage";
+"onboarding.openGuide" = "Åbn brugervejledningen";
+"onboarding.start" = "Kom i gang";
+"onboarding.page" = "Side %d af %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro på én linje";
+"tip.pomodoro.message" = "Skriv 25/5 for 25 minutters fokus og 5 minutters pause, igen og igen, til du stopper.";
+"tip.pomodoro.try" = "Prøv 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Start timer";
+"intent.timer.description" = "Starter en nedtællingstimer, der svæver over dine slides.";
+"intent.timer.minutes" = "Minutter";
+"intent.timer.summary ${minutes}" = "Start en timer på ${minutes} min.";
+"intent.timer.short" = "Start timer";
+"intent.pomodoro.title" = "Start pomodoro";
+"intent.pomodoro.description" = "Starter en pomodoro-timer med 25 minutters fokus og 5 minutters pause.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Ny seddel";
+"intent.note.description" = "Tilføjer en ny seddel på din skærm.";
+"intent.note.short" = "Ny seddel";
+"intent.timers.title" = "Vis timere";
+"intent.timers.description" = "Åbner timerpanelet.";
+"intent.timers.short" = "Timere";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Bedre understøttelse af VoiceOver";
+"roadmap.a11y.voiceover.detail" = "VoiceOver læser hver seddel og knap op i en fornuftig rækkefølge.";
+"roadmap.a11y.contrast.title" = "Farver, der er lettere at se";
+"roadmap.a11y.contrast.detail" = "Seddelfarverne er stadig lette at skelne, også med Øg kontrast eller farveblindhed.";
+"roadmap.a11y.motion.title" = "Reduceret bevægelse";
+"roadmap.a11y.motion.detail" = "Når Reducer bevægelse er slået til, bliver animationerne roligere.";
+"roadmap.lang.more.title" = "Flere sprog";
+"roadmap.lang.more.detail" = "Brug appen på flere sprog, ikke kun engelsk og koreansk.";
+"roadmap.whatsnew.title" = "Nyheder";
+"roadmap.whatsnew.detail" = "Efter en opdatering kan du se, hvad der er nyt, første gang du åbner appen.";
+"roadmap.feedback.reply.title" = "Svar på din feedback";
+"roadmap.feedback.reply.detail" = "Læs vores svar på din feedback direkte i appen.";
+"roadmap.sync.icloud.title" = "Sedler på alle dine Mac’er";
+"roadmap.sync.icloud.detail" = "Fortsæt med de samme sedler på dine andre Mac’er via iCloud.";
+"roadmap.backup.title" = "Eksportér og importér sedler";
+"roadmap.backup.detail" = "Gem dine sedler i en fil, og indlæs dem igen på en anden Mac.";
+"roadmap.notifications.title" = "Timeradvarsler";
+"roadmap.notifications.detail" = "Få en notifikation, når en timer slutter, også mens du er i et andet program.";

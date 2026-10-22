@@ -1,0 +1,8 @@
+/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
+"Start a timer in ${applicationName}" = "Start en timer i ${applicationName}";
+"Start a ${applicationName} timer" = "Start en ${applicationName}-timer";
+"Start a Pomodoro in ${applicationName}" = "Start en pomodoro i ${applicationName}";
+"Start focusing with ${applicationName}" = "Begynd at fokusere med ${applicationName}";
+"New sticky note in ${applicationName}" = "Ny seddel i ${applicationName}";
+"Add a note in ${applicationName}" = "Tilføj en seddel i ${applicationName}";
+"Show timers in ${applicationName}" = "Vis timere i ${applicationName}";

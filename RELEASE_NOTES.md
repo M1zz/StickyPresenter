@@ -96,6 +96,12 @@ Odpovědi na zpětnou vazbu v Nastavení
 Zpětná vazba se ptá, co se stalo
 Soukromí a podpora jsou v Nastavení
 
+### 앱스토어 (덴마크어)
+
+Se svar på din feedback i Indstillinger
+Feedback spørger nu, hvad der skete
+Privatliv og support i Indstillinger
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)
