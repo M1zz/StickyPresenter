@@ -1017,6 +1017,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 베트남어 (vi)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Ghi chú, hẹn giờ thuyết trình
+
+### 프로모션 텍스트
+
+Giữ kịch bản và đồng hồ đếm ngược nổi trên Keynote toàn màn hình. Ghi chú tự lưu, kèm hướng dẫn tích hợp giới thiệu từng tính năng.
+
+### 설명
+
+Khi thuyết trình, hai thứ bạn cần nhất lại khó nhìn thấy nhất: kịch bản và đồng hồ. StickyPresenter giữ cả hai nổi phía trên mọi thứ trên màn hình, kể cả Keynote toàn màn hình, nên bạn không bao giờ phải rời trang chiếu để xem.
+
+Ứng dụng lặng lẽ nằm trên thanh menu: không có biểu tượng trong Dock, không có thêm cửa sổ nào để quản lý.
+
+GHI CHÚ DÁN NỔI TRÊN MÀN HÌNH
+• Luôn ở phía trước các bài thuyết trình toàn màn hình, nơi cửa sổ thông thường không theo kịp
+• Sáu màu, chỉnh được độ mờ và cỡ chữ
+• Khóa ghi chú để một cú nhấp nhầm không làm đổi nội dung khi bạn đang nói
+• Biến nội dung bảng nhớ tạm thành ghi chú mới ngay lập tức
+• Tự lưu khi bạn gõ và hiện lại đúng chỗ cũ khi mở lại ứng dụng
+• Lỡ đóng ghi chú? Mở lại từ menu
+
+BỘ HẸN GIỜ ĐẾM NGƯỢC
+• Widget hình vuông có thể phóng to đến mức đọc được từ cuối phòng
+• Chủ đề Hệ thống, Sáng, Tối, cùng chủ đề Tắc kè hoa tự đổi màu theo màn hình phía sau
+• Chuyển đỏ khi sắp hết giờ, hết giờ thì phát âm báo và nháy viền
+• Mở bất kỳ bộ hẹn giờ nào thành một cửa sổ riêng và chỉ chia sẻ cửa sổ đó qua chia sẻ màn hình hoặc AirPlay
+• Nhập thời gian theo cách bạn nghĩ, như 5:30 hay 1h 20m. Gõ 25/5 để có Pomodoro luân phiên tập trung và nghỉ
+• Widget trong Trung tâm thông báo giúp bạn liếc nhìn đếm ngược bất cứ lúc nào
+
+MÁY NHẮC CHỮ
+• Tự cuộn mượt mà, chỉnh được tốc độ và cỡ chữ
+• Chế độ lật gương cho thiết bị nhắc chữ dùng kính phản chiếu
+• Tự dừng ở cuối kịch bản và ghi nhớ thiết lập của bạn
+
+NHẠC NỀN
+• Bốn không khí: Tập trung, Thư giãn, Jazz và Sôi động
+• Bật và tắt cùng bộ hẹn giờ, âm lượng tăng giảm êm ái
+• Bài hát do bạn chọn: ứng dụng tạo một thư mục cho mỗi không khí và phát mọi thứ bạn bỏ vào
+
+PHÍM TẮT DÙNG Ở MỌI NƠI
+• Phím tắt Command-Control mở ghi chú, bộ hẹn giờ và máy nhắc chữ ngay cả khi ứng dụng khác ở phía trước
+• Không cần quyền trợ năng
+
+DỄ LÀM QUEN
+• Hướng dẫn tích hợp mở ra ở lần đầu dùng và luôn cách một cú nhấp trong menu Trợ giúp
+• Tùy chọn mở khi đăng nhập để bạn sẵn sàng trước mỗi buổi trình bày
+
+ĐIỀU KHIỂN TỪ XA TRÊN iPhone (ỨNG DỤNG MIỄN PHÍ RIÊNG)
+Khi đang thuyết trình, Mac nằm ngoài tầm với. Remote Controller for Sticky đặt bộ hẹn giờ vào tay bạn: bắt đầu và tạm dừng, thêm hoặc bớt 30 giây, đổi kích thước và chủ đề widget, hay dời widget đang che trang chiếu. Việc ghép nối dùng mã bốn chữ số: ngay cả trong phòng đầy Mac, điều khiển chỉ nói chuyện với đúng Mac của bạn.
+
+QUYỀN RIÊNG TƯ
+Không tài khoản, không quảng cáo. Ghi chú và kịch bản của bạn không bao giờ rời khỏi Mac. Ngoài số liệu sử dụng ẩn danh, ứng dụng chỉ kết nối Internet khi bạn chọn gửi góp ý từ Cài đặt, và trao đổi với điều khiển từ xa trên iPhone qua kết nối trực tiếp, được mã hóa trong mạng cục bộ của bạn.
+
+Yêu cầu macOS 14 trở lên.
+
+### 키워드
+
+trình chiếu,slide,diễn thuyết,bài giảng,pomodoro,hội thảo,đếm ngược,kịch bản,tập dượt,diễn giả
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

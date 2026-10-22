@@ -84,6 +84,12 @@ Privacidade e suporte em Ajustes
 ส่งความคิดเห็นแล้วจะถามว่าเกิดอะไรขึ้น
 เปิดนโยบายและหน้าสนับสนุนจากการตั้งค่า
 
+### 앱스토어 (베트남어)
+
+Xem phản hồi cho góp ý trong Cài đặt
+Góp ý sẽ hỏi bạn đã gặp chuyện gì
+Mở chính sách và hỗ trợ từ Cài đặt
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

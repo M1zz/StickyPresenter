@@ -1,0 +1,7 @@
+"widget.displayName" = "Hẹn giờ thuyết trình";
+"widget.description" = "Hiện thời gian còn lại của bộ hẹn giờ thuyết trình đang chạy.";
+"widget.empty" = "Không có bộ hẹn giờ nào đang chạy";
+"widget.total" = "Tổng %@";
+"widget.finished" = "%@ · Đã xong";
+"widget.running" = "%@ · Đang chạy";
+"widget.paused" = "%@ · Tạm dừng";

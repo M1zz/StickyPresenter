@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Ghi chú mới";
+"menu.newFromClipboard" = "📋 Mới từ bảng nhớ tạm";
+"menu.teleprompter" = "📺 Chế độ máy nhắc chữ";
+"menu.timers" = "⏱ Bộ hẹn giờ";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Hiện tất cả ghi chú";
+"menu.hideAll" = "🙈 Ẩn tất cả ghi chú";
+"menu.defaultColor" = "🎨 Màu mặc định";
+"menu.removeAll" = "🗑 Xóa tất cả ghi chú";
+"menu.remote" = "📱 Điều khiển từ xa";
+"menu.contact.email" = "✉️ Email (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Nhắn Instagram (@lee25_ios)";
+"menu.quit" = "Thoát StickyPresenter";
+
+"color.yellow" = "🟡 Vàng";
+"color.pink" = "🩷 Hồng";
+"color.green" = "🟢 Xanh lá";
+"color.blue" = "🔵 Xanh dương";
+"color.purple" = "🟣 Tím";
+"color.orange" = "🟠 Cam";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Mã ghép nối:   %@";
+"remote.none" = "Chưa có điều khiển từ xa nào kết nối";
+"remote.connected" = "Điều khiển từ xa đang kết nối: %d";
+"remote.newCode" = "Mã ghép nối mới";
+"remote.forget" = "Quên các điều khiển từ xa đã ghép nối";
+"remote.forget.count" = "Quên các điều khiển từ xa đã ghép nối (%d)";
+"remote.forget.title" = "Quên tất cả điều khiển từ xa đã ghép nối?";
+"remote.forget.message" = "Các điều khiển từ xa đang kết nối sẽ bị ngắt và cần nhập lại mã ghép nối.";
+"remote.forget.confirm" = "Quên";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Hủy";
+"alert.removeAll.title" = "Xóa tất cả ghi chú?";
+"alert.removeAll.message" = "Mọi ghi chú sẽ bị đóng. Ghi chú có nội dung có thể khôi phục bằng “Mở lại ghi chú đã đóng” trong menu.";
+"alert.removeAll.confirm" = "Xóa tất cả";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Hướng dẫn StickyPresenter\n\n📌 Kéo để di chuyển ghi chú\n🖱 Rê chuột để hiện các nút điều khiển\n🎨 Chỉnh màu · độ mờ · cỡ chữ\n🔒 Nút khóa ngăn chỉnh sửa\n\n⌘⌃N  Ghi chú mới\n⌘⌃T  Mở bộ hẹn giờ\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Máy nhắc chữ\n⌘⌃S  Hiện tất cả ghi chú\n⌘⌃H  Ẩn tất cả ghi chú\n\n💡 Bạn cũng có thể tạo ghi chú\n   ngay từ các nút của bộ hẹn giờ!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Dán kịch bản của bạn vào đây...\n\nMáy nhắc chữ sẽ tự cuộn văn bản.\n\nDùng các nút để chỉnh tốc độ và cỡ chữ.";
+"📺 TELEPROMPTER" = "📺 MÁY NHẮC CHỮ";
+"Preview mode" = "Chế độ xem trước";
+"Edit text" = "Sửa văn bản";
+"Mirror text (for teleprompter glass)" = "Lật gương văn bản (cho kính máy nhắc chữ)";
+"Font" = "Phông chữ";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Khóa chỉnh sửa";
+"Unlock editing" = "Mở khóa chỉnh sửa";
+"Empty note" = "Ghi chú trống";
+"note.charCount" = "%d ký tự";
+"note.opacity" = "Độ mờ: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Bộ hẹn giờ";
+"window.timer.named" = "Bộ hẹn giờ – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Ghi chú mới";
+"Quick Start" = "Bắt đầu nhanh";
+"No timers" = "Chưa có bộ hẹn giờ";
+"Tap a preset or enter a time" = "Chọn một mốc có sẵn hoặc nhập thời gian";
+"Show" = "Hiện";
+"Hide" = "Ẩn";
+"Show / hide widget" = "Hiện/ẩn widget";
+"Align" = "Căn chỉnh";
+"Align widget next to the panel" = "Căn widget cạnh bảng điều khiển";
+"Window" = "Cửa sổ";
+"Open in a window (screen share / AirPlay)" = "Mở trong cửa sổ (chia sẻ màn hình / AirPlay)";
+"Delete timer" = "Xóa bộ hẹn giờ";
+"Reuse this timer with another duration" = "Dùng lại bộ hẹn giờ này với thời lượng khác";
+"Add Timer" = "Thêm bộ hẹn giờ";
+"Drag to resize" = "Kéo để đổi kích thước";
+"Close" = "Đóng";
+"timer.theme" = "Chủ đề: %@";
+"timer.widgetSize" = "Kích thước widget: %@ (%dpt)";
+"timer.restartAs" = "Bắt đầu lại bộ hẹn giờ này thành %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Hệ thống";
+"theme.light" = "Sáng";
+"theme.dark" = "Tối";
+"theme.chameleon" = "Tắc kè hoa";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Tập trung";
+"pomodoro.break" = "Nghỉ";
+"preview.pomodoro" = "↻ Tập trung %1$@ · Nghỉ %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d giờ";
+"unit.min" = "%d phút";
+"unit.sec" = "%d giây";
+"unit.zeroSec" = "0 giây";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Sửa mốc nhanh";
+"Quick Presets" = "Mốc nhanh";
+"Reset" = "Đặt lại";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Cùng định dạng với ô nhập —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Thêm mốc";
+"Add a preset" = "Thêm một mốc";
+"No readable preset — buttons stay hidden" = "Không có mốc hợp lệ — các nút sẽ được ẩn";
+"Remove preset" = "Xóa mốc";
+"Keep at least one preset" = "Giữ lại ít nhất một mốc";
+"preset.restore" = "Khôi phục %@";
+"preset.max" = "Tối đa %d mốc";
+
+/* ===== Music ===== */
+"mood.focus" = "Tập trung";
+"mood.calm" = "Thư giãn";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Sôi động";
+"mood.focus.hint" = "Nhạc không lời đều đặn — để làm việc sâu và tập dượt";
+"mood.calm.hint" = "Nhạc ambient và piano độc tấu — để thả lỏng trước buổi nói";
+"mood.jazz.hint" = "Jazz quán cà phê và bossa nova — cho không gian thoải mái, trò chuyện";
+"mood.upbeat.hint" = "Pop nhẹ và funk — để khởi động và giờ giải lao";
+"Play music" = "Phát nhạc";
+"Pause music" = "Tạm dừng nhạc";
+"Next Track" = "Bài tiếp theo";
+"Play With Timer" = "Phát cùng bộ hẹn giờ";
+"Refresh" = "Làm mới";
+"music.empty" = "Chưa có bài hát — hãy thêm tệp âm thanh vào thư mục %@";
+"music.openFolder" = "Mở thư mục %@";
+"music.count.one" = "%1$d bài · %2$@";
+"music.count.other" = "%1$d bài · %2$@";
+"music.chip.none" = " (chưa có bài)";
+"music.chip.one" = " · %d bài";
+"music.chip.other" = " · %d bài";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Cài đặt";
+"settings.support" = "Hỗ trợ";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Bộ hẹn giờ";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Mở lại ghi chú đã đóng";
+"menu.help" = "❓ Trợ giúp";
+"menu.guide" = "📖 Hướng dẫn sử dụng";
+"menu.supportSite" = "🌐 Mở trang hỗ trợ";
+"menu.settings" = "⚙️ Cài đặt…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Không đọc được các ghi chú đã lưu";
+"alert.notesCorrupt.message" = "Tệp ghi chú bị hỏng nên StickyPresenter khởi động ở trạng thái trống. Tệp gốc được giữ lại với tên %@. Nếu cần khôi phục, hãy gửi tệp này cho nhà phát triển.";
+"alert.notesCorrupt.reveal" = "Hiện trong Finder";
+"window.guide" = "Hướng dẫn sử dụng StickyPresenter";
+"settings.general" = "Chung";
+"settings.launchAtLogin" = "Mở khi đăng nhập";
+"settings.launchAtLogin.failed" = "Không thể đổi mục đăng nhập: %@";
+"settings.launchAtLogin.approval" = "Hãy cho phép StickyPresenter trong Cài đặt hệ thống ▸ Chung ▸ Mục đăng nhập.";
+"settings.defaultColor" = "Màu ghi chú mới";
+"settings.help" = "Trợ giúp";
+"settings.showGuide" = "Mở hướng dẫn sử dụng";
+"settings.openSupport" = "Mở trang hỗ trợ";
+"settings.revealNotes" = "Hiện tệp ghi chú";
+"settings.revealNotes.help" = "Ghi chú chỉ được lưu trên Mac này. Dùng tệp này để sao lưu hoặc chuyển sang Mac khác.";
+"settings.version" = "Phiên bản";
+"colorName.yellow" = "Vàng";
+"colorName.pink" = "Hồng";
+"colorName.green" = "Xanh lá";
+"colorName.blue" = "Xanh dương";
+"colorName.purple" = "Tím";
+"colorName.orange" = "Cam";
+"note.close" = "Đóng ghi chú";
+"note.close.help" = "Đóng ghi chú (khôi phục bằng “Mở lại ghi chú đã đóng” trong menu)";
+"note.color.help" = "Đổi màu ghi chú";
+"note.opacity.help" = "Chỉnh độ mờ";
+"note.fontSmaller" = "Chữ nhỏ hơn";
+"note.fontLarger" = "Chữ lớn hơn";
+"teleprompter.close" = "Đóng máy nhắc chữ";
+"teleprompter.rewind" = "Về đầu";
+"teleprompter.play" = "Phát";
+"teleprompter.pause" = "Tạm dừng";
+"teleprompter.speed" = "Tốc độ cuộn";
+"timer.inputHelp.tooltip" = "Hiện các định dạng nhập";
+"timer.inputHelp.title" = "Bạn có thể nhập";
+"timer.inputHelp.minutes" = "Một số nghĩa là số phút (10 phút)";
+"timer.inputHelp.colon" = "Phút:giây (5 phút 30 giây)";
+"timer.inputHelp.hms" = "Giờ:phút:giây";
+"timer.inputHelp.units" = "Kèm đơn vị (1 giờ 20 phút)";
+"timer.inputHelp.seconds" = "Giây (45 giây)";
+"timer.inputHelp.pomodoro" = "Vòng lặp Pomodoro tập trung/nghỉ";
+"timer.inputHelp.footer" = "Nhấp vào ví dụ để điền sẵn. Bộ hẹn giờ có thể dài tới 99:59:59.";
+"chameleon.permission.title" = "Tắc kè hoa cần quyền Ghi màn hình";
+"chameleon.permission.message" = "Tắc kè hoa đọc màu của màn hình ngay phía sau bộ hẹn giờ mỗi giây một lần để phối nền cho khớp. Ảnh chỉ dùng để tính ra một màu, không bao giờ được lưu hay gửi đi đâu.\n\nNếu tiếp tục, macOS sẽ hỏi quyền. Nếu trước đó bạn đã từ chối, hãy bật StickyPresenter trong Cài đặt hệ thống.";
+"chameleon.permission.continue" = "Tiếp tục";
+"chameleon.permission.openSettings" = "Mở Cài đặt hệ thống";
+"chameleon.permission.skip" = "Bỏ qua";
+"hotkey.newNote" = "Ghi chú mới";
+"hotkey.noteFromClipboard" = "Ghi chú mới từ bảng nhớ tạm";
+"hotkey.teleprompter" = "Máy nhắc chữ";
+"hotkey.timers" = "Hiện hoặc ẩn bộ hẹn giờ";
+"hotkey.pomodoro" = "Bắt đầu Pomodoro (25/5)";
+"hotkey.showNotes" = "Hiện tất cả ghi chú";
+"hotkey.hideNotes" = "Ẩn tất cả ghi chú";
+"guide.welcome.title" = "Bắt đầu";
+"guide.welcome.summary" = "StickyPresenter mang đến ghi chú, bộ hẹn giờ và máy nhắc chữ nổi trên Keynote, kể cả ở chế độ toàn màn hình.";
+"guide.welcome.1" = "Mọi cửa sổ đều nổi trên các trang chiếu toàn màn hình mà không giành quyền điều khiển của ứng dụng trình chiếu.";
+"guide.welcome.2" = "Mọi thứ nằm ở biểu tượng ghi chú trên thanh menu. Không có biểu tượng trong Dock.";
+"guide.welcome.3" = "Ghi chú được lưu trên Mac này khi bạn gõ và quay lại đúng vị trí cũ vào lần sau.";
+"guide.welcome.4" = "Mở lại hướng dẫn này bất cứ lúc nào từ thanh menu ▸ Trợ giúp ▸ Hướng dẫn sử dụng.";
+"guide.notes.title" = "Ghi chú dán";
+"guide.notes.summary" = "Ghim kịch bản hoặc lời nhắc lên trên các trang chiếu.";
+"guide.notes.1" = "Kéo ở bất kỳ đâu trên ghi chú để di chuyển. Kéo mép để đổi kích thước.";
+"guide.notes.2" = "Rê chuột lên ghi chú để hiện các nút đổi màu, độ mờ và cỡ chữ.";
+"guide.notes.3" = "Khóa ghi chú để không có gì thay đổi ngoài ý muốn khi bạn thuyết trình.";
+"guide.notes.4" = "Lỡ đóng một ghi chú? “Mở lại ghi chú đã đóng” trong menu sẽ đưa 20 ghi chú gần nhất trở lại.";
+"guide.notes.5" = "Sao chép kịch bản rồi nhấn ⌘⌃V để biến nó thành ghi chú mới.";
+"guide.timers.title" = "Bộ hẹn giờ";
+"guide.timers.summary" = "Theo dõi thời gian bằng một widget nhỏ ở góc màn hình.";
+"guide.timers.1" = "Nhập thời gian trong cửa sổ Bộ hẹn giờ rồi nhấn Return. Dấu hỏi cạnh ô nhập liệt kê các định dạng.";
+"guide.timers.2" = "Khi chưa có bộ hẹn giờ, chỉ cần nhấp một nút Bắt đầu nhanh là chạy. Dùng biểu tượng bút chì để đổi các mốc đó.";
+"guide.timers.3" = "Hiện/Ẩn và Căn chỉnh sẽ ẩn một widget hoặc xếp các widget cạnh cửa sổ Bộ hẹn giờ.";
+"guide.timers.4" = "Cửa sổ mở bộ hẹn giờ thành một cửa sổ thông thường, nên bạn có thể chỉ chia sẻ cửa sổ đó qua chia sẻ màn hình hoặc AirPlay.";
+"guide.timers.5" = "Nút chủ đề chuyển qua lại giữa sáng, tối và Tắc kè hoa, chủ đề tự phối màu theo màn hình phía sau. Tắc kè hoa cần quyền Ghi màn hình.";
+"guide.timers.6" = "Thanh nhạc phát nhạc nền khi bạn chuẩn bị. Bạn tự thêm bài hát vào một thư mục.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Luân phiên các phiên tập trung và nghỉ cho đến khi bạn dừng.";
+"guide.pomodoro.1" = "Nhập thời gian tập trung và nghỉ cách nhau bằng dấu gạch chéo, như 25/5 hoặc 50m/10m, để bắt đầu Pomodoro.";
+"guide.pomodoro.2" = "Mỗi lần chuyển đổi có một chuông khác nhau, widget chuyển đỏ khi tập trung và xanh khi nghỉ.";
+"guide.pomodoro.3" = "Nhấn ⌘⌃B ở bất cứ đâu để bắt đầu 25 phút tập trung với các quãng nghỉ 5 phút.";
+"guide.teleprompter.title" = "Máy nhắc chữ";
+"guide.teleprompter.summary" = "Kịch bản cuộn với nhịp đều để bạn đọc mà vẫn nhìn vào máy quay.";
+"guide.teleprompter.1" = "Sao chép kịch bản rồi nhấn ⌘⌃P để mở trong máy nhắc chữ. Dùng bút chì để sửa tại đó.";
+"guide.teleprompter.2" = "Nhấn Phát để bắt đầu cuộn. Máy tự dừng ở cuối kịch bản.";
+"guide.teleprompter.3" = "Lật gương đảo ngược chữ cho thiết bị nhắc chữ có kính phản chiếu.";
+"guide.teleprompter.4" = "Tốc độ, cỡ chữ và chế độ lật gương được ghi nhớ cho lần sau.";
+"guide.remote.title" = "Điều khiển từ xa trên iPhone";
+"guide.remote.summary" = "Bắt đầu và dừng bộ hẹn giờ từ iPhone khi đang trên sân khấu.";
+"guide.remote.1" = "Tải Remote Controller for Sticky từ App Store trên iPhone của bạn.";
+"guide.remote.2" = "Chọn Mac này trong ứng dụng rồi nhập mã bốn chữ số từ thanh menu ▸ Điều khiển từ xa.";
+"guide.remote.3" = "iPhone và Mac cần ở cùng một mạng Wi‑Fi. Sau lần đầu, hai thiết bị kết nối mà không cần mã.";
+"guide.remote.4" = "Nhiều điều khiển từ xa có thể cùng điều khiển một Mac, nên người nói và người phụ trách sân khấu đều dùng được.";
+"guide.shortcuts.title" = "Phím tắt";
+"guide.shortcuts.summary" = "Hoạt động ở mọi nơi, kể cả khi ứng dụng khác ở phía trước hoặc bạn đang thuyết trình.";
+"guide.shortcuts.taken" = "Đang được ứng dụng khác dùng";
+"guide.shortcuts.note" = "Giữ đồng thời Command (⌘) và Control (⌃). Phím tắt có ghi “Đang được ứng dụng khác dùng” sẽ dùng lại được khi ứng dụng đó thoát.";
+"guide.support" = "Trang hỗ trợ";
+"guide.next" = "Tiếp";
+"guide.done" = "Bắt đầu";
+
+/* Remote kill switch */
+"remote.unavailable" = "Điều khiển từ xa trên iPhone tạm thời không dùng được";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Chào mừng đến với StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter nằm trên thanh menu của bạn";
+"onboarding.menubar.body" = "Không có biểu tượng trong Dock. Ghi chú, bộ hẹn giờ, máy nhắc chữ và cài đặt đều nằm ở biểu tượng ghi chú phía trên bên phải màn hình.";
+"onboarding.menubar.icon" = "Hãy tìm biểu tượng này trên thanh menu";
+"onboarding.hotkeys.title" = "Các phím dùng được khi đang thuyết trình";
+"onboarding.hotkeys.body" = "Các phím tắt này hoạt động cả khi Keynote hoặc PowerPoint đang toàn màn hình, không cần rời khỏi trang chiếu.";
+"onboarding.launch.title" = "Sẵn sàng trước khi trình bày";
+"onboarding.launch.body" = "Mở StickyPresenter khi đăng nhập để ghi chú và bộ hẹn giờ đã chờ sẵn khi bạn bước lên sân khấu.";
+"onboarding.launch.later" = "Bạn có thể đổi điều này bất cứ lúc nào trong Cài đặt.";
+"onboarding.back" = "Quay lại";
+"onboarding.openGuide" = "Mở hướng dẫn sử dụng";
+"onboarding.start" = "Bắt đầu";
+"onboarding.page" = "Trang %d/%d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro chỉ trong một dòng";
+"tip.pomodoro.message" = "Nhập 25/5 để có 25 phút tập trung và 5 phút nghỉ, lặp lại cho đến khi bạn dừng.";
+"tip.pomodoro.try" = "Thử 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Bắt đầu hẹn giờ";
+"intent.timer.description" = "Bắt đầu bộ hẹn giờ đếm ngược nổi trên các trang chiếu của bạn.";
+"intent.timer.minutes" = "Phút";
+"intent.timer.summary ${minutes}" = "Bắt đầu hẹn giờ ${minutes} phút";
+"intent.timer.short" = "Bắt đầu hẹn giờ";
+"intent.pomodoro.title" = "Bắt đầu Pomodoro";
+"intent.pomodoro.description" = "Bắt đầu bộ hẹn giờ Pomodoro với 25 phút tập trung / 5 phút nghỉ.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Ghi chú mới";
+"intent.note.description" = "Thêm một ghi chú mới lên màn hình của bạn.";
+"intent.note.short" = "Ghi chú mới";
+"intent.timers.title" = "Hiện bộ hẹn giờ";
+"intent.timers.description" = "Mở bảng bộ hẹn giờ.";
+"intent.timers.short" = "Bộ hẹn giờ";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Hỗ trợ VoiceOver tốt hơn";
+"roadmap.a11y.voiceover.detail" = "VoiceOver đọc từng ghi chú và nút theo thứ tự hợp lý.";
+"roadmap.a11y.contrast.title" = "Màu dễ nhìn hơn";
+"roadmap.a11y.contrast.detail" = "Màu ghi chú vẫn dễ phân biệt, kể cả khi bật Tăng độ tương phản hoặc bị mù màu.";
+"roadmap.a11y.motion.title" = "Giảm chuyển động";
+"roadmap.a11y.motion.detail" = "Khi bật Giảm chuyển động, các hiệu ứng sẽ êm hơn.";
+"roadmap.lang.more.title" = "Thêm ngôn ngữ";
+"roadmap.lang.more.detail" = "Dùng ứng dụng bằng nhiều ngôn ngữ hơn, không chỉ tiếng Anh và tiếng Hàn.";
+"roadmap.whatsnew.title" = "Có gì mới";
+"roadmap.whatsnew.detail" = "Sau khi cập nhật, bạn sẽ thấy điểm mới ở lần mở ứng dụng đầu tiên.";
+"roadmap.feedback.reply.title" = "Phản hồi cho góp ý của bạn";
+"roadmap.feedback.reply.detail" = "Đọc phản hồi của chúng tôi cho góp ý của bạn ngay trong ứng dụng.";
+"roadmap.sync.icloud.title" = "Ghi chú trên mọi Mac của bạn";
+"roadmap.sync.icloud.detail" = "Tiếp tục với cùng các ghi chú trên những Mac khác qua iCloud.";
+"roadmap.backup.title" = "Xuất và nhập ghi chú";
+"roadmap.backup.detail" = "Lưu ghi chú ra một tệp rồi tải lại trên Mac khác.";
+"roadmap.notifications.title" = "Nhắc khi hết giờ";
+"roadmap.notifications.detail" = "Nhận thông báo khi bộ hẹn giờ kết thúc, kể cả khi bạn đang ở ứng dụng khác.";
