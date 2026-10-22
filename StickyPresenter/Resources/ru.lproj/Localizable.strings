@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Новая заметка";
+"menu.newFromClipboard" = "📋 Новая из буфера обмена";
+"menu.teleprompter" = "📺 Режим телесуфлёра";
+"menu.timers" = "⏱ Таймеры";
+"menu.pomodoro" = "🍅 Помодоро (25/5)";
+"menu.showAll" = "👁 Показать все заметки";
+"menu.hideAll" = "🙈 Скрыть все заметки";
+"menu.defaultColor" = "🎨 Цвет по умолчанию";
+"menu.removeAll" = "🗑 Удалить все заметки";
+"menu.remote" = "📱 Пульт";
+"menu.contact.email" = "✉️ Эл. почта (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Сообщение в Instagram (@lee25_ios)";
+"menu.quit" = "Завершить StickyPresenter";
+
+"color.yellow" = "🟡 Жёлтый";
+"color.pink" = "🩷 Розовый";
+"color.green" = "🟢 Зелёный";
+"color.blue" = "🔵 Синий";
+"color.purple" = "🟣 Фиолетовый";
+"color.orange" = "🟠 Оранжевый";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Код сопряжения:   %@";
+"remote.none" = "Нет подключённых пультов";
+"remote.connected" = "Подключённых пультов: %d";
+"remote.newCode" = "Новый код сопряжения";
+"remote.forget" = "Забыть сопряжённые пульты";
+"remote.forget.count" = "Забыть сопряжённые пульты (%d)";
+"remote.forget.title" = "Забыть все сопряжённые пульты?";
+"remote.forget.message" = "Подключённые пульты будут отключены. Им снова понадобится код сопряжения.";
+"remote.forget.confirm" = "Забыть";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Отмена";
+"alert.removeAll.title" = "Удалить все заметки?";
+"alert.removeAll.message" = "Все заметки будут закрыты. Заметки с текстом можно вернуть командой «Открыть закрытую заметку» в меню.";
+"alert.removeAll.confirm" = "Удалить все";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Краткое руководство StickyPresenter\n\n📌 Перетащите, чтобы переместить заметку\n🖱 Наведите курсор, чтобы увидеть кнопки\n🎨 Цвет · прозрачность · размер шрифта\n🔒 Замок запрещает правку\n\n⌘⌃N  Новая заметка\n⌘⌃T  Открыть таймеры\n⌘⌃B  Помодоро (25/5)\n⌘⌃P  Телесуфлёр\n⌘⌃S  Показать все заметки\n⌘⌃H  Скрыть все заметки\n\n💡 Заметку можно создать и прямо\n   из панели таймера!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Вставьте сюда текст выступления...\n\nТелесуфлёр сам прокрутит текст.\n\nСкорость и размер шрифта настраиваются кнопками.";
+"📺 TELEPROMPTER" = "📺 ТЕЛЕСУФЛЁР";
+"Preview mode" = "Режим просмотра";
+"Edit text" = "Править текст";
+"Mirror text (for teleprompter glass)" = "Зеркальный текст (для стекла телесуфлёра)";
+"Font" = "Шрифт";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Запретить правку";
+"Unlock editing" = "Разрешить правку";
+"Empty note" = "Пустая заметка";
+"note.charCount" = "Символов: %d";
+"note.opacity" = "Непрозрачность: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Таймер";
+"window.timer.named" = "Таймер – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Новая заметка";
+"Quick Start" = "Быстрый старт";
+"No timers" = "Нет таймеров";
+"Tap a preset or enter a time" = "Выберите шаблон или введите время";
+"Show" = "Показать";
+"Hide" = "Скрыть";
+"Show / hide widget" = "Показать или скрыть виджет";
+"Align" = "Выровнять";
+"Align widget next to the panel" = "Выровнять виджет рядом с панелью";
+"Window" = "Окно";
+"Open in a window (screen share / AirPlay)" = "Открыть в окне (демонстрация экрана / AirPlay)";
+"Delete timer" = "Удалить таймер";
+"Reuse this timer with another duration" = "Использовать этот таймер с другой длительностью";
+"Add Timer" = "Добавить таймер";
+"Drag to resize" = "Потяните, чтобы изменить размер";
+"Close" = "Закрыть";
+"timer.theme" = "Тема: %@";
+"timer.widgetSize" = "Размер виджета: %@ (%d пт)";
+"timer.restartAs" = "Перезапустить этот таймер как %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Системная";
+"theme.light" = "Светлая";
+"theme.dark" = "Тёмная";
+"theme.chameleon" = "Хамелеон";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Работа";
+"pomodoro.break" = "Перерыв";
+"preview.pomodoro" = "↻ Работа %1$@ · Перерыв %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d ч";
+"unit.min" = "%d мин";
+"unit.sec" = "%d с";
+"unit.zeroSec" = "0 с";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Изменить быстрые шаблоны";
+"Quick Presets" = "Быстрые шаблоны";
+"Reset" = "Сбросить";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Формат как в поле ввода —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Добавить шаблон";
+"Add a preset" = "Добавить шаблон";
+"No readable preset — buttons stay hidden" = "Нет подходящих шаблонов — кнопки скрыты";
+"Remove preset" = "Удалить шаблон";
+"Keep at least one preset" = "Оставьте хотя бы один шаблон";
+"preset.restore" = "Вернуть %@";
+"preset.max" = "Не более %d шаблонов";
+
+/* ===== Music ===== */
+"mood.focus" = "Концентрация";
+"mood.calm" = "Спокойствие";
+"mood.jazz" = "Джаз";
+"mood.upbeat" = "Бодрость";
+"mood.focus.hint" = "Ровная инструментальная музыка — для глубокой работы и репетиции";
+"mood.calm.hint" = "Эмбиент и соло на фортепиано — чтобы расслабиться перед выступлением";
+"mood.jazz.hint" = "Кафе-джаз и босса-нова — для непринуждённых залов и бесед";
+"mood.upbeat.hint" = "Лёгкий поп и фанк — для разминки и перерывов";
+"Play music" = "Включить музыку";
+"Pause music" = "Поставить музыку на паузу";
+"Next Track" = "Следующий трек";
+"Play With Timer" = "Играть вместе с таймером";
+"Refresh" = "Обновить";
+"music.empty" = "Нет треков — добавьте аудио в папку «%@»";
+"music.openFolder" = "Открыть папку «%@»";
+"music.count.one" = "%1$d трек · %2$@";
+"music.count.other" = "Треков: %1$d · %2$@";
+"music.chip.none" = " (нет треков)";
+"music.chip.one" = " · %d трек";
+"music.chip.other" = " · треков: %d";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Настройки";
+"settings.support" = "Поддержка";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Таймеры";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Открыть закрытую заметку";
+"menu.help" = "❓ Справка";
+"menu.guide" = "📖 Руководство пользователя";
+"menu.supportSite" = "🌐 Открыть страницу поддержки";
+"menu.settings" = "⚙️ Настройки…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Не удалось прочитать сохранённые заметки";
+"alert.notesCorrupt.message" = "Файл с заметками повреждён, поэтому StickyPresenter запускается пустым. Исходный файл сохранён под именем %@. Если его нужно восстановить, отправьте его разработчику.";
+"alert.notesCorrupt.reveal" = "Показать в Finder";
+"window.guide" = "Руководство пользователя StickyPresenter";
+"settings.general" = "Основные";
+"settings.launchAtLogin" = "Открывать при входе";
+"settings.launchAtLogin.failed" = "Не удалось изменить объект входа: %@";
+"settings.launchAtLogin.approval" = "Разрешите StickyPresenter в разделе «Системные настройки» ▸ «Основные» ▸ «Объекты входа».";
+"settings.defaultColor" = "Цвет новых заметок";
+"settings.help" = "Справка";
+"settings.showGuide" = "Открыть руководство пользователя";
+"settings.openSupport" = "Открыть страницу поддержки";
+"settings.revealNotes" = "Показать файл заметок";
+"settings.revealNotes.help" = "Заметки хранятся только на этом Mac. Этот файл пригодится для резервной копии или переноса на другой Mac.";
+"settings.version" = "Версия";
+"colorName.yellow" = "Жёлтый";
+"colorName.pink" = "Розовый";
+"colorName.green" = "Зелёный";
+"colorName.blue" = "Синий";
+"colorName.purple" = "Фиолетовый";
+"colorName.orange" = "Оранжевый";
+"note.close" = "Закрыть заметку";
+"note.close.help" = "Закрыть заметку (вернуть её можно командой «Открыть закрытую заметку» в меню)";
+"note.color.help" = "Изменить цвет заметки";
+"note.opacity.help" = "Настроить прозрачность";
+"note.fontSmaller" = "Уменьшить текст";
+"note.fontLarger" = "Увеличить текст";
+"teleprompter.close" = "Закрыть телесуфлёр";
+"teleprompter.rewind" = "В начало";
+"teleprompter.play" = "Воспроизвести";
+"teleprompter.pause" = "Пауза";
+"teleprompter.speed" = "Скорость прокрутки";
+"timer.inputHelp.tooltip" = "Показать форматы ввода";
+"timer.inputHelp.title" = "Можно ввести";
+"timer.inputHelp.minutes" = "Число означает минуты (10 мин)";
+"timer.inputHelp.colon" = "Минуты:секунды (5 мин 30 с)";
+"timer.inputHelp.hms" = "Часы:минуты:секунды";
+"timer.inputHelp.units" = "С единицами (1 ч 20 мин)";
+"timer.inputHelp.seconds" = "Секунды (45 с)";
+"timer.inputHelp.pomodoro" = "Цикл помодоро: работа/перерыв";
+"timer.inputHelp.footer" = "Нажмите на пример, чтобы подставить его. Таймер может длиться до 99:59:59.";
+"chameleon.permission.title" = "Для «Хамелеона» нужно разрешение на запись экрана";
+"chameleon.permission.message" = "«Хамелеон» раз в секунду считывает цвет экрана прямо под таймером и подбирает под него фон. Изображение нужно только для определения цвета: оно нигде не сохраняется и никуда не отправляется.\n\nЕсли вы продолжите, macOS запросит разрешение. Если вы уже отказали, включите StickyPresenter в Системных настройках.";
+"chameleon.permission.continue" = "Продолжить";
+"chameleon.permission.openSettings" = "Открыть Системные настройки";
+"chameleon.permission.skip" = "Пропустить";
+"hotkey.newNote" = "Новая заметка";
+"hotkey.noteFromClipboard" = "Новая заметка из буфера обмена";
+"hotkey.teleprompter" = "Телесуфлёр";
+"hotkey.timers" = "Показать или скрыть таймеры";
+"hotkey.pomodoro" = "Запустить помодоро (25/5)";
+"hotkey.showNotes" = "Показать все заметки";
+"hotkey.hideNotes" = "Скрыть все заметки";
+"guide.welcome.title" = "Начало работы";
+"guide.welcome.summary" = "StickyPresenter даёт заметки, таймеры и телесуфлёр, которые лежат поверх Keynote, даже в полноэкранном режиме.";
+"guide.welcome.1" = "Все окна находятся поверх полноэкранных слайдов и не забирают фокус у вашей программы для презентаций.";
+"guide.welcome.2" = "Всё собрано в значке заметки в строке меню. Значка в Dock нет.";
+"guide.welcome.3" = "Заметки сохраняются на этом Mac по мере набора и в следующий раз появляются на том же месте.";
+"guide.welcome.4" = "Это руководство всегда можно открыть снова: строка меню ▸ Справка ▸ Руководство пользователя.";
+"guide.notes.title" = "Заметки-стикеры";
+"guide.notes.summary" = "Закрепите текст выступления или напоминания поверх слайдов.";
+"guide.notes.1" = "Чтобы переместить заметку, потяните её за любое место. Чтобы изменить размер, потяните за край.";
+"guide.notes.2" = "Наведите курсор на заметку, чтобы появились кнопки цвета, прозрачности и размера текста.";
+"guide.notes.3" = "Заблокируйте заметку, чтобы ничего не изменилось случайно во время выступления.";
+"guide.notes.4" = "Закрыли заметку по ошибке? Команда «Открыть закрытую заметку» в меню вернёт последние 20.";
+"guide.notes.5" = "Скопируйте текст выступления и нажмите ⌘⌃V — получится новая заметка.";
+"guide.timers.title" = "Таймеры";
+"guide.timers.summary" = "Следите за временем по небольшому виджету в углу экрана.";
+"guide.timers.1" = "Введите время в окне «Таймеры» и нажмите Return. Вопросительный знак рядом с полем покажет форматы.";
+"guide.timers.2" = "Если таймеров нет, достаточно нажать кнопку быстрого старта. Карандашом можно изменить эти значения.";
+"guide.timers.3" = "«Показать/скрыть» и «Выровнять» прячут виджет или выстраивают виджеты рядом с окном «Таймеры».";
+"guide.timers.4" = "«Окно» открывает таймер как обычное окно — его одно можно показать при демонстрации экрана или через AirPlay.";
+"guide.timers.5" = "Кнопка темы переключает светлую, тёмную и «Хамелеон», который подстраивается под экран позади. Для «Хамелеона» нужно разрешение на запись экрана.";
+"guide.timers.6" = "Панель музыки включает фоновую музыку, пока вы готовитесь. Треки вы добавляете сами в папку.";
+"guide.pomodoro.title" = "Помодоро";
+"guide.pomodoro.summary" = "Чередуйте периоды работы и перерывы, пока не остановитесь.";
+"guide.pomodoro.1" = "Введите время работы и перерыва через косую черту, например 25/5 или 50m/10m, чтобы запустить помодоро.";
+"guide.pomodoro.2" = "При каждом переключении звучит свой сигнал, а виджет краснеет во время работы и зеленеет в перерыв.";
+"guide.pomodoro.3" = "Нажмите ⌘⌃B в любом месте — начнётся 25 минут работы с перерывами по 5 минут.";
+"guide.teleprompter.title" = "Телесуфлёр";
+"guide.teleprompter.summary" = "Текст прокручивается ровно, и можно читать, глядя в камеру.";
+"guide.teleprompter.1" = "Скопируйте текст и нажмите ⌘⌃P, чтобы открыть его в телесуфлёре. Карандаш позволяет править его там же.";
+"guide.teleprompter.2" = "Нажмите «Воспроизвести», чтобы начать прокрутку. В конце текста она остановится сама.";
+"guide.teleprompter.3" = "«Зеркало» переворачивает текст для телесуфлёров с отражающим стеклом.";
+"guide.teleprompter.4" = "Скорость, размер текста и зеркальность запоминаются на следующий раз.";
+"guide.remote.title" = "Пульт на iPhone";
+"guide.remote.summary" = "Запускайте и останавливайте таймеры с iPhone прямо на сцене.";
+"guide.remote.1" = "Установите Remote Controller for Sticky из App Store на iPhone.";
+"guide.remote.2" = "Выберите этот Mac в приложении и введите четырёхзначный код из раздела «строка меню ▸ Пульт».";
+"guide.remote.3" = "iPhone и Mac должны быть в одной сети Wi‑Fi. После первого раза они подключаются без кода.";
+"guide.remote.4" = "Одним Mac могут управлять несколько пультов, например докладчик и помощник на сцене.";
+"guide.shortcuts.title" = "Сочетания клавиш";
+"guide.shortcuts.summary" = "Работают везде, даже когда поверх другое приложение или идёт выступление.";
+"guide.shortcuts.taken" = "Занято другим приложением";
+"guide.shortcuts.note" = "Удерживайте вместе Command (⌘) и Control (⌃). Сочетание с пометкой «Занято другим приложением» снова заработает после выхода из этого приложения.";
+"guide.support" = "Страница поддержки";
+"guide.next" = "Далее";
+"guide.done" = "Начать";
+
+/* Remote kill switch */
+"remote.unavailable" = "Пульт на iPhone временно недоступен";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Добро пожаловать в StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter живёт в строке меню";
+"onboarding.menubar.body" = "Значка в Dock нет. Заметки, таймеры, телесуфлёр и настройки собраны в значке заметки в правом верхнем углу экрана.";
+"onboarding.menubar.icon" = "Ищите этот значок в строке меню";
+"onboarding.hotkeys.title" = "Клавиши, которые работают во время выступления";
+"onboarding.hotkeys.body" = "Эти сочетания работают, даже когда Keynote или PowerPoint открыт на весь экран, и вам не нужно покидать слайды.";
+"onboarding.launch.title" = "Готово до выступления";
+"onboarding.launch.body" = "Открывайте StickyPresenter при входе в систему, чтобы заметки и таймеры уже ждали вас, когда вы выйдете на сцену.";
+"onboarding.launch.later" = "Это можно изменить в любой момент в настройках.";
+"onboarding.back" = "Назад";
+"onboarding.openGuide" = "Открыть руководство";
+"onboarding.start" = "Начать";
+"onboarding.page" = "Страница %d из %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Помодоро одной строкой";
+"tip.pomodoro.message" = "Введите 25/5 — 25 минут работы и 5 минут перерыва по кругу, пока вы не остановитесь.";
+"tip.pomodoro.try" = "Попробовать 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Запустить таймер";
+"intent.timer.description" = "Запускает таймер обратного отсчёта поверх слайдов.";
+"intent.timer.minutes" = "Минуты";
+"intent.timer.summary ${minutes}" = "Запустить таймер на ${minutes} мин";
+"intent.timer.short" = "Запустить таймер";
+"intent.pomodoro.title" = "Запустить помодоро";
+"intent.pomodoro.description" = "Запускает таймер помодоро: 25 минут работы и 5 минут перерыва.";
+"intent.pomodoro.short" = "Помодоро";
+"intent.note.title" = "Новая заметка";
+"intent.note.description" = "Добавляет на экран новую заметку.";
+"intent.note.short" = "Новая заметка";
+"intent.timers.title" = "Показать таймеры";
+"intent.timers.description" = "Открывает панель таймеров.";
+"intent.timers.short" = "Таймеры";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Лучшая поддержка VoiceOver";
+"roadmap.a11y.voiceover.detail" = "VoiceOver озвучивает каждую заметку и кнопку в разумном порядке.";
+"roadmap.a11y.contrast.title" = "Цвета, которые легче различать";
+"roadmap.a11y.contrast.detail" = "Цвета заметок остаются различимыми, даже при повышенной контрастности и цветовой слепоте.";
+"roadmap.a11y.motion.title" = "Уменьшение движения";
+"roadmap.a11y.motion.detail" = "При включённой настройке «Уменьшить движение» анимации становятся спокойнее.";
+"roadmap.lang.more.title" = "Больше языков";
+"roadmap.lang.more.detail" = "Пользуйтесь приложением на большем числе языков, не только на английском и корейском.";
+"roadmap.whatsnew.title" = "Что нового";
+"roadmap.whatsnew.detail" = "После обновления при первом запуске приложения вы увидите, что нового.";
+"roadmap.feedback.reply.title" = "Ответы на ваши отзывы";
+"roadmap.feedback.reply.detail" = "Читайте наши ответы на ваши отзывы прямо в приложении.";
+"roadmap.sync.icloud.title" = "Заметки на всех ваших Mac";
+"roadmap.sync.icloud.detail" = "Находите те же заметки на других Mac через iCloud.";
+"roadmap.backup.title" = "Экспорт и импорт заметок";
+"roadmap.backup.detail" = "Сохраняйте заметки в файл и загружайте их на другом Mac.";
+"roadmap.notifications.title" = "Уведомления таймера";
+"roadmap.notifications.detail" = "Получайте уведомление, когда таймер закончится, даже если вы в другом приложении.";

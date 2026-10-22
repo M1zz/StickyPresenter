@@ -1,0 +1,7 @@
+"widget.displayName" = "Таймер выступления";
+"widget.description" = "Показывает, сколько осталось до конца текущего таймера выступления.";
+"widget.empty" = "Нет запущенных таймеров";
+"widget.total" = "Всего %@";
+"widget.finished" = "%@ · Завершён";
+"widget.running" = "%@ · Идёт";
+"widget.paused" = "%@ · Пауза";

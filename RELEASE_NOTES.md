@@ -66,6 +66,12 @@ Veja as respostas aos seus comentários
 Ao comentar, perguntamos o que houve
 Privacidade e suporte em Ajustes
 
+### 앱스토어 (러시아어)
+
+Ответы на отзывы — в настройках
+При отзыве спросим, что случилось
+Правила и поддержка — в настройках
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)
