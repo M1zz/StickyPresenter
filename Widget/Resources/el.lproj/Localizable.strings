@@ -1,0 +1,7 @@
+"widget.displayName" = "Χρονόμετρο παρουσίασης";
+"widget.description" = "Εμφανίζει τον χρόνο που απομένει στο τρέχον χρονόμετρο παρουσίασης.";
+"widget.empty" = "Κανένα χρονόμετρο σε εκτέλεση";
+"widget.total" = "Σύνολο %@";
+"widget.finished" = "%@ · Ολοκληρώθηκε";
+"widget.running" = "%@ · Σε εκτέλεση";
+"widget.paused" = "%@ · Σε παύση";

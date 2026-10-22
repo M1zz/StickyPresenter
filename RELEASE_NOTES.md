@@ -102,6 +102,12 @@ Se svar på din feedback i Indstillinger
 Feedback spørger nu, hvad der skete
 Privatliv og support i Indstillinger
 
+### 앱스토어 (그리스어)
+
+Δείτε απαντήσεις στα σχόλιά σας
+Τα σχόλια ρωτούν τι συνέβη
+Απόρρητο και υποστήριξη στις Ρυθμίσεις
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

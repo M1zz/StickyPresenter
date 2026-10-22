@@ -351,6 +351,7 @@
 				vi,
 				cs,
 				da,
+				el,
 			);
 			mainGroup = 93B576DEF5BFEEBEEF479A36;
 			minimizedProjectReferenceProxies = 1;
