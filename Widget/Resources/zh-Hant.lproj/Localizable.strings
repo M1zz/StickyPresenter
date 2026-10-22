@@ -1,0 +1,7 @@
+"widget.displayName" = "簡報計時器";
+"widget.description" = "顯示目前簡報計時器的剩餘時間。";
+"widget.empty" = "沒有進行中的計時器";
+"widget.total" = "總計 %@";
+"widget.finished" = "%@ · 已結束";
+"widget.running" = "%@ · 進行中";
+"widget.paused" = "%@ · 已暫停";

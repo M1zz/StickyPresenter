@@ -1,0 +1,8 @@
+/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
+"Start a timer in ${applicationName}" = "在 ${applicationName} 開始計時";
+"Start a ${applicationName} timer" = "開始 ${applicationName} 計時";
+"Start a Pomodoro in ${applicationName}" = "在 ${applicationName} 開始番茄鐘";
+"Start focusing with ${applicationName}" = "用 ${applicationName} 開始專注";
+"New sticky note in ${applicationName}" = "在 ${applicationName} 新增便利貼";
+"Add a note in ${applicationName}" = "在 ${applicationName} 加一則便利貼";
+"Show timers in ${applicationName}" = "在 ${applicationName} 顯示計時器";
