@@ -1,0 +1,7 @@
+"widget.displayName" = "Minutnik prezentacji";
+"widget.description" = "Pokazuje czas pozostały do końca bieżącego minutnika prezentacji.";
+"widget.empty" = "Brak uruchomionych minutników";
+"widget.total" = "Łącznie %@";
+"widget.finished" = "%@ · Zakończono";
+"widget.running" = "%@ · W toku";
+"widget.paused" = "%@ · Wstrzymano";

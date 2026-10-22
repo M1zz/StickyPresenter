@@ -1641,6 +1641,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 폴란드어 (pl)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Notatki i minutnik na scenę
+
+### 프로모션 텍스트
+
+Miej tekst wystąpienia i odliczanie nad Keynote na pełnym ekranie. Notatki zapisują się same, a wbudowany przewodnik pokaże każdą funkcję.
+
+### 설명
+
+Podczas prezentacji dwie rzeczy, których potrzebujesz najbardziej, są jednocześnie najtrudniejsze do dostrzeżenia: tekst wystąpienia i zegar. StickyPresenter utrzymuje obie nad wszystkim, co jest na ekranie, także nad Keynote na pełnym ekranie, więc nigdy nie musisz opuszczać slajdów, aby na nie zerknąć.
+
+Aplikacja działa dyskretnie na pasku menu: bez ikony w Docku i bez dodatkowych okien do ogarnięcia.
+
+UNOSZĄCE SIĘ KARTECZKI
+• Zostają na wierzchu prezentacji pełnoekranowych, za którymi zwykłe okno nie nadąża
+• Sześć kolorów oraz regulowane krycie i rozmiar czcionki
+• Zablokuj notatkę, aby przypadkowe kliknięcie nie zmieniło jej w trakcie wystąpienia
+• Zawartość schowka zamienisz od razu w nową notatkę
+• Zapisują się w trakcie pisania i otwierają dokładnie tam, gdzie je zostawiono
+• Zamknięto notatkę przez pomyłkę? Otwórz ją ponownie z menu
+
+MINUTNIKI ODLICZAJĄCE
+• Kwadratowe widżety, które można powiększyć tak, by dało się je odczytać z końca sali
+• Motywy Systemowy, Jasny i Ciemny oraz Kameleon, który dopasowuje się do ekranu za nim
+• Gdy czas się kończy, widżet czerwienieje, a na koniec rozlega się dźwięk i miga ramka
+• Otwórz dowolny minutnik we własnym oknie i udostępniaj w udostępnianiu ekranu lub przez AirPlay tylko je
+• Wpisuj czas tak, jak go myślisz, np. 5:30 lub 1h 20m. Wpisz 25/5, aby uruchomić Pomodoro na zmianę ze skupieniem i przerwą
+• Widżet w Centrum powiadomień trzyma odliczanie na wyciągnięcie wzroku
+
+TELEPROMPTER
+• Płynne automatyczne przewijanie z regulowaną szybkością i rozmiarem czcionki
+• Tryb lustrzany dla teleprompterów z odbijającą szybą
+• Zatrzymuje się sam na końcu tekstu i pamięta Twoje ustawienia
+
+MUZYKA W TLE
+• Cztery nastroje: Skupienie, Spokój, Jazz i Energia
+• Włącza się i wyłącza razem z minutnikiem, z płynnym wyciszaniem i przyciszaniem
+• Utwory są Twoje: aplikacja tworzy folder dla każdego nastroju i odtwarza wszystko, co do niego wrzucisz
+
+SKRÓTY DZIAŁAJĄCE WSZĘDZIE
+• Skróty z klawiszami Command i Control otwierają notatki, minutniki i teleprompter, nawet gdy na wierzchu jest inna aplikacja
+• Nie wymagają zgody w Uniwersalnym dostępie
+
+ŁATWY START
+• Wbudowany przewodnik otwiera się przy pierwszym uruchomieniu i jest zawsze o jedno kliknięcie od Ciebie w menu Pomoc
+• Opcja otwierania po zalogowaniu, abyś był gotowy przed każdym wystąpieniem
+
+PILOT NA iPhonie (OSOBNA DARMOWA APLIKACJA)
+Podczas wystąpienia Mac jest poza zasięgiem. Remote Controller for Sticky kładzie minutnik w Twojej dłoni: uruchamiaj i wstrzymuj, dodawaj lub odejmuj 30 sekund, zmieniaj rozmiar i motyw widżetu albo odsuwaj widżet zasłaniający slajd. Parowanie odbywa się czterocyfrowym kodem: nawet w sali pełnej Maców pilot rozmawia tylko z Twoim.
+
+PRYWATNOŚĆ
+Bez konta, bez reklam. Twoje notatki i teksty nigdy nie opuszczają Maca. Poza anonimowymi statystykami użycia aplikacja łączy się z internetem tylko wtedy, gdy sam wyślesz opinię z Ustawień, a z pilotem na iPhonie komunikuje się przez bezpośrednie, szyfrowane połączenie w Twojej sieci lokalnej.
+
+Wymaga macOS 14 lub nowszego.
+
+### 키워드
+
+prezentacja,slajdy,prelegent,pomodoro,wykład,konferencja,przemówienie,stoper,scenariusz,próba
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Nowa notatka";
+"menu.newFromClipboard" = "📋 Nowa ze schowka";
+"menu.teleprompter" = "📺 Tryb teleprompteru";
+"menu.timers" = "⏱ Minutniki";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Pokaż wszystkie notatki";
+"menu.hideAll" = "🙈 Ukryj wszystkie notatki";
+"menu.defaultColor" = "🎨 Kolor domyślny";
+"menu.removeAll" = "🗑 Usuń wszystkie notatki";
+"menu.remote" = "📱 Pilot";
+"menu.contact.email" = "✉️ E-mail (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Wiadomość na Instagramie (@lee25_ios)";
+"menu.quit" = "Zakończ StickyPresenter";
+
+"color.yellow" = "🟡 Żółty";
+"color.pink" = "🩷 Różowy";
+"color.green" = "🟢 Zielony";
+"color.blue" = "🔵 Niebieski";
+"color.purple" = "🟣 Fioletowy";
+"color.orange" = "🟠 Pomarańczowy";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Kod parowania:   %@";
+"remote.none" = "Brak połączonych pilotów";
+"remote.connected" = "Połączone piloty: %d";
+"remote.newCode" = "Nowy kod parowania";
+"remote.forget" = "Zapomnij sparowane piloty";
+"remote.forget.count" = "Zapomnij sparowane piloty (%d)";
+"remote.forget.title" = "Zapomnieć wszystkie sparowane piloty?";
+"remote.forget.message" = "Połączone piloty zostaną rozłączone i będą potrzebować kodu parowania ponownie.";
+"remote.forget.confirm" = "Zapomnij";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Anuluj";
+"alert.removeAll.title" = "Usunąć wszystkie notatki?";
+"alert.removeAll.message" = "Wszystkie notatki zostaną zamknięte. Notatki z tekstem można przywrócić poleceniem „Otwórz ponownie zamkniętą notatkę” w menu.";
+"alert.removeAll.confirm" = "Usuń wszystkie";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Przewodnik po StickyPresenter\n\n📌 Przeciągnij, aby przesunąć notatkę\n🖱 Najedź kursorem, aby zobaczyć przyciski\n🎨 Dostosuj kolor · przezroczystość · rozmiar czcionki\n🔒 Kłódka blokuje edycję\n\n⌘⌃N  Nowa notatka\n⌘⌃T  Otwórz minutniki\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Pokaż wszystkie notatki\n⌘⌃H  Ukryj wszystkie notatki\n\n💡 Notatkę można utworzyć także\n   prosto z przycisków minutnika!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Wklej tutaj swój tekst...\n\nTeleprompter przewinie tekst automatycznie.\n\nPrzyciskami ustawisz szybkość i rozmiar czcionki.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Tryb podglądu";
+"Edit text" = "Edytuj tekst";
+"Mirror text (for teleprompter glass)" = "Odbij tekst lustrzanie (dla szyby teleprompteru)";
+"Font" = "Czcionka";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Zablokuj edycję";
+"Unlock editing" = "Odblokuj edycję";
+"Empty note" = "Pusta notatka";
+"note.charCount" = "Znaków: %d";
+"note.opacity" = "Krycie: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Minutnik";
+"window.timer.named" = "Minutnik – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Nowa notatka";
+"Quick Start" = "Szybki start";
+"No timers" = "Brak minutników";
+"Tap a preset or enter a time" = "Dotknij ustawienia wstępnego lub wpisz czas";
+"Show" = "Pokaż";
+"Hide" = "Ukryj";
+"Show / hide widget" = "Pokaż lub ukryj widżet";
+"Align" = "Wyrównaj";
+"Align widget next to the panel" = "Wyrównaj widżet obok panelu";
+"Window" = "Okno";
+"Open in a window (screen share / AirPlay)" = "Otwórz w oknie (udostępnianie ekranu / AirPlay)";
+"Delete timer" = "Usuń minutnik";
+"Reuse this timer with another duration" = "Użyj tego minutnika ponownie z innym czasem";
+"Add Timer" = "Dodaj minutnik";
+"Drag to resize" = "Przeciągnij, aby zmienić rozmiar";
+"Close" = "Zamknij";
+"timer.theme" = "Motyw: %@";
+"timer.widgetSize" = "Rozmiar widżetu: %@ (%d pt)";
+"timer.restartAs" = "Uruchom ten minutnik ponownie jako %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Systemowy";
+"theme.light" = "Jasny";
+"theme.dark" = "Ciemny";
+"theme.chameleon" = "Kameleon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Skupienie";
+"pomodoro.break" = "Przerwa";
+"preview.pomodoro" = "↻ Skupienie %1$@ · Przerwa %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d godz.";
+"unit.min" = "%d min";
+"unit.sec" = "%d s";
+"unit.zeroSec" = "0 s";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Edytuj szybkie ustawienia wstępne";
+"Quick Presets" = "Szybkie ustawienia wstępne";
+"Reset" = "Resetuj";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Ten sam format co w polu wprowadzania —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Dodaj ustawienie wstępne";
+"Add a preset" = "Dodaj ustawienie wstępne";
+"No readable preset — buttons stay hidden" = "Brak czytelnych ustawień wstępnych – przyciski pozostaną ukryte";
+"Remove preset" = "Usuń ustawienie wstępne";
+"Keep at least one preset" = "Zostaw co najmniej jedno ustawienie wstępne";
+"preset.restore" = "Przywróć %@";
+"preset.max" = "Maksymalnie %d ustawień wstępnych";
+
+/* ===== Music ===== */
+"mood.focus" = "Skupienie";
+"mood.calm" = "Spokój";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Energia";
+"mood.focus.hint" = "Spokojna muzyka instrumentalna – do głębokiej pracy i prób";
+"mood.calm.hint" = "Ambient i fortepian solo – na wyciszenie przed wystąpieniem";
+"mood.jazz.hint" = "Jazz kawiarniany i bossa nova – do swobodnych sal i rozmów";
+"mood.upbeat.hint" = "Lekki pop i funk – na rozgrzewkę i przerwy";
+"Play music" = "Odtwórz muzykę";
+"Pause music" = "Wstrzymaj muzykę";
+"Next Track" = "Następny utwór";
+"Play With Timer" = "Odtwarzaj z minutnikiem";
+"Refresh" = "Odśwież";
+"music.empty" = "Brak utworów – dodaj pliki audio do folderu %@";
+"music.openFolder" = "Otwórz folder %@";
+"music.count.one" = "%1$d utwór · %2$@";
+"music.count.other" = "Utworów: %1$d · %2$@";
+"music.chip.none" = " (brak utworów)";
+"music.chip.one" = " · %d utwór";
+"music.chip.other" = " · utworów: %d";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Ustawienia";
+"settings.support" = "Wsparcie";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Minutniki";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Otwórz ponownie zamkniętą notatkę";
+"menu.help" = "❓ Pomoc";
+"menu.guide" = "📖 Podręcznik użytkownika";
+"menu.supportSite" = "🌐 Otwórz stronę wsparcia";
+"menu.settings" = "⚙️ Ustawienia…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Nie można odczytać zapisanych notatek";
+"alert.notesCorrupt.message" = "Plik z notatkami jest uszkodzony, więc StickyPresenter uruchamia się pusty. Oryginalny plik zachowano jako %@. Jeśli chcesz go odzyskać, wyślij go twórcy aplikacji.";
+"alert.notesCorrupt.reveal" = "Pokaż w Finderze";
+"window.guide" = "Podręcznik użytkownika StickyPresenter";
+"settings.general" = "Ogólne";
+"settings.launchAtLogin" = "Otwieraj po zalogowaniu";
+"settings.launchAtLogin.failed" = "Nie udało się zmienić elementu logowania: %@";
+"settings.launchAtLogin.approval" = "Zezwól na StickyPresenter w Ustawieniach systemowych ▸ Ogólne ▸ Elementy logowania.";
+"settings.defaultColor" = "Kolor nowych notatek";
+"settings.help" = "Pomoc";
+"settings.showGuide" = "Otwórz podręcznik użytkownika";
+"settings.openSupport" = "Otwórz stronę wsparcia";
+"settings.revealNotes" = "Pokaż plik notatek";
+"settings.revealNotes.help" = "Notatki są przechowywane tylko na tym Macu. Użyj tego pliku, aby je zarchiwizować lub przenieść na innego Maca.";
+"settings.version" = "Wersja";
+"colorName.yellow" = "Żółty";
+"colorName.pink" = "Różowy";
+"colorName.green" = "Zielony";
+"colorName.blue" = "Niebieski";
+"colorName.purple" = "Fioletowy";
+"colorName.orange" = "Pomarańczowy";
+"note.close" = "Zamknij notatkę";
+"note.close.help" = "Zamknij notatkę (przywrócisz ją poleceniem „Otwórz ponownie zamkniętą notatkę” w menu)";
+"note.color.help" = "Zmień kolor notatki";
+"note.opacity.help" = "Ustaw krycie";
+"note.fontSmaller" = "Mniejszy tekst";
+"note.fontLarger" = "Większy tekst";
+"teleprompter.close" = "Zamknij teleprompter";
+"teleprompter.rewind" = "Wróć na początek";
+"teleprompter.play" = "Odtwórz";
+"teleprompter.pause" = "Wstrzymaj";
+"teleprompter.speed" = "Szybkość przewijania";
+"timer.inputHelp.tooltip" = "Pokaż formaty wprowadzania";
+"timer.inputHelp.title" = "Możesz wpisać";
+"timer.inputHelp.minutes" = "Liczba oznacza minuty (10 min)";
+"timer.inputHelp.colon" = "Minuty:sekundy (5 min 30 s)";
+"timer.inputHelp.hms" = "Godziny:minuty:sekundy";
+"timer.inputHelp.units" = "Z jednostkami (1 godz. 20 min)";
+"timer.inputHelp.seconds" = "Sekundy (45 s)";
+"timer.inputHelp.pomodoro" = "Cykl Pomodoro: skupienie/przerwa";
+"timer.inputHelp.footer" = "Kliknij przykład, aby go wstawić. Minutniki mogą trwać do 99:59:59.";
+"chameleon.permission.title" = "Kameleon wymaga zgody na nagrywanie ekranu";
+"chameleon.permission.message" = "Kameleon raz na sekundę odczytuje kolor ekranu tuż za minutnikiem i dopasowuje do niego tło. Obraz służy tylko do ustalenia koloru i nigdy nie jest zapisywany ani nigdzie wysyłany.\n\nGdy klikniesz Kontynuuj, macOS poprosi o zgodę. Jeśli wcześniej jej odmówiono, włącz StickyPresenter w Ustawieniach systemowych.";
+"chameleon.permission.continue" = "Kontynuuj";
+"chameleon.permission.openSettings" = "Otwórz Ustawienia systemowe";
+"chameleon.permission.skip" = "Pomiń";
+"hotkey.newNote" = "Nowa notatka";
+"hotkey.noteFromClipboard" = "Nowa notatka ze schowka";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Pokaż lub ukryj minutniki";
+"hotkey.pomodoro" = "Uruchom Pomodoro (25/5)";
+"hotkey.showNotes" = "Pokaż wszystkie notatki";
+"hotkey.hideNotes" = "Ukryj wszystkie notatki";
+"guide.welcome.title" = "Pierwsze kroki";
+"guide.welcome.summary" = "StickyPresenter daje notatki, minutniki i teleprompter, które unoszą się nad Keynote, także w trybie pełnoekranowym.";
+"guide.welcome.1" = "Każde okno unosi się nad slajdami na pełnym ekranie, nie odbierając fokusu Twojej aplikacji do prezentacji.";
+"guide.welcome.2" = "Wszystko znajdziesz pod ikoną notatki na pasku menu. W Docku nie ma żadnej ikony.";
+"guide.welcome.3" = "Notatki zapisują się na tym Macu w trakcie pisania i następnym razem wracają na to samo miejsce.";
+"guide.welcome.4" = "Otwórz ten przewodnik ponownie w dowolnej chwili: pasek menu ▸ Pomoc ▸ Podręcznik użytkownika.";
+"guide.notes.title" = "Karteczki";
+"guide.notes.summary" = "Przypnij tekst wystąpienia lub przypomnienia nad slajdami.";
+"guide.notes.1" = "Przeciągnij w dowolnym miejscu notatki, aby ją przesunąć. Przeciągnij krawędź, aby zmienić rozmiar.";
+"guide.notes.2" = "Najedź na notatkę, aby zobaczyć przyciski koloru, krycia i rozmiaru tekstu.";
+"guide.notes.3" = "Zablokuj notatkę, aby nic nie zmieniło się przypadkiem podczas prezentacji.";
+"guide.notes.4" = "Zamknięto notatkę przez pomyłkę? Polecenie „Otwórz ponownie zamkniętą notatkę” w menu przywróci ostatnie 20.";
+"guide.notes.5" = "Skopiuj swój tekst i naciśnij ⌘⌃V, aby zamienić go w nową notatkę.";
+"guide.timers.title" = "Minutniki";
+"guide.timers.summary" = "Pilnuj czasu dzięki małemu widżetowi w rogu ekranu.";
+"guide.timers.1" = "Wpisz czas w oknie Minutniki i naciśnij Return. Znak zapytania obok pola wyświetla formaty.";
+"guide.timers.2" = "Gdy nie ma minutników, jedno kliknięcie przycisku Szybki start uruchamia minutnik. Ołówkiem zmienisz te czasy.";
+"guide.timers.3" = "„Pokaż/Ukryj” i „Wyrównaj” ukrywają widżet lub ustawiają widżety obok okna Minutniki.";
+"guide.timers.4" = "„Okno” otwiera minutnik jako zwykłe okno, więc w udostępnianiu ekranu lub przez AirPlay możesz pokazać tylko je.";
+"guide.timers.5" = "Przycisk motywu przełącza jasny, ciemny i Kameleon, który dopasowuje się do ekranu za nim. Kameleon wymaga zgody na nagrywanie ekranu.";
+"guide.timers.6" = "Pasek muzyki odtwarza muzykę w tle, gdy się przygotowujesz. Utwory dodajesz sam do folderu.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Przeplataj sesje skupienia i przerwy, aż skończysz.";
+"guide.pomodoro.1" = "Wpisz czas skupienia i przerwy z ukośnikiem, np. 25/5 lub 50m/10m, aby uruchomić Pomodoro.";
+"guide.pomodoro.2" = "Przy każdej zmianie rozlega się inny dźwięk, a widżet jest czerwony podczas skupienia i zielony w przerwie.";
+"guide.pomodoro.3" = "Naciśnij ⌘⌃B w dowolnym miejscu, aby zacząć 25 minut skupienia z 5-minutowymi przerwami.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Tekst przewija się w równym tempie, więc możesz czytać, patrząc w kamerę.";
+"guide.teleprompter.1" = "Skopiuj tekst i naciśnij ⌘⌃P, aby otworzyć go w teleprompterze. Ołówkiem edytujesz go na miejscu.";
+"guide.teleprompter.2" = "Naciśnij Odtwórz, aby rozpocząć przewijanie. Na końcu tekstu zatrzyma się samo.";
+"guide.teleprompter.3" = "„Lustro” odwraca tekst dla teleprompterów z odbijającą szybą.";
+"guide.teleprompter.4" = "Szybkość, rozmiar tekstu i odbicie lustrzane są zapamiętywane na następny raz.";
+"guide.remote.title" = "Pilot na iPhonie";
+"guide.remote.summary" = "Uruchamiaj i zatrzymuj minutniki z iPhone’a, stojąc na scenie.";
+"guide.remote.1" = "Pobierz Remote Controller for Sticky z App Store na iPhonie.";
+"guide.remote.2" = "Wybierz w aplikacji tego Maca i wpisz czterocyfrowy kod z menu pasek menu ▸ Pilot.";
+"guide.remote.3" = "iPhone i Mac muszą być w tej samej sieci Wi‑Fi. Po pierwszym razie łączą się bez kodu.";
+"guide.remote.4" = "Jednym Makiem może sterować kilka pilotów, więc korzystać z niego mogą zarówno prelegent, jak i osoba obsługująca scenę.";
+"guide.shortcuts.title" = "Skróty klawiszowe";
+"guide.shortcuts.summary" = "Działają wszędzie, nawet gdy na wierzchu jest inna aplikacja albo prezentujesz.";
+"guide.shortcuts.taken" = "Używany przez inną aplikację";
+"guide.shortcuts.note" = "Przytrzymaj jednocześnie Command (⌘) i Control (⌃). Skrót oznaczony „Używany przez inną aplikację” znów zadziała po zamknięciu tej aplikacji.";
+"guide.support" = "Strona wsparcia";
+"guide.next" = "Dalej";
+"guide.done" = "Zaczynamy";
+
+/* Remote kill switch */
+"remote.unavailable" = "Pilot na iPhonie jest tymczasowo niedostępny";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Witaj w StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter mieszka na pasku menu";
+"onboarding.menubar.body" = "W Docku nie ma ikony. Notatki, minutniki, teleprompter i ustawienia znajdziesz pod ikoną notatki w prawym górnym rogu ekranu.";
+"onboarding.menubar.icon" = "Szukaj tej ikony na pasku menu";
+"onboarding.hotkeys.title" = "Klawisze działające podczas wystąpienia";
+"onboarding.hotkeys.body" = "Te skróty działają nawet wtedy, gdy Keynote lub PowerPoint jest na pełnym ekranie, bez opuszczania slajdów.";
+"onboarding.launch.title" = "Gotowy przed prezentacją";
+"onboarding.launch.body" = "Otwieraj StickyPresenter po zalogowaniu, aby notatki i minutniki czekały na Ciebie, gdy wyjdziesz na scenę.";
+"onboarding.launch.later" = "Możesz to zmienić w dowolnej chwili w Ustawieniach.";
+"onboarding.back" = "Wstecz";
+"onboarding.openGuide" = "Otwórz podręcznik użytkownika";
+"onboarding.start" = "Zaczynamy";
+"onboarding.page" = "Strona %d z %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro w jednej linii";
+"tip.pomodoro.message" = "Wpisz 25/5, aby mieć 25 minut skupienia i 5 minut przerwy, w kółko, aż skończysz.";
+"tip.pomodoro.try" = "Wypróbuj 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Uruchom minutnik";
+"intent.timer.description" = "Uruchamia minutnik odliczający, który unosi się nad slajdami.";
+"intent.timer.minutes" = "Minuty";
+"intent.timer.summary ${minutes}" = "Uruchom minutnik na ${minutes} min";
+"intent.timer.short" = "Uruchom minutnik";
+"intent.pomodoro.title" = "Uruchom Pomodoro";
+"intent.pomodoro.description" = "Uruchamia minutnik Pomodoro: 25 minut skupienia i 5 minut przerwy.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Nowa notatka";
+"intent.note.description" = "Dodaje nową notatkę na ekranie.";
+"intent.note.short" = "Nowa notatka";
+"intent.timers.title" = "Pokaż minutniki";
+"intent.timers.description" = "Otwiera panel minutników.";
+"intent.timers.short" = "Minutniki";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Lepsza obsługa VoiceOver";
+"roadmap.a11y.voiceover.detail" = "VoiceOver odczytuje każdą notatkę i każdy przycisk w sensownej kolejności.";
+"roadmap.a11y.contrast.title" = "Kolory łatwiejsze do odróżnienia";
+"roadmap.a11y.contrast.detail" = "Kolory notatek pozostają dobrze odróżnialne, także przy zwiększonym kontraście lub zaburzeniach widzenia barw.";
+"roadmap.a11y.motion.title" = "Ograniczenie ruchu";
+"roadmap.a11y.motion.detail" = "Gdy włączone jest Ogranicz ruch, animacje stają się spokojniejsze.";
+"roadmap.lang.more.title" = "Więcej języków";
+"roadmap.lang.more.detail" = "Korzystaj z aplikacji w większej liczbie języków, nie tylko po angielsku i koreańsku.";
+"roadmap.whatsnew.title" = "Co nowego";
+"roadmap.whatsnew.detail" = "Po aktualizacji zobaczysz, co nowego, przy pierwszym otwarciu aplikacji.";
+"roadmap.feedback.reply.title" = "Odpowiedzi na Twoje opinie";
+"roadmap.feedback.reply.detail" = "Czytaj nasze odpowiedzi na Twoje opinie prosto w aplikacji.";
+"roadmap.sync.icloud.title" = "Notatki na wszystkich Twoich Macach";
+"roadmap.sync.icloud.detail" = "Kontynuuj pracę z tymi samymi notatkami na innych Macach przez iCloud.";
+"roadmap.backup.title" = "Eksport i import notatek";
+"roadmap.backup.detail" = "Zapisz notatki do pliku i wczytaj je ponownie na innym Macu.";
+"roadmap.notifications.title" = "Alerty minutnika";
+"roadmap.notifications.detail" = "Otrzymaj powiadomienie, gdy minutnik się skończy, nawet gdy jesteś w innej aplikacji.";

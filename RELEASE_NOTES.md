@@ -132,6 +132,12 @@ Bekijk antwoorden op je feedback
 Feedback vraagt nu wat er gebeurde
 Privacy en support in Instellingen
 
+### 앱스토어 (폴란드어)
+
+Odpowiedzi na opinie są w Ustawieniach
+Opinia pyta teraz, co się stało
+Prywatność i wsparcie w Ustawieniach
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)
