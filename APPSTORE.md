@@ -1719,6 +1719,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 스웨덴어 (sv)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Lappar och timer för talet
+
+### 프로모션 텍스트
+
+Ha ditt manus och din nedräkning svävande över Keynote i helskärm. Lapparna sparas automatiskt, och en inbyggd guide visar dig varje funktion.
+
+### 설명
+
+När du presenterar är de två saker du behöver mest också de svåraste att se: manuset och klockan. StickyPresenter håller båda svävande ovanpå allt som finns på skärmen, även Keynote i helskärm, så att du aldrig behöver lämna bilderna för att kolla.
+
+Appen bor tyst i menyraden: ingen ikon i Dock och inga extra fönster att hålla reda på.
+
+SVÄVANDE LAPPAR
+• Ligger överst på presentationer i helskärm, dit ett vanligt fönster inte följer med
+• Sex färger, med justerbar genomskinlighet och textstorlek
+• Lås en lapp så att ett felklick inte ändrar den mitt i framträdandet
+• Gör innehållet i urklipp till en ny lapp direkt
+• Sparas medan du skriver och öppnas precis där du lämnade dem
+• Stängde du en lapp av misstag? Öppna den igen från menyn
+
+NEDRÄKNINGSTIMERS
+• Fyrkantiga widgetar som du kan göra så stora att de går att läsa från sista raden
+• Teman som System, Ljust och Mörkt, plus Kameleont som anpassar sig efter skärmen bakom
+• Widgeten blir röd när tiden håller på att ta slut, och när den är slut ljuder en signal och kanten blinkar
+• Öppna vilken timer som helst i ett eget fönster och dela bara det fönstret via skärmdelning eller AirPlay
+• Skriv tiden som du tänker den, till exempel 5:30 eller 1h 20m. Skriv 25/5 för en pomodoro som växlar mellan fokus och paus
+• En widget i Notiscenter har nedräkningen inom synhåll
+
+TELEPROMPTER
+• Jämn automatisk rullning med justerbar hastighet och textstorlek
+• Spegelläge för teleprompterutrustning med reflekterande glas
+• Stannar av sig själv i slutet av manuset och kommer ihåg dina inställningar
+
+BAKGRUNDSMUSIK
+• Fyra stämningar: Fokus, Lugn, Jazz och Pigg
+• Startar och stoppar tillsammans med timern, med mjuk in- och uttoning
+• Spåren är dina egna: appen skapar en mapp för varje stämning och spelar allt du lägger i den
+
+KORTKOMMANDON SOM FUNGERAR ÖVERALLT
+• Kortkommandona med Kommando-Control öppnar lappar, timers och teleprompter även när ett annat program ligger överst
+• Kräver inget tillstånd för hjälpmedel
+
+LÄTT ATT KOMMA IGÅNG
+• En inbyggd guide öppnas vid första start och finns alltid ett klick bort i menyn Hjälp
+• Alternativ för att öppna vid inloggning, så att du är redo före varje framträdande
+
+IPHONE-FJÄRRKONTROLL (SEPARAT GRATISAPP)
+Under ett framträdande är din Mac utom räckhåll. Remote Controller for Sticky lägger timern i din hand: starta och pausa, lägg till eller dra bort 30 sekunder, ändra widgetens storlek och tema eller flytta en widget som skymmer en bild. Ihopparningen sker med en fyrsiffrig kod: även i ett rum fullt av Mac-datorer pratar fjärrkontrollen bara med din.
+
+INTEGRITET
+Inget konto, inga annonser. Dina lappar och manus lämnar aldrig din Mac. Förutom anonym användningsstatistik ansluter appen till internet bara när du själv väljer att skicka feedback från Inställningar, och den pratar med iPhone-fjärrkontrollen via en direkt, krypterad anslutning på ditt lokala nätverk.
+
+Kräver macOS 14 eller senare.
+
+### 키워드
+
+presentation,bilder,föredrag,talare,pomodoro,föreläsning,konferens,stoppur,manus,repetition,seminarium
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

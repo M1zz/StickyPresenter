@@ -1,0 +1,7 @@
+"widget.displayName" = "Presentationstimer";
+"widget.description" = "Visar återstående tid för den pågående presentationstimern.";
+"widget.empty" = "Ingen timer pågår";
+"widget.total" = "Totalt %@";
+"widget.finished" = "%@ · Klar";
+"widget.running" = "%@ · Pågår";
+"widget.paused" = "%@ · Pausad";

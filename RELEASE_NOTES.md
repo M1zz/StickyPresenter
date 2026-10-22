@@ -138,6 +138,12 @@ Odpowiedzi na opinie są w Ustawieniach
 Opinia pyta teraz, co się stało
 Prywatność i wsparcie w Ustawieniach
 
+### 앱스토어 (스웨덴어)
+
+Se svar på din feedback i Inställningar
+Feedback frågar nu vad som hände
+Integritet och support i Inställningar
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

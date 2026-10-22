@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Ny lapp";
+"menu.newFromClipboard" = "📋 Ny från urklipp";
+"menu.teleprompter" = "📺 Teleprompterläge";
+"menu.timers" = "⏱ Timers";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Visa alla lappar";
+"menu.hideAll" = "🙈 Dölj alla lappar";
+"menu.defaultColor" = "🎨 Standardfärg";
+"menu.removeAll" = "🗑 Ta bort alla lappar";
+"menu.remote" = "📱 Fjärrkontroll";
+"menu.contact.email" = "✉️ E-post (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram-meddelande (@lee25_ios)";
+"menu.quit" = "Avsluta StickyPresenter";
+
+"color.yellow" = "🟡 Gul";
+"color.pink" = "🩷 Rosa";
+"color.green" = "🟢 Grön";
+"color.blue" = "🔵 Blå";
+"color.purple" = "🟣 Lila";
+"color.orange" = "🟠 Orange";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Ihopparningskod:   %@";
+"remote.none" = "Ingen fjärrkontroll ansluten";
+"remote.connected" = "Anslutna fjärrkontroller: %d";
+"remote.newCode" = "Ny ihopparningskod";
+"remote.forget" = "Glöm ihopparade fjärrkontroller";
+"remote.forget.count" = "Glöm ihopparade fjärrkontroller (%d)";
+"remote.forget.title" = "Glöm alla ihopparade fjärrkontroller?";
+"remote.forget.message" = "Anslutna fjärrkontroller kopplas från och behöver ihopparningskoden igen.";
+"remote.forget.confirm" = "Glöm";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Avbryt";
+"alert.removeAll.title" = "Ta bort alla lappar?";
+"alert.removeAll.message" = "Alla lappar stängs. Lappar med text kan hämtas tillbaka med ”Öppna stängd lapp igen” i menyn.";
+"alert.removeAll.confirm" = "Ta bort alla";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Guide till StickyPresenter\n\n📌 Dra för att flytta en lapp\n🖱 För muspekaren över för att visa knapparna\n🎨 Justera färg · genomskinlighet · textstorlek\n🔒 Låsknappen hindrar redigering\n\n⌘⌃N  Ny lapp\n⌘⌃T  Öppna timers\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Visa alla lappar\n⌘⌃H  Dölj alla lappar\n\n💡 Du kan också skapa en lapp\n   direkt från timerns knappar!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Klistra in ditt manus här ...\n\nTeleprompter rullar texten automatiskt.\n\nAnvänd knapparna för att justera hastighet och textstorlek.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Förhandsgranskningsläge";
+"Edit text" = "Redigera text";
+"Mirror text (for teleprompter glass)" = "Spegelvänd text (för teleprompterglas)";
+"Font" = "Typsnitt";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Lås redigering";
+"Unlock editing" = "Lås upp redigering";
+"Empty note" = "Tom lapp";
+"note.charCount" = "%d tecken";
+"note.opacity" = "Opacitet: %d %%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Timer";
+"window.timer.named" = "Timer – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Ny lapp";
+"Quick Start" = "Snabbstart";
+"No timers" = "Inga timers";
+"Tap a preset or enter a time" = "Tryck på en förinställning eller ange en tid";
+"Show" = "Visa";
+"Hide" = "Dölj";
+"Show / hide widget" = "Visa/dölj widget";
+"Align" = "Justera";
+"Align widget next to the panel" = "Placera widgeten bredvid panelen";
+"Window" = "Fönster";
+"Open in a window (screen share / AirPlay)" = "Öppna i ett fönster (skärmdelning / AirPlay)";
+"Delete timer" = "Radera timer";
+"Reuse this timer with another duration" = "Återanvänd den här timern med en annan längd";
+"Add Timer" = "Lägg till timer";
+"Drag to resize" = "Dra för att ändra storlek";
+"Close" = "Stäng";
+"timer.theme" = "Tema: %@";
+"timer.widgetSize" = "Widgetstorlek: %@ (%d pt)";
+"timer.restartAs" = "Starta om den här timern som %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "System";
+"theme.light" = "Ljust";
+"theme.dark" = "Mörkt";
+"theme.chameleon" = "Kameleont";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Fokus";
+"pomodoro.break" = "Paus";
+"preview.pomodoro" = "↻ Fokus %1$@ · Paus %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d tim";
+"unit.min" = "%d min";
+"unit.sec" = "%d sek";
+"unit.zeroSec" = "0 sek";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Redigera snabbförinställningar";
+"Quick Presets" = "Snabbförinställningar";
+"Reset" = "Återställ";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Samma format som i inmatningsfältet —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Lägg till förinställning";
+"Add a preset" = "Lägg till en förinställning";
+"No readable preset — buttons stay hidden" = "Ingen läsbar förinställning – knapparna förblir dolda";
+"Remove preset" = "Ta bort förinställning";
+"Keep at least one preset" = "Behåll minst en förinställning";
+"preset.restore" = "Återställ %@";
+"preset.max" = "Upp till %d förinställningar";
+
+/* ===== Music ===== */
+"mood.focus" = "Fokus";
+"mood.calm" = "Lugn";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Pigg";
+"mood.focus.hint" = "Jämn instrumentalmusik – för djupt arbete och repetition";
+"mood.calm.hint" = "Ambient och pianosolo – för att varva ner före ett framträdande";
+"mood.jazz.hint" = "Kafé-jazz och bossa nova – för avslappnade lokaler och samtal";
+"mood.upbeat.hint" = "Lätt pop och funk – för uppvärmning och pauser";
+"Play music" = "Spela musik";
+"Pause music" = "Pausa musik";
+"Next Track" = "Nästa spår";
+"Play With Timer" = "Spela med timer";
+"Refresh" = "Uppdatera";
+"music.empty" = "Inga spår – lägg ljudfiler i mappen %@";
+"music.openFolder" = "Öppna mappen %@";
+"music.count.one" = "%1$d spår · %2$@";
+"music.count.other" = "%1$d spår · %2$@";
+"music.chip.none" = " (inga spår)";
+"music.chip.one" = " · %d spår";
+"music.chip.other" = " · %d spår";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Inställningar";
+"settings.support" = "Support";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Timers";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Öppna stängd lapp igen";
+"menu.help" = "❓ Hjälp";
+"menu.guide" = "📖 Användarguide";
+"menu.supportSite" = "🌐 Öppna supportsidan";
+"menu.settings" = "⚙️ Inställningar …";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Dina sparade lappar kunde inte läsas";
+"alert.notesCorrupt.message" = "Lappfilen är skadad, så StickyPresenter startar tomt. Originalfilen behölls som %@. Behöver du få den återställd kan du skicka den till utvecklaren.";
+"alert.notesCorrupt.reveal" = "Visa i Finder";
+"window.guide" = "Användarguide för StickyPresenter";
+"settings.general" = "Allmänt";
+"settings.launchAtLogin" = "Öppna vid inloggning";
+"settings.launchAtLogin.failed" = "Det gick inte att ändra inloggningsobjektet: %@";
+"settings.launchAtLogin.approval" = "Tillåt StickyPresenter i Systeminställningar ▸ Allmänt ▸ Inloggningsobjekt.";
+"settings.defaultColor" = "Färg på nya lappar";
+"settings.help" = "Hjälp";
+"settings.showGuide" = "Öppna användarguiden";
+"settings.openSupport" = "Öppna supportsidan";
+"settings.revealNotes" = "Visa lappfilen";
+"settings.revealNotes.help" = "Lapparna sparas bara på den här Macen. Använd filen för att säkerhetskopiera dem eller flytta dem till en annan Mac.";
+"settings.version" = "Version";
+"colorName.yellow" = "Gul";
+"colorName.pink" = "Rosa";
+"colorName.green" = "Grön";
+"colorName.blue" = "Blå";
+"colorName.purple" = "Lila";
+"colorName.orange" = "Orange";
+"note.close" = "Stäng lapp";
+"note.close.help" = "Stäng lapp (hämta tillbaka den med ”Öppna stängd lapp igen” i menyn)";
+"note.color.help" = "Byt lappfärg";
+"note.opacity.help" = "Justera opacitet";
+"note.fontSmaller" = "Mindre text";
+"note.fontLarger" = "Större text";
+"teleprompter.close" = "Stäng teleprompter";
+"teleprompter.rewind" = "Tillbaka till början";
+"teleprompter.play" = "Spela upp";
+"teleprompter.pause" = "Pausa";
+"teleprompter.speed" = "Rullningshastighet";
+"timer.inputHelp.tooltip" = "Visa inmatningsformat";
+"timer.inputHelp.title" = "Du kan skriva";
+"timer.inputHelp.minutes" = "Ett tal betyder minuter (10 min)";
+"timer.inputHelp.colon" = "Minuter:sekunder (5 min 30 sek)";
+"timer.inputHelp.hms" = "Timmar:minuter:sekunder";
+"timer.inputHelp.units" = "Med enheter (1 tim 20 min)";
+"timer.inputHelp.seconds" = "Sekunder (45 sek)";
+"timer.inputHelp.pomodoro" = "Pomodoro-cykel med fokus/paus";
+"timer.inputHelp.footer" = "Klicka på ett exempel för att fylla i det. Timers kan vara upp till 99:59:59.";
+"chameleon.permission.title" = "Kameleont behöver tillstånd för skärminspelning";
+"chameleon.permission.message" = "Kameleont läser av färgen på skärmen precis bakom timern en gång per sekund och anpassar bakgrunden efter den. Bilden används bara för att räkna ut en färg och sparas eller skickas aldrig någonstans.\n\nOm du fortsätter frågar macOS om tillstånd. Om du har nekat tidigare slår du på StickyPresenter i Systeminställningar.";
+"chameleon.permission.continue" = "Fortsätt";
+"chameleon.permission.openSettings" = "Öppna Systeminställningar";
+"chameleon.permission.skip" = "Hoppa över";
+"hotkey.newNote" = "Ny lapp";
+"hotkey.noteFromClipboard" = "Ny lapp från urklipp";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Visa eller dölj timers";
+"hotkey.pomodoro" = "Starta pomodoro (25/5)";
+"hotkey.showNotes" = "Visa alla lappar";
+"hotkey.hideNotes" = "Dölj alla lappar";
+"guide.welcome.title" = "Kom igång";
+"guide.welcome.summary" = "StickyPresenter ger dig lappar, timers och en teleprompter som svävar över Keynote, även i helskärm.";
+"guide.welcome.1" = "Varje fönster svävar över bilder i helskärm utan att ta fokus från ditt presentationsprogram.";
+"guide.welcome.2" = "Allt finns i lappikonen i menyraden. Det finns ingen ikon i Dock.";
+"guide.welcome.3" = "Lappar sparas på den här Macen medan du skriver och dyker upp på samma ställe nästa gång.";
+"guide.welcome.4" = "Öppna den här guiden igen när som helst via menyraden ▸ Hjälp ▸ Användarguide.";
+"guide.notes.title" = "Lappar";
+"guide.notes.summary" = "Fäst ditt manus eller dina påminnelser ovanpå bilderna.";
+"guide.notes.1" = "Dra var som helst på en lapp för att flytta den. Dra i en kant för att ändra storlek.";
+"guide.notes.2" = "För muspekaren över en lapp för att visa knapparna för färg, opacitet och textstorlek.";
+"guide.notes.3" = "Lås en lapp så att inget ändras av misstag medan du presenterar.";
+"guide.notes.4" = "Stängde du en lapp av misstag? ”Öppna stängd lapp igen” i menyn hämtar tillbaka de senaste 20.";
+"guide.notes.5" = "Kopiera ditt manus och tryck på ⌘⌃V för att göra det till en ny lapp.";
+"guide.timers.title" = "Timers";
+"guide.timers.summary" = "Ha koll på tiden med en liten widget i hörnet.";
+"guide.timers.1" = "Skriv en tid i fönstret Timers och tryck på Retur. Frågetecknet bredvid fältet visar formaten.";
+"guide.timers.2" = "När det inte finns några timers startar ett klick på en Snabbstart-knapp en. Med pennan ändrar du tiderna.";
+"guide.timers.3" = "Visa/Dölj och Justera döljer en widget eller ställer upp widgetar bredvid fönstret Timers.";
+"guide.timers.4" = "Fönster öppnar timern som ett vanligt fönster, så att du kan dela bara det fönstret via skärmdelning eller AirPlay.";
+"guide.timers.5" = "Temaknappen växlar mellan ljust, mörkt och Kameleont, som anpassar sig efter skärmen bakom. Kameleont behöver tillstånd för skärminspelning.";
+"guide.timers.6" = "Musikfältet spelar bakgrundsmusik medan du förbereder dig. Spåren lägger du själv i en mapp.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Växla mellan fokus- och pauspass tills du slutar.";
+"guide.pomodoro.1" = "Skriv fokus- och paustid med snedstreck, som 25/5 eller 50m/10m, för att starta en pomodoro.";
+"guide.pomodoro.2" = "En annan signal ljuder vid varje växling, och widgeten blir röd vid fokus och grön vid paus.";
+"guide.pomodoro.3" = "Tryck på ⌘⌃B var som helst för att starta 25 minuters fokus med 5 minuters pauser.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Ditt manus rullar i jämn takt så att du kan läsa medan du tittar in i kameran.";
+"guide.teleprompter.1" = "Kopiera ditt manus och tryck på ⌘⌃P för att öppna det i teleprompter. Med pennan redigerar du det där.";
+"guide.teleprompter.2" = "Tryck på Spela upp för att börja rulla. Den stannar av sig själv i slutet av manuset.";
+"guide.teleprompter.3" = "Spegla vänder texten för teleprompterutrustning med reflekterande glas.";
+"guide.teleprompter.4" = "Hastighet, textstorlek och spegling kommer ihåg till nästa gång.";
+"guide.remote.title" = "iPhone-fjärrkontroll";
+"guide.remote.summary" = "Starta och stoppa timers från din iPhone när du står på scen.";
+"guide.remote.1" = "Hämta Remote Controller for Sticky från App Store på din iPhone.";
+"guide.remote.2" = "Välj den här Macen i appen och ange den fyrsiffriga koden från menyraden ▸ Fjärrkontroll.";
+"guide.remote.3" = "Din iPhone och Mac måste vara på samma Wi‑Fi. Efter första gången ansluter de utan kod.";
+"guide.remote.4" = "Flera fjärrkontroller kan styra en Mac, så både talaren och scenansvarig kan använda den.";
+"guide.shortcuts.title" = "Kortkommandon";
+"guide.shortcuts.summary" = "De fungerar överallt, även när ett annat program ligger överst eller du presenterar.";
+"guide.shortcuts.taken" = "Används av ett annat program";
+"guide.shortcuts.note" = "Håll ned Kommando (⌘) och Control (⌃) samtidigt. Ett kortkommando märkt ”Används av ett annat program” fungerar igen när det programmet avslutas.";
+"guide.support" = "Supportsida";
+"guide.next" = "Nästa";
+"guide.done" = "Kom igång";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone-fjärrkontrollen är tillfälligt otillgänglig";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Välkommen till StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter bor i din menyrad";
+"onboarding.menubar.body" = "Det finns ingen ikon i Dock. Lappar, timers, teleprompter och inställningar finns i lappikonen uppe till höger på skärmen.";
+"onboarding.menubar.icon" = "Leta efter den här ikonen i menyraden";
+"onboarding.hotkeys.title" = "Tangenter som fungerar under ditt framträdande";
+"onboarding.hotkeys.body" = "De här kortkommandona fungerar även när Keynote eller PowerPoint är i helskärm, utan att du lämnar bilderna.";
+"onboarding.launch.title" = "Redo innan du presenterar";
+"onboarding.launch.body" = "Öppna StickyPresenter vid inloggning så att dina lappar och timers redan väntar när du går upp på scen.";
+"onboarding.launch.later" = "Du kan ändra det när som helst i Inställningar.";
+"onboarding.back" = "Tillbaka";
+"onboarding.openGuide" = "Öppna användarguiden";
+"onboarding.start" = "Kom igång";
+"onboarding.page" = "Sida %d av %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro på en rad";
+"tip.pomodoro.message" = "Skriv 25/5 för 25 minuters fokus och 5 minuters paus, om och om igen tills du slutar.";
+"tip.pomodoro.try" = "Prova 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Starta timer";
+"intent.timer.description" = "Startar en nedräkningstimer som svävar över dina bilder.";
+"intent.timer.minutes" = "Minuter";
+"intent.timer.summary ${minutes}" = "Starta en timer på ${minutes} minuter";
+"intent.timer.short" = "Starta timer";
+"intent.pomodoro.title" = "Starta pomodoro";
+"intent.pomodoro.description" = "Startar en pomodoro-timer med 25 minuters fokus och 5 minuters paus.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Ny lapp";
+"intent.note.description" = "Lägger till en ny lapp på skärmen.";
+"intent.note.short" = "Ny lapp";
+"intent.timers.title" = "Visa timers";
+"intent.timers.description" = "Öppnar timerpanelen.";
+"intent.timers.short" = "Timers";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Bättre stöd för VoiceOver";
+"roadmap.a11y.voiceover.detail" = "VoiceOver läser upp varje lapp och knapp i en vettig ordning.";
+"roadmap.a11y.contrast.title" = "Färger som är lättare att se";
+"roadmap.a11y.contrast.detail" = "Lappfärgerna är fortfarande lätta att skilja åt, även med Öka kontrasten eller färgblindhet.";
+"roadmap.a11y.motion.title" = "Minskad rörelse";
+"roadmap.a11y.motion.detail" = "När Minska rörelser är på blir animationerna lugnare.";
+"roadmap.lang.more.title" = "Fler språk";
+"roadmap.lang.more.detail" = "Använd appen på fler språk, inte bara engelska och koreanska.";
+"roadmap.whatsnew.title" = "Nyheter";
+"roadmap.whatsnew.detail" = "Efter en uppdatering ser du vad som är nytt första gången du öppnar appen.";
+"roadmap.feedback.reply.title" = "Svar på din feedback";
+"roadmap.feedback.reply.detail" = "Läs våra svar på din feedback direkt i appen.";
+"roadmap.sync.icloud.title" = "Lappar på alla dina Mac-datorer";
+"roadmap.sync.icloud.detail" = "Fortsätt med samma lappar på dina andra Mac-datorer via iCloud.";
+"roadmap.backup.title" = "Exportera och importera lappar";
+"roadmap.backup.detail" = "Spara dina lappar i en fil och läs in dem igen på en annan Mac.";
+"roadmap.notifications.title" = "Timervarningar";
+"roadmap.notifications.detail" = "Få en avisering när en timer tar slut, även när du är i ett annat program.";
