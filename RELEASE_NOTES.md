@@ -120,6 +120,12 @@ Lihat balasan atas masukan Anda
 Masukan kini menanyakan kejadiannya
 Privasi dan dukungan ada di Pengaturan
 
+### 앱스토어 (노르웨이어(보크몰))
+
+Se svar på tilbakemeldingen din
+Tilbakemelding spør nå hva som skjedde
+Personvern og støtte i Innstillinger
+
 ## 1.1.0
 
 ### 앱스토어 (한국어)

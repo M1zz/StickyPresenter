@@ -1,0 +1,7 @@
+"widget.displayName" = "Presentasjonstidtaker";
+"widget.description" = "Viser gjenstående tid på den pågående presentasjonstidtakeren.";
+"widget.empty" = "Ingen tidtaker går";
+"widget.total" = "Totalt %@";
+"widget.finished" = "%@ · Ferdig";
+"widget.running" = "%@ · Går";
+"widget.paused" = "%@ · Pauset";

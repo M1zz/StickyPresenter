@@ -1485,6 +1485,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 노르웨이어(보크몰) (nb)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Notater og tidtaker til talen
+
+### 프로모션 텍스트
+
+Ha manuset og nedtellingen svevende over Keynote i fullskjerm. Notatene lagres automatisk, og en innebygd veiledning viser deg hver funksjon.
+
+### 설명
+
+Når du presenterer, er de to tingene du trenger mest også de vanskeligste å se: manuset og klokken. StickyPresenter holder begge svevende over alt som er på skjermen, også Keynote i fullskjerm, så du aldri må forlate lysbildene for å ta en titt.
+
+Appen bor stille i menylinjen: ikke noe ikon i Dock og ingen ekstra vinduer å holde styr på.
+
+SVEVENDE NOTATER
+• Blir liggende øverst på presentasjoner i fullskjerm, dit et vanlig vindu ikke følger
+• Seks farger, med justerbar gjennomsiktighet og skriftstørrelse
+• Lås et notat slik at et uheldig klikk ikke endrer det midt i innlegget
+• Gjør innholdet på utklippstavlen om til et nytt notat med én gang
+• Lagres mens du skriver og åpnes akkurat der du forlot dem
+• Lukket du et notat ved en feil? Åpne det igjen fra menyen
+
+NEDTELLINGSTIDTAKERE
+• Firkantede widgeter du kan gjøre så store at de kan leses fra bakerste rad
+• Temaene System, Lys og Mørk, pluss Kameleon som tilpasser seg skjermen bak
+• Blir rød når tiden går mot slutten, og ved slutt lyder en tone og kanten blinker
+• Åpne en hvilken som helst tidtaker i sitt eget vindu og del bare det vinduet via skjermdeling eller AirPlay
+• Skriv tiden slik du tenker den, som 5:30 eller 1h 20m. Skriv 25/5 for en pomodoro som veksler mellom fokus og pause
+• En widget i Varslingssenter holder nedtellingen innen synsvidde
+
+TELEPROMPTER
+• Jevn automatisk rulling med justerbar hastighet og skriftstørrelse
+• Speilmodus for teleprompter-utstyr med reflekterende glass
+• Stopper av seg selv på slutten av manuset og husker innstillingene dine
+
+BAKGRUNNSMUSIKK
+• Fire stemninger: Fokus, Ro, Jazz og Energi
+• Starter og stopper sammen med tidtakeren, med myk inn- og uttoning
+• Sporene er dine egne: Appen lager en mappe for hver stemning og spiller alt du legger i den
+
+SNARVEIER SOM VIRKER OVERALT
+• Snarveiene med Kommando-Control åpner notater, tidtakere og teleprompter selv når en annen app er foran
+• Krever ingen tilgang til tilgjengelighet
+
+ENKELT Å KOMME I GANG
+• En innebygd veiledning åpnes ved første oppstart og er alltid ett klikk unna i Hjelp-menyen
+• Valg om å åpne ved pålogging, slik at du er klar før hvert innlegg
+
+IPHONE-FJERNKONTROLL (EGEN GRATIS APP)
+Under et innlegg er Macen utenfor rekkevidde. Remote Controller for Sticky legger tidtakeren i hånden din: start og pause, legg til eller trekk fra 30 sekunder, endre widgetens størrelse og tema, eller flytt en widget som skjuler et lysbilde. Paringen skjer med en firesifret kode: selv i et rom fullt av Mac-er snakker fjernkontrollen bare med din.
+
+PERSONVERN
+Ingen konto, ingen reklame. Notatene og manusene dine forlater aldri Macen. Bortsett fra anonym bruksstatistikk kobler appen seg bare til internett når du selv velger å sende tilbakemelding fra Innstillinger, og den snakker med iPhone-fjernkontrollen via en direkte, kryptert forbindelse på det lokale nettverket ditt.
+
+Krever macOS 14 eller nyere.
+
+### 키워드
+
+presentasjon,lysbilder,foredrag,taler,pomodoro,konferanse,undervisning,stoppeklokke,manus,øving
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

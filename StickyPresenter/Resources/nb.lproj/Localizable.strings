@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Nytt notat";
+"menu.newFromClipboard" = "📋 Nytt fra utklippstavlen";
+"menu.teleprompter" = "📺 Teleprompter-modus";
+"menu.timers" = "⏱ Tidtakere";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Vis alle notater";
+"menu.hideAll" = "🙈 Skjul alle notater";
+"menu.defaultColor" = "🎨 Standardfarge";
+"menu.removeAll" = "🗑 Fjern alle notater";
+"menu.remote" = "📱 Fjernkontroll";
+"menu.contact.email" = "✉️ E-post (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 Instagram-melding (@lee25_ios)";
+"menu.quit" = "Avslutt StickyPresenter";
+
+"color.yellow" = "🟡 Gul";
+"color.pink" = "🩷 Rosa";
+"color.green" = "🟢 Grønn";
+"color.blue" = "🔵 Blå";
+"color.purple" = "🟣 Lilla";
+"color.orange" = "🟠 Oransje";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Paringskode:   %@";
+"remote.none" = "Ingen fjernkontroll tilkoblet";
+"remote.connected" = "Tilkoblede fjernkontroller: %d";
+"remote.newCode" = "Ny paringskode";
+"remote.forget" = "Glem parede fjernkontroller";
+"remote.forget.count" = "Glem parede fjernkontroller (%d)";
+"remote.forget.title" = "Glemme alle parede fjernkontroller?";
+"remote.forget.message" = "Tilkoblede fjernkontroller blir frakoblet og må skrive inn paringskoden på nytt.";
+"remote.forget.confirm" = "Glem";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Avbryt";
+"alert.removeAll.title" = "Fjerne alle notater?";
+"alert.removeAll.message" = "Alle notater lukkes. Notater med tekst kan hentes tilbake med «Åpne lukket notat igjen» i menyen.";
+"alert.removeAll.confirm" = "Fjern alle";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Veiledning for StickyPresenter\n\n📌 Dra for å flytte et notat\n🖱 Hold musepekeren over for å vise knappene\n🎨 Juster farge · gjennomsiktighet · skriftstørrelse\n🔒 Låseknappen hindrer redigering\n\n⌘⌃N  Nytt notat\n⌘⌃T  Åpne tidtakere\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Vis alle notater\n⌘⌃H  Skjul alle notater\n\n💡 Du kan også lage et notat\n   rett fra tidtakerens knapper!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Lim inn manuset her ...\n\nTeleprompteren ruller teksten automatisk.\n\nBruk knappene til å justere hastighet og skriftstørrelse.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Forhåndsvisning";
+"Edit text" = "Rediger tekst";
+"Mirror text (for teleprompter glass)" = "Speilvend tekst (for teleprompterglass)";
+"Font" = "Skrift";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Lås redigering";
+"Unlock editing" = "Lås opp redigering";
+"Empty note" = "Tomt notat";
+"note.charCount" = "%d tegn";
+"note.opacity" = "Opasitet: %d %%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Tidtaker";
+"window.timer.named" = "Tidtaker – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Nytt notat";
+"Quick Start" = "Hurtigstart";
+"No timers" = "Ingen tidtakere";
+"Tap a preset or enter a time" = "Trykk på en forhåndsinnstilling eller skriv inn en tid";
+"Show" = "Vis";
+"Hide" = "Skjul";
+"Show / hide widget" = "Vis/skjul widget";
+"Align" = "Juster";
+"Align widget next to the panel" = "Plasser widgeten ved siden av panelet";
+"Window" = "Vindu";
+"Open in a window (screen share / AirPlay)" = "Åpne i et vindu (skjermdeling / AirPlay)";
+"Delete timer" = "Slett tidtaker";
+"Reuse this timer with another duration" = "Bruk denne tidtakeren på nytt med en annen varighet";
+"Add Timer" = "Legg til tidtaker";
+"Drag to resize" = "Dra for å endre størrelse";
+"Close" = "Lukk";
+"timer.theme" = "Tema: %@";
+"timer.widgetSize" = "Widget-størrelse: %@ (%d pt)";
+"timer.restartAs" = "Start denne tidtakeren på nytt som %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "System";
+"theme.light" = "Lys";
+"theme.dark" = "Mørk";
+"theme.chameleon" = "Kameleon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Fokus";
+"pomodoro.break" = "Pause";
+"preview.pomodoro" = "↻ Fokus %1$@ · Pause %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d t";
+"unit.min" = "%d min";
+"unit.sec" = "%d sek";
+"unit.zeroSec" = "0 sek";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Rediger hurtigvalg";
+"Quick Presets" = "Hurtigvalg";
+"Reset" = "Tilbakestill";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Samme format som i inntastingsfeltet —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Legg til hurtigvalg";
+"Add a preset" = "Legg til et hurtigvalg";
+"No readable preset — buttons stay hidden" = "Ingen lesbare hurtigvalg – knappene forblir skjult";
+"Remove preset" = "Fjern hurtigvalg";
+"Keep at least one preset" = "Behold minst ett hurtigvalg";
+"preset.restore" = "Gjenopprett %@";
+"preset.max" = "Opptil %d hurtigvalg";
+
+/* ===== Music ===== */
+"mood.focus" = "Fokus";
+"mood.calm" = "Ro";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Energi";
+"mood.focus.hint" = "Jevn instrumentalmusikk – til dypt arbeid og øving";
+"mood.calm.hint" = "Ambient og pianosolo – for å roe ned før et innlegg";
+"mood.jazz.hint" = "Kafé-jazz og bossa nova – for avslappede rom og samtaler";
+"mood.upbeat.hint" = "Lett pop og funk – til oppvarming og pauser";
+"Play music" = "Spill av musikk";
+"Pause music" = "Sett musikken på pause";
+"Next Track" = "Neste spor";
+"Play With Timer" = "Spill av med tidtaker";
+"Refresh" = "Oppdater";
+"music.empty" = "Ingen spor – legg lydfiler i mappen %@";
+"music.openFolder" = "Åpne mappen %@";
+"music.count.one" = "%1$d spor · %2$@";
+"music.count.other" = "%1$d spor · %2$@";
+"music.chip.none" = " (ingen spor)";
+"music.chip.one" = " · %d spor";
+"music.chip.other" = " · %d spor";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Innstillinger";
+"settings.support" = "Støtte";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Tidtakere";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Åpne lukket notat igjen";
+"menu.help" = "❓ Hjelp";
+"menu.guide" = "📖 Brukerveiledning";
+"menu.supportSite" = "🌐 Åpne støttesiden";
+"menu.settings" = "⚙️ Innstillinger …";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "De lagrede notatene kunne ikke leses";
+"alert.notesCorrupt.message" = "Notatfilen er skadet, så StickyPresenter starter tomt. Originalfilen ble beholdt som %@. Hvis du trenger å gjenopprette den, send den til utvikleren.";
+"alert.notesCorrupt.reveal" = "Vis i Finder";
+"window.guide" = "Brukerveiledning for StickyPresenter";
+"settings.general" = "Generelt";
+"settings.launchAtLogin" = "Åpne ved pålogging";
+"settings.launchAtLogin.failed" = "Kunne ikke endre påloggingsobjektet: %@";
+"settings.launchAtLogin.approval" = "Tillat StickyPresenter i Systeminnstillinger ▸ Generelt ▸ Påloggingsobjekter.";
+"settings.defaultColor" = "Farge på nye notater";
+"settings.help" = "Hjelp";
+"settings.showGuide" = "Åpne brukerveiledningen";
+"settings.openSupport" = "Åpne støttesiden";
+"settings.revealNotes" = "Vis notatfilen";
+"settings.revealNotes.help" = "Notatene lagres bare på denne Macen. Bruk denne filen til å ta sikkerhetskopi eller flytte dem til en annen Mac.";
+"settings.version" = "Versjon";
+"colorName.yellow" = "Gul";
+"colorName.pink" = "Rosa";
+"colorName.green" = "Grønn";
+"colorName.blue" = "Blå";
+"colorName.purple" = "Lilla";
+"colorName.orange" = "Oransje";
+"note.close" = "Lukk notat";
+"note.close.help" = "Lukk notat (hent det tilbake med «Åpne lukket notat igjen» i menyen)";
+"note.color.help" = "Endre notatfarge";
+"note.opacity.help" = "Juster opasitet";
+"note.fontSmaller" = "Mindre tekst";
+"note.fontLarger" = "Større tekst";
+"teleprompter.close" = "Lukk teleprompteren";
+"teleprompter.rewind" = "Tilbake til start";
+"teleprompter.play" = "Spill av";
+"teleprompter.pause" = "Pause";
+"teleprompter.speed" = "Rullehastighet";
+"timer.inputHelp.tooltip" = "Vis inntastingsformater";
+"timer.inputHelp.title" = "Du kan skrive";
+"timer.inputHelp.minutes" = "Et tall betyr minutter (10 min)";
+"timer.inputHelp.colon" = "Minutter:sekunder (5 min 30 sek)";
+"timer.inputHelp.hms" = "Timer:minutter:sekunder";
+"timer.inputHelp.units" = "Med enheter (1 t 20 min)";
+"timer.inputHelp.seconds" = "Sekunder (45 sek)";
+"timer.inputHelp.pomodoro" = "Pomodoro-syklus med fokus/pause";
+"timer.inputHelp.footer" = "Klikk på et eksempel for å fylle det inn. Tidtakere kan vare opptil 99:59:59.";
+"chameleon.permission.title" = "Kameleon trenger tillatelse til skjermopptak";
+"chameleon.permission.message" = "Kameleon leser fargen på skjermen rett bak tidtakeren én gang i sekundet og tilpasser bakgrunnen. Bildet brukes bare til å regne ut en farge og lagres eller sendes aldri noe sted.\n\nHvis du fortsetter, spør macOS om tillatelse. Hvis du har avslått tidligere, slår du på StickyPresenter i Systeminnstillinger.";
+"chameleon.permission.continue" = "Fortsett";
+"chameleon.permission.openSettings" = "Åpne Systeminnstillinger";
+"chameleon.permission.skip" = "Hopp over";
+"hotkey.newNote" = "Nytt notat";
+"hotkey.noteFromClipboard" = "Nytt notat fra utklippstavlen";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Vis eller skjul tidtakere";
+"hotkey.pomodoro" = "Start pomodoro (25/5)";
+"hotkey.showNotes" = "Vis alle notater";
+"hotkey.hideNotes" = "Skjul alle notater";
+"guide.welcome.title" = "Kom i gang";
+"guide.welcome.summary" = "StickyPresenter gir deg notater, tidtakere og en teleprompter som svever over Keynote, også i fullskjerm.";
+"guide.welcome.1" = "Alle vinduer svever over lysbilder i fullskjerm uten å ta fokus fra presentasjonsappen din.";
+"guide.welcome.2" = "Alt ligger i notatikonet i menylinjen. Det er ikke noe ikon i Dock.";
+"guide.welcome.3" = "Notater lagres på denne Macen mens du skriver, og kommer tilbake på samme sted neste gang.";
+"guide.welcome.4" = "Åpne denne veiledningen igjen når som helst fra menylinjen ▸ Hjelp ▸ Brukerveiledning.";
+"guide.notes.title" = "Lapper";
+"guide.notes.summary" = "Fest manuset eller påminnelsene dine oppå lysbildene.";
+"guide.notes.1" = "Dra hvor som helst på et notat for å flytte det. Dra i kanten for å endre størrelse.";
+"guide.notes.2" = "Hold musepekeren over et notat for å vise knappene for farge, opasitet og tekststørrelse.";
+"guide.notes.3" = "Lås et notat slik at ingenting endres ved et uhell mens du presenterer.";
+"guide.notes.4" = "Lukket du et notat ved en feil? «Åpne lukket notat igjen» i menyen henter tilbake de siste 20.";
+"guide.notes.5" = "Kopier manuset og trykk ⌘⌃V for å gjøre det til et nytt notat.";
+"guide.timers.title" = "Tidtakere";
+"guide.timers.summary" = "Hold oversikt over tiden med en liten widget i hjørnet.";
+"guide.timers.1" = "Skriv inn en tid i Tidtakere-vinduet og trykk Retur. Spørsmålstegnet ved siden av feltet viser formatene.";
+"guide.timers.2" = "Når det ikke finnes noen tidtakere, starter ett klikk på en Hurtigstart-knapp en. Bruk blyanten for å endre tidene.";
+"guide.timers.3" = "Vis/Skjul og Juster skjuler en widget eller stiller widgeter opp ved siden av Tidtakere-vinduet.";
+"guide.timers.4" = "Vindu åpner tidtakeren som et vanlig vindu, slik at du kan dele bare det vinduet via skjermdeling eller AirPlay.";
+"guide.timers.5" = "Temaknappen bytter mellom lys, mørk og Kameleon, som tilpasser seg skjermen bak. Kameleon trenger tillatelse til skjermopptak.";
+"guide.timers.6" = "Musikklinjen spiller bakgrunnsmusikk mens du forbereder deg. Du legger inn sporene selv i en mappe.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Veksle mellom fokus- og pauseøkter helt til du stopper.";
+"guide.pomodoro.1" = "Skriv fokus- og pausetid med skråstrek, som 25/5 eller 50m/10m, for å starte en pomodoro.";
+"guide.pomodoro.2" = "En ny lyd spilles ved hvert bytte, og widgeten blir rød ved fokus og grønn ved pause.";
+"guide.pomodoro.3" = "Trykk ⌘⌃B hvor som helst for å starte 25 minutters fokus med 5 minutters pauser.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Manuset ruller i jevnt tempo slik at du kan lese mens du ser inn i kameraet.";
+"guide.teleprompter.1" = "Kopier manuset og trykk ⌘⌃P for å åpne det i teleprompteren. Bruk blyanten for å redigere det der.";
+"guide.teleprompter.2" = "Trykk Spill av for å starte rullingen. Den stopper av seg selv på slutten av manuset.";
+"guide.teleprompter.3" = "Speilvend snur teksten for teleprompter-utstyr med reflekterende glass.";
+"guide.teleprompter.4" = "Hastighet, tekststørrelse og speilvending huskes til neste gang.";
+"guide.remote.title" = "iPhone-fjernkontroll";
+"guide.remote.summary" = "Start og stopp tidtakere fra iPhone mens du står på scenen.";
+"guide.remote.1" = "Hent Remote Controller for Sticky fra App Store på iPhone.";
+"guide.remote.2" = "Velg denne Macen i appen, og skriv inn den firesifrede koden fra menylinjen ▸ Fjernkontroll.";
+"guide.remote.3" = "iPhone og Mac må være på samme Wi‑Fi. Etter første gang kobler de seg til uten kode.";
+"guide.remote.4" = "Flere fjernkontroller kan styre én Mac, slik at både taleren og scenearbeideren kan bruke den.";
+"guide.shortcuts.title" = "Snarveier";
+"guide.shortcuts.summary" = "De virker overalt, selv når en annen app er foran eller du presenterer.";
+"guide.shortcuts.taken" = "Brukes av en annen app";
+"guide.shortcuts.note" = "Hold Kommando (⌘) og Control (⌃) inne samtidig. En snarvei merket «Brukes av en annen app» virker igjen når den appen avsluttes.";
+"guide.support" = "Støtteside";
+"guide.next" = "Neste";
+"guide.done" = "Kom i gang";
+
+/* Remote kill switch */
+"remote.unavailable" = "iPhone-fjernkontrollen er midlertidig utilgjengelig";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Velkommen til StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter bor i menylinjen din";
+"onboarding.menubar.body" = "Det er ikke noe ikon i Dock. Notater, tidtakere, teleprompter og innstillinger ligger i notatikonet øverst til høyre på skjermen.";
+"onboarding.menubar.icon" = "Se etter dette ikonet i menylinjen";
+"onboarding.hotkeys.title" = "Taster som virker under innlegget ditt";
+"onboarding.hotkeys.body" = "Disse snarveiene virker selv når Keynote eller PowerPoint er i fullskjerm, uten at du forlater lysbildene.";
+"onboarding.launch.title" = "Klar før du presenterer";
+"onboarding.launch.body" = "Åpne StickyPresenter ved pålogging, så notater og tidtakere venter på deg når du går på scenen.";
+"onboarding.launch.later" = "Du kan endre dette når som helst i Innstillinger.";
+"onboarding.back" = "Tilbake";
+"onboarding.openGuide" = "Åpne brukerveiledningen";
+"onboarding.start" = "Kom i gang";
+"onboarding.page" = "Side %d av %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro på én linje";
+"tip.pomodoro.message" = "Skriv 25/5 for 25 minutters fokus og 5 minutters pause, om og om igjen til du stopper.";
+"tip.pomodoro.try" = "Prøv 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Start tidtaker";
+"intent.timer.description" = "Starter en nedtellingstidtaker som svever over lysbildene dine.";
+"intent.timer.minutes" = "Minutter";
+"intent.timer.summary ${minutes}" = "Start en tidtaker på ${minutes} minutter";
+"intent.timer.short" = "Start tidtaker";
+"intent.pomodoro.title" = "Start pomodoro";
+"intent.pomodoro.description" = "Starter en pomodoro-tidtaker med 25 minutters fokus og 5 minutters pause.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Nytt notat";
+"intent.note.description" = "Legger til et nytt notat på skjermen.";
+"intent.note.short" = "Nytt notat";
+"intent.timers.title" = "Vis tidtakere";
+"intent.timers.description" = "Åpner tidtakerpanelet.";
+"intent.timers.short" = "Tidtakere";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Bedre støtte for VoiceOver";
+"roadmap.a11y.voiceover.detail" = "VoiceOver leser opp hvert notat og hver knapp i en fornuftig rekkefølge.";
+"roadmap.a11y.contrast.title" = "Farger som er lettere å se";
+"roadmap.a11y.contrast.detail" = "Notatfargene er fortsatt lette å skille, også med Øk kontrast eller fargeblindhet.";
+"roadmap.a11y.motion.title" = "Redusert bevegelse";
+"roadmap.a11y.motion.detail" = "Når Reduser bevegelse er på, blir animasjonene roligere.";
+"roadmap.lang.more.title" = "Flere språk";
+"roadmap.lang.more.detail" = "Bruk appen på flere språk, ikke bare engelsk og koreansk.";
+"roadmap.whatsnew.title" = "Hva er nytt";
+"roadmap.whatsnew.detail" = "Etter en oppdatering ser du hva som er nytt første gang du åpner appen.";
+"roadmap.feedback.reply.title" = "Svar på tilbakemeldingen din";
+"roadmap.feedback.reply.detail" = "Les svarene våre på tilbakemeldingen din rett i appen.";
+"roadmap.sync.icloud.title" = "Notater på alle Macene dine";
+"roadmap.sync.icloud.detail" = "Fortsett med de samme notatene på de andre Macene dine via iCloud.";
+"roadmap.backup.title" = "Eksporter og importer notater";
+"roadmap.backup.detail" = "Lagre notatene dine i en fil og last dem inn igjen på en annen Mac.";
+"roadmap.notifications.title" = "Tidtakervarsler";
+"roadmap.notifications.detail" = "Få et varsel når en tidtaker er ferdig, selv når du er i en annen app.";
