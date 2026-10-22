@@ -1,0 +1,7 @@
+"widget.displayName" = "Timer Presentasi";
+"widget.description" = "Menampilkan sisa waktu timer presentasi yang sedang berjalan.";
+"widget.empty" = "Tidak ada timer yang berjalan";
+"widget.total" = "Total %@";
+"widget.finished" = "%@ · Selesai";
+"widget.running" = "%@ · Berjalan";
+"widget.paused" = "%@ · Dijeda";

@@ -1407,6 +1407,84 @@ https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 https://m1zz.github.io/StickyPresenter/en/
 
+## 인도네시아어 (id)
+
+### 이름
+
+StickyPresenter
+
+### 부제
+
+Catatan & timer presentasi
+
+### 프로모션 텍스트
+
+Tampilkan naskah dan hitung mundur di atas Keynote layar penuh. Catatan tersimpan otomatis, dan panduan bawaan memperkenalkan setiap fitur.
+
+### 설명
+
+Saat presentasi, dua hal yang paling Anda butuhkan justru paling sulit dilihat: naskah dan jam. StickyPresenter menjaga keduanya melayang di atas semua yang ada di layar, termasuk Keynote layar penuh, sehingga Anda tidak perlu meninggalkan slide untuk melihatnya.
+
+Aplikasi ini bekerja tenang di bilah menu: tanpa ikon di Dock, tanpa jendela tambahan yang harus diurus.
+
+CATATAN TEMPEL MELAYANG
+• Tetap di depan presentasi layar penuh, tempat jendela biasa tidak bisa mengikuti
+• Enam warna, dengan opasitas dan ukuran teks yang bisa diatur
+• Kunci catatan agar klik tak sengaja tidak mengubahnya di tengah presentasi
+• Ubah isi papan klip menjadi catatan baru seketika
+• Tersimpan saat Anda mengetik dan terbuka tepat di tempat terakhir Anda tinggalkan
+• Tak sengaja menutup catatan? Buka lagi dari menu
+
+TIMER HITUNG MUNDUR
+• Widget persegi yang bisa diperbesar hingga terbaca dari belakang ruangan
+• Tema Sistem, Terang, dan Gelap, plus Bunglon yang menyesuaikan dengan layar di belakangnya
+• Berubah merah saat waktu hampir habis, lalu berbunyi dan menyalakan bingkai berkedip saat selesai
+• Buka timer apa pun di jendela tersendiri dan bagikan hanya jendela itu lewat berbagi layar atau AirPlay
+• Ketik waktu sesuai cara Anda memikirkannya, seperti 5:30 atau 1h 20m. Ketik 25/5 untuk Pomodoro yang bergantian antara fokus dan istirahat
+• Widget Pusat Notifikasi menjaga hitung mundur tetap terlihat
+
+TELEPROMPTER
+• Gulir otomatis yang mulus, dengan kecepatan dan ukuran teks yang bisa diatur
+• Mode cermin untuk perangkat teleprompter berkaca pemantul
+• Berhenti sendiri di akhir naskah dan mengingat pengaturan Anda
+
+MUSIK LATAR
+• Empat suasana: Fokus, Tenang, Jazz, dan Ceria
+• Mulai dan berhenti bersama timer, dengan volume naik dan turun perlahan
+• Lagunya milik Anda: aplikasi membuat satu folder untuk tiap suasana dan memutar apa pun yang Anda taruh di dalamnya
+
+PINTASAN YANG BERFUNGSI DI MANA SAJA
+• Pintasan Command-Control membuka catatan, timer, dan teleprompter meski aplikasi lain berada di depan
+• Tidak memerlukan izin aksesibilitas
+
+MUDAH DIMULAI
+• Panduan bawaan terbuka saat pertama kali dijalankan dan selalu satu klik jauhnya di menu Bantuan
+• Opsi membuka saat login agar Anda siap sebelum setiap presentasi
+
+REMOTE iPhone (APLIKASI GRATIS TERPISAH)
+Saat presentasi, Mac berada di luar jangkauan. Remote Controller for Sticky menaruh timer di tangan Anda: mulai dan jeda, tambah atau kurangi 30 detik, ubah ukuran dan tema widget, atau geser widget yang menutupi slide. Pemasangan memakai kode empat digit: bahkan di ruangan penuh Mac, remote hanya terhubung ke Mac Anda.
+
+PRIVASI
+Tanpa akun, tanpa iklan. Catatan dan naskah Anda tidak pernah meninggalkan Mac. Selain statistik penggunaan anonim, aplikasi hanya terhubung ke internet saat Anda memilih mengirim masukan dari Pengaturan, dan berkomunikasi dengan remote iPhone lewat koneksi langsung terenkripsi di jaringan lokal Anda.
+
+Membutuhkan macOS 14 atau lebih baru.
+
+### 키워드
+
+slide,pidato,pembicara,pomodoro,seminar,konferensi,kuliah,naskah,latihan,stopwatch,pengingat
+
+### 지원 URL
+
+https://m1zz.github.io/StickyPresenter/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StickyPresenter/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StickyPresenter/en/
+
 ## 연령 등급
 
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.

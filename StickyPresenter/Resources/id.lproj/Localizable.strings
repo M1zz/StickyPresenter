@@ -1,0 +1,304 @@
+/* ===== Menu bar ===== */
+"menu.newNote" = "📌 Catatan Baru";
+"menu.newFromClipboard" = "📋 Baru dari Papan Klip";
+"menu.teleprompter" = "📺 Mode Teleprompter";
+"menu.timers" = "⏱ Timer";
+"menu.pomodoro" = "🍅 Pomodoro (25/5)";
+"menu.showAll" = "👁 Tampilkan Semua Catatan";
+"menu.hideAll" = "🙈 Sembunyikan Semua Catatan";
+"menu.defaultColor" = "🎨 Warna Default";
+"menu.removeAll" = "🗑 Hapus Semua Catatan";
+"menu.remote" = "📱 Remote";
+"menu.contact.email" = "✉️ Email (leeo@kakao.com)";
+"menu.contact.instagram" = "📷 DM Instagram (@lee25_ios)";
+"menu.quit" = "Keluar dari StickyPresenter";
+
+"color.yellow" = "🟡 Kuning";
+"color.pink" = "🩷 Merah Muda";
+"color.green" = "🟢 Hijau";
+"color.blue" = "🔵 Biru";
+"color.purple" = "🟣 Ungu";
+"color.orange" = "🟠 Oranye";
+
+/* ===== Remote submenu ===== */
+"remote.pairingCode" = "Kode Pemasangan:   %@";
+"remote.none" = "Tidak ada remote yang terhubung";
+"remote.connected" = "Remote yang terhubung: %d";
+"remote.newCode" = "Kode Pemasangan Baru";
+"remote.forget" = "Lupakan Remote yang Dipasangkan";
+"remote.forget.count" = "Lupakan Remote yang Dipasangkan (%d)";
+"remote.forget.title" = "Lupakan semua remote yang dipasangkan?";
+"remote.forget.message" = "Remote yang terhubung akan diputuskan dan perlu memasukkan kode pemasangan lagi.";
+"remote.forget.confirm" = "Lupakan";
+
+/* ===== Alerts ===== */
+"alert.cancel" = "Batal";
+"alert.removeAll.title" = "Hapus semua catatan?";
+"alert.removeAll.message" = "Semua catatan akan ditutup. Catatan yang berisi teks dapat dikembalikan dengan “Buka Lagi Catatan yang Ditutup” di menu.";
+"alert.removeAll.confirm" = "Hapus Semua";
+
+/* ===== First-launch guide note ===== */
+"guide.note" = "👋 Panduan StickyPresenter\n\n📌 Seret untuk memindahkan catatan\n🖱 Arahkan kursor untuk menampilkan kontrol\n🎨 Atur warna · opasitas · ukuran font\n🔒 Tombol kunci mencegah pengeditan\n\n⌘⌃N  Catatan baru\n⌘⌃T  Buka timer\n⌘⌃B  Pomodoro (25/5)\n⌘⌃P  Teleprompter\n⌘⌃S  Tampilkan semua catatan\n⌘⌃H  Sembunyikan semua catatan\n\n💡 Anda juga bisa membuat catatan\n   langsung dari kontrol timer!";
+
+/* ===== Teleprompter ===== */
+"teleprompter.placeholder" = "Tempel naskah Anda di sini...\n\nTeleprompter akan menggulir teks secara otomatis.\n\nGunakan kontrol untuk mengatur kecepatan dan ukuran font.";
+"📺 TELEPROMPTER" = "📺 TELEPROMPTER";
+"Preview mode" = "Mode pratinjau";
+"Edit text" = "Edit teks";
+"Mirror text (for teleprompter glass)" = "Cerminkan teks (untuk kaca teleprompter)";
+"Font" = "Font";
+
+/* ===== Sticky note ===== */
+"Lock editing" = "Kunci pengeditan";
+"Unlock editing" = "Buka kunci pengeditan";
+"Empty note" = "Catatan kosong";
+"note.charCount" = "%d karakter";
+"note.opacity" = "Opasitas: %d%%";
+
+/* ===== Timer window titles ===== */
+"window.timer" = "Timer";
+"window.timer.named" = "Timer – %@";
+
+/* ===== Timer panel ===== */
+"New Sticky Note" = "Catatan Baru";
+"Quick Start" = "Mulai Cepat";
+"No timers" = "Tidak ada timer";
+"Tap a preset or enter a time" = "Ketuk preset atau masukkan waktu";
+"Show" = "Tampilkan";
+"Hide" = "Sembunyikan";
+"Show / hide widget" = "Tampilkan / sembunyikan widget";
+"Align" = "Ratakan";
+"Align widget next to the panel" = "Ratakan widget di samping panel";
+"Window" = "Jendela";
+"Open in a window (screen share / AirPlay)" = "Buka di jendela (berbagi layar / AirPlay)";
+"Delete timer" = "Hapus timer";
+"Reuse this timer with another duration" = "Pakai ulang timer ini dengan durasi lain";
+"Add Timer" = "Tambah Timer";
+"Drag to resize" = "Seret untuk mengubah ukuran";
+"Close" = "Tutup";
+"timer.theme" = "Tema: %@";
+"timer.widgetSize" = "Ukuran widget: %@ (%dpt)";
+"timer.restartAs" = "Mulai ulang timer ini sebagai %@";
+
+/* ===== Theme names ===== */
+"theme.system" = "Sistem";
+"theme.light" = "Terang";
+"theme.dark" = "Gelap";
+"theme.chameleon" = "Bunglon";
+
+/* ===== Pomodoro ===== */
+"pomodoro.focus" = "Fokus";
+"pomodoro.break" = "Istirahat";
+"preview.pomodoro" = "↻ Fokus %1$@ · Istirahat %2$@";
+"preview.duration" = "→ %@";
+"unit.hr" = "%d jam";
+"unit.min" = "%d mnt";
+"unit.sec" = "%d dtk";
+"unit.zeroSec" = "0 dtk";
+
+/* ===== Quick preset editor ===== */
+"Edit quick presets" = "Edit preset cepat";
+"Quick Presets" = "Preset Cepat";
+"Reset" = "Setel Ulang";
+"Same format as the input field —  5:30 · 1h 20m · 45s · 10" = "Format sama dengan kolom input —  5:30 · 1h 20m · 45s · 10";
+"Add preset" = "Tambah preset";
+"Add a preset" = "Tambah preset";
+"No readable preset — buttons stay hidden" = "Tidak ada preset yang terbaca — tombol tetap tersembunyi";
+"Remove preset" = "Hapus preset";
+"Keep at least one preset" = "Sisakan minimal satu preset";
+"preset.restore" = "Pulihkan %@";
+"preset.max" = "Maksimal %d preset";
+
+/* ===== Music ===== */
+"mood.focus" = "Fokus";
+"mood.calm" = "Tenang";
+"mood.jazz" = "Jazz";
+"mood.upbeat" = "Ceria";
+"mood.focus.hint" = "Instrumental stabil — untuk kerja mendalam dan latihan";
+"mood.calm.hint" = "Ambient dan piano solo — untuk menenangkan diri sebelum bicara";
+"mood.jazz.hint" = "Jazz kafe dan bossa nova — untuk ruangan santai dan penuh obrolan";
+"mood.upbeat.hint" = "Pop ringan dan funk — untuk pemanasan dan istirahat";
+"Play music" = "Putar musik";
+"Pause music" = "Jeda musik";
+"Next Track" = "Lagu Berikutnya";
+"Play With Timer" = "Putar Bersama Timer";
+"Refresh" = "Segarkan";
+"music.empty" = "Tidak ada lagu — tambahkan audio ke folder %@";
+"music.openFolder" = "Buka Folder %@";
+"music.count.one" = "%1$d lagu · %2$@";
+"music.count.other" = "%1$d lagu · %2$@";
+"music.chip.none" = " (tidak ada lagu)";
+"music.chip.one" = " · %d lagu";
+"music.chip.other" = " · %d lagu";
+
+/* ===== Settings / Support ===== */
+"settings.title" = "Pengaturan";
+"settings.support" = "Dukungan";
+
+/* ===== Timer panel title ===== */
+"window.timers" = "Timer";
+
+/* ===== 노트 저장 · 사용 가이드 · 설정 ===== */
+"menu.reopenClosed" = "↩️ Buka Lagi Catatan yang Ditutup";
+"menu.help" = "❓ Bantuan";
+"menu.guide" = "📖 Panduan Pengguna";
+"menu.supportSite" = "🌐 Buka Halaman Dukungan";
+"menu.settings" = "⚙️ Pengaturan…";
+"alert.ok" = "OK";
+"alert.notesCorrupt.title" = "Catatan tersimpan Anda tidak dapat dibaca";
+"alert.notesCorrupt.message" = "File catatan rusak, sehingga StickyPresenter dimulai dalam keadaan kosong. File aslinya disimpan sebagai %@. Jika perlu memulihkannya, kirimkan ke pengembang.";
+"alert.notesCorrupt.reveal" = "Tampilkan di Finder";
+"window.guide" = "Panduan Pengguna StickyPresenter";
+"settings.general" = "Umum";
+"settings.launchAtLogin" = "Buka saat login";
+"settings.launchAtLogin.failed" = "Tidak dapat mengubah item login: %@";
+"settings.launchAtLogin.approval" = "Izinkan StickyPresenter di Pengaturan Sistem ▸ Umum ▸ Item Login.";
+"settings.defaultColor" = "Warna catatan baru";
+"settings.help" = "Bantuan";
+"settings.showGuide" = "Buka Panduan Pengguna";
+"settings.openSupport" = "Buka Halaman Dukungan";
+"settings.revealNotes" = "Tampilkan File Catatan";
+"settings.revealNotes.help" = "Catatan hanya disimpan di Mac ini. Gunakan file ini untuk mencadangkannya atau memindahkannya ke Mac lain.";
+"settings.version" = "Versi";
+"colorName.yellow" = "Kuning";
+"colorName.pink" = "Merah Muda";
+"colorName.green" = "Hijau";
+"colorName.blue" = "Biru";
+"colorName.purple" = "Ungu";
+"colorName.orange" = "Oranye";
+"note.close" = "Tutup catatan";
+"note.close.help" = "Tutup catatan (kembalikan dengan “Buka Lagi Catatan yang Ditutup” di menu)";
+"note.color.help" = "Ubah warna catatan";
+"note.opacity.help" = "Atur opasitas";
+"note.fontSmaller" = "Teks lebih kecil";
+"note.fontLarger" = "Teks lebih besar";
+"teleprompter.close" = "Tutup teleprompter";
+"teleprompter.rewind" = "Kembali ke awal";
+"teleprompter.play" = "Putar";
+"teleprompter.pause" = "Jeda";
+"teleprompter.speed" = "Kecepatan gulir";
+"timer.inputHelp.tooltip" = "Tampilkan format input";
+"timer.inputHelp.title" = "Anda bisa mengetik";
+"timer.inputHelp.minutes" = "Angka berarti menit (10 mnt)";
+"timer.inputHelp.colon" = "Menit:detik (5 mnt 30 dtk)";
+"timer.inputHelp.hms" = "Jam:menit:detik";
+"timer.inputHelp.units" = "Dengan satuan (1 jam 20 mnt)";
+"timer.inputHelp.seconds" = "Detik (45 dtk)";
+"timer.inputHelp.pomodoro" = "Siklus Pomodoro fokus/istirahat";
+"timer.inputHelp.footer" = "Klik contoh untuk mengisinya. Timer bisa sampai 99:59:59.";
+"chameleon.permission.title" = "Bunglon memerlukan izin Perekaman Layar";
+"chameleon.permission.message" = "Bunglon membaca warna layar tepat di belakang timer sekali per detik dan menyesuaikan latar belakangnya. Gambar hanya dipakai untuk menentukan warna, tidak pernah disimpan atau dikirim ke mana pun.\n\nJika Anda lanjut, macOS akan meminta izin. Jika sebelumnya Anda menolak, aktifkan StickyPresenter di Pengaturan Sistem.";
+"chameleon.permission.continue" = "Lanjutkan";
+"chameleon.permission.openSettings" = "Buka Pengaturan Sistem";
+"chameleon.permission.skip" = "Lewati";
+"hotkey.newNote" = "Catatan baru";
+"hotkey.noteFromClipboard" = "Catatan baru dari papan klip";
+"hotkey.teleprompter" = "Teleprompter";
+"hotkey.timers" = "Tampilkan atau sembunyikan timer";
+"hotkey.pomodoro" = "Mulai Pomodoro (25/5)";
+"hotkey.showNotes" = "Tampilkan semua catatan";
+"hotkey.hideNotes" = "Sembunyikan semua catatan";
+"guide.welcome.title" = "Mulai Menggunakan";
+"guide.welcome.summary" = "StickyPresenter menghadirkan catatan, timer, dan teleprompter yang melayang di atas Keynote, bahkan dalam layar penuh.";
+"guide.welcome.1" = "Setiap jendela melayang di atas slide layar penuh tanpa merebut fokus dari aplikasi presentasi Anda.";
+"guide.welcome.2" = "Semuanya ada di ikon catatan pada bilah menu. Tidak ada ikon di Dock.";
+"guide.welcome.3" = "Catatan disimpan di Mac ini saat Anda mengetik dan kembali di tempat yang sama lain kali.";
+"guide.welcome.4" = "Buka panduan ini lagi kapan saja dari bilah menu ▸ Bantuan ▸ Panduan Pengguna.";
+"guide.notes.title" = "Catatan Tempel";
+"guide.notes.summary" = "Sematkan naskah atau pengingat Anda di atas slide.";
+"guide.notes.1" = "Seret di bagian mana pun pada catatan untuk memindahkannya. Seret tepinya untuk mengubah ukuran.";
+"guide.notes.2" = "Arahkan kursor ke catatan untuk menampilkan tombol warna, opasitas, dan ukuran teks.";
+"guide.notes.3" = "Kunci catatan agar tidak ada yang berubah tanpa sengaja saat Anda presentasi.";
+"guide.notes.4" = "Tidak sengaja menutup catatan? “Buka Lagi Catatan yang Ditutup” di menu mengembalikan 20 catatan terakhir.";
+"guide.notes.5" = "Salin naskah Anda lalu tekan ⌘⌃V untuk menjadikannya catatan baru.";
+"guide.timers.title" = "Timer";
+"guide.timers.summary" = "Pantau waktu dengan widget kecil di sudut layar.";
+"guide.timers.1" = "Ketik waktu di jendela Timer lalu tekan Return. Tanda tanya di sebelah kolom mencantumkan format yang bisa dipakai.";
+"guide.timers.2" = "Saat belum ada timer, sekali klik tombol Mulai Cepat langsung memulai satu timer. Pakai ikon pensil untuk mengubah waktunya.";
+"guide.timers.3" = "Tampilkan/Sembunyikan dan Ratakan menyembunyikan widget atau menata widget di samping jendela Timer.";
+"guide.timers.4" = "Jendela membuka timer sebagai jendela biasa, sehingga Anda bisa membagikan hanya jendela itu lewat berbagi layar atau AirPlay.";
+"guide.timers.5" = "Tombol tema bergantian antara terang, gelap, dan Bunglon, yang menyesuaikan dengan layar di belakangnya. Bunglon memerlukan izin Perekaman Layar.";
+"guide.timers.6" = "Bilah musik memutar musik latar saat Anda bersiap. Lagunya Anda tambahkan sendiri ke sebuah folder.";
+"guide.pomodoro.title" = "Pomodoro";
+"guide.pomodoro.summary" = "Bergantian antara sesi fokus dan istirahat sampai Anda berhenti.";
+"guide.pomodoro.1" = "Ketik waktu fokus dan istirahat dengan garis miring, seperti 25/5 atau 50m/10m, untuk memulai Pomodoro.";
+"guide.pomodoro.2" = "Nada berbeda berbunyi di setiap pergantian, dan widget menjadi merah saat fokus serta hijau saat istirahat.";
+"guide.pomodoro.3" = "Tekan ⌘⌃B di mana saja untuk memulai fokus 25 menit dengan istirahat 5 menit.";
+"guide.teleprompter.title" = "Teleprompter";
+"guide.teleprompter.summary" = "Naskah Anda bergulir dengan kecepatan tetap sehingga Anda bisa membaca sambil menghadap kamera.";
+"guide.teleprompter.1" = "Salin naskah lalu tekan ⌘⌃P untuk membukanya di teleprompter. Pakai ikon pensil untuk mengeditnya di sana.";
+"guide.teleprompter.2" = "Tekan Putar untuk mulai menggulir. Berhenti sendiri di akhir naskah.";
+"guide.teleprompter.3" = "Cermin membalik teks untuk perangkat teleprompter berkaca pemantul.";
+"guide.teleprompter.4" = "Kecepatan, ukuran teks, dan pencerminan diingat untuk lain kali.";
+"guide.remote.title" = "Remote iPhone";
+"guide.remote.summary" = "Mulai dan hentikan timer dari iPhone saat berada di panggung.";
+"guide.remote.1" = "Unduh Remote Controller for Sticky dari App Store di iPhone Anda.";
+"guide.remote.2" = "Pilih Mac ini di aplikasi, lalu masukkan kode empat digit dari bilah menu ▸ Remote.";
+"guide.remote.3" = "iPhone dan Mac harus berada di Wi‑Fi yang sama. Setelah pertama kali, keduanya terhubung tanpa kode.";
+"guide.remote.4" = "Beberapa remote dapat mengendalikan satu Mac, sehingga pembicara dan petugas panggung sama-sama bisa memakainya.";
+"guide.shortcuts.title" = "Pintasan";
+"guide.shortcuts.summary" = "Berfungsi di mana saja, bahkan saat aplikasi lain di depan atau Anda sedang presentasi.";
+"guide.shortcuts.taken" = "Dipakai aplikasi lain";
+"guide.shortcuts.note" = "Tahan Command (⌘) dan Control (⌃) bersamaan. Pintasan bertanda “Dipakai aplikasi lain” berfungsi lagi setelah aplikasi itu ditutup.";
+"guide.support" = "Halaman Dukungan";
+"guide.next" = "Berikutnya";
+"guide.done" = "Mulai";
+
+/* Remote kill switch */
+"remote.unavailable" = "Remote iPhone sementara tidak tersedia";
+
+/* Onboarding (first launch) */
+"onboarding.window" = "Selamat Datang di StickyPresenter";
+"onboarding.menubar.title" = "StickyPresenter ada di bilah menu Anda";
+"onboarding.menubar.body" = "Tidak ada ikon di Dock. Catatan, timer, teleprompter, dan pengaturan semuanya ada di ikon catatan di kanan atas layar.";
+"onboarding.menubar.icon" = "Cari ikon ini di bilah menu";
+"onboarding.hotkeys.title" = "Tombol yang berfungsi saat Anda bicara";
+"onboarding.hotkeys.body" = "Pintasan ini berfungsi bahkan saat Keynote atau PowerPoint dalam layar penuh, tanpa meninggalkan slide Anda.";
+"onboarding.launch.title" = "Siap sebelum presentasi";
+"onboarding.launch.body" = "Buka StickyPresenter saat login, supaya catatan dan timer sudah menunggu ketika Anda naik panggung.";
+"onboarding.launch.later" = "Anda bisa mengubahnya kapan saja di Pengaturan.";
+"onboarding.back" = "Kembali";
+"onboarding.openGuide" = "Buka Panduan Pengguna";
+"onboarding.start" = "Mulai Menggunakan";
+"onboarding.page" = "Halaman %d dari %d";
+
+/* Tips */
+"tip.pomodoro.title" = "Pomodoro dalam satu baris";
+"tip.pomodoro.message" = "Ketik 25/5 untuk fokus 25 menit dan istirahat 5 menit, berulang sampai Anda berhenti.";
+"tip.pomodoro.try" = "Coba 25/5";
+
+/* App Shortcuts */
+"intent.timer.title" = "Mulai Timer";
+"intent.timer.description" = "Memulai timer hitung mundur yang melayang di atas slide Anda.";
+"intent.timer.minutes" = "Menit";
+"intent.timer.summary ${minutes}" = "Mulai timer ${minutes} menit";
+"intent.timer.short" = "Mulai Timer";
+"intent.pomodoro.title" = "Mulai Pomodoro";
+"intent.pomodoro.description" = "Memulai timer Pomodoro dengan fokus 25 menit / istirahat 5 menit.";
+"intent.pomodoro.short" = "Pomodoro";
+"intent.note.title" = "Catatan Baru";
+"intent.note.description" = "Menambahkan catatan baru ke layar Anda.";
+"intent.note.short" = "Catatan Baru";
+"intent.timers.title" = "Tampilkan Timer";
+"intent.timers.description" = "Membuka panel timer.";
+"intent.timers.short" = "Timer";
+
+/* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
+"roadmap.a11y.voiceover.title" = "Dukungan VoiceOver yang lebih baik";
+"roadmap.a11y.voiceover.detail" = "VoiceOver membacakan setiap catatan dan tombol dalam urutan yang masuk akal.";
+"roadmap.a11y.contrast.title" = "Warna yang lebih mudah dibedakan";
+"roadmap.a11y.contrast.detail" = "Warna catatan tetap mudah dibedakan, bahkan dengan Tingkatkan Kontras atau buta warna.";
+"roadmap.a11y.motion.title" = "Gerakan dikurangi";
+"roadmap.a11y.motion.detail" = "Saat Kurangi Gerakan aktif, animasi menjadi lebih tenang.";
+"roadmap.lang.more.title" = "Lebih banyak bahasa";
+"roadmap.lang.more.detail" = "Gunakan aplikasi dalam lebih banyak bahasa, tidak hanya Inggris dan Korea.";
+"roadmap.whatsnew.title" = "Yang baru";
+"roadmap.whatsnew.detail" = "Setelah pembaruan, lihat yang baru saat pertama kali membuka aplikasi.";
+"roadmap.feedback.reply.title" = "Balasan untuk masukan Anda";
+"roadmap.feedback.reply.detail" = "Baca balasan kami atas masukan Anda langsung di aplikasi.";
+"roadmap.sync.icloud.title" = "Catatan di semua Mac Anda";
+"roadmap.sync.icloud.detail" = "Lanjutkan dengan catatan yang sama di Mac lain lewat iCloud.";
+"roadmap.backup.title" = "Ekspor dan impor catatan";
+"roadmap.backup.detail" = "Simpan catatan ke file lalu muat lagi di Mac lain.";
+"roadmap.notifications.title" = "Peringatan timer";
+"roadmap.notifications.detail" = "Dapatkan notifikasi saat timer berakhir, bahkan ketika Anda sedang di aplikasi lain.";
