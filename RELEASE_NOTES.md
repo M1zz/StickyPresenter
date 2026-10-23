@@ -8,147 +8,195 @@ App Store Connect 의 '이 버전의 새로운 기능' 칸에 그대로 올린�
 
 ### 앱스토어 (한국어)
 
+일본어와 독일어 등 22개 언어를 새로 지원해요
+처음 켜면 시작 안내가 차근차근 도와줘요
+단축어 앱에서 타이머와 노트를 바로 열 수 있어요
 설정에서 보낸 의견과 개발자 답장을 볼 수 있어요
-의견을 보낼 때 어떤 상황이었는지 차근차근 물어봐요
-설정에서 개인정보처리방침과 지원 페이지를 바로 열 수 있어요
+앞으로 만들 기능을 설정에서 미리 볼 수 있어요
 
-### App Store (English)
+### App Store (en-US)
 
-See replies to your feedback in Settings
-Feedback now asks what happened
-Privacy and support links are in Settings
+Now in 22 new languages, like Japanese
+A welcome guide helps you get set up
+Use Shortcuts to start timers and notes
+View feedback and replies in Settings
+Preview upcoming features in Settings
 
-### 앱스토어 (영어(영국))
+### App Store (en-GB)
 
-See replies to your feedback in Settings
-Feedback now asks what happened
-Privacy and support links are in Settings
+Now in 22 new languages, such as German
+A welcome guide helps you get started
+Use Shortcuts to start timers and notes
+See feedback and our replies in Settings
+Have a sneak peek at what's coming next
 
 ### 앱스토어 (일본어)
 
-設定から、送ったご意見への返信を読めます
-ご意見を送るとき、状況を順に尋ねます
-設定からプライバシーとサポートを開けます
+ドイツ語や中国語など22の言語に新しく対応しました
+初めて起動すると、ようこそガイドがご案内します
+ショートカットでタイマーやメモをすぐに開けます
+送ったご意見と開発者からの返信を設定で確認できます
+今後追加予定の機能を設定でチェックできます
 
-### 앱스토어 (简体中文)
+### 앱스토어 (zh-Hans)
 
-可在设置中查看你的反馈和开发者的回复
-发送反馈时，会一步步询问当时的情况
-可在设置中直接打开隐私政策和支持页面
+新增支持日语、德语等22种语言
+首次启动时，欢迎指南会一步步引导你
+通过快捷指令直接打开计时器和便签
+可在设置中查看你的反馈和开发者回复
+可在设置中抢先了解即将推出的功能
 
 ### 앱스토어 (스페인어)
 
-Respuestas a tus comentarios en Ajustes
-Al comentar, te preguntamos qué pasó
-Abre privacidad y soporte desde Ajustes
+Ahora en 22 idiomas nuevos, como alemán
+Una guía inicial te ayuda a empezar
+Abre temporizadores y notas desde Atajos
+Ve en Ajustes tus mensajes y respuestas
+Mira en Ajustes las próximas funciones
 
 ### 앱스토어 (독일어)
 
-Antworten auf Feedback in Einstellungen
-Feedback fragt jetzt nach dem Hergang
-Datenschutz und Support in Einstellungen
+Jetzt in 22 weiteren Sprachen verfügbar
+Eine Einführung hilft dir beim Start
+Timer und Notizen jetzt über Kurzbefehle
+Feedback und Antworten in Einstellungen
+Kommende Funktionen in den Einstellungen
 
 ### 앱스토어 (프랑스어)
 
-Voyez les réponses à vos avis
-L’envoi d’un avis pose des questions
-Confidentialité et aide dans Réglages
+Disponible en 22 nouvelles langues
+Un guide d’accueil vous aide à démarrer
+Ouvrez minuteurs et notes via Raccourcis
+Retrouvez avis et réponses dans Réglages
+Découvrez dans Réglages ce qui arrive
 
 ### 앱스토어 (이탈리아어)
 
-Leggi le risposte ai tuoi commenti
-I commenti chiedono cosa è successo
-Privacy e assistenza nelle Impostazioni
+Ora disponibile in 22 nuove lingue
+Una guida iniziale ti aiuta a cominciare
+Apri timer e note da Comandi Rapidi
+Vedi feedback e risposte in Impostazioni
+Anteprima delle novità in Impostazioni
 
-### 앱스토어 (포르투갈어(브라질))
+### 앱스토어 (pt-BR)
 
-Veja as respostas aos seus comentários
-Ao comentar, perguntamos o que houve
-Privacidade e suporte em Ajustes
+Agora disponível em 22 novos idiomas
+Um guia inicial ajuda você a começar
+Abra timers e notas direto pelo Atalhos
+Veja feedback e respostas em Ajustes
+Confira os próximos recursos em Ajustes
 
 ### 앱스토어 (러시아어)
 
-Ответы на отзывы — в настройках
-При отзыве спросим, что случилось
-Правила и поддержка — в настройках
+Теперь доступно ещё на 22 языках
+Пошаговое знакомство при первом запуске
+Таймеры и заметки из Быстрых команд
+Ваши отзывы и ответы теперь в Настройках
+Будущие функции видны в Настройках
 
-### 앱스토어 (중국어 번체)
+### 앱스토어 (zh-Hant)
 
-可在設定查看意見回覆
-送出意見時會詢問發生了什麼事
-設定中可直接開啟隱私權與支援頁
+新增支援日文、德文等22種語言
+首次開啟時，歡迎導覽會一步步帶你上手
+可透過捷徑直接開啟計時器和便利貼
+可在設定中查看你的意見回饋與開發者回覆
+可在設定中搶先看看即將推出的功能
 
 ### 앱스토어 (태국어)
 
-ดูคำตอบของความคิดเห็นในการตั้งค่า
-ส่งความคิดเห็นแล้วจะถามว่าเกิดอะไรขึ้น
-เปิดนโยบายและหน้าสนับสนุนจากการตั้งค่า
+รองรับเพิ่ม 22 ภาษา เช่น ญี่ปุ่น
+คู่มือต้อนรับช่วยแนะนำตอนเปิดครั้งแรก
+เปิดตัวจับเวลาและโน้ตได้จากคำสั่งลัด
+ดูความคิดเห็นและคำตอบได้ในการตั้งค่า
+ดูฟีเจอร์ที่กำลังจะมาได้ในการตั้งค่า
 
 ### 앱스토어 (베트남어)
 
-Xem phản hồi cho góp ý trong Cài đặt
-Góp ý sẽ hỏi bạn đã gặp chuyện gì
-Mở chính sách và hỗ trợ từ Cài đặt
+Hỗ trợ thêm 22 ngôn ngữ như tiếng Nhật
+Hướng dẫn chào mừng giúp bạn bắt đầu
+Mở hẹn giờ và ghi chú từ Phím tắt
+Xem góp ý và phản hồi trong Cài đặt
+Xem trước tính năng sắp có trong Cài đặt
 
 ### 앱스토어 (체코어)
 
-Odpovědi na zpětnou vazbu v Nastavení
-Zpětná vazba se ptá, co se stalo
-Soukromí a podpora jsou v Nastavení
+Nově dostupné ve 22 dalších jazycích
+Úvodní průvodce vám pomůže začít
+Otevřete časovače a poznámky ze Zkratek
+Zpětná vazba a odpovědi v Nastavení
+Chystané funkce najdete v Nastavení
 
 ### 앱스토어 (덴마크어)
 
-Se svar på din feedback i Indstillinger
-Feedback spørger nu, hvad der skete
-Privatliv og support i Indstillinger
+Nu tilgængelig på 22 nye sprog
+En velkomstguide hjælper dig i gang
+Åbn timere og noter direkte fra Genveje
+Se feedback og svar i Indstillinger
+Se kommende funktioner i Indstillinger
 
 ### 앱스토어 (그리스어)
 
-Δείτε απαντήσεις στα σχόλιά σας
-Τα σχόλια ρωτούν τι συνέβη
-Απόρρητο και υποστήριξη στις Ρυθμίσεις
+Τώρα διαθέσιμο σε 22 νέες γλώσσες
+Ο οδηγός έναρξης σας βοηθά να ξεκινήσετε
+Χρονόμετρα, σημειώσεις από Συντομεύσεις
+Σχόλια και απαντήσεις στις Ρυθμίσεις
+Δείτε τι έρχεται στις Ρυθμίσεις
 
 ### 앱스토어 (핀란드어)
 
-Lue palautteeseesi tulleet vastaukset
-Palaute kysyy nyt, mitä tapahtui
-Tietosuoja ja tuki avautuvat Asetuksista
+Nyt saatavilla 22 uudella kielellä
+Aloitusopas auttaa sinut alkuun
+Avaa ajastimet ja laput Pikakomennoilla
+Palautteesi ja vastaukset Asetuksissa
+Katso tulevat ominaisuudet Asetuksista
 
 ### 앱스토어 (인도네시아어)
 
-Lihat balasan atas masukan Anda
-Masukan kini menanyakan kejadiannya
-Privasi dan dukungan ada di Pengaturan
+Kini hadir dalam 22 bahasa baru
+Panduan sambutan membantu Anda memulai
+Buka timer dan catatan dari Pintasan
+Lihat masukan dan balasan di Pengaturan
+Intip fitur mendatang di Pengaturan
 
-### 앱스토어 (노르웨이어(보크몰))
+### 앱스토어 (노르웨이어(보크말))
 
-Se svar på tilbakemeldingen din
-Tilbakemelding spør nå hva som skjedde
-Personvern og støtte i Innstillinger
+Nå tilgjengelig på 22 nye språk
+En velkomstguide hjelper deg i gang
+Åpne tidtakere og notater fra Snarveier
+Se innspill og svar i Innstillinger
+Se kommende funksjoner i Innstillinger
 
 ### 앱스토어 (네덜란드어)
 
-Bekijk antwoorden op je feedback
-Feedback vraagt nu wat er gebeurde
-Privacy en support in Instellingen
+Nu beschikbaar in 22 nieuwe talen
+Een welkomstgids helpt je op weg
+Open timers en notities via Opdrachten
+Feedback en antwoorden in Instellingen
+Komende functies zie je in Instellingen
 
 ### 앱스토어 (폴란드어)
 
-Odpowiedzi na opinie są w Ustawieniach
-Opinia pyta teraz, co się stało
-Prywatność i wsparcie w Ustawieniach
+Teraz dostępna w 22 nowych językach
+Przewodnik powitalny pomoże Ci zacząć
+Otwieraj minutniki i notatki ze Skrótów
+Twoje opinie i odpowiedzi w Ustawieniach
+Zobacz planowane funkcje w Ustawieniach
 
 ### 앱스토어 (스웨덴어)
 
-Se svar på din feedback i Inställningar
-Feedback frågar nu vad som hände
-Integritet och support i Inställningar
+Nu tillgänglig på 22 nya språk
+En välkomstguide hjälper dig igång
+Öppna timrar och lappar via Genvägar
+Se feedback och svar i Inställningar
+Se kommande funktioner i Inställningar
 
-### 앱스토어 (터키어)
+### 앱스토어 (튀르키예어)
 
-Ayarlar’da geri bildirim yanıtlarını gör
-Geri bildirim artık ne olduğunu soruyor
-Gizlilik ve destek Ayarlar’da
+Artık 22 yeni dilde kullanılabilir
+Karşılama rehberi kurulumda yol gösterir
+Kestirmeler ile zamanlayıcı ve not açın
+Geri bildirim ve yanıtlar Ayarlar'da
+Yakında gelecek özellikler Ayarlar'da
 
 ## 1.1.0
 

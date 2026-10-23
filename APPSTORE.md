@@ -305,15 +305,15 @@ macOS 14以降が必要です。
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/ja/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/ja/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/ja/
 
 ## 简体中文 (zh-Hans)
 
@@ -383,15 +383,15 @@ IPHONE 遥控器（独立的免费 App）
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/zh-Hans/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/zh-Hans/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/zh-Hans/
 
 ## 스페인어 (es)
 
@@ -461,15 +461,15 @@ presentación,teleprompter,diapositivas,temporizador,pomodoro,ensayo,orador,pone
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/es/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/es/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/es/
 
 ## Deutsch (de)
 
@@ -539,15 +539,15 @@ Präsentation,Folien,Countdown,Stoppuhr,Redner,Overlay,Skript,Moderation,Pomodor
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/de/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/de/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/de/
 
 ## 프랑스어 (fr)
 
@@ -617,15 +617,15 @@ présentation,diaporama,exposé,orateur,pomodoro,répétition,conférence,discou
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/fr/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/fr/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/fr/
 
 ## 이탈리아어 (it)
 
@@ -695,15 +695,15 @@ presentazione,slide,relatore,pomodoro,conferenza,discorso,cronometro,promemoria,
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/it/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/it/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/it/
 
 ## 포르투갈어(브라질) (pt-BR)
 
@@ -773,15 +773,15 @@ apresentação,slides,palestra,pomodoro,aula,discurso,cronômetro,lembrete,rotei
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/pt-BR/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/pt-BR/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/pt-BR/
 
 ## 러시아어 (ru)
 
@@ -851,15 +851,15 @@ StickyPresenter
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/ru/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/ru/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/ru/
 
 ## 중국어 번체 (zh-Hant)
 
@@ -929,15 +929,15 @@ iPhone 遙控器（另一個免費 App）
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/zh-Hant/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/zh-Hant/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/zh-Hant/
 
 ## 태국어 (th)
 
@@ -1007,15 +1007,15 @@ StickyPresenter
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/th/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/th/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/th/
 
 ## 베트남어 (vi)
 
@@ -1085,15 +1085,15 @@ trình chiếu,slide,diễn thuyết,bài giảng,pomodoro,hội thảo,đếm n
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/vi/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/vi/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/vi/
 
 ## 체코어 (cs)
 
@@ -1163,15 +1163,15 @@ prezentace,slajdy,řečník,pomodoro,přednáška,projev,stopky,odpočet,scéná
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/cs/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/cs/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/cs/
 
 ## 덴마크어 (da)
 
@@ -1241,15 +1241,15 @@ præsentation,slides,foredrag,taler,pomodoro,undervisning,konference,tale,stopur
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/da/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/da/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/da/
 
 ## 그리스어 (el)
 
@@ -1319,15 +1319,15 @@ StickyPresenter
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/el/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/el/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/el/
 
 ## 핀란드어 (fi)
 
@@ -1397,15 +1397,15 @@ diat,puhe,puhuja,pomodoro,luento,konferenssi,seminaari,laskuri,käsikirjoitus,ha
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/fi/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/fi/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/fi/
 
 ## 인도네시아어 (id)
 
@@ -1475,17 +1475,17 @@ slide,pidato,pembicara,pomodoro,seminar,konferensi,kuliah,naskah,latihan,stopwat
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/id/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/id/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/id/
 
-## 노르웨이어(보크몰) (nb)
+## 노르웨이어(보크말) (nb)
 
 ### 이름
 
@@ -1553,15 +1553,15 @@ presentasjon,lysbilder,foredrag,taler,pomodoro,konferanse,undervisning,stoppeklo
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/nb/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/nb/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/nb/
 
 ## 네덜란드어 (nl)
 
@@ -1631,15 +1631,15 @@ presentatie,dia's,spreker,pomodoro,lezing,college,congres,toespraak,stopwatch,sc
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/nl/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/nl/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/nl/
 
 ## 폴란드어 (pl)
 
@@ -1709,15 +1709,15 @@ prezentacja,slajdy,prelegent,pomodoro,wykład,konferencja,przemówienie,stoper,s
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/pl/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/pl/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/pl/
 
 ## 스웨덴어 (sv)
 
@@ -1783,21 +1783,21 @@ Kräver macOS 14 eller senare.
 
 ### 키워드
 
-presentation,bilder,föredrag,talare,pomodoro,föreläsning,konferens,stoppur,manus,repetition,seminarium
+presentation,föredrag,talare,pomodoro,föreläsning,konferens,stoppur,manus,repetition,seminarium
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/sv/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/sv/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/sv/
 
-## 터키어 (tr)
+## 튀르키예어 (tr)
 
 ### 이름
 
@@ -1865,15 +1865,15 @@ sunum,slayt,konuşmacı,pomodoro,ders,konferans,zamanlayıcı,kronometre,senaryo
 
 ### 지원 URL
 
-https://m1zz.github.io/StickyPresenter/en/support.html
+https://m1zz.github.io/StickyPresenter/tr/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StickyPresenter/en/privacy.html
+https://m1zz.github.io/StickyPresenter/tr/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StickyPresenter/en/
+https://m1zz.github.io/StickyPresenter/tr/
 
 ## 연령 등급
 
