@@ -72,3 +72,12 @@ code { background: #f1efe9; padding: 2px 6px; border-radius: 6px; font-size: 13p
 
 footer { text-align: center; padding: 30px 22px 50px; color: var(--muted); font-size: 13px; }
 .back { display: inline-block; margin-top: 8px; }
+
+/* Language switcher */
+.langnav { margin-top: 18px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.langnav a {
+  color: #fff; font-size: 13px; padding: 3px 12px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.45); opacity: .9;
+}
+.langnav a[aria-current] { background: rgba(255,255,255,.3); font-weight: 700; opacity: 1; }
+.langnav a:hover { text-decoration: none; background: rgba(255,255,255,.22); }

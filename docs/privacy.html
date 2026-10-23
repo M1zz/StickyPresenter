@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy · StickyPresenter</title>
+  <meta name="description" content="Privacy Policy · StickyPresenter" />
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/privacy.html" />
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/privacy.html" />
   <link rel="icon" href="icon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,6 +17,10 @@
     <img class="icon" src="icon.png" alt="StickyPresenter app icon" />
     <h1>Privacy Policy</h1>
     <p>Last updated: October 16, 2026</p>
+    <nav class="langnav" aria-label="Language / 언어">
+      <a href="ko/privacy.html" hreflang="ko" lang="ko">한국어</a>
+      <a href="en/privacy.html" hreflang="en" lang="en">English</a>
+    </nav>
   </header>
 
   <main>
@@ -20,12 +29,16 @@
       <div class="card" id="en">
         <p class="lang">English</p>
         <h2>Summary</h2>
-        <p><strong>StickyPresenter does not collect personal data.</strong> It is an
-        on-device macOS app with no accounts, no tracking, and no ads. Your notes stay on your Mac.
-        The app sends anonymous usage statistics (for example, how many Macs use it), and goes
-        online otherwise only when you choose to send feedback from Settings. Its only other
-        networking is a direct link to the <a href="remote.html">Remote Controller</a> app on your
-        own local network.</p>
+        <p><strong>StickyPresenter has no accounts, no ads, and no tracking.</strong>
+        Your notes, timers, and teleprompter scripts stay on your Mac. Apart from anonymous usage
+        statistics (see below), information leaves your Mac in only two cases, and both start with
+        you: when you send us feedback, and when the
+        <a href="remote.html">Remote Controller</a> app on your iPhone connects over your local network.</p>
+
+        <h3>Data We Collect</h3>
+        <p>We do not collect advertising identifiers, location, or any personal information. We
+        receive only the anonymous statistics below and the feedback you choose to send (see
+        "Feedback" below).</p>
 
         <h3>Anonymous Usage Statistics</h3>
         <p>To learn how many people use the app and which versions are still in use,
@@ -42,23 +55,28 @@
         sent only if you are signed in to iCloud.</p>
 
         <h3>Your Content</h3>
-        <p>The notes, timers, and teleprompter text you create stay on your Mac. Sticky notes are
-        saved to a file inside the app's own storage on your Mac so they come back the next time
-        you open the app. They are never uploaded to us or any third party.</p>
+        <p>The notes, timers, and teleprompter text you create are stored only on your Mac
+        (notes in <code>~/Library/Application Support/StickyPresenter</code>, settings in the app's
+        preferences). The notification-center widget reads timer status from a shared container on
+        the same Mac. None of this is uploaded to us or to any third party.</p>
 
         <h3>Clipboard</h3>
         <p>When you choose "New from Clipboard" or paste into the teleprompter, the app reads the
-        clipboard solely to place that text into a note or script on your device. That text is then
-        saved on your Mac like anything else you type into a note. The clipboard is never logged
-        or transmitted.</p>
+        clipboard solely to place that text into a note or script on your device. Clipboard
+        contents are not stored separately, logged, or transmitted.</p>
 
-        <h3>Feedback</h3>
-        <p>Settings includes an optional form for sending feedback to the developer. Nothing is
-        sent unless you fill it in and press send. When you do, the app sends your message, the
-        app version, your macOS version, your language setting, and, only if you
-        enter them, your name and email address. It is stored in the developer's iCloud
-        (CloudKit) database and used only to read and reply to your feedback. To have a message
-        deleted, email the address below.</p>
+        <h3>Feedback (optional)</h3>
+        <p>If you send feedback from the app's settings, we receive what you write (the type of
+        feedback and your message), your name and email address only if you enter them, and basic
+        technical details to help us fix problems: app version and build, Mac model identifier,
+        macOS version, and your language and region setting. It is stored in our database on
+        Apple's iCloud (CloudKit) and used only to read, answer, and act on your feedback. Nothing
+        is sent until you press Send. To have your feedback deleted, email us at the address below.</p>
+
+        <h3>Rating Prompt</h3>
+        <p>The app counts launches on your Mac to decide when to ask whether you are enjoying it.
+        If you are, it shows Apple's standard rating prompt; if not, it offers the feedback form.
+        The count never leaves your Mac.</p>
 
         <h3>Local Network</h3>
         <p>So that the <a href="remote.html">Remote Controller</a> iPhone app can find it,
@@ -69,20 +87,21 @@
         connection is encrypted and direct between the two devices. Your notes and teleprompter
         scripts are never sent. Connecting requires a <strong>four-digit pairing code</strong>: only an
         iPhone that matches the code shown under menu bar → <code>Remote</code>, or one the Mac has
-        remembered from passing that code before, can connect. You can clear every remembered
-        device with <code>Forget Paired Remotes</code> at any time, or draw a fresh code with
+        remembered from passing that code before, can connect. The code and the list of remembered
+        iPhones are kept on your Mac. You can clear every remembered device with
+        <code>Forget Paired Remotes</code> at any time, or draw a fresh code with
         <code>New Pairing Code</code>. Quitting StickyPresenter also stops the service being
         advertised. See the
         <a href="remote-privacy.html">Remote Controller privacy policy</a> for details.</p>
 
-        <h3>Internet</h3>
-        <p>Apart from feedback you choose to send and the anonymous statistics described above,
-        the app makes no internet requests. It contains no advertising or third-party tracking
-        SDKs.</p>
+        <h3>Internet and Third Parties</h3>
+        <p>Apart from sending feedback and the anonymous statistics above through Apple's iCloud,
+        the app makes no internet requests. It contains no advertising, no third-party analytics
+        SDKs, and no tracking, and we do not sell or
+        share your information with anyone.</p>
 
         <h3>Children</h3>
-        <p>The app does not knowingly collect information from children. Feedback is sent only
-        when someone chooses to send it.</p>
+        <p>The app does not knowingly collect any information from children.</p>
 
         <h3>Changes</h3>
         <p>If this policy changes, the updated version will be posted on this page with a new
@@ -93,14 +112,17 @@
         <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
       </div>
 
-      <div class="card" id="ko">
+      <div class="card" id="ko" lang="ko">
         <p class="lang">한국어</p>
         <h2>요약</h2>
-        <p><strong>StickyPresenter는 개인정보를 수집하지 않습니다.</strong>
-        계정·추적·광고가 없는 온디바이스 macOS 앱이며, 노트는 사용자의 Mac에만 저장됩니다.
-        몇 대의 Mac에서 쓰이는지 같은 익명 사용 통계는 보내며, 그 밖에 인터넷에 연결하는 경우는
-        사용자가 설정에서 직접 피드백을 보낼 때뿐입니다. 그 밖의 네트워크 통신은 사용자의 로컬
-        네트워크에서 <a href="remote.html">Remote Controller</a> 앱과 직접 연결하는 것뿐입니다.</p>
+        <p><strong>StickyPresenter에는 계정, 광고, 추적이 없습니다.</strong>
+        사용자가 만든 노트·타이머·텔레프롬프터 대본은 Mac 안에만 머뭅니다. 아래의 익명 사용 통계를
+        빼면, 정보가 Mac 밖으로 나가는 경우는 두 가지뿐이고, 둘 다 사용자가 직접 시작합니다. 피드백을 보낼 때, 그리고 iPhone의
+        <a href="remote.html">Remote Controller</a> 앱이 로컬 네트워크로 연결될 때입니다.</p>
+
+        <h3>수집하는 정보</h3>
+        <p>광고 식별자, 위치 같은 개인정보는 모으지 않습니다. 저희가 받는 정보는 아래의 익명 통계와
+        사용자가 직접 보내는 피드백뿐입니다(아래 "피드백" 참고).</p>
 
         <h3>익명 사용 통계</h3>
         <p>앱을 몇 명이 쓰는지, 어떤 버전이 아직 쓰이는지 알기 위해 StickyPresenter는 다음 익명 통계를
@@ -114,44 +136,50 @@
         있을 때만 보냅니다.</p>
 
         <h3>사용자 콘텐츠</h3>
-        <p>사용자가 만든 노트·타이머·텔레프롬프터 텍스트는 사용자의 Mac에만 있습니다. 스티키 노트는
-        앱을 다시 열었을 때 그대로 돌아오도록 Mac의 앱 전용 저장 공간에 파일로 저장됩니다.
-        당사나 제3자에게 업로드되지 않습니다.</p>
+        <p>노트·타이머·텔레프롬프터 글은 사용자의 Mac에만 저장됩니다(노트는
+        <code>~/Library/Application Support/StickyPresenter</code>, 설정은 앱 환경설정).
+        알림 센터 위젯은 같은 Mac 안의 공유 저장소에서 타이머 상태를 읽어 옵니다.
+        이 중 어떤 것도 저희나 제3자에게 올라가지 않습니다.</p>
 
         <h3>클립보드</h3>
-        <p>"클립보드로 새 노트" 또는 텔레프롬프터에 붙여넣기를 사용할 때, 해당 텍스트를 기기 내
-        노트/대본에 넣기 위해서만 클립보드를 읽습니다. 그 텍스트는 직접 입력한 글과 똑같이 Mac에
-        저장됩니다. 클립보드 내용은 기록하거나 전송하지 않습니다.</p>
+        <p>"클립보드에서 만들기"를 쓰거나 텔레프롬프터에 붙여 넣을 때, 그 글을 기기 안의 노트나 대본에
+        넣기 위해서만 클립보드를 읽습니다. 클립보드 내용을 따로 저장하거나 기록하거나 전송하지 않습니다.</p>
 
-        <h3>피드백</h3>
-        <p>설정 화면에는 개발자에게 의견을 보내는 선택 기능이 있습니다. 사용자가 내용을 쓰고 보내기를
-        누르기 전에는 아무것도 전송되지 않습니다. 보내면 메시지, 앱 버전, macOS 버전,
-        언어 설정, 그리고 직접 적은 경우에만 이름과 이메일 주소가 함께 전달됩니다. 이 정보는 개발자의
-        iCloud(CloudKit) 데이터베이스에 저장되며, 피드백을 읽고 답하는 데만 쓰입니다. 보낸 피드백의
-        삭제를 원하면 아래 이메일로 알려 주세요.</p>
+        <h3>피드백 (선택)</h3>
+        <p>앱 설정에서 피드백을 보내면 사용자가 쓴 내용(피드백 종류와 메시지), 직접 적은 경우에만
+        이름과 이메일 주소, 그리고 문제를 고치는 데 필요한 기본 정보(앱 버전과 빌드, Mac 모델 식별자,
+        macOS 버전, 언어·지역 설정)를 받습니다. 이 정보는 Apple iCloud(CloudKit)에 있는 저희 데이터베이스에
+        저장되며, 피드백을 읽고 답하고 반영하는 데만 씁니다. 보내기 버튼을 누르기 전에는 아무것도
+        전송되지 않습니다. 보낸 피드백을 지우고 싶으면 아래 주소로 메일을 주세요.</p>
+
+        <h3>평가 요청</h3>
+        <p>앱을 마음에 들어 하는지 물어볼 때를 정하려고 Mac 안에서 실행 횟수를 셉니다.
+        만족하신다면 Apple의 기본 평가 창을, 아쉽다면 피드백 화면을 보여 드립니다.
+        이 횟수는 Mac 밖으로 나가지 않습니다.</p>
 
         <h3>로컬 네트워크</h3>
         <p><a href="remote.html">Remote Controller</a> iPhone 앱이 찾을 수 있도록, StickyPresenter는
         Apple의 MultipeerConnectivity로 로컬 네트워크에 타이머 서비스(<code>_sp-timer</code>)를
-        광고합니다. macOS가 로컬 네트워크 접근 허용을 물을 수 있습니다. 연결된 iPhone과는 타이머
-        정보(이름, 남은 시간, 상태, 위젯 크기, 테마, 화면상의 위젯 위치)와 사용자가 누른 명령만
-        주고받으며, 연결은 두 기기 사이의 직접 연결이고 암호화됩니다. 노트와 텔레프롬프터 대본은
-        전송되지 않습니다. 연결은 네 자리 페어링 코드로 보호됩니다 — Mac 메뉴 막대 →
+        알립니다. 이때 macOS가 로컬 네트워크 접근을 허용할지 물을 수 있습니다. 연결된 iPhone과는 타이머
+        정보(이름, 남은 시간, 상태, 위젯 크기, 테마, 화면 위 위젯 위치)와 사용자가 누른 명령만
+        주고받으며, 두 기기 사이에 직접 암호화된 연결로 오갑니다. 노트와 텔레프롬프터 대본은
+        전송되지 않습니다. 연결은 네 자리 페어링 코드로 보호됩니다. Mac 메뉴 막대 →
         <code>Remote</code>에 떠 있는 코드를 맞춘 iPhone과, 전에 그 코드를 통과해 Mac이 기억해 둔
-        iPhone만 연결할 수 있습니다. 기억해 둔 기기는 <code>Forget Paired Remotes</code>로
-        언제든 지울 수 있고, <code>New Pairing Code</code>로 코드를 새로 뽑을 수 있습니다.
-        StickyPresenter를 종료하면 서비스 광고도 멈춥니다. 자세한 내용은
-        <a href="remote-privacy.html">Remote Controller 개인정보 처리방침</a>을 참고하세요.</p>
+        iPhone만 연결할 수 있습니다. 코드와 기억해 둔 iPhone 목록은 Mac에만 저장됩니다.
+        기억해 둔 기기는 <code>Forget Paired Remotes</code>로 언제든 지울 수 있고,
+        <code>New Pairing Code</code>로 코드를 새로 뽑을 수 있습니다.
+        StickyPresenter를 종료하면 서비스 알림도 멈춥니다. 자세한 내용은
+        <a href="remote-privacy.html">Remote Controller 개인정보처리방침</a>을 참고하세요.</p>
 
-        <h3>인터넷</h3>
-        <p>사용자가 직접 보내는 피드백과 위에 적은 익명 통계를 제외하면 앱은 인터넷 요청을 하지
-        않습니다. 광고나 제3자 추적 SDK를 포함하지 않습니다.</p>
+        <h3>인터넷과 제3자</h3>
+        <p>Apple iCloud로 피드백과 위의 익명 통계를 보내는 것 말고는 인터넷 요청을 하지 않습니다.
+        광고, 제3자 분석 SDK, 추적이 없으며, 사용자 정보를 팔거나 다른 곳에 넘기지 않습니다.</p>
 
         <h3>아동</h3>
-        <p>아동의 정보를 알면서 수집하지 않습니다. 피드백은 사용자가 직접 보내기로 했을 때만 전송됩니다.</p>
+        <p>아동의 정보를 알면서 수집하지 않습니다.</p>
 
         <h3>변경</h3>
-        <p>본 정책이 변경되면 이 페이지에 새로운 "최종 업데이트" 날짜와 함께 게시됩니다.</p>
+        <p>이 방침이 바뀌면 새 "최종 업데이트" 날짜와 함께 이 페이지에 올립니다.</p>
 
         <h3>문의</h3>
         <p>개인정보 관련 문의: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></p>
@@ -162,7 +190,7 @@
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Support</a> · <a href="remote-privacy.html">Remote Controller Privacy</a>
+    © 2026 StickyPresenter · <a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="remote-privacy.html">Remote Controller Privacy</a>
   </footer>
 </body>
 </html>
