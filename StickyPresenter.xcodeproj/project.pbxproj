@@ -24,6 +24,7 @@
 		67CA2B74D4B805FEEA4EEB41 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693CDC6530CDA0FE07D952D5 /* WidgetBundle.swift */; };
 		67D3A00AFE0F87842E702003 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D466572AD7F3D57FAAA5F5E /* Widget.swift */; };
 		70BCE66460F7DED7CAFEF3F6 /* TimerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862BBC3F743F7EB985DBECE9 /* TimerCore.swift */; };
+		719E424DAD236377B6DF5DC3 /* ScreenshotStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B594FFC55CDC889192FF62 /* ScreenshotStage.swift */; };
 		74C5E04A0EAFD46C9EDEC500 /* SharedTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9684AB311403806FC69164 /* SharedTimerStore.swift */; };
 		7BB7E24BBAE124472846CE8F /* TimerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862BBC3F743F7EB985DBECE9 /* TimerCore.swift */; };
 		913A9E80196553D08A72B789 /* StickyPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C95EA063E261ED87C0981 /* StickyPresenterSpec.swift */; };
@@ -164,6 +165,7 @@
 		B407751845F77F47774F35AB /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B438635018AA9F552C4F5031 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		B68379D473FEDA333A735CE1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		B7B594FFC55CDC889192FF62 /* ScreenshotStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotStage.swift; sourceTree = "<group>"; };
 		B7FB6F6D1A78520DC119C6AB /* Chameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chameleon.swift; sourceTree = "<group>"; };
 		B91B9ABF0C36CB5EC981C793 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		BAAEEDA08C1A4BFF91AE75F8 /* GlobalHotKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKeys.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				1534F47FD18CEA1EE37E4824 /* NoteStore.swift */,
 				046557680922D4C0EA38EB5D /* OnboardingView.swift */,
 				E3F4580427FCCBD2EA23BB00 /* RemoteControlHost.swift */,
+				B7B594FFC55CDC889192FF62 /* ScreenshotStage.swift */,
 				312B3C7FA190F28E9F076E6D /* SettingsView.swift */,
 				D93BDEA48650FA7A04F708DB /* StickyNoteView.swift */,
 				BB4D2110261E5FD4C4CFCBE4 /* StickyPresenterApp.swift */,
@@ -504,6 +507,7 @@
 				2D83C5FAA9288959394C1C25 /* OnboardingView.swift in Sources */,
 				EB726DD65BF02AA8752E7FAC /* RemoteControlHost.swift in Sources */,
 				527464F65BA38CE5061C8CAF /* RemoteProtocol.swift in Sources */,
+				719E424DAD236377B6DF5DC3 /* ScreenshotStage.swift in Sources */,
 				CD2B192D329A506196BAF7F3 /* SettingsView.swift in Sources */,
 				74C5E04A0EAFD46C9EDEC500 /* SharedTimerStore.swift in Sources */,
 				2E61AA6885F159A58591C278 /* StickyNoteView.swift in Sources */,

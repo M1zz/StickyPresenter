@@ -1,0 +1,98 @@
+{
+  "ko": {
+    "checklist": "⏰ 리허설 체크리스트\n\n· 데모 영상 소리 확인\n· 질의응답 5분 남겨 두기\n· 마지막 장에 연락처 넣기\n\n숨 한번 쉬고, 천천히!",
+    "script": "안녕하세요, 이현우입니다.\n오늘 발표를 맡았습니다.\n\n오늘은 발표자가 슬라이드를 벗어나지 않고\n대본과 시간을 함께 챙기는 방법을\n이야기해 보려고 합니다.\n\n첫 번째 질문부터 시작하겠습니다.\n왜 무대에만 서면 시간 감각을 잃을까요?"
+  },
+  "en": {
+    "checklist": "⏰ Rehearsal checklist\n\n· Check the demo video's audio\n· Leave 5 minutes for Q&A\n· Contact info on the last slide\n\nTake a breath. Slow down!",
+    "script": "Hi everyone, I'm Emily Carter,\nand I'll be presenting today.\n\nToday I want to talk about how a speaker\ncan keep an eye on the script and the clock\nwithout ever leaving the slides.\n\nLet's start with the first question:\nwhy do we lose track of time on stage?"
+  },
+  "en-GB": {
+    "checklist": "⏰ Rehearsal checklist\n\n· Check the demo video's sound\n· Allow 5 minutes for Q&A\n· Contact details on final slide\n\nTake a breath. Slow down!",
+    "script": "Hello everyone, I'm Oliver Hughes,\nand I'll be presenting today.\n\nToday I'd like to talk about how a speaker\ncan keep an eye on the script and the clock\nwithout ever leaving the slides.\n\nLet's begin with the first question:\nwhy do we lose track of time on stage?"
+  },
+  "ja": {
+    "checklist": "⏰ リハーサル チェックリスト\n\n· デモ動画の音声を確認\n· 質疑応答に5分確保\n· 最後のスライドに連絡先\n\n深呼吸して、ゆっくりと！",
+    "script": "皆さん、こんにちは。佐藤 健です。\n本日の発表を担当します。\n\n今日は、スライドから離れずに\n原稿と時間を把握する方法について\nお話しします。\n\nまずは最初の問いから。\nなぜ本番では時間を見失うのでしょう？"
+  },
+  "zh-Hans": {
+    "checklist": "⏰ 彩排清单\n\n· 检查演示视频的声音\n· 留出 5 分钟问答\n· 最后一页放联系方式\n\n深呼吸，放慢语速！",
+    "script": "大家好，我是王浩然，\n今天由我来做分享。\n\n今天想聊聊演讲者如何\n在不离开幻灯片的情况下，\n同时掌握讲稿和时间。\n\n先从第一个问题开始：\n为什么一上台就容易忘了时间？"
+  },
+  "zh-Hant": {
+    "checklist": "⏰ 彩排檢查清單\n\n· 確認示範影片的聲音\n· 預留 5 分鐘問答\n· 最後一頁放聯絡資訊\n\n深呼吸，說慢一點！",
+    "script": "大家好，我是陳冠宇，\n今天由我來為大家報告。\n\n今天想跟大家聊聊，講者如何\n在不離開投影片的情況下，\n同時掌握講稿和時間。\n\n先從第一個問題開始：\n為什麼一上台就容易忘記時間？"
+  },
+  "es": {
+    "checklist": "⏰ Lista para el ensayo\n\n· Revisar el audio del vídeo demo\n· Dejar 5 minutos para preguntas\n· Datos de contacto al final\n\nRespira. ¡Más despacio!",
+    "script": "Hola a todos, soy Pablo García\ny hoy me toca presentar.\n\nHoy quiero hablar de cómo un ponente\npuede vigilar el guion y el reloj\nsin salir nunca de las diapositivas.\n\nEmpecemos con la primera pregunta:\n¿por qué en el escenario se nos va el tiempo?"
+  },
+  "de": {
+    "checklist": "⏰ Checkliste für die Probe\n\n· Ton im Demovideo prüfen\n· 5 Minuten für Fragen einplanen\n· Kontakt auf die letzte Folie\n\nTief durchatmen. Langsam!",
+    "script": "Hallo zusammen, ich bin Lukas Becker\nund präsentiere heute.\n\nHeute geht es darum, wie man als Vortragender\nSkript und Uhr im Blick behält,\nohne die Folien je zu verlassen.\n\nBeginnen wir mit der ersten Frage:\nWarum verlieren wir auf der Bühne das Zeitgefühl?"
+  },
+  "fr": {
+    "checklist": "⏰ Check-list de répétition\n\n· Vérifier le son de la vidéo\n· Garder 5 min pour les questions\n· Contact sur la dernière diapo\n\nRespire. Ralentis !",
+    "script": "Bonjour à tous, je suis Thomas Martin,\net c'est moi qui présente aujourd'hui.\n\nJ'aimerais vous montrer comment un intervenant\npeut garder un œil sur son texte et sur l'heure\nsans jamais quitter ses diapos.\n\nCommençons par une première question :\npourquoi perd-on la notion du temps sur scène ?"
+  },
+  "it": {
+    "checklist": "⏰ Checklist per le prove\n\n· Controllare l'audio del video\n· 5 minuti per le domande\n· Contatti nell'ultima slide\n\nRespira. Rallenta!",
+    "script": "Ciao a tutti, sono Marco Rossi\ne oggi vi presento il mio intervento.\n\nOggi vi parlo di come chi presenta\npossa tenere d'occhio testo e orologio\nsenza mai lasciare le slide.\n\nPartiamo dalla prima domanda:\nperché sul palco perdiamo la cognizione del tempo?"
+  },
+  "pt-BR": {
+    "checklist": "⏰ Checklist do ensaio\n\n· Testar o áudio do vídeo demo\n· Reservar 5 min para perguntas\n· Contato no último slide\n\nRespire. Vá com calma!",
+    "script": "Oi, pessoal, eu sou o Lucas Oliveira\ne vou apresentar hoje.\n\nHoje quero falar sobre como quem apresenta\npode ficar de olho no roteiro e no relógio\nsem nunca sair dos slides.\n\nVamos começar pela primeira pergunta:\npor que perdemos a noção do tempo no palco?"
+  },
+  "ru": {
+    "checklist": "⏰ Чек-лист репетиции\n\n· Проверить звук в демо-видео\n· Оставить 5 минут на вопросы\n· Контакты на последнем слайде\n\nВыдохни. Не торопись!",
+    "script": "Всем привет, меня зовут Алексей Иванов,\nи сегодня я выступаю с докладом.\n\nСегодня расскажу, как спикеру\nследить за текстом и временем,\nне уходя со слайдов.\n\nНачнём с первого вопроса:\nпочему на сцене мы теряем счёт времени?"
+  },
+  "th": {
+    "checklist": "⏰ เช็กลิสต์ซ้อมพรีเซนต์\n\n· เช็กเสียงวิดีโอเดโม\n· เผื่อเวลาถามตอบ 5 นาที\n· ช่องทางติดต่อในสไลด์สุดท้าย\n\nหายใจลึกๆ พูดช้าๆ นะ!",
+    "script": "สวัสดีครับทุกคน ผมธนากร ศรีสุข\nวันนี้ผมจะเป็นผู้นำเสนอครับ\n\nวันนี้อยากเล่าว่าผู้นำเสนอ\nจะดูบทพูดและเวลาไปพร้อมกันได้อย่างไร\nโดยไม่ต้องออกจากสไลด์เลย\n\nเริ่มจากคำถามแรกกันครับ\nทำไมเราถึงลืมเวลาเมื่ออยู่บนเวที?"
+  },
+  "vi": {
+    "checklist": "⏰ Checklist tổng duyệt\n\n· Kiểm tra âm thanh video demo\n· Chừa 5 phút hỏi đáp\n· Thông tin liên hệ ở slide cuối\n\nHít thở sâu. Nói chậm thôi!",
+    "script": "Xin chào mọi người, tôi là Nguyễn Minh Tuấn,\nngười trình bày hôm nay.\n\nHôm nay tôi muốn chia sẻ cách người thuyết trình\ntheo dõi kịch bản và thời gian\nmà không cần rời khỏi slide.\n\nHãy bắt đầu với câu hỏi đầu tiên:\nvì sao trên sân khấu ta hay quên mất thời gian?"
+  },
+  "cs": {
+    "checklist": "⏰ Checklist na zkoušku\n\n· Ověřit zvuk v demo videu\n· Nechat 5 minut na dotazy\n· Kontakt na posledním slajdu\n\nNadechni se. Zpomal!",
+    "script": "Dobrý den všem, jsem Jakub Novák\na dnes vám budu prezentovat.\n\nDnes bych rád ukázal, jak může řečník\nsledovat text i čas,\naniž by opustil prezentaci.\n\nZačněme první otázkou:\nproč na pódiu ztrácíme pojem o čase?"
+  },
+  "da": {
+    "checklist": "⏰ Tjekliste til generalprøven\n\n· Tjek lyden i demovideoen\n· Sæt 5 min. af til spørgsmål\n· Kontaktinfo på sidste slide\n\nTræk vejret. Sænk farten!",
+    "script": "Hej allesammen, jeg hedder Mikkel Jensen,\nog jeg skal præsentere i dag.\n\nI dag vil jeg fortælle om, hvordan en taler\nkan holde øje med manuskriptet og uret\nuden nogensinde at forlade sine slides.\n\nLad os starte med det første spørgsmål:\nHvorfor mister vi tidsfornemmelsen på scenen?"
+  },
+  "el": {
+    "checklist": "⏰ Λίστα για την πρόβα\n\n· Έλεγχος ήχου στο βίντεο\n· 5 λεπτά για ερωτήσεις\n· Στοιχεία επικοινωνίας στο τέλος\n\nΑνάσα. Πιο αργά!",
+    "script": "Γεια σας, είμαι ο Γιώργος Παπαδόπουλος\nκαι θα κάνω σήμερα την παρουσίαση.\n\nΣήμερα θα μιλήσω για το πώς ένας ομιλητής\nμπορεί να παρακολουθεί κείμενο και ώρα\nχωρίς να φύγει ποτέ από τις διαφάνειες.\n\nΑς ξεκινήσουμε με το πρώτο ερώτημα:\nγιατί στη σκηνή χάνουμε την αίσθηση του χρόνου;"
+  },
+  "fi": {
+    "checklist": "⏰ Harjoituksen muistilista\n\n· Tarkista demovideon ääni\n· Varaa 5 min kysymyksille\n· Yhteystiedot viimeiseen diaan\n\nHengitä. Hidasta!",
+    "script": "Hei kaikki, olen Mikko Virtanen,\nja pidän tänään esityksen.\n\nTänään kerron, miten puhuja\nvoi seurata käsikirjoitusta ja kelloa\npoistumatta kertaakaan dioista.\n\nAloitetaan ensimmäisestä kysymyksestä:\nmiksi lavalla menetämme ajantajun?"
+  },
+  "id": {
+    "checklist": "⏰ Checklist gladi resik\n\n· Cek audio video demo\n· Sisihkan 5 menit tanya jawab\n· Kontak di slide terakhir\n\nTarik napas. Pelan-pelan!",
+    "script": "Halo semuanya, saya Rizky Pratama,\ndan hari ini saya yang akan presentasi.\n\nHari ini saya ingin membahas bagaimana pembicara\nbisa memantau naskah dan waktu\ntanpa harus meninggalkan slide.\n\nMari kita mulai dengan pertanyaan pertama:\nkenapa kita sering lupa waktu saat di panggung?"
+  },
+  "nb": {
+    "checklist": "⏰ Sjekkliste for generalprøven\n\n· Sjekk lyden i demovideoen\n· Sett av 5 min til spørsmål\n· Kontaktinfo på siste lysbilde\n\nPust rolig. Senk tempoet!",
+    "script": "Hei alle sammen, jeg heter Jonas Hansen,\nog jeg skal presentere i dag.\n\nI dag vil jeg snakke om hvordan en foredragsholder\nkan holde øye med manus og klokke\nuten å forlate lysbildene.\n\nLa oss begynne med det første spørsmålet:\nHvorfor mister vi tidsfølelsen på scenen?"
+  },
+  "nl": {
+    "checklist": "⏰ Checklist voor de repetitie\n\n· Geluid van de demovideo checken\n· 5 minuten voor vragen houden\n· Contactgegevens op laatste dia\n\nAdem in. Rustig aan!",
+    "script": "Hallo allemaal, ik ben Daan de Vries\nen ik presenteer vandaag.\n\nVandaag wil ik het hebben over hoe een spreker\ntekst en tijd in de gaten kan houden\nzonder ooit de slides te verlaten.\n\nLaten we beginnen met de eerste vraag:\nwaarom verliezen we op het podium elk besef van tijd?"
+  },
+  "pl": {
+    "checklist": "⏰ Lista przed próbą\n\n· Sprawdzić dźwięk w wideo demo\n· Zostawić 5 minut na pytania\n· Kontakt na ostatnim slajdzie\n\nWeź oddech. Zwolnij!",
+    "script": "Cześć wszystkim, nazywam się Piotr Kowalski\ni dziś będę prezentował.\n\nDziś opowiem, jak prelegent\nmoże pilnować tekstu i czasu,\nnie wychodząc ze slajdów.\n\nZacznijmy od pierwszego pytania:\ndlaczego na scenie tracimy poczucie czasu?"
+  },
+  "sv": {
+    "checklist": "⏰ Checklista inför repet\n\n· Kolla ljudet i demovideon\n· Avsätt 5 min för frågor\n· Kontaktinfo på sista bilden\n\nAndas. Ta det lugnt!",
+    "script": "Hej allihop, jag heter Erik Johansson\noch jag ska presentera i dag.\n\nI dag vill jag prata om hur en talare\nkan hålla koll på manus och klocka\nutan att någonsin lämna bilderna.\n\nVi börjar med den första frågan:\nvarför tappar vi tidsuppfattningen på scen?"
+  },
+  "tr": {
+    "checklist": "⏰ Prova kontrol listesi\n\n· Videonun sesini kontrol et\n· Soru-cevap için 5 dk ayır\n· Son slayta iletişim bilgisi\n\nDerin nefes al. Yavaşla!",
+    "script": "Herkese merhaba, ben Emre Yılmaz,\nbugün sunumu ben yapacağım.\n\nBugün bir konuşmacının slaytlardan\nhiç ayrılmadan metni ve saati\nnasıl takip edebileceğini anlatacağım.\n\nİlk soruyla başlayalım:\nSahnede neden zaman kavramını yitiriyoruz?"
+  }
+}

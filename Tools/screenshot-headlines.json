@@ -1,0 +1,434 @@
+{
+  "ko": {
+    "01-sticky-notes": {
+      "headline": "슬라이드 위에 그대로 붙는 메모",
+      "subhead": "키노트 전체 화면 위에서도 노트는 사라지지 않습니다"
+    },
+    "02-timers": {
+      "headline": "발표 시간을 한눈에",
+      "subhead": "타이머와 뽀모도로를 화면 어디에나 띄워 두세요"
+    },
+    "03-teleprompter": {
+      "headline": "대본은 알아서 흘러갑니다",
+      "subhead": "속도와 글자 크기를 맞추고, 좌우 반전도 한 번에"
+    },
+    "04-menu-bar": {
+      "headline": "메뉴 막대에서 바로",
+      "subhead": "노트 · 타이머 · 텔레프롬프터 · 리모컨까지 단축키 하나로"
+    }
+  },
+  "en-US": {
+    "01-sticky-notes": {
+      "headline": "Notes that stay on your slides",
+      "subhead": "Sticky notes float above Keynote’s full screen — they never disappear"
+    },
+    "02-timers": {
+      "headline": "Keep an eye on the clock",
+      "subhead": "Put timers and Pomodoro sessions anywhere on screen"
+    },
+    "03-teleprompter": {
+      "headline": "Your script scrolls itself",
+      "subhead": "Set the speed and type size — mirror it for teleprompter glass"
+    },
+    "04-menu-bar": {
+      "headline": "Everything from the menu bar",
+      "subhead": "Notes, timers, teleprompter and the iPhone remote — one shortcut away"
+    }
+  },
+  "en-GB": {
+    "01-sticky-notes": {
+      "headline": "Notes that stay on your slides",
+      "subhead": "Sticky notes float above Keynote in full-screen — they never disappear"
+    },
+    "02-timers": {
+      "headline": "Keep an eye on the clock",
+      "subhead": "Put timers and Pomodoro sessions anywhere on your screen"
+    },
+    "03-teleprompter": {
+      "headline": "Your script scrolls itself",
+      "subhead": "Set the speed and text size — mirror it for teleprompter glass"
+    },
+    "04-menu-bar": {
+      "headline": "Everything from the menu bar",
+      "subhead": "Notes, timers, teleprompter and the iPhone remote — one shortcut away"
+    }
+  },
+  "ja": {
+    "01-sticky-notes": {
+      "headline": "スライドの上に、メモをずっと",
+      "subhead": "Keynoteのフルスクリーン上でもメモは消えません"
+    },
+    "02-timers": {
+      "headline": "発表時間をひと目で",
+      "subhead": "タイマーとポモドーロを画面のどこにでも"
+    },
+    "03-teleprompter": {
+      "headline": "原稿は自動でスクロール",
+      "subhead": "速度と文字サイズを調整。左右反転もワンクリックで"
+    },
+    "04-menu-bar": {
+      "headline": "メニューバーからすぐに",
+      "subhead": "メモ、タイマー、プロンプター、iPhoneリモコンもショートカットひとつで"
+    }
+  },
+  "zh-Hans": {
+    "01-sticky-notes": {
+      "headline": "便签始终贴在幻灯片上",
+      "subhead": "即使 Keynote 全屏播放，便签也不会消失"
+    },
+    "02-timers": {
+      "headline": "演讲时间，一目了然",
+      "subhead": "计时器和番茄钟，可放在屏幕任意位置"
+    },
+    "03-teleprompter": {
+      "headline": "台词自动滚动",
+      "subhead": "调节速度和字号，一键镜像翻转"
+    },
+    "04-menu-bar": {
+      "headline": "菜单栏一键直达",
+      "subhead": "便签、计时器、提词器和 iPhone 遥控器，一个快捷键全搞定"
+    }
+  },
+  "zh-Hant": {
+    "01-sticky-notes": {
+      "headline": "便利貼始終貼在投影片上",
+      "subhead": "即使 Keynote 全螢幕播放，便利貼也不會消失"
+    },
+    "02-timers": {
+      "headline": "簡報時間，一目瞭然",
+      "subhead": "計時器和番茄鐘，可放在螢幕任何位置"
+    },
+    "03-teleprompter": {
+      "headline": "講稿自動捲動",
+      "subhead": "調整速度和字級，一鍵鏡像翻轉"
+    },
+    "04-menu-bar": {
+      "headline": "從選單列直接開啟",
+      "subhead": "便利貼、計時器、提詞機與 iPhone 遙控器，一個快速鍵搞定"
+    }
+  },
+  "es": {
+    "01-sticky-notes": {
+      "headline": "Tus notas, siempre a la vista",
+      "subhead": "Las notas flotan sobre Keynote a pantalla completa y nunca desaparecen"
+    },
+    "02-timers": {
+      "headline": "Controla el tiempo de un vistazo",
+      "subhead": "Coloca temporizadores y sesiones Pomodoro en cualquier parte"
+    },
+    "03-teleprompter": {
+      "headline": "Tu guion avanza solo",
+      "subhead": "Ajusta la velocidad y el tamaño del texto, y activa el modo espejo"
+    },
+    "04-menu-bar": {
+      "headline": "Todo desde la barra de menús",
+      "subhead": "Notas, temporizadores, teleprompter y mando del iPhone con un atajo"
+    }
+  },
+  "de": {
+    "01-sticky-notes": {
+      "headline": "Notizen direkt über den Folien",
+      "subhead": "Haftnotizen schweben über Keynote im Vollbild – und verschwinden nie"
+    },
+    "02-timers": {
+      "headline": "Die Zeit immer im Blick",
+      "subhead": "Timer und Pomodoro-Sitzungen frei auf dem Bildschirm platzieren"
+    },
+    "03-teleprompter": {
+      "headline": "Dein Skript scrollt von selbst",
+      "subhead": "Tempo und Schriftgröße anpassen – und für Teleprompter-Glas spiegeln"
+    },
+    "04-menu-bar": {
+      "headline": "Alles direkt aus der Menüleiste",
+      "subhead": "Notizen, Timer, Teleprompter und iPhone-Fernbedienung per Tastenkürzel"
+    }
+  },
+  "fr": {
+    "01-sticky-notes": {
+      "headline": "Des notes toujours à l’écran",
+      "subhead": "Vos notes flottent sur Keynote en plein écran et ne disparaissent jamais"
+    },
+    "02-timers": {
+      "headline": "Gardez l’œil sur l’heure",
+      "subhead": "Placez minuteurs et sessions Pomodoro où vous voulez à l’écran"
+    },
+    "03-teleprompter": {
+      "headline": "Votre texte défile tout seul",
+      "subhead": "Réglez vitesse et taille du texte, et activez le mode miroir"
+    },
+    "04-menu-bar": {
+      "headline": "Tout depuis la barre des menus",
+      "subhead": "Notes, minuteurs, prompteur et télécommande iPhone à portée de raccourci"
+    }
+  },
+  "it": {
+    "01-sticky-notes": {
+      "headline": "Note sempre sopra le tue slide",
+      "subhead": "Le note restano sopra Keynote a schermo intero e non spariscono mai"
+    },
+    "02-timers": {
+      "headline": "Il tempo sempre sotto controllo",
+      "subhead": "Timer e sessioni Pomodoro ovunque sullo schermo"
+    },
+    "03-teleprompter": {
+      "headline": "Il copione scorre da solo",
+      "subhead": "Regola velocità e dimensione del testo, e attiva la modalità specchio"
+    },
+    "04-menu-bar": {
+      "headline": "Tutto dalla barra dei menu",
+      "subhead": "Note, timer, teleprompter e telecomando iPhone a portata di scorciatoia"
+    }
+  },
+  "pt-BR": {
+    "01-sticky-notes": {
+      "headline": "Notas fixas sobre seus slides",
+      "subhead": "As notas flutuam sobre o Keynote em tela cheia e nunca somem"
+    },
+    "02-timers": {
+      "headline": "O tempo sempre à vista",
+      "subhead": "Coloque timers e sessões Pomodoro em qualquer lugar da tela"
+    },
+    "03-teleprompter": {
+      "headline": "Seu roteiro rola sozinho",
+      "subhead": "Ajuste a velocidade e o tamanho do texto, e espelhe com um clique"
+    },
+    "04-menu-bar": {
+      "headline": "Tudo pela barra de menus",
+      "subhead": "Notas, timers, teleprompter e controle do iPhone em um só atalho"
+    }
+  },
+  "ru": {
+    "01-sticky-notes": {
+      "headline": "Заметки поверх слайдов",
+      "subhead": "Стикеры видны даже поверх Keynote в полноэкранном режиме"
+    },
+    "02-timers": {
+      "headline": "Время всегда перед глазами",
+      "subhead": "Таймеры и помодоро — в любом месте экрана"
+    },
+    "03-teleprompter": {
+      "headline": "Текст прокручивается сам",
+      "subhead": "Настройте скорость и размер шрифта, включите зеркальный режим"
+    },
+    "04-menu-bar": {
+      "headline": "Всё из строки меню",
+      "subhead": "Заметки, таймеры, суфлёр и пульт на iPhone — одним сочетанием клавиш"
+    }
+  },
+  "th": {
+    "01-sticky-notes": {
+      "headline": "โน้ตติดบนสไลด์ไม่หายไปไหน",
+      "subhead": "โน้ตลอยอยู่เหนือ Keynote แบบเต็มหน้าจอ ไม่มีวันหายไป"
+    },
+    "02-timers": {
+      "headline": "ดูเวลานำเสนอได้ในพริบตา",
+      "subhead": "วางตัวจับเวลาและโพโมโดโรไว้ตรงไหนของหน้าจอก็ได้"
+    },
+    "03-teleprompter": {
+      "headline": "บทพูดเลื่อนเองอัตโนมัติ",
+      "subhead": "ปรับความเร็วและขนาดตัวอักษร พร้อมโหมดกลับด้านในคลิกเดียว"
+    },
+    "04-menu-bar": {
+      "headline": "ทุกอย่างจากแถบเมนู",
+      "subhead": "โน้ต ตัวจับเวลา เทเลพรอมป์เตอร์ และรีโมท iPhone ด้วยปุ่มลัดเดียว"
+    }
+  },
+  "vi": {
+    "01-sticky-notes": {
+      "headline": "Ghi chú luôn nằm trên slide",
+      "subhead": "Ghi chú nổi trên Keynote toàn màn hình và không bao giờ biến mất"
+    },
+    "02-timers": {
+      "headline": "Nắm thời gian trong tầm mắt",
+      "subhead": "Đặt hẹn giờ và phiên Pomodoro ở bất kỳ đâu trên màn hình"
+    },
+    "03-teleprompter": {
+      "headline": "Kịch bản tự cuộn",
+      "subhead": "Chỉnh tốc độ, cỡ chữ và lật gương chỉ với một cú nhấp"
+    },
+    "04-menu-bar": {
+      "headline": "Mọi thứ từ thanh menu",
+      "subhead": "Ghi chú, hẹn giờ, máy nhắc chữ và điều khiển iPhone bằng một phím tắt"
+    }
+  },
+  "cs": {
+    "01-sticky-notes": {
+      "headline": "Poznámky přímo nad snímky",
+      "subhead": "Poznámky zůstávají nad Keynote i v režimu celé obrazovky"
+    },
+    "02-timers": {
+      "headline": "Čas máte stále na očích",
+      "subhead": "Časovače a Pomodoro umístíte kamkoli na obrazovku"
+    },
+    "03-teleprompter": {
+      "headline": "Text se posouvá sám",
+      "subhead": "Nastavte rychlost a velikost písma a zrcadlete jedním kliknutím"
+    },
+    "04-menu-bar": {
+      "headline": "Vše z řádku nabídek",
+      "subhead": "Poznámky, časovače, teleprompter a ovladač z iPhonu jednou zkratkou"
+    }
+  },
+  "da": {
+    "01-sticky-notes": {
+      "headline": "Noter, der bliver på dine slides",
+      "subhead": "Noterne svæver over Keynote i fuld skærm – og forsvinder aldrig"
+    },
+    "02-timers": {
+      "headline": "Hold øje med tiden",
+      "subhead": "Placer timere og Pomodoro-sessioner hvor som helst på skærmen"
+    },
+    "03-teleprompter": {
+      "headline": "Dit manuskript ruller selv",
+      "subhead": "Indstil hastighed og tekststørrelse – og spejlvend til prompterglas"
+    },
+    "04-menu-bar": {
+      "headline": "Alt fra menulinjen",
+      "subhead": "Noter, timere, teleprompter og iPhone-fjernbetjening med én genvej"
+    }
+  },
+  "el": {
+    "01-sticky-notes": {
+      "headline": "Σημειώσεις πάνω στις διαφάνειες",
+      "subhead": "Οι σημειώσεις μένουν πάνω από το Keynote σε πλήρη οθόνη"
+    },
+    "02-timers": {
+      "headline": "Ο χρόνος πάντα μπροστά σας",
+      "subhead": "Χρονόμετρα και Pomodoro σε οποιοδήποτε σημείο της οθόνης"
+    },
+    "03-teleprompter": {
+      "headline": "Το κείμενο κυλά μόνο του",
+      "subhead": "Ρυθμίστε ταχύτητα και μέγεθος γραμμάτων, με λειτουργία καθρέφτη"
+    },
+    "04-menu-bar": {
+      "headline": "Όλα από τη γραμμή μενού",
+      "subhead": "Σημειώσεις, χρονόμετρα, prompter και χειριστήριο iPhone με μία συντόμευση"
+    }
+  },
+  "fi": {
+    "01-sticky-notes": {
+      "headline": "Muistiinpanot dioihin kiinni",
+      "subhead": "Muistilaput pysyvät Keynoten koko näytön tilan päällä"
+    },
+    "02-timers": {
+      "headline": "Aika aina näkyvillä",
+      "subhead": "Ajastimet ja Pomodoro-jaksot mihin tahansa näytöllä"
+    },
+    "03-teleprompter": {
+      "headline": "Käsikirjoitus rullaa itsestään",
+      "subhead": "Säädä nopeus ja tekstikoko – ja peilaa yhdellä klikkauksella"
+    },
+    "04-menu-bar": {
+      "headline": "Kaikki valikkoriviltä",
+      "subhead": "Muistiinpanot, ajastimet, prompteri ja iPhone-ohjain yhdellä oikotiellä"
+    }
+  },
+  "id": {
+    "01-sticky-notes": {
+      "headline": "Catatan yang tetap di slide",
+      "subhead": "Catatan melayang di atas Keynote layar penuh dan tak pernah hilang"
+    },
+    "02-timers": {
+      "headline": "Waktu selalu dalam pantauan",
+      "subhead": "Letakkan timer dan sesi Pomodoro di mana saja di layar"
+    },
+    "03-teleprompter": {
+      "headline": "Naskah bergulir sendiri",
+      "subhead": "Atur kecepatan dan ukuran teks, lalu cerminkan dengan sekali klik"
+    },
+    "04-menu-bar": {
+      "headline": "Semua dari bar menu",
+      "subhead": "Catatan, timer, teleprompter, dan remote iPhone dengan satu pintasan"
+    }
+  },
+  "nb": {
+    "01-sticky-notes": {
+      "headline": "Notater som blir på lysbildene",
+      "subhead": "Notatene svever over Keynote i fullskjerm – og forsvinner aldri"
+    },
+    "02-timers": {
+      "headline": "Hold øye med tiden",
+      "subhead": "Plasser tidtakere og Pomodoro-økter hvor som helst på skjermen"
+    },
+    "03-teleprompter": {
+      "headline": "Manuset ruller av seg selv",
+      "subhead": "Still inn fart og tekststørrelse – og speilvend for prompterglass"
+    },
+    "04-menu-bar": {
+      "headline": "Alt fra menylinjen",
+      "subhead": "Notater, tidtakere, teleprompter og iPhone-fjernkontroll med én snarvei"
+    }
+  },
+  "nl": {
+    "01-sticky-notes": {
+      "headline": "Notities die op je dia’s blijven",
+      "subhead": "Notities zweven boven Keynote op volledig scherm en verdwijnen nooit"
+    },
+    "02-timers": {
+      "headline": "Houd de tijd in de gaten",
+      "subhead": "Zet timers en Pomodoro-sessies waar je maar wilt op het scherm"
+    },
+    "03-teleprompter": {
+      "headline": "Je tekst scrolt vanzelf",
+      "subhead": "Stel snelheid en tekstgrootte in en spiegel voor teleprompterglas"
+    },
+    "04-menu-bar": {
+      "headline": "Alles vanuit de menubalk",
+      "subhead": "Notities, timers, teleprompter en iPhone-afstandsbediening met één sneltoets"
+    }
+  },
+  "pl": {
+    "01-sticky-notes": {
+      "headline": "Notatki zawsze na slajdach",
+      "subhead": "Notatki unoszą się nad Keynote na pełnym ekranie i nie znikają"
+    },
+    "02-timers": {
+      "headline": "Czas zawsze na oku",
+      "subhead": "Umieść minutniki i sesje Pomodoro w dowolnym miejscu ekranu"
+    },
+    "03-teleprompter": {
+      "headline": "Tekst przewija się sam",
+      "subhead": "Dostosuj tempo i rozmiar tekstu, włącz tryb lustra jednym kliknięciem"
+    },
+    "04-menu-bar": {
+      "headline": "Wszystko z paska menu",
+      "subhead": "Notatki, minutniki, prompter i pilot na iPhonie pod jednym skrótem"
+    }
+  },
+  "sv": {
+    "01-sticky-notes": {
+      "headline": "Lappar som stannar på bilderna",
+      "subhead": "Lapparna svävar över Keynote i helskärm – och försvinner aldrig"
+    },
+    "02-timers": {
+      "headline": "Ha koll på tiden",
+      "subhead": "Placera timers och Pomodoro-pass var som helst på skärmen"
+    },
+    "03-teleprompter": {
+      "headline": "Manuset rullar av sig självt",
+      "subhead": "Ställ in fart och textstorlek – och spegelvänd för prompterglas"
+    },
+    "04-menu-bar": {
+      "headline": "Allt från menyraden",
+      "subhead": "Lappar, timers, teleprompter och iPhone-fjärrkontroll med ett kortkommando"
+    }
+  },
+  "tr": {
+    "01-sticky-notes": {
+      "headline": "Notlar hep slaytın üstünde",
+      "subhead": "Yapışkan notlar tam ekran Keynote’un üstünde durur, asla kaybolmaz"
+    },
+    "02-timers": {
+      "headline": "Süreyi bir bakışta görün",
+      "subhead": "Zamanlayıcıları ve Pomodoro’yu ekranın istediğiniz yerine koyun"
+    },
+    "03-teleprompter": {
+      "headline": "Metniniz kendiliğinden akar",
+      "subhead": "Hızı ve yazı boyutunu ayarlayın, tek tıkla aynalayın"
+    },
+    "04-menu-bar": {
+      "headline": "Her şey menü çubuğunda",
+      "subhead": "Notlar, zamanlayıcılar, teleprompter ve iPhone kumandası tek kısayolda"
+    }
+  }
+}

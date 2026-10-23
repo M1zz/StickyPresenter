@@ -1,11 +1,12 @@
 // App Store 스크린샷 합성기 — 언어별로 캡처한 창 이미지를 2880×1800 캔버스에 배치한다.
 //
-// 창 캡처는 사람이 미리 떠 둔다 (`screencapture -o -l<windowid>`):
-//   ko_panel · ko_guide · ko_note · ko_prompter · ko_pomo · ko_widget · ko_menu
-//   en_* 도 같은 이름으로.
+// 창 그림은 Tools/capture-screenshots.sh 가 언어마다 만든다:
+//   <로케일>_panel · _guide · _note · _prompter · _pomo · _widget · _menu
 //
 // 실행:
-//   swift Tools/MakeScreenshots.swift <캡처폴더> <출력폴더>
+//   swift Tools/MakeScreenshots.swift docs/screenshots/raw docs/screenshots/marketing Tools/screenshot-headlines.json <로케일...>
+//
+// 헤드라인 · 부제는 Tools/screenshot-headlines.json 에 언어별로 있다.
 //
 // 배경·문구만 여기서 정하고, 앱 화면은 손대지 않는다 — 스토어에 올라가는 그림과
 // 실제 앱이 어긋나지 않도록.
@@ -16,12 +17,15 @@ import Foundation
 // MARK: - 입력
 
 let args = CommandLine.arguments
-guard args.count >= 3 else {
-    FileHandle.standardError.write("usage: MakeScreenshots.swift <shots-dir> <out-dir>\n".data(using: .utf8)!)
+guard args.count >= 5 else {
+    FileHandle.standardError.write("usage: MakeScreenshots.swift <shots-dir> <out-dir> <headlines.json> <locale...>\n".data(using: .utf8)!)
     exit(1)
 }
 let shotsDir = URL(fileURLWithPath: args[1])
 let outDir = URL(fileURLWithPath: args[2])
+let headlines = (try? JSONSerialization.jsonObject(with: Data(contentsOf: URL(fileURLWithPath: args[3]))))
+    as? [String: [String: [String: String]]] ?? [:]
+let locales = Array(args[4...])
 
 let canvas = CGSize(width: 2880, height: 1800)
 
@@ -36,22 +40,12 @@ struct Placement {
 
 struct Shot {
     let name: String
-    let headline: [String: String]   // 언어 → 문구
-    let subhead: [String: String]
     let items: [Placement]
 }
 
 let shots: [Shot] = [
     Shot(
         name: "01-sticky-notes",
-        headline: [
-            "ko": "슬라이드 위에 그대로 붙는 메모",
-            "en": "Notes that stay on your slides",
-        ],
-        subhead: [
-            "ko": "키노트 전체 화면 위에서도 노트는 사라지지 않습니다",
-            "en": "Sticky notes float above Keynote’s full screen — they never disappear",
-        ],
         items: [
             Placement(file: "guide",  center: CGPoint(x: 760,  y: 1120), scale: 1.25),
             Placement(file: "note",   center: CGPoint(x: 1780, y: 800),  scale: 1.30),
@@ -61,14 +55,6 @@ let shots: [Shot] = [
     ),
     Shot(
         name: "02-timers",
-        headline: [
-            "ko": "발표 시간을 한눈에",
-            "en": "Keep an eye on the clock",
-        ],
-        subhead: [
-            "ko": "타이머와 뽀모도로를 화면 어디에나 띄워 두세요",
-            "en": "Put timers and Pomodoro sessions anywhere on screen",
-        ],
         items: [
             Placement(file: "panel",  center: CGPoint(x: 1000, y: 1140), scale: 1.50),
             Placement(file: "pomo",   center: CGPoint(x: 2050, y: 830),  scale: 1.30),
@@ -77,14 +63,6 @@ let shots: [Shot] = [
     ),
     Shot(
         name: "03-teleprompter",
-        headline: [
-            "ko": "대본은 알아서 흘러갑니다",
-            "en": "Your script scrolls itself",
-        ],
-        subhead: [
-            "ko": "속도와 글자 크기를 맞추고, 좌우 반전도 한 번에",
-            "en": "Set the speed and type size — mirror it for teleprompter glass",
-        ],
         items: [
             Placement(file: "prompter", center: CGPoint(x: 1250, y: 1120), scale: 1.45),
             Placement(file: "note",     center: CGPoint(x: 2450, y: 1300), scale: 1.15),
@@ -92,14 +70,6 @@ let shots: [Shot] = [
     ),
     Shot(
         name: "04-menu-bar",
-        headline: [
-            "ko": "메뉴 막대에서 바로",
-            "en": "Everything from the menu bar",
-        ],
-        subhead: [
-            "ko": "노트 · 타이머 · 텔레프롬프터 · 리모컨까지 단축키 하나로",
-            "en": "Notes, timers, teleprompter and the iPhone remote — one shortcut away",
-        ],
         items: [
             Placement(file: "menu",  center: CGPoint(x: 880,  y: 1150), scale: 1.45),
             Placement(file: "panel", center: CGPoint(x: 2000, y: 1150), scale: 1.35),
@@ -143,11 +113,16 @@ func drawText(_ text: String, size: CGFloat, weight: NSFont.Weight, color: NSCol
     let style = NSMutableParagraphStyle()
     style.alignment = .center
     style.lineBreakMode = .byWordWrapping
-    let attrs: [NSAttributedString.Key: Any] = [
-        .font: NSFont.systemFont(ofSize: size, weight: weight),
-        .foregroundColor: color,
-        .paragraphStyle: style,
-    ]
+    // 한 줄에 들어가지 않으면 들어갈 때까지 글자를 줄인다 — 언어마다 길이가 다르다.
+    var fontSize = size
+    func attributes(_ s: CGFloat) -> [NSAttributedString.Key: Any] {
+        [.font: NSFont.systemFont(ofSize: s, weight: weight), .foregroundColor: color, .paragraphStyle: style]
+    }
+    while fontSize > size * 0.6,
+          (text as NSString).size(withAttributes: attributes(fontSize)).width > canvas.width - 400 {
+        fontSize -= 2
+    }
+    let attrs = attributes(fontSize)
     let box = NSRect(x: 200, y: canvas.height - centerY - size, width: canvas.width - 400, height: size * 2.2)
     (text as NSString).draw(in: box, withAttributes: attrs)
 }
@@ -170,7 +145,7 @@ func drawBackground() {
 let ink = NSColor(calibratedRed: 0.13, green: 0.16, blue: 0.24, alpha: 1)
 let inkSoft = NSColor(calibratedRed: 0.30, green: 0.35, blue: 0.45, alpha: 1)
 
-for lang in ["ko", "en"] {
+for lang in locales {
     let langDir = outDir.appendingPathComponent(lang)
     try? FileManager.default.createDirectory(at: langDir, withIntermediateDirectories: true)
 
@@ -186,8 +161,9 @@ for lang in ["ko", "en"] {
         NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: bitmap)
 
         drawBackground()
-        drawText(shot.headline[lang] ?? "", size: 106, weight: .bold, color: ink, centerY: 152)
-        drawText(shot.subhead[lang] ?? "", size: 48, weight: .regular, color: inkSoft, centerY: 318)
+        let copy = headlines[lang]?[shot.name] ?? [:]
+        drawText(copy["headline"] ?? "", size: 106, weight: .bold, color: ink, centerY: 152)
+        drawText(copy["subhead"] ?? "", size: 48, weight: .regular, color: inkSoft, centerY: 318)
 
         for item in shot.items {
             let url = shotsDir.appendingPathComponent("\(lang)_\(item.file).png")

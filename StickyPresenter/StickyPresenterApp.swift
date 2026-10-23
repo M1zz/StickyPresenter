@@ -48,13 +48,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        #if DEBUG
+        ScreenshotStage.prepare()   // 스크린샷 무대일 때만 (ScreenshotStage.swift)
+        #endif
         setupMenuBar()
         setupGlobalHotkey()
 
         // iOS 리모컨이 붙을 수 있도록 광고 시작.
         // 로컬 네트워크 권한 프롬프트는 실제로 상대를 찾을 때 처음 뜬다.
         // 원격 킬스위치로 꺼져 있으면 광고하지 않는다 (StickyPresenterFlags.swift).
-        if LeeoRemoteFlags.isEnabled(StickyPresenterFlag.remoteControlEnabled) {
+        if LeeoRemoteFlags.isEnabled(StickyPresenterFlag.remoteControlEnabled), !isScreenshotStage {
             RemoteControlHost.shared.start()
         }
 
@@ -87,6 +90,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // 지난 실행에서 남은 스냅샷을 현재 상태로 덮어쓴다.
         // 타이머가 돌아가는 중에 앱이 종료되면 위젯이 끝나지 않는 카운트다운을 계속 그리기 때문.
         WidgetSync.refresh()
+
+        #if DEBUG
+        ScreenshotStage.run(self)
+        #endif
+    }
+
+    /// 스크린샷 무대에선 리모컨 광고를 켜지 않는다 — 로컬 네트워크 권한 창이 화면을 가린다.
+    private var isScreenshotStage: Bool {
+        #if DEBUG
+        return ScreenshotStage.isActive
+        #else
+        return false
+        #endif
     }
 
     func applicationWillTerminate(_ notification: Notification) {
