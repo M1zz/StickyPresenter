@@ -61,6 +61,10 @@ final class RemoteClient: NSObject, ObservableObject {
     @Published private(set) var pairedHostID: String?
     /// 코드가 틀렸을 때처럼 화면에 한 번 보여주고 지울 메시지. 뷰에서 비울 수 있게 열어 둔다.
     @Published var pairingError: String?
+    /// 찾기 시작하고 한참이 지나도 Mac 이 하나도 안 보인다.
+    /// iPhone 의 로컬 네트워크 권한이 꺼져 있으면 검색은 **오류 없이** 아무것도 못 찾는다 —
+    /// 시간으로라도 알아채지 않으면 "찾는 중" 이 끝없이 돌아간다.
+    @Published private(set) var isSearchSlow = false
 
     var isConnected: Bool {
         if case .connected = status { return true }
@@ -70,7 +74,10 @@ final class RemoteClient: NSObject, ObservableObject {
     /// 이 리모컨을 가리키는 바뀌지 않는 식별자. Mac 이 이걸로 "이미 허락한 기기" 를 알아본다.
     /// 기기 이름은 사용자가 언제든 바꾸므로 기준이 되지 못한다.
     private let remoteID: String
-    private let peerID: MCPeerID
+    /// 찾기를 새로 시작할 때마다 새로 만든다. 같은 peer ID 로 다시 초대하면 Mac 에 남은
+    /// 죽은 연결(백그라운드에 다녀오기 전의 것)과 겹쳐 코드가 맞아도 연결이 맺어지지 않는 일이 있었다.
+    /// Mac 은 이 리모컨을 peer ID 가 아니라 `remoteID` 로 알아보므로 바꿔도 짝은 그대로다.
+    private var peerID: MCPeerID
     private var session: MCSession?
     private var browser: MCNearbyServiceBrowser?
 
@@ -78,12 +85,27 @@ final class RemoteClient: NSObject, ObservableObject {
     private var pendingPeer: MCPeerID?
     /// 그 초대에 코드를 실었는지 — 실패했을 때 안내 문구를 나누는 기준.
     private var pendingUsedCode = false
+    /// 초대장을 보낸 시각. 실패까지 걸린 시간으로 "거절" 과 "무응답" 을 나눈다.
+    private var pendingSince: Date?
     /// 성공하면 짝으로 기억할 Mac 식별자.
     private var pendingHostID: String?
+    /// 자동 재연결을 기다리는 사이 사용자가 넣은 코드. 보낸 초대는 거둘 수 없으므로,
+    /// 그 답이 실패로 오면 곧바로 이 코드로 다시 보낸다 — 맞는 코드를 넣고도 무시당하지 않게.
+    private var queuedInvite: (host: DiscoveredHost, code: String)?
     /// 실제로 붙어 있는 Mac. 상태 패킷도 명령도 오직 이 상대와만 주고받는다.
     private var connectedPeer: MCPeerID?
     /// 자동 재연결을 시도해 본 상대. 거절당한 Mac 에 계속 초대장을 던지지 않도록 막는다.
     private var autoAttempted = Set<MCPeerID>()
+    /// `isSearchSlow` 를 켜는 지연 작업. 다시 찾기 시작하면 처음부터 잰다.
+    private var slowSearchTask: Task<Void, Never>?
+
+    /// 초대 시간 제한. Mac 이 끝내 답하지 않으면 이만큼 뒤에 `.notConnected` 가 온다.
+    private static let inviteTimeout: TimeInterval = 15
+    /// Mac 이 거절하면 1초 안팎에 답이 온다. 이보다 늦게 실패했다면 거절이 아니라
+    /// 초대장이 Mac 에 닿지 못했거나 Mac 이 답할 수 없던 것이다 (잠자기·VPN·네트워크 차단).
+    private static let rejectWindow: TimeInterval = 8
+    /// 이만큼 찾아도 Mac 이 없으면 점검표를 보라고 말한다. 보통은 1~2초 안에 보인다.
+    private static let slowSearchDelay: Duration = .seconds(10)
 
     private enum Keys {
         static let remoteID = "remote.remoteID"
@@ -109,6 +131,7 @@ final class RemoteClient: NSObject, ObservableObject {
     func start() {
         guard session == nil else { return }
 
+        peerID = MCPeerID(displayName: String(UIDevice.current.name.prefix(30)))
         let session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         session.delegate = self
         self.session = session
@@ -119,15 +142,29 @@ final class RemoteClient: NSObject, ObservableObject {
         self.browser = browser
 
         status = .searching
+        watchForSlowSearch()
+    }
+
+    private func watchForSlowSearch() {
+        slowSearchTask?.cancel()
+        isSearchSlow = false
+        slowSearchTask = Task { [weak self] in
+            try? await Task.sleep(for: Self.slowSearchDelay)
+            guard !Task.isCancelled, let self, self.discovered.isEmpty else { return }
+            self.isSearchSlow = true
+        }
     }
 
     func stop() {
         browser?.stopBrowsingForPeers(); browser = nil
         session?.disconnect(); session = nil
+        slowSearchTask?.cancel(); slowSearchTask = nil
+        isSearchSlow = false
         discovered = []
         autoAttempted.removeAll()
         pendingPeer = nil
         pendingHostID = nil
+        queuedInvite = nil
         connectedPeer = nil
         timers = []
         desktop = nil
@@ -156,8 +193,15 @@ final class RemoteClient: NSObject, ObservableObject {
         }
         // 보낸 초대는 도로 거둘 수 없다. 답(수락·거절·시간 초과)이 올 때까지 기다려야
         // 하는데, 아무 말 없이 무시하면 버튼이 먹지 않는 것처럼 보인다.
-        if let pending = pendingPeer, pending != host.peerID {
-            pairingError = String(localized: "\(pending.displayName)에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요.")
+        if let pending = pendingPeer {
+            if pending == host.peerID, !pendingUsedCode {
+                // 같은 Mac 에 코드 없이 보낸 자동 재연결이 아직 답을 기다린다.
+                // 붙으면 코드는 필요 없고, 거절되면 이 코드로 곧바로 다시 보낸다.
+                pairingError = nil
+                queuedInvite = (host, code)
+            } else {
+                pairingError = String(localized: "\(pending.displayName)에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요.")
+            }
             return
         }
         pairingError = nil
@@ -186,9 +230,10 @@ final class RemoteClient: NSObject, ObservableObject {
 
         pendingPeer = host.peerID
         pendingUsedCode = (code != nil)
+        pendingSince = Date()
         pendingHostID = host.hostID
         status = .connecting(host.name)
-        browser.invitePeer(host.peerID, to: session, withContext: context, timeout: 15)
+        browser.invitePeer(host.peerID, to: session, withContext: context, timeout: Self.inviteTimeout)
     }
 
     private func rememberPairedHost(_ hostID: String) {
@@ -220,11 +265,17 @@ extension RemoteClient: MCNearbyServiceBrowserDelegate {
                              withDiscoveryInfo info: [String: String]?) {
         Task { @MainActor in
             let host = DiscoveredHost(peerID: peerID, hostID: info?[RemoteService.DiscoveryKey.hostID])
+            // Mac 앱을 다시 켜면 peer ID 가 새로 생긴다. 예전 것이 아직 사라지지 않았으면 같은 Mac 이
+            // 목록에 둘 뜨고, 예전 쪽을 누르면 아무 답도 오지 않는다. 같은 Mac 이면 새것만 남긴다.
+            if let hostID = host.hostID {
+                self.discovered.removeAll { $0.hostID == hostID && $0.peerID != peerID && $0.peerID != self.pendingPeer }
+            }
             if let index = self.discovered.firstIndex(where: { $0.peerID == peerID }) {
                 self.discovered[index] = host
             } else {
                 self.discovered.append(host)
             }
+            self.isSearchSlow = false
 
             // 짝으로 기억해 둔 Mac 이면 코드를 묻지 않는다.
             // `autoAttempted` 로 한 번만 시도한다 — 거절당한 Mac 에 계속 던지면
@@ -246,7 +297,9 @@ extension RemoteClient: MCNearbyServiceBrowserDelegate {
 
             if self.pendingPeer == peerID {
                 self.pendingPeer = nil
+                self.pendingSince = nil
                 self.pendingHostID = nil
+                self.queuedInvite = nil
                 self.status = .searching
             }
         }
@@ -272,6 +325,8 @@ extension RemoteClient: MCSessionDelegate {
                 // 코드가 통과했다는 뜻 — 다음부터는 코드 없이 붙도록 짝을 기억한다.
                 if let hostID = self.pendingHostID { self.rememberPairedHost(hostID) }
                 self.pendingHostID = nil
+                self.pendingSince = nil
+                self.queuedInvite = nil
                 self.autoAttempted.remove(peerID)
                 self.pairingError = nil
                 self.status = .connected(peerID.displayName)
@@ -303,17 +358,44 @@ extension RemoteClient: MCSessionDelegate {
 
         guard peerID == pendingPeer else { return }
 
+        if let queued = queuedInvite, queued.host.peerID == peerID {
+            queuedInvite = nil
+            pendingPeer = nil
+            pendingSince = nil
+            pendingHostID = nil
+            invite(queued.host, code: queued.code)
+            return
+        }
+
         let wasAutomatic = !pendingUsedCode
+        let elapsed = pendingSince.map { Date().timeIntervalSince($0) } ?? Self.inviteTimeout
         pendingPeer = nil
+        pendingSince = nil
         pendingHostID = nil
         status = .searching
 
         // 자동 재연결이 막힌 경우 짝을 지우지는 않는다. Mac 을 그냥 껐을 때도 여기로 떨어지는데,
         // 그걸 페어링 해제로 읽으면 발표 직전에 멀쩡한 짝을 잃는다. 목록에 그대로 두면
         // 사용자가 눌러서 코드를 다시 넣을 수 있고, 그 편이 되돌리기 쉽다.
-        pairingError = wasAutomatic
-            ? String(localized: "\(peerID.displayName)에 자동으로 연결하지 못했습니다. 목록에서 다시 골라 주세요.")
-            : String(localized: "연결 코드가 맞지 않거나 Mac 이 응답하지 않았습니다. Mac 메뉴 막대의 코드를 확인해 주세요.")
+        pairingError = Self.failureMessage(host: peerID.displayName,
+                                           usedCode: !wasAutomatic, elapsed: elapsed)
+    }
+
+    /// "안 된다" 대신 **무엇을 하면 되는지**를 말한다.
+    ///
+    /// Mac 은 초대를 거절할 때 이유를 실어 보낼 수 없다 (MultipeerConnectivity 에 그런 길이 없다).
+    /// 대신 답이 온 시간으로 나눈다 — 거절은 곧바로 오고, 초대장이 닿지 못하면 시간 제한까지 간다.
+    /// 그리고 Mac 이 곧바로 거절하는 이유는 둘뿐이다: 코드가 틀렸거나, 이 리모컨을 모르거나.
+    static func failureMessage(host: String, usedCode: Bool, elapsed: TimeInterval) -> String {
+        guard elapsed < rejectWindow else {
+            return String(localized: "\(host)에서 응답이 없습니다. Mac이 잠자기 상태가 아닌지, 두 기기가 같은 Wi-Fi인지, VPN이 꺼져 있는지 확인해 주세요.")
+        }
+        if usedCode {
+            return String(localized: "연결 코드가 다릅니다. Mac 메뉴 막대의 타이머 아이콘 → Remote 에 지금 떠 있는 4자리를 넣어 주세요. 코드를 새로 만들었다면 새 코드여야 합니다.")
+        }
+        // 짝이었던 Mac 이 코드 없는 초대를 곧바로 거절했다 = Mac 이 이 리모컨을 잊었다
+        // (메뉴의 "기억한 리모컨 지우기", 또는 Mac 앱을 지웠다 다시 깔았다).
+        return String(localized: "\(host)에서 이 iPhone을 기억하지 못합니다. 목록에서 Mac을 눌러 연결 코드를 다시 넣어 주세요.")
     }
 
     nonisolated func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {

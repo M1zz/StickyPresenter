@@ -30,6 +30,9 @@
 "remote.forget.title" = "Zapomenout všechna spárovaná ovládání?";
 "remote.forget.message" = "Připojená ovládání budou odpojena a bude u nich potřeba znovu zadat spárovací kód.";
 "remote.forget.confirm" = "Zapomenout";
+"remote.problem.wrongCode" = "Odmítnuto %@: nesprávný kód";
+"remote.problem.outdated" = "Odmítnuta stará verze aplikace pro dálkové ovládání – aktualizujte ji v iPhonu";
+"remote.problem.advertising" = "iPhony tento Mac nenajdou – Otevřít nastavení místní sítě…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Zrušit";

@@ -30,6 +30,9 @@
 "remote.forget.title" = "Забыть все сопряжённые пульты?";
 "remote.forget.message" = "Подключённые пульты будут отключены. Им снова понадобится код сопряжения.";
 "remote.forget.confirm" = "Забыть";
+"remote.problem.wrongCode" = "Подключение %@ отклонено: неверный код";
+"remote.problem.outdated" = "Отклонён устаревший пульт — обновите приложение на iPhone";
+"remote.problem.advertising" = "iPhone не видит этот Mac — открыть настройки локальной сети…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Отмена";

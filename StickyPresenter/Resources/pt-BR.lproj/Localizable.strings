@@ -30,6 +30,9 @@
 "remote.forget.title" = "Esquecer todos os controles remotos pareados?";
 "remote.forget.message" = "Os controles remotos conectados serão desconectados e precisarão do código de pareamento de novo.";
 "remote.forget.confirm" = "Esquecer";
+"remote.problem.wrongCode" = "%@ recusado: código errado";
+"remote.problem.outdated" = "Versão antiga do controle remoto recusada — atualize no iPhone";
+"remote.problem.advertising" = "Os iPhones não encontram este Mac — Abrir ajustes de Rede Local…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Cancelar";

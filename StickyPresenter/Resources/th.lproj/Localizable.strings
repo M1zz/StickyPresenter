@@ -30,6 +30,9 @@
 "remote.forget.title" = "ลืมรีโมตที่จับคู่ไว้ทั้งหมดหรือไม่";
 "remote.forget.message" = "รีโมตที่เชื่อมต่ออยู่จะถูกตัดการเชื่อมต่อ และต้องป้อนรหัสจับคู่อีกครั้ง";
 "remote.forget.confirm" = "ลืม";
+"remote.problem.wrongCode" = "ปฏิเสธ %@ เพราะรหัสไม่ถูกต้อง";
+"remote.problem.outdated" = "ปฏิเสธแอปรีโมตเวอร์ชันเก่า — โปรดอัปเดตบน iPhone";
+"remote.problem.advertising" = "iPhone หา Mac เครื่องนี้ไม่เจอ — เปิดการตั้งค่าเครือข่ายเฉพาะที่…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "ยกเลิก";

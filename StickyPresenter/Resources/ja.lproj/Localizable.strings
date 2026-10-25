@@ -30,6 +30,9 @@
 "remote.forget.title" = "ペアリング済みのリモコンをすべて解除しますか？";
 "remote.forget.message" = "接続中のリモコンは切断されます。再び使うにはペアリングコードが必要です。";
 "remote.forget.confirm" = "解除";
+"remote.problem.wrongCode" = "コードが違うため%@の接続を拒否しました";
+"remote.problem.outdated" = "古いリモコンアプリの接続を拒否しました — iPhoneでアップデートしてください";
+"remote.problem.advertising" = "iPhoneからこのMacが見つかりません — ローカルネットワーク設定を開く…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "キャンセル";

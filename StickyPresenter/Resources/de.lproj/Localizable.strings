@@ -30,6 +30,9 @@
 "remote.forget.title" = "Alle gekoppelten Fernbedienungen entfernen?";
 "remote.forget.message" = "Verbundene Fernbedienungen werden getrennt. Zum erneuten Verbinden brauchen sie den Kopplungscode noch einmal.";
 "remote.forget.confirm" = "Entfernen";
+"remote.problem.wrongCode" = "%@ abgelehnt: falscher Code";
+"remote.problem.outdated" = "Veraltete Fernbedienungs-App abgelehnt – bitte auf dem iPhone aktualisieren";
+"remote.problem.advertising" = "iPhones finden diesen Mac nicht – Einstellungen für lokales Netzwerk öffnen …";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Abbrechen";

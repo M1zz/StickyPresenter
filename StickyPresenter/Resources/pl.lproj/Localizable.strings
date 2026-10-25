@@ -30,6 +30,9 @@
 "remote.forget.title" = "Zapomnieć wszystkie sparowane piloty?";
 "remote.forget.message" = "Połączone piloty zostaną rozłączone i będą potrzebować kodu parowania ponownie.";
 "remote.forget.confirm" = "Zapomnij";
+"remote.problem.wrongCode" = "Odrzucono %@: zły kod";
+"remote.problem.outdated" = "Odrzucono starą wersję pilota — zaktualizuj aplikację na iPhonie";
+"remote.problem.advertising" = "iPhone nie widzi tego Maca — Otwórz ustawienia sieci lokalnej…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Anuluj";

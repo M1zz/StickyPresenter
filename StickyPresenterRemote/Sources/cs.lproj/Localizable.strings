@@ -56,8 +56,10 @@
 "이 Mac 은 StickyPresenter 업데이트가 필요합니다." = "StickyPresenter na tomto Macu je třeba aktualizovat.";
 "%@에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요." = "Pořád čekáme na odpověď od zařízení %@. Zkuste to za chvíli znovu.";
 "검색 실패 — 설정 > 개인정보 보호에서 로컬 네트워크 권한을 확인하세요" = "Hledání se nezdařilo. Zkontrolujte přístup k místní síti v Nastavení > Soukromí a zabezpečení.";
-"%@에 자동으로 연결하지 못했습니다. 목록에서 다시 골라 주세요." = "K zařízení %@ se nepodařilo automaticky znovu připojit. Vyberte ho ze seznamu znovu.";
-"연결 코드가 맞지 않거나 Mac 이 응답하지 않았습니다. Mac 메뉴 막대의 코드를 확인해 주세요." = "Kód nesedí, nebo Mac neodpověděl. Zkontrolujte kód v řádku nabídek Macu.";
+"%@에서 응답이 없습니다. Mac이 잠자기 상태가 아닌지, 두 기기가 같은 Wi-Fi인지, VPN이 꺼져 있는지 확인해 주세요." = "%@ neodpovídá. Zkontrolujte, že Mac není v režimu spánku, obě zařízení jsou ve stejné Wi-Fi a VPN je vypnutá.";
+"연결 코드가 다릅니다. Mac 메뉴 막대의 타이머 아이콘 → Remote 에 지금 떠 있는 4자리를 넣어 주세요. 코드를 새로 만들었다면 새 코드여야 합니다." = "Nesprávný kód. Zadejte 4 číslice, které se teď zobrazují v nabídce ikona časovače → Dálkové ovládání v řádku nabídek Macu. Pokud jste vytvořili nový kód, platí ten nový.";
+"%@에서 이 iPhone을 기억하지 못합니다. 목록에서 Mac을 눌러 연결 코드를 다시 넣어 주세요." = "%@ už tento iPhone nezná. Klepněte na Mac v seznamu a zadejte kód znovu.";
+"10초 넘게 Mac이 보이지 않습니다. 아래 항목을 위에서부터 하나씩 확인해 주세요." = "Už přes 10 sekund nebyl nalezen žádný Mac. Projděte body níže postupně odshora.";
 
 /* 설정 · 첫 실행 안내 · 사용 팁 · 단축어 · 손쉬운 사용 */
 "설정" = "Nastavení";

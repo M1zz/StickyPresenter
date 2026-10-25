@@ -30,6 +30,9 @@
 "remote.forget.title" = "Glöm alla ihopparade fjärrkontroller?";
 "remote.forget.message" = "Anslutna fjärrkontroller kopplas från och behöver ihopparningskoden igen.";
 "remote.forget.confirm" = "Glöm";
+"remote.problem.wrongCode" = "Nekade %@: fel kod";
+"remote.problem.outdated" = "Nekade en gammal version av fjärrkontrollappen – uppdatera den på iPhonen";
+"remote.problem.advertising" = "iPhone hittar inte den här datorn – Öppna inställningar för lokalt nätverk…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Avbryt";

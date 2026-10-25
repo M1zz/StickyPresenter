@@ -30,6 +30,9 @@
 "remote.forget.title" = "¿Olvidar todos los controles remotos vinculados?";
 "remote.forget.message" = "Los controles remotos conectados se desconectarán. Necesitarán el código de vinculación otra vez.";
 "remote.forget.confirm" = "Olvidar";
+"remote.problem.wrongCode" = "Se rechazó a %@: código incorrecto";
+"remote.problem.outdated" = "Se rechazó una versión antigua del control remoto: actualízala en el iPhone";
+"remote.problem.advertising" = "Los iPhone no encuentran este Mac: abrir ajustes de Red local…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Cancelar";

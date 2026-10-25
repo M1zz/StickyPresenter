@@ -328,8 +328,13 @@ struct DisconnectedView: View {
         case .failed(let message):
             return message
         case .searching:
-            return hasHosts
-                ? String(localized: "Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다")
+            if hasHosts {
+                return String(localized: "Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다")
+            }
+            // 보통 1~2초면 보인다. 그보다 길면 기다려도 나타나지 않는 경우가 대부분이라
+            // 계속 "찾는 중" 만 돌리지 말고 아래 점검표로 눈을 돌리게 한다.
+            return client.isSearchSlow
+                ? String(localized: "10초 넘게 Mac이 보이지 않습니다. 아래 항목을 위에서부터 하나씩 확인해 주세요.")
                 : String(localized: "주변에서 StickyPresenter가 켜진 Mac을 찾고 있습니다")
         case .connected:
             return ""

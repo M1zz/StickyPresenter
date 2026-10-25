@@ -273,6 +273,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         )
         menu.addItem(statusItem)
 
+        // 붙지 못한 이유를 거절한 쪽에서 말한다. 리모컨은 "안 됨" 만 알 뿐 왜인지 모른다.
+        if let problem = host.problem {
+            menu.addItem(remoteProblemItem(problem))
+        }
+
         menu.addItem(NSMenuItem.separator())
 
         let regenerate = NSMenuItem(title: L("remote.newCode"), action: #selector(regeneratePairingCode), keyEquivalent: "")
@@ -287,6 +292,32 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         forget.target = self
         forget.isEnabled = paired > 0
         menu.addItem(forget)
+    }
+
+    @MainActor
+    private func remoteProblemItem(_ problem: RemoteControlHost.Problem) -> NSMenuItem {
+        let title: String
+        var action: Selector?
+        switch problem {
+        case .wrongCode(let remoteName):
+            title = L("remote.problem.wrongCode", remoteName)
+        case .outdatedRemote:
+            title = L("remote.problem.outdated")
+        case .advertisingFailed:
+            title = L("remote.problem.advertising")
+            // 손댈 곳이 시스템 설정 한 곳이라 바로 열어 준다.
+            action = #selector(openLocalNetworkSettings)
+        }
+        let item = NSMenuItem(title: title, action: action, keyEquivalent: "")
+        item.target = self
+        item.image = NSImage(systemSymbolName: "exclamationmark.triangle.fill", accessibilityDescription: nil)?
+            .withSymbolConfiguration(.init(paletteColors: [.systemOrange]))
+        return item
+    }
+
+    @objc func openLocalNetworkSettings() {
+        guard let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_LocalNetwork") else { return }
+        NSWorkspace.shared.open(url)
     }
 
     @MainActor

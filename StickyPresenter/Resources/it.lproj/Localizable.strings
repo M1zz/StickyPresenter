@@ -30,6 +30,9 @@
 "remote.forget.title" = "Dimenticare tutti i telecomandi abbinati?";
 "remote.forget.message" = "I telecomandi collegati verranno scollegati e dovranno inserire di nuovo il codice di abbinamento.";
 "remote.forget.confirm" = "Dimentica";
+"remote.problem.wrongCode" = "%@ rifiutato: codice errato";
+"remote.problem.outdated" = "Rifiutata una versione vecchia del telecomando: aggiornala sull’iPhone";
+"remote.problem.advertising" = "Gli iPhone non trovano questo Mac: apri le impostazioni Rete locale…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Annulla";

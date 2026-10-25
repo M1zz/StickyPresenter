@@ -56,8 +56,10 @@
 "이 Mac 은 StickyPresenter 업데이트가 필요합니다." = "StickyPresenter na tym Macu wymaga aktualizacji.";
 "%@에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요." = "Wciąż czekam na odpowiedź od urządzenia %@. Spróbuj ponownie za chwilę.";
 "검색 실패 — 설정 > 개인정보 보호에서 로컬 네트워크 권한을 확인하세요" = "Wyszukiwanie nie powiodło się. Sprawdź dostęp do sieci lokalnej w Ustawieniach > Prywatność i ochrona.";
-"%@에 자동으로 연결하지 못했습니다. 목록에서 다시 골라 주세요." = "Nie udało się automatycznie połączyć ponownie z urządzeniem %@. Wybierz je z listy jeszcze raz.";
-"연결 코드가 맞지 않거나 Mac 이 응답하지 않았습니다. Mac 메뉴 막대의 코드를 확인해 주세요." = "Kod się nie zgadza albo Mac nie odpowiedział. Sprawdź kod na pasku menu Maca.";
+"%@에서 응답이 없습니다. Mac이 잠자기 상태가 아닌지, 두 기기가 같은 Wi-Fi인지, VPN이 꺼져 있는지 확인해 주세요." = "%@ nie odpowiada. Sprawdź, czy Mac nie jest uśpiony, czy oba urządzenia są w tej samej sieci Wi-Fi i czy VPN jest wyłączony.";
+"연결 코드가 다릅니다. Mac 메뉴 막대의 타이머 아이콘 → Remote 에 지금 떠 있는 4자리를 넣어 주세요. 코드를 새로 만들었다면 새 코드여야 합니다." = "Zły kod. Wpisz 4 cyfry widoczne teraz w menu ikona minutnika → Pilot na pasku menu Maca. Jeśli utworzono nowy kod, użyj nowego.";
+"%@에서 이 iPhone을 기억하지 못합니다. 목록에서 Mac을 눌러 연결 코드를 다시 넣어 주세요." = "%@ nie pamięta już tego iPhone’a. Stuknij Maca na liście i wpisz kod ponownie.";
+"10초 넘게 Mac이 보이지 않습니다. 아래 항목을 위에서부터 하나씩 확인해 주세요." = "Od ponad 10 sekund nie widać żadnego Maca. Sprawdź po kolei punkty poniżej.";
 
 /* 설정 · 첫 실행 안내 · 사용 팁 · 단축어 · 손쉬운 사용 */
 "설정" = "Ustawienia";

@@ -30,6 +30,9 @@
 "remote.forget.title" = "Eşleşen tüm uzaktan kumandalar unutulsun mu?";
 "remote.forget.message" = "Bağlı uzaktan kumandaların bağlantısı kesilir ve eşleştirme koduna yeniden ihtiyaç duyarlar.";
 "remote.forget.confirm" = "Unut";
+"remote.problem.wrongCode" = "%@ reddedildi: kod yanlış";
+"remote.problem.outdated" = "Eski uzaktan kumanda uygulaması reddedildi — iPhone’da güncelleyin";
+"remote.problem.advertising" = "iPhone’lar bu Mac’i bulamıyor — Yerel Ağ ayarlarını aç…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "İptal";

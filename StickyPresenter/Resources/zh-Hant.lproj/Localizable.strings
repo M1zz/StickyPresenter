@@ -30,6 +30,9 @@
 "remote.forget.title" = "要清除所有已配對的遙控器嗎？";
 "remote.forget.message" = "已連線的遙控器將會中斷連線，之後需要重新輸入配對碼。";
 "remote.forget.confirm" = "清除";
+"remote.problem.wrongCode" = "代碼不正確，已拒絕 %@ 的連線";
+"remote.problem.outdated" = "遙控 App 版本過舊，已拒絕連線——請在 iPhone 上更新";
+"remote.problem.advertising" = "iPhone 找不到這部 Mac——打開區域網路設定⋯";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "取消";

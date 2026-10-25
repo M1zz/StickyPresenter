@@ -30,6 +30,9 @@
 "remote.forget.title" = "Unohdetaanko kaikki parilliset kauko-ohjaimet?";
 "remote.forget.message" = "Yhdistetyt kauko-ohjaimet katkaistaan, ja ne tarvitsevat parituskoodin uudelleen.";
 "remote.forget.confirm" = "Unohda";
+"remote.problem.wrongCode" = "%@ hylättiin: väärä koodi";
+"remote.problem.outdated" = "Vanha kauko-ohjainapp hylättiin – päivitä se iPhonessa";
+"remote.problem.advertising" = "iPhonet eivät löydä tätä Macia – Avaa paikallisverkon asetukset…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Peruuta";

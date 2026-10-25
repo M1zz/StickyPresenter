@@ -30,6 +30,9 @@
 "remote.forget.title" = "Lupakan semua remote yang dipasangkan?";
 "remote.forget.message" = "Remote yang terhubung akan diputuskan dan perlu memasukkan kode pemasangan lagi.";
 "remote.forget.confirm" = "Lupakan";
+"remote.problem.wrongCode" = "%@ ditolak: kode salah";
+"remote.problem.outdated" = "Aplikasi remote versi lama ditolak — perbarui di iPhone";
+"remote.problem.advertising" = "iPhone tidak dapat menemukan Mac ini — Buka pengaturan Jaringan Lokal…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Batal";

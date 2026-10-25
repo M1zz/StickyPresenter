@@ -30,6 +30,9 @@
 "remote.forget.title" = "Glem alle parrede fjernbetjeninger?";
 "remote.forget.message" = "Tilsluttede fjernbetjeninger afbrydes og skal bruge parringskoden igen.";
 "remote.forget.confirm" = "Glem";
+"remote.problem.wrongCode" = "Afviste %@: forkert kode";
+"remote.problem.outdated" = "Afviste en gammel version af fjernbetjeningsappen – opdater den på iPhonen";
+"remote.problem.advertising" = "iPhones kan ikke finde denne Mac – Åbn indstillinger for lokalt netværk…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Annuller";

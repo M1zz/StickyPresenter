@@ -31,6 +31,21 @@ final class RemoteControlHost: NSObject, ObservableObject {
     /// 메뉴 막대에 띄우는 4자리 연결 코드. 리모컨이 이걸 맞춰야 처음 붙을 수 있다.
     @Published private(set) var pairingCode: String
 
+    /// 리모컨이 붙지 못한 마지막 이유. 메뉴에 그대로 보여 준다.
+    ///
+    /// 초대를 거절할 때 리모컨에 이유를 실어 보낼 길이 없어서(MultipeerConnectivity 의 한계),
+    /// 리모컨 화면만으로는 사용자가 원인을 다 알 수 없다. 거절한 쪽이 아는 건 이쪽에서 말한다.
+    /// 리모컨이 하나라도 붙으면 지운다 — 해결된 문제를 계속 띄우면 경고를 믿지 않게 된다.
+    enum Problem: Equatable {
+        /// 코드가 틀린 초대를 거절했다. 기기 이름을 같이 보여 줘 옆 사람 것과 구분하게 한다.
+        case wrongCode(remoteName: String)
+        /// 페어링을 모르는 옛 리모컨 앱의 초대를 거절했다.
+        case outdatedRemote
+        /// 광고를 시작하지 못했다 — 리모컨이 이 Mac 을 아예 찾을 수 없다.
+        case advertisingFailed
+    }
+    @Published private(set) var problem: Problem?
+
     /// 코드 없이 붙어도 되는 리모컨 (`remoteID` → 마지막으로 본 기기 이름).
     private var pairedRemotes: [String: String]
 
@@ -39,7 +54,11 @@ final class RemoteControlHost: NSObject, ObservableObject {
     private let hostID: String
 
     private let peerID: MCPeerID
-    private var session: MCSession?
+    /// 리모컨 **한 대에 세션 하나**. 예전에는 세션 하나에 다 받았는데, iPhone 이 백그라운드에
+    /// 다녀오면 그 세션에 죽은 연결이 남은 채로 같은 기기가 다시 초대를 보내 왔다.
+    /// 그러면 코드가 맞아도 연결이 맺어지지 않았다. 세션을 나누면 죽은 연결은 제 세션과 함께
+    /// 버려지고, 새 초대는 늘 깨끗한 세션에서 시작한다.
+    private var sessions: [MCSession] = []
     private var advertiser: MCNearbyServiceAdvertiser?
     private var broadcastTimer: Foundation.Timer?
 
@@ -95,8 +114,8 @@ final class RemoteControlHost: NSObject, ObservableObject {
     func unpairAll() {
         pairedRemotes.removeAll()
         UserDefaults.standard.set(pairedRemotes, forKey: Keys.pairedRemotes)
-        // MCSession 은 피어 하나만 골라 끊을 수 없다. 세션을 새로 열어 전부 떨군다.
-        guard session != nil else { return }
+        // 광고까지 새로 열어 지금 붙어 있는 리모컨을 전부 떨군다.
+        guard advertiser != nil else { return }
         stop()
         start()
     }
@@ -110,11 +129,7 @@ final class RemoteControlHost: NSObject, ObservableObject {
     // MARK: 수명주기
 
     func start() {
-        guard session == nil else { return }
-
-        let session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
-        session.delegate = self
-        self.session = session
+        guard advertiser == nil else { return }
 
         // 리모컨이 "지난번 그 Mac" 을 알아볼 수 있도록 식별자를 광고에 싣는다.
         // 이름(peerID.displayName)은 바뀌거나 겹칠 수 있어 짝의 기준이 되지 못한다.
@@ -136,9 +151,11 @@ final class RemoteControlHost: NSObject, ObservableObject {
     }
 
     func stop() {
+        problem = nil
         broadcastTimer?.invalidate(); broadcastTimer = nil
         advertiser?.stopAdvertisingPeer(); advertiser = nil
-        session?.disconnect(); session = nil
+        sessions.forEach { $0.disconnect() }
+        sessions = []
         connectedCount = 0
     }
 
@@ -148,7 +165,7 @@ final class RemoteControlHost: NSObject, ObservableObject {
     func pushStateNow() { broadcastState() }
 
     private func broadcastState() {
-        guard let session, !session.connectedPeers.isEmpty else { return }
+        guard sessions.contains(where: { !$0.connectedPeers.isEmpty }) else { return }
 
         let timers = NoteManager.shared.timerListManager.entries.map { entry in
             RemoteTimer(
@@ -170,7 +187,24 @@ final class RemoteControlHost: NSObject, ObservableObject {
         let packet = RemotePacket.state(
             RemoteState(hostName: peerID.displayName, timers: timers, desktop: ScreenMap.desktop())
         )
-        send(packet, to: session.connectedPeers)
+        guard let data = try? packet.encoded() else { return }
+        for session in sessions where !session.connectedPeers.isEmpty {
+            // .unreliable — 매초 전체 상태를 다시 보내므로 유실돼도 다음 패킷이 덮어쓴다.
+            // 재전송을 기다리다 밀리는 것보다 최신 상태가 빨리 도착하는 편이 낫다.
+            try? session.send(data, toPeers: session.connectedPeers, with: .unreliable)
+        }
+    }
+
+    /// 초대를 받아들일 새 세션. 들어온 초대마다 하나씩 연다.
+    private func makeSession() -> MCSession {
+        let session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
+        session.delegate = self
+        sessions.append(session)
+        return session
+    }
+
+    private func updateConnectedCount() {
+        connectedCount = sessions.reduce(0) { $0 + $1.connectedPeers.count }
     }
 
     /// 위젯 창의 위치를 리모컨이 그릴 수 있는 정규화 값으로 옮겨 담는다.
@@ -195,13 +229,6 @@ final class RemoteControlHost: NSObject, ObservableObject {
             heightRatio: Double(min(1, frame.height / bounds.height)),
             screenID: screenID
         )
-    }
-
-    private func send(_ packet: RemotePacket, to peers: [MCPeerID]) {
-        guard let session, !peers.isEmpty, let data = try? packet.encoded() else { return }
-        // .unreliable — 매초 전체 상태를 다시 보내므로 유실돼도 다음 패킷이 덮어쓴다.
-        // 재전송을 기다리다 밀리는 것보다 최신 상태가 빨리 도착하는 편이 낫다.
-        try? session.send(data, toPeers: peers, with: .unreliable)
     }
 
     // MARK: 명령 적용
@@ -274,8 +301,21 @@ final class RemoteControlHost: NSObject, ObservableObject {
 extension RemoteControlHost: MCSessionDelegate {
     nonisolated func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         Task { @MainActor in
-            self.connectedCount = session.connectedPeers.count
-            if state == .connected { self.broadcastState() }
+            switch state {
+            case .connected:
+                self.problem = nil
+                self.updateConnectedCount()
+                self.broadcastState()
+            case .notConnected:
+                // 세션 하나에 리모컨 하나라, 끊기면 그 세션은 다시 쓸 일이 없다.
+                if session.connectedPeers.isEmpty {
+                    session.disconnect()
+                    self.sessions.removeAll { $0 === session }
+                }
+                self.updateConnectedCount()
+            default:
+                break
+            }
         }
     }
 
@@ -311,29 +351,32 @@ extension RemoteControlHost: MCNearbyServiceAdvertiserDelegate {
             guard let context, let request = try? PairingRequest.decode(context) else {
                 // 컨텍스트가 없는 초대 = 페어링을 모르는 옛 리모컨 앱. 두 앱을 함께 올려야 한다.
                 NSLog("[Remote] 신원이 없는 초대를 거절함 (리모컨 앱 업데이트 필요)")
+                self.problem = .outdatedRemote
                 invitationHandler(false, nil)
                 return
             }
 
             if self.pairedRemotes[request.remoteID] != nil {
                 self.remember(request)   // 기기 이름이 바뀌었을 수 있으니 갱신해 둔다
-                invitationHandler(true, self.session)
+                invitationHandler(true, self.makeSession())
                 return
             }
 
             guard request.code == self.pairingCode else {
                 NSLog("[Remote] 코드가 맞지 않아 거절함: \(request.remoteName)")
+                self.problem = .wrongCode(remoteName: request.remoteName)
                 invitationHandler(false, nil)
                 return
             }
 
             self.remember(request)
-            invitationHandler(true, self.session)
+            invitationHandler(true, self.makeSession())
         }
     }
 
     nonisolated func advertiser(_ advertiser: MCNearbyServiceAdvertiser,
                                 didNotStartAdvertisingPeer error: Error) {
         NSLog("[Remote] 광고 시작 실패: \(error.localizedDescription)")
+        Task { @MainActor in self.problem = .advertisingFailed }
     }
 }

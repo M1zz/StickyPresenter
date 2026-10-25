@@ -30,6 +30,9 @@
 "remote.forget.title" = "Oublier toutes les télécommandes appairées ?";
 "remote.forget.message" = "Les télécommandes connectées seront déconnectées. Elles auront de nouveau besoin du code d’appairage.";
 "remote.forget.confirm" = "Oublier";
+"remote.problem.wrongCode" = "Connexion de %@ refusée : code incorrect";
+"remote.problem.outdated" = "Ancienne version de la télécommande refusée — mettez-la à jour sur l’iPhone";
+"remote.problem.advertising" = "Les iPhone ne trouvent pas ce Mac — Ouvrir les réglages Réseau local…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Annuler";

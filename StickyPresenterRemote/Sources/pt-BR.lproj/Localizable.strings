@@ -56,8 +56,10 @@
 "이 Mac 은 StickyPresenter 업데이트가 필요합니다." = "O StickyPresenter deste Mac precisa ser atualizado.";
 "%@에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요." = "Ainda aguardando a resposta de %@. Tente de novo em instantes.";
 "검색 실패 — 설정 > 개인정보 보호에서 로컬 네트워크 권한을 확인하세요" = "A busca falhou. Verifique o acesso à rede local em Ajustes > Privacidade e Segurança.";
-"%@에 자동으로 연결하지 못했습니다. 목록에서 다시 골라 주세요." = "Não foi possível reconectar a %@ automaticamente. Escolha-o de novo na lista.";
-"연결 코드가 맞지 않거나 Mac 이 응답하지 않았습니다. Mac 메뉴 막대의 코드를 확인해 주세요." = "O código não confere ou o Mac não respondeu. Verifique o código na barra de menus do Mac.";
+"%@에서 응답이 없습니다. Mac이 잠자기 상태가 아닌지, 두 기기가 같은 Wi-Fi인지, VPN이 꺼져 있는지 확인해 주세요." = "%@ não respondeu. Verifique se o Mac não está em repouso, se os dois dispositivos estão no mesmo Wi-Fi e se a VPN está desligada.";
+"연결 코드가 다릅니다. Mac 메뉴 막대의 타이머 아이콘 → Remote 에 지금 떠 있는 4자리를 넣어 주세요. 코드를 새로 만들었다면 새 코드여야 합니다." = "Código errado. Digite os 4 dígitos que aparecem agora em ícone do timer → Controle remoto na barra de menus do Mac. Se você criou um código novo, use o novo.";
+"%@에서 이 iPhone을 기억하지 못합니다. 목록에서 Mac을 눌러 연결 코드를 다시 넣어 주세요." = "%@ não reconhece mais este iPhone. Toque no Mac na lista e digite o código de novo.";
+"10초 넘게 Mac이 보이지 않습니다. 아래 항목을 위에서부터 하나씩 확인해 주세요." = "Nenhum Mac encontrado em mais de 10 segundos. Confira os itens abaixo, de cima para baixo.";
 
 /* Ajustes · introdução do primeiro uso · dicas · atalhos · acessibilidade */
 "설정" = "Ajustes";

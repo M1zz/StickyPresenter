@@ -30,6 +30,9 @@
 "remote.forget.title" = "Quên tất cả điều khiển từ xa đã ghép nối?";
 "remote.forget.message" = "Các điều khiển từ xa đang kết nối sẽ bị ngắt và cần nhập lại mã ghép nối.";
 "remote.forget.confirm" = "Quên";
+"remote.problem.wrongCode" = "Đã từ chối %@: mã không đúng";
+"remote.problem.outdated" = "Đã từ chối ứng dụng điều khiển phiên bản cũ — hãy cập nhật trên iPhone";
+"remote.problem.advertising" = "iPhone không tìm thấy máy Mac này — Mở cài đặt Mạng cục bộ…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Hủy";

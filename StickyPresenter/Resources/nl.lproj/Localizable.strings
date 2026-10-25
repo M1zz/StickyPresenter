@@ -30,6 +30,9 @@
 "remote.forget.title" = "Alle gekoppelde afstandsbedieningen vergeten?";
 "remote.forget.message" = "Verbonden afstandsbedieningen worden losgekoppeld en hebben de koppelcode opnieuw nodig.";
 "remote.forget.confirm" = "Vergeet";
+"remote.problem.wrongCode" = "%@ geweigerd: verkeerde code";
+"remote.problem.outdated" = "Verouderde afstandsbediening-app geweigerd – werk de app bij op de iPhone";
+"remote.problem.advertising" = "iPhones vinden deze Mac niet – Open instellingen voor lokaal netwerk…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Annuleer";

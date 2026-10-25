@@ -30,6 +30,9 @@
 "remote.forget.title" = "Glemme alle parede fjernkontroller?";
 "remote.forget.message" = "Tilkoblede fjernkontroller blir frakoblet og må skrive inn paringskoden på nytt.";
 "remote.forget.confirm" = "Glem";
+"remote.problem.wrongCode" = "Avviste %@: feil kode";
+"remote.problem.outdated" = "Avviste en gammel versjon av fjernkontrollappen – oppdater den på iPhonen";
+"remote.problem.advertising" = "iPhone finner ikke denne Macen – Åpne innstillinger for lokalt nettverk …";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Avbryt";

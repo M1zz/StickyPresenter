@@ -30,6 +30,9 @@
 "remote.forget.title" = "要忘记所有已配对的遥控器吗？";
 "remote.forget.message" = "已连接的遥控器将断开连接，之后需要重新输入配对码。";
 "remote.forget.confirm" = "忘记";
+"remote.problem.wrongCode" = "数字码不正确，已拒绝 %@ 的连接";
+"remote.problem.outdated" = "遥控器 App 版本过旧，已拒绝连接——请在 iPhone 上更新";
+"remote.problem.advertising" = "iPhone 无法找到这台 Mac——打开本地网络设置…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "取消";

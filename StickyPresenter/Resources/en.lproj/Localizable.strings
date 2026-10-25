@@ -30,6 +30,9 @@
 "remote.forget.title" = "Forget all paired remotes?";
 "remote.forget.message" = "Connected remotes will be disconnected. They will need the pairing code again.";
 "remote.forget.confirm" = "Forget";
+"remote.problem.wrongCode" = "Rejected %@: wrong pairing code";
+"remote.problem.outdated" = "Rejected an outdated remote app — update it on the iPhone";
+"remote.problem.advertising" = "iPhones can't find this Mac — Open Local Network Settings…";
 
 /* ===== Alerts ===== */
 "alert.cancel" = "Cancel";
