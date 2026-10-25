@@ -25,9 +25,9 @@
 "remote.none" = "Ei yhdistettyjä kauko-ohjaimia";
 "remote.connected" = "Yhdistetyt kauko-ohjaimet: %d";
 "remote.newCode" = "Uusi parituskoodi";
-"remote.forget" = "Unohda parilliset kauko-ohjaimet";
-"remote.forget.count" = "Unohda parilliset kauko-ohjaimet (%d)";
-"remote.forget.title" = "Unohdetaanko kaikki parilliset kauko-ohjaimet?";
+"remote.forget" = "Unohda pariliitetyt kauko-ohjaimet";
+"remote.forget.count" = "Unohda pariliitetyt kauko-ohjaimet (%d)";
+"remote.forget.title" = "Unohdetaanko kaikki pariliitetyt kauko-ohjaimet?";
 "remote.forget.message" = "Yhdistetyt kauko-ohjaimet katkaistaan, ja ne tarvitsevat parituskoodin uudelleen.";
 "remote.forget.confirm" = "Unohda";
 "remote.problem.wrongCode" = "%@ hylättiin: väärä koodi";

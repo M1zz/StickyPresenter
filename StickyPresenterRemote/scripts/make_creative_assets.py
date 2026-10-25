@@ -16,17 +16,16 @@
 import subprocess, sys, pathlib, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent   # 리모컨 앱 폴더 (DeployBar 의 앱 경로)
-RAW = ROOT / "docs" / "screenshots" / "raw" / "creative"
+RAW = ROOT / "docs" / "screenshots" / "raw"   # 스크린샷과 같은 원본 — raw/<로케일>/01-timer.png …
 OUT = ROOT / "docs" / "screenshots" / "creative"
 ICON = ROOT / "Sources" / "Assets.xcassets" / "AppIcon.appiconset" / "icon_1024.png"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-# 앱 언어 코드 → App Store Connect 로케일 (deploy.env LOCALES=ko,en-US)
-STORE = {"en": "en-US"}
-
-# 기기 화면을 넣을 언어. 리모컨은 한국어·영어로 그려진다(Sources/{ko,en}.lproj).
-# 원본은 raw/creative/<언어>/01-timer.png · 02-pomodoro.png — 그 언어 화면이어야 한다.
-DEVICE_LANGS = {"ko", "en"}
+# 키는 App Store 로케일(deploy.env LOCALES). 리모컨은 24개 언어 모두 그 언어 화면이 있다
+# (raw/<로케일>/ 은 시뮬레이터 데모 모드로 찍는다 — `-screenshotDemo timer|pomodoro|choose`, DEBUG 빌드).
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from store_copy import SEARCH, HEADER
+DEVICE_LANGS = set(SEARCH)
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -34,18 +33,7 @@ SPEC = {
     "search": (3840, 2560, (836, 765, 3004, 1795)),
 }
 
-# 검색 결과: 눈썹글은 그 나라 사람이 검색창에 칠 말. 앱의 약속은 하나다 -
-# 발표 중 손이 닿지 않는 Mac 의 타이머를 iPhone 에서 다룬다(리모컨은 타이머만 다룬다, 슬라이드 넘기기는 없다).
-SEARCH = {
-    "ko": ("발표 타이머 리모컨", "발표 타이머를<br>iPhone으로", "시작·일시정지, 30초 더하기까지<br>Mac에 손대지 않고"),
-    "en": ("Presentation timer", "Run your talk timer<br>from your iPhone", "Start, pause, add 30 seconds<br>without touching your Mac"),
-}
-
-# 헤더: 처음 온 사람에게 한 가지 약속.
-HEADER = {
-    "ko": ("Mac 발표 리모컨", "Mac은 멀리 두고<br>타이머는 손안에"),
-    "en": ("Remote for your Mac talks", "Your Mac stays put.<br>The timer's in your hand."),
-}
+# 검색 결과 · 헤더 문구는 scripts/store_copy.py 에 언어마다 있다.
 
 # ⚠️ 바탕 · 글자색은 기존 스크린샷(make_marketing_screenshots.py)과 같다. 다르면 페이지에서
 #    헤더만 남의 앱처럼 보인다.
@@ -189,7 +177,7 @@ def render(lang, kind):
         raise SystemExit(f"글 맞추기가 끝나지 않았다: {lang} {kind}")
     if 'data-overflow="1"' in dom:
         raise SystemExit(f"글이 안전 영역을 넘는다: {lang} {kind} - 문구를 줄일 것")
-    out_dir = OUT / STORE.get(lang, lang)
+    out_dir = OUT / lang
     out_dir.mkdir(parents=True, exist_ok=True)
     out_png = out_dir / f"{kind}.png"
     # ⚠️ Chrome 은 가끔 아무것도 안 그리고 끝나거나 멈춘다. 세 번까지 한다.

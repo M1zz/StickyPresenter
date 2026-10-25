@@ -18,7 +18,7 @@
 "연결할 Mac 고르기" = "Choisir un Mac";
 "Mac을 찾는 중" = "Recherche de votre Mac";
 "%@에 연결하는 중입니다" = "Connexion à %@";
-"Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다" = "Il vous faut le code à 4 chiffres affiché sous l’icône du minuteur → Remote dans la barre des menus du Mac";
+"Mac 메뉴 막대의 타이머 아이콘 → Remote 에 뜬 4자리 코드가 필요합니다" = "Il vous faut le code à 4 chiffres affiché sous l’icône du minuteur → Télécommande dans la barre des menus du Mac";
 "주변에서 StickyPresenter가 켜진 Mac을 찾고 있습니다" = "Recherche à proximité d’un Mac où StickyPresenter est ouvert";
 "Mac 앱 업데이트가 필요합니다" = "L’app Mac doit être mise à jour";
 "연결하는 중…" = "Connexion…";
@@ -26,7 +26,7 @@
 "연결 코드 %lld자리가 필요합니다" = "Code d’appairage à %lld chiffres requis";
 "확인해 보세요" = "À vérifier";
 "iPhone 설정 열기" = "Ouvrir les réglages de l’iPhone";
-"Mac 메뉴 막대의 타이머 아이콘을 누르고 **Remote** 안의 **Pairing Code** 를 입력하세요." = "Cliquez sur l’icône du minuteur dans la barre des menus du Mac, puis saisissez le **code d’appairage** affiché sous **Remote**.";
+"Mac 메뉴 막대의 타이머 아이콘을 누르고 **Remote** 안의 **Pairing Code** 를 입력하세요." = "Cliquez sur l’icône du minuteur dans la barre des menus du Mac, puis saisissez le **code d’appairage** affiché sous **Télécommande**.";
 "연결" = "Connecter";
 "연결 코드" = "Code d’appairage";
 "취소" = "Annuler";
@@ -57,7 +57,7 @@
 "%@에 보낸 연결 요청을 아직 기다리는 중입니다. 잠시 후 다시 시도해 주세요." = "%@ n’a pas encore répondu à la demande de connexion. Réessayez dans un instant.";
 "검색 실패 — 설정 > 개인정보 보호에서 로컬 네트워크 권한을 확인하세요" = "Échec de la recherche. Vérifiez l’accès au réseau local dans Réglages > Confidentialité et sécurité.";
 "%@에서 응답이 없습니다. Mac이 잠자기 상태가 아닌지, 두 기기가 같은 Wi-Fi인지, VPN이 꺼져 있는지 확인해 주세요." = "%@ ne répond pas. Vérifiez que le Mac n’est pas en veille, que les deux appareils sont sur le même Wi-Fi et qu’aucun VPN n’est activé.";
-"연결 코드가 다릅니다. Mac 메뉴 막대의 타이머 아이콘 → Remote 에 지금 떠 있는 4자리를 넣어 주세요. 코드를 새로 만들었다면 새 코드여야 합니다." = "Code incorrect. Saisissez les 4 chiffres affichés en ce moment sous l’icône du minuteur → Remote dans la barre des menus du Mac. Si vous avez créé un nouveau code, utilisez celui-ci.";
+"연결 코드가 다릅니다. Mac 메뉴 막대의 타이머 아이콘 → Remote 에 지금 떠 있는 4자리를 넣어 주세요. 코드를 새로 만들었다면 새 코드여야 합니다." = "Code incorrect. Saisissez les 4 chiffres affichés en ce moment sous l’icône du minuteur → Télécommande dans la barre des menus du Mac. Si vous avez créé un nouveau code, utilisez celui-ci.";
 "%@에서 이 iPhone을 기억하지 못합니다. 목록에서 Mac을 눌러 연결 코드를 다시 넣어 주세요." = "%@ ne reconnaît plus cet iPhone. Touchez le Mac dans la liste et saisissez à nouveau le code.";
 "10초 넘게 Mac이 보이지 않습니다. 아래 항목을 위에서부터 하나씩 확인해 주세요." = "Aucun Mac trouvé depuis plus de 10 secondes. Vérifiez les points ci-dessous, dans l’ordre.";
 
@@ -81,7 +81,7 @@
 "같은 Wi‑Fi에서 찾아요" = "Trouve votre Mac sur le même Wi‑Fi";
 "두 기기가 같은 Wi‑Fi에 있어야 서로를 찾습니다. 곧 로컬 네트워크 접근을 묻는데, 허용해야 Mac을 찾을 수 있습니다." = "Les deux appareils doivent être sur le même Wi‑Fi. L’accès au réseau local va vous être demandé : autorisez-le pour que l’app puisse trouver votre Mac.";
 "코드는 처음 한 번만" = "Le code, une seule fois";
-"목록에서 내 Mac을 고르고, Mac 메뉴 막대의 타이머 아이콘 → Remote에 뜬 네 자리 코드를 넣으세요. 다음부터는 저절로 연결됩니다." = "Choisissez votre Mac dans la liste, puis saisissez le code à quatre chiffres affiché sous l’icône du minuteur → Remote dans la barre des menus. Ensuite, la connexion se fait toute seule.";
+"목록에서 내 Mac을 고르고, Mac 메뉴 막대의 타이머 아이콘 → Remote에 뜬 네 자리 코드를 넣으세요. 다음부터는 저절로 연결됩니다." = "Choisissez votre Mac dans la liste, puis saisissez le code à quatre chiffres affiché sous l’icône du minuteur → Télécommande dans la barre des menus. Ensuite, la connexion se fait toute seule.";
 "Mac 앱 받기" = "Obtenir l’app Mac";
 "다음" = "Suivant";
 "Mac 찾기 시작" = "Rechercher mon Mac";

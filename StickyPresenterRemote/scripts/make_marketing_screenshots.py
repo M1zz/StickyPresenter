@@ -21,26 +21,19 @@ WORK = pathlib.Path("/tmp")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
-# 앱은 한국어 원문 + 영어. 헤드라인은 언어마다 따로 쓴다(직역 금지).
+# 헤드라인은 언어마다 따로 쓴다(직역 금지) — 원문은 scripts/store_copy.py 한 곳에 둔다.
 # 리모컨은 타이머만 다룬다 - 슬라이드 넘기기는 없다.
-SHOTS = {
-    "ko": [
-        ("01-timer.png",      "hero-bleed",  "발표 타이머를<br>손안에서", "Mac에 손대지 않고 시작, 멈춤, 30초 더하기"),
-        ("02-pomodoro.png",   "left-text",   "슬라이드를 가리면<br>끌어서 비켜 두기", "Mac 화면 배치 그대로,<br>옆 화면으로도 넘겨요"),
-        ("03-choose-mac.png", "text-bottom", "코드 한 번이면<br>내 Mac에만 연결", "같은 Wi-Fi의 다른 Mac과 엇갈리지 않아요"),
-    ],
-    "en-US": [
-        ("01-timer.png",      "hero-bleed",  "Your talk timer,<br>in your hand", "Start, pause, or add 30 seconds<br>without touching your Mac"),
-        ("02-pomodoro.png",   "left-text",   "Covering a slide?<br>Drag it away", "A mini map of your Mac's screens,<br>second display included"),
-        ("03-choose-mac.png", "text-bottom", "Pair once.<br>Only your Mac.", "Other Macs on the same Wi-Fi<br>stay out of it"),
-    ],
-}
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from store_copy import SHOT_FILES, SHOTS as COPY
+SHOTS = {loc: [(f, layout, h, sub) for (f, layout), (h, sub) in zip(SHOT_FILES, texts)]
+         for loc, texts in COPY.items()}
 
 BASE_CSS = f"""
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 html,body {{ width:{W}px; height:{H}px; overflow:hidden; }}
 body {{ background:#faf8f4; font-family:-apple-system, "Apple SD Gothic Neo", sans-serif; position:relative; }}
 .headline {{ font-size:96px; font-weight:800; color:#1c1c1e; letter-spacing:-2px; line-height:1.18; word-break:keep-all; }}
+.headline, .sub {{ white-space:nowrap; }}
 .sub {{ font-size:48px; font-weight:500; color:#6b6b70; letter-spacing:-1px; line-height:1.35; word-break:keep-all; }}
 .phone {{ background:#17171a; border-radius:116px; border:3px solid #3a3a3e; padding:25px;
   box-shadow: 60px 90px 120px rgba(0,0,0,.28), 20px 30px 50px rgba(0,0,0,.18); }}
@@ -57,8 +50,8 @@ LAYOUTS = {
 """,
     # 2) 좌측 정렬 텍스트 + 오른쪽 기울기, 오른쪽 블리드
     "left-text": """
-.headline { text-align:left; margin:300px 0 0 110px; }
-.sub { text-align:left; margin:48px 0 0 114px; }
+.headline { text-align:left; margin:300px 0 0 110px; padding-right:70px; }
+.sub { text-align:left; margin:48px 0 0 114px; padding-right:70px; }
 .wrap { perspective:2600px; perspective-origin:30% 30%; position:absolute; left:300px; top:990px; }
 .phone { width:840px; transform:rotateY(16deg) rotateX(2deg); }
 """,
@@ -93,7 +86,14 @@ BODY_PHONE_FIRST = '<div class="wrap"><div class="phone"><img src="{img}"></div>
 
 HTML = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>
 {base}{layout}
-</style></head><body>{body}</body></html>"""
+</style></head><body>{body}
+<script>
+// 독일어·그리스어처럼 긴 말은 한 줄이 화면을 넘는다. 줄을 더 쪼개지 않고 글자를 줄인다.
+for (const el of document.querySelectorAll('.headline, .sub')) {{
+  let size = parseFloat(getComputedStyle(el).fontSize);
+  while (el.scrollWidth > el.clientWidth && size > 24) {{ size -= 2; el.style.fontSize = size + 'px'; }}
+}}
+</script></body></html>"""
 
 def main(only=None):
     for loc, shots in SHOTS.items():
@@ -105,7 +105,7 @@ def main(only=None):
             body_tpl = BODY_PHONE_FIRST if layout == "text-bottom" else BODY_TEXT_FIRST
             body = body_tpl.format(headline=headline, sub=sub, img=(RAW / loc / fname).as_uri())
             html_path = WORK / f"sp-remote-{loc}-{fname.replace('.png', '.html')}"
-            html_path.write_text(HTML.format(lang=loc[:2], base=BASE_CSS, layout=LAYOUTS[layout], body=body),
+            html_path.write_text(HTML.format(lang=loc, base=BASE_CSS, layout=LAYOUTS[layout], body=body),
                                  encoding="utf-8")
             out_png = out / fname
             # 다른 Chrome 이 떠 있으면 가끔 그리지 못하고 끝난다. 몇 번 다시 한다.

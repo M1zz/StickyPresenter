@@ -130,6 +130,12 @@ final class RemoteClient: NSObject, ObservableObject {
 
     func start() {
         guard session == nil else { return }
+        #if DEBUG
+        if let scene = UserDefaults.standard.string(forKey: "screenshotDemo") {
+            showScreenshotDemo(scene)
+            return
+        }
+        #endif
 
         peerID = MCPeerID(displayName: String(UIDevice.current.name.prefix(30)))
         let session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
@@ -418,3 +424,43 @@ extension RemoteClient: MCSessionDelegate {
     nonisolated func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String,
                              fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {}
 }
+
+// MARK: - 스토어 스크린샷용 데모 (DEBUG 전용)
+//
+// 스크린샷은 언어마다 찍어야 하는데, 실제 Mac 과 붙여 24개 언어를 찍을 수는 없다.
+// `-screenshotDemo timer|pomodoro|choose` 로 띄우면 Mac 없이 그 화면을 채운다.
+// 뽀모도로 구간 이름은 Mac 이 자기 언어로 보내 주는 값이라 `-demoFocus <글자>` 로 받는다.
+
+#if DEBUG
+extension RemoteClient {
+    func showScreenshotDemo(_ scene: String) {
+        let mac = "MacBook Pro"
+        // 노트북(왼쪽) + 큰 외장 화면(오른쪽, 메뉴 막대). 발표장에서 흔한 배치.
+        desktop = RemoteDesktop(aspect: 2.84, screens: [
+            RemoteScreen(id: 0, x: 0, y: 0.143, width: 0.37, height: 0.68, isMain: false),
+            RemoteScreen(id: 1, x: 0.37, y: 0, width: 0.63, height: 1, isMain: true),
+        ])
+        switch scene {
+        case "choose":
+            desktop = nil
+            discovered = [DiscoveredHost(peerID: MCPeerID(displayName: mac), hostID: "demo")]
+            status = .searching
+        case "pomodoro":
+            let focus = UserDefaults.standard.string(forKey: "demoFocus") ?? "Focus"
+            timers = [RemoteTimer(id: UUID(), name: "25/5", remaining: 1013, target: 1500,
+                                  isRunning: true, isFinished: false, isHidden: false, isPomodoro: true,
+                                  phaseTitle: focus, cycleNumber: 2, size: "M", theme: "system",
+                                  placement: RemotePlacement(x: 0.319, y: 0.24, widthRatio: 0.055,
+                                                             heightRatio: 0.12, screenID: 0))]
+            status = .connected(mac)
+        default:
+            timers = [RemoteTimer(id: UUID(), name: "15m", remaining: 522, target: 900,
+                                  isRunning: true, isFinished: false, isHidden: false, isPomodoro: false,
+                                  phaseTitle: nil, cycleNumber: 1, size: "L", theme: "system",
+                                  placement: RemotePlacement(x: 0.879, y: 0.098, widthRatio: 0.074,
+                                                             heightRatio: 0.11, screenID: 1))]
+            status = .connected(mac)
+        }
+    }
+}
+#endif

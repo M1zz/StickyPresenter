@@ -12,6 +12,13 @@ struct StickyPresenterRemoteApp: App {
     init() {
         // 사용량 기록 · 크래시 진단 · 익명 사용 통계 · 원격 킬스위치. 실패해도 리모컨 동작에는 영향이 없다.
         LeeoKit.bootstrap(RemoteSpec.self, flags: RemoteFlag.self)
+        #if DEBUG
+        // 스크린샷에는 팁 풍선·첫 실행 안내가 끼면 안 된다.
+        if UserDefaults.standard.string(forKey: "screenshotDemo") != nil {
+            Tips.hideAllTipsForTesting()
+            UserDefaults.standard.set(true, forKey: RemoteOnboardingView.seenKey)
+        }
+        #endif
         // 사용 팁. 표시 빈도·닫힘 기억은 TipKit 이 맡는다.
         try? Tips.configure()
         // 첫 실행 안내가 생기기 전에 이미 Mac 과 짝을 맺은 사람에게는 안내를 띄우지 않는다.
