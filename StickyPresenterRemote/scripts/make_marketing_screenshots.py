@@ -19,6 +19,8 @@ RAW = ROOT / "docs" / "screenshots" / "raw"
 OUTROOT = ROOT / "docs" / "screenshots" / "marketing"
 WORK = pathlib.Path("/tmp")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# 떠 있는 Chrome 과 프로필을 같이 쓰면 그리지 못하고 끝나는 일이 잦다. 따로 쓴다.
+PROFILE = pathlib.Path(__import__("tempfile").gettempdir()) / "sp-remote-shots-chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 헤드라인은 언어마다 따로 쓴다(직역 금지) — 원문은 scripts/store_copy.py 한 곳에 둔다.
@@ -111,7 +113,7 @@ def main(only=None):
             # 다른 Chrome 이 떠 있으면 가끔 그리지 못하고 끝난다. 몇 번 다시 한다.
             for _ in range(4):
                 try:
-                    r = subprocess.run([CHROME, "--headless=new", f"--screenshot={out_png}",
+                    r = subprocess.run([CHROME, "--headless=new", f"--user-data-dir={PROFILE}", f"--screenshot={out_png}",
                                         f"--window-size={W},{H}", "--force-device-scale-factor=1",
                                         "--hide-scrollbars", "--disable-gpu", "--virtual-time-budget=2000",
                                         "--allow-file-access-from-files", html_path.as_uri()],

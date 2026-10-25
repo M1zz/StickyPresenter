@@ -20,6 +20,8 @@ RAW = ROOT / "docs" / "screenshots" / "raw"   # 스크린샷과 같은 원본 �
 OUT = ROOT / "docs" / "screenshots" / "creative"
 ICON = ROOT / "Sources" / "Assets.xcassets" / "AppIcon.appiconset" / "icon_1024.png"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# 떠 있는 Chrome 과 프로필을 같이 쓰면 그리지 못하고 끝나는 일이 잦다. 따로 쓴다.
+PROFILE = pathlib.Path(__import__("tempfile").gettempdir()) / "sp-remote-shots-chrome"
 
 # 키는 App Store 로케일(deploy.env LOCALES). 리모컨은 24개 언어 모두 그 언어 화면이 있다
 # (raw/<로케일>/ 은 시뮬레이터 데모 모드로 찍는다 — `-screenshotDemo timer|pomodoro|choose`, DEBUG 빌드).
@@ -49,6 +51,8 @@ body { background:#faf8f4; position:relative;
 .sub { font-weight:500; color:#6b6b70; letter-spacing:-0.01em; line-height:1.35; text-wrap:balance; }
 /* 한국어는 낱말 중간에서 끊지 않는다. */
 :lang(ko) .headline, :lang(ko) .sub, :lang(ko) .eyebrow { word-break:keep-all; }
+/* 태국어는 위아래 부호가 높이 올라가 줄끼리 닿는다. 줄 간격을 넓힌다. */
+:lang(th) .headline { line-height:1.42; } :lang(th) .eyebrow, :lang(th) .sub { line-height:1.5; }
 .phone { position:absolute; background:#1c1c1e; border:6px solid #3a3a3c; padding:40px; border-radius:190px;
   box-shadow: 0 60px 140px rgba(120,70,0,.22), 0 0 0 2px #2c2c2e inset; }
 .phone img { width:100%%; display:block; border-radius:152px; }
@@ -170,9 +174,18 @@ def render(lang, kind):
     html_path = pathlib.Path(tempfile.gettempdir()) / f"sp-remote-creative-{lang}-{kind}.html"
     html_path.write_text(page, encoding="utf-8")
     # 글이 끝까지 안 맞으면 그림을 만들지 않는다(잘린 글이 스토어에 올라가는 것보다 낫다).
-    dom = subprocess.run([CHROME, "--headless=new", "--dump-dom", f"--window-size={W},{H}",
-                          "--force-device-scale-factor=1", "--disable-gpu", "--virtual-time-budget=3000",
-                          html_path.as_uri()], capture_output=True, text=True, timeout=90).stdout
+    # 바쁜 기계에서는 Chrome 이 가끔 빈 DOM 을 돌려준다. 몇 번 다시 묻는다.
+    dom = ""
+    for _ in range(4):
+        try:
+            dom = subprocess.run([CHROME, "--headless=new", f"--user-data-dir={PROFILE}", "--dump-dom",
+                                  f"--window-size={W},{H}", "--force-device-scale-factor=1", "--disable-gpu",
+                                  "--virtual-time-budget=15000", html_path.as_uri()],
+                                 capture_output=True, text=True, timeout=120).stdout
+        except subprocess.TimeoutExpired:
+            continue
+        if 'data-done="1"' in dom:
+            break
     if 'data-done="1"' not in dom:
         raise SystemExit(f"글 맞추기가 끝나지 않았다: {lang} {kind}")
     if 'data-overflow="1"' in dom:
@@ -183,9 +196,9 @@ def render(lang, kind):
     # ⚠️ Chrome 은 가끔 아무것도 안 그리고 끝나거나 멈춘다. 세 번까지 한다.
     for _ in range(3):
         try:
-            r = subprocess.run([CHROME, "--headless=new", f"--screenshot={out_png}",
+            r = subprocess.run([CHROME, "--headless=new", f"--user-data-dir={PROFILE}", f"--screenshot={out_png}",
                                 f"--window-size={W},{H}", "--force-device-scale-factor=1",
-                                "--hide-scrollbars", "--disable-gpu", "--virtual-time-budget=3000",
+                                "--hide-scrollbars", "--disable-gpu", "--virtual-time-budget=15000",
                                 "--allow-file-access-from-files", html_path.as_uri()],
                                capture_output=True, timeout=90)
         except subprocess.TimeoutExpired:
