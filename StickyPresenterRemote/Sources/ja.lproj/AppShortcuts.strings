@@ -1,3 +1,0 @@
-/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
-"Start a timer with ${applicationName}" = "${applicationName}でタイマーを開始";
-"Start a Mac timer with ${applicationName}" = "${applicationName}でMacのタイマーを開始";

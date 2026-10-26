@@ -1,3 +1,0 @@
-/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
-"Start a timer with ${applicationName}" = "Käynnistä ajastin: ${applicationName}";
-"Start a Mac timer with ${applicationName}" = "Käynnistä Macin ajastin: ${applicationName}";

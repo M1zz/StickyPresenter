@@ -2,8 +2,8 @@ import Foundation
 
 // MARK: - Remote Control Protocol
 // Mac 앱(StickyPresenter)과 iOS 리모컨 앱이 MultipeerConnectivity 로 주고받는 규약.
-// **이 파일은 두 프로젝트가 같은 파일을 참조한다.** 한쪽만 고치면 디코딩이 깨지므로
-// 필드를 바꿀 때는 반드시 양쪽을 같이 빌드해 확인할 것.
+// **이 파일은 리모컨 레포(StickyPresenterRemote)의 Sources/RemoteProtocol.swift 와 글자 하나까지 같아야 한다.**
+// 한쪽만 고치면 디코딩이 깨지므로 필드를 바꿀 때는 양쪽에 똑같이 넣고 둘 다 빌드해 확인할 것.
 
 public enum RemoteService {
     /// MultipeerConnectivity 서비스 타입.

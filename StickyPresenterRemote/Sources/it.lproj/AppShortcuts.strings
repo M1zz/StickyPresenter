@@ -1,3 +1,0 @@
-/* Frasi di App Shortcuts (Siri · Spotlight · Comandi rapidi). Ogni frase deve contenere ${applicationName}. */
-"Start a timer with ${applicationName}" = "Avvia un timer con ${applicationName}";
-"Start a Mac timer with ${applicationName}" = "Avvia un timer sul Mac con ${applicationName}";

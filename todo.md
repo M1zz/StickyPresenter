@@ -263,7 +263,7 @@
   - **별도 Xcode 프로젝트**다. 기존 프로젝트는 파일 동기화 그룹을 안 쓰고 pbxproj 수동 편집이
     필요해서, iOS 타겟을 끼워 넣는 대신 `xcodegen`(`project.yml`)으로 새 프로젝트를 만들었다.
     수정 후에는 `cd StickyPresenterRemote && xcodegen generate` 를 다시 돌릴 것.
-  - 프로토콜은 `Shared/RemoteProtocol.swift` **한 파일을 두 프로젝트가 함께 참조**한다
+  - 프로토콜은 `Shared/RemoteProtocol.swift`. 리모컨 레포(StickyPresenterRemote)의 `Sources/RemoteProtocol.swift` 와 같은 내용으로 맞춘다 (2026-10-27 레포 분리)
     (복사본을 두면 한쪽만 고쳤을 때 디코딩이 조용히 깨진다).
   - Mac = 광고자(`RemoteControlHost`), iOS = 탐색자(`RemoteClient`). 초대는 자동 수락 —
     발표 직전에 수락 다이얼로그를 띄우면 오히려 방해가 된다.
