@@ -50,6 +50,8 @@ struct SettingsView: View {
                 LeeoSupportSection<StickyPresenterSpec>()
                 // 앞으로 만들 기능 — 원본은 StickyPresenterRoadmap.swift
                 Button(LeeoRoadmapText.entry) { showRoadmap = true }
+                // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
+                LeeoShareAppLink<StickyPresenterSpec>()
             } header: {
                 Text(L("settings.support"))
             }
