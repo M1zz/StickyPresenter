@@ -52,6 +52,7 @@ struct SettingsView: View {
                 Button(LeeoRoadmapText.entry) { showRoadmap = true }
                 // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
                 LeeoShareAppLink<StickyPresenterSpec>()
+                TipJarRow()
             } header: {
                 Text(L("settings.support"))
             }
@@ -93,6 +94,32 @@ struct SettingsView: View {
         if service.status == .requiresApproval {
             launchError = L("settings.launchAtLogin.approval")
             SMAppService.openSystemSettingsLoginItems()
+        }
+    }
+}
+
+// MARK: - 응원하기 (팁)
+
+/// 설정의 '개발자 응원하기' 줄. 판매 중인 팁이 있어야 선다.
+/// 설정 창에는 내비게이션이 없어 `LeeoTipJarLink` 대신 시트로 연다(앞으로 만들 기능과 같다).
+private struct TipJarRow: View {
+    @ObservedObject private var tipJar = StickyPresenterSpec.tipJar
+    @State private var showTipJar = false
+
+    var body: some View {
+        if tipJar.isAvailable {
+            Button(LeeoTipText.entry) { showTipJar = true }
+                .sheet(isPresented: $showTipJar) {
+                    NavigationStack {
+                        LeeoTipJarView<StickyPresenterSpec>(tipJar: tipJar)
+                            .toolbar {
+                                ToolbarItem(placement: .cancellationAction) {
+                                    Button(L("Close")) { showTipJar = false }
+                                }
+                            }
+                    }
+                    .frame(minWidth: 420, minHeight: 480)
+                }
         }
     }
 }

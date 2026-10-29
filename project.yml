@@ -19,7 +19,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.24.0
+    from: 3.25.1
 
 targets:
   StickyPresenter:

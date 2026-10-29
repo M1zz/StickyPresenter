@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Sichere deine Notizen in einer Datei und lade sie auf einem anderen Mac wieder.";
 "roadmap.notifications.title" = "Timer-Hinweise";
 "roadmap.notifications.detail" = "Erhalte eine Mitteilung, wenn ein Timer abläuft – auch wenn du in einer anderen App bist.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Mit StickyPresenter schon %d Vorträge gemeistert";

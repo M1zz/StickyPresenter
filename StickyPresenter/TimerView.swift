@@ -598,6 +598,14 @@ struct TimerListView: View {
                 }
             }
 
+            // 발표를 마친 뒤(도는 타이머가 없을 때)에만 드물게 응원을 부탁한다 — 화면을 공유 중일 수 있다.
+            if !showReviewGate, !manager.entries.contains(where: { $0.isRunning }) {
+                LeeoTipAskSlot<StickyPresenterSpec>(tipJar: StickyPresenterSpec.tipJar,
+                                                    reached: StickyTipMoments.reachedNow)
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 10)
+            }
+
             // 배경음악 바 — 분위기 선택 · 재생 · 볼륨
             MusicBar()
         }
@@ -1899,4 +1907,19 @@ struct TimerWidgetView: View {
             ? String(format: "%d:%02d:%02d", h, m, s)
             : String(format: "%02d:%02d", m, s)
     }
+}
+
+// MARK: - 응원 부탁 순간
+
+/// 팁을 부탁할 순간 — 끝까지 마친 발표 수(시간 안에 끝난 타이머 · 끝까지 읽은 원고, `LeeoEngagement` 가 센다). 큰 것부터.
+enum StickyTipMoments {
+    static let talks = [30, 10, 3]
+
+    static func reached(talks count: Int) -> [LeeoTipMoment] {
+        talks.filter { count >= $0 }.map {
+            LeeoTipMoment(id: "talks.\($0)", message: L("tip.talks", count))
+        }
+    }
+
+    static var reachedNow: [LeeoTipMoment] { reached(talks: LeeoEngagement.shared.significantEventCount) }
 }

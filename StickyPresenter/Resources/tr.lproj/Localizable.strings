@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Notlarınızı bir dosyaya kaydedin ve başka bir Mac’te yeniden yükleyin.";
 "roadmap.notifications.title" = "Zamanlayıcı uyarıları";
 "roadmap.notifications.detail" = "Başka bir uygulamadayken bile zamanlayıcı bittiğinde bildirim alın.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "StickyPresenter ile %d sunumu tamamladın";

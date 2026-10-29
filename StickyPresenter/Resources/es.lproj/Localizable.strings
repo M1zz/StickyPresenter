@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Guarda tus notas en un archivo y cárgalas de nuevo en otro Mac.";
 "roadmap.notifications.title" = "Avisos del temporizador";
 "roadmap.notifications.detail" = "Recibe una notificación cuando termine un temporizador, aunque estés en otra app.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Ya has dado %d presentaciones con StickyPresenter";

@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Uložte poznámky do souboru a načtěte je na jiném Macu.";
 "roadmap.notifications.title" = "Upozornění časovače";
 "roadmap.notifications.detail" = "Dostaňte oznámení, když časovač skončí, i když jste v jiné aplikaci.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Prezentace se StickyPresenter: %d";

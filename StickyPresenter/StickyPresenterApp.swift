@@ -54,6 +54,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupMenuBar()
         setupGlobalHotkey()
 
+        // 개발자 응원하기(팁) — 상품을 불러오고, 끝나지 않은 팁을 마저 센다.
+        Task { await StickyPresenterSpec.tipJar.startStandalone() }
+
         // iOS 리모컨이 붙을 수 있도록 광고 시작.
         // 로컬 네트워크 권한 프롬프트는 실제로 상대를 찾을 때 처음 뜬다.
         // 원격 킬스위치로 꺼져 있으면 광고하지 않는다 (StickyPresenterFlags.swift).

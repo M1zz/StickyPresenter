@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "把便签保存为文件，再在另一台 Mac 上载入。";
 "roadmap.notifications.title" = "计时器提醒";
 "roadmap.notifications.detail" = "计时器结束时发送通知，即使你正在使用其他 App。";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "你已经用 StickyPresenter 完成了 %d 场演讲";

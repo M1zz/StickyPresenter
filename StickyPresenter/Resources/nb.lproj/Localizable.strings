@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Lagre notatene dine i en fil og last dem inn igjen på en annen Mac.";
 "roadmap.notifications.title" = "Tidtakervarsler";
 "roadmap.notifications.detail" = "Få et varsel når en tidtaker er ferdig, selv når du er i en annen app.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Du har fullført %d presentasjoner med StickyPresenter";

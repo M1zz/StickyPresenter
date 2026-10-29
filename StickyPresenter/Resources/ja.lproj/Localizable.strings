@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "付箋をファイルに保存し、別のMacで読み込めます。";
 "roadmap.notifications.title" = "タイマーの通知";
 "roadmap.notifications.detail" = "ほかのアプリを使っていても、タイマーが終了したら通知でお知らせします。";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "StickyPresenterと一緒に%d回の発表をやり遂げました";

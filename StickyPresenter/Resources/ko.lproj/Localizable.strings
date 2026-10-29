@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "노트를 파일로 저장해 두고 다른 Mac에서 다시 불러와요.";
 "roadmap.notifications.title" = "타이머 끝 알림";
 "roadmap.notifications.detail" = "타이머가 끝나면 다른 앱을 보고 있어도 알림으로 알려 줘요.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "StickyPresenter 와 함께 발표를 %d번 마쳤어요";

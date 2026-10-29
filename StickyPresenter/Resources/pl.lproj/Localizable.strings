@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Zapisz notatki do pliku i wczytaj je ponownie na innym Macu.";
 "roadmap.notifications.title" = "Alerty minutnika";
 "roadmap.notifications.detail" = "Otrzymaj powiadomienie, gdy minutnik się skończy, nawet gdy jesteś w innej aplikacji.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Wystąpienia ze StickyPresenter: %d";

@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Lưu ghi chú ra một tệp rồi tải lại trên Mac khác.";
 "roadmap.notifications.title" = "Nhắc khi hết giờ";
 "roadmap.notifications.detail" = "Nhận thông báo khi bộ hẹn giờ kết thúc, kể cả khi bạn đang ở ứng dụng khác.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Bạn đã hoàn thành %d bài thuyết trình cùng StickyPresenter";

@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "把便利貼存成檔案，再到另一部 Mac 載入。";
 "roadmap.notifications.title" = "計時器提醒";
 "roadmap.notifications.detail" = "計時器結束時收到通知，即使你正在使用其他 App。";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "你已經用 StickyPresenter 完成了 %d 場簡報";

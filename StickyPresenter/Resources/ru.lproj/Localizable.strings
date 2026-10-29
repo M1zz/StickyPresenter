@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Сохраняйте заметки в файл и загружайте их на другом Mac.";
 "roadmap.notifications.title" = "Уведомления таймера";
 "roadmap.notifications.detail" = "Получайте уведомление, когда таймер закончится, даже если вы в другом приложении.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Выступлений вместе со StickyPresenter: %d";

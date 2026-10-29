@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Gem dine sedler i en fil, og indlæs dem igen på en anden Mac.";
 "roadmap.notifications.title" = "Timeradvarsler";
 "roadmap.notifications.detail" = "Få en notifikation, når en timer slutter, også mens du er i et andet program.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Du har gennemført %d oplæg med StickyPresenter";

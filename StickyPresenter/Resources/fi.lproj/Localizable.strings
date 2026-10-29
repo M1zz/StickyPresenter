@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Tallenna muistilaput tiedostoon ja lataa ne uudelleen toisella Macilla.";
 "roadmap.notifications.title" = "Ajastinhälytykset";
 "roadmap.notifications.detail" = "Saa ilmoitus, kun ajastin päättyy, vaikka olisit toisessa apissa.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Olet pitänyt StickyPresenterin kanssa jo %d esitystä";

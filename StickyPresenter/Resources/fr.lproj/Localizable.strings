@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "Enregistrez vos notes dans un fichier et rechargez-les sur un autre Mac.";
 "roadmap.notifications.title" = "Alertes de minuteur";
 "roadmap.notifications.detail" = "Recevez une notification à la fin d’un minuteur, même dans une autre app.";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "Déjà %d présentations menées avec StickyPresenter";

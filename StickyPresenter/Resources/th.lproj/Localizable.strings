@@ -305,3 +305,6 @@
 "roadmap.backup.detail" = "บันทึกโน้ตเป็นไฟล์ แล้วโหลดกลับบน Mac เครื่องอื่น";
 "roadmap.notifications.title" = "การแจ้งเตือนตัวจับเวลา";
 "roadmap.notifications.detail" = "รับการแจ้งเตือนเมื่อตัวจับเวลาสิ้นสุด แม้คุณกำลังอยู่ในแอปอื่น";
+
+/* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
+"tip.talks" = "คุณนำเสนอจบไปแล้ว %d ครั้งกับ StickyPresenter";
