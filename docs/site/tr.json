@@ -27,7 +27,14 @@
     "note": "Selamla, gündemi anlat\nSatış grafiğinde 3 sn dur\nSorulara 5 dk ayır",
     "noteLabel": "Not",
     "colorLabel": "Not rengi",
-    "colors": ["Sarı", "Pembe", "Yeşil", "Mavi", "Mor", "Turuncu"],
+    "colors": [
+      "Sarı",
+      "Pembe",
+      "Yeşil",
+      "Mavi",
+      "Mor",
+      "Turuncu"
+    ],
     "footnote": "Bu, ekranın bir benzeridir. Uygulamada not ve zamanlayıcı, tam ekran Keynote veya PowerPoint’in üstünde böyle durur."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Üç adımda başlayın",
     "items": [
-      {"title": "Uygulamayı açın", "text": "Menü çubuğunda bir not simgesi belirir, ilk açılışta kısa bir rehber açılır."},
-      {"title": "Not ve zamanlayıcı ekleyin", "text": "Metni kopyalayıp `⌘⌃V`’ye basın, ardından konuşmanızın süresini zamanlayıcı alanına yazın."},
-      {"title": "Tam ekrana geçin", "text": "Not ve zamanlayıcı üstte kalır."}
+      {
+        "title": "Uygulamayı açın",
+        "text": "Menü çubuğunda bir not simgesi belirir, ilk açılışta kısa bir rehber açılır."
+      },
+      {
+        "title": "Not ve zamanlayıcı ekleyin",
+        "text": "Metni kopyalayıp `⌘⌃V`’ye basın, ardından konuşmanızın süresini zamanlayıcı alanına yazın."
+      },
+      {
+        "title": "Tam ekrana geçin",
+        "text": "Not ve zamanlayıcı üstte kalır."
+      }
     ]
   },
   "reference": {
     "title": "Kısayollar ve süre biçimleri",
     "rows": [
-      ["⌘⌃N", "Yeni not"],
-      ["⌘⌃V", "Panodaki metinle yeni not"],
-      ["⌘⌃T", "Zamanlayıcıları göster veya gizle"],
-      ["⌘⌃B", "Pomodoro başlat (25 dk odak, 5 dk mola)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Tüm notları göster veya gizle"],
-      ["10", "Yalnızca sayı dakika demektir (10 dk)"],
-      ["5:30 · 1:15:00", "Dakika:saniye, saat:dakika:saniye"],
-      ["1h 20m · 45s", "Birimlerle"],
-      ["25/5", "Siz durdurana kadar odak/mola döngüsü"]
+      [
+        "⌘⌃N",
+        "Yeni not"
+      ],
+      [
+        "⌘⌃V",
+        "Panodaki metinle yeni not"
+      ],
+      [
+        "⌘⌃T",
+        "Zamanlayıcıları göster veya gizle"
+      ],
+      [
+        "⌘⌃B",
+        "Pomodoro başlat (25 dk odak, 5 dk mola)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Tüm notları göster veya gizle"
+      ],
+      [
+        "10",
+        "Yalnızca sayı dakika demektir (10 dk)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Dakika:saniye, saat:dakika:saniye"
+      ],
+      [
+        "1h 20m · 45s",
+        "Birimlerle"
+      ],
+      [
+        "25/5",
+        "Siz durdurana kadar odak/mola döngüsü"
+      ]
     ],
     "note": "Tüm kısayollar Command (⌘) ve Control (⌃) tuşlarını birlikte kullanır ve başka bir uygulamadayken de çalışır. Zamanlayıcılar 99:59:59’a kadar ayarlanabilir."
-  },
-  "pricing": {
-    "title": "Hepsi ücretsiz",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Altı renkte notlar; saydamlık, yazı boyutu ve düzenleme kilidi",
-        "Geri sayımlar, Pomodoro ve Bildirim Merkezi widget’ı",
-        "Ayna modlu teleprompter",
-        "Zamanlayıcıyla birlikte başlayan arka plan müziği",
-        "Her uygulamadan çalışan kısayollar"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Başlat, duraklat, 30 saniye ekle veya çıkar",
-        "Widget’ın boyutunu ve yerini sahneden değiştir",
-        "Tek dokunuşla 3, 5, 10 veya 15 dakikalık zamanlayıcı"
-      ],
-      "note": "Ayrı ve ücretsiz bir uygulamadır. iOS 17 veya üstü ve aynı Wi‑Fi’daki bir Mac’te StickyPresenter’ın açık olması gerekir."
-    },
-    "note": "Hiçbir özellik ödemeye kilitli değil. Uygulama işinize yarıyorsa Ayarlar’dan geliştiriciye bahşiş bırakabilirsiniz."
   },
   "faq": {
     "title": "Sık sorulan sorular",
     "items": [
-      {"q": "Ekran paylaşımı veya yansıtmada yalnızca zamanlayıcıyı gösterebilir miyim?", "a": "Evet. Zamanlayıcının satırındaki Pencere düğmesiyle onu normal bir pencere olarak açın. Böylece ekran paylaşımı ve AirPlay’in pencere listesinde görünür ve yalnızca onu paylaşabilirsiniz."},
-      {"q": "Bir zamanlayıcı widget’ını gizledim, bulamıyorum.", "a": "Zamanlayıcı penceresinde o zamanlayıcının satırının üzerine gelin; widget’ın yeri kesikli çizgiyle gösterilir. Hizala’ya tıklayarak onu pencerenin yanına geri getirin."},
-      {"q": "Bir notu yanlışlıkla kapattım.", "a": "Menü çubuğundaki Kapatılan Notu Yeniden Aç ile son 20 nottan herhangi birini geri getirebilirsiniz. Notlar siz yazarken kaydedilir ve uygulama yeniden açıldığında aynı yere döner."},
-      {"q": "Bir kısayol çalışmıyor.", "a": "Rehberdeki kısayol tablosunda Başka bir uygulama kullanıyor yazıyorsa, başka bir uygulama onu önce almış demektir. O uygulamadan çıkın, kısayol yeniden çalışır. Erişilebilirlik izni gerekmez."},
-      {"q": "Bukalemun teması neden ekran kaydı izni istiyor?", "a": "Bukalemun, widget’ın arkasındaki ekranın rengini okuyup ona uyum sağlar; bunun için o izin gerekir. Hiçbir şey kaydedilmez ya da gönderilmez. İzin vermezseniz Sistem, Açık ve Koyu temaları normal şekilde çalışır."},
-      {"q": "Arka plan müziğini nasıl eklerim?", "a": "Zamanlayıcı penceresinin altındaki müzik çubuğundan bir hava seçin (Odak, Sakin, Caz veya Canlı); uygulama her biri için bir klasör oluşturur. Kendi parçalarınızı oraya koyun, zamanlayıcıyla birlikte sırayla çalsın. Uygulamada hazır müzik yoktur."},
-      {"q": "iPhone’daki kumanda Mac’imi bulamıyor.", "a": "Sırayla kontrol edin: Mac’te StickyPresenter açık mı (menü çubuğundaki simge)? İki cihaz da aynı Wi‑Fi’da mı, misafir ağında ya da hücresel veride değil mi? Hem iPhone’da hem Mac’te Gizlilik ve Güvenlik altında Yerel Ağ izni verildi mi? VPN kapalı mı?"},
-      {"q": "Kumanda eşleştirme kodunun yanlış olduğunu söylüyor.", "a": "Mac’in menü çubuğunda Uzaktan Kumanda altında şu an görünen dört haneli kodu girin. Yeni Eşleştirme Kodu’na tıkladıysanız yalnızca yeni kod geçerlidir. İlk eşleştirmeden sonra uygulamayı açar açmaz bağlanır."},
-      {"q": "Başkası zamanlayıcımı kontrol edebilir mi?", "a": "Kodunuz olmadan edemez. Mac yalnızca doğru kodu giren kumandaları, yerel ağdaki şifreli doğrudan bağlantı üzerinden kabul eder. Kodu biri gördüyse menü çubuğunda Uzaktan Kumanda altından Yeni Eşleştirme Kodu’nu ya da Eşleşen Uzaktan Kumandaları Unut’u seçin."},
-      {"q": "Notlarım ve metinlerim nerede saklanıyor?", "a": "Yalnızca bu Mac’te. Hesap da reklam da yok; anonim kullanım istatistikleri ve kendi gönderdiğiniz geri bildirimler dışında hiçbir şey internete çıkmaz."}
+      {
+        "q": "Gerçekten ücretsiz mi?",
+        "a": "Evet. Tüm özellikler ücretsiz; iPhone uygulaması Remote Controller for Sticky de ayrı ve ücretsiz bir uygulamadır. İşinize yaradıysa Ayarlar’dan geliştiriciye bahşiş bırakabilirsiniz; bahşiş hiçbir özelliğin kilidini açmaz."
+      },
+      {
+        "q": "Ekran paylaşımı veya yansıtmada yalnızca zamanlayıcıyı gösterebilir miyim?",
+        "a": "Evet. Zamanlayıcının satırındaki Pencere düğmesiyle onu normal bir pencere olarak açın. Böylece ekran paylaşımı ve AirPlay’in pencere listesinde görünür ve yalnızca onu paylaşabilirsiniz."
+      },
+      {
+        "q": "Bir zamanlayıcı widget’ını gizledim, bulamıyorum.",
+        "a": "Zamanlayıcı penceresinde o zamanlayıcının satırının üzerine gelin; widget’ın yeri kesikli çizgiyle gösterilir. Hizala’ya tıklayarak onu pencerenin yanına geri getirin."
+      },
+      {
+        "q": "Bir notu yanlışlıkla kapattım.",
+        "a": "Menü çubuğundaki Kapatılan Notu Yeniden Aç ile son 20 nottan herhangi birini geri getirebilirsiniz. Notlar siz yazarken kaydedilir ve uygulama yeniden açıldığında aynı yere döner."
+      },
+      {
+        "q": "Bir kısayol çalışmıyor.",
+        "a": "Rehberdeki kısayol tablosunda Başka bir uygulama kullanıyor yazıyorsa, başka bir uygulama onu önce almış demektir. O uygulamadan çıkın, kısayol yeniden çalışır. Erişilebilirlik izni gerekmez."
+      },
+      {
+        "q": "Bukalemun teması neden ekran kaydı izni istiyor?",
+        "a": "Bukalemun, widget’ın arkasındaki ekranın rengini okuyup ona uyum sağlar; bunun için o izin gerekir. Hiçbir şey kaydedilmez ya da gönderilmez. İzin vermezseniz Sistem, Açık ve Koyu temaları normal şekilde çalışır."
+      },
+      {
+        "q": "Arka plan müziğini nasıl eklerim?",
+        "a": "Zamanlayıcı penceresinin altındaki müzik çubuğundan bir hava seçin (Odak, Sakin, Caz veya Canlı); uygulama her biri için bir klasör oluşturur. Kendi parçalarınızı oraya koyun, zamanlayıcıyla birlikte sırayla çalsın. Uygulamada hazır müzik yoktur."
+      },
+      {
+        "q": "iPhone’daki kumanda Mac’imi bulamıyor.",
+        "a": "Sırayla kontrol edin: Mac’te StickyPresenter açık mı (menü çubuğundaki simge)? İki cihaz da aynı Wi‑Fi’da mı, misafir ağında ya da hücresel veride değil mi? Hem iPhone’da hem Mac’te Gizlilik ve Güvenlik altında Yerel Ağ izni verildi mi? VPN kapalı mı?"
+      },
+      {
+        "q": "Kumanda eşleştirme kodunun yanlış olduğunu söylüyor.",
+        "a": "Mac’in menü çubuğunda Uzaktan Kumanda altında şu an görünen dört haneli kodu girin. Yeni Eşleştirme Kodu’na tıkladıysanız yalnızca yeni kod geçerlidir. İlk eşleştirmeden sonra uygulamayı açar açmaz bağlanır."
+      },
+      {
+        "q": "Başkası zamanlayıcımı kontrol edebilir mi?",
+        "a": "Kodunuz olmadan edemez. Mac yalnızca doğru kodu giren kumandaları, yerel ağdaki şifreli doğrudan bağlantı üzerinden kabul eder. Kodu biri gördüyse menü çubuğunda Uzaktan Kumanda altından Yeni Eşleştirme Kodu’nu ya da Eşleşen Uzaktan Kumandaları Unut’u seçin."
+      },
+      {
+        "q": "Notlarım ve metinlerim nerede saklanıyor?",
+        "a": "Yalnızca bu Mac’te. Hesap da reklam da yok; anonim kullanım istatistikleri ve kendi gönderdiğiniz geri bildirimler dışında hiçbir şey internete çıkmaz."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "İçeriğe geç",
     "languages": "Dil",
     "privacy": "Gizlilik Politikası",
-    "contact": "Sorularınız, hata bildirimleriniz ya da fikirleriniz için {email} adresine yazın."
+    "contact": "Sorularınız, hata bildirimleriniz ya da fikirleriniz için {email} adresine yazın.",
+    "links": [
+      [
+        "iPhone Uzaktan Kumandası",
+        "remote.html"
+      ],
+      [
+        "Destek Sayfası",
+        "support.html"
+      ]
+    ]
   }
 }

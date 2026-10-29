@@ -27,7 +27,14 @@
     "note": "Pozdravit, představit program\nU grafu tržeb se na 3 s zastavit\nNechat 5 min na dotazy",
     "noteLabel": "Poznámka",
     "colorLabel": "Barva poznámky",
-    "colors": ["Žlutá", "Růžová", "Zelená", "Modrá", "Fialová", "Oranžová"],
+    "colors": [
+      "Žlutá",
+      "Růžová",
+      "Zelená",
+      "Modrá",
+      "Fialová",
+      "Oranžová"
+    ],
     "footnote": "Toto je napodobenina obrazovky. V aplikaci se poznámka a časovač vznášejí takhle nad Keynote nebo PowerPointem na celé obrazovce."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Tři kroky na začátek",
     "items": [
-      {"title": "Otevřete aplikaci", "text": "V řádku nabídek se objeví ikona poznámky a poprvé se otevře krátký průvodce."},
-      {"title": "Přidejte poznámku a časovač", "text": "Zkopírujte text a stiskněte `⌘⌃V`, pak do pole časovače napište délku vystoupení."},
-      {"title": "Přepněte na celou obrazovku", "text": "Poznámka i časovač zůstanou nahoře."}
+      {
+        "title": "Otevřete aplikaci",
+        "text": "V řádku nabídek se objeví ikona poznámky a poprvé se otevře krátký průvodce."
+      },
+      {
+        "title": "Přidejte poznámku a časovač",
+        "text": "Zkopírujte text a stiskněte `⌘⌃V`, pak do pole časovače napište délku vystoupení."
+      },
+      {
+        "title": "Přepněte na celou obrazovku",
+        "text": "Poznámka i časovač zůstanou nahoře."
+      }
     ]
   },
   "reference": {
     "title": "Zkratky a formáty času",
     "rows": [
-      ["⌘⌃N", "Nová poznámka"],
-      ["⌘⌃V", "Nová poznámka ze schránky"],
-      ["⌘⌃T", "Zobrazit nebo skrýt časovače"],
-      ["⌘⌃B", "Spustit Pomodoro (25 min soustředění, 5 min pauza)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Zobrazit nebo skrýt všechny poznámky"],
-      ["10", "Samotné číslo znamená minuty (10 min)"],
-      ["5:30 · 1:15:00", "Minuty:sekundy, hodiny:minuty:sekundy"],
-      ["1h 20m · 45s", "S jednotkami"],
-      ["25/5", "Soustředění/pauza dokola, dokud nezastavíte"]
+      [
+        "⌘⌃N",
+        "Nová poznámka"
+      ],
+      [
+        "⌘⌃V",
+        "Nová poznámka ze schránky"
+      ],
+      [
+        "⌘⌃T",
+        "Zobrazit nebo skrýt časovače"
+      ],
+      [
+        "⌘⌃B",
+        "Spustit Pomodoro (25 min soustředění, 5 min pauza)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Zobrazit nebo skrýt všechny poznámky"
+      ],
+      [
+        "10",
+        "Samotné číslo znamená minuty (10 min)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minuty:sekundy, hodiny:minuty:sekundy"
+      ],
+      [
+        "1h 20m · 45s",
+        "S jednotkami"
+      ],
+      [
+        "25/5",
+        "Soustředění/pauza dokola, dokud nezastavíte"
+      ]
     ],
     "note": "Všechny zkratky používají Command (⌘) a Control (⌃) současně a fungují, i když jste v jiné aplikaci. Časovač jde nastavit až na 99:59:59."
-  },
-  "pricing": {
-    "title": "Všechno je zdarma",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Poznámky v šesti barvách s průhledností, velikostí písma a zámkem úprav",
-        "Odpočty, Pomodoro a widget v Oznamovacím centru",
-        "Teleprompter se zrcadlovým režimem",
-        "Hudba na pozadí, která se spustí s časovačem",
-        "Zkratky, které fungují z kterékoli aplikace"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Spustit, pozastavit a přidat nebo ubrat 30 sekund",
-        "Měnit velikost a polohu widgetu přímo z pódia",
-        "Časovač na 3, 5, 10 nebo 15 minut jedním klepnutím"
-      ],
-      "note": "Samostatná bezplatná aplikace. Vyžaduje iOS 17 nebo novější a spuštěný StickyPresenter na Macu ve stejné síti Wi‑Fi."
-    },
-    "note": "Nic není schované za placením. Pokud vám aplikace pomáhá, můžete vývojáři v Nastavení nechat spropitné."
   },
   "faq": {
     "title": "Časté dotazy",
     "items": [
-      {"q": "Můžu při sdílení nebo zrcadlení obrazovky ukázat jen časovač?", "a": "Ano. Tlačítkem Okno v řádku časovače ho otevřete jako běžné okno. Pak se objeví v seznamu oken pro sdílení obrazovky i AirPlay a můžete sdílet jen je."},
-      {"q": "Skryl jsem widget časovače a nemůžu ho najít.", "a": "V okně časovačů najeďte ukazatelem na řádek daného časovače a místo widgetu se ohraničí přerušovanou čarou. Tlačítkem Zarovnat ho vrátíte vedle okna časovačů."},
-      {"q": "Omylem jsem zavřel poznámku.", "a": "Přes Znovu otevřít zavřenou poznámku v řádku nabídek vrátíte kteroukoli z posledních 20. Poznámky se ukládají průběžně a po novém spuštění aplikace se vrátí na stejné místo."},
-      {"q": "Zkratka nefunguje.", "a": "Pokud ji tabulka zkratek v průvodci označuje jako Používá jiná aplikace, zabrala ji dřív jiná aplikace. Ukončete ji a zkratka zase půjde. Oprávnění Zpřístupnění není potřeba."},
-      {"q": "Proč motiv Chameleon chce přístup k nahrávání obrazovky?", "a": "Chameleon čte barvu obrazovky za widgetem a přizpůsobuje se jí, a k tomu to oprávnění potřebuje. Nic se neukládá ani neodesílá. Bez něj motivy Systémový, Světlý a Tmavý fungují normálně."},
-      {"q": "Jak přidám hudbu na pozadí?", "a": "V hudebním pruhu dole v okně časovačů vyberte náladu (Soustředění, Klid, Jazz nebo Energie) a aplikace pro každou vytvoří složku. Vložte do ní vlastní skladby a budou hrát popořadě spolu s časovačem. Aplikace žádnou hudbu neobsahuje."},
-      {"q": "Ovládání na iPhonu nenajde můj Mac.", "a": "Zkontrolujte popořadě: běží StickyPresenter na Macu (ikona v řádku nabídek)? Jsou obě zařízení ve stejné Wi‑Fi, ne v síti pro hosty ani na mobilních datech? Je v Soukromí a zabezpečení na iPhonu i na Macu povolená Místní síť? Je vypnutá VPN?"},
-      {"q": "Ovládání hlásí, že spárovací kód nesouhlasí.", "a": "Zadejte čtyřmístný kód, který je teď vidět v nabídce Dálkové ovládání v řádku nabídek Macu. Pokud jste klikli na Nový spárovací kód, platí jen ten nový. Po prvním spárování se ovládání připojí hned po otevření aplikace."},
-      {"q": "Může můj časovač ovládat někdo jiný?", "a": "Bez vašeho kódu ne. Mac přijímá jen ovládání se správným kódem, a to přes šifrované přímé spojení v místní síti. Pokud kód někdo viděl, použijte v nabídce Dálkové ovládání volbu Nový spárovací kód nebo Zapomenout spárovaná ovládání."},
-      {"q": "Kde se ukládají moje poznámky a texty?", "a": "Jen na tomto Macu. Žádný účet ani reklamy, a na internet neodchází nic kromě anonymních statistik používání a zpětné vazby, kterou sami odešlete."}
+      {
+        "q": "Je to opravdu zdarma?",
+        "a": "Ano. Všechny funkce jsou zdarma a aplikace pro iPhone Remote Controller for Sticky je samostatná bezplatná aplikace. Pokud vám pomáhá, můžete vývojáři v Nastavení nechat spropitné; nic tím neodemknete."
+      },
+      {
+        "q": "Můžu při sdílení nebo zrcadlení obrazovky ukázat jen časovač?",
+        "a": "Ano. Tlačítkem Okno v řádku časovače ho otevřete jako běžné okno. Pak se objeví v seznamu oken pro sdílení obrazovky i AirPlay a můžete sdílet jen je."
+      },
+      {
+        "q": "Skryl jsem widget časovače a nemůžu ho najít.",
+        "a": "V okně časovačů najeďte ukazatelem na řádek daného časovače a místo widgetu se ohraničí přerušovanou čarou. Tlačítkem Zarovnat ho vrátíte vedle okna časovačů."
+      },
+      {
+        "q": "Omylem jsem zavřel poznámku.",
+        "a": "Přes Znovu otevřít zavřenou poznámku v řádku nabídek vrátíte kteroukoli z posledních 20. Poznámky se ukládají průběžně a po novém spuštění aplikace se vrátí na stejné místo."
+      },
+      {
+        "q": "Zkratka nefunguje.",
+        "a": "Pokud ji tabulka zkratek v průvodci označuje jako Používá jiná aplikace, zabrala ji dřív jiná aplikace. Ukončete ji a zkratka zase půjde. Oprávnění Zpřístupnění není potřeba."
+      },
+      {
+        "q": "Proč motiv Chameleon chce přístup k nahrávání obrazovky?",
+        "a": "Chameleon čte barvu obrazovky za widgetem a přizpůsobuje se jí, a k tomu to oprávnění potřebuje. Nic se neukládá ani neodesílá. Bez něj motivy Systémový, Světlý a Tmavý fungují normálně."
+      },
+      {
+        "q": "Jak přidám hudbu na pozadí?",
+        "a": "V hudebním pruhu dole v okně časovačů vyberte náladu (Soustředění, Klid, Jazz nebo Energie) a aplikace pro každou vytvoří složku. Vložte do ní vlastní skladby a budou hrát popořadě spolu s časovačem. Aplikace žádnou hudbu neobsahuje."
+      },
+      {
+        "q": "Ovládání na iPhonu nenajde můj Mac.",
+        "a": "Zkontrolujte popořadě: běží StickyPresenter na Macu (ikona v řádku nabídek)? Jsou obě zařízení ve stejné Wi‑Fi, ne v síti pro hosty ani na mobilních datech? Je v Soukromí a zabezpečení na iPhonu i na Macu povolená Místní síť? Je vypnutá VPN?"
+      },
+      {
+        "q": "Ovládání hlásí, že spárovací kód nesouhlasí.",
+        "a": "Zadejte čtyřmístný kód, který je teď vidět v nabídce Dálkové ovládání v řádku nabídek Macu. Pokud jste klikli na Nový spárovací kód, platí jen ten nový. Po prvním spárování se ovládání připojí hned po otevření aplikace."
+      },
+      {
+        "q": "Může můj časovač ovládat někdo jiný?",
+        "a": "Bez vašeho kódu ne. Mac přijímá jen ovládání se správným kódem, a to přes šifrované přímé spojení v místní síti. Pokud kód někdo viděl, použijte v nabídce Dálkové ovládání volbu Nový spárovací kód nebo Zapomenout spárovaná ovládání."
+      },
+      {
+        "q": "Kde se ukládají moje poznámky a texty?",
+        "a": "Jen na tomto Macu. Žádný účet ani reklamy, a na internet neodchází nic kromě anonymních statistik používání a zpětné vazby, kterou sami odešlete."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Přejít na obsah",
     "languages": "Jazyk",
     "privacy": "Zásady ochrany soukromí",
-    "contact": "Dotazy, chyby nebo nápady? Pište na {email}."
+    "contact": "Dotazy, chyby nebo nápady? Pište na {email}.",
+    "links": [
+      [
+        "Dálkové ovládání z iPhonu",
+        "remote.html"
+      ],
+      [
+        "Stránka podpory",
+        "support.html"
+      ]
+    ]
   }
 }

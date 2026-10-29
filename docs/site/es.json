@@ -27,7 +27,14 @@
     "note": "Saludar y presentar el índice\nParar 3 s en la gráfica de ventas\nDejar 5 min para preguntas",
     "noteLabel": "Nota adhesiva",
     "colorLabel": "Color de la nota",
-    "colors": ["Amarillo", "Rosa", "Verde", "Azul", "Morado", "Naranja"],
+    "colors": [
+      "Amarillo",
+      "Rosa",
+      "Verde",
+      "Azul",
+      "Morado",
+      "Naranja"
+    ],
     "footnote": "Esto es una simulación de la pantalla. En la app, la nota y el temporizador flotan así sobre Keynote o PowerPoint a pantalla completa."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Tres pasos para empezar",
     "items": [
-      {"title": "Abre la app", "text": "Aparece un icono de nota en la barra de menús y, la primera vez, se abre una guía breve."},
-      {"title": "Pon una nota y un temporizador", "text": "Copia tu guion y pulsa `⌘⌃V`; luego escribe la duración de tu charla en el campo del temporizador."},
-      {"title": "Pasa a pantalla completa", "text": "La nota y el temporizador se quedan encima."}
+      {
+        "title": "Abre la app",
+        "text": "Aparece un icono de nota en la barra de menús y, la primera vez, se abre una guía breve."
+      },
+      {
+        "title": "Pon una nota y un temporizador",
+        "text": "Copia tu guion y pulsa `⌘⌃V`; luego escribe la duración de tu charla en el campo del temporizador."
+      },
+      {
+        "title": "Pasa a pantalla completa",
+        "text": "La nota y el temporizador se quedan encima."
+      }
     ]
   },
   "reference": {
     "title": "Atajos y formatos de tiempo",
     "rows": [
-      ["⌘⌃N", "Nueva nota adhesiva"],
-      ["⌘⌃V", "Nueva nota con lo que hay en el portapapeles"],
-      ["⌘⌃T", "Mostrar u ocultar temporizadores"],
-      ["⌘⌃B", "Empezar un Pomodoro (25 min de concentración, 5 de descanso)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Mostrar u ocultar todas las notas"],
-      ["10", "Un número solo son minutos (10 min)"],
-      ["5:30 · 1:15:00", "Minutos:segundos, horas:minutos:segundos"],
-      ["1h 20m · 45s", "Con unidades"],
-      ["25/5", "Concentración/descanso, en bucle hasta que lo pares"]
+      [
+        "⌘⌃N",
+        "Nueva nota adhesiva"
+      ],
+      [
+        "⌘⌃V",
+        "Nueva nota con lo que hay en el portapapeles"
+      ],
+      [
+        "⌘⌃T",
+        "Mostrar u ocultar temporizadores"
+      ],
+      [
+        "⌘⌃B",
+        "Empezar un Pomodoro (25 min de concentración, 5 de descanso)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Mostrar u ocultar todas las notas"
+      ],
+      [
+        "10",
+        "Un número solo son minutos (10 min)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minutos:segundos, horas:minutos:segundos"
+      ],
+      [
+        "1h 20m · 45s",
+        "Con unidades"
+      ],
+      [
+        "25/5",
+        "Concentración/descanso, en bucle hasta que lo pares"
+      ]
     ],
     "note": "Todos los atajos combinan Comando (⌘) y Control (⌃) y funcionan aunque estés en otra app. Los temporizadores llegan hasta 99:59:59."
-  },
-  "pricing": {
-    "title": "Todo es gratis",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Notas adhesivas en seis colores, con opacidad, tamaño de letra y bloqueo de edición",
-        "Cuenta atrás, Pomodoro y widget para el Centro de notificaciones",
-        "Teleprompter con modo espejo",
-        "Música de fondo que arranca con el temporizador",
-        "Atajos que funcionan desde cualquier app"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Iniciar, pausar y sumar o restar 30 segundos",
-        "Cambiar el tamaño y la posición del widget desde el escenario",
-        "Temporizadores de 3, 5, 10 o 15 minutos con un toque"
-      ],
-      "note": "Es una app aparte y gratuita. Requiere iOS 17 o posterior y StickyPresenter abierto en un Mac de la misma red Wi‑Fi."
-    },
-    "note": "No hay nada bloqueado tras un pago. Si te resulta útil, puedes dejarle una propina al desarrollador desde Ajustes."
   },
   "faq": {
     "title": "Preguntas frecuentes",
     "items": [
-      {"q": "¿Puedo mostrar solo el temporizador al compartir pantalla o duplicarla?", "a": "Sí. Con el botón Ventana de la fila del temporizador se abre como una ventana normal; así aparece en la lista de ventanas de la pantalla compartida y de AirPlay, y puedes compartir solo esa."},
-      {"q": "Oculté un widget y no lo encuentro.", "a": "En la ventana de temporizadores, pasa el puntero por la fila de ese temporizador y su posición se marca con una línea discontinua. Pulsa Alinear para traerlo junto a la ventana."},
-      {"q": "Cerré una nota sin querer.", "a": "Usa Reabrir nota cerrada en la barra de menús para recuperar cualquiera de las últimas 20. Las notas se guardan mientras escribes y vuelven al mismo sitio al reabrir la app."},
-      {"q": "Un atajo no funciona.", "a": "Si en la tabla de atajos de la guía aparece como En uso por otra app, es que otra app lo reservó antes. Cierra esa app y volverá a funcionar. No hace falta permiso de Accesibilidad."},
-      {"q": "¿Por qué el tema Camaleón pide permiso de Grabación de pantalla?", "a": "Camaleón lee el color de la pantalla que hay detrás del widget para adaptarse a él, y para eso necesita ese permiso. No se guarda ni se envía nada. Sin el permiso, los temas Sistema, Claro y Oscuro funcionan igual."},
-      {"q": "¿Cómo añado música de fondo?", "a": "Elige un ambiente (Concentración, Calma, Jazz o Animada) en la barra de música de la parte inferior de la ventana de temporizadores y la app creará una carpeta para cada uno. Mete ahí tus canciones y sonarán por orden junto con el temporizador. La app no trae música."},
-      {"q": "El mando del iPhone no encuentra mi Mac.", "a": "Revisa esto en orden: que StickyPresenter esté abierto en el Mac (busca el icono en la barra de menús); que los dos dispositivos estén en la misma Wi‑Fi, no en una red de invitados ni con datos móviles; que Red local esté permitida para la app en Privacidad y seguridad, tanto en el iPhone como en el Mac; y que la VPN esté desactivada."},
-      {"q": "El mando dice que el código de vinculación no es correcto.", "a": "Escribe el código de cuatro cifras que aparece ahora en Control remoto, en la barra de menús del Mac. Si pulsaste Nuevo código de vinculación, solo vale el nuevo. Después de vincularlo una vez, se conecta en cuanto abres la app."},
-      {"q": "¿Podría otra persona controlar mi temporizador?", "a": "No sin tu código. El Mac solo acepta mandos que hayan introducido el código correcto, mediante una conexión directa y cifrada dentro de tu red local. Si alguien ha visto el código, usa Nuevo código de vinculación u Olvidar controles remotos vinculados en Control remoto, en la barra de menús."},
-      {"q": "¿Dónde se guardan mis notas y guiones?", "a": "Solo en este Mac. No hay cuenta ni anuncios, y nada sale a internet salvo estadísticas de uso anónimas y los comentarios que decidas enviar."}
+      {
+        "q": "¿De verdad es gratis?",
+        "a": "Sí. Todas las funciones son gratis, y la app para iPhone Remote Controller for Sticky es otra app gratuita. Si te resulta útil, puedes dejarle una propina al desarrollador desde Ajustes; no desbloquea nada."
+      },
+      {
+        "q": "¿Puedo mostrar solo el temporizador al compartir pantalla o duplicarla?",
+        "a": "Sí. Con el botón Ventana de la fila del temporizador se abre como una ventana normal; así aparece en la lista de ventanas de la pantalla compartida y de AirPlay, y puedes compartir solo esa."
+      },
+      {
+        "q": "Oculté un widget y no lo encuentro.",
+        "a": "En la ventana de temporizadores, pasa el puntero por la fila de ese temporizador y su posición se marca con una línea discontinua. Pulsa Alinear para traerlo junto a la ventana."
+      },
+      {
+        "q": "Cerré una nota sin querer.",
+        "a": "Usa Reabrir nota cerrada en la barra de menús para recuperar cualquiera de las últimas 20. Las notas se guardan mientras escribes y vuelven al mismo sitio al reabrir la app."
+      },
+      {
+        "q": "Un atajo no funciona.",
+        "a": "Si en la tabla de atajos de la guía aparece como En uso por otra app, es que otra app lo reservó antes. Cierra esa app y volverá a funcionar. No hace falta permiso de Accesibilidad."
+      },
+      {
+        "q": "¿Por qué el tema Camaleón pide permiso de Grabación de pantalla?",
+        "a": "Camaleón lee el color de la pantalla que hay detrás del widget para adaptarse a él, y para eso necesita ese permiso. No se guarda ni se envía nada. Sin el permiso, los temas Sistema, Claro y Oscuro funcionan igual."
+      },
+      {
+        "q": "¿Cómo añado música de fondo?",
+        "a": "Elige un ambiente (Concentración, Calma, Jazz o Animada) en la barra de música de la parte inferior de la ventana de temporizadores y la app creará una carpeta para cada uno. Mete ahí tus canciones y sonarán por orden junto con el temporizador. La app no trae música."
+      },
+      {
+        "q": "El mando del iPhone no encuentra mi Mac.",
+        "a": "Revisa esto en orden: que StickyPresenter esté abierto en el Mac (busca el icono en la barra de menús); que los dos dispositivos estén en la misma Wi‑Fi, no en una red de invitados ni con datos móviles; que Red local esté permitida para la app en Privacidad y seguridad, tanto en el iPhone como en el Mac; y que la VPN esté desactivada."
+      },
+      {
+        "q": "El mando dice que el código de vinculación no es correcto.",
+        "a": "Escribe el código de cuatro cifras que aparece ahora en Control remoto, en la barra de menús del Mac. Si pulsaste Nuevo código de vinculación, solo vale el nuevo. Después de vincularlo una vez, se conecta en cuanto abres la app."
+      },
+      {
+        "q": "¿Podría otra persona controlar mi temporizador?",
+        "a": "No sin tu código. El Mac solo acepta mandos que hayan introducido el código correcto, mediante una conexión directa y cifrada dentro de tu red local. Si alguien ha visto el código, usa Nuevo código de vinculación u Olvidar controles remotos vinculados en Control remoto, en la barra de menús."
+      },
+      {
+        "q": "¿Dónde se guardan mis notas y guiones?",
+        "a": "Solo en este Mac. No hay cuenta ni anuncios, y nada sale a internet salvo estadísticas de uso anónimas y los comentarios que decidas enviar."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Saltar al contenido",
     "languages": "Idioma",
     "privacy": "Política de privacidad",
-    "contact": "¿Dudas, errores o ideas? Escribe a {email}."
+    "contact": "¿Dudas, errores o ideas? Escribe a {email}.",
+    "links": [
+      [
+        "Control remoto en iPhone",
+        "remote.html"
+      ],
+      [
+        "Página de soporte",
+        "support.html"
+      ]
+    ]
   }
 }

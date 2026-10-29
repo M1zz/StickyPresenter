@@ -27,7 +27,14 @@
     "note": "Saluer, présenter le plan\nMarquer 3 s sur le graphique des ventes\nGarder 5 min pour les questions",
     "noteLabel": "Note",
     "colorLabel": "Couleur de la note",
-    "colors": ["Jaune", "Rose", "Vert", "Bleu", "Violet", "Orange"],
+    "colors": [
+      "Jaune",
+      "Rose",
+      "Vert",
+      "Bleu",
+      "Violet",
+      "Orange"
+    ],
     "footnote": "Ceci est une simulation de l’écran. Dans l’app, la note et le minuteur flottent ainsi au-dessus de Keynote ou PowerPoint en plein écran."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Trois étapes pour commencer",
     "items": [
-      {"title": "Ouvrez l’app", "text": "Une icône de note apparaît dans la barre des menus, et un petit guide s’ouvre la première fois."},
-      {"title": "Ajoutez une note et un minuteur", "text": "Copiez votre texte et appuyez sur `⌘⌃V`, puis tapez la durée de votre intervention dans le champ du minuteur."},
-      {"title": "Passez en plein écran", "text": "La note et le minuteur restent au premier plan."}
+      {
+        "title": "Ouvrez l’app",
+        "text": "Une icône de note apparaît dans la barre des menus, et un petit guide s’ouvre la première fois."
+      },
+      {
+        "title": "Ajoutez une note et un minuteur",
+        "text": "Copiez votre texte et appuyez sur `⌘⌃V`, puis tapez la durée de votre intervention dans le champ du minuteur."
+      },
+      {
+        "title": "Passez en plein écran",
+        "text": "La note et le minuteur restent au premier plan."
+      }
     ]
   },
   "reference": {
     "title": "Raccourcis et formats de durée",
     "rows": [
-      ["⌘⌃N", "Nouvelle note"],
-      ["⌘⌃V", "Nouvelle note à partir du presse-papiers"],
-      ["⌘⌃T", "Afficher ou masquer les minuteurs"],
-      ["⌘⌃B", "Lancer un Pomodoro (25 min de concentration, 5 min de pause)"],
-      ["⌘⌃P", "Prompteur"],
-      ["⌘⌃S · ⌘⌃H", "Afficher ou masquer toutes les notes"],
-      ["10", "Un nombre seul, ce sont des minutes (10 min)"],
-      ["5:30 · 1:15:00", "Minutes:secondes, heures:minutes:secondes"],
-      ["1h 20m · 45s", "Avec les unités"],
-      ["25/5", "Concentration/pause, en boucle jusqu’à l’arrêt"]
+      [
+        "⌘⌃N",
+        "Nouvelle note"
+      ],
+      [
+        "⌘⌃V",
+        "Nouvelle note à partir du presse-papiers"
+      ],
+      [
+        "⌘⌃T",
+        "Afficher ou masquer les minuteurs"
+      ],
+      [
+        "⌘⌃B",
+        "Lancer un Pomodoro (25 min de concentration, 5 min de pause)"
+      ],
+      [
+        "⌘⌃P",
+        "Prompteur"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Afficher ou masquer toutes les notes"
+      ],
+      [
+        "10",
+        "Un nombre seul, ce sont des minutes (10 min)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minutes:secondes, heures:minutes:secondes"
+      ],
+      [
+        "1h 20m · 45s",
+        "Avec les unités"
+      ],
+      [
+        "25/5",
+        "Concentration/pause, en boucle jusqu’à l’arrêt"
+      ]
     ],
     "note": "Tous les raccourcis combinent Commande (⌘) et Contrôle (⌃) et fonctionnent même depuis une autre app. Les minuteurs vont jusqu’à 99:59:59."
-  },
-  "pricing": {
-    "title": "Tout est gratuit",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Notes en six couleurs, avec opacité, taille du texte et verrouillage",
-        "Comptes à rebours, Pomodoro et widget pour le centre de notifications",
-        "Prompteur avec mode miroir",
-        "Musique de fond qui démarre avec le minuteur",
-        "Raccourcis utilisables depuis n’importe quelle app"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Démarrer, mettre en pause, ajouter ou retirer 30 secondes",
-        "Redimensionner et déplacer le widget depuis la scène",
-        "Minuteur de 3, 5, 10 ou 15 minutes en un geste"
-      ],
-      "note": "Une app distincte et gratuite. Nécessite iOS 17 ou ultérieur et StickyPresenter ouvert sur un Mac du même réseau Wi‑Fi."
-    },
-    "note": "Aucune fonction n’est réservée aux achats. Si l’app vous rend service, vous pouvez laisser un pourboire au développeur dans les Réglages."
   },
   "faq": {
     "title": "Questions fréquentes",
     "items": [
-      {"q": "Puis-je n’afficher que le minuteur en partage d’écran ou en recopie ?", "a": "Oui. Le bouton Fenêtre de la ligne du minuteur l’ouvre comme une fenêtre classique. Il apparaît alors dans la liste des fenêtres du partage d’écran et d’AirPlay, et vous pouvez ne partager qu’elle."},
-      {"q": "J’ai masqué un widget et je ne le retrouve plus.", "a": "Dans la fenêtre des minuteurs, survolez la ligne de ce minuteur : l’emplacement du widget s’entoure de pointillés. Cliquez sur Aligner pour le ramener à côté de la fenêtre."},
-      {"q": "J’ai fermé une note par erreur.", "a": "Avec Rouvrir la dernière note fermée dans la barre des menus, vous récupérez l’une des 20 dernières. Les notes s’enregistrent pendant la saisie et reviennent au même endroit quand l’app redémarre."},
-      {"q": "Un raccourci ne fonctionne pas.", "a": "Si le tableau des raccourcis du guide l’indique comme Utilisé par une autre app, c’est qu’une autre app l’a réservé avant. Quittez-la et il refonctionnera. Aucune autorisation d’accessibilité n’est nécessaire."},
-      {"q": "Pourquoi le thème Caméléon demande-t-il l’enregistrement de l’écran ?", "a": "Caméléon lit la couleur de l’écran derrière le widget pour s’y accorder, d’où cette autorisation. Rien n’est enregistré ni envoyé. Sans elle, les thèmes Système, Clair et Sombre fonctionnent normalement."},
-      {"q": "Comment ajouter une musique de fond ?", "a": "Choisissez une ambiance (Concentration, Calme, Jazz ou Entraînant) dans la barre musicale en bas de la fenêtre des minuteurs, et l’app crée un dossier pour chacune. Déposez-y vos morceaux : ils seront joués dans l’ordre avec le minuteur. L’app ne fournit pas de musique."},
-      {"q": "La télécommande iPhone ne trouve pas mon Mac.", "a": "Vérifiez dans l’ordre : StickyPresenter est ouvert sur le Mac (icône dans la barre des menus) ; les deux appareils sont sur le même Wi‑Fi, pas sur un réseau invité ni en données cellulaires ; Réseau local est autorisé pour l’app dans Confidentialité et sécurité, sur l’iPhone comme sur le Mac ; le VPN est désactivé."},
-      {"q": "La télécommande indique un code d’appairage incorrect.", "a": "Saisissez le code à quatre chiffres affiché en ce moment sous Télécommande dans la barre des menus du Mac. Si vous avez cliqué sur Nouveau code d’appairage, seul le nouveau est valable. Une fois appairée, la télécommande se connecte dès l’ouverture de l’app."},
-      {"q": "Quelqu’un d’autre pourrait-il contrôler mon minuteur ?", "a": "Pas sans votre code. Le Mac n’accepte que les télécommandes qui ont saisi le bon code, via une connexion directe chiffrée sur votre réseau local. Si quelqu’un a vu le code, utilisez Nouveau code d’appairage ou Oublier les télécommandes appairées sous Télécommande dans la barre des menus."},
-      {"q": "Où sont stockés mes notes et mes textes ?", "a": "Uniquement sur ce Mac. Pas de compte, pas de pub, et rien ne part sur internet hormis des statistiques d’utilisation anonymes et les retours que vous choisissez d’envoyer."}
+      {
+        "q": "C’est vraiment gratuit ?",
+        "a": "Oui. Toutes les fonctions sont gratuites, et l’app iPhone Remote Controller for Sticky est une app distincte, elle aussi gratuite. Si l’app vous rend service, vous pouvez laisser un pourboire au développeur dans les Réglages ; cela ne débloque rien."
+      },
+      {
+        "q": "Puis-je n’afficher que le minuteur en partage d’écran ou en recopie ?",
+        "a": "Oui. Le bouton Fenêtre de la ligne du minuteur l’ouvre comme une fenêtre classique. Il apparaît alors dans la liste des fenêtres du partage d’écran et d’AirPlay, et vous pouvez ne partager qu’elle."
+      },
+      {
+        "q": "J’ai masqué un widget et je ne le retrouve plus.",
+        "a": "Dans la fenêtre des minuteurs, survolez la ligne de ce minuteur : l’emplacement du widget s’entoure de pointillés. Cliquez sur Aligner pour le ramener à côté de la fenêtre."
+      },
+      {
+        "q": "J’ai fermé une note par erreur.",
+        "a": "Avec Rouvrir la dernière note fermée dans la barre des menus, vous récupérez l’une des 20 dernières. Les notes s’enregistrent pendant la saisie et reviennent au même endroit quand l’app redémarre."
+      },
+      {
+        "q": "Un raccourci ne fonctionne pas.",
+        "a": "Si le tableau des raccourcis du guide l’indique comme Utilisé par une autre app, c’est qu’une autre app l’a réservé avant. Quittez-la et il refonctionnera. Aucune autorisation d’accessibilité n’est nécessaire."
+      },
+      {
+        "q": "Pourquoi le thème Caméléon demande-t-il l’enregistrement de l’écran ?",
+        "a": "Caméléon lit la couleur de l’écran derrière le widget pour s’y accorder, d’où cette autorisation. Rien n’est enregistré ni envoyé. Sans elle, les thèmes Système, Clair et Sombre fonctionnent normalement."
+      },
+      {
+        "q": "Comment ajouter une musique de fond ?",
+        "a": "Choisissez une ambiance (Concentration, Calme, Jazz ou Entraînant) dans la barre musicale en bas de la fenêtre des minuteurs, et l’app crée un dossier pour chacune. Déposez-y vos morceaux : ils seront joués dans l’ordre avec le minuteur. L’app ne fournit pas de musique."
+      },
+      {
+        "q": "La télécommande iPhone ne trouve pas mon Mac.",
+        "a": "Vérifiez dans l’ordre : StickyPresenter est ouvert sur le Mac (icône dans la barre des menus) ; les deux appareils sont sur le même Wi‑Fi, pas sur un réseau invité ni en données cellulaires ; Réseau local est autorisé pour l’app dans Confidentialité et sécurité, sur l’iPhone comme sur le Mac ; le VPN est désactivé."
+      },
+      {
+        "q": "La télécommande indique un code d’appairage incorrect.",
+        "a": "Saisissez le code à quatre chiffres affiché en ce moment sous Télécommande dans la barre des menus du Mac. Si vous avez cliqué sur Nouveau code d’appairage, seul le nouveau est valable. Une fois appairée, la télécommande se connecte dès l’ouverture de l’app."
+      },
+      {
+        "q": "Quelqu’un d’autre pourrait-il contrôler mon minuteur ?",
+        "a": "Pas sans votre code. Le Mac n’accepte que les télécommandes qui ont saisi le bon code, via une connexion directe chiffrée sur votre réseau local. Si quelqu’un a vu le code, utilisez Nouveau code d’appairage ou Oublier les télécommandes appairées sous Télécommande dans la barre des menus."
+      },
+      {
+        "q": "Où sont stockés mes notes et mes textes ?",
+        "a": "Uniquement sur ce Mac. Pas de compte, pas de pub, et rien ne part sur internet hormis des statistiques d’utilisation anonymes et les retours que vous choisissez d’envoyer."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Aller au contenu",
     "languages": "Langue",
     "privacy": "Politique de confidentialité",
-    "contact": "Une question, un bug, une idée ? Écrivez à {email}."
+    "contact": "Une question, un bug, une idée ? Écrivez à {email}.",
+    "links": [
+      [
+        "Télécommande iPhone",
+        "remote.html"
+      ],
+      [
+        "Page d’assistance",
+        "support.html"
+      ]
+    ]
   }
 }

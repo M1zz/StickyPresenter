@@ -27,7 +27,14 @@
     "note": "Say hi, walk through the agenda\nPause 3 s on the revenue chart\nLeave 5 min for questions",
     "noteLabel": "Sticky note",
     "colorLabel": "Note color",
-    "colors": ["Yellow", "Pink", "Green", "Blue", "Purple", "Orange"],
+    "colors": [
+      "Yellow",
+      "Pink",
+      "Green",
+      "Blue",
+      "Purple",
+      "Orange"
+    ],
     "footnote": "This is a mock-up of the screen. In the app, the note and timer float like this over full-screen Keynote or PowerPoint."
   },
   "problem": {
@@ -71,45 +78,56 @@
   "reference": {
     "title": "Shortcuts and time formats",
     "rows": [
-      ["⌘⌃N", "New sticky note"],
-      ["⌘⌃V", "New note from the clipboard"],
-      ["⌘⌃T", "Show or hide timers"],
-      ["⌘⌃B", "Start a Pomodoro (25 min focus, 5 min break)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Show or hide all notes"],
-      ["10", "A plain number means minutes"],
-      ["5:30 · 1:15:00", "Minutes:seconds, hours:minutes:seconds"],
-      ["1h 20m · 45s", "With units"],
-      ["25/5", "Focus/break, repeating until you stop it"]
+      [
+        "⌘⌃N",
+        "New sticky note"
+      ],
+      [
+        "⌘⌃V",
+        "New note from the clipboard"
+      ],
+      [
+        "⌘⌃T",
+        "Show or hide timers"
+      ],
+      [
+        "⌘⌃B",
+        "Start a Pomodoro (25 min focus, 5 min break)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Show or hide all notes"
+      ],
+      [
+        "10",
+        "A plain number means minutes"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minutes:seconds, hours:minutes:seconds"
+      ],
+      [
+        "1h 20m · 45s",
+        "With units"
+      ],
+      [
+        "25/5",
+        "Focus/break, repeating until you stop it"
+      ]
     ],
     "note": "Every shortcut uses Command (⌘) and Control (⌃) together and works while you're in another app. Timers go up to 99:59:59."
-  },
-  "pricing": {
-    "title": "It's all free",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Sticky notes in six colors, with opacity, font size and an edit lock",
-        "Countdown timers, Pomodoro and a Notification Center widget",
-        "Teleprompter with mirror mode",
-        "Background music that starts with the timer",
-        "Shortcuts that work from any app"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Start, pause, and add or take away 30 seconds",
-        "Resize and move the widget from the stage",
-        "One tap for a 3, 5, 10 or 15 minute timer"
-      ],
-      "note": "A separate free app. Needs iOS 17 or later and StickyPresenter running on a Mac on the same Wi‑Fi."
-    },
-    "note": "Nothing is locked behind a purchase. If it helps you, you can leave the developer a tip in Settings."
   },
   "faq": {
     "title": "Questions",
     "items": [
+      {
+        "q": "Is it really free?",
+        "a": "Yes. Every feature is free, and the iPhone app Remote Controller for Sticky is a separate free app. If it helps you, you can leave the developer a tip in Settings; it doesn't unlock anything."
+      },
       {
         "q": "Can I show just the timer over screen sharing or mirroring?",
         "a": "Yes. Use the Window button on the timer's row to open it as a regular window. It then shows up in the window list for screen sharing and AirPlay, so you can share that window alone."
@@ -160,6 +178,16 @@
     "skip": "Skip to content",
     "languages": "Language",
     "privacy": "Privacy Policy",
-    "contact": "Questions, bugs or feature ideas? Write to {email}."
+    "contact": "Questions, bugs or feature ideas? Write to {email}.",
+    "links": [
+      [
+        "iPhone Remote",
+        "remote.html"
+      ],
+      [
+        "Support Page",
+        "support.html"
+      ]
+    ]
   }
 }

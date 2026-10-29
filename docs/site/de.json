@@ -27,7 +27,14 @@
     "note": "Begrüßen, Agenda vorstellen\n3 Sek. beim Umsatzdiagramm bleiben\n5 Min. für Fragen lassen",
     "noteLabel": "Haftnotiz",
     "colorLabel": "Farbe der Notiz",
-    "colors": ["Gelb", "Rosa", "Grün", "Blau", "Lila", "Orange"],
+    "colors": [
+      "Gelb",
+      "Rosa",
+      "Grün",
+      "Blau",
+      "Lila",
+      "Orange"
+    ],
     "footnote": "Das ist eine Nachbildung des Bildschirms. In der App schweben Notiz und Timer genau so über Keynote oder PowerPoint im Vollbild."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "In drei Schritten startklar",
     "items": [
-      {"title": "App öffnen", "text": "In der Menüleiste erscheint ein Notizsymbol, und beim ersten Start öffnet sich eine kurze Anleitung."},
-      {"title": "Notiz und Timer anlegen", "text": "Skript kopieren und `⌘⌃V` drücken, dann die Vortragsdauer ins Timerfeld tippen."},
-      {"title": "Ab in den Vollbildmodus", "text": "Notiz und Timer bleiben obenauf."}
+      {
+        "title": "App öffnen",
+        "text": "In der Menüleiste erscheint ein Notizsymbol, und beim ersten Start öffnet sich eine kurze Anleitung."
+      },
+      {
+        "title": "Notiz und Timer anlegen",
+        "text": "Skript kopieren und `⌘⌃V` drücken, dann die Vortragsdauer ins Timerfeld tippen."
+      },
+      {
+        "title": "Ab in den Vollbildmodus",
+        "text": "Notiz und Timer bleiben obenauf."
+      }
     ]
   },
   "reference": {
     "title": "Kurzbefehle und Zeitformate",
     "rows": [
-      ["⌘⌃N", "Neue Haftnotiz"],
-      ["⌘⌃V", "Neue Notiz aus der Zwischenablage"],
-      ["⌘⌃T", "Timer ein- oder ausblenden"],
-      ["⌘⌃B", "Pomodoro starten (25 Min. Fokus, 5 Min. Pause)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Alle Notizen ein- oder ausblenden"],
-      ["10", "Eine Zahl allein bedeutet Minuten (10 Min.)"],
-      ["5:30 · 1:15:00", "Minuten:Sekunden, Stunden:Minuten:Sekunden"],
-      ["1h 20m · 45s", "Mit Einheiten"],
-      ["25/5", "Fokus/Pause im Wechsel, bis du stoppst"]
+      [
+        "⌘⌃N",
+        "Neue Haftnotiz"
+      ],
+      [
+        "⌘⌃V",
+        "Neue Notiz aus der Zwischenablage"
+      ],
+      [
+        "⌘⌃T",
+        "Timer ein- oder ausblenden"
+      ],
+      [
+        "⌘⌃B",
+        "Pomodoro starten (25 Min. Fokus, 5 Min. Pause)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Alle Notizen ein- oder ausblenden"
+      ],
+      [
+        "10",
+        "Eine Zahl allein bedeutet Minuten (10 Min.)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minuten:Sekunden, Stunden:Minuten:Sekunden"
+      ],
+      [
+        "1h 20m · 45s",
+        "Mit Einheiten"
+      ],
+      [
+        "25/5",
+        "Fokus/Pause im Wechsel, bis du stoppst"
+      ]
     ],
     "note": "Alle Kurzbefehle nutzen Befehl (⌘) und Control (⌃) zusammen und funktionieren auch, während du in einer anderen App bist. Timer gehen bis 99:59:59."
-  },
-  "pricing": {
-    "title": "Alles kostenlos",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Haftnotizen in sechs Farben, mit Deckkraft, Schriftgröße und Bearbeitungssperre",
-        "Countdown-Timer, Pomodoro und ein Widget für die Mitteilungszentrale",
-        "Teleprompter mit Spiegelmodus",
-        "Hintergrundmusik, die mit dem Timer startet",
-        "Kurzbefehle, die in jeder App funktionieren"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Starten, pausieren und 30 Sekunden dazu oder weg",
-        "Größe und Position des Widgets von der Bühne aus ändern",
-        "Timer mit 3, 5, 10 oder 15 Minuten per Fingertipp"
-      ],
-      "note": "Eine eigene, kostenlose App. Benötigt iOS 17 oder neuer und StickyPresenter auf einem Mac im selben WLAN."
-    },
-    "note": "Nichts ist hinter einem Kauf versteckt. Wenn dir die App hilft, kannst du dem Entwickler in den Einstellungen ein Trinkgeld geben."
   },
   "faq": {
     "title": "Häufige Fragen",
     "items": [
-      {"q": "Kann ich bei Bildschirmfreigabe oder Spiegelung nur den Timer zeigen?", "a": "Ja. Über die Taste Fenster in der Zeile des Timers öffnest du ihn als normales Fenster. Dann erscheint er in der Fensterliste von Bildschirmfreigabe und AirPlay, und du kannst nur dieses Fenster teilen."},
-      {"q": "Ich habe ein Timer-Widget ausgeblendet und finde es nicht mehr.", "a": "Fahre im Timerfenster mit dem Zeiger über die Zeile dieses Timers, dann wird die Position des Widgets gestrichelt umrandet. Mit Anordnen holst du es zurück neben das Timerfenster."},
-      {"q": "Ich habe versehentlich eine Notiz geschlossen.", "a": "Über Geschlossene Notiz wieder öffnen in der Menüleiste holst du jede der letzten 20 zurück. Notizen werden beim Tippen gespeichert und stehen nach einem Neustart der App wieder an derselben Stelle."},
-      {"q": "Ein Kurzbefehl funktioniert nicht.", "a": "Steht er in der Kurzbefehl-Tabelle der Anleitung als Von anderer App belegt, hat eine andere App ihn zuerst reserviert. Beende diese App, dann klappt es wieder. Eine Bedienungshilfen-Berechtigung ist nicht nötig."},
-      {"q": "Warum fragt das Chamäleon-Design nach Bildschirmaufnahme?", "a": "Chamäleon liest die Farbe des Bildschirms hinter dem Widget und passt sich daran an, dafür braucht es diese Berechtigung. Es wird nichts gespeichert oder gesendet. Ohne sie funktionieren die Designs System, Hell und Dunkel ganz normal."},
-      {"q": "Wie füge ich Hintergrundmusik hinzu?", "a": "Wähle in der Musikleiste unten im Timerfenster eine Stimmung (Fokus, Ruhig, Jazz oder Schwungvoll), und die App legt für jede Stimmung einen Ordner an. Leg deine eigenen Titel hinein, dann laufen sie der Reihe nach zum Timer. Die App bringt keine Musik mit."},
-      {"q": "Die iPhone-Fernbedienung findet meinen Mac nicht.", "a": "Prüfe der Reihe nach: Läuft StickyPresenter auf dem Mac (Symbol in der Menüleiste)? Sind beide Geräte im selben WLAN und nicht im Gästenetz oder Mobilfunk? Ist Lokales Netzwerk unter Datenschutz & Sicherheit auf iPhone und Mac erlaubt? Ist das VPN aus?"},
-      {"q": "Die Fernbedienung meldet einen falschen Kopplungscode.", "a": "Gib den vierstelligen Code ein, der gerade unter Fernbedienung in der Menüleiste des Mac steht. Hast du auf Neuer Kopplungscode geklickt, gilt nur der neue. Nach dem ersten Koppeln verbindet sie sich, sobald du die App öffnest."},
-      {"q": "Kann jemand anderes meinen Timer steuern?", "a": "Nicht ohne deinen Code. Der Mac akzeptiert nur Fernbedienungen mit dem richtigen Code, über eine verschlüsselte Direktverbindung im lokalen Netzwerk. Hat jemand den Code gesehen, nutze Neuer Kopplungscode oder Gekoppelte Fernbedienungen entfernen unter Fernbedienung in der Menüleiste."},
-      {"q": "Wo werden meine Notizen und Skripte gespeichert?", "a": "Nur auf diesem Mac. Es gibt kein Konto und keine Werbung, und außer anonymen Nutzungsstatistiken und Feedback, das du selbst sendest, geht nichts ins Internet."}
+      {
+        "q": "Ist das wirklich kostenlos?",
+        "a": "Ja. Alle Funktionen sind kostenlos, und die iPhone-App Remote Controller for Sticky ist eine eigene, kostenlose App. Wenn dir die App hilft, kannst du dem Entwickler in den Einstellungen ein Trinkgeld geben; freigeschaltet wird dadurch nichts."
+      },
+      {
+        "q": "Kann ich bei Bildschirmfreigabe oder Spiegelung nur den Timer zeigen?",
+        "a": "Ja. Über die Taste Fenster in der Zeile des Timers öffnest du ihn als normales Fenster. Dann erscheint er in der Fensterliste von Bildschirmfreigabe und AirPlay, und du kannst nur dieses Fenster teilen."
+      },
+      {
+        "q": "Ich habe ein Timer-Widget ausgeblendet und finde es nicht mehr.",
+        "a": "Fahre im Timerfenster mit dem Zeiger über die Zeile dieses Timers, dann wird die Position des Widgets gestrichelt umrandet. Mit Anordnen holst du es zurück neben das Timerfenster."
+      },
+      {
+        "q": "Ich habe versehentlich eine Notiz geschlossen.",
+        "a": "Über Geschlossene Notiz wieder öffnen in der Menüleiste holst du jede der letzten 20 zurück. Notizen werden beim Tippen gespeichert und stehen nach einem Neustart der App wieder an derselben Stelle."
+      },
+      {
+        "q": "Ein Kurzbefehl funktioniert nicht.",
+        "a": "Steht er in der Kurzbefehl-Tabelle der Anleitung als Von anderer App belegt, hat eine andere App ihn zuerst reserviert. Beende diese App, dann klappt es wieder. Eine Bedienungshilfen-Berechtigung ist nicht nötig."
+      },
+      {
+        "q": "Warum fragt das Chamäleon-Design nach Bildschirmaufnahme?",
+        "a": "Chamäleon liest die Farbe des Bildschirms hinter dem Widget und passt sich daran an, dafür braucht es diese Berechtigung. Es wird nichts gespeichert oder gesendet. Ohne sie funktionieren die Designs System, Hell und Dunkel ganz normal."
+      },
+      {
+        "q": "Wie füge ich Hintergrundmusik hinzu?",
+        "a": "Wähle in der Musikleiste unten im Timerfenster eine Stimmung (Fokus, Ruhig, Jazz oder Schwungvoll), und die App legt für jede Stimmung einen Ordner an. Leg deine eigenen Titel hinein, dann laufen sie der Reihe nach zum Timer. Die App bringt keine Musik mit."
+      },
+      {
+        "q": "Die iPhone-Fernbedienung findet meinen Mac nicht.",
+        "a": "Prüfe der Reihe nach: Läuft StickyPresenter auf dem Mac (Symbol in der Menüleiste)? Sind beide Geräte im selben WLAN und nicht im Gästenetz oder Mobilfunk? Ist Lokales Netzwerk unter Datenschutz & Sicherheit auf iPhone und Mac erlaubt? Ist das VPN aus?"
+      },
+      {
+        "q": "Die Fernbedienung meldet einen falschen Kopplungscode.",
+        "a": "Gib den vierstelligen Code ein, der gerade unter Fernbedienung in der Menüleiste des Mac steht. Hast du auf Neuer Kopplungscode geklickt, gilt nur der neue. Nach dem ersten Koppeln verbindet sie sich, sobald du die App öffnest."
+      },
+      {
+        "q": "Kann jemand anderes meinen Timer steuern?",
+        "a": "Nicht ohne deinen Code. Der Mac akzeptiert nur Fernbedienungen mit dem richtigen Code, über eine verschlüsselte Direktverbindung im lokalen Netzwerk. Hat jemand den Code gesehen, nutze Neuer Kopplungscode oder Gekoppelte Fernbedienungen entfernen unter Fernbedienung in der Menüleiste."
+      },
+      {
+        "q": "Wo werden meine Notizen und Skripte gespeichert?",
+        "a": "Nur auf diesem Mac. Es gibt kein Konto und keine Werbung, und außer anonymen Nutzungsstatistiken und Feedback, das du selbst sendest, geht nichts ins Internet."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Zum Inhalt springen",
     "languages": "Sprache",
     "privacy": "Datenschutzerklärung",
-    "contact": "Fragen, Fehler oder Ideen? Schreib an {email}."
+    "contact": "Fragen, Fehler oder Ideen? Schreib an {email}.",
+    "links": [
+      [
+        "iPhone-Fernbedienung",
+        "remote.html"
+      ],
+      [
+        "Support-Seite",
+        "support.html"
+      ]
+    ]
   }
 }

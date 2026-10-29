@@ -27,7 +27,14 @@
     "note": "Sig hej, gennemgå dagsordenen\nHold 3 sek pause ved omsætningsgrafen\nGem 5 min til spørgsmål",
     "noteLabel": "Seddel",
     "colorLabel": "Seddelfarve",
-    "colors": ["Gul", "Lyserød", "Grøn", "Blå", "Lilla", "Orange"],
+    "colors": [
+      "Gul",
+      "Lyserød",
+      "Grøn",
+      "Blå",
+      "Lilla",
+      "Orange"
+    ],
     "footnote": "Dette er en efterligning af skærmen. I appen svæver seddel og timer sådan her oven på Keynote eller PowerPoint i fuld skærm."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Kom i gang i tre trin",
     "items": [
-      {"title": "Åbn appen", "text": "Et seddelsymbol dukker op i menulinjen, og første gang åbner en kort guide."},
-      {"title": "Tilføj en seddel og en timer", "text": "Kopiér manuskriptet og tryk `⌘⌃V`, og skriv så længden på dit oplæg i timerfeltet."},
-      {"title": "Gå i fuld skærm", "text": "Seddel og timer bliver liggende øverst."}
+      {
+        "title": "Åbn appen",
+        "text": "Et seddelsymbol dukker op i menulinjen, og første gang åbner en kort guide."
+      },
+      {
+        "title": "Tilføj en seddel og en timer",
+        "text": "Kopiér manuskriptet og tryk `⌘⌃V`, og skriv så længden på dit oplæg i timerfeltet."
+      },
+      {
+        "title": "Gå i fuld skærm",
+        "text": "Seddel og timer bliver liggende øverst."
+      }
     ]
   },
   "reference": {
     "title": "Genveje og tidsformater",
     "rows": [
-      ["⌘⌃N", "Ny seddel"],
-      ["⌘⌃V", "Ny seddel fra udklipsholderen"],
-      ["⌘⌃T", "Vis eller skjul timere"],
-      ["⌘⌃B", "Start en pomodoro (25 min fokus, 5 min pause)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Vis eller skjul alle sedler"],
-      ["10", "Et tal alene betyder minutter (10 min)"],
-      ["5:30 · 1:15:00", "Minutter:sekunder, timer:minutter:sekunder"],
-      ["1h 20m · 45s", "Med enheder"],
-      ["25/5", "Fokus/pause på skift, indtil du stopper"]
+      [
+        "⌘⌃N",
+        "Ny seddel"
+      ],
+      [
+        "⌘⌃V",
+        "Ny seddel fra udklipsholderen"
+      ],
+      [
+        "⌘⌃T",
+        "Vis eller skjul timere"
+      ],
+      [
+        "⌘⌃B",
+        "Start en pomodoro (25 min fokus, 5 min pause)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Vis eller skjul alle sedler"
+      ],
+      [
+        "10",
+        "Et tal alene betyder minutter (10 min)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minutter:sekunder, timer:minutter:sekunder"
+      ],
+      [
+        "1h 20m · 45s",
+        "Med enheder"
+      ],
+      [
+        "25/5",
+        "Fokus/pause på skift, indtil du stopper"
+      ]
     ],
     "note": "Alle genveje bruger Kommando (⌘) og Ctrl (⌃) sammen og virker, selv når du er i en anden app. Timere kan gå op til 99:59:59."
-  },
-  "pricing": {
-    "title": "Det hele er gratis",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Sedler i seks farver med gennemsigtighed, skriftstørrelse og redigeringslås",
-        "Nedtællinger, pomodoro og en widget i Notifikationscenter",
-        "Teleprompter med spejlvending",
-        "Baggrundsmusik, der starter med timeren",
-        "Genveje, der virker fra alle apps"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Start, pause og læg 30 sekunder til eller træk fra",
-        "Skift widgettens størrelse og placering fra scenen",
-        "Timer på 3, 5, 10 eller 15 minutter med ét tryk"
-      ],
-      "note": "En separat, gratis app. Kræver iOS 17 eller nyere og StickyPresenter kørende på en Mac på samme Wi‑Fi."
-    },
-    "note": "Intet er låst bag et køb. Hvis appen hjælper dig, kan du give udvikleren drikkepenge under Indstillinger."
   },
   "faq": {
     "title": "Spørgsmål og svar",
     "items": [
-      {"q": "Kan jeg vise kun timeren ved skærmdeling eller spejling?", "a": "Ja. Med knappen Vindue i timerens række åbner du den som et almindeligt vindue. Så står den på listen over vinduer ved skærmdeling og AirPlay, og du kan dele kun den."},
-      {"q": "Jeg har skjult en timerwidget og kan ikke finde den.", "a": "Hold markøren over timerens række i timervinduet, så bliver widgettens plads markeret med en stiplet linje. Klik på Juster for at hente den tilbage ved siden af timervinduet."},
-      {"q": "Jeg kom til at lukke en seddel.", "a": "Brug Genåbn lukket seddel i menulinjen til at hente en af de seneste 20 tilbage. Sedler gemmes, mens du skriver, og kommer tilbage samme sted, når appen åbnes igen."},
-      {"q": "En genvej virker ikke.", "a": "Står den i guidens genvejstabel som Bruges af et andet program, har en anden app taget den først. Afslut den app, så virker genvejen igen. Der kræves ingen tilladelse til tilgængelighed."},
-      {"q": "Hvorfor beder Kamæleon-temaet om skærmoptagelse?", "a": "Kamæleon læser farven på skærmen bag widgetten og tilpasser sig, og det kræver den tilladelse. Intet gemmes eller sendes. Uden den virker temaerne System, Lyst og Mørkt som normalt."},
-      {"q": "Hvordan tilføjer jeg baggrundsmusik?", "a": "Vælg en stemning (Fokus, Ro, Jazz eller Energi) i musikbjælken nederst i timervinduet, så opretter appen en mappe til hver. Læg dine egne numre i, så spiller de i rækkefølge sammen med timeren. Appen kommer ikke med musik."},
-      {"q": "Fjernbetjeningen på iPhone kan ikke finde min Mac.", "a": "Tjek i denne rækkefølge: Kører StickyPresenter på Mac'en (ikon i menulinjen)? Er begge enheder på samme Wi‑Fi og ikke på et gæstenetværk eller mobildata? Er Lokalt netværk tilladt under Anonymitet & sikkerhed på både iPhone og Mac? Er VPN slået fra?"},
-      {"q": "Fjernbetjeningen siger, at parringskoden er forkert.", "a": "Indtast den firecifrede kode, der lige nu står under Fjernbetjening i Mac'ens menulinje. Har du klikket på Ny parringskode, virker kun den nye. Efter første parring forbinder den, så snart du åbner appen."},
-      {"q": "Kan andre styre min timer?", "a": "Ikke uden din kode. Mac'en accepterer kun fjernbetjeninger, der har tastet den rigtige kode, via en krypteret direkte forbindelse på dit lokale netværk. Har nogen set koden, så brug Ny parringskode eller Glem parrede fjernbetjeninger under Fjernbetjening i menulinjen."},
-      {"q": "Hvor gemmes mine sedler og manuskripter?", "a": "Kun på denne Mac. Ingen konto, ingen reklamer, og intet sendes på nettet ud over anonym brugsstatistik og feedback, du selv vælger at sende."}
+      {
+        "q": "Er det virkelig gratis?",
+        "a": "Ja. Alle funktioner er gratis, og iPhone-appen Remote Controller for Sticky er en separat, gratis app. Hvis appen hjælper dig, kan du give udvikleren drikkepenge under Indstillinger; det låser ikke noget op."
+      },
+      {
+        "q": "Kan jeg vise kun timeren ved skærmdeling eller spejling?",
+        "a": "Ja. Med knappen Vindue i timerens række åbner du den som et almindeligt vindue. Så står den på listen over vinduer ved skærmdeling og AirPlay, og du kan dele kun den."
+      },
+      {
+        "q": "Jeg har skjult en timerwidget og kan ikke finde den.",
+        "a": "Hold markøren over timerens række i timervinduet, så bliver widgettens plads markeret med en stiplet linje. Klik på Juster for at hente den tilbage ved siden af timervinduet."
+      },
+      {
+        "q": "Jeg kom til at lukke en seddel.",
+        "a": "Brug Genåbn lukket seddel i menulinjen til at hente en af de seneste 20 tilbage. Sedler gemmes, mens du skriver, og kommer tilbage samme sted, når appen åbnes igen."
+      },
+      {
+        "q": "En genvej virker ikke.",
+        "a": "Står den i guidens genvejstabel som Bruges af et andet program, har en anden app taget den først. Afslut den app, så virker genvejen igen. Der kræves ingen tilladelse til tilgængelighed."
+      },
+      {
+        "q": "Hvorfor beder Kamæleon-temaet om skærmoptagelse?",
+        "a": "Kamæleon læser farven på skærmen bag widgetten og tilpasser sig, og det kræver den tilladelse. Intet gemmes eller sendes. Uden den virker temaerne System, Lyst og Mørkt som normalt."
+      },
+      {
+        "q": "Hvordan tilføjer jeg baggrundsmusik?",
+        "a": "Vælg en stemning (Fokus, Ro, Jazz eller Energi) i musikbjælken nederst i timervinduet, så opretter appen en mappe til hver. Læg dine egne numre i, så spiller de i rækkefølge sammen med timeren. Appen kommer ikke med musik."
+      },
+      {
+        "q": "Fjernbetjeningen på iPhone kan ikke finde min Mac.",
+        "a": "Tjek i denne rækkefølge: Kører StickyPresenter på Mac'en (ikon i menulinjen)? Er begge enheder på samme Wi‑Fi og ikke på et gæstenetværk eller mobildata? Er Lokalt netværk tilladt under Anonymitet & sikkerhed på både iPhone og Mac? Er VPN slået fra?"
+      },
+      {
+        "q": "Fjernbetjeningen siger, at parringskoden er forkert.",
+        "a": "Indtast den firecifrede kode, der lige nu står under Fjernbetjening i Mac'ens menulinje. Har du klikket på Ny parringskode, virker kun den nye. Efter første parring forbinder den, så snart du åbner appen."
+      },
+      {
+        "q": "Kan andre styre min timer?",
+        "a": "Ikke uden din kode. Mac'en accepterer kun fjernbetjeninger, der har tastet den rigtige kode, via en krypteret direkte forbindelse på dit lokale netværk. Har nogen set koden, så brug Ny parringskode eller Glem parrede fjernbetjeninger under Fjernbetjening i menulinjen."
+      },
+      {
+        "q": "Hvor gemmes mine sedler og manuskripter?",
+        "a": "Kun på denne Mac. Ingen konto, ingen reklamer, og intet sendes på nettet ud over anonym brugsstatistik og feedback, du selv vælger at sende."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Spring til indhold",
     "languages": "Sprog",
     "privacy": "Privatlivspolitik",
-    "contact": "Spørgsmål, fejl eller idéer? Skriv til {email}."
+    "contact": "Spørgsmål, fejl eller idéer? Skriv til {email}.",
+    "links": [
+      [
+        "iPhone-fjernbetjening",
+        "remote.html"
+      ],
+      [
+        "Supportside",
+        "support.html"
+      ]
+    ]
   }
 }

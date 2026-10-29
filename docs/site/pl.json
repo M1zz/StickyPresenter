@@ -27,7 +27,14 @@
     "note": "Przywitać się, omówić plan\nZatrzymać się 3 s przy wykresie sprzedaży\nZostawić 5 min na pytania",
     "noteLabel": "Notatka",
     "colorLabel": "Kolor notatki",
-    "colors": ["Żółty", "Różowy", "Zielony", "Niebieski", "Fioletowy", "Pomarańczowy"],
+    "colors": [
+      "Żółty",
+      "Różowy",
+      "Zielony",
+      "Niebieski",
+      "Fioletowy",
+      "Pomarańczowy"
+    ],
     "footnote": "To tylko imitacja ekranu. W aplikacji notatka i minutnik unoszą się tak nad Keynote lub PowerPointem na pełnym ekranie."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Trzy kroki na start",
     "items": [
-      {"title": "Otwórz aplikację", "text": "W pasku menu pojawi się ikona notatki, a za pierwszym razem otworzy się krótki przewodnik."},
-      {"title": "Dodaj notatkę i minutnik", "text": "Skopiuj tekst i naciśnij `⌘⌃V`, a potem wpisz długość wystąpienia w polu minutnika."},
-      {"title": "Przejdź na pełny ekran", "text": "Notatka i minutnik zostają na wierzchu."}
+      {
+        "title": "Otwórz aplikację",
+        "text": "W pasku menu pojawi się ikona notatki, a za pierwszym razem otworzy się krótki przewodnik."
+      },
+      {
+        "title": "Dodaj notatkę i minutnik",
+        "text": "Skopiuj tekst i naciśnij `⌘⌃V`, a potem wpisz długość wystąpienia w polu minutnika."
+      },
+      {
+        "title": "Przejdź na pełny ekran",
+        "text": "Notatka i minutnik zostają na wierzchu."
+      }
     ]
   },
   "reference": {
     "title": "Skróty i formaty czasu",
     "rows": [
-      ["⌘⌃N", "Nowa notatka"],
-      ["⌘⌃V", "Nowa notatka ze schowka"],
-      ["⌘⌃T", "Pokaż lub ukryj minutniki"],
-      ["⌘⌃B", "Uruchom Pomodoro (25 min skupienia, 5 min przerwy)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Pokaż lub ukryj wszystkie notatki"],
-      ["10", "Sama liczba oznacza minuty (10 min)"],
-      ["5:30 · 1:15:00", "Minuty:sekundy, godziny:minuty:sekundy"],
-      ["1h 20m · 45s", "Z jednostkami"],
-      ["25/5", "Skupienie/przerwa na zmianę, aż zatrzymasz"]
+      [
+        "⌘⌃N",
+        "Nowa notatka"
+      ],
+      [
+        "⌘⌃V",
+        "Nowa notatka ze schowka"
+      ],
+      [
+        "⌘⌃T",
+        "Pokaż lub ukryj minutniki"
+      ],
+      [
+        "⌘⌃B",
+        "Uruchom Pomodoro (25 min skupienia, 5 min przerwy)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Pokaż lub ukryj wszystkie notatki"
+      ],
+      [
+        "10",
+        "Sama liczba oznacza minuty (10 min)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minuty:sekundy, godziny:minuty:sekundy"
+      ],
+      [
+        "1h 20m · 45s",
+        "Z jednostkami"
+      ],
+      [
+        "25/5",
+        "Skupienie/przerwa na zmianę, aż zatrzymasz"
+      ]
     ],
     "note": "Wszystkie skróty używają razem klawiszy Command (⌘) i Control (⌃) i działają, nawet gdy jesteś w innej aplikacji. Minutnik można ustawić do 99:59:59."
-  },
-  "pricing": {
-    "title": "Wszystko za darmo",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Notatki w sześciu kolorach, z przezroczystością, rozmiarem czcionki i blokadą edycji",
-        "Odliczanie, Pomodoro i widżet w Centrum powiadomień",
-        "Teleprompter z trybem lustrzanym",
-        "Muzyka w tle, która rusza razem z minutnikiem",
-        "Skróty działające z każdej aplikacji"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Start, pauza oraz dodanie lub odjęcie 30 sekund",
-        "Zmiana rozmiaru i położenia widżetu prosto ze sceny",
-        "Minutnik na 3, 5, 10 lub 15 minut jednym stuknięciem"
-      ],
-      "note": "Osobna, bezpłatna aplikacja. Wymaga iOS 17 lub nowszego oraz StickyPresentera uruchomionego na Macu w tej samej sieci Wi‑Fi."
-    },
-    "note": "Nic nie jest zablokowane za opłatą. Jeśli aplikacja ci pomaga, możesz dać deweloperowi napiwek w Ustawieniach."
   },
   "faq": {
     "title": "Częste pytania",
     "items": [
-      {"q": "Czy przy udostępnianiu lub dublowaniu ekranu mogę pokazać tylko minutnik?", "a": "Tak. Przyciskiem Okno w wierszu minutnika otworzysz go jako zwykłe okno. Wtedy pojawi się na liście okien przy udostępnianiu ekranu i w AirPlay, i możesz udostępnić tylko je."},
-      {"q": "Ukryłem widżet minutnika i nie mogę go znaleźć.", "a": "W oknie minutników najedź wskaźnikiem na wiersz tego minutnika, a miejsce widżetu zostanie obrysowane przerywaną linią. Kliknij Wyrównaj, żeby przywrócić go obok okna minutników."},
-      {"q": "Niechcący zamknąłem notatkę.", "a": "Opcją Otwórz ponownie zamkniętą notatkę w pasku menu odzyskasz każdą z ostatnich 20. Notatki zapisują się w trakcie pisania i po ponownym otwarciu aplikacji wracają w to samo miejsce."},
-      {"q": "Skrót nie działa.", "a": "Jeśli tabela skrótów w przewodniku oznacza go jako Używany przez inną aplikację, inna aplikacja zajęła go wcześniej. Zamknij ją, a skrót znów zadziała. Uprawnienie dostępności nie jest potrzebne."},
-      {"q": "Dlaczego motyw Kameleon prosi o nagrywanie ekranu?", "a": "Kameleon odczytuje kolor ekranu za widżetem i dopasowuje się do niego, a do tego potrzebuje tego uprawnienia. Nic nie jest zapisywane ani wysyłane. Bez niego motywy Systemowy, Jasny i Ciemny działają normalnie."},
-      {"q": "Jak dodać muzykę w tle?", "a": "Wybierz nastrój (Skupienie, Spokój, Jazz lub Energia) na pasku muzyki u dołu okna minutników, a aplikacja utworzy folder dla każdego z nich. Wrzuć tam własne utwory, a zagrają po kolei razem z minutnikiem. Aplikacja nie zawiera muzyki."},
-      {"q": "Pilot na iPhonie nie znajduje mojego Maca.", "a": "Sprawdź po kolei: czy StickyPresenter działa na Macu (ikona w pasku menu); czy oba urządzenia są w tej samej sieci Wi‑Fi, a nie w sieci dla gości lub na danych komórkowych; czy Sieć lokalna jest dozwolona w sekcji Prywatność i ochrona na iPhonie i na Macu; czy VPN jest wyłączony."},
-      {"q": "Pilot twierdzi, że kod parowania jest błędny.", "a": "Wpisz czterocyfrowy kod, który widać teraz w menu Pilot na pasku menu Maca. Jeśli kliknąłeś Nowy kod parowania, ważny jest tylko nowy. Po pierwszym sparowaniu pilot łączy się od razu po otwarciu aplikacji."},
-      {"q": "Czy ktoś inny może sterować moim minutnikiem?", "a": "Nie bez twojego kodu. Mac przyjmuje tylko piloty, które wpisały właściwy kod, przez szyfrowane bezpośrednie połączenie w sieci lokalnej. Jeśli ktoś widział kod, wybierz Nowy kod parowania lub Zapomnij sparowane piloty w menu Pilot."},
-      {"q": "Gdzie są przechowywane moje notatki i teksty?", "a": "Tylko na tym Macu. Bez konta, bez reklam, a do internetu nie trafia nic poza anonimowymi statystykami użycia i opiniami, które sam wyślesz."}
+      {
+        "q": "Czy to naprawdę za darmo?",
+        "a": "Tak. Wszystkie funkcje są bezpłatne, a aplikacja na iPhone’a Remote Controller for Sticky to osobna, bezpłatna aplikacja. Jeśli ci pomaga, możesz dać deweloperowi napiwek w Ustawieniach; niczego to nie odblokowuje."
+      },
+      {
+        "q": "Czy przy udostępnianiu lub dublowaniu ekranu mogę pokazać tylko minutnik?",
+        "a": "Tak. Przyciskiem Okno w wierszu minutnika otworzysz go jako zwykłe okno. Wtedy pojawi się na liście okien przy udostępnianiu ekranu i w AirPlay, i możesz udostępnić tylko je."
+      },
+      {
+        "q": "Ukryłem widżet minutnika i nie mogę go znaleźć.",
+        "a": "W oknie minutników najedź wskaźnikiem na wiersz tego minutnika, a miejsce widżetu zostanie obrysowane przerywaną linią. Kliknij Wyrównaj, żeby przywrócić go obok okna minutników."
+      },
+      {
+        "q": "Niechcący zamknąłem notatkę.",
+        "a": "Opcją Otwórz ponownie zamkniętą notatkę w pasku menu odzyskasz każdą z ostatnich 20. Notatki zapisują się w trakcie pisania i po ponownym otwarciu aplikacji wracają w to samo miejsce."
+      },
+      {
+        "q": "Skrót nie działa.",
+        "a": "Jeśli tabela skrótów w przewodniku oznacza go jako Używany przez inną aplikację, inna aplikacja zajęła go wcześniej. Zamknij ją, a skrót znów zadziała. Uprawnienie dostępności nie jest potrzebne."
+      },
+      {
+        "q": "Dlaczego motyw Kameleon prosi o nagrywanie ekranu?",
+        "a": "Kameleon odczytuje kolor ekranu za widżetem i dopasowuje się do niego, a do tego potrzebuje tego uprawnienia. Nic nie jest zapisywane ani wysyłane. Bez niego motywy Systemowy, Jasny i Ciemny działają normalnie."
+      },
+      {
+        "q": "Jak dodać muzykę w tle?",
+        "a": "Wybierz nastrój (Skupienie, Spokój, Jazz lub Energia) na pasku muzyki u dołu okna minutników, a aplikacja utworzy folder dla każdego z nich. Wrzuć tam własne utwory, a zagrają po kolei razem z minutnikiem. Aplikacja nie zawiera muzyki."
+      },
+      {
+        "q": "Pilot na iPhonie nie znajduje mojego Maca.",
+        "a": "Sprawdź po kolei: czy StickyPresenter działa na Macu (ikona w pasku menu); czy oba urządzenia są w tej samej sieci Wi‑Fi, a nie w sieci dla gości lub na danych komórkowych; czy Sieć lokalna jest dozwolona w sekcji Prywatność i ochrona na iPhonie i na Macu; czy VPN jest wyłączony."
+      },
+      {
+        "q": "Pilot twierdzi, że kod parowania jest błędny.",
+        "a": "Wpisz czterocyfrowy kod, który widać teraz w menu Pilot na pasku menu Maca. Jeśli kliknąłeś Nowy kod parowania, ważny jest tylko nowy. Po pierwszym sparowaniu pilot łączy się od razu po otwarciu aplikacji."
+      },
+      {
+        "q": "Czy ktoś inny może sterować moim minutnikiem?",
+        "a": "Nie bez twojego kodu. Mac przyjmuje tylko piloty, które wpisały właściwy kod, przez szyfrowane bezpośrednie połączenie w sieci lokalnej. Jeśli ktoś widział kod, wybierz Nowy kod parowania lub Zapomnij sparowane piloty w menu Pilot."
+      },
+      {
+        "q": "Gdzie są przechowywane moje notatki i teksty?",
+        "a": "Tylko na tym Macu. Bez konta, bez reklam, a do internetu nie trafia nic poza anonimowymi statystykami użycia i opiniami, które sam wyślesz."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Przejdź do treści",
     "languages": "Język",
     "privacy": "Polityka prywatności",
-    "contact": "Pytania, błędy albo pomysły? Napisz na {email}."
+    "contact": "Pytania, błędy albo pomysły? Napisz na {email}.",
+    "links": [
+      [
+        "Pilot na iPhonie",
+        "remote.html"
+      ],
+      [
+        "Strona wsparcia",
+        "support.html"
+      ]
+    ]
   }
 }

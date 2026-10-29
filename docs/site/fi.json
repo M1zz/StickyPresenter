@@ -27,7 +27,14 @@
     "note": "Tervehdys ja aiheet\n3 s tauko myyntikaavion kohdalla\n5 min kysymyksille",
     "noteLabel": "Muistilappu",
     "colorLabel": "Lapun väri",
-    "colors": ["Keltainen", "Vaaleanpunainen", "Vihreä", "Sininen", "Violetti", "Oranssi"],
+    "colors": [
+      "Keltainen",
+      "Vaaleanpunainen",
+      "Vihreä",
+      "Sininen",
+      "Violetti",
+      "Oranssi"
+    ],
     "footnote": "Tämä on jäljitelmä näytöstä. Apissa muistilappu ja ajastin leijuvat näin koko näytön Keynoten tai PowerPointin päällä."
   },
   "problem": {
@@ -54,63 +61,113 @@
   "steps": {
     "title": "Kolme askelta alkuun",
     "items": [
-      {"title": "Avaa appi", "text": "Valikkoriville ilmestyy lappusymboli, ja ensimmäisellä kerralla aukeaa lyhyt opas."},
-      {"title": "Lisää lappu ja ajastin", "text": "Kopioi käsikirjoitus ja paina `⌘⌃V`, kirjoita sitten esityksen pituus ajastinkenttään."},
-      {"title": "Siirry koko näytölle", "text": "Lappu ja ajastin pysyvät päällimmäisinä."}
+      {
+        "title": "Avaa appi",
+        "text": "Valikkoriville ilmestyy lappusymboli, ja ensimmäisellä kerralla aukeaa lyhyt opas."
+      },
+      {
+        "title": "Lisää lappu ja ajastin",
+        "text": "Kopioi käsikirjoitus ja paina `⌘⌃V`, kirjoita sitten esityksen pituus ajastinkenttään."
+      },
+      {
+        "title": "Siirry koko näytölle",
+        "text": "Lappu ja ajastin pysyvät päällimmäisinä."
+      }
     ]
   },
   "reference": {
     "title": "Pikanäppäimet ja ajan merkintätavat",
     "rows": [
-      ["⌘⌃N", "Uusi muistilappu"],
-      ["⌘⌃V", "Uusi lappu leikepöydältä"],
-      ["⌘⌃T", "Näytä tai kätke ajastimet"],
-      ["⌘⌃B", "Aloita pomodoro (25 min keskittymistä, 5 min taukoa)"],
-      ["⌘⌃P", "Teleprompter"],
-      ["⌘⌃S · ⌘⌃H", "Näytä tai kätke kaikki laput"],
-      ["10", "Pelkkä numero tarkoittaa minuutteja (10 min)"],
-      ["5:30 · 1:15:00", "Minuutit:sekunnit, tunnit:minuutit:sekunnit"],
-      ["1h 20m · 45s", "Yksiköiden kanssa"],
-      ["25/5", "Keskittyminen/tauko vuorotellen, kunnes pysäytät"]
+      [
+        "⌘⌃N",
+        "Uusi muistilappu"
+      ],
+      [
+        "⌘⌃V",
+        "Uusi lappu leikepöydältä"
+      ],
+      [
+        "⌘⌃T",
+        "Näytä tai kätke ajastimet"
+      ],
+      [
+        "⌘⌃B",
+        "Aloita pomodoro (25 min keskittymistä, 5 min taukoa)"
+      ],
+      [
+        "⌘⌃P",
+        "Teleprompter"
+      ],
+      [
+        "⌘⌃S · ⌘⌃H",
+        "Näytä tai kätke kaikki laput"
+      ],
+      [
+        "10",
+        "Pelkkä numero tarkoittaa minuutteja (10 min)"
+      ],
+      [
+        "5:30 · 1:15:00",
+        "Minuutit:sekunnit, tunnit:minuutit:sekunnit"
+      ],
+      [
+        "1h 20m · 45s",
+        "Yksiköiden kanssa"
+      ],
+      [
+        "25/5",
+        "Keskittyminen/tauko vuorotellen, kunnes pysäytät"
+      ]
     ],
     "note": "Kaikissa pikanäppäimissä painetaan yhtä aikaa Komentoa (⌘) ja Ctrl:ää (⌃), ja ne toimivat myös toisessa apissa. Ajastimen voi asettaa enintään 99:59:59."
-  },
-  "pricing": {
-    "title": "Kaikki on ilmaista",
-    "free": {
-      "name": "StickyPresenter (Mac)",
-      "items": [
-        "Muistilaput kuudessa värissä, läpinäkyvyys, fonttikoko ja muokkauslukko",
-        "Ajastimet, pomodoro ja widget Ilmoituskeskukseen",
-        "Teleprompter peilitilalla",
-        "Taustamusiikki, joka alkaa ajastimen kanssa",
-        "Pikanäppäimet, jotka toimivat mistä tahansa apista"
-      ]
-    },
-    "pro": {
-      "name": "Remote Controller for Sticky (iPhone)",
-      "items": [
-        "Aloita, pysäytä ja lisää tai vähennä 30 sekuntia",
-        "Muuta widgetin kokoa ja paikkaa suoraan lavalta",
-        "3, 5, 10 tai 15 minuutin ajastin yhdellä napautuksella"
-      ],
-      "note": "Erillinen ilmainen appi. Vaatii iOS 17:n tai uudemman ja StickyPresenterin käynnissä Macissa samassa Wi‑Fi-verkossa."
-    },
-    "note": "Mitään ei ole lukittu maksun taakse. Jos appi on sinulle hyödyllinen, voit antaa kehittäjälle juomarahaa asetuksista."
   },
   "faq": {
     "title": "Usein kysyttyä",
     "items": [
-      {"q": "Voinko näyttää näytönjaossa tai peilauksessa vain ajastimen?", "a": "Voit. Ajastimen rivin Ikkuna-painike avaa sen tavallisena ikkunana. Silloin se näkyy näytönjaon ja AirPlayn ikkunaluettelossa, ja voit jakaa pelkästään sen."},
-      {"q": "Kätkin ajastinwidgetin enkä löydä sitä.", "a": "Vie osoitin ajastinikkunassa kyseisen ajastimen rivin päälle, niin widgetin paikka merkitään katkoviivalla. Tasaa-painike tuo sen takaisin ajastinikkunan viereen."},
-      {"q": "Suljin lapun vahingossa.", "a": "Valikkorivin Avaa suljettu muistilappu uudelleen palauttaa minkä tahansa 20 viimeisimmästä. Laput tallentuvat kirjoittaessa ja palaavat samaan kohtaan, kun appi avataan uudelleen."},
-      {"q": "Pikanäppäin ei toimi.", "a": "Jos oppaan pikanäppäintaulukko näyttää sen kohdalla Toisen apin käytössä, toinen appi on varannut sen ensin. Sulje se appi, niin pikanäppäin toimii taas. Käyttöapuoikeutta ei tarvita."},
-      {"q": "Miksi Kameleontti-teema pyytää näytön tallennusoikeutta?", "a": "Kameleontti lukee widgetin takana olevan näytön värin ja mukautuu siihen, ja siihen tarvitaan tämä oikeus. Mitään ei tallenneta eikä lähetetä. Ilman oikeutta teemat Järjestelmä, Vaalea ja Tumma toimivat normaalisti."},
-      {"q": "Miten lisään taustamusiikkia?", "a": "Valitse tunnelma (Keskittyminen, Rauha, Jazz tai Eloisa) ajastinikkunan alareunan musiikkipalkista, niin appi luo jokaiselle kansion. Lisää sinne omia kappaleitasi, niin ne soivat järjestyksessä ajastimen kanssa. Apin mukana ei tule musiikkia."},
-      {"q": "iPhonen kauko-ohjain ei löydä Maciani.", "a": "Tarkista järjestyksessä: onko StickyPresenter käynnissä Macissa (symboli valikkorivillä); ovatko molemmat laitteet samassa Wi‑Fi-verkossa eivätkä vierasverkossa tai mobiilidatalla; onko Paikallisverkko sallittu Tietosuoja ja turvallisuus -asetuksissa sekä iPhonessa että Macissa; onko VPN pois päältä."},
-      {"q": "Kauko-ohjain sanoo, että parituskoodi on väärä.", "a": "Syötä nelinumeroinen koodi, joka näkyy juuri nyt Macin valikkorivin Kauko-ohjain-valikossa. Jos klikkasit Uusi parituskoodi, vain uusi koodi kelpaa. Ensimmäisen parituksen jälkeen yhteys syntyy heti, kun avaat apin."},
-      {"q": "Voiko joku muu ohjata ajastintani?", "a": "Ei ilman koodiasi. Mac hyväksyy vain kauko-ohjaimet, jotka ovat syöttäneet oikean koodin, ja yhteys kulkee salattuna suoraan paikallisverkossa. Jos joku on nähnyt koodin, valitse Kauko-ohjain-valikosta Uusi parituskoodi tai Unohda pariliitetyt kauko-ohjaimet."},
-      {"q": "Mihin lappuni ja käsikirjoitukseni tallentuvat?", "a": "Vain tähän Maciin. Ei tiliä eikä mainoksia, eikä verkkoon lähde mitään muuta kuin nimetöntä käyttötilastoa ja palautetta, jonka itse päätät lähettää."}
+      {
+        "q": "Onko se todella ilmainen?",
+        "a": "On. Kaikki ominaisuudet ovat ilmaisia, ja iPhone-appi Remote Controller for Sticky on erillinen ilmainen appi. Jos appi on sinulle hyödyllinen, voit antaa kehittäjälle juomarahaa asetuksista; se ei avaa mitään lisää."
+      },
+      {
+        "q": "Voinko näyttää näytönjaossa tai peilauksessa vain ajastimen?",
+        "a": "Voit. Ajastimen rivin Ikkuna-painike avaa sen tavallisena ikkunana. Silloin se näkyy näytönjaon ja AirPlayn ikkunaluettelossa, ja voit jakaa pelkästään sen."
+      },
+      {
+        "q": "Kätkin ajastinwidgetin enkä löydä sitä.",
+        "a": "Vie osoitin ajastinikkunassa kyseisen ajastimen rivin päälle, niin widgetin paikka merkitään katkoviivalla. Tasaa-painike tuo sen takaisin ajastinikkunan viereen."
+      },
+      {
+        "q": "Suljin lapun vahingossa.",
+        "a": "Valikkorivin Avaa suljettu muistilappu uudelleen palauttaa minkä tahansa 20 viimeisimmästä. Laput tallentuvat kirjoittaessa ja palaavat samaan kohtaan, kun appi avataan uudelleen."
+      },
+      {
+        "q": "Pikanäppäin ei toimi.",
+        "a": "Jos oppaan pikanäppäintaulukko näyttää sen kohdalla Toisen apin käytössä, toinen appi on varannut sen ensin. Sulje se appi, niin pikanäppäin toimii taas. Käyttöapuoikeutta ei tarvita."
+      },
+      {
+        "q": "Miksi Kameleontti-teema pyytää näytön tallennusoikeutta?",
+        "a": "Kameleontti lukee widgetin takana olevan näytön värin ja mukautuu siihen, ja siihen tarvitaan tämä oikeus. Mitään ei tallenneta eikä lähetetä. Ilman oikeutta teemat Järjestelmä, Vaalea ja Tumma toimivat normaalisti."
+      },
+      {
+        "q": "Miten lisään taustamusiikkia?",
+        "a": "Valitse tunnelma (Keskittyminen, Rauha, Jazz tai Eloisa) ajastinikkunan alareunan musiikkipalkista, niin appi luo jokaiselle kansion. Lisää sinne omia kappaleitasi, niin ne soivat järjestyksessä ajastimen kanssa. Apin mukana ei tule musiikkia."
+      },
+      {
+        "q": "iPhonen kauko-ohjain ei löydä Maciani.",
+        "a": "Tarkista järjestyksessä: onko StickyPresenter käynnissä Macissa (symboli valikkorivillä); ovatko molemmat laitteet samassa Wi‑Fi-verkossa eivätkä vierasverkossa tai mobiilidatalla; onko Paikallisverkko sallittu Tietosuoja ja turvallisuus -asetuksissa sekä iPhonessa että Macissa; onko VPN pois päältä."
+      },
+      {
+        "q": "Kauko-ohjain sanoo, että parituskoodi on väärä.",
+        "a": "Syötä nelinumeroinen koodi, joka näkyy juuri nyt Macin valikkorivin Kauko-ohjain-valikossa. Jos klikkasit Uusi parituskoodi, vain uusi koodi kelpaa. Ensimmäisen parituksen jälkeen yhteys syntyy heti, kun avaat apin."
+      },
+      {
+        "q": "Voiko joku muu ohjata ajastintani?",
+        "a": "Ei ilman koodiasi. Mac hyväksyy vain kauko-ohjaimet, jotka ovat syöttäneet oikean koodin, ja yhteys kulkee salattuna suoraan paikallisverkossa. Jos joku on nähnyt koodin, valitse Kauko-ohjain-valikosta Uusi parituskoodi tai Unohda pariliitetyt kauko-ohjaimet."
+      },
+      {
+        "q": "Mihin lappuni ja käsikirjoitukseni tallentuvat?",
+        "a": "Vain tähän Maciin. Ei tiliä eikä mainoksia, eikä verkkoon lähde mitään muuta kuin nimetöntä käyttötilastoa ja palautetta, jonka itse päätät lähettää."
+      }
     ]
   },
   "closing": {
@@ -121,6 +178,16 @@
     "skip": "Siirry sisältöön",
     "languages": "Kieli",
     "privacy": "Tietosuojakäytäntö",
-    "contact": "Kysyttävää, virheitä tai ideoita? Kirjoita osoitteeseen {email}."
+    "contact": "Kysyttävää, virheitä tai ideoita? Kirjoita osoitteeseen {email}.",
+    "links": [
+      [
+        "iPhone-kauko-ohjain",
+        "remote.html"
+      ],
+      [
+        "Tukisivu",
+        "support.html"
+      ]
+    ]
   }
 }
