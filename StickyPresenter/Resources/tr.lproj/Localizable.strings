@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "StickyPresenter ile %d sunumu tamamladın";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Zamanlayıcı süresi";
+"a11y.timer.start" = "Zamanlayıcıyı başlat";
+"a11y.timer.minus30" = "30 saniye çıkar";
+"a11y.timer.plus30" = "30 saniye ekle";
+"a11y.timer.remaining" = "%@ kaldı";
+"a11y.timer.finished" = "Süre doldu";
+"a11y.timer.almostUp" = "Neredeyse bitti";
+"a11y.preset.field" = "Hazır ayar süresi";
+"a11y.music.volume" = "Müzik ses düzeyi";
+"a11y.music.more" = "Diğer müzik seçenekleri";
+"a11y.input.start" = "Başlat";
+"a11y.input.minus30" = "Eksi 30";
+"a11y.input.plus30" = "Artı 30";
+"a11y.input.theme" = "Tema";
+"a11y.input.size" = "Boyut %@";
+"a11y.input.delete" = "Sil";
+"a11y.input.presets" = "Hazır ayarlar";
+"a11y.input.music" = "Müzik";
+"a11y.input.more" = "Daha fazla";
+"a11y.input.color" = "Renk";
+"a11y.input.opacity" = "Opaklık";
+"a11y.input.smaller" = "Küçült";
+"a11y.input.larger" = "Büyüt";
+"a11y.input.lock" = "Kilitle";
+"a11y.input.unlock" = "Kilidi aç";
+"a11y.input.rewind" = "Başa dön";
+"a11y.input.mirror" = "Ayna";
+"a11y.input.edit" = "Düzenle";
+"a11y.input.preview" = "Önizleme";
+"a11y.input.speed" = "Hız";

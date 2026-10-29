@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Ya has dado %d presentaciones con StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Duración del temporizador";
+"a11y.timer.start" = "Iniciar temporizador";
+"a11y.timer.minus30" = "Restar 30 segundos";
+"a11y.timer.plus30" = "Sumar 30 segundos";
+"a11y.timer.remaining" = "Quedan %@";
+"a11y.timer.finished" = "Se acabó el tiempo";
+"a11y.timer.almostUp" = "Casi termina";
+"a11y.preset.field" = "Duración del ajuste";
+"a11y.music.volume" = "Volumen de la música";
+"a11y.music.more" = "Más opciones de música";
+"a11y.input.start" = "Iniciar";
+"a11y.input.minus30" = "Menos 30";
+"a11y.input.plus30" = "Más 30";
+"a11y.input.theme" = "Tema";
+"a11y.input.size" = "Tamaño %@";
+"a11y.input.delete" = "Eliminar";
+"a11y.input.presets" = "Ajustes rápidos";
+"a11y.input.music" = "Música";
+"a11y.input.more" = "Más";
+"a11y.input.color" = "Color";
+"a11y.input.opacity" = "Opacidad";
+"a11y.input.smaller" = "Más pequeño";
+"a11y.input.larger" = "Más grande";
+"a11y.input.lock" = "Bloquear";
+"a11y.input.unlock" = "Desbloquear";
+"a11y.input.rewind" = "Al inicio";
+"a11y.input.mirror" = "Espejo";
+"a11y.input.edit" = "Editar";
+"a11y.input.preview" = "Vista previa";
+"a11y.input.speed" = "Velocidad";

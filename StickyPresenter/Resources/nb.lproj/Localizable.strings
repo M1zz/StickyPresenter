@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Du har fullført %d presentasjoner med StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Tidtakerens varighet";
+"a11y.timer.start" = "Start tidtaker";
+"a11y.timer.minus30" = "Trekk fra 30 sekunder";
+"a11y.timer.plus30" = "Legg til 30 sekunder";
+"a11y.timer.remaining" = "%@ igjen";
+"a11y.timer.finished" = "Tiden er ute";
+"a11y.timer.almostUp" = "Nesten ferdig";
+"a11y.preset.field" = "Varighet for snarvalg";
+"a11y.music.volume" = "Musikkvolum";
+"a11y.music.more" = "Flere musikkvalg";
+"a11y.input.start" = "Start";
+"a11y.input.minus30" = "Minus 30";
+"a11y.input.plus30" = "Pluss 30";
+"a11y.input.theme" = "Tema";
+"a11y.input.size" = "Størrelse %@";
+"a11y.input.delete" = "Slett";
+"a11y.input.presets" = "Snarvalg";
+"a11y.input.music" = "Musikk";
+"a11y.input.more" = "Mer";
+"a11y.input.color" = "Farge";
+"a11y.input.opacity" = "Gjennomsiktighet";
+"a11y.input.smaller" = "Mindre";
+"a11y.input.larger" = "Større";
+"a11y.input.lock" = "Lås";
+"a11y.input.unlock" = "Lås opp";
+"a11y.input.rewind" = "Til start";
+"a11y.input.mirror" = "Speil";
+"a11y.input.edit" = "Rediger";
+"a11y.input.preview" = "Forhåndsvis";
+"a11y.input.speed" = "Hastighet";

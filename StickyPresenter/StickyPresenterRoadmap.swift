@@ -18,13 +18,13 @@ import LeeoKit
 extension StickyPresenterSpec {
     static var roadmap: [LeeoRoadmapItem] {[
         // MARK: 다음에 만들어요
-        .init(id: "a11y.voiceover", status: .planned,
+        .init(id: "a11y.voiceover", status: .building,
               title: NSLocalizedString("roadmap.a11y.voiceover.title", comment: "Roadmap item: Better VoiceOver support"),
               detail: NSLocalizedString("roadmap.a11y.voiceover.detail", comment: "Roadmap item detail: Better VoiceOver support")),
-        .init(id: "a11y.contrast", status: .planned,
+        .init(id: "a11y.contrast", status: .building,
               title: NSLocalizedString("roadmap.a11y.contrast.title", comment: "Roadmap item: Easier-to-see colors"),
               detail: NSLocalizedString("roadmap.a11y.contrast.detail", comment: "Roadmap item detail: Easier-to-see colors")),
-        .init(id: "a11y.motion", status: .planned,
+        .init(id: "a11y.motion", status: .building,
               title: NSLocalizedString("roadmap.a11y.motion.title", comment: "Roadmap item: Reduced motion"),
               detail: NSLocalizedString("roadmap.a11y.motion.detail", comment: "Roadmap item detail: Reduced motion")),
         .init(id: "lang.more", status: .shipped("1.1.1"),

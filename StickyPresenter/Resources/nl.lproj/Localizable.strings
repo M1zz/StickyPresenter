@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Je hebt al %d presentaties gegeven met StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Duur van timer";
+"a11y.timer.start" = "Start timer";
+"a11y.timer.minus30" = "30 seconden eraf";
+"a11y.timer.plus30" = "30 seconden erbij";
+"a11y.timer.remaining" = "Nog %@";
+"a11y.timer.finished" = "Tijd is om";
+"a11y.timer.almostUp" = "Bijna klaar";
+"a11y.preset.field" = "Duur van voorkeuze";
+"a11y.music.volume" = "Muziekvolume";
+"a11y.music.more" = "Meer muziekopties";
+"a11y.input.start" = "Start";
+"a11y.input.minus30" = "Min 30";
+"a11y.input.plus30" = "Plus 30";
+"a11y.input.theme" = "Thema";
+"a11y.input.size" = "Grootte %@";
+"a11y.input.delete" = "Verwijder";
+"a11y.input.presets" = "Voorkeuzes";
+"a11y.input.music" = "Muziek";
+"a11y.input.more" = "Meer";
+"a11y.input.color" = "Kleur";
+"a11y.input.opacity" = "Dekking";
+"a11y.input.smaller" = "Kleiner";
+"a11y.input.larger" = "Groter";
+"a11y.input.lock" = "Vergrendel";
+"a11y.input.unlock" = "Ontgrendel";
+"a11y.input.rewind" = "Naar begin";
+"a11y.input.mirror" = "Spiegel";
+"a11y.input.edit" = "Wijzig";
+"a11y.input.preview" = "Voorvertoning";
+"a11y.input.speed" = "Snelheid";

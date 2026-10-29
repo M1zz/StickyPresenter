@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Έχετε ολοκληρώσει ήδη %d παρουσιάσεις με το StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Διάρκεια χρονομέτρου";
+"a11y.timer.start" = "Έναρξη χρονομέτρου";
+"a11y.timer.minus30" = "Αφαίρεση 30 δευτερολέπτων";
+"a11y.timer.plus30" = "Προσθήκη 30 δευτερολέπτων";
+"a11y.timer.remaining" = "Απομένουν %@";
+"a11y.timer.finished" = "Τέλος χρόνου";
+"a11y.timer.almostUp" = "Σχεδόν τέλος";
+"a11y.preset.field" = "Διάρκεια προεπιλογής";
+"a11y.music.volume" = "Ένταση μουσικής";
+"a11y.music.more" = "Περισσότερες επιλογές μουσικής";
+"a11y.input.start" = "Έναρξη";
+"a11y.input.minus30" = "Μείον 30";
+"a11y.input.plus30" = "Συν 30";
+"a11y.input.theme" = "Θέμα";
+"a11y.input.size" = "Μέγεθος %@";
+"a11y.input.delete" = "Διαγραφή";
+"a11y.input.presets" = "Προεπιλογές";
+"a11y.input.music" = "Μουσική";
+"a11y.input.more" = "Περισσότερα";
+"a11y.input.color" = "Χρώμα";
+"a11y.input.opacity" = "Αδιαφάνεια";
+"a11y.input.smaller" = "Μικρότερο";
+"a11y.input.larger" = "Μεγαλύτερο";
+"a11y.input.lock" = "Κλείδωμα";
+"a11y.input.unlock" = "Ξεκλείδωμα";
+"a11y.input.rewind" = "Στην αρχή";
+"a11y.input.mirror" = "Καθρέφτης";
+"a11y.input.edit" = "Επεξεργασία";
+"a11y.input.preview" = "Προεπισκόπηση";
+"a11y.input.speed" = "Ταχύτητα";

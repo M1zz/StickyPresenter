@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Выступлений вместе со StickyPresenter: %d";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Длительность таймера";
+"a11y.timer.start" = "Запустить таймер";
+"a11y.timer.minus30" = "Убавить 30 секунд";
+"a11y.timer.plus30" = "Добавить 30 секунд";
+"a11y.timer.remaining" = "Осталось %@";
+"a11y.timer.finished" = "Время вышло";
+"a11y.timer.almostUp" = "Почти всё";
+"a11y.preset.field" = "Длительность шаблона";
+"a11y.music.volume" = "Громкость музыки";
+"a11y.music.more" = "Другие настройки музыки";
+"a11y.input.start" = "Старт";
+"a11y.input.minus30" = "Минус 30";
+"a11y.input.plus30" = "Плюс 30";
+"a11y.input.theme" = "Тема";
+"a11y.input.size" = "Размер %@";
+"a11y.input.delete" = "Удалить";
+"a11y.input.presets" = "Шаблоны";
+"a11y.input.music" = "Музыка";
+"a11y.input.more" = "Ещё";
+"a11y.input.color" = "Цвет";
+"a11y.input.opacity" = "Прозрачность";
+"a11y.input.smaller" = "Меньше";
+"a11y.input.larger" = "Больше";
+"a11y.input.lock" = "Заблокировать";
+"a11y.input.unlock" = "Разблокировать";
+"a11y.input.rewind" = "В начало";
+"a11y.input.mirror" = "Зеркало";
+"a11y.input.edit" = "Редактировать";
+"a11y.input.preview" = "Просмотр";
+"a11y.input.speed" = "Скорость";

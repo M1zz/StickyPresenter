@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Bạn đã hoàn thành %d bài thuyết trình cùng StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Thời lượng hẹn giờ";
+"a11y.timer.start" = "Bắt đầu hẹn giờ";
+"a11y.timer.minus30" = "Bớt 30 giây";
+"a11y.timer.plus30" = "Thêm 30 giây";
+"a11y.timer.remaining" = "Còn %@";
+"a11y.timer.finished" = "Hết giờ";
+"a11y.timer.almostUp" = "Sắp hết giờ";
+"a11y.preset.field" = "Thời lượng mẫu";
+"a11y.music.volume" = "Âm lượng nhạc";
+"a11y.music.more" = "Tùy chọn nhạc khác";
+"a11y.input.start" = "Bắt đầu";
+"a11y.input.minus30" = "Trừ 30";
+"a11y.input.plus30" = "Cộng 30";
+"a11y.input.theme" = "Chủ đề";
+"a11y.input.size" = "Cỡ %@";
+"a11y.input.delete" = "Xóa";
+"a11y.input.presets" = "Mẫu nhanh";
+"a11y.input.music" = "Nhạc";
+"a11y.input.more" = "Thêm";
+"a11y.input.color" = "Màu";
+"a11y.input.opacity" = "Độ mờ";
+"a11y.input.smaller" = "Nhỏ hơn";
+"a11y.input.larger" = "Lớn hơn";
+"a11y.input.lock" = "Khóa";
+"a11y.input.unlock" = "Mở khóa";
+"a11y.input.rewind" = "Về đầu";
+"a11y.input.mirror" = "Lật gương";
+"a11y.input.edit" = "Sửa";
+"a11y.input.preview" = "Xem trước";
+"a11y.input.speed" = "Tốc độ";

@@ -367,6 +367,7 @@ final class MusicPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
 struct MusicBar: View {
     @ObservedObject private var player = MusicPlayer.shared
     @ObservedObject private var library = MusicLibrary.shared
+    @Environment(\.colorSchemeContrast) private var contrast
 
     private var currentTracks: [URL] { library.tracks(for: player.mood) }
     private var isEmpty: Bool { currentTracks.isEmpty }
@@ -390,18 +391,21 @@ struct MusicBar: View {
                 .buttonStyle(.plain)
                 .disabled(isEmpty)
                 .help(player.isPlaying ? L("Pause music") : L("Play music"))
+                .accessibilityLabel(player.isPlaying ? L("Pause music") : L("Play music"))
+                .accessibilityInputLabels([L("a11y.input.music"), player.isPlaying ? L("Pause music") : L("Play music")])
 
                 // 곡명 또는 안내
                 Group {
+                    // 안내 글은 .tertiary 이면 대비가 2:1 아래라 .secondary 로 둔다.
                     if isEmpty {
                         Text(L("music.empty", player.mood.label))
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                     } else if let title = player.currentTitle, player.isPlaying {
                         Text(title)
                             .foregroundStyle(.secondary)
                     } else {
                         Text(L(currentTracks.count == 1 ? "music.count.one" : "music.count.other", currentTracks.count, player.mood.label))
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                     }
                 }
                 .font(.system(size: 11))
@@ -414,9 +418,12 @@ struct MusicBar: View {
                     Image(systemName: "speaker.fill")
                         .font(.system(size: 8))
                         .foregroundStyle(.tertiary)
+                        .accessibilityHidden(true)
                     Slider(value: $player.volume, in: 0...1)
                         .controlSize(.mini)
                         .frame(width: 56)
+                        .accessibilityLabel(L("a11y.music.volume"))
+                        .accessibilityValue("\(Int(player.volume * 100))%")
                 }
 
                 // 더보기
@@ -438,6 +445,8 @@ struct MusicBar: View {
                 .menuStyle(.borderlessButton)
                 .menuIndicator(.hidden)
                 .frame(width: 16)
+                .accessibilityLabel(L("a11y.music.more"))
+                .accessibilityInputLabels([L("a11y.input.more"), L("a11y.music.more")])
             }
         }
         .padding(.horizontal, 16)
@@ -462,7 +471,9 @@ struct MusicBar: View {
                 Text(mood.label)
                     .font(.system(size: 10, weight: .semibold))
             }
-            .foregroundStyle(selected ? mood.tint : (count == 0 ? Color.secondary.opacity(0.45) : .secondary))
+            // 색 글자는 밝은 배경에서 대비가 3:1 남짓이다 — '대비 증가' 를 켜면 기본 글자색으로.
+            .foregroundStyle(selected ? (contrast == .increased ? Color.primary : mood.tint)
+                                      : (count == 0 ? Color.secondary.opacity(0.45) : .secondary))
             .frame(maxWidth: .infinity)
             .padding(.vertical, 5)
             .background(
@@ -476,5 +487,6 @@ struct MusicBar: View {
         }
         .buttonStyle(.plain)
         .help(mood.hint + (count == 0 ? L("music.chip.none") : L(count == 1 ? "music.chip.one" : "music.chip.other", count)))
+        .accessibilityAddTraits(selected ? .isSelected : [])
     }
 }

@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Kamu sudah menuntaskan %d presentasi bersama StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Durasi timer";
+"a11y.timer.start" = "Mulai timer";
+"a11y.timer.minus30" = "Kurangi 30 detik";
+"a11y.timer.plus30" = "Tambah 30 detik";
+"a11y.timer.remaining" = "Sisa %@";
+"a11y.timer.finished" = "Waktu habis";
+"a11y.timer.almostUp" = "Hampir habis";
+"a11y.preset.field" = "Durasi preset";
+"a11y.music.volume" = "Volume musik";
+"a11y.music.more" = "Opsi musik lainnya";
+"a11y.input.start" = "Mulai";
+"a11y.input.minus30" = "Kurang 30";
+"a11y.input.plus30" = "Tambah 30";
+"a11y.input.theme" = "Tema";
+"a11y.input.size" = "Ukuran %@";
+"a11y.input.delete" = "Hapus";
+"a11y.input.presets" = "Preset";
+"a11y.input.music" = "Musik";
+"a11y.input.more" = "Lainnya";
+"a11y.input.color" = "Warna";
+"a11y.input.opacity" = "Opasitas";
+"a11y.input.smaller" = "Perkecil";
+"a11y.input.larger" = "Perbesar";
+"a11y.input.lock" = "Kunci";
+"a11y.input.unlock" = "Buka kunci";
+"a11y.input.rewind" = "Ke awal";
+"a11y.input.mirror" = "Cermin";
+"a11y.input.edit" = "Edit";
+"a11y.input.preview" = "Pratinjau";
+"a11y.input.speed" = "Kecepatan";

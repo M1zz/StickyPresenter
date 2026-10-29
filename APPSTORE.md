@@ -1880,3 +1880,17 @@ https://m1zz.github.io/StickyPresenter/tr/
 <!-- 내용 문항이 전부 '해당 없음' 인 앱이면 아래 줄의 주석을 풀어라.
      애플에 하는 내용 신고이므로 사람이 판단해서 적는다. -->
 <!-- 해당 없음 -->
+
+## 손쉬운 사용
+
+<!-- DeployBar 가 App Store Connect '앱의 손쉬운 사용' 에 올린다. 실제로 확인한 것만 적는다. -->
+<!-- largerText 는 뺐다: macOS 는 시스템 글자 크기로 앱 글자가 커지지 않고, 노트·텔레프롬프터·타이머 위젯은
+     자체 크기 조절이 있지만 타이머 패널·설정의 글자는 키울 방법이 없다. -->
+
+### Mac
+voiceOver
+voiceControl
+darkInterface
+differentiateWithoutColor
+sufficientContrast
+reducedMotion

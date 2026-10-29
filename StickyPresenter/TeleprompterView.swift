@@ -48,6 +48,8 @@ struct TeleprompterView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.white.opacity(0.1), lineWidth: 1)
         )
+        // 텔레프롬프터는 늘 검은 판이다. 라이트 모드를 따르면 편집 중 입력 커서가 검게 그려져 보이지 않는다.
+        .environment(\.colorScheme, .dark)
     }
     
     // MARK: - Header
@@ -61,12 +63,14 @@ struct TeleprompterView: View {
             .buttonStyle(.plain)
             .help(L("teleprompter.close"))
             .accessibilityLabel(L("teleprompter.close"))
+            .accessibilityInputLabels([L("Close"), L("teleprompter.close")])
             
             Spacer()
             
             Text(L("📺 TELEPROMPTER"))
                 .font(.system(size: 11, weight: .semibold, design: .monospaced))
                 .foregroundColor(.white.opacity(0.6))
+                .accessibilityAddTraits(.isHeader)
             
             Spacer()
             
@@ -78,6 +82,9 @@ struct TeleprompterView: View {
             .buttonStyle(.plain)
             .help(isEditing ? L("Preview mode") : L("Edit text"))
             .accessibilityLabel(isEditing ? L("Preview mode") : L("Edit text"))
+            .accessibilityInputLabels(isEditing
+                ? [L("a11y.input.preview"), L("Preview mode")]
+                : [L("a11y.input.edit"), L("Edit text")])
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
@@ -160,6 +167,7 @@ struct TeleprompterView: View {
                 .buttonStyle(.plain)
                 .help(L("teleprompter.rewind"))
                 .accessibilityLabel(L("teleprompter.rewind"))
+                .accessibilityInputLabels([L("a11y.input.rewind"), L("teleprompter.rewind")])
                 
                 Button(action: togglePlayback) {
                     Image(systemName: isScrolling ? "pause.fill" : "play.fill")
@@ -172,42 +180,50 @@ struct TeleprompterView: View {
                 .help(isScrolling ? L("teleprompter.pause") : L("teleprompter.play"))
                 .accessibilityLabel(isScrolling ? L("teleprompter.pause") : L("teleprompter.play"))
                 
+                // 켜짐을 색(노랑)만으로 알리지 않도록 모양도 바꾼다.
                 Button(action: { isMirrored.toggle() }) {
-                    Image(systemName: "arrow.left.arrow.right")
+                    Image(systemName: isMirrored ? "arrow.left.arrow.right.square.fill" : "arrow.left.arrow.right")
                         .font(.system(size: 14))
                         .foregroundColor(isMirrored ? .yellow : .white.opacity(0.7))
                 }
                 .buttonStyle(.plain)
                 .help(L("Mirror text (for teleprompter glass)"))
                 .accessibilityLabel(L("Mirror text (for teleprompter glass)"))
+                .accessibilityAddTraits(isMirrored ? .isSelected : [])
+                .accessibilityInputLabels([L("a11y.input.mirror"), L("Mirror text (for teleprompter glass)")])
             }
             
             // Speed slider
             HStack(spacing: 8) {
                 Image(systemName: "tortoise")
                     .font(.system(size: 10))
-                    .foregroundColor(.white.opacity(0.4))
+                    .foregroundColor(.white.opacity(0.6))
+                    .accessibilityHidden(true)
                 
                 Slider(value: $scrollSpeed, in: 5...120, step: 5)
                     .tint(.green)
                     .help(L("teleprompter.speed"))
                     .accessibilityLabel(L("teleprompter.speed"))
+                    .accessibilityValue("\(Int(scrollSpeed))")
+                    .accessibilityInputLabels([L("a11y.input.speed"), L("teleprompter.speed")])
                 
                 Image(systemName: "hare")
                     .font(.system(size: 10))
-                    .foregroundColor(.white.opacity(0.4))
+                    .foregroundColor(.white.opacity(0.6))
+                    .accessibilityHidden(true)
                 
                 Text("\(Int(scrollSpeed))")
                     .font(.system(size: 10, design: .monospaced))
-                    .foregroundColor(.white.opacity(0.5))
+                    .foregroundColor(.white.opacity(0.7))
                     .frame(width: 24)
+                    .accessibilityHidden(true)   // 슬라이더 값으로 읽힌다
             }
             
             // Font size
             HStack(spacing: 8) {
                 Text(L("Font"))
                     .font(.system(size: 10))
-                    .foregroundColor(.white.opacity(0.4))
+                    .foregroundColor(.white.opacity(0.6))
 
                 Button(action: { fontSize = max(14, fontSize - 2) }) {
                     Image(systemName: "minus")
@@ -218,6 +234,7 @@ struct TeleprompterView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel(L("note.fontSmaller"))
+                .accessibilityInputLabels([L("a11y.input.smaller"), L("note.fontSmaller")])
 
                 Text("\(Int(fontSize))pt")
                     .font(.system(size: 11, design: .monospaced))
@@ -233,6 +250,7 @@ struct TeleprompterView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel(L("note.fontLarger"))
+                .accessibilityInputLabels([L("a11y.input.larger"), L("note.fontLarger")])
             }
         }
         .padding(.horizontal, 16)

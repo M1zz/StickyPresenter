@@ -449,7 +449,9 @@ struct TimerListView: View {
                         Image(systemName: "timer")
                             .font(.system(size: 12))
                             .foregroundStyle(.secondary)
+                            .accessibilityHidden(true)
                         TextField("5:30  ·  1h 20m  ·  45s  ·  10", text: $inputText)
+                            .accessibilityLabel(L("a11y.timer.input"))
                             .textFieldStyle(.plain)
                             .font(.system(size: 13))
                             .focused($focused)
@@ -463,6 +465,8 @@ struct TimerListView: View {
                                     .foregroundStyle(Color.accentColor)
                             }
                             .buttonStyle(.plain)
+                            .accessibilityLabel(L("a11y.timer.start"))
+                            .accessibilityInputLabels([L("a11y.input.start"), L("a11y.timer.start")])
                             .transition(.scale(scale: 0.6).combined(with: .opacity))
                         } else {
                             // 입력 형식 안내 — "25/5" 뽀모도로처럼 눈에 보이지 않는 문법이 있다.
@@ -490,12 +494,15 @@ struct TimerListView: View {
                     Button(action: addNewStickyNote) {
                         Image(systemName: "note.text.badge.plus")
                             .font(.system(size: 15, weight: .medium))
-                            .foregroundStyle(Color(red: 0.95, green: 0.85, blue: 0.40))
+                            // 노란 종이 위의 노란 글리프는 대비가 1.3:1 이라 보이지 않았다 — 같은 계열의 짙은 호박색.
+                            .foregroundStyle(Color(red: 0.70, green: 0.50, blue: 0.0))
                             .frame(width: 36, height: 36)
                             .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 1.0, green: 0.95, blue: 0.70)))
                     }
                     .buttonStyle(.plain)
                     .help("New Sticky Note")
+                    .accessibilityLabel(L("New Sticky Note"))
+                    .accessibilityInputLabels([L("intent.note.short"), L("New Sticky Note")])
                     // 윈도우로 열기 버튼은 각 타이머 행으로 이동 (해당 타이머만 윈도우로 열림)
                 }
 
@@ -530,7 +537,9 @@ struct TimerListView: View {
                         HStack(spacing: 4) {
                             Image(systemName: "hand.tap")
                                 .font(.system(size: 10, weight: .medium))
+                                .accessibilityHidden(true)
                             Text("Quick Start")
+                                .accessibilityAddTraits(.isHeader)
                                 .font(.system(size: 11, weight: .semibold))
                                 .foregroundStyle(Color.accentColor.opacity(0.8))
                             Spacer()
@@ -567,12 +576,14 @@ struct TimerListView: View {
                     Image(systemName: "timer")
                         .font(.system(size: 28, weight: .light))
                         .foregroundStyle(.quaternary)
+                        .accessibilityHidden(true)
+                    // 안내 글은 3단계(.tertiary) 이하 회색이면 대비가 2:1 아래로 떨어진다.
                     Text("No timers")
                         .font(.system(size: 13, weight: .medium))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                     Text("Tap a preset or enter a time")
                         .font(.system(size: 11))
-                        .foregroundStyle(.quaternary)
+                        .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                     Spacer()
                 }
@@ -687,6 +698,7 @@ struct TimerInputHelpView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(L("timer.inputHelp.title"))
                 .font(.system(size: 12, weight: .semibold))
+                .accessibilityAddTraits(.isHeader)
             ForEach(examples.indices, id: \.self) { i in
                 let (example, key) = examples[i]
                 Button(action: { onPick(example) }) {
@@ -706,7 +718,7 @@ struct TimerInputHelpView: View {
             Divider()
             Text(L("timer.inputHelp.footer"))
                 .font(.system(size: 10))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(14)
@@ -718,6 +730,7 @@ struct TimerInputHelpView: View {
 struct TimerRowView: View {
     @ObservedObject var entry: TimerEntry
     let onRemove: () -> Void
+    @Environment(\.colorSchemeContrast) private var contrast
 
     @ObservedObject private var presetStore = TimerPresetStore.shared
 
@@ -747,7 +760,12 @@ struct TimerRowView: View {
                         .monospacedDigit()
                         .contentTransition(.numericText(countsDown: true))
                         .animation(.linear(duration: 0.3), value: entry.remaining)
+                        // 끝난 상태는 빨간색만으로 알리지 않고 말로도 알린다.
+                        .accessibilityLabel(entry.isFinished
+                            ? L("a11y.timer.finished")
+                            : L("a11y.timer.remaining", formatTime(entry.remaining)))
                 }
+                .accessibilityElement(children: .combine)
 
                 // 모든 컨트롤 버튼을 3m/5m 프리셋과 동일한 디자인(둥근 사각형 cornerRadius 8)으로 통일
                 VStack(spacing: 6) {
@@ -757,6 +775,8 @@ struct TimerRowView: View {
                             Text("−30s").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel(L("a11y.timer.minus30"))
+                        .accessibilityInputLabels([L("a11y.input.minus30"), L("a11y.timer.minus30")])
 
                         Button(action: {
                             if entry.isFinished { entry.reset() }
@@ -766,11 +786,14 @@ struct TimerRowView: View {
                                 .modifier(CtrlButtonStyle(fg: .primary, bg: Color.primary.opacity(0.06)))
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel(entry.isRunning ? L("teleprompter.pause") : L("teleprompter.play"))
 
                         Button(action: { entry.addSeconds() }) {
                             Text("+30s").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel(L("a11y.timer.plus30"))
+                        .accessibilityInputLabels([L("a11y.input.plus30"), L("a11y.timer.plus30")])
                     }
 
                     // 2행 — 위젯 제어: 감추기/표시 · 불러오기 · 윈도우
@@ -809,6 +832,8 @@ struct TimerRowView: View {
                         }
                         .buttonStyle(.plain)
                         .help(L("timer.theme", entry.theme.localizedName))
+                        .accessibilityLabel(L("timer.theme", entry.theme.localizedName))
+                        .accessibilityInputLabels([L("a11y.input.theme"), L("timer.theme", entry.theme.localizedName)])
 
                         // 프리셋 크기 S / M / L
                         HStack(spacing: 3) {
@@ -824,9 +849,17 @@ struct TimerRowView: View {
                                                 .fill(isCurrent ? Color.accentColor.opacity(0.12)
                                                                 : Color.primary.opacity(0.06))
                                         )
+                                        // 지금 크기를 색만이 아니라 테두리로도 표시한다.
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .strokeBorder(isCurrent ? Color.accentColor.opacity(0.6) : .clear, lineWidth: 1.5)
+                                        )
                                 }
                                 .buttonStyle(.plain)
                                 .help(L("timer.widgetSize", size.rawValue, Int(size.side)))
+                                .accessibilityLabel(L("timer.widgetSize", size.rawValue, Int(size.side)))
+                                .accessibilityAddTraits(isCurrent ? .isSelected : [])
+                                .accessibilityInputLabels([size.rawValue, L("a11y.input.size", size.rawValue)])
                             }
                         }
 
@@ -836,6 +869,8 @@ struct TimerRowView: View {
                         }
                         .buttonStyle(.plain)
                         .help("Delete timer")
+                        .accessibilityLabel(L("Delete timer"))
+                        .accessibilityInputLabels([L("a11y.input.delete"), L("Delete timer")])
                     }
                 }
             }
@@ -871,6 +906,7 @@ struct TimerRowView: View {
                 .font(.system(size: 10, weight: .bold))
                 .foregroundStyle(Color.accentColor.opacity(0.8))
                 .help("Reuse this timer with another duration")
+                .accessibilityHidden(true)
 
             ForEach(presetStore.usable) { preset in
                 Button(action: { entry.restart(seconds: preset.seconds, name: preset.label) }) {
@@ -878,6 +914,8 @@ struct TimerRowView: View {
                 }
                 .buttonStyle(.plain)
                 .help(L("timer.restartAs", preset.label))
+                .accessibilityLabel(L("timer.restartAs", preset.label))
+                .accessibilityInputLabels([preset.label, L("timer.restartAs", preset.label)])
             }
         }
         .transition(.opacity.combined(with: .move(edge: .top)))
@@ -892,7 +930,7 @@ struct TimerRowView: View {
                 Text(entry.phase.title)
                     .font(.system(size: 10, weight: .bold))
             }
-            .foregroundStyle(entry.phase.color)
+            .foregroundStyle(contrast == .increased ? Color.primary : entry.phase.color)
             .padding(.horizontal, 6)
             .padding(.vertical, 2)
             .background(Capsule().fill(entry.phase.color.opacity(0.14)))
@@ -1280,6 +1318,8 @@ struct PresetEditButton: View {
         }
         .buttonStyle(.plain)
         .help("Edit quick presets")
+        .accessibilityLabel(L("Edit quick presets"))
+        .accessibilityInputLabels([L("a11y.input.presets"), L("Edit quick presets")])
         .popover(isPresented: $isEditing, arrowEdge: .bottom) {
             PresetEditorView()
         }
@@ -1296,7 +1336,9 @@ struct PresetEditorView: View {
             HStack(spacing: 6) {
                 Image(systemName: "hand.tap")
                     .font(.system(size: 10, weight: .medium))
+                    .accessibilityHidden(true)
                 Text("Quick Presets")
+                    .accessibilityAddTraits(.isHeader)
                     .font(.system(size: 12, weight: .semibold))
                 Spacer()
                 Button(action: { store.restoreDefaults() }) {
@@ -1311,7 +1353,7 @@ struct PresetEditorView: View {
 
             Text("Same format as the input field —  5:30 · 1h 20m · 45s · 10")
                 .font(.system(size: 10))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
 
             VStack(spacing: 6) {
@@ -1355,6 +1397,7 @@ struct PresetEditorView: View {
         HStack(spacing: 8) {
             TextField("5m", text: binding(for: item))
                 .textFieldStyle(.plain)
+                .accessibilityLabel(L("a11y.preset.field"))
                 .font(.system(size: 12, design: .monospaced))
                 .padding(.horizontal, 8)
                 .padding(.vertical, 5)
@@ -1375,6 +1418,7 @@ struct PresetEditorView: View {
             .buttonStyle(.plain)
             .disabled(!store.canRemove)
             .help(store.canRemove ? L("Remove preset") : L("Keep at least one preset"))
+            .accessibilityLabel(L("Remove preset"))
         }
     }
 
@@ -1440,6 +1484,7 @@ struct AddTimerRow: View {
                         .foregroundStyle(Color.accentColor)
                         .frame(width: 18, height: 18)
                         .background(Circle().fill(Color.accentColor.opacity(0.12)))
+                        .accessibilityHidden(true)
                     Text("Add Timer")
                         .font(.system(size: 12, weight: .medium))
                         .foregroundStyle(Color.accentColor)
@@ -1497,6 +1542,8 @@ struct TimerWidgetView: View {
     @State private var lastQuarter = 0
     @State private var pulseTask: Task<Void, Never>? = nil
     @Environment(\.colorScheme) private var systemScheme
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
 
     /// 완료 시 테두리가 깜빡이는 최대 횟수 (이후에는 고정 표시)
     private static let finishPulseCount = 5
@@ -1554,6 +1601,16 @@ struct TimerWidgetView: View {
     /// 비율(예: 남은 10%)로 정하지 않는다. 5분 타이머의 10%(30초)와 1시간 타이머의
     /// 10%(6분)는 체감이 전혀 다르고, 짧은 타이머일수록 훨씬 늦게 알려야 쓸모가 있다.
     /// 그래서 설정 시간대별 표로 둔다.
+    /// VoiceOver 가 위젯을 한 번에 읽는 문장 — 이름 · 남은 시간 · 상태.
+    private var accessibilitySummary: String {
+        let remaining = L("a11y.timer.remaining", formatTime(entry.remaining))
+        let state = entry.isFinished ? L("a11y.timer.finished")
+            : isWarning ? "\(remaining), \(L("a11y.timer.almostUp"))"
+            : remaining
+        let name = entry.displayName
+        return name.isEmpty ? state : "\(name), \(state)"
+    }
+
     private var warningThreshold: TimeInterval {
         switch entry.targetSeconds {
         case ..<300:  return 10    // 5분 미만  → 마지막 10초
@@ -1599,6 +1656,8 @@ struct TimerWidgetView: View {
                 ringContent(side: side, scale: scale)
                     .frame(width: geo.size.width, height: geo.size.height)
                     .opacity(isHiddenPeek ? 0 : 1)
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(accessibilitySummary)
                     // 경고 구간에 들어설 때 색이 툭 바뀌지 않도록 부드럽게 넘긴다.
                     .animation(.easeInOut(duration: 0.35), value: isWarning)
 
@@ -1677,11 +1736,12 @@ struct TimerWidgetView: View {
     private func flash(_ quarter: Int) {
         flashTask?.cancel()
         flashQuarter = quarter
-        flashScale = 0.4
+        // 동작 줄이기: 튀어나왔다 퍼지는 크기 변화 없이 제자리에서 나타났다 사라지기만 한다.
+        flashScale = reduceMotion ? 1 : 0.4
         flashOpacity = 0
 
         // 튀어나오고 → 잠깐 머물고 → 커지며 사라진다.
-        withAnimation(.spring(response: 0.28, dampingFraction: 0.55)) {
+        withAnimation(reduceMotion ? .easeInOut(duration: 0.3) : .spring(response: 0.28, dampingFraction: 0.55)) {
             flashScale = 1
             flashOpacity = 1
         }
@@ -1690,7 +1750,7 @@ struct TimerWidgetView: View {
             if Task.isCancelled { return }
             withAnimation(.easeOut(duration: 0.75)) {
                 flashOpacity = 0
-                flashScale = 1.9
+                if !reduceMotion { flashScale = 1.9 }
             }
             try? await Task.sleep(nanoseconds: 750_000_000)
             if Task.isCancelled { return }
@@ -1761,6 +1821,12 @@ struct TimerWidgetView: View {
 
         guard finished else {
             withAnimation(.easeInOut(duration: 0.2)) { finishPulse = false }
+            return
+        }
+
+        // 동작 줄이기: 깜박이는 대신 빨간 테두리를 그대로 켜 둔다.
+        if reduceMotion {
+            finishPulse = true
             return
         }
 
@@ -1871,6 +1937,13 @@ struct TimerWidgetView: View {
                     .minimumScaleFactor(0.5)
                     .contentTransition(.numericText(countsDown: true))
                     .animation(.linear(duration: 0.3), value: entry.remaining)
+
+                // '곧 끝남'·'끝남' 은 빨간색으로 알린다 — 색 구별을 켠 사람에게는 표시도 함께.
+                if differentiateWithoutColor, isWarning || entry.isFinished {
+                    Image(systemName: entry.isFinished ? "bell.fill" : "exclamationmark.triangle.fill")
+                        .font(.system(size: max(9, 14 * scale), weight: .bold))
+                        .foregroundStyle(textColor)
+                }
 
                 // 뽀모도로는 실행 중에도 현재 구간을 계속 보여준다 — 남은 시간만으로는
                 // 지금이 집중인지 휴식인지 알 수 없기 때문.

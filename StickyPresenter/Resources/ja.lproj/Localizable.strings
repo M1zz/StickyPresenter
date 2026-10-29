@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "StickyPresenterと一緒に%d回の発表をやり遂げました";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "タイマーの時間";
+"a11y.timer.start" = "タイマーを開始";
+"a11y.timer.minus30" = "30秒減らす";
+"a11y.timer.plus30" = "30秒増やす";
+"a11y.timer.remaining" = "残り%@";
+"a11y.timer.finished" = "時間です";
+"a11y.timer.almostUp" = "まもなく終了";
+"a11y.preset.field" = "プリセットの時間";
+"a11y.music.volume" = "音楽の音量";
+"a11y.music.more" = "音楽のその他のオプション";
+"a11y.input.start" = "開始";
+"a11y.input.minus30" = "30秒減らす";
+"a11y.input.plus30" = "30秒増やす";
+"a11y.input.theme" = "テーマ";
+"a11y.input.size" = "サイズ%@";
+"a11y.input.delete" = "削除";
+"a11y.input.presets" = "プリセット";
+"a11y.input.music" = "音楽";
+"a11y.input.more" = "その他";
+"a11y.input.color" = "色";
+"a11y.input.opacity" = "不透明度";
+"a11y.input.smaller" = "小さく";
+"a11y.input.larger" = "大きく";
+"a11y.input.lock" = "ロック";
+"a11y.input.unlock" = "ロック解除";
+"a11y.input.rewind" = "最初へ";
+"a11y.input.mirror" = "ミラー";
+"a11y.input.edit" = "編集";
+"a11y.input.preview" = "プレビュー";
+"a11y.input.speed" = "速度";

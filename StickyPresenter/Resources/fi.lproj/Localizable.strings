@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Olet pitänyt StickyPresenterin kanssa jo %d esitystä";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Ajastimen kesto";
+"a11y.timer.start" = "Käynnistä ajastin";
+"a11y.timer.minus30" = "Vähennä 30 sekuntia";
+"a11y.timer.plus30" = "Lisää 30 sekuntia";
+"a11y.timer.remaining" = "%@ jäljellä";
+"a11y.timer.finished" = "Aika loppui";
+"a11y.timer.almostUp" = "Melkein valmis";
+"a11y.preset.field" = "Pikavalinnan kesto";
+"a11y.music.volume" = "Musiikin äänenvoimakkuus";
+"a11y.music.more" = "Lisää musiikkivalintoja";
+"a11y.input.start" = "Käynnistä";
+"a11y.input.minus30" = "Miinus 30";
+"a11y.input.plus30" = "Plus 30";
+"a11y.input.theme" = "Teema";
+"a11y.input.size" = "Koko %@";
+"a11y.input.delete" = "Poista";
+"a11y.input.presets" = "Pikavalinnat";
+"a11y.input.music" = "Musiikki";
+"a11y.input.more" = "Lisää";
+"a11y.input.color" = "Väri";
+"a11y.input.opacity" = "Peittävyys";
+"a11y.input.smaller" = "Pienemmäksi";
+"a11y.input.larger" = "Suuremmaksi";
+"a11y.input.lock" = "Lukitse";
+"a11y.input.unlock" = "Avaa lukitus";
+"a11y.input.rewind" = "Alkuun";
+"a11y.input.mirror" = "Peilaa";
+"a11y.input.edit" = "Muokkaa";
+"a11y.input.preview" = "Esikatselu";
+"a11y.input.speed" = "Nopeus";

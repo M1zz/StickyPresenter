@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Prezentace se StickyPresenter: %d";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "Délka časovače";
+"a11y.timer.start" = "Spustit časovač";
+"a11y.timer.minus30" = "Ubrat 30 sekund";
+"a11y.timer.plus30" = "Přidat 30 sekund";
+"a11y.timer.remaining" = "Zbývá %@";
+"a11y.timer.finished" = "Čas vypršel";
+"a11y.timer.almostUp" = "Skoro konec";
+"a11y.preset.field" = "Délka předvolby";
+"a11y.music.volume" = "Hlasitost hudby";
+"a11y.music.more" = "Další možnosti hudby";
+"a11y.input.start" = "Spustit";
+"a11y.input.minus30" = "Mínus 30";
+"a11y.input.plus30" = "Plus 30";
+"a11y.input.theme" = "Motiv";
+"a11y.input.size" = "Velikost %@";
+"a11y.input.delete" = "Smazat";
+"a11y.input.presets" = "Předvolby";
+"a11y.input.music" = "Hudba";
+"a11y.input.more" = "Další";
+"a11y.input.color" = "Barva";
+"a11y.input.opacity" = "Krytí";
+"a11y.input.smaller" = "Menší";
+"a11y.input.larger" = "Větší";
+"a11y.input.lock" = "Zamknout";
+"a11y.input.unlock" = "Odemknout";
+"a11y.input.rewind" = "Na začátek";
+"a11y.input.mirror" = "Zrcadlit";
+"a11y.input.edit" = "Upravit";
+"a11y.input.preview" = "Náhled";
+"a11y.input.speed" = "Rychlost";

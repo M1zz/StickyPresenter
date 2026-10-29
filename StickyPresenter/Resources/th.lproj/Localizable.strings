@@ -308,3 +308,35 @@
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "คุณนำเสนอจบไปแล้ว %d ครั้งกับ StickyPresenter";
+
+/* ===== 손쉬운 사용 (VoiceOver 이름 · 음성 명령 단어) ===== */
+"a11y.timer.input" = "ระยะเวลาตัวจับเวลา";
+"a11y.timer.start" = "เริ่มตัวจับเวลา";
+"a11y.timer.minus30" = "ลด 30 วินาที";
+"a11y.timer.plus30" = "เพิ่ม 30 วินาที";
+"a11y.timer.remaining" = "เหลือ %@";
+"a11y.timer.finished" = "หมดเวลา";
+"a11y.timer.almostUp" = "ใกล้หมดเวลา";
+"a11y.preset.field" = "ระยะเวลาที่ตั้งไว้";
+"a11y.music.volume" = "ระดับเสียงเพลง";
+"a11y.music.more" = "ตัวเลือกเพลงเพิ่มเติม";
+"a11y.input.start" = "เริ่ม";
+"a11y.input.minus30" = "ลบ 30";
+"a11y.input.plus30" = "บวก 30";
+"a11y.input.theme" = "ธีม";
+"a11y.input.size" = "ขนาด %@";
+"a11y.input.delete" = "ลบ";
+"a11y.input.presets" = "ค่าที่ตั้งไว้";
+"a11y.input.music" = "เพลง";
+"a11y.input.more" = "เพิ่มเติม";
+"a11y.input.color" = "สี";
+"a11y.input.opacity" = "ความทึบ";
+"a11y.input.smaller" = "เล็กลง";
+"a11y.input.larger" = "ใหญ่ขึ้น";
+"a11y.input.lock" = "ล็อก";
+"a11y.input.unlock" = "ปลดล็อก";
+"a11y.input.rewind" = "กลับไปต้น";
+"a11y.input.mirror" = "กระจก";
+"a11y.input.edit" = "แก้ไข";
+"a11y.input.preview" = "ดูตัวอย่าง";
+"a11y.input.speed" = "ความเร็ว";
