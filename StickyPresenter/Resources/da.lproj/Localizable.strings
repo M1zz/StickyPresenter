@@ -82,6 +82,9 @@
 "timer.theme" = "Tema: %@";
 "timer.widgetSize" = "Widgetstørrelse: %@ (%d pt)";
 "timer.restartAs" = "Genstart denne timer som %@";
+"timer.next.title" = "Næste timer";
+"timer.again" = "Start %@ igen";
+"timer.next.dismiss" = "Luk valg";
 
 /* ===== Theme names ===== */
 "theme.system" = "System";

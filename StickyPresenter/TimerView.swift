@@ -767,122 +767,25 @@ struct TimerRowView: View {
                 }
                 .accessibilityElement(children: .combine)
 
-                // 모든 컨트롤 버튼을 3m/5m 프리셋과 동일한 디자인(둥근 사각형 cornerRadius 8)으로 통일
-                VStack(spacing: 6) {
-                    // 1행 — 시간 조절: 일시정지를 가운데 두고 좌우에 -30s / +30s
-                    HStack(spacing: 6) {
-                        Button(action: { entry.subtractSeconds() }) {
-                            Text("−30s").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel(L("a11y.timer.minus30"))
-                        .accessibilityInputLabels([L("a11y.input.minus30"), L("a11y.timer.minus30")])
-
-                        Button(action: {
-                            if entry.isFinished { entry.reset() }
-                            entry.toggleRunning()
-                        }) {
-                            Image(systemName: entry.isRunning ? "pause.fill" : "play.fill")
-                                .modifier(CtrlButtonStyle(fg: .primary, bg: Color.primary.opacity(0.06)))
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel(entry.isRunning ? L("teleprompter.pause") : L("teleprompter.play"))
-
-                        Button(action: { entry.addSeconds() }) {
-                            Text("+30s").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel(L("a11y.timer.plus30"))
-                        .accessibilityInputLabels([L("a11y.input.plus30"), L("a11y.timer.plus30")])
-                    }
-
-                    // 2행 — 위젯 제어: 감추기/표시 · 불러오기 · 윈도우
-                    HStack(spacing: 6) {
-                        // 위젯 표시/감추기 토글 (눈동자 통합)
-                        Button(action: toggleWidgetVisibility) {
-                            Text(entry.isWidgetHidden ? L("Show") : L("Hide"))
-                                .modifier(CtrlButtonStyle(
-                                    fg: entry.isWidgetHidden ? .secondary : Color.accentColor,
-                                    bg: entry.isWidgetHidden ? Color.primary.opacity(0.06) : Color.accentColor.opacity(0.12)))
-                        }
-                        .buttonStyle(.plain)
-                        .help("Show / hide widget")
-
-                        // 불러오기: 위젯을 패널 옆으로 정렬해 앞으로 (화면 밖으로 사라졌을 때 되찾기)
-                        Button(action: { NoteManager.shared.snapWidgetToPanel(for: entry) }) {
-                            Text("Align").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
-                        }
-                        .buttonStyle(.plain)
-                        .help("Align widget next to the panel")
-
-                        // 윈도우: 이 타이머를 별도 윈도우로 열기 (화면 공유 / AirPlay)
-                        Button(action: { NoteManager.shared.openTimerWindow(for: entry) }) {
-                            Text("Window").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
-                        }
-                        .buttonStyle(.plain)
-                        .help("Open in a window (screen share / AirPlay)")
-                    }
-
-                    // 3행 — 테마 · (빈칸) · 삭제
-                    HStack(spacing: 6) {
-                        // 테마 전환 (시스템 → 라이트 → 다크 순환)
-                        Button(action: advanceTheme) {
-                            Image(systemName: entry.theme.icon)
-                                .modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
-                        }
-                        .buttonStyle(.plain)
-                        .help(L("timer.theme", entry.theme.localizedName))
-                        .accessibilityLabel(L("timer.theme", entry.theme.localizedName))
-                        .accessibilityInputLabels([L("a11y.input.theme"), L("timer.theme", entry.theme.localizedName)])
-
-                        // 프리셋 크기 S / M / L
-                        HStack(spacing: 3) {
-                            ForEach(WidgetSize.allCases, id: \.self) { size in
-                                let isCurrent = entry.widgetSize == size
-                                Button(action: { NoteManager.shared.setWidgetSize(size, for: entry) }) {
-                                    Text(size.rawValue)
-                                        .font(.system(size: 11, weight: .semibold))
-                                        .foregroundStyle(isCurrent ? Color.accentColor : .secondary)
-                                        .frame(width: 26, height: 30)
-                                        .background(
-                                            RoundedRectangle(cornerRadius: 8)
-                                                .fill(isCurrent ? Color.accentColor.opacity(0.12)
-                                                                : Color.primary.opacity(0.06))
-                                        )
-                                        // 지금 크기를 색만이 아니라 테두리로도 표시한다.
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 8)
-                                                .strokeBorder(isCurrent ? Color.accentColor.opacity(0.6) : .clear, lineWidth: 1.5)
-                                        )
-                                }
-                                .buttonStyle(.plain)
-                                .help(L("timer.widgetSize", size.rawValue, Int(size.side)))
-                                .accessibilityLabel(L("timer.widgetSize", size.rawValue, Int(size.side)))
-                                .accessibilityAddTraits(isCurrent ? .isSelected : [])
-                                .accessibilityInputLabels([size.rawValue, L("a11y.input.size", size.rawValue)])
-                            }
-                        }
-
-                        Button(action: onRemove) {
-                            Image(systemName: "xmark")
-                                .modifier(CtrlButtonStyle(fg: .white, bg: Color(red: 1, green: 0.27, blue: 0.23)))
-                        }
-                        .buttonStyle(.plain)
-                        .help("Delete timer")
-                        .accessibilityLabel(L("Delete timer"))
-                        .accessibilityInputLabels([L("a11y.input.delete"), L("Delete timer")])
-                    }
+                if showsNextChoices {
+                    Spacer(minLength: 0)
+                    dismissChoicesButton
+                } else {
+                    controlButtons
                 }
             }
 
-            // 끝난 타이머를 **다른 시간으로 다시 쓰는** 프리셋.
-            // 완료 상태에서만 나타난다 — 실행 중에는 행 높이를 그대로 두는 편이 읽기 좋고,
-            // 시간을 갈아끼우고 싶어지는 순간은 결국 다 끝났을 때이기 때문.
-            if entry.isFinished {
-                reusePresetRow
+            // 끝나면 다음에 할 일만 남긴다 — 버튼 3줄을 감추고 다음 타이머 선택지만 보인다.
+            // 지금 고르고 싶은 게 아니면 X 로 접어 원래 버튼으로 돌아간다.
+            if showsNextChoices {
+                nextChoicesRow
             }
         }
-        .animation(.spring(response: 0.3, dampingFraction: 0.8), value: entry.isFinished)
+        .animation(.spring(response: 0.3, dampingFraction: 0.8), value: showsNextChoices)
+        // 다시 돌기 시작하면 접어 둔 것을 잊는다 — 다음에 끝날 때 또 선택지를 보여 준다.
+        .onChange(of: entry.isFinished) { finished in
+            if !finished { choicesDismissed = false }
+        }
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
         .background(rowBackground)
@@ -897,28 +800,168 @@ struct TimerRowView: View {
         }
     }
 
-    // 완료된 타이머를 이 자리에서 다른 시간으로 다시 시작하는 줄.
-    // 누르면 새 타이머를 만들지 않고 **이 타이머**의 시간만 바꿔 곧바로 시작한다 —
-    // 창 위치·크기·테마가 그대로 유지된다. 같은 시간으로 다시 돌리려면 ▶ 를 누르면 된다.
-    private var reusePresetRow: some View {
-        HStack(spacing: 6) {
-            Image(systemName: "arrow.counterclockwise")
-                .font(.system(size: 10, weight: .bold))
-                .foregroundStyle(Color.accentColor.opacity(0.8))
-                .help("Reuse this timer with another duration")
-                .accessibilityHidden(true)
+    /// 끝난 뒤 선택지를 X 로 접었는지.
+    @State private var choicesDismissed = false
 
-            ForEach(presetStore.usable) { preset in
-                Button(action: { entry.restart(seconds: preset.seconds, name: preset.label) }) {
-                    Text(preset.label).modifier(PresetButtonStyle())
+    private var showsNextChoices: Bool { entry.isFinished && !choicesDismissed }
+
+    private var controlButtons: some View {
+            VStack(spacing: 6) {
+                // 1행 — 시간 조절: 일시정지를 가운데 두고 좌우에 -30s / +30s
+                HStack(spacing: 6) {
+                    Button(action: { entry.subtractSeconds() }) {
+                        Text("−30s").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(L("a11y.timer.minus30"))
+                    .accessibilityInputLabels([L("a11y.input.minus30"), L("a11y.timer.minus30")])
+
+                    Button(action: {
+                        if entry.isFinished { entry.reset() }
+                        entry.toggleRunning()
+                    }) {
+                        Image(systemName: entry.isRunning ? "pause.fill" : "play.fill")
+                            .modifier(CtrlButtonStyle(fg: .primary, bg: Color.primary.opacity(0.06)))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(entry.isRunning ? L("teleprompter.pause") : L("teleprompter.play"))
+
+                    Button(action: { entry.addSeconds() }) {
+                        Text("+30s").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(L("a11y.timer.plus30"))
+                    .accessibilityInputLabels([L("a11y.input.plus30"), L("a11y.timer.plus30")])
+                }
+
+                // 2행 — 위젯 제어: 감추기/표시 · 불러오기 · 윈도우
+                HStack(spacing: 6) {
+                    // 위젯 표시/감추기 토글 (눈동자 통합)
+                    Button(action: toggleWidgetVisibility) {
+                        Text(entry.isWidgetHidden ? L("Show") : L("Hide"))
+                            .modifier(CtrlButtonStyle(
+                                fg: entry.isWidgetHidden ? .secondary : Color.accentColor,
+                                bg: entry.isWidgetHidden ? Color.primary.opacity(0.06) : Color.accentColor.opacity(0.12)))
+                    }
+                    .buttonStyle(.plain)
+                    .help("Show / hide widget")
+
+                    // 불러오기: 위젯을 패널 옆으로 정렬해 앞으로 (화면 밖으로 사라졌을 때 되찾기)
+                    Button(action: { NoteManager.shared.snapWidgetToPanel(for: entry) }) {
+                        Text("Align").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
+                    }
+                    .buttonStyle(.plain)
+                    .help("Align widget next to the panel")
+
+                    // 윈도우: 이 타이머를 별도 윈도우로 열기 (화면 공유 / AirPlay)
+                    Button(action: { NoteManager.shared.openTimerWindow(for: entry) }) {
+                        Text("Window").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
+                    }
+                    .buttonStyle(.plain)
+                    .help("Open in a window (screen share / AirPlay)")
+                }
+
+                // 3행 — 테마 · (빈칸) · 삭제
+                HStack(spacing: 6) {
+                    // 테마 전환 (시스템 → 라이트 → 다크 순환)
+                    Button(action: advanceTheme) {
+                        Image(systemName: entry.theme.icon)
+                            .modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
+                    }
+                    .buttonStyle(.plain)
+                    .help(L("timer.theme", entry.theme.localizedName))
+                    .accessibilityLabel(L("timer.theme", entry.theme.localizedName))
+                    .accessibilityInputLabels([L("a11y.input.theme"), L("timer.theme", entry.theme.localizedName)])
+
+                    // 프리셋 크기 S / M / L
+                    HStack(spacing: 3) {
+                        ForEach(WidgetSize.allCases, id: \.self) { size in
+                            let isCurrent = entry.widgetSize == size
+                            Button(action: { NoteManager.shared.setWidgetSize(size, for: entry) }) {
+                                Text(size.rawValue)
+                                    .font(.system(size: 11, weight: .semibold))
+                                    .foregroundStyle(isCurrent ? Color.accentColor : .secondary)
+                                    .frame(width: 26, height: 30)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(isCurrent ? Color.accentColor.opacity(0.12)
+                                                            : Color.primary.opacity(0.06))
+                                    )
+                                    // 지금 크기를 색만이 아니라 테두리로도 표시한다.
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .strokeBorder(isCurrent ? Color.accentColor.opacity(0.6) : .clear, lineWidth: 1.5)
+                                    )
+                            }
+                            .buttonStyle(.plain)
+                            .help(L("timer.widgetSize", size.rawValue, Int(size.side)))
+                            .accessibilityLabel(L("timer.widgetSize", size.rawValue, Int(size.side)))
+                            .accessibilityAddTraits(isCurrent ? .isSelected : [])
+                            .accessibilityInputLabels([size.rawValue, L("a11y.input.size", size.rawValue)])
+                        }
+                    }
+
+                    Button(action: onRemove) {
+                        Image(systemName: "xmark")
+                            .modifier(CtrlButtonStyle(fg: .white, bg: Color(red: 1, green: 0.27, blue: 0.23)))
+                    }
+                    .buttonStyle(.plain)
+                    .help("Delete timer")
+                    .accessibilityLabel(L("Delete timer"))
+                    .accessibilityInputLabels([L("a11y.input.delete"), L("Delete timer")])
+                }
+            }
+    }
+
+    // 끝난 타이머를 이 자리에서 다시 시작하는 선택지.
+    // 누르면 새 타이머를 만들지 않고 **이 타이머**를 곧바로 다시 돌린다 —
+    // 창 위치·크기·테마가 그대로 유지된다. 맨 앞은 방금과 같은 시간이다.
+    private var nextChoicesRow: some View {
+        let again = shortTimeLabel(entry.targetSeconds)
+        return VStack(alignment: .leading, spacing: 6) {
+            Text(L("timer.next.title"))
+                .font(.system(size: 11, weight: .semibold))
+                .foregroundStyle(Color.accentColor.opacity(0.8))
+                .accessibilityAddTraits(.isHeader)
+
+            HStack(spacing: 6) {
+                Button(action: {
+                    entry.reset()
+                    entry.setRunning(true)
+                }) {
+                    Label(again, systemImage: "arrow.counterclockwise").modifier(PresetButtonStyle())
                 }
                 .buttonStyle(.plain)
-                .help(L("timer.restartAs", preset.label))
-                .accessibilityLabel(L("timer.restartAs", preset.label))
-                .accessibilityInputLabels([preset.label, L("timer.restartAs", preset.label)])
+                .help(L("timer.again", again))
+                .accessibilityLabel(L("timer.again", again))
+
+                // 방금과 같은 시간은 맨 앞 버튼이 맡으므로 프리셋에서는 뺀다.
+                ForEach(presetStore.usable.filter { $0.seconds != entry.targetSeconds }) { preset in
+                    Button(action: { entry.restart(seconds: preset.seconds, name: preset.label) }) {
+                        Text(preset.label).modifier(PresetButtonStyle())
+                    }
+                    .buttonStyle(.plain)
+                    .help(L("timer.restartAs", preset.label))
+                    .accessibilityLabel(L("timer.restartAs", preset.label))
+                    .accessibilityInputLabels([preset.label, L("timer.restartAs", preset.label)])
+                }
             }
         }
         .transition(.opacity.combined(with: .move(edge: .top)))
+    }
+
+    private var dismissChoicesButton: some View {
+        Button(action: { choicesDismissed = true }) {
+            Image(systemName: "xmark")
+                .font(.system(size: 11, weight: .bold))
+                .foregroundStyle(.secondary)
+                .frame(width: 26, height: 26)
+                .background(Circle().fill(Color.primary.opacity(0.06)))
+        }
+        .buttonStyle(.plain)
+        .help(L("timer.next.dismiss"))
+        .accessibilityLabel(L("timer.next.dismiss"))
+        .transition(.opacity)
     }
 
     // 뽀모도로 행 머리말 — 구간 배지 + 설정값 + 몇 번째 사이클인지

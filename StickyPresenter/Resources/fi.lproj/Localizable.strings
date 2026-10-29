@@ -82,6 +82,9 @@
 "timer.theme" = "Teema: %@";
 "timer.widgetSize" = "Widgetin koko: %@ (%d pt)";
 "timer.restartAs" = "Käynnistä tämä ajastin uudelleen: %@";
+"timer.next.title" = "Seuraava ajastin";
+"timer.again" = "Käynnistä %@ uudelleen";
+"timer.next.dismiss" = "Sulje vaihtoehdot";
 
 /* ===== Theme names ===== */
 "theme.system" = "Järjestelmä";

@@ -82,6 +82,9 @@
 "timer.theme" = "Θέμα: %@";
 "timer.widgetSize" = "Μέγεθος widget: %@ (%dpt)";
 "timer.restartAs" = "Επανεκκίνηση του χρονομέτρου ως %@";
+"timer.next.title" = "Επόμενο χρονόμετρο";
+"timer.again" = "Ξανά %@";
+"timer.next.dismiss" = "Κλείσιμο επιλογών";
 
 /* ===== Theme names ===== */
 "theme.system" = "Συστήματος";

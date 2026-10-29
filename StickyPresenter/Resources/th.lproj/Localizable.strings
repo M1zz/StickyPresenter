@@ -82,6 +82,9 @@
 "timer.theme" = "ธีม: %@";
 "timer.widgetSize" = "ขนาดวิดเจ็ต: %@ (%dpt)";
 "timer.restartAs" = "เริ่มตัวจับเวลานี้ใหม่เป็น %@";
+"timer.next.title" = "ตัวจับเวลาถัดไป";
+"timer.again" = "เริ่ม %@ อีกครั้ง";
+"timer.next.dismiss" = "ปิดตัวเลือก";
 
 /* ===== Theme names ===== */
 "theme.system" = "ระบบ";

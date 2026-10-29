@@ -82,6 +82,9 @@
 "timer.theme" = "テーマ: %@";
 "timer.widgetSize" = "ウィジェットのサイズ: %@ (%dpt)";
 "timer.restartAs" = "このタイマーを%@で再開始";
+"timer.next.title" = "次のタイマー";
+"timer.again" = "%@をもう一度";
+"timer.next.dismiss" = "選択肢を閉じる";
 
 /* ===== Theme names ===== */
 "theme.system" = "システム";

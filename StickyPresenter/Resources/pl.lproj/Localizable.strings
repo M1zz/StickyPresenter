@@ -82,6 +82,9 @@
 "timer.theme" = "Motyw: %@";
 "timer.widgetSize" = "Rozmiar widżetu: %@ (%d pt)";
 "timer.restartAs" = "Uruchom ten minutnik ponownie jako %@";
+"timer.next.title" = "Następny minutnik";
+"timer.again" = "Uruchom %@ ponownie";
+"timer.next.dismiss" = "Zamknij opcje";
 
 /* ===== Theme names ===== */
 "theme.system" = "Systemowy";

@@ -82,6 +82,9 @@
 "timer.theme" = "Тема: %@";
 "timer.widgetSize" = "Размер виджета: %@ (%d пт)";
 "timer.restartAs" = "Перезапустить этот таймер как %@";
+"timer.next.title" = "Следующий таймер";
+"timer.again" = "Снова %@";
+"timer.next.dismiss" = "Закрыть варианты";
 
 /* ===== Theme names ===== */
 "theme.system" = "Системная";

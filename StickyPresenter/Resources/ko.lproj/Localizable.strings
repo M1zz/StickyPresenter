@@ -82,6 +82,9 @@
 "timer.theme" = "테마: %@";
 "timer.widgetSize" = "위젯 크기: %1$@ (%2$dpt)";
 "timer.restartAs" = "%@ 로 다시 시작";
+"timer.next.title" = "다음 타이머";
+"timer.again" = "%@ 다시 시작";
+"timer.next.dismiss" = "선택지 닫기";
 
 /* ===== 테마 이름 ===== */
 "theme.system" = "시스템";

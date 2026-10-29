@@ -11,7 +11,7 @@ App Store Connect 의 '이 버전의 새로운 기능' 칸에 그대로 올린�
 일본어와 독일어 등 22개 언어를 새로 지원해요
 처음 켜면 시작 안내가 차근차근 도와줘요
 리모컨이 안 붙으면 이유와 해결법을 알려줘요
-고마울 때 개발자에게 작은 팁을 보낼 수 있어요
+타이머가 끝나면 다음 타이머를 바로 골라요
 모든 버튼을 VoiceOver로 쓸 수 있어요
 
 ### App Store (en-US)
@@ -19,7 +19,7 @@ App Store Connect 의 '이 버전의 새로운 기능' 칸에 그대로 올린�
 Now in 22 new languages, like Japanese
 A welcome guide helps you get set up
 Remote now explains why it can't connect
-Say thanks to the developer with a tip
+Pick your next timer the moment one ends
 Every button now works with VoiceOver
 
 ### App Store (en-GB)
@@ -27,7 +27,7 @@ Every button now works with VoiceOver
 Now in 22 new languages, such as German
 A welcome guide helps you get started
 The remote now says why it can't connect
-Say thanks to the developer with a tip
+Pick your next timer the moment one ends
 Every button now works with VoiceOver
 
 ### 앱스토어 (일본어)
@@ -35,7 +35,7 @@ Every button now works with VoiceOver
 ドイツ語や中国語など22の言語に新しく対応しました
 初めて起動すると、ようこそガイドがご案内します
 リモコンがつながらない時、理由と対処法を表示します
-感謝の気持ちを小さなチップで開発者に送れます
+タイマーが終わったら次をすぐ選べます
 すべてのボタンがVoiceOverで使えます
 
 ### 앱스토어 (zh-Hans)
@@ -43,7 +43,7 @@ Every button now works with VoiceOver
 新增支持日语、德语等22种语言
 首次启动时，欢迎指南会一步步引导你
 遥控器连不上时，会告诉你原因和解决办法
-可以给开发者送一点小费表达感谢
+计时结束后可立即选择下一个计时器
 所有按钮都支持 VoiceOver
 
 ### 앱스토어 (스페인어)
@@ -51,7 +51,7 @@ Every button now works with VoiceOver
 Ahora en 22 idiomas nuevos, como alemán
 Una guía inicial te ayuda a empezar
 Si el control no conecta, verás por qué
-Deja una propina al desarrollador
+Elige ya el siguiente temporizador
 Cada botón funciona con VoiceOver
 
 ### 앱스토어 (독일어)
@@ -59,7 +59,7 @@ Cada botón funciona con VoiceOver
 Jetzt in 22 weiteren Sprachen verfügbar
 Eine Einführung hilft dir beim Start
 Fernbedienung erklärt Verbindungsfehler
-Sag Danke mit einem kleinen Trinkgeld
+Gleich den nächsten Timer wählen
 Alle Tasten funktionieren mit VoiceOver
 
 ### 앱스토어 (프랑스어)
@@ -67,7 +67,7 @@ Alle Tasten funktionieren mit VoiceOver
 Disponible en 22 nouvelles langues
 Un guide d’accueil vous aide à démarrer
 La télécommande explique ce qui bloque
-Laissez un pourboire au développeur
+Choisissez vite le minuteur suivant
 Chaque bouton fonctionne avec VoiceOver
 
 ### 앱스토어 (이탈리아어)
@@ -75,7 +75,7 @@ Chaque bouton fonctionne avec VoiceOver
 Ora disponibile in 22 nuove lingue
 Una guida iniziale ti aiuta a cominciare
 Il telecomando ti dice cosa non va
-Lascia una mancia allo sviluppatore
+Scegli subito il prossimo timer
 Ogni pulsante funziona con VoiceOver
 
 ### 앱스토어 (pt-BR)
@@ -83,7 +83,7 @@ Ogni pulsante funziona con VoiceOver
 Agora disponível em 22 novos idiomas
 Um guia inicial ajuda você a começar
 O controle mostra por que não conecta
-Deixe uma gorjeta para o desenvolvedor
+Escolha o próximo timer ao terminar
 Todos os botões funcionam com VoiceOver
 
 ### 앱스토어 (러시아어)
@@ -91,7 +91,7 @@ Todos os botões funcionam com VoiceOver
 Теперь доступно ещё на 22 языках
 Пошаговое знакомство при первом запуске
 Пульт подскажет, почему нет связи
-Можно оставить разработчику чаевые
+Сразу выбирайте следующий таймер
 Все кнопки работают с VoiceOver
 
 ### 앱스토어 (zh-Hant)
@@ -99,7 +99,7 @@ Todos os botões funcionam com VoiceOver
 新增支援日文、德文等22種語言
 首次開啟時，歡迎導覽會一步步帶你上手
 遙控連不上時，會告訴你原因和解決方法
-可以送開發者一點小費表達感謝
+計時結束後可立即選擇下一個計時器
 所有按鈕都支援 VoiceOver
 
 ### 앱스토어 (태국어)
@@ -107,7 +107,7 @@ Todos os botões funcionam com VoiceOver
 รองรับเพิ่ม 22 ภาษา เช่น ญี่ปุ่น
 คู่มือต้อนรับช่วยแนะนำตอนเปิดครั้งแรก
 รีโมตบอกสาเหตุเมื่อเชื่อมต่อไม่ได้
-ส่งทิปเล็กๆ ให้นักพัฒนาเพื่อขอบคุณได้
+เลือกตัวจับเวลาถัดไปได้ทันทีเมื่อหมดเวลา
 ทุกปุ่มใช้งานกับ VoiceOver ได้แล้ว
 
 ### 앱스토어 (베트남어)
@@ -115,7 +115,7 @@ Todos os botões funcionam com VoiceOver
 Hỗ trợ thêm 22 ngôn ngữ như tiếng Nhật
 Hướng dẫn chào mừng giúp bạn bắt đầu
 Điều khiển cho biết vì sao không kết nối
-Gửi nhà phát triển chút tiền tip cảm ơn
+Chọn ngay hẹn giờ tiếp theo khi hết giờ
 Mọi nút đều dùng được với VoiceOver
 
 ### 앱스토어 (체코어)
@@ -123,7 +123,7 @@ Mọi nút đều dùng được với VoiceOver
 Nově dostupné ve 22 dalších jazycích
 Úvodní průvodce vám pomůže začít
 Ovladač vysvětlí, proč se nepřipojí
-Poděkujte vývojáři malým spropitným
+Po skončení hned vyberete další časovač
 Všechna tlačítka fungují s VoiceOverem
 
 ### 앱스토어 (덴마크어)
@@ -131,7 +131,7 @@ Všechna tlačítka fungují s VoiceOverem
 Nu tilgængelig på 22 nye sprog
 En velkomstguide hjælper dig i gang
 Fjernbetjeningen siger, hvad der er galt
-Giv udvikleren lidt drikkepenge som tak
+Vælg næste timer, så snart en slutter
 Alle knapper virker med VoiceOver
 
 ### 앱스토어 (그리스어)
@@ -139,7 +139,7 @@ Alle knapper virker med VoiceOver
 Τώρα διαθέσιμο σε 22 νέες γλώσσες
 Ο οδηγός έναρξης σας βοηθά να ξεκινήσετε
 Το τηλεχειριστήριο λέει τι φταίει
-Στείλτε ένα φιλοδώρημα στον δημιουργό
+Διαλέξτε αμέσως το επόμενο χρονόμετρο
 Όλα τα κουμπιά λειτουργούν με VoiceOver
 
 ### 앱스토어 (핀란드어)
@@ -147,7 +147,7 @@ Alle knapper virker med VoiceOver
 Nyt saatavilla 22 uudella kielellä
 Aloitusopas auttaa sinut alkuun
 Kauko-ohjain kertoo yhteysongelman syyn
-Kiitä kehittäjää pienellä tipillä
+Valitse seuraava ajastin heti lopussa
 Kaikki painikkeet toimivat VoiceOverilla
 
 ### 앱스토어 (인도네시아어)
@@ -155,7 +155,7 @@ Kaikki painikkeet toimivat VoiceOverilla
 Kini hadir dalam 22 bahasa baru
 Panduan sambutan membantu Anda memulai
 Remote menjelaskan jika gagal terhubung
-Beri tip kecil untuk pengembang
+Langsung pilih timer berikutnya
 Semua tombol mendukung VoiceOver
 
 ### 앱스토어 (노르웨이어(보크말))
@@ -163,7 +163,7 @@ Semua tombol mendukung VoiceOver
 Nå tilgjengelig på 22 nye språk
 En velkomstguide hjelper deg i gang
 Fjernkontrollen sier hva som er galt
-Gi utvikleren litt tips som takk
+Velg neste tidtaker med en gang
 Alle knapper virker med VoiceOver
 
 ### 앱스토어 (네덜란드어)
@@ -171,7 +171,7 @@ Alle knapper virker med VoiceOver
 Nu beschikbaar in 22 nieuwe talen
 Een welkomstgids helpt je op weg
 De afstandsbediening zegt wat er misgaat
-Bedank de maker met een kleine fooi
+Kies direct je volgende timer
 Alle knoppen werken met VoiceOver
 
 ### 앱스토어 (폴란드어)
@@ -179,7 +179,7 @@ Alle knoppen werken met VoiceOver
 Teraz dostępna w 22 nowych językach
 Przewodnik powitalny pomoże Ci zacząć
 Pilot podpowie, dlaczego nie łączy
-Podziękuj twórcy drobnym napiwkiem
+Od razu wybierz kolejny minutnik
 Wszystkie przyciski działają z VoiceOver
 
 ### 앱스토어 (스웨덴어)
@@ -187,7 +187,7 @@ Wszystkie przyciski działają z VoiceOver
 Nu tillgänglig på 22 nya språk
 En välkomstguide hjälper dig igång
 Fjärrkontrollen säger vad som är fel
-Tacka utvecklaren med lite dricks
+Välj nästa timer så fort en är klar
 Alla knappar fungerar med VoiceOver
 
 ### 앱스토어 (튀르키예어)
@@ -195,7 +195,7 @@ Alla knappar fungerar med VoiceOver
 Artık 22 yeni dilde kullanılabilir
 Karşılama rehberi kurulumda yol gösterir
 Kumanda neden bağlanamadığını söyler
-Geliştiriciye küçük bir bahşiş bırakın
+Sonraki zamanlayıcıyı hemen seçin
 Tüm düğmeler VoiceOver ile çalışır
 
 ## 1.1.0

@@ -82,6 +82,9 @@
 "timer.theme" = "主题：%@";
 "timer.widgetSize" = "小组件大小：%@ (%dpt)";
 "timer.restartAs" = "以 %@ 重新开始此计时器";
+"timer.next.title" = "下一个计时器";
+"timer.again" = "再来一次 %@";
+"timer.next.dismiss" = "关闭选项";
 
 /* ===== Theme names ===== */
 "theme.system" = "跟随系统";

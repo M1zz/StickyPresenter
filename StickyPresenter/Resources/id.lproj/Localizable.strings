@@ -82,6 +82,9 @@
 "timer.theme" = "Tema: %@";
 "timer.widgetSize" = "Ukuran widget: %@ (%dpt)";
 "timer.restartAs" = "Mulai ulang timer ini sebagai %@";
+"timer.next.title" = "Timer berikutnya";
+"timer.again" = "Mulai %@ lagi";
+"timer.next.dismiss" = "Tutup pilihan";
 
 /* ===== Theme names ===== */
 "theme.system" = "Sistem";

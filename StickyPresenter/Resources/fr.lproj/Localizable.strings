@@ -82,6 +82,9 @@
 "timer.theme" = "Thème : %@";
 "timer.widgetSize" = "Taille du widget : %@ (%d pt)";
 "timer.restartAs" = "Relancer ce minuteur sur %@";
+"timer.next.title" = "Minuteur suivant";
+"timer.again" = "Relancer %@";
+"timer.next.dismiss" = "Fermer les choix";
 
 /* ===== Theme names ===== */
 "theme.system" = "Système";

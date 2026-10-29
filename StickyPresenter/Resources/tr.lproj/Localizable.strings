@@ -82,6 +82,9 @@
 "timer.theme" = "Tema: %@";
 "timer.widgetSize" = "Widget boyutu: %@ (%d pt)";
 "timer.restartAs" = "Bu zamanlayıcıyı %@ olarak yeniden başlat";
+"timer.next.title" = "Sonraki zamanlayıcı";
+"timer.again" = "%@ yeniden başlat";
+"timer.next.dismiss" = "Seçenekleri kapat";
 
 /* ===== Theme names ===== */
 "theme.system" = "Sistem";

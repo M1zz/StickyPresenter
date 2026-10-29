@@ -82,6 +82,9 @@
 "timer.theme" = "Chủ đề: %@";
 "timer.widgetSize" = "Kích thước widget: %@ (%dpt)";
 "timer.restartAs" = "Bắt đầu lại bộ hẹn giờ này thành %@";
+"timer.next.title" = "Hẹn giờ tiếp theo";
+"timer.again" = "Chạy lại %@";
+"timer.next.dismiss" = "Đóng lựa chọn";
 
 /* ===== Theme names ===== */
 "theme.system" = "Hệ thống";

@@ -82,6 +82,9 @@
 "timer.theme" = "Tema: %@";
 "timer.widgetSize" = "Dimensione widget: %@ (%dpt)";
 "timer.restartAs" = "Riavvia questo timer come %@";
+"timer.next.title" = "Prossimo timer";
+"timer.again" = "Riavvia %@";
+"timer.next.dismiss" = "Chiudi le opzioni";
 
 /* ===== Theme names ===== */
 "theme.system" = "Sistema";

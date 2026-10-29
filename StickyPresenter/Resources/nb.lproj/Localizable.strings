@@ -82,6 +82,9 @@
 "timer.theme" = "Tema: %@";
 "timer.widgetSize" = "Widget-størrelse: %@ (%d pt)";
 "timer.restartAs" = "Start denne tidtakeren på nytt som %@";
+"timer.next.title" = "Neste tidtaker";
+"timer.again" = "Start %@ igjen";
+"timer.next.dismiss" = "Lukk valg";
 
 /* ===== Theme names ===== */
 "theme.system" = "System";

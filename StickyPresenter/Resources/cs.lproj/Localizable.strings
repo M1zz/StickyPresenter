@@ -82,6 +82,9 @@
 "timer.theme" = "Motiv: %@";
 "timer.widgetSize" = "Velikost widgetu: %@ (%d b.)";
 "timer.restartAs" = "Spustit tento časovač znovu jako %@";
+"timer.next.title" = "Další časovač";
+"timer.again" = "Znovu spustit %@";
+"timer.next.dismiss" = "Zavřít možnosti";
 
 /* ===== Theme names ===== */
 "theme.system" = "Systémový";
