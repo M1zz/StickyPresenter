@@ -1,0 +1,165 @@
+{
+  "title": "StickyPresenter: notes and a timer that float above full-screen Keynote",
+  "description": "A Mac menu bar app that keeps your speaker notes, a countdown timer and a teleprompter on top of full-screen Keynote. Every feature is free.",
+  "hero": {
+    "headline": "Your script and your time,\nright on the slide",
+    "lead": "Put Keynote in full screen and your sticky notes and timer stay on top of it. They never take focus from the presentation app, so your clicker still advances the slides.",
+    "cta": "Get it free on the Mac App Store",
+    "note": "Every feature is free. Requires macOS 14 or later."
+  },
+  "demo": {
+    "title": "Put it on a slide",
+    "lead": "Type a time the way you would in the app. Tap 15s to see how the widget warns you as time runs out.",
+    "input": "Timer length",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "h": "%d hr",
+    "m": "%d min",
+    "s": "%d sec",
+    "focus": "Focus",
+    "rest": "Break",
+    "invalid": "That format isn't recognized",
+    "almost": "Almost out of time",
+    "done": "Time's up",
+    "slide": "Q3 results",
+    "note": "Say hi, walk through the agenda\nPause 3 s on the revenue chart\nLeave 5 min for questions",
+    "noteLabel": "Sticky note",
+    "colorLabel": "Note color",
+    "colors": ["Yellow", "Pink", "Green", "Blue", "Purple", "Orange"],
+    "footnote": "This is a mock-up of the screen. In the app, the note and timer float like this over full-screen Keynote or PowerPoint."
+  },
+  "problem": {
+    "title": "Where do your notes and the clock go while you present?",
+    "text": "Presenter view eats a second screen, and glancing at your watch is something the audience always notices. Maybe you've taped a paper note to the laptop and watched it fall off. StickyPresenter pins your script and the time remaining right over the slide, where your eyes already are."
+  },
+  "features": [
+    {
+      "title": "One glance tells you how long is left",
+      "text": "A square widget in the corner shows the time remaining. It turns red as the end gets close, then chimes and flashes its border when time is up.\nType times the easy way, like `5:30` or `1h 20m`, or type `25/5` for a Pomodoro that cycles between focus and break. Open a timer in its own window to share just that window over screen sharing or AirPlay.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Read your script and keep your eyes on the camera",
+      "text": "The teleprompter scrolls your script at the speed you set and stops on its own at the end. Copy your script, press `⌘⌃P`, and it opens with that text.\nThere's a mirror mode for teleprompter rigs with beam-splitter glass, and your speed and font size are still there next time.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Never leave the slide",
+      "text": "It runs quietly in the menu bar, with no Dock icon and no extra windows to manage. Shortcuts like `⌘⌃N` for a new note and `⌘⌃T` for timers work even in full-screen Keynote.\nOn stage, the free iPhone app Remote Controller for Sticky lets you start and pause the timer, and move the widget off a slide it's covering.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Open the app",
+        "text": "A note icon appears in the menu bar, and a short guide opens the first time."
+      },
+      {
+        "title": "Add a note and a timer",
+        "text": "Copy your script and press `⌘⌃V`, then type your talk length into the timer field."
+      },
+      {
+        "title": "Go full screen",
+        "text": "Your note and timer stay right on top."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Shortcuts and time formats",
+    "rows": [
+      ["⌘⌃N", "New sticky note"],
+      ["⌘⌃V", "New note from the clipboard"],
+      ["⌘⌃T", "Show or hide timers"],
+      ["⌘⌃B", "Start a Pomodoro (25 min focus, 5 min break)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Show or hide all notes"],
+      ["10", "A plain number means minutes"],
+      ["5:30 · 1:15:00", "Minutes:seconds, hours:minutes:seconds"],
+      ["1h 20m · 45s", "With units"],
+      ["25/5", "Focus/break, repeating until you stop it"]
+    ],
+    "note": "Every shortcut uses Command (⌘) and Control (⌃) together and works while you're in another app. Timers go up to 99:59:59."
+  },
+  "pricing": {
+    "title": "It's all free",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Sticky notes in six colors, with opacity, font size and an edit lock",
+        "Countdown timers, Pomodoro and a Notification Center widget",
+        "Teleprompter with mirror mode",
+        "Background music that starts with the timer",
+        "Shortcuts that work from any app"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Start, pause, and add or take away 30 seconds",
+        "Resize and move the widget from the stage",
+        "One tap for a 3, 5, 10 or 15 minute timer"
+      ],
+      "note": "A separate free app. Needs iOS 17 or later and StickyPresenter running on a Mac on the same Wi‑Fi."
+    },
+    "note": "Nothing is locked behind a purchase. If it helps you, you can leave the developer a tip in Settings."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Can I show just the timer over screen sharing or mirroring?",
+        "a": "Yes. Use the Window button on the timer's row to open it as a regular window. It then shows up in the window list for screen sharing and AirPlay, so you can share that window alone."
+      },
+      {
+        "q": "I hid a timer widget and can't find it.",
+        "a": "Hover over that timer's row in the timer window and the widget's spot is outlined with a dashed line. Click Align to bring it back next to the timer window."
+      },
+      {
+        "q": "I closed a note by mistake.",
+        "a": "Use Reopen Closed Note in the menu bar to bring back any of your last 20. Notes save as you type and return to the same spot when the app restarts."
+      },
+      {
+        "q": "A shortcut doesn't work.",
+        "a": "If the shortcut table in the guide marks it as in use by another app, that app grabbed it first. Quit that app and it works again. No Accessibility permission is needed."
+      },
+      {
+        "q": "Why does the Chameleon theme ask for Screen Recording?",
+        "a": "Chameleon reads the color of the screen behind the widget and matches it, which needs that permission. Nothing is saved or sent. Without it, the System, Light and Dark themes work as usual."
+      },
+      {
+        "q": "How do I add background music?",
+        "a": "Pick a mood (Focus, Calm, Jazz or Upbeat) in the music bar at the bottom of the timer window and the app creates a folder for each mood. Drop your own tracks in and they play in order alongside the timer. No music comes with the app."
+      },
+      {
+        "q": "The iPhone remote can't find my Mac.",
+        "a": "Check these in order: StickyPresenter is running on the Mac (look for the menu bar icon); both devices are on the same Wi‑Fi, not a guest network or cellular; Local Network is allowed for the app under Privacy & Security on both the iPhone and the Mac; and VPN is off."
+      },
+      {
+        "q": "The remote says the pairing code is wrong.",
+        "a": "Enter the four-digit code currently shown under Remote in the Mac's menu bar. If you clicked New Pairing Code, only the new one works. After pairing once, the remote connects as soon as you open it."
+      },
+      {
+        "q": "Could someone else control my timer?",
+        "a": "Not without your code. The Mac only accepts remotes that entered the right code, over an encrypted direct connection on your local network. If you've shown the code to someone, use New Pairing Code or Forget Paired Remotes under Remote in the menu bar."
+      },
+      {
+        "q": "Where are my notes and scripts stored?",
+        "a": "Only on this Mac. There's no account and no ads, and nothing goes online except anonymous usage stats and feedback you choose to send."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Stop looking for the clock\nin your next talk",
+    "cta": "Get it free on the Mac App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Questions, bugs or feature ideas? Write to {email}."
+  }
+}

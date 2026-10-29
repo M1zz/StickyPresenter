@@ -1,104 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="在全屏 Keynote 上方悬浮显示便签、倒计时和提词器的 macOS 应用。" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter：浮在 Keynote 全屏上方的演讲便签和计时器</title>
+  <meta name="description" content="把演讲稿便签、倒计时和提词器放在 Keynote 全屏画面上方的 Mac 菜单栏 App。所有功能免费。">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter：浮在 Keynote 全屏上方的演讲便签和计时器">
+  <meta property="og:description" content="把演讲稿便签、倒计时和提词器放在 Keynote 全屏画面上方的 Mac 菜单栏 App。所有功能免费。">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/zh-Hans/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="StickyPresenter 应用图标" />
-    <h1>StickyPresenter</h1>
-    <p>为演讲准备的悬浮便签、计时器与提词器</p>
-    <div class="actions">
-      <a class="btn" href="support.html">支持</a>
-      <a class="btn" href="privacy.html">隐私政策</a>
-      <a class="btn" href="remote.html">iPhone 遥控器</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hans/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">语言</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="zh-Hans">
-        <h2>讲稿和时间，始终在眼前</h2>
-        <p>StickyPresenter 是一款轻巧的 macOS 菜单栏应用。它让便签、倒计时和提词器悬浮在全屏 Keynote
-        或任何演示文稿之上，演讲时备注和时间一目了然。</p>
-        <ul>
-          <li><strong>悬浮便签</strong>：始终显示在全屏幻灯片上方，提供六种颜色，可调整透明度和字号，还能锁定，避免误改。</li>
-          <li><strong>计时器</strong>：可自由调整大小的倒计时小组件，时间到时会响起提示音，边框也会闪动提醒。还可以在单独的窗口中打开，通过屏幕共享或 AirPlay 分享出去。</li>
-          <li><strong>提词器</strong>：讲稿自动滚动，速度和字号均可调节，并支持镜像模式。</li>
-          <li><strong>常驻菜单栏</strong>：没有程序坞图标，也不会多出需要照看的窗口。</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>讲稿和剩余时间<br>就在幻灯片上</h1>
+        <p class="lead">Keynote 切到全屏后，便签和计时器依然浮在上面。它们不会抢走演示 App 的焦点，翻页笔照常翻页。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">在 Mac App Store 免费下载</a><a class="try" href="#try">放到幻灯片上试试 ↓</a></div>
+        <p class="muted small">所有功能免费。需要 macOS 14 或更高版本。</p>
       </div>
+      <div class="plain"><img src="../img/zh-Hans/01-sticky-notes.jpg" alt="讲稿和剩余时间 就在幻灯片上" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">配套应用</p>
-        <h2>iPhone 版 Remote Controller</h2>
-        <p>演讲时，Mac 往往不在手边。<strong>Remote Controller</strong> 把计时器交到你手中：开始和暂停、加 30 秒、
-        调整小组件大小；如果它挡住了幻灯片，还能把它拖到 Mac 屏幕上的其他位置。它通过局域网连接，
-        无需注册账户，也无需任何设置。</p>
-        <p><a href="remote.html">了解更多 →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>放到幻灯片上试试</h2>
+      <p class="muted">用和 App 里一样的写法输入时间。点一下 15s，就能马上看到快结束时小组件怎样提醒你。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;放到幻灯片上试试&quot;, &quot;lead&quot;: &quot;用和 App 里一样的写法输入时间。点一下 15s，就能马上看到快结束时小组件怎样提醒你。&quot;, &quot;input&quot;: &quot;计时时长&quot;, &quot;start&quot;: &quot;开始&quot;, &quot;pause&quot;: &quot;暂停&quot;, &quot;resume&quot;: &quot;继续&quot;, &quot;reset&quot;: &quot;重置&quot;, &quot;h&quot;: &quot;%d小时&quot;, &quot;m&quot;: &quot;%d分钟&quot;, &quot;s&quot;: &quot;%d秒&quot;, &quot;focus&quot;: &quot;专注&quot;, &quot;rest&quot;: &quot;休息&quot;, &quot;invalid&quot;: &quot;无法识别这种格式&quot;, &quot;almost&quot;: &quot;快到时间了&quot;, &quot;done&quot;: &quot;时间到&quot;, &quot;slide&quot;: &quot;第三季度业绩汇报&quot;, &quot;note&quot;: &quot;打招呼，介绍目录\n营收图表处停 3 秒\n留 5 分钟问答&quot;, &quot;noteLabel&quot;: &quot;便签&quot;, &quot;colorLabel&quot;: &quot;便签颜色&quot;, &quot;colors&quot;: [&quot;黄色&quot;, &quot;粉色&quot;, &quot;绿色&quot;, &quot;蓝色&quot;, &quot;紫色&quot;, &quot;橙色&quot;], &quot;footnote&quot;: &quot;这里只是模拟画面。在 App 中，便签和计时器会这样浮在 Keynote 或 PowerPoint 的全屏画面上方。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>演讲时，讲稿和时间放在哪里？</h2>
+      <p>演讲者备注要多占一块屏幕，低头看手表又会被台下注意到。贴在笔记本上的纸条，说不定也掉过。StickyPresenter 把讲稿和剩余时间直接贴在幻灯片上方，就在你视线所及之处。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>瞄一眼就知道还剩多久</h2>
+        <p>屏幕角落的方形小组件显示剩余时间。快结束时会变红，时间到了会响提示音并闪烁边框。<br>时间可以随手写成 <code>5:30</code> 或 <code>1h 20m</code>，写 <code>25/5</code> 就是专注与休息交替的番茄钟。把计时器单独开成窗口，屏幕共享或 AirPlay 时可以只投这一个窗口。</p>
       </div>
+      <div class="plain"><img src="../img/zh-Hans/02-timers.jpg" alt="瞄一眼就知道还剩多久" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>看着镜头读讲稿</h2>
+        <p>提词器按你设定的速度滚动讲稿，到结尾自动停下。复制讲稿后按 <code>⌘⌃P</code>，就会直接用这段文字打开。<br>还有供分光镜提词设备使用的左右镜像，速度和字号下次打开时依旧保留。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hans/03-teleprompter.jpg" alt="看着镜头读讲稿" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>不用离开幻灯片</h2>
+        <p>它安静地待在菜单栏里，没有程序坞图标，也没有要照看的窗口。<code>⌘⌃N</code> 新建便签、<code>⌘⌃T</code> 打开计时器等快捷键，在全屏演示时也能立即响应。<br>在台上，用免费的 iPhone App Remote Controller for Sticky 就能开始或暂停计时，还能把挡住幻灯片的小组件挪开。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hans/04-menu-bar.jpg" alt="不用离开幻灯片" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三步开始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>打开 App</h3><p>菜单栏会出现便签图标，第一次打开时会显示使用指南。</p></li>
+<li class="card"><span class="n">2</span><h3>放好便签和计时器</h3><p>复制讲稿后按 <code>⌘⌃V</code>，再在计时栏里填上演讲时长。</p></li>
+<li class="card"><span class="n">3</span><h3>幻灯片切到全屏</h3><p>便签和计时器依然留在上方。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>快捷键和时间写法</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>新建便签</dd></div><div><dt>⌘⌃V</dt><dd>用剪贴板内容新建便签</dd></div><div><dt>⌘⌃T</dt><dd>显示或隐藏计时器</dd></div><div><dt>⌘⌃B</dt><dd>开始番茄钟（专注 25 分钟，休息 5 分钟）</dd></div><div><dt>⌘⌃P</dt><dd>提词器</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>显示或隐藏所有便签</dd></div><div><dt>10</dt><dd>只写数字表示分钟（10 分钟）</dd></div><div><dt>5:30 · 1:15:00</dt><dd>分:秒，时:分:秒</dd></div><div><dt>1h 20m · 45s</dt><dd>带单位</dd></div><div><dt>25/5</dt><dd>专注/休息，循环到你停止为止</dd></div></dl>
+      </div>
+      <p class="muted">所有快捷键都是同时按 Command（⌘）和 Control（⌃），在其他 App 里也能用。计时最长可设为 99:59:59。</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>全部免费</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter（Mac）</h3>
+          <ul><li>便签：六种颜色，可调透明度和字号，可锁定编辑</li><li>倒计时、番茄钟和通知中心小组件</li><li>提词器与左右镜像</li><li>随计时器一起播放的背景音乐</li><li>在任何 App 中都能用的快捷键</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky（iPhone）</h3>
+          <ul><li>开始、暂停，增减 30 秒</li><li>在台上调整小组件的大小和位置</li><li>一键开始 3、5、10、15 分钟计时</li></ul>
+          <p class="muted">另一款免费 App。需要 iOS 17 或更高版本，并且同一 Wi‑Fi 下的 Mac 上正在运行 StickyPresenter。</p>
+        </div>
+      </div>
+      <p class="muted">没有需要付费才能解锁的功能。如果觉得好用，可以在设置里给开发者打赏。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>常见问题</h2>
+      <div class="faq"><details><summary>屏幕共享或镜像时能只显示计时器吗？</summary><p>可以。点计时器那一行的“窗口”按钮，把它开成普通窗口，它就会出现在屏幕共享和 AirPlay 的窗口列表里，可以只共享这个窗口。</p></details>
+<details><summary>隐藏了计时器小组件，找不到了。</summary><p>在计时器窗口里把鼠标移到那一行上，小组件的位置会用虚线标出来。点“对齐”就能把它移回计时器窗口旁边。</p></details>
+<details><summary>不小心把便签关掉了。</summary><p>在菜单栏选“重新打开已关闭的便签”，最多可以找回最近 20 张。便签随写随存，重新打开 App 后仍在原来的位置。</p></details>
+<details><summary>快捷键没反应。</summary><p>使用指南的快捷键列表里标着“已被其他 App 占用”的，说明另一个 App 先用了它。退出那个 App 后就能恢复。不需要辅助功能权限。</p></details>
+<details><summary>变色龙主题为什么要屏幕录制权限？</summary><p>变色龙会读取小组件背后屏幕的颜色来调整配色，所以需要这项权限。画面不会被保存或发送。不授权的话，跟随系统、浅色、深色主题照样可用。</p></details>
+<details><summary>背景音乐怎么添加？</summary><p>在计时器窗口底部的音乐栏选一种氛围（专注、舒缓、爵士、轻快），App 会为每种氛围建好文件夹。把你自己的音乐放进去，就会随计时器依次播放。App 本身不带音乐。</p></details>
+<details><summary>iPhone 遥控器找不到 Mac。</summary><p>请依次检查：Mac 上的 StickyPresenter 是否在运行（看菜单栏图标）；两台设备是否连在同一个 Wi‑Fi（访客网络和蜂窝数据不行）；iPhone 和 Mac 的“隐私与安全性”中是否都允许了“本地网络”；VPN 是否已关闭。</p></details>
+<details><summary>遥控器提示配对码不对。</summary><p>请输入 Mac 菜单栏“遥控器”里当前显示的四位数配对码。如果点过“生成新配对码”，就只有新码有效。配对一次后，下次打开 App 就会自动连上。</p></details>
+<details><summary>别人会不会控制我的计时器？</summary><p>不知道配对码就不行。Mac 只接受输入了正确配对码的遥控器，并且只在本地网络内通过加密直连通信。如果配对码被别人看到了，可以在菜单栏“遥控器”里选“生成新配对码”或“忘记已配对的遥控器”。</p></details>
+<details><summary>便签和讲稿存在哪里？</summary><p>只存在这台 Mac 上。没有账号，也没有广告。除了匿名使用统计和你主动发送的反馈，不会有任何内容上传。</p></details></div>
+      <p class="contact">有疑问、遇到故障或想提建议，请发邮件到 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>下一次演讲<br>不用再找时钟</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">在 Mac App Store 免费下载</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">支持</a> · <a href="privacy.html">隐私政策</a> · <a href="remote.html">iPhone 遥控器</a>
+    <nav id="languages" class="langs" aria-label="语言"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隐私政策</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

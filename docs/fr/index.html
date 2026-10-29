@@ -1,107 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Des notes flottantes, des minuteurs et un prompteur qui restent visibles au-dessus de Keynote en plein écran, sur macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter : notes et minuteur au-dessus de Keynote en plein écran</title>
+  <meta name="description" content="App de barre des menus pour Mac qui garde vos notes, un compte à rebours et un prompteur au-dessus de Keynote en plein écran. Tout est gratuit.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter : notes et minuteur au-dessus de Keynote en plein écran">
+  <meta property="og:description" content="App de barre des menus pour Mac qui garde vos notes, un compte à rebours et un prompteur au-dessus de Keynote en plein écran. Tout est gratuit.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/fr/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/fr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Icône de l’app StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Notes flottantes, minuteurs et prompteur pour vos présentations</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Assistance</a>
-      <a class="btn" href="privacy.html">Confidentialité</a>
-      <a class="btn" href="remote.html">Télécommande iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr" aria-current="true">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="bar">
+    <a class="brand" href="../fr/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Langue</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="fr">
-        <h2>Votre texte et votre chrono, toujours sous les yeux</h2>
-        <p>StickyPresenter est une app légère qui se loge dans la barre des menus de macOS.
-        Elle affiche des notes, des minuteurs et un prompteur par-dessus Keynote en plein écran
-        ou n’importe quelle présentation&nbsp;: vos notes et votre timing restent visibles pendant
-        que vous présentez.</p>
-        <ul>
-          <li><strong>Notes flottantes</strong>&nbsp;: elles restent au premier plan, même sur des diapositives en plein écran. Six couleurs, opacité et taille de police réglables, et un verrou pour éviter toute modification accidentelle.</li>
-          <li><strong>Minuteurs</strong>&nbsp;: des widgets de compte à rebours redimensionnables, avec un carillon et un contour qui clignote quand le temps est écoulé. Ouvrez-en un dans sa propre fenêtre pour le partager via le partage d’écran ou AirPlay.</li>
-          <li><strong>Prompteur</strong>&nbsp;: un texte qui défile tout seul, avec vitesse et taille de police réglables, ainsi qu’un mode miroir.</li>
-          <li><strong>Dans la barre des menus</strong>&nbsp;: pas d’icône dans le Dock, pas de fenêtres supplémentaires à gérer.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Votre texte et votre temps,<br>sur la diapo</h1>
+        <p class="lead">Passez Keynote en plein écran : vos notes et votre minuteur restent par-dessus. Ils ne volent jamais le focus à l’app de présentation, votre télécommande fait donc toujours défiler les diapos.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Télécharger gratuitement sur le Mac App Store</a><a class="try" href="#try">Essayez sur une diapo ↓</a></div>
+        <p class="muted small">Toutes les fonctions sont gratuites. macOS 14 ou ultérieur.</p>
       </div>
+      <div class="plain"><img src="../img/fr/01-sticky-notes.jpg" alt="Votre texte et votre temps, sur la diapo" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">App compagnon</p>
-        <h2>Remote Controller pour iPhone</h2>
-        <p>Pendant votre intervention, votre Mac est hors de portée. <strong>Remote Controller</strong>
-        vous met le minuteur en main&nbsp;: lancez-le ou mettez-le en pause, ajoutez 30&nbsp;secondes,
-        redimensionnez le widget ou déplacez-le ailleurs sur l’écran du Mac s’il cache une diapositive.
-        La connexion passe par votre réseau local, sans compte et sans aucun réglage.</p>
-        <p><a href="remote.html">En savoir plus →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Essayez sur une diapo</h2>
+      <p class="muted">Tapez une durée comme dans l’app. Touchez 15s pour voir comment le widget vous prévient quand le temps file.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Essayez sur une diapo&quot;, &quot;lead&quot;: &quot;Tapez une durée comme dans l’app. Touchez 15s pour voir comment le widget vous prévient quand le temps file.&quot;, &quot;input&quot;: &quot;Durée du minuteur&quot;, &quot;start&quot;: &quot;Démarrer&quot;, &quot;pause&quot;: &quot;Pause&quot;, &quot;resume&quot;: &quot;Reprendre&quot;, &quot;reset&quot;: &quot;Réinitialiser&quot;, &quot;h&quot;: &quot;%d h&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d s&quot;, &quot;focus&quot;: &quot;Concentration&quot;, &quot;rest&quot;: &quot;Pause&quot;, &quot;invalid&quot;: &quot;Format non reconnu&quot;, &quot;almost&quot;: &quot;C’est bientôt fini&quot;, &quot;done&quot;: &quot;Le temps est écoulé&quot;, &quot;slide&quot;: &quot;Résultats du 3e trimestre&quot;, &quot;note&quot;: &quot;Saluer, présenter le plan\nMarquer 3 s sur le graphique des ventes\nGarder 5 min pour les questions&quot;, &quot;noteLabel&quot;: &quot;Note&quot;, &quot;colorLabel&quot;: &quot;Couleur de la note&quot;, &quot;colors&quot;: [&quot;Jaune&quot;, &quot;Rose&quot;, &quot;Vert&quot;, &quot;Bleu&quot;, &quot;Violet&quot;, &quot;Orange&quot;], &quot;footnote&quot;: &quot;Ceci est une simulation de l’écran. Dans l’app, la note et le minuteur flottent ainsi au-dessus de Keynote ou PowerPoint en plein écran.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Où mettez-vous votre texte et l’heure pendant une présentation ?</h2>
+      <p>La vue présentateur réclame un second écran, et jeter un œil à sa montre, le public le remarque toujours. Vous avez peut-être déjà collé un papier sur votre portable avant de le voir tomber. StickyPresenter épingle votre texte et le temps restant juste au-dessus de la diapo, là où se pose déjà votre regard.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Un coup d’œil suffit pour savoir où vous en êtes</h2>
+        <p>Un widget carré dans un coin affiche le temps restant. Il passe au rouge à l’approche de la fin, puis sonne et fait clignoter son bord quand c’est terminé.<br>Saisissez les durées comme elles viennent, <code>5:30</code> ou <code>1h 20m</code>, ou tapez <code>25/5</code> pour un Pomodoro qui alterne concentration et pause. Ouvrez un minuteur dans sa propre fenêtre pour ne partager qu’elle en partage d’écran ou via AirPlay.</p>
       </div>
+      <div class="plain"><img src="../img/fr/02-timers.jpg" alt="Un coup d’œil suffit pour savoir où vous en êtes" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Lisez votre texte en regardant la caméra</h2>
+        <p>Le prompteur fait défiler votre texte à la vitesse choisie et s’arrête tout seul à la fin. Copiez votre texte, appuyez sur <code>⌘⌃P</code>, et il s’ouvre avec ce contenu.<br>Un mode miroir est prévu pour les prompteurs à vitre semi-réfléchissante, et la vitesse comme la taille du texte sont conservées pour la prochaine fois.</p>
+      </div>
+      <div class="plain"><img src="../img/fr/03-teleprompter.jpg" alt="Lisez votre texte en regardant la caméra" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sans quitter la diapo</h2>
+        <p>L’app tourne discrètement dans la barre des menus, sans icône dans le Dock ni fenêtre à surveiller. Les raccourcis comme <code>⌘⌃N</code> pour une nouvelle note ou <code>⌘⌃T</code> pour les minuteurs répondent même dans Keynote en plein écran.<br>Sur scène, l’app iPhone gratuite Remote Controller for Sticky vous permet de lancer et mettre en pause le minuteur, et de déplacer le widget s’il masque une diapo.</p>
+      </div>
+      <div class="plain"><img src="../img/fr/04-menu-bar.jpg" alt="Sans quitter la diapo" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Trois étapes pour commencer</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Ouvrez l’app</h3><p>Une icône de note apparaît dans la barre des menus, et un petit guide s’ouvre la première fois.</p></li>
+<li class="card"><span class="n">2</span><h3>Ajoutez une note et un minuteur</h3><p>Copiez votre texte et appuyez sur <code>⌘⌃V</code>, puis tapez la durée de votre intervention dans le champ du minuteur.</p></li>
+<li class="card"><span class="n">3</span><h3>Passez en plein écran</h3><p>La note et le minuteur restent au premier plan.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Raccourcis et formats de durée</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Nouvelle note</dd></div><div><dt>⌘⌃V</dt><dd>Nouvelle note à partir du presse-papiers</dd></div><div><dt>⌘⌃T</dt><dd>Afficher ou masquer les minuteurs</dd></div><div><dt>⌘⌃B</dt><dd>Lancer un Pomodoro (25 min de concentration, 5 min de pause)</dd></div><div><dt>⌘⌃P</dt><dd>Prompteur</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Afficher ou masquer toutes les notes</dd></div><div><dt>10</dt><dd>Un nombre seul, ce sont des minutes (10 min)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minutes:secondes, heures:minutes:secondes</dd></div><div><dt>1h 20m · 45s</dt><dd>Avec les unités</dd></div><div><dt>25/5</dt><dd>Concentration/pause, en boucle jusqu’à l’arrêt</dd></div></dl>
+      </div>
+      <p class="muted">Tous les raccourcis combinent Commande (⌘) et Contrôle (⌃) et fonctionnent même depuis une autre app. Les minuteurs vont jusqu’à 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Tout est gratuit</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Notes en six couleurs, avec opacité, taille du texte et verrouillage</li><li>Comptes à rebours, Pomodoro et widget pour le centre de notifications</li><li>Prompteur avec mode miroir</li><li>Musique de fond qui démarre avec le minuteur</li><li>Raccourcis utilisables depuis n’importe quelle app</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Démarrer, mettre en pause, ajouter ou retirer 30 secondes</li><li>Redimensionner et déplacer le widget depuis la scène</li><li>Minuteur de 3, 5, 10 ou 15 minutes en un geste</li></ul>
+          <p class="muted">Une app distincte et gratuite. Nécessite iOS 17 ou ultérieur et StickyPresenter ouvert sur un Mac du même réseau Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Aucune fonction n’est réservée aux achats. Si l’app vous rend service, vous pouvez laisser un pourboire au développeur dans les Réglages.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Questions fréquentes</h2>
+      <div class="faq"><details><summary>Puis-je n’afficher que le minuteur en partage d’écran ou en recopie ?</summary><p>Oui. Le bouton Fenêtre de la ligne du minuteur l’ouvre comme une fenêtre classique. Il apparaît alors dans la liste des fenêtres du partage d’écran et d’AirPlay, et vous pouvez ne partager qu’elle.</p></details>
+<details><summary>J’ai masqué un widget et je ne le retrouve plus.</summary><p>Dans la fenêtre des minuteurs, survolez la ligne de ce minuteur : l’emplacement du widget s’entoure de pointillés. Cliquez sur Aligner pour le ramener à côté de la fenêtre.</p></details>
+<details><summary>J’ai fermé une note par erreur.</summary><p>Avec Rouvrir la dernière note fermée dans la barre des menus, vous récupérez l’une des 20 dernières. Les notes s’enregistrent pendant la saisie et reviennent au même endroit quand l’app redémarre.</p></details>
+<details><summary>Un raccourci ne fonctionne pas.</summary><p>Si le tableau des raccourcis du guide l’indique comme Utilisé par une autre app, c’est qu’une autre app l’a réservé avant. Quittez-la et il refonctionnera. Aucune autorisation d’accessibilité n’est nécessaire.</p></details>
+<details><summary>Pourquoi le thème Caméléon demande-t-il l’enregistrement de l’écran ?</summary><p>Caméléon lit la couleur de l’écran derrière le widget pour s’y accorder, d’où cette autorisation. Rien n’est enregistré ni envoyé. Sans elle, les thèmes Système, Clair et Sombre fonctionnent normalement.</p></details>
+<details><summary>Comment ajouter une musique de fond ?</summary><p>Choisissez une ambiance (Concentration, Calme, Jazz ou Entraînant) dans la barre musicale en bas de la fenêtre des minuteurs, et l’app crée un dossier pour chacune. Déposez-y vos morceaux : ils seront joués dans l’ordre avec le minuteur. L’app ne fournit pas de musique.</p></details>
+<details><summary>La télécommande iPhone ne trouve pas mon Mac.</summary><p>Vérifiez dans l’ordre : StickyPresenter est ouvert sur le Mac (icône dans la barre des menus) ; les deux appareils sont sur le même Wi‑Fi, pas sur un réseau invité ni en données cellulaires ; Réseau local est autorisé pour l’app dans Confidentialité et sécurité, sur l’iPhone comme sur le Mac ; le VPN est désactivé.</p></details>
+<details><summary>La télécommande indique un code d’appairage incorrect.</summary><p>Saisissez le code à quatre chiffres affiché en ce moment sous Télécommande dans la barre des menus du Mac. Si vous avez cliqué sur Nouveau code d’appairage, seul le nouveau est valable. Une fois appairée, la télécommande se connecte dès l’ouverture de l’app.</p></details>
+<details><summary>Quelqu’un d’autre pourrait-il contrôler mon minuteur ?</summary><p>Pas sans votre code. Le Mac n’accepte que les télécommandes qui ont saisi le bon code, via une connexion directe chiffrée sur votre réseau local. Si quelqu’un a vu le code, utilisez Nouveau code d’appairage ou Oublier les télécommandes appairées sous Télécommande dans la barre des menus.</p></details>
+<details><summary>Où sont stockés mes notes et mes textes ?</summary><p>Uniquement sur ce Mac. Pas de compte, pas de pub, et rien ne part sur internet hormis des statistiques d’utilisation anonymes et les retours que vous choisissez d’envoyer.</p></details></div>
+      <p class="contact">Une question, un bug, une idée ? Écrivez à <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>À votre prochaine intervention,<br>ne cherchez plus l’horloge</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Télécharger gratuitement sur le Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Assistance</a> · <a href="privacy.html">Confidentialité</a> · <a href="remote.html">Télécommande iPhone</a>
+    <nav id="languages" class="langs" aria-label="Langue"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr" aria-current="page">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Politique de confidentialité</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

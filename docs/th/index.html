@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="โน้ตแปะ ตัวจับเวลาถอยหลัง และเครื่องบอกบท ที่ลอยอยู่เหนือ Keynote แบบเต็มจอ สำหรับ macOS" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: โน้ตและตัวจับเวลาที่ลอยอยู่เหนือ Keynote แบบเต็มจอ</title>
+  <meta name="description" content="แอปในแถบเมนูของ Mac ที่วางโน้ตบทพูด ตัวนับถอยหลัง และเทเลพรอมป์เตอร์ไว้เหนือ Keynote แบบเต็มจอ ใช้ได้ฟรีทุกฟีเจอร์">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: โน้ตและตัวจับเวลาที่ลอยอยู่เหนือ Keynote แบบเต็มจอ">
+  <meta property="og:description" content="แอปในแถบเมนูของ Mac ที่วางโน้ตบทพูด ตัวนับถอยหลัง และเทเลพรอมป์เตอร์ไว้เหนือ Keynote แบบเต็มจอ ใช้ได้ฟรีทุกฟีเจอร์">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/th/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/th/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="ไอคอนแอป StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>โน้ตแปะ ตัวจับเวลา และเครื่องบอกบทที่ลอยอยู่บนจอระหว่างการนำเสนอ</p>
-    <div class="actions">
-      <a class="btn" href="support.html">ฝ่ายสนับสนุน</a>
-      <a class="btn" href="privacy.html">นโยบายความเป็นส่วนตัว</a>
-      <a class="btn" href="remote.html">รีโมตบน iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th" aria-current="true">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+  <header class="bar">
+    <a class="brand" href="../th/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">ภาษา</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="th">
-        <h2>บทพูดและเวลาของคุณ อยู่ในสายตาตลอด</h2>
-        <p>StickyPresenter เป็นแอปเล็ก ๆ บนแถบเมนูของ macOS ที่ให้โน้ตแปะ
-        ตัวจับเวลาถอยหลัง และเครื่องบอกบท ลอยอยู่เหนือ Keynote แบบเต็มจอ
-        หรืองานนำเสนอใดก็ได้ คุณจึงมองเห็นโน้ตและเวลาได้ตลอดขณะนำเสนอ</p>
-        <ul>
-          <li><strong>โน้ตแปะแบบลอย</strong> — อยู่เหนือสไลด์แบบเต็มจอได้เสมอ มีให้เลือก 6 สี ปรับความโปร่งใสและขนาดตัวอักษรได้ และล็อกไว้ได้เพื่อไม่ให้เผลอแก้ไข</li>
-          <li><strong>ตัวจับเวลา</strong> — วิดเจ็ตนับถอยหลังที่ปรับขนาดได้ มีเสียงเตือนและขอบกะพริบเมื่อหมดเวลา เปิดแยกเป็นหน้าต่างของตัวเองเพื่อแชร์ผ่านการแชร์หน้าจอหรือ AirPlay ได้</li>
-          <li><strong>เครื่องบอกบท</strong> — บทพูดที่เลื่อนขึ้นเองอัตโนมัติ ปรับความเร็วและขนาดตัวอักษรได้ พร้อมโหมดกลับด้านกระจก</li>
-          <li><strong>อยู่บนแถบเมนู</strong> — ไม่มีไอคอนบน Dock และไม่มีหน้าต่างเกินจำเป็นให้ต้องคอยจัดการ</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>บทพูดและเวลาที่เหลือ<br>อยู่บนสไลด์เลย</h1>
+        <p class="lead">เปิด Keynote แบบเต็มจอแล้ว โน้ตและตัวจับเวลาก็ยังลอยอยู่ด้านบน และไม่แย่งโฟกัสจากแอปนำเสนอ รีโมตเปลี่ยนสไลด์จึงใช้ได้ตามปกติ</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">ดาวน์โหลดฟรีที่ Mac App Store</a><a class="try" href="#try">ลองวางบนสไลด์ดู ↓</a></div>
+        <p class="muted small">ทุกฟีเจอร์ใช้ได้ฟรี รองรับ macOS 14 ขึ้นไป</p>
       </div>
+      <div class="plain"><img src="../img/th/01-sticky-notes.jpg" alt="บทพูดและเวลาที่เหลือ อยู่บนสไลด์เลย" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">แอปคู่หู</p>
-        <h2>Remote Controller สำหรับ iPhone</h2>
-        <p>ระหว่างการบรรยาย Mac มักอยู่ไกลมือ <strong>Remote Controller</strong> ช่วยให้คุณ
-        ควบคุมตัวจับเวลาได้จากในมือ ทั้งเริ่มและหยุดชั่วคราว เพิ่มเวลา 30 วินาที ปรับขนาดวิดเจ็ต
-        และลากไปวางที่อื่นบนหน้าจอ Mac เมื่อมันบังสไลด์ เชื่อมต่อผ่านเครือข่ายภายใน
-        ไม่ต้องมีบัญชีและไม่ต้องตั้งค่าใด ๆ</p>
-        <p><a href="remote.html">ดูรายละเอียดเพิ่มเติม →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>ลองวางบนสไลด์ดู</h2>
+      <p class="muted">พิมพ์เวลาแบบเดียวกับในแอป แตะ 15s เพื่อดูว่าวิดเจ็ตเตือนอย่างไรเมื่อใกล้หมดเวลา</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;ลองวางบนสไลด์ดู&quot;, &quot;lead&quot;: &quot;พิมพ์เวลาแบบเดียวกับในแอป แตะ 15s เพื่อดูว่าวิดเจ็ตเตือนอย่างไรเมื่อใกล้หมดเวลา&quot;, &quot;input&quot;: &quot;ระยะเวลาของตัวจับเวลา&quot;, &quot;start&quot;: &quot;เริ่ม&quot;, &quot;pause&quot;: &quot;หยุดชั่วคราว&quot;, &quot;resume&quot;: &quot;ทำต่อ&quot;, &quot;reset&quot;: &quot;รีเซ็ต&quot;, &quot;h&quot;: &quot;%d ชม.&quot;, &quot;m&quot;: &quot;%d นาที&quot;, &quot;s&quot;: &quot;%d วินาที&quot;, &quot;focus&quot;: &quot;โฟกัส&quot;, &quot;rest&quot;: &quot;พัก&quot;, &quot;invalid&quot;: &quot;อ่านรูปแบบนี้ไม่ออก&quot;, &quot;almost&quot;: &quot;ใกล้หมดเวลาแล้ว&quot;, &quot;done&quot;: &quot;หมดเวลาแล้ว&quot;, &quot;slide&quot;: &quot;ผลประกอบการไตรมาส 3&quot;, &quot;note&quot;: &quot;ทักทายและแนะนำหัวข้อ\nหยุด 3 วินาทีที่กราฟยอดขาย\nเหลือเวลาถามตอบ 5 นาที&quot;, &quot;noteLabel&quot;: &quot;โน้ต&quot;, &quot;colorLabel&quot;: &quot;สีโน้ต&quot;, &quot;colors&quot;: [&quot;เหลือง&quot;, &quot;ชมพู&quot;, &quot;เขียว&quot;, &quot;ฟ้า&quot;, &quot;ม่วง&quot;, &quot;ส้ม&quot;], &quot;footnote&quot;: &quot;นี่เป็นหน้าจอจำลอง ในแอปจริง โน้ตและตัวจับเวลาจะลอยอยู่เหนือ Keynote หรือ PowerPoint แบบเต็มจอแบบนี้&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>ระหว่างนำเสนอ คุณวางบทพูดกับนาฬิกาไว้ตรงไหน</h2>
+      <p>มุมมองผู้นำเสนอต้องใช้จออีกจอ ส่วนการก้มดูนาฬิกาข้อมือ ผู้ฟังก็สังเกตเห็นทุกครั้ง บางทีคุณอาจเคยแปะกระดาษโน้ตไว้ที่โน้ตบุ๊กแล้วมันหลุดร่วงไป StickyPresenter ปักบทพูดและเวลาที่เหลือไว้เหนือสไลด์ ตรงที่สายตาคุณมองอยู่แล้ว</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>เหลือบมองครั้งเดียวก็รู้ว่าเหลือเวลาเท่าไร</h2>
+        <p>วิดเจ็ตสี่เหลี่ยมที่มุมจอแสดงเวลาที่เหลือ พอใกล้หมดเวลาจะเปลี่ยนเป็นสีแดง และเมื่อหมดเวลาจะมีเสียงเตือนพร้อมขอบกะพริบ<br>พิมพ์เวลาได้ตามสะดวก เช่น <code>5:30</code> หรือ <code>1h 20m</code> และถ้าพิมพ์ <code>25/5</code> จะเป็นโพโมโดโรที่สลับโฟกัสกับพัก เปิดตัวจับเวลาเป็นหน้าต่างแยกเพื่อแชร์เฉพาะหน้าต่างนั้นผ่านการแชร์หน้าจอหรือ AirPlay ได้</p>
       </div>
+      <div class="plain"><img src="../img/th/02-timers.jpg" alt="เหลือบมองครั้งเดียวก็รู้ว่าเหลือเวลาเท่าไร" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>อ่านบทพูดไปพร้อมมองกล้อง</h2>
+        <p>เทเลพรอมป์เตอร์เลื่อนบทพูดตามความเร็วที่ตั้งไว้ และหยุดเองเมื่อถึงท้ายบท คัดลอกบทพูดแล้วกด <code>⌘⌃P</code> ก็จะเปิดขึ้นพร้อมข้อความนั้นทันที<br>มีโหมดกลับด้านซ้ายขวาสำหรับอุปกรณ์พรอมป์เตอร์ที่ใช้กระจกสะท้อน และความเร็วกับขนาดตัวอักษรจะคงไว้สำหรับครั้งหน้า</p>
+      </div>
+      <div class="plain"><img src="../img/th/03-teleprompter.jpg" alt="อ่านบทพูดไปพร้อมมองกล้อง" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ไม่ต้องละจากสไลด์</h2>
+        <p>ทำงานเงียบๆ ในแถบเมนู ไม่มีไอคอนใน Dock และไม่มีหน้าต่างให้คอยดูแล คีย์ลัดอย่าง <code>⌘⌃N</code> สำหรับโน้ตใหม่ หรือ <code>⌘⌃T</code> สำหรับตัวจับเวลา ใช้ได้แม้ตอนนำเสนอ Keynote แบบเต็มจอ<br>บนเวที ใช้แอป iPhone ฟรี Remote Controller for Sticky เพื่อเริ่มหรือหยุดตัวจับเวลา และย้ายวิดเจ็ตออกเมื่อมันบังสไลด์</p>
+      </div>
+      <div class="plain"><img src="../img/th/04-menu-bar.jpg" alt="ไม่ต้องละจากสไลด์" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>เริ่มได้ใน 3 ขั้นตอน</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>เปิดแอป</h3><p>ไอคอนโน้ตจะขึ้นที่แถบเมนู และครั้งแรกจะมีคู่มือการใช้งานสั้นๆ เปิดขึ้นมา</p></li>
+<li class="card"><span class="n">2</span><h3>วางโน้ตและตัวจับเวลา</h3><p>คัดลอกบทพูดแล้วกด <code>⌘⌃V</code> จากนั้นพิมพ์ความยาวการนำเสนอลงในช่องตัวจับเวลา</p></li>
+<li class="card"><span class="n">3</span><h3>เปิดสไลด์แบบเต็มจอ</h3><p>โน้ตและตัวจับเวลายังอยู่ด้านบนเหมือนเดิม</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>คีย์ลัดและรูปแบบการพิมพ์เวลา</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>โน้ตใหม่</dd></div><div><dt>⌘⌃V</dt><dd>สร้างโน้ตใหม่จากข้อความที่คัดลอกไว้</dd></div><div><dt>⌘⌃T</dt><dd>แสดงหรือซ่อนตัวจับเวลา</dd></div><div><dt>⌘⌃B</dt><dd>เริ่มโพโมโดโร (โฟกัส 25 นาที พัก 5 นาที)</dd></div><div><dt>⌘⌃P</dt><dd>เทเลพรอมป์เตอร์</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>แสดงหรือซ่อนโน้ตทั้งหมด</dd></div><div><dt>10</dt><dd>ตัวเลขอย่างเดียวหมายถึงนาที (10 นาที)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>นาที:วินาที, ชั่วโมง:นาที:วินาที</dd></div><div><dt>1h 20m · 45s</dt><dd>ใส่หน่วยกำกับ</dd></div><div><dt>25/5</dt><dd>โฟกัส/พัก วนไปจนกว่าจะหยุด</dd></div></dl>
+      </div>
+      <p class="muted">คีย์ลัดทั้งหมดกด Command (⌘) กับ Control (⌃) พร้อมกัน และใช้ได้แม้กำลังอยู่ในแอปอื่น ตั้งเวลาได้สูงสุด 99:59:59</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>ใช้ได้ฟรีทั้งหมด</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>โน้ต 6 สี ปรับความโปร่งใสและขนาดตัวอักษรได้ ล็อกการแก้ไขได้</li><li>ตัวนับถอยหลัง โพโมโดโร และวิดเจ็ตในศูนย์การแจ้งเตือน</li><li>เทเลพรอมป์เตอร์พร้อมโหมดกลับด้าน</li><li>เพลงประกอบที่เล่นพร้อมตัวจับเวลา</li><li>คีย์ลัดที่ใช้ได้จากทุกแอป</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>เริ่ม หยุดชั่วคราว และเพิ่มหรือลด 30 วินาที</li><li>ปรับขนาดและย้ายวิดเจ็ตได้จากบนเวที</li><li>เริ่มตัวจับเวลา 3, 5, 10 หรือ 15 นาทีด้วยการแตะครั้งเดียว</li></ul>
+          <p class="muted">เป็นแอปฟรีแยกต่างหาก ต้องใช้ iOS 17 ขึ้นไป และต้องเปิด StickyPresenter ไว้บน Mac ที่อยู่ใน Wi‑Fi เดียวกัน</p>
+        </div>
+      </div>
+      <p class="muted">ไม่มีฟีเจอร์ไหนต้องจ่ายเงินก่อนใช้ ถ้าชอบแอปนี้ คุณให้ทิปผู้พัฒนาได้ในการตั้งค่า</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+      <div class="faq"><details><summary>แชร์หน้าจอหรือสะท้อนหน้าจอโดยให้เห็นแค่ตัวจับเวลาได้ไหม</summary><p>ได้ กดปุ่ม หน้าต่าง ในแถวของตัวจับเวลาเพื่อเปิดเป็นหน้าต่างปกติ แล้วมันจะไปอยู่ในรายการหน้าต่างของการแชร์หน้าจอและ AirPlay ให้เลือกแชร์เฉพาะหน้าต่างนั้นได้</p></details>
+<details><summary>ซ่อนวิดเจ็ตตัวจับเวลาไว้แล้วหาไม่เจอ</summary><p>ในหน้าต่างตัวจับเวลา เลื่อนเมาส์ไปวางบนแถวของตัวจับเวลานั้น ตำแหน่งของวิดเจ็ตจะแสดงเป็นเส้นประ กด จัดแนว เพื่อเรียกกลับมาไว้ข้างหน้าต่างตัวจับเวลา</p></details>
+<details><summary>เผลอปิดโน้ตไป</summary><p>ใช้ เปิดโน้ตที่ปิดไปอีกครั้ง ในแถบเมนูเพื่อกู้คืนโน้ตล่าสุดได้ถึง 20 แผ่น โน้ตบันทึกทันทีที่พิมพ์ และกลับมาอยู่ที่เดิมเมื่อเปิดแอปใหม่</p></details>
+<details><summary>คีย์ลัดไม่ทำงาน</summary><p>ถ้าตารางคีย์ลัดในคู่มือแสดงว่า ถูกใช้โดยแอปอื่น แปลว่ามีแอปอื่นจองคีย์นั้นไว้ก่อน ปิดแอปนั้นแล้วคีย์ลัดจะกลับมาใช้ได้ ไม่ต้องให้สิทธิ์การช่วยการเข้าถึง</p></details>
+<details><summary>ทำไมธีมกิ้งก่าถึงขอสิทธิ์บันทึกหน้าจอ</summary><p>ธีมกิ้งก่าจะอ่านสีของหน้าจอด้านหลังวิดเจ็ตเพื่อปรับสีให้เข้ากัน จึงต้องใช้สิทธิ์นี้ โดยจะไม่บันทึกหรือส่งภาพหน้าจอไปไหน ถ้าไม่ให้สิทธิ์ ธีมระบบ สว่าง และมืด ก็ยังใช้ได้ตามปกติ</p></details>
+<details><summary>จะใส่เพลงประกอบได้อย่างไร</summary><p>เลือกบรรยากาศ (โฟกัส ผ่อนคลาย แจ๊ส หรือคึกคัก) ในแถบเพลงด้านล่างของหน้าต่างตัวจับเวลา แอปจะสร้างโฟลเดอร์ของแต่ละบรรยากาศให้ ใส่เพลงของคุณลงไป แล้วเพลงจะเล่นตามลำดับพร้อมตัวจับเวลา แอปไม่มีเพลงมาให้</p></details>
+<details><summary>รีโมตบน iPhone หา Mac ไม่เจอ</summary><p>ตรวจตามลำดับนี้ StickyPresenter เปิดอยู่บน Mac หรือไม่ (ดูไอคอนในแถบเมนู) ทั้งสองเครื่องต่อ Wi‑Fi เดียวกันหรือไม่ (เครือข่ายสำหรับแขกหรือเน็ตมือถือใช้ไม่ได้) อนุญาต เครือข่ายเฉพาะที่ ใน ความเป็นส่วนตัวและความปลอดภัย ทั้งบน iPhone และ Mac แล้วหรือยัง และปิด VPN แล้วหรือยัง</p></details>
+<details><summary>รีโมตบอกว่ารหัสจับคู่ไม่ถูกต้อง</summary><p>ใส่รหัส 4 หลักที่แสดงอยู่ตอนนี้ในเมนู รีโมต บนแถบเมนูของ Mac ถ้าเคยกด สร้างรหัสจับคู่ใหม่ จะใช้ได้เฉพาะรหัสใหม่ หลังจับคู่ครั้งแรกแล้ว ครั้งต่อไปแค่เปิดแอปก็เชื่อมต่อเอง</p></details>
+<details><summary>คนอื่นจะควบคุมตัวจับเวลาของฉันได้ไหม</summary><p>ไม่ได้ถ้าไม่รู้รหัส Mac รับเฉพาะรีโมตที่ใส่รหัสถูก และสื่อสารผ่านการเชื่อมต่อตรงแบบเข้ารหัสภายในเครือข่ายเดียวกันเท่านั้น ถ้ามีคนเห็นรหัสไปแล้ว ให้กด สร้างรหัสจับคู่ใหม่ หรือ ลืมรีโมตที่จับคู่ไว้ ในเมนู รีโมต</p></details>
+<details><summary>โน้ตและบทพูดเก็บไว้ที่ไหน</summary><p>เก็บไว้ใน Mac เครื่องนี้เท่านั้น ไม่มีบัญชี ไม่มีโฆษณา และไม่มีอะไรออกไปทางอินเทอร์เน็ต นอกจากสถิติการใช้งานแบบไม่ระบุตัวตนและความคิดเห็นที่คุณส่งเอง</p></details></div>
+      <p class="contact">มีคำถาม เจอปัญหา หรืออยากเสนอไอเดีย ส่งอีเมลมาที่ <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>การนำเสนอครั้งหน้า<br>ไม่ต้องมองหานาฬิกาอีก</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">ดาวน์โหลดฟรีที่ Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">ฝ่ายสนับสนุน</a> · <a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="remote.html">รีโมตบน iPhone</a>
+    <nav id="languages" class="langs" aria-label="ภาษา"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th" aria-current="page">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

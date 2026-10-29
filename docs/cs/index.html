@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Plovoucí poznámky, odpočítávací časovače a teleprompter nad Keynotem na celé obrazovce. Pro macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: poznámky a časovač nad Keynote na celé obrazovce</title>
+  <meta name="description" content="Aplikace pro řádek nabídek na Macu, která drží poznámky, odpočet a teleprompter nad Keynote na celé obrazovce. Vše je zdarma.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: poznámky a časovač nad Keynote na celé obrazovce">
+  <meta property="og:description" content="Aplikace pro řádek nabídek na Macu, která drží poznámky, odpočet a teleprompter nad Keynote na celé obrazovce. Vše je zdarma.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Ikona aplikace StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Plovoucí poznámky, časovače a teleprompter pro vaše prezentace</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Podpora</a>
-      <a class="btn" href="privacy.html">Zásady ochrany soukromí</a>
-      <a class="btn" href="remote.html">Ovládání z iPhonu</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs" aria-current="true">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Přejít na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Jazyk</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="cs">
-        <h2>Text i čas máte vždy na očích</h2>
-        <p>StickyPresenter je nenáročná aplikace pro řádek nabídek v macOS. Poznámky, odpočítávací
-        časovače a teleprompter drží nad Keynotem na celé obrazovce i nad jakoukoli jinou
-        prezentací – během vystoupení tak stále vidíte své poznámky i to, kolik vám zbývá času.</p>
-        <ul>
-          <li><strong>Plovoucí poznámky</strong> – zůstávají nad snímky na celé obrazovce, mají šest barev, nastavitelnou průhlednost a velikost písma a zámek, aby se nic nezměnilo omylem.</li>
-          <li><strong>Časovače</strong> – odpočítávací widgety s měnitelnou velikostí; když čas vyprší, ozve se zvukový signál a rámeček začne pulzovat. Každý časovač lze otevřít ve vlastním okně a sdílet ho přes sdílení obrazovky nebo AirPlay.</li>
-          <li><strong>Teleprompter</strong> – automaticky posouvaný text s nastavitelnou rychlostí a velikostí písma a zrcadlovým režimem.</li>
-          <li><strong>Žije v řádku nabídek</strong> – žádná ikona v Docku a žádná další okna, která byste museli hlídat.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Text i zbývající čas<br>přímo na snímku</h1>
+        <p class="lead">Přepněte Keynote na celou obrazovku a poznámky i časovač zůstanou nad ním. Prezentační aplikaci nikdy neberou fokus, takže ovladač dál přepíná snímky.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Stáhnout zdarma v Mac App Store</a><a class="try" href="#try">Vyzkoušejte to na snímku ↓</a></div>
+        <p class="muted small">Všechny funkce jsou zdarma. Vyžaduje macOS 14 nebo novější.</p>
       </div>
+      <div class="plain"><img src="../img/cs/01-sticky-notes.jpg" alt="Text i zbývající čas přímo na snímku" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Doprovodná aplikace</p>
-        <h2>Remote Controller pro iPhone</h2>
-        <p>Během přednášky na Mac nedosáhnete. <strong>Remote Controller</strong> vám dá časovač
-        do ruky – spustíte ho i pozastavíte, přidáte 30 sekund, změníte velikost widgetu, a když
-        zakrývá snímek, přetáhnete ho jinam na obrazovce Macu. Připojuje se přes místní síť, bez
-        účtu a bez jakéhokoli nastavování.</p>
-        <p><a href="remote.html">Další informace →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Vyzkoušejte to na snímku</h2>
+      <p class="muted">Zadejte čas stejně jako v aplikaci. Klepněte na 15s a uvidíte, jak vás widget upozorní, že čas dochází.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Vyzkoušejte to na snímku&quot;, &quot;lead&quot;: &quot;Zadejte čas stejně jako v aplikaci. Klepněte na 15s a uvidíte, jak vás widget upozorní, že čas dochází.&quot;, &quot;input&quot;: &quot;Délka časovače&quot;, &quot;start&quot;: &quot;Spustit&quot;, &quot;pause&quot;: &quot;Pozastavit&quot;, &quot;resume&quot;: &quot;Pokračovat&quot;, &quot;reset&quot;: &quot;Vynulovat&quot;, &quot;h&quot;: &quot;%d h&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d s&quot;, &quot;focus&quot;: &quot;Soustředění&quot;, &quot;rest&quot;: &quot;Pauza&quot;, &quot;invalid&quot;: &quot;Tento formát nelze přečíst&quot;, &quot;almost&quot;: &quot;Čas brzy vyprší&quot;, &quot;done&quot;: &quot;Čas vypršel&quot;, &quot;slide&quot;: &quot;Výsledky za 3. čtvrtletí&quot;, &quot;note&quot;: &quot;Pozdravit, představit program\nU grafu tržeb se na 3 s zastavit\nNechat 5 min na dotazy&quot;, &quot;noteLabel&quot;: &quot;Poznámka&quot;, &quot;colorLabel&quot;: &quot;Barva poznámky&quot;, &quot;colors&quot;: [&quot;Žlutá&quot;, &quot;Růžová&quot;, &quot;Zelená&quot;, &quot;Modrá&quot;, &quot;Fialová&quot;, &quot;Oranžová&quot;], &quot;footnote&quot;: &quot;Toto je napodobenina obrazovky. V aplikaci se poznámka a časovač vznášejí takhle nad Keynote nebo PowerPointem na celé obrazovce.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Kam při prezentaci dát text a hodinky?</h2>
+      <p>Zobrazení přednášejícího potřebuje druhou obrazovku a pohled na hodinky publikum vždycky postřehne. Možná jste už někdy přilepili papírek na notebook a on spadl. StickyPresenter připíchne text a zbývající čas přímo nad snímek, tam, kam se stejně díváte.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Jeden pohled a víte, kolik zbývá</h2>
+        <p>Čtvercový widget v rohu ukazuje zbývající čas. Když se blíží konec, zčervená, a když čas vyprší, ozve se zvuk a rámeček zabliká.<br>Čas zadávejte, jak vám to vyhovuje, třeba <code>5:30</code> nebo <code>1h 20m</code>, a <code>25/5</code> spustí Pomodoro, které střídá soustředění a pauzu. Časovač otevřený v samostatném okně můžete při sdílení obrazovky nebo přes AirPlay ukázat samotný.</p>
       </div>
+      <div class="plain"><img src="../img/cs/02-timers.jpg" alt="Jeden pohled a víte, kolik zbývá" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Čtěte text a dívejte se do kamery</h2>
+        <p>Teleprompter posouvá text nastavenou rychlostí a na konci se sám zastaví. Zkopírujte text, stiskněte <code>⌘⌃P</code> a otevře se rovnou s ním.<br>Pro teleprompterová zařízení s polopropustným sklem je tu zrcadlový režim a rychlost i velikost písma zůstanou nastavené i příště.</p>
+      </div>
+      <div class="plain"><img src="../img/cs/03-teleprompter.jpg" alt="Čtěte text a dívejte se do kamery" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ze snímku neodejdete</h2>
+        <p>Aplikace běží nenápadně v řádku nabídek, bez ikony v Docku a bez oken, o která byste se museli starat. Zkratky jako <code>⌘⌃N</code> pro novou poznámku nebo <code>⌘⌃T</code> pro časovače fungují i v Keynote na celé obrazovce.<br>Na pódiu vám bezplatná aplikace pro iPhone Remote Controller for Sticky umožní spustit a pozastavit časovač a odsunout widget, který zakrývá snímek.</p>
+      </div>
+      <div class="plain"><img src="../img/cs/04-menu-bar.jpg" alt="Ze snímku neodejdete" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Tři kroky na začátek</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Otevřete aplikaci</h3><p>V řádku nabídek se objeví ikona poznámky a poprvé se otevře krátký průvodce.</p></li>
+<li class="card"><span class="n">2</span><h3>Přidejte poznámku a časovač</h3><p>Zkopírujte text a stiskněte <code>⌘⌃V</code>, pak do pole časovače napište délku vystoupení.</p></li>
+<li class="card"><span class="n">3</span><h3>Přepněte na celou obrazovku</h3><p>Poznámka i časovač zůstanou nahoře.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Zkratky a formáty času</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Nová poznámka</dd></div><div><dt>⌘⌃V</dt><dd>Nová poznámka ze schránky</dd></div><div><dt>⌘⌃T</dt><dd>Zobrazit nebo skrýt časovače</dd></div><div><dt>⌘⌃B</dt><dd>Spustit Pomodoro (25 min soustředění, 5 min pauza)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Zobrazit nebo skrýt všechny poznámky</dd></div><div><dt>10</dt><dd>Samotné číslo znamená minuty (10 min)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minuty:sekundy, hodiny:minuty:sekundy</dd></div><div><dt>1h 20m · 45s</dt><dd>S jednotkami</dd></div><div><dt>25/5</dt><dd>Soustředění/pauza dokola, dokud nezastavíte</dd></div></dl>
+      </div>
+      <p class="muted">Všechny zkratky používají Command (⌘) a Control (⌃) současně a fungují, i když jste v jiné aplikaci. Časovač jde nastavit až na 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Všechno je zdarma</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Poznámky v šesti barvách s průhledností, velikostí písma a zámkem úprav</li><li>Odpočty, Pomodoro a widget v Oznamovacím centru</li><li>Teleprompter se zrcadlovým režimem</li><li>Hudba na pozadí, která se spustí s časovačem</li><li>Zkratky, které fungují z kterékoli aplikace</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Spustit, pozastavit a přidat nebo ubrat 30 sekund</li><li>Měnit velikost a polohu widgetu přímo z pódia</li><li>Časovač na 3, 5, 10 nebo 15 minut jedním klepnutím</li></ul>
+          <p class="muted">Samostatná bezplatná aplikace. Vyžaduje iOS 17 nebo novější a spuštěný StickyPresenter na Macu ve stejné síti Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Nic není schované za placením. Pokud vám aplikace pomáhá, můžete vývojáři v Nastavení nechat spropitné.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Časté dotazy</h2>
+      <div class="faq"><details><summary>Můžu při sdílení nebo zrcadlení obrazovky ukázat jen časovač?</summary><p>Ano. Tlačítkem Okno v řádku časovače ho otevřete jako běžné okno. Pak se objeví v seznamu oken pro sdílení obrazovky i AirPlay a můžete sdílet jen je.</p></details>
+<details><summary>Skryl jsem widget časovače a nemůžu ho najít.</summary><p>V okně časovačů najeďte ukazatelem na řádek daného časovače a místo widgetu se ohraničí přerušovanou čarou. Tlačítkem Zarovnat ho vrátíte vedle okna časovačů.</p></details>
+<details><summary>Omylem jsem zavřel poznámku.</summary><p>Přes Znovu otevřít zavřenou poznámku v řádku nabídek vrátíte kteroukoli z posledních 20. Poznámky se ukládají průběžně a po novém spuštění aplikace se vrátí na stejné místo.</p></details>
+<details><summary>Zkratka nefunguje.</summary><p>Pokud ji tabulka zkratek v průvodci označuje jako Používá jiná aplikace, zabrala ji dřív jiná aplikace. Ukončete ji a zkratka zase půjde. Oprávnění Zpřístupnění není potřeba.</p></details>
+<details><summary>Proč motiv Chameleon chce přístup k nahrávání obrazovky?</summary><p>Chameleon čte barvu obrazovky za widgetem a přizpůsobuje se jí, a k tomu to oprávnění potřebuje. Nic se neukládá ani neodesílá. Bez něj motivy Systémový, Světlý a Tmavý fungují normálně.</p></details>
+<details><summary>Jak přidám hudbu na pozadí?</summary><p>V hudebním pruhu dole v okně časovačů vyberte náladu (Soustředění, Klid, Jazz nebo Energie) a aplikace pro každou vytvoří složku. Vložte do ní vlastní skladby a budou hrát popořadě spolu s časovačem. Aplikace žádnou hudbu neobsahuje.</p></details>
+<details><summary>Ovládání na iPhonu nenajde můj Mac.</summary><p>Zkontrolujte popořadě: běží StickyPresenter na Macu (ikona v řádku nabídek)? Jsou obě zařízení ve stejné Wi‑Fi, ne v síti pro hosty ani na mobilních datech? Je v Soukromí a zabezpečení na iPhonu i na Macu povolená Místní síť? Je vypnutá VPN?</p></details>
+<details><summary>Ovládání hlásí, že spárovací kód nesouhlasí.</summary><p>Zadejte čtyřmístný kód, který je teď vidět v nabídce Dálkové ovládání v řádku nabídek Macu. Pokud jste klikli na Nový spárovací kód, platí jen ten nový. Po prvním spárování se ovládání připojí hned po otevření aplikace.</p></details>
+<details><summary>Může můj časovač ovládat někdo jiný?</summary><p>Bez vašeho kódu ne. Mac přijímá jen ovládání se správným kódem, a to přes šifrované přímé spojení v místní síti. Pokud kód někdo viděl, použijte v nabídce Dálkové ovládání volbu Nový spárovací kód nebo Zapomenout spárovaná ovládání.</p></details>
+<details><summary>Kde se ukládají moje poznámky a texty?</summary><p>Jen na tomto Macu. Žádný účet ani reklamy, a na internet neodchází nic kromě anonymních statistik používání a zpětné vazby, kterou sami odešlete.</p></details></div>
+      <p class="contact">Dotazy, chyby nebo nápady? Pište na <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Na příští přednášce<br>už hodinky hledat nebudete</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Stáhnout zdarma v Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Podpora</a> · <a href="privacy.html">Zásady ochrany soukromí</a> · <a href="remote.html">Ovládání z iPhonu</a>
+    <nav id="languages" class="langs" aria-label="Jazyk"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany soukromí</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

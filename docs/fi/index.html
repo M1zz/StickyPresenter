@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Kelluvat muistilaput, ajastimet ja teleprompteri koko näytön Keynoten päällä – macOS:lle." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: muistilaput ja ajastin koko näytön Keynoten päällä</title>
+  <meta name="description" content="Macin valikkorivin appi, joka pitää puhujan muistiinpanot, ajastimen ja teleprompterin koko näytön Keynoten päällä. Kaikki on ilmaista.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: muistilaput ja ajastin koko näytön Keynoten päällä">
+  <meta property="og:description" content="Macin valikkorivin appi, joka pitää puhujan muistiinpanot, ajastimen ja teleprompterin koko näytön Keynoten päällä. Kaikki on ilmaista.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="StickyPresenterin sovelluskuvake" />
-    <h1>StickyPresenter</h1>
-    <p>Kelluvat muistilaput, ajastimet ja teleprompteri esityksiisi</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Tuki</a>
-      <a class="btn" href="privacy.html">Tietosuojakäytäntö</a>
-      <a class="btn" href="remote.html">Kauko-ohjain iPhonelle</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi" aria-current="true">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Kieli</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="fi">
-        <h2>Käsikirjoitus ja kello aina näkyvillä</h2>
-        <p>StickyPresenter on kevyt macOS:n valikkorivisovellus, joka pitää muistilaput,
-        ajastimet ja teleprompterin kellumassa koko näytön Keynoten tai minkä tahansa
-        muun esityksen päällä – näet muistiinpanosi ja aikataulusi koko esityksen ajan.</p>
-        <ul>
-          <li><strong>Kelluvat muistilaput</strong> – pysyvät koko näytön diojen päällä, kuutena eri värinä, säädettävällä läpinäkyvyydellä ja fonttikoolla sekä lukituksella, joten mikään ei muutu vahingossa.</li>
-          <li><strong>Ajastimet</strong> – kooltaan säädettävät lähtölaskentawidgetit, jotka soittavat merkkiäänen ja sykkivät reunoistaan, kun aika loppuu. Avaa ajastin omaan ikkunaansa, niin voit jakaa sen näytönjaossa tai AirPlayn kautta.</li>
-          <li><strong>Teleprompteri</strong> – automaattisesti vierivä käsikirjoitus, jonka nopeutta ja fonttikokoa voi säätää, sekä peilitila.</li>
-          <li><strong>Asuu valikkorivillä</strong> – ei kuvaketta Dockissa eikä ylimääräisiä ikkunoita, joita pitäisi seurata.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Käsikirjoitus ja jäljellä oleva aika<br>suoraan dian päällä</h1>
+        <p class="lead">Laita Keynote koko näytölle, niin muistilaput ja ajastin pysyvät sen päällä. Ne eivät koskaan vie fokusta esitysapilta, joten esitysohjain vaihtaa dioja tavalliseen tapaan.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Lataa ilmaiseksi Mac App Storesta</a><a class="try" href="#try">Kokeile dian päällä ↓</a></div>
+        <p class="muted small">Kaikki ominaisuudet ovat ilmaisia. Vaatii macOS 14:n tai uudemman.</p>
       </div>
+      <div class="plain"><img src="../img/fi/01-sticky-notes.jpg" alt="Käsikirjoitus ja jäljellä oleva aika suoraan dian päällä" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Kumppanisovellus</p>
-        <h2>Remote Controller iPhonelle</h2>
-        <p>Esityksen aikana Mac on usein ulottumattomissa. <strong>Remote Controller</strong> tuo
-        ajastimen käteesi – käynnistä ja keskeytä, lisää 30 sekuntia, muuta widgetin kokoa ja vedä se
-        toiseen kohtaan Macin näytöllä, jos se peittää dian. Yhteys muodostetaan paikallisverkon
-        kautta, eikä tiliä tai asetuksia tarvita.</p>
-        <p><a href="remote.html">Lue lisää →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Kokeile dian päällä</h2>
+      <p class="muted">Kirjoita aika samoin kuin apissa. Napauta 15s, niin näet, miten widget varoittaa ajan käydessä vähiin.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Kokeile dian päällä&quot;, &quot;lead&quot;: &quot;Kirjoita aika samoin kuin apissa. Napauta 15s, niin näet, miten widget varoittaa ajan käydessä vähiin.&quot;, &quot;input&quot;: &quot;Ajastimen kesto&quot;, &quot;start&quot;: &quot;Aloita&quot;, &quot;pause&quot;: &quot;Tauko&quot;, &quot;resume&quot;: &quot;Jatka&quot;, &quot;reset&quot;: &quot;Nollaa&quot;, &quot;h&quot;: &quot;%d h&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d s&quot;, &quot;focus&quot;: &quot;Keskittyminen&quot;, &quot;rest&quot;: &quot;Tauko&quot;, &quot;invalid&quot;: &quot;Muotoa ei tunnistettu&quot;, &quot;almost&quot;: &quot;Aika on loppumassa&quot;, &quot;done&quot;: &quot;Aika loppui&quot;, &quot;slide&quot;: &quot;Q3-tulokset&quot;, &quot;note&quot;: &quot;Tervehdys ja aiheet\n3 s tauko myyntikaavion kohdalla\n5 min kysymyksille&quot;, &quot;noteLabel&quot;: &quot;Muistilappu&quot;, &quot;colorLabel&quot;: &quot;Lapun väri&quot;, &quot;colors&quot;: [&quot;Keltainen&quot;, &quot;Vaaleanpunainen&quot;, &quot;Vihreä&quot;, &quot;Sininen&quot;, &quot;Violetti&quot;, &quot;Oranssi&quot;], &quot;footnote&quot;: &quot;Tämä on jäljitelmä näytöstä. Apissa muistilappu ja ajastin leijuvat näin koko näytön Keynoten tai PowerPointin päällä.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Missä käsikirjoitus ja kello ovat, kun esität?</h2>
+      <p>Esittäjänäkymä vaatii toisen näytön, ja vilkaisun rannekelloon yleisö huomaa aina. Ehkä olet joskus teipannut paperilapun läppäriin ja nähnyt sen putoavan. StickyPresenter kiinnittää käsikirjoituksen ja jäljellä olevan ajan suoraan dian yläpuolelle, sinne mihin katseesi jo osuu.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Yksi vilkaisu kertoo, paljonko aikaa on</h2>
+        <p>Neliön muotoinen widget nurkassa näyttää jäljellä olevan ajan. Se muuttuu punaiseksi lopun lähestyessä, ja kun aika loppuu, kuuluu merkkiääni ja reunus vilkkuu.<br>Kirjoita ajat miten haluat, esimerkiksi <code>5:30</code> tai <code>1h 20m</code>, tai <code>25/5</code>, jolloin saat pomodoron, joka vuorottelee keskittymistä ja taukoa. Avaa ajastin omaan ikkunaansa, niin voit jakaa näytönjaossa tai AirPlayllä vain sen.</p>
       </div>
+      <div class="plain"><img src="../img/fi/02-timers.jpg" alt="Yksi vilkaisu kertoo, paljonko aikaa on" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Lue tekstiä ja katso kameraan</h2>
+        <p>Teleprompter vierittää tekstiä valitsemallasi nopeudella ja pysähtyy itsestään loppuun. Kopioi teksti, paina <code>⌘⌃P</code>, niin se aukeaa valmiina.<br>Peilitila sopii puoliläpäisevällä lasilla varustettuihin telepromptereihin, ja nopeus ja fonttikoko säilyvät seuraavaan kertaan.</p>
+      </div>
+      <div class="plain"><img src="../img/fi/03-teleprompter.jpg" alt="Lue tekstiä ja katso kameraan" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Diaa ei tarvitse jättää</h2>
+        <p>Appi toimii hiljaa valikkorivillä ilman Dock-symbolia ja ilman ikkunoita, joita pitäisi vahtia. Pikanäppäimet, kuten <code>⌘⌃N</code> uudelle lapulle ja <code>⌘⌃T</code> ajastimille, toimivat myös koko näytön Keynotessa.<br>Lavalla ilmainen iPhone-appi Remote Controller for Sticky käynnistää ja pysäyttää ajastimen ja siirtää widgetin, jos se peittää dian.</p>
+      </div>
+      <div class="plain"><img src="../img/fi/04-menu-bar.jpg" alt="Diaa ei tarvitse jättää" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kolme askelta alkuun</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Avaa appi</h3><p>Valikkoriville ilmestyy lappusymboli, ja ensimmäisellä kerralla aukeaa lyhyt opas.</p></li>
+<li class="card"><span class="n">2</span><h3>Lisää lappu ja ajastin</h3><p>Kopioi käsikirjoitus ja paina <code>⌘⌃V</code>, kirjoita sitten esityksen pituus ajastinkenttään.</p></li>
+<li class="card"><span class="n">3</span><h3>Siirry koko näytölle</h3><p>Lappu ja ajastin pysyvät päällimmäisinä.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Pikanäppäimet ja ajan merkintätavat</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Uusi muistilappu</dd></div><div><dt>⌘⌃V</dt><dd>Uusi lappu leikepöydältä</dd></div><div><dt>⌘⌃T</dt><dd>Näytä tai kätke ajastimet</dd></div><div><dt>⌘⌃B</dt><dd>Aloita pomodoro (25 min keskittymistä, 5 min taukoa)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Näytä tai kätke kaikki laput</dd></div><div><dt>10</dt><dd>Pelkkä numero tarkoittaa minuutteja (10 min)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minuutit:sekunnit, tunnit:minuutit:sekunnit</dd></div><div><dt>1h 20m · 45s</dt><dd>Yksiköiden kanssa</dd></div><div><dt>25/5</dt><dd>Keskittyminen/tauko vuorotellen, kunnes pysäytät</dd></div></dl>
+      </div>
+      <p class="muted">Kaikissa pikanäppäimissä painetaan yhtä aikaa Komentoa (⌘) ja Ctrl:ää (⌃), ja ne toimivat myös toisessa apissa. Ajastimen voi asettaa enintään 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Kaikki on ilmaista</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Muistilaput kuudessa värissä, läpinäkyvyys, fonttikoko ja muokkauslukko</li><li>Ajastimet, pomodoro ja widget Ilmoituskeskukseen</li><li>Teleprompter peilitilalla</li><li>Taustamusiikki, joka alkaa ajastimen kanssa</li><li>Pikanäppäimet, jotka toimivat mistä tahansa apista</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Aloita, pysäytä ja lisää tai vähennä 30 sekuntia</li><li>Muuta widgetin kokoa ja paikkaa suoraan lavalta</li><li>3, 5, 10 tai 15 minuutin ajastin yhdellä napautuksella</li></ul>
+          <p class="muted">Erillinen ilmainen appi. Vaatii iOS 17:n tai uudemman ja StickyPresenterin käynnissä Macissa samassa Wi‑Fi-verkossa.</p>
+        </div>
+      </div>
+      <p class="muted">Mitään ei ole lukittu maksun taakse. Jos appi on sinulle hyödyllinen, voit antaa kehittäjälle juomarahaa asetuksista.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Voinko näyttää näytönjaossa tai peilauksessa vain ajastimen?</summary><p>Voit. Ajastimen rivin Ikkuna-painike avaa sen tavallisena ikkunana. Silloin se näkyy näytönjaon ja AirPlayn ikkunaluettelossa, ja voit jakaa pelkästään sen.</p></details>
+<details><summary>Kätkin ajastinwidgetin enkä löydä sitä.</summary><p>Vie osoitin ajastinikkunassa kyseisen ajastimen rivin päälle, niin widgetin paikka merkitään katkoviivalla. Tasaa-painike tuo sen takaisin ajastinikkunan viereen.</p></details>
+<details><summary>Suljin lapun vahingossa.</summary><p>Valikkorivin Avaa suljettu muistilappu uudelleen palauttaa minkä tahansa 20 viimeisimmästä. Laput tallentuvat kirjoittaessa ja palaavat samaan kohtaan, kun appi avataan uudelleen.</p></details>
+<details><summary>Pikanäppäin ei toimi.</summary><p>Jos oppaan pikanäppäintaulukko näyttää sen kohdalla Toisen apin käytössä, toinen appi on varannut sen ensin. Sulje se appi, niin pikanäppäin toimii taas. Käyttöapuoikeutta ei tarvita.</p></details>
+<details><summary>Miksi Kameleontti-teema pyytää näytön tallennusoikeutta?</summary><p>Kameleontti lukee widgetin takana olevan näytön värin ja mukautuu siihen, ja siihen tarvitaan tämä oikeus. Mitään ei tallenneta eikä lähetetä. Ilman oikeutta teemat Järjestelmä, Vaalea ja Tumma toimivat normaalisti.</p></details>
+<details><summary>Miten lisään taustamusiikkia?</summary><p>Valitse tunnelma (Keskittyminen, Rauha, Jazz tai Eloisa) ajastinikkunan alareunan musiikkipalkista, niin appi luo jokaiselle kansion. Lisää sinne omia kappaleitasi, niin ne soivat järjestyksessä ajastimen kanssa. Apin mukana ei tule musiikkia.</p></details>
+<details><summary>iPhonen kauko-ohjain ei löydä Maciani.</summary><p>Tarkista järjestyksessä: onko StickyPresenter käynnissä Macissa (symboli valikkorivillä); ovatko molemmat laitteet samassa Wi‑Fi-verkossa eivätkä vierasverkossa tai mobiilidatalla; onko Paikallisverkko sallittu Tietosuoja ja turvallisuus -asetuksissa sekä iPhonessa että Macissa; onko VPN pois päältä.</p></details>
+<details><summary>Kauko-ohjain sanoo, että parituskoodi on väärä.</summary><p>Syötä nelinumeroinen koodi, joka näkyy juuri nyt Macin valikkorivin Kauko-ohjain-valikossa. Jos klikkasit Uusi parituskoodi, vain uusi koodi kelpaa. Ensimmäisen parituksen jälkeen yhteys syntyy heti, kun avaat apin.</p></details>
+<details><summary>Voiko joku muu ohjata ajastintani?</summary><p>Ei ilman koodiasi. Mac hyväksyy vain kauko-ohjaimet, jotka ovat syöttäneet oikean koodin, ja yhteys kulkee salattuna suoraan paikallisverkossa. Jos joku on nähnyt koodin, valitse Kauko-ohjain-valikosta Uusi parituskoodi tai Unohda pariliitetyt kauko-ohjaimet.</p></details>
+<details><summary>Mihin lappuni ja käsikirjoitukseni tallentuvat?</summary><p>Vain tähän Maciin. Ei tiliä eikä mainoksia, eikä verkkoon lähde mitään muuta kuin nimetöntä käyttötilastoa ja palautetta, jonka itse päätät lähettää.</p></details></div>
+      <p class="contact">Kysyttävää, virheitä tai ideoita? Kirjoita osoitteeseen <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Seuraavassa esityksessä<br>kelloa ei tarvitse etsiä</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Lataa ilmaiseksi Mac App Storesta</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Tuki</a> · <a href="privacy.html">Tietosuojakäytäntö</a> · <a href="remote.html">Kauko-ohjain iPhonelle</a>
+    <nav id="languages" class="langs" aria-label="Kieli"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

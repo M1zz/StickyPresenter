@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Zwevende notities, afteltimers en een teleprompter boven Keynote op volledig scherm, voor macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: notities en timer boven Keynote op volledig scherm</title>
+  <meta name="description" content="Mac-app in de menubalk die je notities, een aftelling en een teleprompter boven Keynote op volledig scherm houdt. Alles is gratis.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: notities en timer boven Keynote op volledig scherm">
+  <meta property="og:description" content="Mac-app in de menubalk die je notities, een aftelling en een teleprompter boven Keynote op volledig scherm houdt. Alles is gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/nl/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/nl/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Appicoon van StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Zwevende notities, timers en een teleprompter voor je presentaties</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Ondersteuning</a>
-      <a class="btn" href="privacy.html">Privacybeleid</a>
-      <a class="btn" href="remote.html">Afstandsbediening voor iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Naar de inhoud</a>
+  <header class="bar">
+    <a class="brand" href="../nl/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Taal</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="nl">
-        <h2>Je tekst en je klok altijd in beeld</h2>
-        <p>StickyPresenter is een lichte menubalk-app voor macOS die notities,
-        afteltimers en een teleprompter laat zweven boven Keynote op volledig scherm
-        of elke andere presentatie. Zo houd je je aantekeningen en de tijd in het oog terwijl je presenteert.</p>
-        <ul>
-          <li><strong>Zwevende notities</strong>: blijven boven dia's op volledig scherm, in zes kleuren, met instelbare transparantie en lettergrootte, en een slot zodat er niets per ongeluk verandert.</li>
-          <li><strong>Timers</strong>: aftelwidgets waarvan je het formaat kunt aanpassen, met een belsignaal en een pulserende rand als de tijd om is. Open een timer in een eigen venster om hem te delen via schermdeling of AirPlay.</li>
-          <li><strong>Teleprompter</strong>: een automatisch scrollende tekst met instelbare snelheid en lettergrootte, plus een spiegelstand.</li>
-          <li><strong>Woont in de menubalk</strong>: geen symbool in het Dock en geen extra vensters om bij te houden.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Je tekst en je tijd,<br>recht op de dia</h1>
+        <p class="lead">Zet Keynote op volledig scherm en je notities en timer blijven erbovenop staan. Ze pakken nooit de focus van de presentatie-app af, dus je clicker bladert gewoon door de dia’s.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Gratis downloaden in de Mac App Store</a><a class="try" href="#try">Probeer het op een dia ↓</a></div>
+        <p class="muted small">Alle functies zijn gratis. Vereist macOS 14 of nieuwer.</p>
       </div>
+      <div class="plain"><img src="../img/nl/01-sticky-notes.jpg" alt="Je tekst en je tijd, recht op de dia" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Bijbehorende app</p>
-        <h2>Remote Controller voor iPhone</h2>
-        <p>Tijdens een presentatie is je Mac buiten bereik. Met <strong>Remote Controller</strong> heb je
-        de timer in je hand: starten en pauzeren, 30 seconden erbij, het formaat van de widget aanpassen en hem
-        ergens anders op het scherm van je Mac neerzetten als hij een dia bedekt. De app maakt verbinding via je
-        lokale netwerk, zonder account en zonder iets in te stellen.</p>
-        <p><a href="remote.html">Meer informatie →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Probeer het op een dia</h2>
+      <p class="muted">Typ een tijd zoals je dat in de app zou doen. Tik op 15s en zie hoe de widget je waarschuwt als de tijd bijna om is.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Probeer het op een dia&quot;, &quot;lead&quot;: &quot;Typ een tijd zoals je dat in de app zou doen. Tik op 15s en zie hoe de widget je waarschuwt als de tijd bijna om is.&quot;, &quot;input&quot;: &quot;Duur van de timer&quot;, &quot;start&quot;: &quot;Start&quot;, &quot;pause&quot;: &quot;Pauze&quot;, &quot;resume&quot;: &quot;Verder&quot;, &quot;reset&quot;: &quot;Herstel&quot;, &quot;h&quot;: &quot;%d u&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d s&quot;, &quot;focus&quot;: &quot;Focus&quot;, &quot;rest&quot;: &quot;Pauze&quot;, &quot;invalid&quot;: &quot;Dit formaat wordt niet herkend&quot;, &quot;almost&quot;: &quot;De tijd is bijna om&quot;, &quot;done&quot;: &quot;De tijd is om&quot;, &quot;slide&quot;: &quot;Resultaten derde kwartaal&quot;, &quot;note&quot;: &quot;Welkom en agenda\n3 s stilstaan bij de omzetgrafiek\n5 min overhouden voor vragen&quot;, &quot;noteLabel&quot;: &quot;Notitie&quot;, &quot;colorLabel&quot;: &quot;Kleur van de notitie&quot;, &quot;colors&quot;: [&quot;Geel&quot;, &quot;Roze&quot;, &quot;Groen&quot;, &quot;Blauw&quot;, &quot;Paars&quot;, &quot;Oranje&quot;], &quot;footnote&quot;: &quot;Dit is een nabootsing van het scherm. In de app zweven de notitie en timer zo boven Keynote of PowerPoint op volledig scherm.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Waar laat je je tekst en de klok tijdens een presentatie?</h2>
+      <p>De presentatorweergave vraagt om een tweede scherm, en een blik op je horloge ziet het publiek altijd. Misschien heb je weleens een papiertje op je laptop geplakt dat er daarna af viel. StickyPresenter zet je tekst en de resterende tijd recht boven de dia, waar je toch al kijkt.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Eén blik en je weet hoeveel tijd je nog hebt</h2>
+        <p>Een vierkante widget in de hoek toont de resterende tijd. Hij kleurt rood als het einde nadert en als de tijd om is, klinkt er een signaal en knippert de rand.<br>Typ tijden zoals het je uitkomt, bijvoorbeeld <code>5:30</code> of <code>1h 20m</code>, of <code>25/5</code> voor een pomodoro die wisselt tussen focus en pauze. Open een timer in een eigen venster om bij schermdeling of AirPlay alleen dat venster te delen.</p>
       </div>
+      <div class="plain"><img src="../img/nl/02-timers.jpg" alt="Eén blik en je weet hoeveel tijd je nog hebt" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Lees je tekst en kijk in de camera</h2>
+        <p>De teleprompter scrolt je tekst op het tempo dat je kiest en stopt vanzelf aan het einde. Kopieer je tekst, druk op <code>⌘⌃P</code> en hij opent met die tekst.<br>Er is een spiegelmodus voor teleprompters met spiegelglas, en tempo en lettergrootte blijven bewaard voor de volgende keer.</p>
+      </div>
+      <div class="plain"><img src="../img/nl/03-teleprompter.jpg" alt="Lees je tekst en kijk in de camera" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Je verlaat de dia niet</h2>
+        <p>De app draait onopvallend in de menubalk, zonder Dock-symbool en zonder vensters om bij te houden. Sneltoetsen als <code>⌘⌃N</code> voor een nieuwe notitie en <code>⌘⌃T</code> voor timers werken zelfs in Keynote op volledig scherm.<br>Op het podium start en pauzeer je de timer met de gratis iPhone-app Remote Controller for Sticky, en schuif je de widget opzij als hij een dia bedekt.</p>
+      </div>
+      <div class="plain"><img src="../img/nl/04-menu-bar.jpg" alt="Je verlaat de dia niet" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>In drie stappen aan de slag</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Open de app</h3><p>Er verschijnt een notitiesymbool in de menubalk, en de eerste keer opent een korte handleiding.</p></li>
+<li class="card"><span class="n">2</span><h3>Zet een notitie en timer klaar</h3><p>Kopieer je tekst en druk op <code>⌘⌃V</code>, typ dan de duur van je praatje in het timerveld.</p></li>
+<li class="card"><span class="n">3</span><h3>Ga naar volledig scherm</h3><p>Notitie en timer blijven bovenop.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Sneltoetsen en tijdnotaties</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Nieuwe notitie</dd></div><div><dt>⌘⌃V</dt><dd>Nieuwe notitie van het klembord</dd></div><div><dt>⌘⌃T</dt><dd>Timers tonen of verbergen</dd></div><div><dt>⌘⌃B</dt><dd>Pomodoro starten (25 min focus, 5 min pauze)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Alle notities tonen of verbergen</dd></div><div><dt>10</dt><dd>Alleen een getal betekent minuten (10 min)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minuten:seconden, uren:minuten:seconden</dd></div><div><dt>1h 20m · 45s</dt><dd>Met eenheden</dd></div><div><dt>25/5</dt><dd>Focus/pauze, steeds opnieuw tot je stopt</dd></div></dl>
+      </div>
+      <p class="muted">Alle sneltoetsen gebruiken Command (⌘) en Control (⌃) samen en werken ook als je in een andere app zit. Timers gaan tot 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Alles is gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Notities in zes kleuren, met doorzichtigheid, lettergrootte en bewerkingsslot</li><li>Aftellers, pomodoro en een widget in het berichtencentrum</li><li>Teleprompter met spiegelmodus</li><li>Achtergrondmuziek die met de timer start</li><li>Sneltoetsen die in elke app werken</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Starten, pauzeren en 30 seconden erbij of eraf</li><li>Grootte en positie van de widget vanaf het podium aanpassen</li><li>Timer van 3, 5, 10 of 15 minuten met één tik</li></ul>
+          <p class="muted">Een aparte, gratis app. Vereist iOS 17 of nieuwer en StickyPresenter actief op een Mac in hetzelfde wifinetwerk.</p>
+        </div>
+      </div>
+      <p class="muted">Niets zit achter een betaalmuur. Heb je er wat aan, dan kun je de ontwikkelaar via Instellingen een fooi geven.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Veelgestelde vragen</h2>
+      <div class="faq"><details><summary>Kan ik bij schermdeling of synchrone weergave alleen de timer laten zien?</summary><p>Ja. Met de knop Venster in de rij van de timer open je hem als gewoon venster. Dan staat hij in de vensterlijst van schermdeling en AirPlay, en kun je alleen dat venster delen.</p></details>
+<details><summary>Ik heb een timerwidget verborgen en kan hem niet meer vinden.</summary><p>Beweeg in het timervenster de aanwijzer over de rij van die timer, dan wordt de plek van de widget met een stippellijn aangegeven. Klik op Lijn uit om hem terug naast het timervenster te zetten.</p></details>
+<details><summary>Ik heb per ongeluk een notitie gesloten.</summary><p>Met Heropen gesloten notitie in de menubalk haal je elk van de laatste 20 terug. Notities worden bewaard terwijl je typt en komen op dezelfde plek terug als je de app opnieuw opent.</p></details>
+<details><summary>Een sneltoets werkt niet.</summary><p>Staat hij in de sneltoetstabel van de handleiding als Gebruikt door een andere app, dan heeft een andere app hem eerder geclaimd. Stop die app en de sneltoets werkt weer. Toegankelijkheidstoestemming is niet nodig.</p></details>
+<details><summary>Waarom vraagt het thema Kameleon om schermopname?</summary><p>Kameleon leest de kleur van het scherm achter de widget en past zich daarop aan, en daarvoor is die toestemming nodig. Er wordt niets bewaard of verstuurd. Zonder toestemming werken de thema’s Systeem, Licht en Donker gewoon.</p></details>
+<details><summary>Hoe voeg ik achtergrondmuziek toe?</summary><p>Kies een sfeer (Focus, Kalm, Jazz of Opgewekt) in de muziekbalk onderaan het timervenster, dan maakt de app voor elke sfeer een map. Zet daar je eigen nummers in en ze spelen op volgorde mee met de timer. De app bevat zelf geen muziek.</p></details>
+<details><summary>De afstandsbediening op mijn iPhone vindt mijn Mac niet.</summary><p>Controleer in deze volgorde: draait StickyPresenter op de Mac (symbool in de menubalk)? Zitten beide apparaten op hetzelfde wifinetwerk en niet op een gastnetwerk of mobiel internet? Is Lokaal netwerk toegestaan onder Privacy en beveiliging op zowel iPhone als Mac? Staat de VPN uit?</p></details>
+<details><summary>De afstandsbediening zegt dat de koppelcode niet klopt.</summary><p>Voer de viercijferige code in die nu onder Afstandsbediening in de menubalk van de Mac staat. Heb je op Nieuwe koppelcode geklikt, dan geldt alleen de nieuwe. Na de eerste koppeling maakt hij meteen verbinding zodra je de app opent.</p></details>
+<details><summary>Kan iemand anders mijn timer bedienen?</summary><p>Niet zonder jouw code. De Mac accepteert alleen afstandsbedieningen die de juiste code hebben ingevoerd, via een versleutelde directe verbinding in je lokale netwerk. Heeft iemand de code gezien, kies dan Nieuwe koppelcode of Gekoppelde afstandsbedieningen vergeten onder Afstandsbediening in de menubalk.</p></details>
+<details><summary>Waar worden mijn notities en teksten bewaard?</summary><p>Alleen op deze Mac. Geen account, geen advertenties, en er gaat niets online behalve anonieme gebruiksstatistieken en feedback die je zelf verstuurt.</p></details></div>
+      <p class="contact">Vragen, fouten of ideeën? Mail naar <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bij je volgende presentatie<br>hoef je de klok niet te zoeken</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Gratis downloaden in de Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Ondersteuning</a> · <a href="privacy.html">Privacybeleid</a> · <a href="remote.html">Afstandsbediening voor iPhone</a>
+    <nav id="languages" class="langs" aria-label="Taal"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl" aria-current="page">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privacybeleid</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

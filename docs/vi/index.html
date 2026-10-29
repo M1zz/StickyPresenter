@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Ghi chú dán, đồng hồ đếm ngược và máy nhắc chữ luôn nổi trên Keynote toàn màn hình, dành cho macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: ghi chú và hẹn giờ nổi trên Keynote toàn màn hình</title>
+  <meta name="description" content="Ứng dụng thanh menu trên Mac giữ ghi chú bài nói, đồng hồ đếm ngược và máy nhắc chữ nằm trên Keynote toàn màn hình. Mọi tính năng đều miễn phí.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: ghi chú và hẹn giờ nổi trên Keynote toàn màn hình">
+  <meta property="og:description" content="Ứng dụng thanh menu trên Mac giữ ghi chú bài nói, đồng hồ đếm ngược và máy nhắc chữ nằm trên Keynote toàn màn hình. Mọi tính năng đều miễn phí.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Biểu tượng ứng dụng StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Ghi chú dán, hẹn giờ và máy nhắc chữ luôn nổi trên màn hình khi bạn thuyết trình</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Hỗ trợ</a>
-      <a class="btn" href="privacy.html">Chính sách quyền riêng tư</a>
-      <a class="btn" href="remote.html">Điều khiển bằng iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi" aria-current="true">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="vi">
-        <h2>Kịch bản và thời gian, lúc nào cũng trong tầm mắt</h2>
-        <p>StickyPresenter là ứng dụng nhỏ gọn trên thanh menu của macOS, giúp ghi chú dán,
-        đồng hồ đếm ngược và máy nhắc chữ luôn nổi phía trên Keynote toàn màn hình hay bất kỳ
-        bài thuyết trình nào — để bạn vừa trình bày vừa theo dõi được ghi chú và thời gian.</p>
-        <ul>
-          <li><strong>Ghi chú dán nổi</strong> — luôn hiển thị trên slide toàn màn hình, có sáu màu, tùy chỉnh được độ trong suốt và cỡ chữ, kèm chế độ khóa để không lỡ tay sửa nhầm.</li>
-          <li><strong>Hẹn giờ</strong> — tiện ích đếm ngược có thể đổi kích thước, phát chuông và nhấp nháy viền khi hết giờ. Bạn có thể mở riêng thành một cửa sổ để chia sẻ qua tính năng chia sẻ màn hình hoặc AirPlay.</li>
-          <li><strong>Máy nhắc chữ</strong> — kịch bản tự cuộn, chỉnh được tốc độ và cỡ chữ, có cả chế độ lật gương.</li>
-          <li><strong>Nằm gọn trên thanh menu</strong> — không có biểu tượng trên Dock, không thêm cửa sổ nào phải bận tâm.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Kịch bản và thời gian còn lại<br>ngay trên slide</h1>
+        <p class="lead">Bật Keynote toàn màn hình, ghi chú và đồng hồ hẹn giờ vẫn nằm ngay phía trên. Chúng không giành tiêu điểm của ứng dụng trình chiếu, nên bút trình chiếu vẫn chuyển slide như thường.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Tải miễn phí trên Mac App Store</a><a class="try" href="#try">Thử đặt lên một slide ↓</a></div>
+        <p class="muted small">Mọi tính năng đều miễn phí. Cần macOS 14 trở lên.</p>
       </div>
+      <div class="plain"><img src="../img/vi/01-sticky-notes.jpg" alt="Kịch bản và thời gian còn lại ngay trên slide" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Ứng dụng đi kèm</p>
-        <h2>Remote Controller cho iPhone</h2>
-        <p>Khi đang nói, bạn khó mà với tới máy Mac. <strong>Remote Controller</strong> đưa đồng hồ
-        hẹn giờ vào tay bạn — bắt đầu và tạm dừng, thêm 30 giây, đổi kích thước tiện ích, và kéo nó
-        sang chỗ khác trên màn hình Mac khi nó che mất slide. Ứng dụng kết nối qua mạng nội bộ,
-        không cần tài khoản và không phải cài đặt gì.</p>
-        <p><a href="remote.html">Tìm hiểu thêm →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Thử đặt lên một slide</h2>
+      <p class="muted">Gõ thời gian giống như trong ứng dụng. Chạm 15s để xem widget nhắc bạn thế nào khi sắp hết giờ.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Thử đặt lên một slide&quot;, &quot;lead&quot;: &quot;Gõ thời gian giống như trong ứng dụng. Chạm 15s để xem widget nhắc bạn thế nào khi sắp hết giờ.&quot;, &quot;input&quot;: &quot;Thời lượng hẹn giờ&quot;, &quot;start&quot;: &quot;Bắt đầu&quot;, &quot;pause&quot;: &quot;Tạm dừng&quot;, &quot;resume&quot;: &quot;Tiếp tục&quot;, &quot;reset&quot;: &quot;Đặt lại&quot;, &quot;h&quot;: &quot;%d giờ&quot;, &quot;m&quot;: &quot;%d phút&quot;, &quot;s&quot;: &quot;%d giây&quot;, &quot;focus&quot;: &quot;Tập trung&quot;, &quot;rest&quot;: &quot;Nghỉ&quot;, &quot;invalid&quot;: &quot;Không đọc được định dạng này&quot;, &quot;almost&quot;: &quot;Sắp hết giờ&quot;, &quot;done&quot;: &quot;Hết giờ rồi&quot;, &quot;slide&quot;: &quot;Kết quả quý 3&quot;, &quot;note&quot;: &quot;Chào hỏi, giới thiệu nội dung\nDừng 3 giây ở biểu đồ doanh thu\nChừa 5 phút hỏi đáp&quot;, &quot;noteLabel&quot;: &quot;Ghi chú&quot;, &quot;colorLabel&quot;: &quot;Màu ghi chú&quot;, &quot;colors&quot;: [&quot;Vàng&quot;, &quot;Hồng&quot;, &quot;Xanh lá&quot;, &quot;Xanh dương&quot;, &quot;Tím&quot;, &quot;Cam&quot;], &quot;footnote&quot;: &quot;Đây là màn hình mô phỏng. Trong ứng dụng, ghi chú và đồng hồ hẹn giờ nổi như thế này trên Keynote hoặc PowerPoint toàn màn hình.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Khi thuyết trình, bạn để kịch bản và đồng hồ ở đâu?</h2>
+      <p>Chế độ người thuyết trình cần thêm một màn hình, còn liếc đồng hồ đeo tay thì khán giả luôn nhận ra. Có thể bạn từng dán mẩu giấy lên laptop rồi thấy nó rơi mất. StickyPresenter ghim kịch bản và thời gian còn lại ngay trên slide, đúng chỗ mắt bạn đang nhìn.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Liếc một cái là biết còn bao lâu</h2>
+        <p>Widget hình vuông ở góc màn hình hiển thị thời gian còn lại. Gần hết giờ nó chuyển sang màu đỏ, hết giờ thì phát âm báo và nháy viền.<br>Gõ thời gian thoải mái như <code>5:30</code> hay <code>1h 20m</code>, hoặc gõ <code>25/5</code> để có Pomodoro xen kẽ tập trung và nghỉ. Mở đồng hồ hẹn giờ thành cửa sổ riêng để chỉ chia sẻ cửa sổ đó khi chia sẻ màn hình hay dùng AirPlay.</p>
       </div>
+      <div class="plain"><img src="../img/vi/02-timers.jpg" alt="Liếc một cái là biết còn bao lâu" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Đọc kịch bản mà vẫn nhìn vào máy quay</h2>
+        <p>Máy nhắc chữ cuộn kịch bản theo tốc độ bạn đặt và tự dừng khi đến cuối. Sao chép kịch bản rồi nhấn <code>⌘⌃P</code>, nó sẽ mở ngay với đoạn văn đó.<br>Có chế độ lật ngang cho thiết bị nhắc chữ dùng kính phản chiếu, còn tốc độ và cỡ chữ được giữ nguyên cho lần sau.</p>
+      </div>
+      <div class="plain"><img src="../img/vi/03-teleprompter.jpg" alt="Đọc kịch bản mà vẫn nhìn vào máy quay" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Không phải rời khỏi slide</h2>
+        <p>Ứng dụng chạy lặng lẽ trên thanh menu, không có biểu tượng trong Dock, không có cửa sổ nào phải trông. Các phím tắt như <code>⌘⌃N</code> để tạo ghi chú mới, <code>⌘⌃T</code> để mở hẹn giờ vẫn hoạt động ngay cả khi Keynote đang toàn màn hình.<br>Trên sân khấu, ứng dụng iPhone miễn phí Remote Controller for Sticky giúp bạn bắt đầu, tạm dừng hẹn giờ và dời widget khi nó che mất slide.</p>
+      </div>
+      <div class="plain"><img src="../img/vi/04-menu-bar.jpg" alt="Không phải rời khỏi slide" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Bắt đầu với ba bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Mở ứng dụng</h3><p>Biểu tượng ghi chú xuất hiện trên thanh menu, lần đầu sẽ có hướng dẫn ngắn mở ra.</p></li>
+<li class="card"><span class="n">2</span><h3>Đặt ghi chú và hẹn giờ</h3><p>Sao chép kịch bản rồi nhấn <code>⌘⌃V</code>, sau đó gõ thời lượng bài nói vào ô hẹn giờ.</p></li>
+<li class="card"><span class="n">3</span><h3>Chuyển slide sang toàn màn hình</h3><p>Ghi chú và hẹn giờ vẫn nằm phía trên.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Phím tắt và cách gõ thời gian</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Ghi chú mới</dd></div><div><dt>⌘⌃V</dt><dd>Tạo ghi chú mới từ nội dung đã sao chép</dd></div><div><dt>⌘⌃T</dt><dd>Hiện hoặc ẩn hẹn giờ</dd></div><div><dt>⌘⌃B</dt><dd>Bắt đầu Pomodoro (tập trung 25 phút, nghỉ 5 phút)</dd></div><div><dt>⌘⌃P</dt><dd>Máy nhắc chữ</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Hiện hoặc ẩn mọi ghi chú</dd></div><div><dt>10</dt><dd>Chỉ gõ số nghĩa là phút (10 phút)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Phút:giây, giờ:phút:giây</dd></div><div><dt>1h 20m · 45s</dt><dd>Kèm đơn vị</dd></div><div><dt>25/5</dt><dd>Tập trung/nghỉ, lặp lại đến khi bạn dừng</dd></div></dl>
+      </div>
+      <p class="muted">Mọi phím tắt đều nhấn Command (⌘) cùng Control (⌃) và dùng được cả khi bạn đang ở ứng dụng khác. Hẹn giờ tối đa 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Tất cả đều miễn phí</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Ghi chú sáu màu, chỉnh độ trong suốt, cỡ chữ và khóa chỉnh sửa</li><li>Đếm ngược, Pomodoro và widget trong Trung tâm thông báo</li><li>Máy nhắc chữ có chế độ lật ngang</li><li>Nhạc nền phát cùng đồng hồ hẹn giờ</li><li>Phím tắt dùng được từ mọi ứng dụng</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Bắt đầu, tạm dừng, cộng hoặc trừ 30 giây</li><li>Đổi kích thước và vị trí widget ngay trên sân khấu</li><li>Hẹn giờ 3, 5, 10 hoặc 15 phút chỉ với một chạm</li></ul>
+          <p class="muted">Là ứng dụng riêng, miễn phí. Cần iOS 17 trở lên và StickyPresenter đang chạy trên Mac cùng mạng Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Không có tính năng nào phải trả tiền mới dùng được. Nếu thấy hữu ích, bạn có thể gửi tiền tip cho nhà phát triển trong phần Cài đặt.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Khi chia sẻ hoặc phản chiếu màn hình, có thể chỉ hiện đồng hồ hẹn giờ không?</summary><p>Được. Nhấn nút Cửa sổ ở dòng của hẹn giờ để mở nó thành cửa sổ thường. Khi đó nó có trong danh sách cửa sổ của tính năng chia sẻ màn hình và AirPlay, bạn chỉ cần chọn chia sẻ cửa sổ này.</p></details>
+<details><summary>Tôi đã ẩn widget hẹn giờ và giờ không tìm thấy.</summary><p>Trong cửa sổ hẹn giờ, rê chuột lên dòng của hẹn giờ đó, vị trí widget sẽ được đánh dấu bằng đường nét đứt. Nhấn Căn chỉnh để gọi nó về cạnh cửa sổ hẹn giờ.</p></details>
+<details><summary>Tôi lỡ đóng một ghi chú.</summary><p>Dùng Mở lại ghi chú đã đóng trên thanh menu để khôi phục bất kỳ ghi chú nào trong 20 ghi chú gần nhất. Ghi chú được lưu ngay khi gõ và trở lại đúng chỗ cũ khi mở lại ứng dụng.</p></details>
+<details><summary>Phím tắt không hoạt động.</summary><p>Nếu bảng phím tắt trong hướng dẫn ghi Đang được ứng dụng khác dùng, nghĩa là một ứng dụng khác đã giữ phím đó trước. Thoát ứng dụng đó là dùng lại được. Không cần quyền Trợ năng.</p></details>
+<details><summary>Vì sao chủ đề Tắc kè hoa xin quyền Ghi màn hình?</summary><p>Tắc kè hoa đọc màu của phần màn hình phía sau widget để đổi màu theo, nên cần quyền này. Không có gì được lưu hay gửi đi. Nếu không cấp quyền, các chủ đề Hệ thống, Sáng và Tối vẫn dùng bình thường.</p></details>
+<details><summary>Thêm nhạc nền bằng cách nào?</summary><p>Chọn một không khí (Tập trung, Thư giãn, Jazz hoặc Sôi động) ở thanh nhạc cuối cửa sổ hẹn giờ, ứng dụng sẽ tạo sẵn thư mục cho từng loại. Bỏ bài hát của bạn vào đó, nhạc sẽ phát lần lượt cùng đồng hồ hẹn giờ. Ứng dụng không kèm sẵn nhạc.</p></details>
+<details><summary>Điều khiển trên iPhone không tìm thấy Mac.</summary><p>Hãy kiểm tra lần lượt: StickyPresenter có đang chạy trên Mac không (xem biểu tượng trên thanh menu); hai thiết bị có cùng một mạng Wi‑Fi không (mạng khách hay dữ liệu di động đều không được); đã cho phép Mạng cục bộ trong Quyền riêng tư &amp; Bảo mật trên cả iPhone và Mac chưa; VPN đã tắt chưa.</p></details>
+<details><summary>Điều khiển báo mã ghép nối không đúng.</summary><p>Nhập mã bốn số đang hiện trong mục Điều khiển từ xa trên thanh menu của Mac. Nếu bạn đã nhấn Mã ghép nối mới thì chỉ mã mới dùng được. Sau lần ghép nối đầu, lần sau chỉ cần mở ứng dụng là tự kết nối.</p></details>
+<details><summary>Người khác có điều khiển được hẹn giờ của tôi không?</summary><p>Không, nếu họ không biết mã. Mac chỉ nhận những điều khiển đã nhập đúng mã, qua kết nối trực tiếp được mã hóa trong mạng cục bộ. Nếu đã lỡ để người khác thấy mã, hãy chọn Mã ghép nối mới hoặc Quên các điều khiển từ xa đã ghép nối trong mục Điều khiển từ xa.</p></details>
+<details><summary>Ghi chú và kịch bản được lưu ở đâu?</summary><p>Chỉ trên chiếc Mac này. Không cần tài khoản, không quảng cáo, và không có gì gửi lên mạng ngoài thống kê sử dụng ẩn danh và góp ý bạn tự gửi.</p></details></div>
+      <p class="contact">Có câu hỏi, gặp lỗi hay muốn góp ý? Gửi thư đến <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Buổi thuyết trình tới<br>không cần tìm đồng hồ nữa</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Tải miễn phí trên Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Hỗ trợ</a> · <a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="remote.html">Điều khiển bằng iPhone</a>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

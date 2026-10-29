@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nb">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Svevende notater, nedtellingstidtakere og en teleprompter over Keynote i fullskjerm – for macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: notater og tidtaker over Keynote i fullskjerm</title>
+  <meta name="description" content="Mac-app i menylinjen som holder notatene dine, en nedtelling og en teleprompter over Keynote i fullskjerm. Alt er gratis.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: notater og tidtaker over Keynote i fullskjerm">
+  <meta property="og:description" content="Mac-app i menylinjen som holder notatene dine, en nedtelling og en teleprompter over Keynote i fullskjerm. Alt er gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/nb/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/nb/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Appikon for StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Svevende notater, tidtakere og teleprompter til presentasjonene dine</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Kundestøtte</a>
-      <a class="btn" href="privacy.html">Personvernerklæring</a>
-      <a class="btn" href="remote.html">Fjernkontroll for iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb" aria-current="true">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Hopp til innhold</a>
+  <header class="bar">
+    <a class="brand" href="../nb/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Språk</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="nb">
-        <h2>Manuset og klokken – alltid foran deg</h2>
-        <p>StickyPresenter er en lett app for menylinjen i macOS som holder notater,
-        nedtellingstidtakere og en teleprompter svevende over Keynote i fullskjerm
-        eller hvilken som helst annen presentasjon – så du alltid ser notatene og tiden mens du presenterer.</p>
-        <ul>
-          <li><strong>Svevende notater</strong> – ligger øverst over lysbilder i fullskjerm, finnes i seks farger med justerbar gjennomsiktighet og skriftstørrelse, og kan låses så ingenting endres ved et uhell.</li>
-          <li><strong>Tidtakere</strong> – nedtellingswidgeter i valgfri størrelse, med klokkesignal og pulserende kant når tiden er ute. Åpne en tidtaker i sitt eget vindu for å dele den via skjermdeling eller AirPlay.</li>
-          <li><strong>Teleprompter</strong> – et manus som ruller av seg selv, med justerbar hastighet og skriftstørrelse, og speilmodus.</li>
-          <li><strong>Bor i menylinjen</strong> – ingen ikon i Dock og ingen ekstra vinduer å holde styr på.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Manus og gjenstående tid<br>rett på lysbildet</h1>
+        <p class="lead">Sett Keynote i fullskjerm, så blir notatene og tidtakeren liggende oppå. De tar aldri fokus fra presentasjonsappen, så klikkeren blar fortsatt i lysbildene.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Last ned gratis i Mac App Store</a><a class="try" href="#try">Prøv det på et lysbilde ↓</a></div>
+        <p class="muted small">Alle funksjoner er gratis. Krever macOS 14 eller nyere.</p>
       </div>
+      <div class="plain"><img src="../img/nb/01-sticky-notes.jpg" alt="Manus og gjenstående tid rett på lysbildet" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Følgeapp</p>
-        <h2>Remote Controller for iPhone</h2>
-        <p>Midt i et foredrag er Macen utenfor rekkevidde. <strong>Remote Controller</strong> gir deg
-        tidtakeren i hånden – start og sett på pause, legg til 30 sekunder, endre størrelse på widgeten, og dra den
-        et annet sted på Mac-skjermen hvis den dekker et lysbilde. Appen kobler til via det lokale
-        nettverket ditt – uten konto og uten oppsett.</p>
-        <p><a href="remote.html">Les mer →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Prøv det på et lysbilde</h2>
+      <p class="muted">Skriv inn en tid slik du ville gjort i appen. Trykk på 15s for å se hvordan widgeten varsler deg når tiden holder på å renne ut.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Prøv det på et lysbilde&quot;, &quot;lead&quot;: &quot;Skriv inn en tid slik du ville gjort i appen. Trykk på 15s for å se hvordan widgeten varsler deg når tiden holder på å renne ut.&quot;, &quot;input&quot;: &quot;Lengde på tidtakeren&quot;, &quot;start&quot;: &quot;Start&quot;, &quot;pause&quot;: &quot;Pause&quot;, &quot;resume&quot;: &quot;Fortsett&quot;, &quot;reset&quot;: &quot;Nullstill&quot;, &quot;h&quot;: &quot;%d t&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d sek&quot;, &quot;focus&quot;: &quot;Fokus&quot;, &quot;rest&quot;: &quot;Pause&quot;, &quot;invalid&quot;: &quot;Formatet gjenkjennes ikke&quot;, &quot;almost&quot;: &quot;Tiden er snart ute&quot;, &quot;done&quot;: &quot;Tiden er ute&quot;, &quot;slide&quot;: &quot;Resultater for 3. kvartal&quot;, &quot;note&quot;: &quot;Hils, gå gjennom agendaen\nStopp 3 sek ved omsetningsgrafen\nSett av 5 min til spørsmål&quot;, &quot;noteLabel&quot;: &quot;Notat&quot;, &quot;colorLabel&quot;: &quot;Notatfarge&quot;, &quot;colors&quot;: [&quot;Gul&quot;, &quot;Rosa&quot;, &quot;Grønn&quot;, &quot;Blå&quot;, &quot;Lilla&quot;, &quot;Oransje&quot;], &quot;footnote&quot;: &quot;Dette er en etterligning av skjermen. I appen svever notatet og tidtakeren slik over Keynote eller PowerPoint i fullskjerm.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Hvor har du manus og klokke når du presenterer?</h2>
+      <p>Presentatørvisningen krever en ekstra skjerm, og et blikk på armbåndsuret legger publikum alltid merke til. Kanskje du har festet en papirlapp på laptopen og sett den falle av. StickyPresenter fester manuset og gjenstående tid rett over lysbildet, der blikket ditt allerede er.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ett blikk, og du vet hvor mye tid som er igjen</h2>
+        <p>En kvadratisk widget i hjørnet viser gjenstående tid. Den blir rød når slutten nærmer seg, og når tiden er ute, kommer et lydsignal og kanten blinker.<br>Skriv tiden slik det passer deg, for eksempel <code>5:30</code> eller <code>1h 20m</code>, eller <code>25/5</code> for en pomodoro som veksler mellom fokus og pause. Åpne tidtakeren i et eget vindu for å dele bare det vinduet ved skjermdeling eller AirPlay.</p>
       </div>
+      <div class="plain"><img src="../img/nb/02-timers.jpg" alt="Ett blikk, og du vet hvor mye tid som er igjen" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Les manuset og se i kameraet</h2>
+        <p>Teleprompteren ruller manuset i tempoet du velger, og stopper av seg selv på slutten. Kopier manuset, trykk <code>⌘⌃P</code>, og den åpnes med teksten.<br>Det finnes speilvending for teleprompterutstyr med speilglass, og tempo og skriftstørrelse huskes til neste gang.</p>
+      </div>
+      <div class="plain"><img src="../img/nb/03-teleprompter.jpg" alt="Les manuset og se i kameraet" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Du forlater aldri lysbildet</h2>
+        <p>Appen kjører diskré i menylinjen, uten symbol i Dock og uten vinduer å holde styr på. Snarveier som <code>⌘⌃N</code> for nytt notat og <code>⌘⌃T</code> for tidtakere virker selv i Keynote i fullskjerm.<br>På scenen kan du med den gratis iPhone-appen Remote Controller for Sticky starte og pause tidtakeren og flytte widgeten hvis den dekker et lysbilde.</p>
+      </div>
+      <div class="plain"><img src="../img/nb/04-menu-bar.jpg" alt="Du forlater aldri lysbildet" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kom i gang i tre steg</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Åpne appen</h3><p>Et notatsymbol dukker opp i menylinjen, og første gang åpnes en kort veiledning.</p></li>
+<li class="card"><span class="n">2</span><h3>Legg til notat og tidtaker</h3><p>Kopier manuset og trykk <code>⌘⌃V</code>, og skriv så lengden på innlegget i tidtakerfeltet.</p></li>
+<li class="card"><span class="n">3</span><h3>Gå til fullskjerm</h3><p>Notatet og tidtakeren blir liggende øverst.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Snarveier og tidsformater</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Nytt notat</dd></div><div><dt>⌘⌃V</dt><dd>Nytt notat fra utklippstavlen</dd></div><div><dt>⌘⌃T</dt><dd>Vis eller skjul tidtakere</dd></div><div><dt>⌘⌃B</dt><dd>Start en pomodoro (25 min fokus, 5 min pause)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Vis eller skjul alle notater</dd></div><div><dt>10</dt><dd>Et tall alene betyr minutter (10 min)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minutter:sekunder, timer:minutter:sekunder</dd></div><div><dt>1h 20m · 45s</dt><dd>Med enheter</dd></div><div><dt>25/5</dt><dd>Fokus/pause på rad til du stopper</dd></div></dl>
+      </div>
+      <p class="muted">Alle snarveier bruker Kommando (⌘) og Kontroll (⌃) sammen og virker selv når du er i en annen app. Tidtakere kan settes opptil 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Alt er gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Notater i seks farger med gjennomsiktighet, skriftstørrelse og redigeringslås</li><li>Nedtellinger, pomodoro og en widget i Varslingssenter</li><li>Teleprompter med speilvending</li><li>Bakgrunnsmusikk som starter med tidtakeren</li><li>Snarveier som virker fra alle apper</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Start, pause og legg til eller trekk fra 30 sekunder</li><li>Endre størrelse og plassering på widgeten fra scenen</li><li>Tidtaker på 3, 5, 10 eller 15 minutter med ett trykk</li></ul>
+          <p class="muted">En egen, gratis app. Krever iOS 17 eller nyere og at StickyPresenter kjører på en Mac på samme Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Ingenting er låst bak et kjøp. Hvis appen hjelper deg, kan du gi utvikleren tips under Innstillinger.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Vanlige spørsmål</h2>
+      <div class="faq"><details><summary>Kan jeg vise bare tidtakeren ved skjermdeling eller speiling?</summary><p>Ja. Med Vindu-knappen i raden til tidtakeren åpner du den som et vanlig vindu. Da vises den i vinduslisten for skjermdeling og AirPlay, og du kan dele bare den.</p></details>
+<details><summary>Jeg har skjult en tidtakerwidget og finner den ikke.</summary><p>Hold pekeren over raden til tidtakeren i tidtakervinduet, så markeres plasseringen til widgeten med en stiplet linje. Klikk på Juster for å hente den tilbake ved siden av vinduet.</p></details>
+<details><summary>Jeg lukket et notat ved et uhell.</summary><p>Bruk Åpne lukket notat igjen i menylinjen for å hente tilbake et av de 20 siste. Notater lagres mens du skriver, og kommer tilbake på samme sted når appen åpnes igjen.</p></details>
+<details><summary>En snarvei virker ikke.</summary><p>Står den i snarveitabellen i veiledningen som Brukes av en annen app, har en annen app tatt den først. Avslutt den appen, så virker snarveien igjen. Det trengs ingen tillatelse for tilgjengelighet.</p></details>
+<details><summary>Hvorfor ber Kameleon-temaet om skjermopptak?</summary><p>Kameleon leser fargen på skjermen bak widgeten og tilpasser seg, og til det trengs den tillatelsen. Ingenting lagres eller sendes. Uten den fungerer temaene System, Lys og Mørk som vanlig.</p></details>
+<details><summary>Hvordan legger jeg til bakgrunnsmusikk?</summary><p>Velg en stemning (Fokus, Ro, Jazz eller Energi) i musikklinjen nederst i tidtakervinduet, så lager appen en mappe for hver. Legg inn dine egne låter, så spilles de i rekkefølge sammen med tidtakeren. Appen kommer ikke med musikk.</p></details>
+<details><summary>Fjernkontrollen på iPhone finner ikke Macen min.</summary><p>Sjekk i denne rekkefølgen: Kjører StickyPresenter på Macen (symbol i menylinjen)? Er begge enhetene på samme Wi‑Fi, ikke på gjestenett eller mobildata? Er Lokalt nettverk tillatt under Personvern og sikkerhet på både iPhone og Mac? Er VPN slått av?</p></details>
+<details><summary>Fjernkontrollen sier at paringskoden er feil.</summary><p>Skriv inn den firesifrede koden som vises nå under Fjernkontroll i menylinjen på Macen. Har du klikket på Ny paringskode, gjelder bare den nye. Etter første paring kobler den seg til så snart du åpner appen.</p></details>
+<details><summary>Kan noen andre styre tidtakeren min?</summary><p>Ikke uten koden din. Macen godtar bare fjernkontroller som har skrevet inn riktig kode, over en kryptert direkte forbindelse i det lokale nettverket. Har noen sett koden, bruk Ny paringskode eller Glem parede fjernkontroller under Fjernkontroll i menylinjen.</p></details>
+<details><summary>Hvor lagres notatene og manusene mine?</summary><p>Bare på denne Macen. Ingen konto, ingen reklame, og ingenting sendes på nett utenom anonym bruksstatistikk og tilbakemeldinger du selv velger å sende.</p></details></div>
+      <p class="contact">Spørsmål, feil eller ideer? Skriv til <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>På neste foredrag<br>slipper du å lete etter klokka</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Last ned gratis i Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Kundestøtte</a> · <a href="privacy.html">Personvernerklæring</a> · <a href="remote.html">Fjernkontroll for iPhone</a>
+    <nav id="languages" class="langs" aria-label="Språk"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb" aria-current="page">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Personvernerklæring</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

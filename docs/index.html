@@ -1,123 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Floating sticky notes, countdown timers and a teleprompter above full-screen Keynote, for macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="icon.png" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: notes and a timer that float above full-screen Keynote</title>
+  <meta name="description" content="A Mac menu bar app that keeps your speaker notes, a countdown timer and a teleprompter on top of full-screen Keynote. Every feature is free.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: notes and a timer that float above full-screen Keynote">
+  <meta property="og:description" content="A Mac menu bar app that keeps your speaker notes, a countdown timer and a teleprompter on top of full-screen Keynote. Every feature is free.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/en/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="icon.png" alt="StickyPresenter app icon" />
-    <h1>StickyPresenter</h1>
-    <p>Floating sticky notes, timers &amp; teleprompter for your presentations</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Support</a>
-      <a class="btn" href="privacy.html">Privacy Policy</a>
-      <a class="btn" href="remote.html">iPhone Remote</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="en/index.html" hreflang="en" lang="en">English</a>
-      <a href="ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href=""><img src="icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Language</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="en">
-        <p class="lang">English</p>
-        <h2>Your script and your clock, always in view</h2>
-        <p>StickyPresenter is a lightweight macOS menu-bar app that keeps sticky notes,
-        countdown timers, and a teleprompter floating above your full-screen Keynote
-        or any presentation — so your notes and timing stay visible while you present.</p>
-        <ul>
-          <li><strong>Floating sticky notes</strong> — stay on top of full-screen slides, in six colors, with adjustable opacity and font size, and a lock so nothing changes by accident.</li>
-          <li><strong>Timers</strong> — resizable countdown widgets with a chime and a pulsing border when time is up. Open one in its own window to share it over screen sharing or AirPlay.</li>
-          <li><strong>Teleprompter</strong> — an auto-scrolling script with adjustable speed and font size, plus a mirror mode.</li>
-          <li><strong>Lives in the menu bar</strong> — no Dock icon and no extra windows to keep track of.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Your script and your time,<br>right on the slide</h1>
+        <p class="lead">Put Keynote in full screen and your sticky notes and timer stay on top of it. They never take focus from the presentation app, so your clicker still advances the slides.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Get it free on the Mac App Store</a><a class="try" href="#try">Put it on a slide ↓</a></div>
+        <p class="muted small">Every feature is free. Requires macOS 14 or later.</p>
       </div>
+      <div class="plain"><img src="img/en/01-sticky-notes.jpg" alt="Your script and your time, right on the slide" width="720" height="450" decoding="async"></div>
+    </section>
 
 
-      <div class="card" id="ko" lang="ko">
-        <p class="lang">한국어</p>
-        <h2>대본과 남은 시간을 늘 눈앞에</h2>
-        <p>StickyPresenter는 Keynote 전체 화면을 포함한 발표 화면 위에 스티키 노트, 카운트다운 타이머,
-        텔레프롬프터를 띄워 두는 가벼운 macOS 메뉴 막대 앱입니다. 발표하는 동안에도 메모와 시간이
-        늘 보입니다.</p>
-        <ul>
-          <li><strong>화면 위에 떠 있는 스티키 노트</strong> — 전체 화면 슬라이드 위에도 그대로 보입니다. 여섯 가지 색, 투명도와 글자 크기 조절, 실수로 글이 바뀌지 않게 막는 잠금까지.</li>
-          <li><strong>타이머</strong> — 크기를 바꿀 수 있는 카운트다운 위젯. 시간이 다 되면 차임과 깜박이는 테두리로 알려 줍니다. 별도 창으로 열면 화면 공유나 AirPlay에도 띄울 수 있습니다.</li>
-          <li><strong>텔레프롬프터</strong> — 저절로 올라가는 대본. 속도와 글자 크기를 조절하고 좌우 반전 모드도 씁니다.</li>
-          <li><strong>메뉴 막대에서 조용히</strong> — Dock 아이콘도, 따로 챙겨야 할 창도 없습니다.</li>
-        </ul>
+    <section class="reveal" id="try">
+      <h2>Put it on a slide</h2>
+      <p class="muted">Type a time the way you would in the app. Tap 15s to see how the widget warns you as time runs out.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Put it on a slide&quot;, &quot;lead&quot;: &quot;Type a time the way you would in the app. Tap 15s to see how the widget warns you as time runs out.&quot;, &quot;input&quot;: &quot;Timer length&quot;, &quot;start&quot;: &quot;Start&quot;, &quot;pause&quot;: &quot;Pause&quot;, &quot;resume&quot;: &quot;Resume&quot;, &quot;reset&quot;: &quot;Reset&quot;, &quot;h&quot;: &quot;%d hr&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d sec&quot;, &quot;focus&quot;: &quot;Focus&quot;, &quot;rest&quot;: &quot;Break&quot;, &quot;invalid&quot;: &quot;That format isn&#x27;t recognized&quot;, &quot;almost&quot;: &quot;Almost out of time&quot;, &quot;done&quot;: &quot;Time&#x27;s up&quot;, &quot;slide&quot;: &quot;Q3 results&quot;, &quot;note&quot;: &quot;Say hi, walk through the agenda\nPause 3 s on the revenue chart\nLeave 5 min for questions&quot;, &quot;noteLabel&quot;: &quot;Sticky note&quot;, &quot;colorLabel&quot;: &quot;Note color&quot;, &quot;colors&quot;: [&quot;Yellow&quot;, &quot;Pink&quot;, &quot;Green&quot;, &quot;Blue&quot;, &quot;Purple&quot;, &quot;Orange&quot;], &quot;footnote&quot;: &quot;This is a mock-up of the screen. In the app, the note and timer float like this over full-screen Keynote or PowerPoint.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Where do your notes and the clock go while you present?</h2>
+      <p>Presenter view eats a second screen, and glancing at your watch is something the audience always notices. Maybe you've taped a paper note to the laptop and watched it fall off. StickyPresenter pins your script and the time remaining right over the slide, where your eyes already are.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>One glance tells you how long is left</h2>
+        <p>A square widget in the corner shows the time remaining. It turns red as the end gets close, then chimes and flashes its border when time is up.<br>Type times the easy way, like <code>5:30</code> or <code>1h 20m</code>, or type <code>25/5</code> for a Pomodoro that cycles between focus and break. Open a timer in its own window to share just that window over screen sharing or AirPlay.</p>
       </div>
+      <div class="plain"><img src="img/en/02-timers.jpg" alt="One glance tells you how long is left" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-
-      <div class="card">
-        <p class="lang">Companion app</p>
-        <h2>Remote Controller for iPhone</h2>
-        <p>During a talk your Mac is out of reach. <strong>Remote Controller</strong> puts the
-        timer in your hand — start and pause, add 30 seconds, resize the widget, and drag it
-        somewhere else on your Mac's screen when it covers a slide. It connects over your local
-        network, with no account and nothing to set up.</p>
-        <p><a href="remote.html">Learn more →</a></p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Read your script and keep your eyes on the camera</h2>
+        <p>The teleprompter scrolls your script at the speed you set and stops on its own at the end. Copy your script, press <code>⌘⌃P</code>, and it opens with that text.<br>There's a mirror mode for teleprompter rigs with beam-splitter glass, and your speed and font size are still there next time.</p>
       </div>
+      <div class="plain"><img src="img/en/03-teleprompter.jpg" alt="Read your script and keep your eyes on the camera" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Never leave the slide</h2>
+        <p>It runs quietly in the menu bar, with no Dock icon and no extra windows to manage. Shortcuts like <code>⌘⌃N</code> for a new note and <code>⌘⌃T</code> for timers work even in full-screen Keynote.<br>On stage, the free iPhone app Remote Controller for Sticky lets you start and pause the timer, and move the widget off a slide it's covering.</p>
+      </div>
+      <div class="plain"><img src="img/en/04-menu-bar.jpg" alt="Never leave the slide" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Three steps to start</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Open the app</h3><p>A note icon appears in the menu bar, and a short guide opens the first time.</p></li>
+<li class="card"><span class="n">2</span><h3>Add a note and a timer</h3><p>Copy your script and press <code>⌘⌃V</code>, then type your talk length into the timer field.</p></li>
+<li class="card"><span class="n">3</span><h3>Go full screen</h3><p>Your note and timer stay right on top.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Shortcuts and time formats</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>New sticky note</dd></div><div><dt>⌘⌃V</dt><dd>New note from the clipboard</dd></div><div><dt>⌘⌃T</dt><dd>Show or hide timers</dd></div><div><dt>⌘⌃B</dt><dd>Start a Pomodoro (25 min focus, 5 min break)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Show or hide all notes</dd></div><div><dt>10</dt><dd>A plain number means minutes</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minutes:seconds, hours:minutes:seconds</dd></div><div><dt>1h 20m · 45s</dt><dd>With units</dd></div><div><dt>25/5</dt><dd>Focus/break, repeating until you stop it</dd></div></dl>
+      </div>
+      <p class="muted">Every shortcut uses Command (⌘) and Control (⌃) together and works while you're in another app. Timers go up to 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>It's all free</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Sticky notes in six colors, with opacity, font size and an edit lock</li><li>Countdown timers, Pomodoro and a Notification Center widget</li><li>Teleprompter with mirror mode</li><li>Background music that starts with the timer</li><li>Shortcuts that work from any app</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Start, pause, and add or take away 30 seconds</li><li>Resize and move the widget from the stage</li><li>One tap for a 3, 5, 10 or 15 minute timer</li></ul>
+          <p class="muted">A separate free app. Needs iOS 17 or later and StickyPresenter running on a Mac on the same Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Nothing is locked behind a purchase. If it helps you, you can leave the developer a tip in Settings.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Questions</h2>
+      <div class="faq"><details><summary>Can I show just the timer over screen sharing or mirroring?</summary><p>Yes. Use the Window button on the timer's row to open it as a regular window. It then shows up in the window list for screen sharing and AirPlay, so you can share that window alone.</p></details>
+<details><summary>I hid a timer widget and can't find it.</summary><p>Hover over that timer's row in the timer window and the widget's spot is outlined with a dashed line. Click Align to bring it back next to the timer window.</p></details>
+<details><summary>I closed a note by mistake.</summary><p>Use Reopen Closed Note in the menu bar to bring back any of your last 20. Notes save as you type and return to the same spot when the app restarts.</p></details>
+<details><summary>A shortcut doesn't work.</summary><p>If the shortcut table in the guide marks it as in use by another app, that app grabbed it first. Quit that app and it works again. No Accessibility permission is needed.</p></details>
+<details><summary>Why does the Chameleon theme ask for Screen Recording?</summary><p>Chameleon reads the color of the screen behind the widget and matches it, which needs that permission. Nothing is saved or sent. Without it, the System, Light and Dark themes work as usual.</p></details>
+<details><summary>How do I add background music?</summary><p>Pick a mood (Focus, Calm, Jazz or Upbeat) in the music bar at the bottom of the timer window and the app creates a folder for each mood. Drop your own tracks in and they play in order alongside the timer. No music comes with the app.</p></details>
+<details><summary>The iPhone remote can't find my Mac.</summary><p>Check these in order: StickyPresenter is running on the Mac (look for the menu bar icon); both devices are on the same Wi‑Fi, not a guest network or cellular; Local Network is allowed for the app under Privacy &amp; Security on both the iPhone and the Mac; and VPN is off.</p></details>
+<details><summary>The remote says the pairing code is wrong.</summary><p>Enter the four-digit code currently shown under Remote in the Mac's menu bar. If you clicked New Pairing Code, only the new one works. After pairing once, the remote connects as soon as you open it.</p></details>
+<details><summary>Could someone else control my timer?</summary><p>Not without your code. The Mac only accepts remotes that entered the right code, over an encrypted direct connection on your local network. If you've shown the code to someone, use New Pairing Code or Forget Paired Remotes under Remote in the menu bar.</p></details>
+<details><summary>Where are my notes and scripts stored?</summary><p>Only on this Mac. There's no account and no ads, and nothing goes online except anonymous usage stats and feedback you choose to send.</p></details></div>
+      <p class="contact">Questions, bugs or feature ideas? Write to <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Stop looking for the clock<br>in your next talk</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Get it free on the Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="remote.html">iPhone Remote</a>
+    <nav id="languages" class="langs" aria-label="Language"><a href="" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="es/" hreflang="es" lang="es">Español</a>
+<a href="de/" hreflang="de" lang="de">Deutsch</a>
+<a href="fr/" hreflang="fr" lang="fr">Français</a>
+<a href="it/" hreflang="it" lang="it">Italiano</a>
+<a href="pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="th/" hreflang="th" lang="th">ไทย</a>
+<a href="vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="da/" hreflang="da" lang="da">Dansk</a>
+<a href="el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="demo.js"></script>
 </body>
 </html>

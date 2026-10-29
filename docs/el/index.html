@@ -1,107 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Αιωρούμενα σημειώματα, χρονόμετρα αντίστροφης μέτρησης και τηλεπροτροπέας πάνω από το Keynote σε πλήρη οθόνη, για macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: σημειώματα και χρονόμετρο πάνω από το Keynote σε πλήρη οθόνη</title>
+  <meta name="description" content="Εφαρμογή για τη γραμμή μενού του Mac που κρατά σημειώσεις, αντίστροφη μέτρηση και τηλεπροτροπέα πάνω από το Keynote σε πλήρη οθόνη. Όλα δωρεάν.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: σημειώματα και χρονόμετρο πάνω από το Keynote σε πλήρη οθόνη">
+  <meta property="og:description" content="Εφαρμογή για τη γραμμή μενού του Mac που κρατά σημειώσεις, αντίστροφη μέτρηση και τηλεπροτροπέα πάνω από το Keynote σε πλήρη οθόνη. Όλα δωρεάν.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/el/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Εικονίδιο της εφαρμογής StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Αιωρούμενα σημειώματα, χρονόμετρα και τηλεπροτροπέας για τις παρουσιάσεις σας</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Υποστήριξη</a>
-      <a class="btn" href="privacy.html">Πολιτική απορρήτου</a>
-      <a class="btn" href="remote.html">Τηλεχειριστήριο iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el" aria-current="true">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Γλώσσα</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="el">
-        <h2>Το κείμενο και ο χρόνος σας, πάντα μπροστά σας</h2>
-        <p>Το StickyPresenter είναι μια ελαφριά εφαρμογή για τη γραμμή μενού του macOS, που κρατά
-        σημειώματα, χρονόμετρα αντίστροφης μέτρησης και τηλεπροτροπέα πάνω από το Keynote σε πλήρη
-        οθόνη ή από οποιαδήποτε άλλη παρουσίαση — έτσι οι σημειώσεις σας και ο χρόνος σας μένουν
-        ορατά όσο παρουσιάζετε.</p>
-        <ul>
-          <li><strong>Αιωρούμενα σημειώματα</strong> — μένουν πάνω από τις διαφάνειες σε πλήρη οθόνη, σε έξι χρώματα, με ρυθμιζόμενη διαφάνεια και μέγεθος γραμματοσειράς, και με κλείδωμα ώστε να μην αλλάξει τίποτα κατά λάθος.</li>
-          <li><strong>Χρονόμετρα</strong> — widget αντίστροφης μέτρησης με αλλαγή μεγέθους, ήχο ειδοποίησης και πλαίσιο που πάλλεται όταν τελειώσει ο χρόνος. Ανοίξτε ένα σε δικό του παράθυρο για να το μοιραστείτε μέσω κοινής χρήσης οθόνης ή AirPlay.</li>
-          <li><strong>Τηλεπροτροπέας</strong> — κείμενο που κυλά αυτόματα, με ρυθμιζόμενη ταχύτητα και μέγεθος γραμματοσειράς, καθώς και λειτουργία κατοπτρισμού.</li>
-          <li><strong>Ζει στη γραμμή μενού</strong> — χωρίς εικονίδιο στο Dock και χωρίς επιπλέον παράθυρα να παρακολουθείτε.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Το κείμενο και ο χρόνος σας<br>πάνω στη διαφάνεια</h1>
+        <p class="lead">Βάλτε το Keynote σε πλήρη οθόνη και τα σημειώματα με το χρονόμετρο μένουν από πάνω. Δεν παίρνουν ποτέ την εστίαση από την εφαρμογή παρουσίασης, οπότε το τηλεχειριστήριο αλλάζει διαφάνειες κανονικά.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Δωρεάν λήψη από το Mac App Store</a><a class="try" href="#try">Δοκιμάστε το πάνω σε μια διαφάνεια ↓</a></div>
+        <p class="muted small">Όλες οι λειτουργίες είναι δωρεάν. Απαιτεί macOS 14 ή νεότερο.</p>
       </div>
+      <div class="plain"><img src="../img/el/01-sticky-notes.jpg" alt="Το κείμενο και ο χρόνος σας πάνω στη διαφάνεια" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Συνοδευτική εφαρμογή</p>
-        <h2>Remote Controller για iPhone</h2>
-        <p>Την ώρα της ομιλίας το Mac σας είναι μακριά. Το <strong>Remote Controller</strong> σάς
-        δίνει το χρονόμετρο στο χέρι — έναρξη και παύση, προσθήκη 30 δευτερολέπτων, αλλαγή μεγέθους
-        του widget και μεταφορά του σε άλλο σημείο της οθόνης του Mac όταν καλύπτει μια διαφάνεια.
-        Συνδέεται μέσω του τοπικού σας δικτύου, χωρίς λογαριασμό και χωρίς καμία ρύθμιση.</p>
-        <p><a href="remote.html">Μάθετε περισσότερα →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Δοκιμάστε το πάνω σε μια διαφάνεια</h2>
+      <p class="muted">Γράψτε έναν χρόνο όπως θα κάνατε στην εφαρμογή. Πατήστε 15s για να δείτε πώς σας ειδοποιεί το widget όταν ο χρόνος τελειώνει.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Δοκιμάστε το πάνω σε μια διαφάνεια&quot;, &quot;lead&quot;: &quot;Γράψτε έναν χρόνο όπως θα κάνατε στην εφαρμογή. Πατήστε 15s για να δείτε πώς σας ειδοποιεί το widget όταν ο χρόνος τελειώνει.&quot;, &quot;input&quot;: &quot;Διάρκεια χρονομέτρου&quot;, &quot;start&quot;: &quot;Έναρξη&quot;, &quot;pause&quot;: &quot;Παύση&quot;, &quot;resume&quot;: &quot;Συνέχεια&quot;, &quot;reset&quot;: &quot;Επαναφορά&quot;, &quot;h&quot;: &quot;%d ώ.&quot;, &quot;m&quot;: &quot;%d λεπ.&quot;, &quot;s&quot;: &quot;%d δευτ.&quot;, &quot;focus&quot;: &quot;Συγκέντρωση&quot;, &quot;rest&quot;: &quot;Διάλειμμα&quot;, &quot;invalid&quot;: &quot;Αυτή η μορφή δεν αναγνωρίζεται&quot;, &quot;almost&quot;: &quot;Ο χρόνος τελειώνει&quot;, &quot;done&quot;: &quot;Ο χρόνος τελείωσε&quot;, &quot;slide&quot;: &quot;Αποτελέσματα 3ου τριμήνου&quot;, &quot;note&quot;: &quot;Χαιρετισμός και θέματα\nΣτάση 3 δευτ. στο γράφημα πωλήσεων\n5 λεπτά για ερωτήσεις&quot;, &quot;noteLabel&quot;: &quot;Σημείωμα&quot;, &quot;colorLabel&quot;: &quot;Χρώμα σημειώματος&quot;, &quot;colors&quot;: [&quot;Κίτρινο&quot;, &quot;Ροζ&quot;, &quot;Πράσινο&quot;, &quot;Μπλε&quot;, &quot;Μωβ&quot;, &quot;Πορτοκαλί&quot;], &quot;footnote&quot;: &quot;Πρόκειται για απομίμηση της οθόνης. Στην εφαρμογή, το σημείωμα και το χρονόμετρο αιωρούνται έτσι πάνω από το Keynote ή το PowerPoint σε πλήρη οθόνη.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Πού βάζετε το κείμενο και το ρολόι όταν παρουσιάζετε;</h2>
+      <p>Η προβολή παρουσιαστή θέλει δεύτερη οθόνη, και μια ματιά στο ρολόι χειρός το κοινό πάντα την προσέχει. Ίσως έχετε κολλήσει κάποτε ένα χαρτάκι στο λάπτοπ και το είδατε να πέφτει. Το StickyPresenter καρφιτσώνει το κείμενο και τον χρόνο που απομένει ακριβώς πάνω από τη διαφάνεια, εκεί που ήδη κοιτάτε.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Μια ματιά και ξέρετε πόσος χρόνος μένει</h2>
+        <p>Ένα τετράγωνο widget στη γωνία δείχνει τον χρόνο που απομένει. Κοκκινίζει όταν πλησιάζει το τέλος και, όταν τελειώσει ο χρόνος, ηχεί και αναβοσβήνει το περίγραμμά του.<br>Γράψτε τον χρόνο όπως σας βολεύει, π.χ. <code>5:30</code> ή <code>1h 20m</code>, ή <code>25/5</code> για ένα Pomodoro που εναλλάσσει συγκέντρωση και διάλειμμα. Ανοίξτε το χρονόμετρο σε δικό του παράθυρο για να μοιράζεστε μόνο αυτό μέσω κοινής χρήσης οθόνης ή AirPlay.</p>
       </div>
+      <div class="plain"><img src="../img/el/02-timers.jpg" alt="Μια ματιά και ξέρετε πόσος χρόνος μένει" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Διαβάστε το κείμενο κοιτώντας την κάμερα</h2>
+        <p>Ο τηλεπροτροπέας κυλά το κείμενο με την ταχύτητα που ορίζετε και σταματά μόνος του στο τέλος. Αντιγράψτε το κείμενο, πατήστε <code>⌘⌃P</code> και ανοίγει με αυτό.<br>Υπάρχει κατοπτρική λειτουργία για εξοπλισμό με ημιδιαφανές γυαλί, και η ταχύτητα με το μέγεθος γραμμάτων μένουν ίδια την επόμενη φορά.</p>
+      </div>
+      <div class="plain"><img src="../img/el/03-teleprompter.jpg" alt="Διαβάστε το κείμενο κοιτώντας την κάμερα" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Χωρίς να φύγετε από τη διαφάνεια</h2>
+        <p>Λειτουργεί διακριτικά στη γραμμή μενού, χωρίς εικονίδιο στο Dock και χωρίς παράθυρα να προσέχετε. Συντομεύσεις όπως <code>⌘⌃N</code> για νέο σημείωμα και <code>⌘⌃T</code> για χρονόμετρα δουλεύουν ακόμη και με το Keynote σε πλήρη οθόνη.<br>Στη σκηνή, η δωρεάν εφαρμογή για iPhone Remote Controller for Sticky ξεκινά και σταματά το χρονόμετρο και μετακινεί το widget όταν κρύβει μια διαφάνεια.</p>
+      </div>
+      <div class="plain"><img src="../img/el/04-menu-bar.jpg" alt="Χωρίς να φύγετε από τη διαφάνεια" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Τρία βήματα για να ξεκινήσετε</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Ανοίξτε την εφαρμογή</h3><p>Στη γραμμή μενού εμφανίζεται ένα εικονίδιο σημειώματος και την πρώτη φορά ανοίγει ένας σύντομος οδηγός.</p></li>
+<li class="card"><span class="n">2</span><h3>Βάλτε σημείωμα και χρονόμετρο</h3><p>Αντιγράψτε το κείμενο και πατήστε <code>⌘⌃V</code>, μετά γράψτε τη διάρκεια της ομιλίας στο πεδίο του χρονομέτρου.</p></li>
+<li class="card"><span class="n">3</span><h3>Περάστε σε πλήρη οθόνη</h3><p>Το σημείωμα και το χρονόμετρο μένουν από πάνω.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Συντομεύσεις και μορφές χρόνου</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Νέο σημείωμα</dd></div><div><dt>⌘⌃V</dt><dd>Νέο σημείωμα από το πρόχειρο</dd></div><div><dt>⌘⌃T</dt><dd>Εμφάνιση ή απόκρυψη χρονομέτρων</dd></div><div><dt>⌘⌃B</dt><dd>Έναρξη Pomodoro (25 λεπ. συγκέντρωση, 5 λεπ. διάλειμμα)</dd></div><div><dt>⌘⌃P</dt><dd>Τηλεπροτροπέας</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Εμφάνιση ή απόκρυψη όλων των σημειωμάτων</dd></div><div><dt>10</dt><dd>Σκέτος αριθμός σημαίνει λεπτά (10 λεπ.)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Λεπτά:δευτερόλεπτα, ώρες:λεπτά:δευτερόλεπτα</dd></div><div><dt>1h 20m · 45s</dt><dd>Με μονάδες</dd></div><div><dt>25/5</dt><dd>Συγκέντρωση/διάλειμμα επαναλαμβανόμενα μέχρι να σταματήσετε</dd></div></dl>
+      </div>
+      <p class="muted">Όλες οι συντομεύσεις χρησιμοποιούν μαζί Command (⌘) και Control (⌃) και δουλεύουν ενώ είστε σε άλλη εφαρμογή. Τα χρονόμετρα φτάνουν έως 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Όλα είναι δωρεάν</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Σημειώματα σε έξι χρώματα, με διαφάνεια, μέγεθος γραμμάτων και κλείδωμα επεξεργασίας</li><li>Αντίστροφες μετρήσεις, Pomodoro και widget στο Κέντρο γνωστοποιήσεων</li><li>Τηλεπροτροπέας με κατοπτρική λειτουργία</li><li>Μουσική υπόκρουση που ξεκινά μαζί με το χρονόμετρο</li><li>Συντομεύσεις που δουλεύουν από κάθε εφαρμογή</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Έναρξη, παύση και πρόσθεση ή αφαίρεση 30 δευτερολέπτων</li><li>Αλλαγή μεγέθους και θέσης του widget από τη σκηνή</li><li>Χρονόμετρο 3, 5, 10 ή 15 λεπτών με ένα άγγιγμα</li></ul>
+          <p class="muted">Ξεχωριστή δωρεάν εφαρμογή. Απαιτεί iOS 17 ή νεότερο και το StickyPresenter ανοιχτό σε Mac στο ίδιο Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Τίποτα δεν κλειδώνεται πίσω από αγορά. Αν η εφαρμογή σας βοηθά, μπορείτε να αφήσετε φιλοδώρημα στον προγραμματιστή από τις Ρυθμίσεις.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Συχνές ερωτήσεις</h2>
+      <div class="faq"><details><summary>Μπορώ να δείξω μόνο το χρονόμετρο στην κοινή χρήση ή κατοπτρισμό οθόνης;</summary><p>Ναι. Με το κουμπί Παράθυρο στη γραμμή του χρονομέτρου το ανοίγετε ως κανονικό παράθυρο. Τότε εμφανίζεται στη λίστα παραθύρων της κοινής χρήσης οθόνης και του AirPlay, και μπορείτε να μοιραστείτε μόνο αυτό.</p></details>
+<details><summary>Έκρυψα ένα widget χρονομέτρου και δεν το βρίσκω.</summary><p>Στο παράθυρο χρονομέτρων, περάστε τον δείκτη πάνω από τη γραμμή εκείνου του χρονομέτρου και η θέση του widget σημειώνεται με διακεκομμένη γραμμή. Πατήστε Στοίχιση για να το φέρετε δίπλα στο παράθυρο.</p></details>
+<details><summary>Έκλεισα κατά λάθος ένα σημείωμα.</summary><p>Με το Επανάνοιγμα κλειστού σημειώματος στη γραμμή μενού επαναφέρετε οποιοδήποτε από τα τελευταία 20. Τα σημειώματα αποθηκεύονται καθώς γράφετε και επιστρέφουν στην ίδια θέση όταν ξανανοίξει η εφαρμογή.</p></details>
+<details><summary>Μια συντόμευση δεν δουλεύει.</summary><p>Αν ο πίνακας συντομεύσεων του οδηγού τη δείχνει ως Χρησιμοποιείται από άλλη εφαρμογή, μια άλλη εφαρμογή την έπιασε πρώτη. Κλείστε εκείνη την εφαρμογή και θα ξαναδουλέψει. Δεν χρειάζεται άδεια Προσβασιμότητας.</p></details>
+<details><summary>Γιατί το θέμα Χαμαιλέοντας ζητά άδεια Εγγραφής οθόνης;</summary><p>Ο Χαμαιλέοντας διαβάζει το χρώμα της οθόνης πίσω από το widget για να ταιριάξει μαζί του, και γι’ αυτό χρειάζεται την άδεια. Τίποτα δεν αποθηκεύεται ούτε στέλνεται. Χωρίς αυτήν, τα θέματα Συστήματος, Φωτεινό και Σκούρο δουλεύουν κανονικά.</p></details>
+<details><summary>Πώς προσθέτω μουσική υπόκρουση;</summary><p>Διαλέξτε διάθεση (Συγκέντρωση, Ηρεμία, Τζαζ ή Ζωντάνια) στη μπάρα μουσικής στο κάτω μέρος του παραθύρου χρονομέτρων και η εφαρμογή φτιάχνει φάκελο για καθεμία. Βάλτε εκεί τα δικά σας κομμάτια και θα παίζουν με τη σειρά μαζί με το χρονόμετρο. Η εφαρμογή δεν περιέχει μουσική.</p></details>
+<details><summary>Το τηλεχειριστήριο στο iPhone δεν βρίσκει το Mac μου.</summary><p>Ελέγξτε με τη σειρά: τρέχει το StickyPresenter στο Mac (εικονίδιο στη γραμμή μενού); είναι και οι δύο συσκευές στο ίδιο Wi‑Fi, όχι σε δίκτυο επισκεπτών ή δεδομένα κινητής; επιτρέπεται το Τοπικό δίκτυο στο Απόρρητο και ασφάλεια, σε iPhone και Mac; είναι κλειστό το VPN;</p></details>
+<details><summary>Το τηλεχειριστήριο λέει ότι ο κωδικός σύζευξης είναι λάθος.</summary><p>Πληκτρολογήστε τον τετραψήφιο κωδικό που φαίνεται τώρα στο Τηλεχειριστήριο, στη γραμμή μενού του Mac. Αν πατήσατε Νέος κωδικός σύζευξης, ισχύει μόνο ο νέος. Μετά την πρώτη σύζευξη, συνδέεται μόλις ανοίξετε την εφαρμογή.</p></details>
+<details><summary>Μπορεί κάποιος άλλος να ελέγξει το χρονόμετρό μου;</summary><p>Όχι χωρίς τον κωδικό σας. Το Mac δέχεται μόνο τηλεχειριστήρια που έδωσαν τον σωστό κωδικό, μέσω κρυπτογραφημένης άμεσης σύνδεσης στο τοπικό δίκτυο. Αν κάποιος είδε τον κωδικό, επιλέξτε Νέος κωδικός σύζευξης ή Διαγραφή συζευγμένων τηλεχειριστηρίων στο Τηλεχειριστήριο.</p></details>
+<details><summary>Πού αποθηκεύονται τα σημειώματα και τα κείμενά μου;</summary><p>Μόνο σε αυτό το Mac. Χωρίς λογαριασμό, χωρίς διαφημίσεις, και τίποτα δεν βγαίνει στο διαδίκτυο εκτός από ανώνυμα στατιστικά χρήσης και τα σχόλια που επιλέγετε να στείλετε.</p></details></div>
+      <p class="contact">Ερωτήσεις, σφάλματα ή ιδέες; Γράψτε στο <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Στην επόμενη ομιλία σας<br>μην ψάχνετε το ρολόι</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Δωρεάν λήψη από το Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Υποστήριξη</a> · <a href="privacy.html">Πολιτική απορρήτου</a> · <a href="remote.html">Τηλεχειριστήριο iPhone</a>
+    <nav id="languages" class="langs" aria-label="Γλώσσα"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Πολιτική απορρήτου</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

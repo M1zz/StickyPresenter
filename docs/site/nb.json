@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: notater og tidtaker over Keynote i fullskjerm",
+  "description": "Mac-app i menylinjen som holder notatene dine, en nedtelling og en teleprompter over Keynote i fullskjerm. Alt er gratis.",
+  "hero": {
+    "headline": "Manus og gjenstående tid\nrett på lysbildet",
+    "lead": "Sett Keynote i fullskjerm, så blir notatene og tidtakeren liggende oppå. De tar aldri fokus fra presentasjonsappen, så klikkeren blar fortsatt i lysbildene.",
+    "cta": "Last ned gratis i Mac App Store",
+    "note": "Alle funksjoner er gratis. Krever macOS 14 eller nyere."
+  },
+  "demo": {
+    "title": "Prøv det på et lysbilde",
+    "lead": "Skriv inn en tid slik du ville gjort i appen. Trykk på 15s for å se hvordan widgeten varsler deg når tiden holder på å renne ut.",
+    "input": "Lengde på tidtakeren",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsett",
+    "reset": "Nullstill",
+    "h": "%d t",
+    "m": "%d min",
+    "s": "%d sek",
+    "focus": "Fokus",
+    "rest": "Pause",
+    "invalid": "Formatet gjenkjennes ikke",
+    "almost": "Tiden er snart ute",
+    "done": "Tiden er ute",
+    "slide": "Resultater for 3. kvartal",
+    "note": "Hils, gå gjennom agendaen\nStopp 3 sek ved omsetningsgrafen\nSett av 5 min til spørsmål",
+    "noteLabel": "Notat",
+    "colorLabel": "Notatfarge",
+    "colors": ["Gul", "Rosa", "Grønn", "Blå", "Lilla", "Oransje"],
+    "footnote": "Dette er en etterligning av skjermen. I appen svever notatet og tidtakeren slik over Keynote eller PowerPoint i fullskjerm."
+  },
+  "problem": {
+    "title": "Hvor har du manus og klokke når du presenterer?",
+    "text": "Presentatørvisningen krever en ekstra skjerm, og et blikk på armbåndsuret legger publikum alltid merke til. Kanskje du har festet en papirlapp på laptopen og sett den falle av. StickyPresenter fester manuset og gjenstående tid rett over lysbildet, der blikket ditt allerede er."
+  },
+  "features": [
+    {
+      "title": "Ett blikk, og du vet hvor mye tid som er igjen",
+      "text": "En kvadratisk widget i hjørnet viser gjenstående tid. Den blir rød når slutten nærmer seg, og når tiden er ute, kommer et lydsignal og kanten blinker.\nSkriv tiden slik det passer deg, for eksempel `5:30` eller `1h 20m`, eller `25/5` for en pomodoro som veksler mellom fokus og pause. Åpne tidtakeren i et eget vindu for å dele bare det vinduet ved skjermdeling eller AirPlay.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Les manuset og se i kameraet",
+      "text": "Teleprompteren ruller manuset i tempoet du velger, og stopper av seg selv på slutten. Kopier manuset, trykk `⌘⌃P`, og den åpnes med teksten.\nDet finnes speilvending for teleprompterutstyr med speilglass, og tempo og skriftstørrelse huskes til neste gang.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Du forlater aldri lysbildet",
+      "text": "Appen kjører diskré i menylinjen, uten symbol i Dock og uten vinduer å holde styr på. Snarveier som `⌘⌃N` for nytt notat og `⌘⌃T` for tidtakere virker selv i Keynote i fullskjerm.\nPå scenen kan du med den gratis iPhone-appen Remote Controller for Sticky starte og pause tidtakeren og flytte widgeten hvis den dekker et lysbilde.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre steg",
+    "items": [
+      {"title": "Åpne appen", "text": "Et notatsymbol dukker opp i menylinjen, og første gang åpnes en kort veiledning."},
+      {"title": "Legg til notat og tidtaker", "text": "Kopier manuset og trykk `⌘⌃V`, og skriv så lengden på innlegget i tidtakerfeltet."},
+      {"title": "Gå til fullskjerm", "text": "Notatet og tidtakeren blir liggende øverst."}
+    ]
+  },
+  "reference": {
+    "title": "Snarveier og tidsformater",
+    "rows": [
+      ["⌘⌃N", "Nytt notat"],
+      ["⌘⌃V", "Nytt notat fra utklippstavlen"],
+      ["⌘⌃T", "Vis eller skjul tidtakere"],
+      ["⌘⌃B", "Start en pomodoro (25 min fokus, 5 min pause)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Vis eller skjul alle notater"],
+      ["10", "Et tall alene betyr minutter (10 min)"],
+      ["5:30 · 1:15:00", "Minutter:sekunder, timer:minutter:sekunder"],
+      ["1h 20m · 45s", "Med enheter"],
+      ["25/5", "Fokus/pause på rad til du stopper"]
+    ],
+    "note": "Alle snarveier bruker Kommando (⌘) og Kontroll (⌃) sammen og virker selv når du er i en annen app. Tidtakere kan settes opptil 99:59:59."
+  },
+  "pricing": {
+    "title": "Alt er gratis",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Notater i seks farger med gjennomsiktighet, skriftstørrelse og redigeringslås",
+        "Nedtellinger, pomodoro og en widget i Varslingssenter",
+        "Teleprompter med speilvending",
+        "Bakgrunnsmusikk som starter med tidtakeren",
+        "Snarveier som virker fra alle apper"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Start, pause og legg til eller trekk fra 30 sekunder",
+        "Endre størrelse og plassering på widgeten fra scenen",
+        "Tidtaker på 3, 5, 10 eller 15 minutter med ett trykk"
+      ],
+      "note": "En egen, gratis app. Krever iOS 17 eller nyere og at StickyPresenter kjører på en Mac på samme Wi‑Fi."
+    },
+    "note": "Ingenting er låst bak et kjøp. Hvis appen hjelper deg, kan du gi utvikleren tips under Innstillinger."
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "items": [
+      {"q": "Kan jeg vise bare tidtakeren ved skjermdeling eller speiling?", "a": "Ja. Med Vindu-knappen i raden til tidtakeren åpner du den som et vanlig vindu. Da vises den i vinduslisten for skjermdeling og AirPlay, og du kan dele bare den."},
+      {"q": "Jeg har skjult en tidtakerwidget og finner den ikke.", "a": "Hold pekeren over raden til tidtakeren i tidtakervinduet, så markeres plasseringen til widgeten med en stiplet linje. Klikk på Juster for å hente den tilbake ved siden av vinduet."},
+      {"q": "Jeg lukket et notat ved et uhell.", "a": "Bruk Åpne lukket notat igjen i menylinjen for å hente tilbake et av de 20 siste. Notater lagres mens du skriver, og kommer tilbake på samme sted når appen åpnes igjen."},
+      {"q": "En snarvei virker ikke.", "a": "Står den i snarveitabellen i veiledningen som Brukes av en annen app, har en annen app tatt den først. Avslutt den appen, så virker snarveien igjen. Det trengs ingen tillatelse for tilgjengelighet."},
+      {"q": "Hvorfor ber Kameleon-temaet om skjermopptak?", "a": "Kameleon leser fargen på skjermen bak widgeten og tilpasser seg, og til det trengs den tillatelsen. Ingenting lagres eller sendes. Uten den fungerer temaene System, Lys og Mørk som vanlig."},
+      {"q": "Hvordan legger jeg til bakgrunnsmusikk?", "a": "Velg en stemning (Fokus, Ro, Jazz eller Energi) i musikklinjen nederst i tidtakervinduet, så lager appen en mappe for hver. Legg inn dine egne låter, så spilles de i rekkefølge sammen med tidtakeren. Appen kommer ikke med musikk."},
+      {"q": "Fjernkontrollen på iPhone finner ikke Macen min.", "a": "Sjekk i denne rekkefølgen: Kjører StickyPresenter på Macen (symbol i menylinjen)? Er begge enhetene på samme Wi‑Fi, ikke på gjestenett eller mobildata? Er Lokalt nettverk tillatt under Personvern og sikkerhet på både iPhone og Mac? Er VPN slått av?"},
+      {"q": "Fjernkontrollen sier at paringskoden er feil.", "a": "Skriv inn den firesifrede koden som vises nå under Fjernkontroll i menylinjen på Macen. Har du klikket på Ny paringskode, gjelder bare den nye. Etter første paring kobler den seg til så snart du åpner appen."},
+      {"q": "Kan noen andre styre tidtakeren min?", "a": "Ikke uten koden din. Macen godtar bare fjernkontroller som har skrevet inn riktig kode, over en kryptert direkte forbindelse i det lokale nettverket. Har noen sett koden, bruk Ny paringskode eller Glem parede fjernkontroller under Fjernkontroll i menylinjen."},
+      {"q": "Hvor lagres notatene og manusene mine?", "a": "Bare på denne Macen. Ingen konto, ingen reklame, og ingenting sendes på nett utenom anonym bruksstatistikk og tilbakemeldinger du selv velger å sende."}
+    ]
+  },
+  "closing": {
+    "headline": "På neste foredrag\nslipper du å lete etter klokka",
+    "cta": "Last ned gratis i Mac App Store"
+  },
+  "ui": {
+    "skip": "Hopp til innhold",
+    "languages": "Språk",
+    "privacy": "Personvernerklæring",
+    "contact": "Spørsmål, feil eller ideer? Skriv til {email}."
+  }
+}

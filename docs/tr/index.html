@@ -1,107 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Tam ekran Keynote’un üzerinde duran yapışkan notlar, geri sayım zamanlayıcıları ve teleprompter. macOS için." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: tam ekran Keynote’un üstünde notlar ve zamanlayıcı</title>
+  <meta name="description" content="Konuşma notlarınızı, geri sayımı ve teleprompter’ı tam ekran Keynote’un üstünde tutan Mac menü çubuğu uygulaması. Her şey ücretsiz.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: tam ekran Keynote’un üstünde notlar ve zamanlayıcı">
+  <meta property="og:description" content="Konuşma notlarınızı, geri sayımı ve teleprompter’ı tam ekran Keynote’un üstünde tutan Mac menü çubuğu uygulaması. Her şey ücretsiz.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/tr/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/tr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="StickyPresenter uygulama simgesi" />
-    <h1>StickyPresenter</h1>
-    <p>Sunumlarınız için yüzen notlar, zamanlayıcılar ve teleprompter</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Destek</a>
-      <a class="btn" href="privacy.html">Gizlilik Politikası</a>
-      <a class="btn" href="remote.html">iPhone Kumandası</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr" aria-current="true">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="bar">
+    <a class="brand" href="../tr/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Dil</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="tr">
-        <h2>Metniniz ve süreniz hep gözünüzün önünde</h2>
-        <p>StickyPresenter, macOS menü çubuğunda çalışan hafif bir uygulamadır. Yapışkan notları,
-        geri sayım zamanlayıcılarını ve teleprompter’ı tam ekran Keynote’un ya da herhangi bir
-        sunumun üzerinde tutar; böylece sunum yaparken notlarınızı ve kalan sürenizi her an
-        görürsünüz.</p>
-        <ul>
-          <li><strong>Yüzen yapışkan notlar</strong> — tam ekran slaytların üzerinde kalır; altı renk, ayarlanabilir saydamlık ve yazı boyutu, ayrıca yanlışlıkla bir şey değişmesin diye kilit.</li>
-          <li><strong>Zamanlayıcılar</strong> — boyutu değiştirilebilen geri sayım widget’ları; süre dolunca bir uyarı sesi çalar ve kenarlık nabız gibi yanıp söner. Herhangi birini ayrı bir pencerede açıp ekran paylaşımı veya AirPlay ile gösterebilirsiniz.</li>
-          <li><strong>Teleprompter</strong> — hızı ve yazı boyutu ayarlanabilen, otomatik kayan metin; ayna modu da var.</li>
-          <li><strong>Menü çubuğunda yaşar</strong> — Dock’ta simge yok, takip etmeniz gereken fazladan pencere yok.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Metniniz ve kalan süre<br>doğrudan slaytın üstünde</h1>
+        <p class="lead">Keynote’u tam ekrana alın, notlarınız ve zamanlayıcı üstte kalmaya devam eder. Sunum uygulamasının odağını hiç almadıkları için kumanda slaytları her zamanki gibi geçirir.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Mac App Store’dan ücretsiz indirin</a><a class="try" href="#try">Bir slaytın üstünde deneyin ↓</a></div>
+        <p class="muted small">Tüm özellikler ücretsiz. macOS 14 veya üstü gerekir.</p>
       </div>
+      <div class="plain"><img src="../img/tr/01-sticky-notes.jpg" alt="Metniniz ve kalan süre doğrudan slaytın üstünde" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Yardımcı uygulama</p>
-        <h2>iPhone için Remote Controller</h2>
-        <p>Konuşma sırasında Mac’inize uzanamazsınız. <strong>Remote Controller</strong> zamanlayıcıyı
-        elinize verir: başlatın ve duraklatın, 30 saniye ekleyin, widget’ın boyutunu değiştirin ve
-        bir slaydı kapatıyorsa Mac ekranında başka bir yere sürükleyin. Yerel ağınız üzerinden
-        bağlanır; hesap gerekmez, hiçbir ayar yapmanız gerekmez.</p>
-        <p><a href="remote.html">Daha fazla bilgi →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Bir slaytın üstünde deneyin</h2>
+      <p class="muted">Süreyi uygulamada yazdığınız gibi yazın. Süre biterken widget’ın sizi nasıl uyardığını görmek için 15s’ye dokunun.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Bir slaytın üstünde deneyin&quot;, &quot;lead&quot;: &quot;Süreyi uygulamada yazdığınız gibi yazın. Süre biterken widget’ın sizi nasıl uyardığını görmek için 15s’ye dokunun.&quot;, &quot;input&quot;: &quot;Zamanlayıcı süresi&quot;, &quot;start&quot;: &quot;Başlat&quot;, &quot;pause&quot;: &quot;Duraklat&quot;, &quot;resume&quot;: &quot;Devam&quot;, &quot;reset&quot;: &quot;Sıfırla&quot;, &quot;h&quot;: &quot;%d sa&quot;, &quot;m&quot;: &quot;%d dk&quot;, &quot;s&quot;: &quot;%d sn&quot;, &quot;focus&quot;: &quot;Odak&quot;, &quot;rest&quot;: &quot;Mola&quot;, &quot;invalid&quot;: &quot;Bu biçim tanınmadı&quot;, &quot;almost&quot;: &quot;Süre bitmek üzere&quot;, &quot;done&quot;: &quot;Süre doldu&quot;, &quot;slide&quot;: &quot;3. çeyrek sonuçları&quot;, &quot;note&quot;: &quot;Selamla, gündemi anlat\nSatış grafiğinde 3 sn dur\nSorulara 5 dk ayır&quot;, &quot;noteLabel&quot;: &quot;Not&quot;, &quot;colorLabel&quot;: &quot;Not rengi&quot;, &quot;colors&quot;: [&quot;Sarı&quot;, &quot;Pembe&quot;, &quot;Yeşil&quot;, &quot;Mavi&quot;, &quot;Mor&quot;, &quot;Turuncu&quot;], &quot;footnote&quot;: &quot;Bu, ekranın bir benzeridir. Uygulamada not ve zamanlayıcı, tam ekran Keynote veya PowerPoint’in üstünde böyle durur.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Sunum yaparken metni ve saati nereye koyuyorsunuz?</h2>
+      <p>Sunucu görünümü ikinci bir ekran ister, kol saatine bir bakış da salondan hiç kaçmaz. Belki dizüstü bilgisayara kâğıt not yapıştırıp düştüğünü görmüşsünüzdür. StickyPresenter metninizi ve kalan süreyi slaytın tam üstüne, zaten baktığınız yere iğneler.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Bir bakışta ne kadar kaldığını bilirsiniz</h2>
+        <p>Köşedeki kare widget kalan süreyi gösterir. Sona yaklaşırken kırmızıya döner, süre dolunca uyarı sesi çalar ve kenarı yanıp söner.<br>Süreyi nasıl isterseniz yazın, örneğin <code>5:30</code> ya da <code>1h 20m</code>; <code>25/5</code> yazarsanız odak ile mola arasında gidip gelen bir Pomodoro olur. Zamanlayıcıyı ayrı bir pencerede açarak ekran paylaşımında ya da AirPlay’de yalnızca o pencereyi gösterin.</p>
       </div>
+      <div class="plain"><img src="../img/tr/02-timers.jpg" alt="Bir bakışta ne kadar kaldığını bilirsiniz" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kameraya bakarak metninizi okuyun</h2>
+        <p>Teleprompter metninizi seçtiğiniz hızda kaydırır ve sona gelince kendiliğinden durur. Metni kopyalayıp <code>⌘⌃P</code>’ye basın, o metinle hemen açılır.<br>Yansıtıcı camlı teleprompter düzenekleri için ayna modu var; hız ve yazı boyutu bir sonraki sefere de aynı kalır.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/03-teleprompter.jpg" alt="Kameraya bakarak metninizi okuyun" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Slayttan hiç ayrılmazsınız</h2>
+        <p>Menü çubuğunda sessizce çalışır; Dock’ta simgesi, takip edilecek penceresi yoktur. Yeni not için <code>⌘⌃N</code>, zamanlayıcılar için <code>⌘⌃T</code> gibi kısayollar tam ekran Keynote’ta bile çalışır.<br>Sahnede ücretsiz iPhone uygulaması Remote Controller for Sticky ile zamanlayıcıyı başlatıp duraklatabilir, slaytı kapatan widget’ı kenara çekebilirsiniz.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/04-menu-bar.jpg" alt="Slayttan hiç ayrılmazsınız" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Üç adımda başlayın</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Uygulamayı açın</h3><p>Menü çubuğunda bir not simgesi belirir, ilk açılışta kısa bir rehber açılır.</p></li>
+<li class="card"><span class="n">2</span><h3>Not ve zamanlayıcı ekleyin</h3><p>Metni kopyalayıp <code>⌘⌃V</code>’ye basın, ardından konuşmanızın süresini zamanlayıcı alanına yazın.</p></li>
+<li class="card"><span class="n">3</span><h3>Tam ekrana geçin</h3><p>Not ve zamanlayıcı üstte kalır.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kısayollar ve süre biçimleri</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Yeni not</dd></div><div><dt>⌘⌃V</dt><dd>Panodaki metinle yeni not</dd></div><div><dt>⌘⌃T</dt><dd>Zamanlayıcıları göster veya gizle</dd></div><div><dt>⌘⌃B</dt><dd>Pomodoro başlat (25 dk odak, 5 dk mola)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Tüm notları göster veya gizle</dd></div><div><dt>10</dt><dd>Yalnızca sayı dakika demektir (10 dk)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Dakika:saniye, saat:dakika:saniye</dd></div><div><dt>1h 20m · 45s</dt><dd>Birimlerle</dd></div><div><dt>25/5</dt><dd>Siz durdurana kadar odak/mola döngüsü</dd></div></dl>
+      </div>
+      <p class="muted">Tüm kısayollar Command (⌘) ve Control (⌃) tuşlarını birlikte kullanır ve başka bir uygulamadayken de çalışır. Zamanlayıcılar 99:59:59’a kadar ayarlanabilir.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Hepsi ücretsiz</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Altı renkte notlar; saydamlık, yazı boyutu ve düzenleme kilidi</li><li>Geri sayımlar, Pomodoro ve Bildirim Merkezi widget’ı</li><li>Ayna modlu teleprompter</li><li>Zamanlayıcıyla birlikte başlayan arka plan müziği</li><li>Her uygulamadan çalışan kısayollar</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Başlat, duraklat, 30 saniye ekle veya çıkar</li><li>Widget’ın boyutunu ve yerini sahneden değiştir</li><li>Tek dokunuşla 3, 5, 10 veya 15 dakikalık zamanlayıcı</li></ul>
+          <p class="muted">Ayrı ve ücretsiz bir uygulamadır. iOS 17 veya üstü ve aynı Wi‑Fi’daki bir Mac’te StickyPresenter’ın açık olması gerekir.</p>
+        </div>
+      </div>
+      <p class="muted">Hiçbir özellik ödemeye kilitli değil. Uygulama işinize yarıyorsa Ayarlar’dan geliştiriciye bahşiş bırakabilirsiniz.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Sık sorulan sorular</h2>
+      <div class="faq"><details><summary>Ekran paylaşımı veya yansıtmada yalnızca zamanlayıcıyı gösterebilir miyim?</summary><p>Evet. Zamanlayıcının satırındaki Pencere düğmesiyle onu normal bir pencere olarak açın. Böylece ekran paylaşımı ve AirPlay’in pencere listesinde görünür ve yalnızca onu paylaşabilirsiniz.</p></details>
+<details><summary>Bir zamanlayıcı widget’ını gizledim, bulamıyorum.</summary><p>Zamanlayıcı penceresinde o zamanlayıcının satırının üzerine gelin; widget’ın yeri kesikli çizgiyle gösterilir. Hizala’ya tıklayarak onu pencerenin yanına geri getirin.</p></details>
+<details><summary>Bir notu yanlışlıkla kapattım.</summary><p>Menü çubuğundaki Kapatılan Notu Yeniden Aç ile son 20 nottan herhangi birini geri getirebilirsiniz. Notlar siz yazarken kaydedilir ve uygulama yeniden açıldığında aynı yere döner.</p></details>
+<details><summary>Bir kısayol çalışmıyor.</summary><p>Rehberdeki kısayol tablosunda Başka bir uygulama kullanıyor yazıyorsa, başka bir uygulama onu önce almış demektir. O uygulamadan çıkın, kısayol yeniden çalışır. Erişilebilirlik izni gerekmez.</p></details>
+<details><summary>Bukalemun teması neden ekran kaydı izni istiyor?</summary><p>Bukalemun, widget’ın arkasındaki ekranın rengini okuyup ona uyum sağlar; bunun için o izin gerekir. Hiçbir şey kaydedilmez ya da gönderilmez. İzin vermezseniz Sistem, Açık ve Koyu temaları normal şekilde çalışır.</p></details>
+<details><summary>Arka plan müziğini nasıl eklerim?</summary><p>Zamanlayıcı penceresinin altındaki müzik çubuğundan bir hava seçin (Odak, Sakin, Caz veya Canlı); uygulama her biri için bir klasör oluşturur. Kendi parçalarınızı oraya koyun, zamanlayıcıyla birlikte sırayla çalsın. Uygulamada hazır müzik yoktur.</p></details>
+<details><summary>iPhone’daki kumanda Mac’imi bulamıyor.</summary><p>Sırayla kontrol edin: Mac’te StickyPresenter açık mı (menü çubuğundaki simge)? İki cihaz da aynı Wi‑Fi’da mı, misafir ağında ya da hücresel veride değil mi? Hem iPhone’da hem Mac’te Gizlilik ve Güvenlik altında Yerel Ağ izni verildi mi? VPN kapalı mı?</p></details>
+<details><summary>Kumanda eşleştirme kodunun yanlış olduğunu söylüyor.</summary><p>Mac’in menü çubuğunda Uzaktan Kumanda altında şu an görünen dört haneli kodu girin. Yeni Eşleştirme Kodu’na tıkladıysanız yalnızca yeni kod geçerlidir. İlk eşleştirmeden sonra uygulamayı açar açmaz bağlanır.</p></details>
+<details><summary>Başkası zamanlayıcımı kontrol edebilir mi?</summary><p>Kodunuz olmadan edemez. Mac yalnızca doğru kodu giren kumandaları, yerel ağdaki şifreli doğrudan bağlantı üzerinden kabul eder. Kodu biri gördüyse menü çubuğunda Uzaktan Kumanda altından Yeni Eşleştirme Kodu’nu ya da Eşleşen Uzaktan Kumandaları Unut’u seçin.</p></details>
+<details><summary>Notlarım ve metinlerim nerede saklanıyor?</summary><p>Yalnızca bu Mac’te. Hesap da reklam da yok; anonim kullanım istatistikleri ve kendi gönderdiğiniz geri bildirimler dışında hiçbir şey internete çıkmaz.</p></details></div>
+      <p class="contact">Sorularınız, hata bildirimleriniz ya da fikirleriniz için <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> adresine yazın.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bir sonraki sunumda<br>saati aramayın</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Mac App Store’dan ücretsiz indirin</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Destek</a> · <a href="privacy.html">Gizlilik Politikası</a> · <a href="remote.html">iPhone Kumandası</a>
+    <nav id="languages" class="langs" aria-label="Dil"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></nav>
+    <p><a href="privacy.html">Gizlilik Politikası</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

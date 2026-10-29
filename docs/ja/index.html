@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="フルスクリーンの Keynote の上に、付箋・カウントダウンタイマー・プロンプターを表示できる macOS アプリです。" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter：Keynoteのフルスクリーンの上に浮かぶ発表メモとタイマー</title>
+  <meta name="description" content="台本メモ、カウントダウンタイマー、プロンプターをKeynoteのフルスクリーンの上に表示しておけるMacのメニューバーアプリ。すべての機能が無料です。">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter：Keynoteのフルスクリーンの上に浮かぶ発表メモとタイマー">
+  <meta property="og:description" content="台本メモ、カウントダウンタイマー、プロンプターをKeynoteのフルスクリーンの上に表示しておけるMacのメニューバーアプリ。すべての機能が無料です。">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/ja/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/ja/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="StickyPresenter のアプリアイコン" />
-    <h1>StickyPresenter</h1>
-    <p>プレゼンのための、前面に浮かぶ付箋・タイマー・プロンプター</p>
-    <div class="actions">
-      <a class="btn" href="support.html">サポート</a>
-      <a class="btn" href="privacy.html">プライバシーポリシー</a>
-      <a class="btn" href="remote.html">iPhone リモコン</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja" aria-current="true">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <a class="brand" href="../ja/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">言語</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="ja">
-        <h2>原稿も残り時間も、いつも目の前に</h2>
-        <p>StickyPresenter は、メニューバーに常駐する軽量な macOS アプリです。フルスクリーンの
-        Keynote をはじめ、どんなプレゼンの上にも付箋・カウントダウンタイマー・プロンプターを
-        表示できるので、発表中もメモと時間を見失いません。</p>
-        <ul>
-          <li><strong>前面に浮かぶ付箋</strong> — フルスクリーンのスライドの上にも表示されます。6 色から選べ、不透明度や文字サイズも調整可能。うっかり書き換えないようロックもできます。</li>
-          <li><strong>タイマー</strong> — サイズを自由に変えられるカウントダウンウィジェット。時間になるとチャイムが鳴り、枠が点滅してお知らせします。別ウインドウで開けば、画面共有や AirPlay でそのまま映せます。</li>
-          <li><strong>プロンプター</strong> — 原稿が自動でスクロールし、速度と文字サイズを調整できます。ミラーモードにも対応。</li>
-          <li><strong>メニューバーに常駐</strong> — Dock にアイコンは出ず、管理すべきウインドウも増えません。</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>台本と残り時間を<br>スライドの上に</h1>
+        <p class="lead">Keynoteをフルスクリーンにしても、付箋とタイマーはその上に表示されたまま。発表アプリからフォーカスを奪わないので、スライド送りもいつもどおりです。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Mac App Storeで無料ダウンロード</a><a class="try" href="#try">スライドの上に出してみる ↓</a></div>
+        <p class="muted small">すべての機能が無料。macOS 14以降に対応。</p>
       </div>
+      <div class="plain"><img src="../img/ja/01-sticky-notes.jpg" alt="台本と残り時間を スライドの上に" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">関連アプリ</p>
-        <h2>iPhone 用 Remote Controller</h2>
-        <p>発表中は Mac に手が届きません。<strong>Remote Controller</strong> があれば、タイマーを
-        手元で操作できます。スタートと一時停止、30 秒の追加、ウィジェットのサイズ変更、さらに
-        スライドに重なってしまったときは Mac の画面上の別の場所へドラッグで移動することも。
-        ローカルネットワーク経由でつながるので、アカウントも面倒な設定も不要です。</p>
-        <p><a href="remote.html">詳しく見る →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>スライドの上に出してみる</h2>
+      <p class="muted">アプリと同じ書き方で時間を入力してみてください。15sを押すと、終わり際にウィジェットがどう知らせるかすぐに確かめられます。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;スライドの上に出してみる&quot;, &quot;lead&quot;: &quot;アプリと同じ書き方で時間を入力してみてください。15sを押すと、終わり際にウィジェットがどう知らせるかすぐに確かめられます。&quot;, &quot;input&quot;: &quot;タイマーの時間&quot;, &quot;start&quot;: &quot;開始&quot;, &quot;pause&quot;: &quot;一時停止&quot;, &quot;resume&quot;: &quot;再開&quot;, &quot;reset&quot;: &quot;リセット&quot;, &quot;h&quot;: &quot;%d時間&quot;, &quot;m&quot;: &quot;%d分&quot;, &quot;s&quot;: &quot;%d秒&quot;, &quot;focus&quot;: &quot;集中&quot;, &quot;rest&quot;: &quot;休憩&quot;, &quot;invalid&quot;: &quot;この書き方は読み取れません&quot;, &quot;almost&quot;: &quot;まもなく終了&quot;, &quot;done&quot;: &quot;時間になりました&quot;, &quot;slide&quot;: &quot;第3四半期 業績報告&quot;, &quot;note&quot;: &quot;あいさつと目次の紹介\n売上グラフで3秒止まる\n質疑応答に5分残す&quot;, &quot;noteLabel&quot;: &quot;付箋&quot;, &quot;colorLabel&quot;: &quot;付箋の色&quot;, &quot;colors&quot;: [&quot;黄&quot;, &quot;ピンク&quot;, &quot;緑&quot;, &quot;青&quot;, &quot;紫&quot;, &quot;オレンジ&quot;], &quot;footnote&quot;: &quot;これは画面を再現したものです。アプリでは、KeynoteやPowerPointのフルスクリーンの上にこのように表示されます。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>発表中、台本と時計はどこに置いていますか？</h2>
+      <p>発表者ノートには画面がもう1枚必要で、腕時計を見れば聴衆に気づかれます。ノートパソコンに貼った紙のメモが落ちた経験もあるかもしれません。StickyPresenterは、台本と残り時間をスライドのすぐ上、視線の先に貼っておけます。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ちらっと見れば残り時間がわかる</h2>
+        <p>画面の隅の正方形ウィジェットが残り時間を表示します。終わりが近づくと赤くなり、時間になると通知音と点滅する枠で知らせます。<br>時間は<code>5:30</code>や<code>1h 20m</code>のように気軽に入力でき、<code>25/5</code>と書けば集中と休憩を繰り返すポモドーロになります。タイマーを別ウインドウで開けば、画面共有やAirPlayでそのウインドウだけを映せます。</p>
       </div>
+      <div class="plain"><img src="../img/ja/02-timers.jpg" alt="ちらっと見れば残り時間がわかる" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>カメラを見ながら台本を読める</h2>
+        <p>プロンプターが設定した速さで台本を送り、最後まで来ると自動で止まります。台本をコピーして<code>⌘⌃P</code>を押せば、その文章ですぐに開きます。<br>ハーフミラーを使うプロンプター機材向けの左右反転もあり、速さと文字サイズは次回もそのままです。</p>
+      </div>
+      <div class="plain"><img src="../img/ja/03-teleprompter.jpg" alt="カメラを見ながら台本を読める" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>スライドから手を離さない</h2>
+        <p>メニューバーで静かに動くので、Dockアイコンも管理するウインドウもありません。新しい付箋は<code>⌘⌃N</code>、タイマーは<code>⌘⌃T</code>など、ショートカットはフルスクリーンの発表中でもすぐ効きます。<br>ステージでは無料のiPhoneアプリRemote Controller for Stickyで、タイマーの開始や一時停止、スライドに重なったウィジェットの移動ができます。</p>
+      </div>
+      <div class="plain"><img src="../img/ja/04-menu-bar.jpg" alt="スライドから手を離さない" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>はじめ方は3ステップ</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>アプリを開く</h3><p>メニューバーに付箋のアイコンが現れ、初回だけ使い方ガイドが開きます。</p></li>
+<li class="card"><span class="n">2</span><h3>付箋とタイマーを出す</h3><p>台本をコピーして<code>⌘⌃V</code>を押し、タイマー欄に発表時間を入力します。</p></li>
+<li class="card"><span class="n">3</span><h3>スライドをフルスクリーンに</h3><p>付箋とタイマーはその上に残ったままです。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>ショートカットと時間の書き方</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>新しい付箋</dd></div><div><dt>⌘⌃V</dt><dd>コピーした文章で新しい付箋</dd></div><div><dt>⌘⌃T</dt><dd>タイマーの表示・非表示</dd></div><div><dt>⌘⌃B</dt><dd>ポモドーロを開始（集中25分、休憩5分）</dd></div><div><dt>⌘⌃P</dt><dd>プロンプター</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>すべての付箋を表示・非表示</dd></div><div><dt>10</dt><dd>数字だけなら分（10分）</dd></div><div><dt>5:30 · 1:15:00</dt><dd>分:秒、時:分:秒</dd></div><div><dt>1h 20m · 45s</dt><dd>単位つき</dd></div><div><dt>25/5</dt><dd>止めるまで集中/休憩を繰り返す</dd></div></dl>
+      </div>
+      <p class="muted">ショートカットはすべてCommand（⌘）とControl（⌃）を一緒に押し、ほかのアプリを使っている間も動きます。タイマーは最大99:59:59まで設定できます。</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>すべて無料です</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter（Mac）</h3>
+          <ul><li>付箋：6色、透明度と文字サイズ、編集ロック</li><li>カウントダウンタイマーとポモドーロ、通知センターのウィジェット</li><li>プロンプターと左右反転</li><li>タイマーと一緒に流れるBGM</li><li>どこからでも使えるショートカット</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky（iPhone）</h3>
+          <ul><li>タイマーの開始、一時停止、30秒の追加と短縮</li><li>ステージからウィジェットのサイズと位置を変更</li><li>3分・5分・10分・15分のタイマーをワンタップで開始</li></ul>
+          <p class="muted">別の無料アプリです。iOS 17以降。同じWi‑Fi上のMacでStickyPresenterが起動している必要があります。</p>
+        </div>
+      </div>
+      <p class="muted">購入しないと使えない機能はありません。気に入っていただけたら、設定から開発者にチップを送れます。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>よくある質問</h2>
+      <div class="faq"><details><summary>画面共有やミラーリングでタイマーだけを映せますか？</summary><p>はい。タイマーの行のウインドウボタンで通常のウインドウとして開くと、画面共有やAirPlayのウインドウ一覧に表示され、そのウインドウだけを選んで映せます。</p></details>
+<details><summary>非表示にしたウィジェットが見つかりません。</summary><p>タイマーウインドウでそのタイマーの行にポインタを置くと、ウィジェットの位置が点線で示されます。整列ボタンを押すとタイマーウインドウの横に戻ってきます。</p></details>
+<details><summary>うっかり付箋を閉じてしまいました。</summary><p>メニューバーの「閉じた付箋を開く」から、直近20枚まで復元できます。付箋は入力したそばから保存され、アプリを開き直しても同じ場所に戻ります。</p></details>
+<details><summary>ショートカットが効きません。</summary><p>ガイドのショートカット一覧で「ほかのアプリが使用中」と表示されるものは、別のアプリが先に使っています。そのアプリを終了すれば再び使えます。アクセシビリティの許可は必要ありません。</p></details>
+<details><summary>カメレオンテーマで画面収録の許可を求められます。</summary><p>カメレオンはウィジェットの背後の画面の色を読み取って色を合わせるテーマなので、この許可が必要です。画面を保存したり送信したりはしません。許可しなくても、システム・ライト・ダークのテーマはそのまま使えます。</p></details>
+<details><summary>BGMはどうやって入れますか？</summary><p>タイマーウインドウ下部の音楽バーで雰囲気（集中、リラックス、ジャズ、アップテンポ）を選ぶと、アプリが雰囲気ごとのフォルダを作ります。そこに曲を入れると、タイマーと一緒に順番に再生されます。曲はアプリに含まれていません。</p></details>
+<details><summary>iPhoneのリモコンがMacを見つけられません。</summary><p>次の順に確認してください。MacでStickyPresenterが起動しているか（メニューバーのアイコン）、両方の端末が同じWi‑Fiにつながっているか（ゲストネットワークやモバイル通信は不可）、iPhoneとMacの両方で「プライバシーとセキュリティ」の「ローカルネットワーク」を許可しているか、VPNがオフになっているか。</p></details>
+<details><summary>ペアリングコードが違うと表示されます。</summary><p>Macのメニューバーの「リモコン」に今表示されている4桁のコードを入力してください。「新しいペアリングコード」を押した場合は新しいコードだけが有効です。一度つながれば、次からはアプリを開くだけで接続されます。</p></details>
+<details><summary>ほかの人に自分のタイマーを操作されませんか？</summary><p>コードを教えない限り操作できません。Macは正しいコードを入力したリモコンだけを受け入れ、同じネットワーク内の暗号化された直接接続でやり取りします。コードを見せてしまった場合は、メニューバーの「リモコン」で「新しいペアリングコード」か「ペアリング済みのリモコンを解除」を選んでください。</p></details>
+<details><summary>付箋や台本はどこに保存されますか？</summary><p>このMacの中だけです。アカウントも広告もなく、匿名の利用統計とご自身で送ったフィードバック以外はインターネットに出ていきません。</p></details></div>
+      <p class="contact">ご質問、不具合、機能のご要望は<a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>までお送りください。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>次の発表では<br>時計を探さなくていい</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Mac App Storeで無料ダウンロード</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">サポート</a> · <a href="privacy.html">プライバシーポリシー</a> · <a href="remote.html">iPhone リモコン</a>
+    <nav id="languages" class="langs" aria-label="言語"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">プライバシーポリシー</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

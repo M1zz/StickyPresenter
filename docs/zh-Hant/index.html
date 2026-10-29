@@ -1,104 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="在全螢幕 Keynote 上方浮動顯示便利貼、倒數計時器與提詞機的 macOS App。" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter：浮在 Keynote 全螢幕上方的簡報便利貼與計時器</title>
+  <meta name="description" content="把講稿便利貼、倒數計時器和提詞機放在 Keynote 全螢幕畫面上方的 Mac 選單列 App。所有功能免費。">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter：浮在 Keynote 全螢幕上方的簡報便利貼與計時器">
+  <meta property="og:description" content="把講稿便利貼、倒數計時器和提詞機放在 Keynote 全螢幕畫面上方的 Mac 選單列 App。所有功能免費。">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/zh-Hant/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="StickyPresenter App 圖示" />
-    <h1>StickyPresenter</h1>
-    <p>簡報專用的浮動便利貼、計時器與提詞機</p>
-    <div class="actions">
-      <a class="btn" href="support.html">支援</a>
-      <a class="btn" href="privacy.html">隱私權政策</a>
-      <a class="btn" href="remote.html">iPhone 遙控器</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hant/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">語言</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="zh-Hant">
-        <h2>講稿和時間，隨時一目了然</h2>
-        <p>StickyPresenter 是一款輕巧的 macOS 選單列 App，能讓便利貼、倒數計時器和提詞機
-        浮動顯示在全螢幕的 Keynote 或任何簡報上方。上台時，筆記與時間始終都在眼前。</p>
-        <ul>
-          <li><strong>浮動便利貼</strong>：始終顯示在全螢幕投影片上方，提供六種顏色，可調整透明度與字體大小，還能鎖定以免不小心改動。</li>
-          <li><strong>計時器</strong>：可自由調整大小的倒數小工具，時間到時會發出提示音並讓邊框閃動。也能在獨立視窗中開啟，透過螢幕分享或 AirPlay 與觀眾共享。</li>
-          <li><strong>提詞機</strong>：講稿自動捲動，可調整速度與字體大小，並支援鏡像模式。</li>
-          <li><strong>常駐選單列</strong>：不佔用 Dock，也不會多出一堆需要管理的視窗。</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>講稿和剩餘時間<br>就在投影片上</h1>
+        <p class="lead">Keynote 切成全螢幕後，便利貼和計時器依然浮在上面。它們不會搶走簡報 App 的焦點，簡報筆照樣換頁。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">在 Mac App Store 免費下載</a><a class="try" href="#try">放到投影片上試試看 ↓</a></div>
+        <p class="muted small">所有功能免費。需要 macOS 14 或以上版本。</p>
       </div>
+      <div class="plain"><img src="../img/zh-Hant/01-sticky-notes.jpg" alt="講稿和剩餘時間 就在投影片上" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">搭配 App</p>
-        <h2>iPhone 版 Remote Controller</h2>
-        <p>演講時，Mac 往往不在手邊。<strong>Remote Controller</strong> 讓你把計時器握在手中：
-        開始與暫停、增加 30 秒、調整小工具大小，擋到投影片時還能把它拖到 Mac 螢幕上的其他位置。
-        透過區域網路連線，不需要帳號，也不必另外設定。</p>
-        <p><a href="remote.html">了解更多 →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>放到投影片上試試看</h2>
+      <p class="muted">用跟 App 一樣的寫法輸入時間。按一下 15s，馬上就能看到快結束時小工具怎麼提醒你。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;放到投影片上試試看&quot;, &quot;lead&quot;: &quot;用跟 App 一樣的寫法輸入時間。按一下 15s，馬上就能看到快結束時小工具怎麼提醒你。&quot;, &quot;input&quot;: &quot;計時長度&quot;, &quot;start&quot;: &quot;開始&quot;, &quot;pause&quot;: &quot;暫停&quot;, &quot;resume&quot;: &quot;繼續&quot;, &quot;reset&quot;: &quot;重設&quot;, &quot;h&quot;: &quot;%d小時&quot;, &quot;m&quot;: &quot;%d分鐘&quot;, &quot;s&quot;: &quot;%d秒&quot;, &quot;focus&quot;: &quot;專注&quot;, &quot;rest&quot;: &quot;休息&quot;, &quot;invalid&quot;: &quot;看不懂這種格式&quot;, &quot;almost&quot;: &quot;快到時間了&quot;, &quot;done&quot;: &quot;時間到了&quot;, &quot;slide&quot;: &quot;第三季營運報告&quot;, &quot;note&quot;: &quot;打招呼，介紹大綱\n營收圖表停 3 秒\n留 5 分鐘問答&quot;, &quot;noteLabel&quot;: &quot;便利貼&quot;, &quot;colorLabel&quot;: &quot;便利貼顏色&quot;, &quot;colors&quot;: [&quot;黃色&quot;, &quot;粉紅色&quot;, &quot;綠色&quot;, &quot;藍色&quot;, &quot;紫色&quot;, &quot;橘色&quot;], &quot;footnote&quot;: &quot;這裡只是模擬畫面。在 App 裡，便利貼和計時器會像這樣浮在 Keynote 或 PowerPoint 的全螢幕畫面上方。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>上台時，講稿和時間要放哪裡？</h2>
+      <p>簡報者備忘稿要多佔一個螢幕，低頭看手錶台下一定會發現。貼在筆電上的紙條，說不定也掉過。StickyPresenter 把講稿和剩餘時間直接貼在投影片上方，就在你視線會停留的地方。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>瞄一眼就知道還剩多久</h2>
+        <p>螢幕角落的方形小工具會顯示剩餘時間。快結束時轉成紅色，時間到就響起提示音並閃爍邊框。<br>時間可以隨手寫成 <code>5:30</code> 或 <code>1h 20m</code>，寫 <code>25/5</code> 就是專注和休息輪流的番茄鐘。把計時器另開成視窗，螢幕分享或 AirPlay 時就能只投這個視窗。</p>
       </div>
+      <div class="plain"><img src="../img/zh-Hant/02-timers.jpg" alt="瞄一眼就知道還剩多久" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>看著鏡頭讀講稿</h2>
+        <p>提詞機照你設定的速度捲動講稿，到最後會自動停下。複製講稿後按 <code>⌘⌃P</code>，就會直接用這段文字開啟。<br>也有給半透鏡讀稿設備用的左右鏡像，速度和字級下次開啟時都還在。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hant/03-teleprompter.jpg" alt="看著鏡頭讀講稿" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>不必離開投影片</h2>
+        <p>它安靜地待在選單列，沒有 Dock 圖像，也沒有要顧的視窗。<code>⌘⌃N</code> 新增便利貼、<code>⌘⌃T</code> 打開計時器等快速鍵，在全螢幕簡報中也能立刻反應。<br>在台上，用免費的 iPhone App Remote Controller for Sticky 就能開始或暫停計時，還能把擋到投影片的小工具移開。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hant/04-menu-bar.jpg" alt="不必離開投影片" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三個步驟就能開始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>打開 App</h3><p>選單列會出現便利貼圖像，第一次開啟時會顯示使用指南。</p></li>
+<li class="card"><span class="n">2</span><h3>放好便利貼和計時器</h3><p>複製講稿後按 <code>⌘⌃V</code>，再在計時欄填入簡報時間。</p></li>
+<li class="card"><span class="n">3</span><h3>投影片切成全螢幕</h3><p>便利貼和計時器依然留在上方。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>快速鍵與時間寫法</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>新增便利貼</dd></div><div><dt>⌘⌃V</dt><dd>用剪貼簿內容新增便利貼</dd></div><div><dt>⌘⌃T</dt><dd>顯示或隱藏計時器</dd></div><div><dt>⌘⌃B</dt><dd>開始番茄鐘（專注 25 分鐘，休息 5 分鐘）</dd></div><div><dt>⌘⌃P</dt><dd>提詞機</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>顯示或隱藏所有便利貼</dd></div><div><dt>10</dt><dd>只寫數字代表分鐘（10 分鐘）</dd></div><div><dt>5:30 · 1:15:00</dt><dd>分:秒，時:分:秒</dd></div><div><dt>1h 20m · 45s</dt><dd>加上單位</dd></div><div><dt>25/5</dt><dd>專注/休息，一直循環到你停止</dd></div></dl>
+      </div>
+      <p class="muted">所有快速鍵都是同時按 Command（⌘）和 Control（⌃），在其他 App 裡也能用。計時最長可設定到 99:59:59。</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>全部免費</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter（Mac）</h3>
+          <ul><li>便利貼：六種顏色，可調透明度和字級，可鎖定編輯</li><li>倒數計時器、番茄鐘和通知中心小工具</li><li>提詞機與左右鏡像</li><li>跟著計時器一起播放的背景音樂</li><li>在任何 App 都能用的快速鍵</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky（iPhone）</h3>
+          <ul><li>開始、暫停，加減 30 秒</li><li>在台上調整小工具的大小和位置</li><li>一鍵開始 3、5、10、15 分鐘計時</li></ul>
+          <p class="muted">另一款免費 App。需要 iOS 17 或以上版本，且同一個 Wi‑Fi 下的 Mac 正在執行 StickyPresenter。</p>
+        </div>
+      </div>
+      <p class="muted">沒有要付費才能用的功能。如果覺得好用，可以在設定裡給開發者小費。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>常見問題</h2>
+      <div class="faq"><details><summary>螢幕分享或鏡像輸出時，可以只顯示計時器嗎？</summary><p>可以。按計時器那一列的「視窗」按鈕，把它開成一般視窗，它就會出現在螢幕分享和 AirPlay 的視窗清單裡，可以只分享這個視窗。</p></details>
+<details><summary>把計時器小工具隱藏後找不到了。</summary><p>在計時器視窗把游標移到那一列上，小工具的位置會用虛線標出。按「對齊」就能把它叫回計時器視窗旁邊。</p></details>
+<details><summary>不小心把便利貼關掉了。</summary><p>從選單列的「重新開啟已關閉的便利貼」最多能救回最近 20 張。便利貼隨寫隨存，重新開啟 App 後也會回到原位。</p></details>
+<details><summary>快速鍵沒有反應。</summary><p>使用指南的快速鍵表中標示「被其他 App 使用」的，代表另一個 App 先佔用了。結束那個 App 後就會恢復。不需要輔助使用權限。</p></details>
+<details><summary>變色龍主題為什麼要螢幕錄製權限？</summary><p>變色龍會讀取小工具後方畫面的顏色來配色，所以需要這項權限。畫面不會被儲存或傳送。不給權限的話，系統、淺色、深色主題照樣可以用。</p></details>
+<details><summary>背景音樂要怎麼放？</summary><p>在計時器視窗下方的音樂列選一種氣氛（專注、放鬆、爵士、活力），App 會替每種氣氛建好資料夾。把自己的音樂放進去，就會跟著計時器依序播放。App 本身不附音樂。</p></details>
+<details><summary>iPhone 遙控器找不到 Mac。</summary><p>請依序確認：Mac 上的 StickyPresenter 有沒有在執行（看選單列圖像）；兩台裝置是否在同一個 Wi‑Fi（訪客網路或行動網路不行）；iPhone 和 Mac 的「隱私權與安全性」裡是否都允許「區域網路」；VPN 是否已關閉。</p></details>
+<details><summary>遙控器說配對碼不對。</summary><p>請輸入 Mac 選單列「遙控」裡目前顯示的四位數配對碼。如果按過「產生新的配對碼」，就只有新的碼有效。配對一次之後，下次打開 App 就會自動連上。</p></details>
+<details><summary>別人會不會操作到我的計時器？</summary><p>不知道配對碼就不行。Mac 只接受輸入正確配對碼的遙控器，而且只在區域網路內以加密的直接連線溝通。如果配對碼曾被別人看到，可以在選單列「遙控」選「產生新的配對碼」或「清除已配對的遙控器」。</p></details>
+<details><summary>便利貼和講稿存在哪裡？</summary><p>只存在這台 Mac 上。沒有帳號，也沒有廣告。除了匿名使用統計和你主動送出的意見，不會有任何內容上網。</p></details></div>
+      <p class="contact">有疑問、遇到問題或想提建議，請寄信到 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>下一場簡報<br>不用再找時鐘</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">在 Mac App Store 免費下載</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">支援</a> · <a href="privacy.html">隱私權政策</a> · <a href="remote.html">iPhone 遙控器</a>
+    <nav id="languages" class="langs" aria-label="語言"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隱私權政策</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

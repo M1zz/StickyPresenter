@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Catatan tempel, timer hitung mundur, dan teleprompter yang melayang di atas Keynote layar penuh, untuk macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: catatan dan timer di atas Keynote layar penuh</title>
+  <meta name="description" content="App bar menu Mac yang menaruh catatan presentasi, hitung mundur, dan teleprompter di atas Keynote layar penuh. Semua fitur gratis.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: catatan dan timer di atas Keynote layar penuh">
+  <meta property="og:description" content="App bar menu Mac yang menaruh catatan presentasi, hitung mundur, dan teleprompter di atas Keynote layar penuh. Semua fitur gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/id/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/id/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Ikon aplikasi StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Catatan tempel, timer, dan teleprompter yang melayang untuk presentasi Anda</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Dukungan</a>
-      <a class="btn" href="privacy.html">Kebijakan Privasi</a>
-      <a class="btn" href="remote.html">Remote iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id" aria-current="true">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Langsung ke konten</a>
+  <header class="bar">
+    <a class="brand" href="../id/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Bahasa</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="id">
-        <h2>Naskah dan waktu Anda, selalu terlihat</h2>
-        <p>StickyPresenter adalah aplikasi bilah menu macOS yang ringan. Catatan tempel,
-        timer hitung mundur, dan teleprompter tetap melayang di atas Keynote layar penuh
-        atau presentasi apa pun, sehingga catatan dan waktu Anda selalu terlihat selama presentasi.</p>
-        <ul>
-          <li><strong>Catatan tempel yang melayang</strong> — tetap di atas slide layar penuh, tersedia dalam enam warna, dengan opasitas dan ukuran huruf yang dapat diatur, serta fitur kunci agar tidak ada yang berubah tanpa sengaja.</li>
-          <li><strong>Timer</strong> — widget hitung mundur yang ukurannya bisa diubah, dengan bunyi lonceng dan bingkai yang berdenyut saat waktu habis. Buka timer di jendela tersendiri untuk ditampilkan lewat berbagi layar atau AirPlay.</li>
-          <li><strong>Teleprompter</strong> — naskah yang bergulir otomatis dengan kecepatan dan ukuran huruf yang dapat diatur, plus mode cermin.</li>
-          <li><strong>Tinggal di bilah menu</strong> — tanpa ikon di Dock dan tanpa jendela tambahan yang perlu Anda urus.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Naskah dan sisa waktu<br>langsung di atas slide</h1>
+        <p class="lead">Jalankan Keynote dalam layar penuh, catatan dan timer tetap melayang di atasnya. Keduanya tidak merebut fokus dari app presentasi, jadi clicker tetap bisa mengganti slide seperti biasa.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Unduh gratis di Mac App Store</a><a class="try" href="#try">Coba di atas slide ↓</a></div>
+        <p class="muted small">Semua fitur gratis. Perlu macOS 14 atau lebih baru.</p>
       </div>
+      <div class="plain"><img src="../img/id/01-sticky-notes.jpg" alt="Naskah dan sisa waktu langsung di atas slide" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Aplikasi pendamping</p>
-        <h2>Remote Controller untuk iPhone</h2>
-        <p>Saat Anda sedang berbicara di depan, Mac sering kali tidak terjangkau. <strong>Remote Controller</strong>
-        menaruh timer di genggaman Anda: mulai dan jeda, tambah 30 detik, ubah ukuran widget, dan geser
-        ke bagian lain layar Mac saat widget menutupi slide. Aplikasi ini terhubung melalui jaringan lokal
-        Anda, tanpa akun dan tanpa pengaturan apa pun.</p>
-        <p><a href="remote.html">Selengkapnya →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Coba di atas slide</h2>
+      <p class="muted">Ketik waktu seperti di app. Ketuk 15s untuk melihat cara widget memberi tahu saat waktu hampir habis.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Coba di atas slide&quot;, &quot;lead&quot;: &quot;Ketik waktu seperti di app. Ketuk 15s untuk melihat cara widget memberi tahu saat waktu hampir habis.&quot;, &quot;input&quot;: &quot;Durasi timer&quot;, &quot;start&quot;: &quot;Mulai&quot;, &quot;pause&quot;: &quot;Jeda&quot;, &quot;resume&quot;: &quot;Lanjutkan&quot;, &quot;reset&quot;: &quot;Atur ulang&quot;, &quot;h&quot;: &quot;%d jam&quot;, &quot;m&quot;: &quot;%d menit&quot;, &quot;s&quot;: &quot;%d detik&quot;, &quot;focus&quot;: &quot;Fokus&quot;, &quot;rest&quot;: &quot;Istirahat&quot;, &quot;invalid&quot;: &quot;Format ini tidak dikenali&quot;, &quot;almost&quot;: &quot;Waktu hampir habis&quot;, &quot;done&quot;: &quot;Waktu habis&quot;, &quot;slide&quot;: &quot;Hasil Kuartal III&quot;, &quot;note&quot;: &quot;Sapa audiens, sebutkan agenda\nBerhenti 3 detik di grafik penjualan\nSisakan 5 menit untuk tanya jawab&quot;, &quot;noteLabel&quot;: &quot;Catatan&quot;, &quot;colorLabel&quot;: &quot;Warna catatan&quot;, &quot;colors&quot;: [&quot;Kuning&quot;, &quot;Merah muda&quot;, &quot;Hijau&quot;, &quot;Biru&quot;, &quot;Ungu&quot;, &quot;Oranye&quot;], &quot;footnote&quot;: &quot;Ini tiruan layar. Di app, catatan dan timer melayang seperti ini di atas Keynote atau PowerPoint layar penuh.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Saat presentasi, di mana Anda menaruh naskah dan jam?</h2>
+      <p>Tampilan presenter butuh layar kedua, dan melirik jam tangan selalu ketahuan penonton. Mungkin Anda pernah menempel kertas di laptop lalu kertasnya jatuh. StickyPresenter menyematkan naskah dan sisa waktu tepat di atas slide, di tempat mata Anda memang tertuju.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sekali lirik, langsung tahu sisa waktu</h2>
+        <p>Widget persegi di pojok layar menampilkan sisa waktu. Warnanya berubah merah saat hampir selesai, lalu berbunyi dan bingkainya berkedip ketika waktu habis.<br>Ketik waktu sesukanya, misalnya <code>5:30</code> atau <code>1h 20m</code>, atau ketik <code>25/5</code> untuk Pomodoro yang bergantian antara fokus dan istirahat. Buka timer di jendela tersendiri agar hanya jendela itu yang dibagikan lewat berbagi layar atau AirPlay.</p>
       </div>
+      <div class="plain"><img src="../img/id/02-timers.jpg" alt="Sekali lirik, langsung tahu sisa waktu" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Baca naskah sambil menatap kamera</h2>
+        <p>Teleprompter menggulir naskah dengan kecepatan yang Anda atur dan berhenti sendiri di akhir. Salin naskah, tekan <code>⌘⌃P</code>, dan teleprompter langsung terbuka dengan teks itu.<br>Ada mode cermin untuk perangkat teleprompter berkaca pantul, dan kecepatan serta ukuran huruf tetap tersimpan untuk lain kali.</p>
+      </div>
+      <div class="plain"><img src="../img/id/03-teleprompter.jpg" alt="Baca naskah sambil menatap kamera" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tak perlu meninggalkan slide</h2>
+        <p>App berjalan tenang di bar menu, tanpa ikon di Dock dan tanpa jendela yang perlu diurus. Pintasan seperti <code>⌘⌃N</code> untuk catatan baru dan <code>⌘⌃T</code> untuk timer tetap jalan meski Keynote sedang layar penuh.<br>Di panggung, app iPhone gratis Remote Controller for Sticky bisa memulai dan menjeda timer, serta memindahkan widget yang menutupi slide.</p>
+      </div>
+      <div class="plain"><img src="../img/id/04-menu-bar.jpg" alt="Tak perlu meninggalkan slide" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Mulai dalam tiga langkah</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Buka app</h3><p>Ikon catatan muncul di bar menu, dan panduan singkat terbuka saat pertama kali.</p></li>
+<li class="card"><span class="n">2</span><h3>Pasang catatan dan timer</h3><p>Salin naskah lalu tekan <code>⌘⌃V</code>, kemudian ketik durasi presentasi di kolom timer.</p></li>
+<li class="card"><span class="n">3</span><h3>Masuk layar penuh</h3><p>Catatan dan timer tetap berada di atas.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Pintasan dan format waktu</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Catatan baru</dd></div><div><dt>⌘⌃V</dt><dd>Catatan baru dari papan klip</dd></div><div><dt>⌘⌃T</dt><dd>Tampilkan atau sembunyikan timer</dd></div><div><dt>⌘⌃B</dt><dd>Mulai Pomodoro (fokus 25 menit, istirahat 5 menit)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Tampilkan atau sembunyikan semua catatan</dd></div><div><dt>10</dt><dd>Angka saja berarti menit (10 menit)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Menit:detik, jam:menit:detik</dd></div><div><dt>1h 20m · 45s</dt><dd>Dengan satuan</dd></div><div><dt>25/5</dt><dd>Fokus/istirahat, berulang sampai Anda hentikan</dd></div></dl>
+      </div>
+      <p class="muted">Semua pintasan memakai Command (⌘) dan Control (⌃) bersamaan, dan tetap berfungsi saat Anda berada di app lain. Timer bisa diatur hingga 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Semuanya gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Catatan dalam enam warna, dengan transparansi, ukuran huruf, dan kunci edit</li><li>Hitung mundur, Pomodoro, dan widget di Pusat Notifikasi</li><li>Teleprompter dengan mode cermin</li><li>Musik latar yang mulai bersama timer</li><li>Pintasan yang berfungsi dari app mana pun</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Mulai, jeda, serta tambah atau kurangi 30 detik</li><li>Ubah ukuran dan posisi widget langsung dari panggung</li><li>Timer 3, 5, 10, atau 15 menit dengan sekali ketuk</li></ul>
+          <p class="muted">App terpisah yang gratis. Perlu iOS 17 atau lebih baru dan StickyPresenter yang sedang berjalan di Mac pada Wi‑Fi yang sama.</p>
+        </div>
+      </div>
+      <p class="muted">Tidak ada fitur yang dikunci di balik pembelian. Kalau app ini membantu, Anda bisa memberi tip kepada pengembang di Pengaturan.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Pertanyaan umum</h2>
+      <div class="faq"><details><summary>Bisakah saya menampilkan timer saja saat berbagi layar atau mirroring?</summary><p>Bisa. Tombol Jendela di baris timer membukanya sebagai jendela biasa. Jendela itu lalu muncul di daftar jendela untuk berbagi layar dan AirPlay, jadi Anda bisa membagikan jendela itu saja.</p></details>
+<details><summary>Saya menyembunyikan widget timer dan tidak bisa menemukannya.</summary><p>Di jendela timer, arahkan penunjuk ke baris timer tersebut, lalu posisi widget akan ditandai dengan garis putus-putus. Klik Ratakan untuk mengembalikannya ke samping jendela timer.</p></details>
+<details><summary>Saya tidak sengaja menutup catatan.</summary><p>Pakai Buka Lagi Catatan yang Ditutup di bar menu untuk memulihkan salah satu dari 20 catatan terakhir. Catatan tersimpan saat Anda mengetik dan kembali ke posisi yang sama ketika app dibuka lagi.</p></details>
+<details><summary>Pintasan tidak berfungsi.</summary><p>Jika tabel pintasan di panduan menandainya Dipakai aplikasi lain, artinya app lain sudah mengambilnya lebih dulu. Tutup app itu dan pintasan akan berfungsi lagi. Izin Aksesibilitas tidak diperlukan.</p></details>
+<details><summary>Kenapa tema Bunglon meminta izin Perekaman Layar?</summary><p>Bunglon membaca warna layar di belakang widget untuk menyesuaikan diri, dan untuk itu perlu izin tersebut. Tidak ada yang disimpan atau dikirim. Tanpa izin itu, tema Sistem, Terang, dan Gelap tetap berfungsi normal.</p></details>
+<details><summary>Bagaimana cara menambahkan musik latar?</summary><p>Pilih suasana (Fokus, Tenang, Jazz, atau Ceria) di bilah musik di bagian bawah jendela timer, dan app akan membuat folder untuk masing-masing. Masukkan lagu Anda sendiri ke sana, lalu lagu diputar berurutan bersama timer. App tidak menyertakan musik.</p></details>
+<details><summary>Remote di iPhone tidak menemukan Mac saya.</summary><p>Periksa berurutan: StickyPresenter sedang berjalan di Mac (lihat ikon di bar menu); kedua perangkat ada di Wi‑Fi yang sama, bukan jaringan tamu atau data seluler; Jaringan Lokal sudah diizinkan di Privasi &amp; Keamanan pada iPhone dan Mac; VPN dalam keadaan mati.</p></details>
+<details><summary>Remote bilang kode pemasangan salah.</summary><p>Masukkan kode empat digit yang sedang tampil di menu Remote pada bar menu Mac. Jika Anda sudah mengeklik Kode Pemasangan Baru, hanya kode baru yang berlaku. Setelah dipasangkan sekali, remote langsung terhubung begitu app dibuka.</p></details>
+<details><summary>Apakah orang lain bisa mengendalikan timer saya?</summary><p>Tidak tanpa kode Anda. Mac hanya menerima remote yang memasukkan kode yang benar, melalui koneksi langsung terenkripsi di jaringan lokal. Jika ada yang sempat melihat kode, pilih Kode Pemasangan Baru atau Lupakan Remote yang Dipasangkan di menu Remote.</p></details>
+<details><summary>Di mana catatan dan naskah saya disimpan?</summary><p>Hanya di Mac ini. Tanpa akun, tanpa iklan, dan tidak ada yang dikirim ke internet selain statistik penggunaan anonim dan masukan yang Anda kirim sendiri.</p></details></div>
+      <p class="contact">Ada pertanyaan, bug, atau ide? Kirim email ke <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Di presentasi berikutnya,<br>tak perlu lagi mencari jam</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Unduh gratis di Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Dukungan</a> · <a href="privacy.html">Kebijakan Privasi</a> · <a href="remote.html">Remote iPhone</a>
+    <nav id="languages" class="langs" aria-label="Bahasa"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id" aria-current="page">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Kebijakan Privasi</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Плавающие заметки, таймеры обратного отсчёта и телесуфлёр поверх полноэкранного Keynote — для macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: заметки и таймер поверх Keynote в полноэкранном режиме</title>
+  <meta name="description" content="Приложение для строки меню Mac: заметки докладчика, таймер обратного отсчёта и телесуфлёр поверх полноэкранного Keynote. Всё бесплатно.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: заметки и таймер поверх Keynote в полноэкранном режиме">
+  <meta property="og:description" content="Приложение для строки меню Mac: заметки докладчика, таймер обратного отсчёта и телесуфлёр поверх полноэкранного Keynote. Всё бесплатно.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/ru/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/ru/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Значок приложения StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Плавающие заметки, таймеры и телесуфлёр для ваших выступлений</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Поддержка</a>
-      <a class="btn" href="privacy.html">Политика конфиденциальности</a>
-      <a class="btn" href="remote.html">Пульт на iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru" aria-current="true">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+  <header class="bar">
+    <a class="brand" href="../ru/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Язык</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="ru">
-        <h2>Текст и время всегда перед глазами</h2>
-        <p>StickyPresenter — лёгкое приложение для строки меню macOS. Заметки, таймеры
-        обратного отсчёта и телесуфлёр остаются поверх полноэкранного Keynote или любой
-        другой презентации, так что подсказки и время всегда видны, пока вы выступаете.</p>
-        <ul>
-          <li><strong>Плавающие заметки</strong> — остаются поверх полноэкранных слайдов; шесть цветов, настраиваемые прозрачность и размер шрифта, а также блокировка, чтобы ничего не изменить случайно.</li>
-          <li><strong>Таймеры</strong> — виджеты обратного отсчёта с изменяемым размером; по окончании времени звучит сигнал и пульсирует рамка. Таймер можно открыть в отдельном окне и показать через демонстрацию экрана или AirPlay.</li>
-          <li><strong>Телесуфлёр</strong> — автоматически прокручиваемый текст с настройкой скорости и размера шрифта, а также зеркальный режим.</li>
-          <li><strong>Живёт в строке меню</strong> — без значка в Dock и без лишних окон, за которыми нужно следить.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Текст и оставшееся время<br>прямо на слайде</h1>
+        <p class="lead">Включите Keynote на весь экран, и заметки с таймером останутся поверх. Они не забирают фокус у приложения для презентаций, так что кликер по-прежнему листает слайды.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Скачать бесплатно в Mac App Store</a><a class="try" href="#try">Попробуйте на слайде ↓</a></div>
+        <p class="muted small">Все функции бесплатны. Нужна macOS 14 или новее.</p>
       </div>
+      <div class="plain"><img src="../img/ru/01-sticky-notes.jpg" alt="Текст и оставшееся время прямо на слайде" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Приложение-компаньон</p>
-        <h2>Remote Controller для iPhone</h2>
-        <p>Во время выступления до Mac не дотянуться. <strong>Remote Controller</strong> даёт
-        управление таймером прямо в руки: запуск и пауза, плюс 30 секунд, изменение размера
-        виджета и перенос его в другое место экрана Mac, если он закрывает слайд. Подключение
-        идёт по локальной сети — без учётной записи и без какой-либо настройки.</p>
-        <p><a href="remote.html">Подробнее →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Попробуйте на слайде</h2>
+      <p class="muted">Введите время так же, как в приложении. Нажмите 15s и посмотрите, как виджет предупреждает, что время на исходе.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Попробуйте на слайде&quot;, &quot;lead&quot;: &quot;Введите время так же, как в приложении. Нажмите 15s и посмотрите, как виджет предупреждает, что время на исходе.&quot;, &quot;input&quot;: &quot;Длительность таймера&quot;, &quot;start&quot;: &quot;Старт&quot;, &quot;pause&quot;: &quot;Пауза&quot;, &quot;resume&quot;: &quot;Продолжить&quot;, &quot;reset&quot;: &quot;Сбросить&quot;, &quot;h&quot;: &quot;%d ч&quot;, &quot;m&quot;: &quot;%d мин&quot;, &quot;s&quot;: &quot;%d с&quot;, &quot;focus&quot;: &quot;Работа&quot;, &quot;rest&quot;: &quot;Перерыв&quot;, &quot;invalid&quot;: &quot;Такой формат не распознан&quot;, &quot;almost&quot;: &quot;Время на исходе&quot;, &quot;done&quot;: &quot;Время вышло&quot;, &quot;slide&quot;: &quot;Итоги третьего квартала&quot;, &quot;note&quot;: &quot;Поздороваться, рассказать план\nПауза 3 с на графике выручки\nОставить 5 мин на вопросы&quot;, &quot;noteLabel&quot;: &quot;Заметка&quot;, &quot;colorLabel&quot;: &quot;Цвет заметки&quot;, &quot;colors&quot;: [&quot;Жёлтый&quot;, &quot;Розовый&quot;, &quot;Зелёный&quot;, &quot;Синий&quot;, &quot;Фиолетовый&quot;, &quot;Оранжевый&quot;], &quot;footnote&quot;: &quot;Это имитация экрана. В приложении заметка и таймер вот так висят поверх Keynote или PowerPoint в полноэкранном режиме.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Куда деть текст и часы во время выступления?</h2>
+      <p>Режим докладчика требует второй экран, а взгляд на наручные часы зал замечает всегда. Возможно, вы уже клеили бумажку на ноутбук, а она отваливалась. StickyPresenter закрепляет текст и оставшееся время прямо над слайдом, там, куда вы и так смотрите.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Один взгляд, и ясно, сколько осталось</h2>
+        <p>Квадратный виджет в углу показывает оставшееся время. Ближе к концу он краснеет, а когда время выходит, звучит сигнал и мигает рамка.<br>Время можно вводить как удобно, например <code>5:30</code> или <code>1h 20m</code>, а <code>25/5</code> запустит помидор, где работа и перерыв чередуются. Откройте таймер в отдельном окне, чтобы показывать при демонстрации экрана или через AirPlay только его.</p>
       </div>
+      <div class="plain"><img src="../img/ru/02-timers.jpg" alt="Один взгляд, и ясно, сколько осталось" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Читайте текст, глядя в камеру</h2>
+        <p>Телесуфлёр прокручивает текст с заданной скоростью и сам останавливается в конце. Скопируйте текст, нажмите <code>⌘⌃P</code>, и он откроется уже с ним.<br>Есть зеркальный режим для суфлёров с полупрозрачным стеклом, а скорость и размер шрифта сохранятся до следующего раза.</p>
+      </div>
+      <div class="plain"><img src="../img/ru/03-teleprompter.jpg" alt="Читайте текст, глядя в камеру" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Не отрываясь от слайда</h2>
+        <p>Приложение тихо работает в строке меню: ни значка в Dock, ни окон, за которыми надо следить. Сочетания вроде <code>⌘⌃N</code> для новой заметки и <code>⌘⌃T</code> для таймеров срабатывают даже в полноэкранном Keynote.<br>На сцене бесплатное приложение для iPhone Remote Controller for Sticky позволяет запускать и останавливать таймер и убирать виджет, если он закрывает слайд.</p>
+      </div>
+      <div class="plain"><img src="../img/ru/04-menu-bar.jpg" alt="Не отрываясь от слайда" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Три шага, чтобы начать</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Откройте приложение</h3><p>В строке меню появится значок заметки, а при первом запуске откроется короткое руководство.</p></li>
+<li class="card"><span class="n">2</span><h3>Добавьте заметку и таймер</h3><p>Скопируйте текст и нажмите <code>⌘⌃V</code>, затем введите длительность выступления в поле таймера.</p></li>
+<li class="card"><span class="n">3</span><h3>Включите полный экран</h3><p>Заметка и таймер останутся поверх.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Сочетания клавиш и форматы времени</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Новая заметка</dd></div><div><dt>⌘⌃V</dt><dd>Новая заметка из буфера обмена</dd></div><div><dt>⌘⌃T</dt><dd>Показать или скрыть таймеры</dd></div><div><dt>⌘⌃B</dt><dd>Запустить помидор (25 мин работы, 5 мин перерыва)</dd></div><div><dt>⌘⌃P</dt><dd>Телесуфлёр</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Показать или скрыть все заметки</dd></div><div><dt>10</dt><dd>Просто число означает минуты (10 мин)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Минуты:секунды, часы:минуты:секунды</dd></div><div><dt>1h 20m · 45s</dt><dd>С единицами</dd></div><div><dt>25/5</dt><dd>Работа/перерыв по кругу, пока не остановите</dd></div></dl>
+      </div>
+      <p class="muted">Все сочетания используют Command (⌘) и Control (⌃) вместе и работают, даже когда вы в другом приложении. Таймер можно поставить до 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Всё бесплатно</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Заметки шести цветов: прозрачность, размер шрифта и блокировка правки</li><li>Таймеры обратного отсчёта, помидор и виджет в Центре уведомлений</li><li>Телесуфлёр с зеркальным режимом</li><li>Фоновая музыка, которая включается вместе с таймером</li><li>Сочетания клавиш, работающие из любого приложения</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Старт, пауза, плюс или минус 30 секунд</li><li>Размер и положение виджета прямо со сцены</li><li>Таймер на 3, 5, 10 или 15 минут одним касанием</li></ul>
+          <p class="muted">Отдельное бесплатное приложение. Нужна iOS 17 или новее и запущенный StickyPresenter на Mac в той же сети Wi‑Fi.</p>
+        </div>
+      </div>
+      <p class="muted">Ничего не спрятано за покупкой. Если приложение помогает, в настройках можно оставить разработчику чаевые.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Частые вопросы</h2>
+      <div class="faq"><details><summary>Можно показать только таймер при демонстрации или повторе экрана?</summary><p>Да. Кнопка «Окно» в строке таймера открывает его обычным окном. Тогда оно появится в списке окон для демонстрации экрана и AirPlay, и можно показать только его.</p></details>
+<details><summary>Я скрыл виджет таймера и не могу его найти.</summary><p>В окне таймеров наведите указатель на строку этого таймера, и место виджета обведётся пунктиром. Кнопка «Выровнять» вернёт его к окну таймеров.</p></details>
+<details><summary>Я случайно закрыл заметку.</summary><p>Через «Открыть закрытую заметку» в строке меню можно вернуть любую из последних 20. Заметки сохраняются по мере ввода и после перезапуска приложения возвращаются на прежнее место.</p></details>
+<details><summary>Сочетание клавиш не срабатывает.</summary><p>Если в таблице сочетаний в руководстве оно помечено как «Занято другим приложением», его раньше заняло другое приложение. Закройте его, и сочетание снова заработает. Разрешение универсального доступа не нужно.</p></details>
+<details><summary>Почему тема «Хамелеон» просит доступ к записи экрана?</summary><p>«Хамелеон» считывает цвет экрана за виджетом и подстраивается под него, для этого и нужен доступ. Ничего не сохраняется и не отправляется. Без него темы «Системная», «Светлая» и «Тёмная» работают как обычно.</p></details>
+<details><summary>Как добавить фоновую музыку?</summary><p>Выберите настроение («Концентрация», «Спокойствие», «Джаз» или «Бодрость») на музыкальной панели внизу окна таймеров, и приложение создаст по папке для каждого. Положите туда свои треки, и они будут играть по порядку вместе с таймером. Музыки в приложении нет.</p></details>
+<details><summary>Пульт на iPhone не находит мой Mac.</summary><p>Проверьте по порядку: запущен ли StickyPresenter на Mac (значок в строке меню); подключены ли оба устройства к одной сети Wi‑Fi, а не к гостевой или мобильной; разрешена ли «Локальная сеть» для приложения в разделе «Конфиденциальность и безопасность» и на iPhone, и на Mac; выключен ли VPN.</p></details>
+<details><summary>Пульт пишет, что код сопряжения неверный.</summary><p>Введите четырёхзначный код, который сейчас показан в меню «Пульт» в строке меню Mac. Если вы нажимали «Новый код сопряжения», подходит только новый. После первого сопряжения пульт подключается сразу при открытии.</p></details>
+<details><summary>Может ли кто-то другой управлять моим таймером?</summary><p>Без вашего кода нет. Mac принимает только пульты, которые ввели правильный код, и общается с ними по зашифрованному прямому соединению в локальной сети. Если код кто-то видел, выберите «Новый код сопряжения» или «Забыть сопряжённые пульты» в меню «Пульт».</p></details>
+<details><summary>Где хранятся мои заметки и тексты?</summary><p>Только на этом Mac. Нет ни аккаунта, ни рекламы, и в интернет ничего не уходит, кроме анонимной статистики использования и отзывов, которые вы отправите сами.</p></details></div>
+      <p class="contact">Вопросы, ошибки или идеи? Пишите на <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>На следующем выступлении<br>не ищите часы</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Скачать бесплатно в Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Поддержка</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="remote.html">Пульт на iPhone</a>
+    <nav id="languages" class="langs" aria-label="Язык"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Политика конфиденциальности</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

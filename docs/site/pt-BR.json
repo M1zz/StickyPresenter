@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: notas e timer por cima do Keynote em tela cheia",
+  "description": "App de barra de menus do Mac que mantém suas notas, um timer regressivo e um teleprompter por cima do Keynote em tela cheia. Tudo grátis.",
+  "hero": {
+    "headline": "Seu roteiro e seu tempo,\nem cima do slide",
+    "lead": "Coloque o Keynote em tela cheia e suas notas e o timer continuam ali por cima. Eles nunca tiram o foco do app de apresentação, então o passador continua mudando os slides normalmente.",
+    "cta": "Baixe grátis na Mac App Store",
+    "note": "Todos os recursos são grátis. Requer macOS 14 ou posterior."
+  },
+  "demo": {
+    "title": "Teste em cima de um slide",
+    "lead": "Digite um tempo do jeito que você faria no app. Toque em 15s para ver como o widget avisa quando o tempo está acabando.",
+    "input": "Duração do timer",
+    "start": "Iniciar",
+    "pause": "Pausar",
+    "resume": "Continuar",
+    "reset": "Zerar",
+    "h": "%d h",
+    "m": "%d min",
+    "s": "%d s",
+    "focus": "Foco",
+    "rest": "Pausa",
+    "invalid": "Esse formato não foi reconhecido",
+    "almost": "Está quase acabando",
+    "done": "O tempo acabou",
+    "slide": "Resultados do 3º trimestre",
+    "note": "Cumprimentar e mostrar a pauta\nParar 3 s no gráfico de receita\nDeixar 5 min para perguntas",
+    "noteLabel": "Nota",
+    "colorLabel": "Cor da nota",
+    "colors": ["Amarelo", "Rosa", "Verde", "Azul", "Roxo", "Laranja"],
+    "footnote": "Esta é uma simulação da tela. No app, a nota e o timer ficam assim, flutuando sobre o Keynote ou o PowerPoint em tela cheia."
+  },
+  "problem": {
+    "title": "Onde ficam o roteiro e o relógio enquanto você apresenta?",
+    "text": "A visualização do apresentador pede uma segunda tela, e olhar o relógio de pulso é algo que a plateia sempre percebe. Talvez você já tenha colado um papelzinho no notebook e visto ele cair. O StickyPresenter fixa o roteiro e o tempo restante bem em cima do slide, onde seu olhar já está."
+  },
+  "features": [
+    {
+      "title": "Uma olhada e você sabe quanto falta",
+      "text": "Um widget quadrado no canto mostra o tempo restante. Ele fica vermelho quando o fim se aproxima e, quando o tempo acaba, toca um aviso e pisca a borda.\nDigite o tempo do jeito mais prático, como `5:30` ou `1h 20m`, ou `25/5` para um Pomodoro que alterna foco e pausa. Abra o timer numa janela própria para compartilhar só ela no compartilhamento de tela ou no AirPlay.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Leia o roteiro olhando para a câmera",
+      "text": "O teleprompter rola o roteiro na velocidade que você escolher e para sozinho no final. Copie o roteiro, aperte `⌘⌃P` e ele abre com esse texto.\nTem modo espelhado para teleprompters com vidro refletor, e a velocidade e o tamanho da letra continuam iguais na próxima vez.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Sem sair do slide",
+      "text": "Ele roda discretamente na barra de menus, sem ícone no Dock e sem janelas para cuidar. Atalhos como `⌘⌃N` para uma nota nova e `⌘⌃T` para os timers funcionam até com o Keynote em tela cheia.\nNo palco, o app gratuito para iPhone Remote Controller for Sticky permite iniciar e pausar o timer, e tirar o widget da frente quando ele cobre um slide.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Três passos para começar",
+    "items": [
+      {"title": "Abra o app", "text": "Um ícone de nota aparece na barra de menus e, na primeira vez, abre um guia rápido."},
+      {"title": "Crie uma nota e um timer", "text": "Copie o roteiro e aperte `⌘⌃V`, depois digite a duração da sua fala no campo do timer."},
+      {"title": "Coloque em tela cheia", "text": "A nota e o timer continuam por cima."}
+    ]
+  },
+  "reference": {
+    "title": "Atalhos e formatos de tempo",
+    "rows": [
+      ["⌘⌃N", "Nova nota"],
+      ["⌘⌃V", "Nova nota com o que está na área de transferência"],
+      ["⌘⌃T", "Mostrar ou ocultar timers"],
+      ["⌘⌃B", "Iniciar um Pomodoro (25 min de foco, 5 de pausa)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Mostrar ou ocultar todas as notas"],
+      ["10", "Só um número significa minutos (10 min)"],
+      ["5:30 · 1:15:00", "Minutos:segundos, horas:minutos:segundos"],
+      ["1h 20m · 45s", "Com unidades"],
+      ["25/5", "Foco/pausa, repetindo até você parar"]
+    ],
+    "note": "Todos os atalhos usam Command (⌘) e Control (⌃) juntos e funcionam mesmo quando você está em outro app. Os timers vão até 99:59:59."
+  },
+  "pricing": {
+    "title": "É tudo grátis",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Notas em seis cores, com opacidade, tamanho da letra e trava de edição",
+        "Timers regressivos, Pomodoro e widget na Central de Notificações",
+        "Teleprompter com modo espelhado",
+        "Música de fundo que começa junto com o timer",
+        "Atalhos que funcionam em qualquer app"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Iniciar, pausar e somar ou tirar 30 segundos",
+        "Mudar o tamanho e a posição do widget lá do palco",
+        "Timer de 3, 5, 10 ou 15 minutos com um toque"
+      ],
+      "note": "É um app separado e gratuito. Requer iOS 17 ou posterior e o StickyPresenter aberto num Mac na mesma rede Wi‑Fi."
+    },
+    "note": "Nada fica bloqueado atrás de compra. Se o app ajudar você, dá para deixar uma gorjeta para o desenvolvedor nos Ajustes."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {"q": "Dá para mostrar só o timer no compartilhamento ou espelhamento de tela?", "a": "Dá. Use o botão Janela na linha do timer para abri-lo como uma janela comum. Aí ele aparece na lista de janelas do compartilhamento de tela e do AirPlay, e você compartilha só ela."},
+      {"q": "Ocultei um widget e não acho mais.", "a": "Na janela de timers, passe o ponteiro sobre a linha daquele timer e a posição do widget aparece marcada com uma linha tracejada. Clique em Alinhar para trazê-lo de volta para perto da janela."},
+      {"q": "Fechei uma nota sem querer.", "a": "Use Reabrir nota fechada na barra de menus para recuperar qualquer uma das últimas 20. As notas são salvas enquanto você digita e voltam ao mesmo lugar quando o app reabre."},
+      {"q": "Um atalho não funciona.", "a": "Se a tabela de atalhos do guia mostrar Em uso por outro app, é porque outro app pegou o atalho antes. Feche esse app e ele volta a funcionar. Não precisa de permissão de Acessibilidade."},
+      {"q": "Por que o tema Camaleão pede permissão de Gravação de Tela?", "a": "O Camaleão lê a cor da tela atrás do widget para combinar com ela, e para isso precisa dessa permissão. Nada é salvo nem enviado. Sem ela, os temas Sistema, Claro e Escuro funcionam normalmente."},
+      {"q": "Como coloco música de fundo?", "a": "Escolha um clima (Foco, Calma, Jazz ou Animado) na barra de música na parte de baixo da janela de timers e o app cria uma pasta para cada um. Coloque suas músicas lá e elas tocam em ordem junto com o timer. O app não vem com músicas."},
+      {"q": "O controle remoto no iPhone não encontra meu Mac.", "a": "Confira nesta ordem: o StickyPresenter está aberto no Mac (procure o ícone na barra de menus); os dois aparelhos estão na mesma rede Wi‑Fi, não numa rede de convidados nem no 4G/5G; Rede Local está permitida para o app em Privacidade e Segurança, no iPhone e no Mac; a VPN está desligada."},
+      {"q": "O controle remoto diz que o código de pareamento está errado.", "a": "Digite o código de quatro dígitos que aparece agora em Controle remoto, na barra de menus do Mac. Se você clicou em Novo código de pareamento, só o novo vale. Depois do primeiro pareamento, ele conecta assim que você abre o app."},
+      {"q": "Outra pessoa pode controlar meu timer?", "a": "Não sem o seu código. O Mac só aceita controles que digitaram o código certo, por uma conexão direta e criptografada na sua rede local. Se alguém viu o código, use Novo código de pareamento ou Esquecer controles remotos pareados em Controle remoto, na barra de menus."},
+      {"q": "Onde ficam minhas notas e roteiros?", "a": "Só neste Mac. Não tem conta nem anúncio, e nada vai para a internet além de estatísticas de uso anônimas e do feedback que você decidir mandar."}
+    ]
+  },
+  "closing": {
+    "headline": "Na próxima apresentação,\npare de procurar o relógio",
+    "cta": "Baixe grátis na Mac App Store"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "languages": "Idioma",
+    "privacy": "Política de Privacidade",
+    "contact": "Dúvidas, erros ou ideias? Escreva para {email}."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: notities en timer boven Keynote op volledig scherm",
+  "description": "Mac-app in de menubalk die je notities, een aftelling en een teleprompter boven Keynote op volledig scherm houdt. Alles is gratis.",
+  "hero": {
+    "headline": "Je tekst en je tijd,\nrecht op de dia",
+    "lead": "Zet Keynote op volledig scherm en je notities en timer blijven erbovenop staan. Ze pakken nooit de focus van de presentatie-app af, dus je clicker bladert gewoon door de dia’s.",
+    "cta": "Gratis downloaden in de Mac App Store",
+    "note": "Alle functies zijn gratis. Vereist macOS 14 of nieuwer."
+  },
+  "demo": {
+    "title": "Probeer het op een dia",
+    "lead": "Typ een tijd zoals je dat in de app zou doen. Tik op 15s en zie hoe de widget je waarschuwt als de tijd bijna om is.",
+    "input": "Duur van de timer",
+    "start": "Start",
+    "pause": "Pauze",
+    "resume": "Verder",
+    "reset": "Herstel",
+    "h": "%d u",
+    "m": "%d min",
+    "s": "%d s",
+    "focus": "Focus",
+    "rest": "Pauze",
+    "invalid": "Dit formaat wordt niet herkend",
+    "almost": "De tijd is bijna om",
+    "done": "De tijd is om",
+    "slide": "Resultaten derde kwartaal",
+    "note": "Welkom en agenda\n3 s stilstaan bij de omzetgrafiek\n5 min overhouden voor vragen",
+    "noteLabel": "Notitie",
+    "colorLabel": "Kleur van de notitie",
+    "colors": ["Geel", "Roze", "Groen", "Blauw", "Paars", "Oranje"],
+    "footnote": "Dit is een nabootsing van het scherm. In de app zweven de notitie en timer zo boven Keynote of PowerPoint op volledig scherm."
+  },
+  "problem": {
+    "title": "Waar laat je je tekst en de klok tijdens een presentatie?",
+    "text": "De presentatorweergave vraagt om een tweede scherm, en een blik op je horloge ziet het publiek altijd. Misschien heb je weleens een papiertje op je laptop geplakt dat er daarna af viel. StickyPresenter zet je tekst en de resterende tijd recht boven de dia, waar je toch al kijkt."
+  },
+  "features": [
+    {
+      "title": "Eén blik en je weet hoeveel tijd je nog hebt",
+      "text": "Een vierkante widget in de hoek toont de resterende tijd. Hij kleurt rood als het einde nadert en als de tijd om is, klinkt er een signaal en knippert de rand.\nTyp tijden zoals het je uitkomt, bijvoorbeeld `5:30` of `1h 20m`, of `25/5` voor een pomodoro die wisselt tussen focus en pauze. Open een timer in een eigen venster om bij schermdeling of AirPlay alleen dat venster te delen.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Lees je tekst en kijk in de camera",
+      "text": "De teleprompter scrolt je tekst op het tempo dat je kiest en stopt vanzelf aan het einde. Kopieer je tekst, druk op `⌘⌃P` en hij opent met die tekst.\nEr is een spiegelmodus voor teleprompters met spiegelglas, en tempo en lettergrootte blijven bewaard voor de volgende keer.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Je verlaat de dia niet",
+      "text": "De app draait onopvallend in de menubalk, zonder Dock-symbool en zonder vensters om bij te houden. Sneltoetsen als `⌘⌃N` voor een nieuwe notitie en `⌘⌃T` voor timers werken zelfs in Keynote op volledig scherm.\nOp het podium start en pauzeer je de timer met de gratis iPhone-app Remote Controller for Sticky, en schuif je de widget opzij als hij een dia bedekt.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "In drie stappen aan de slag",
+    "items": [
+      {"title": "Open de app", "text": "Er verschijnt een notitiesymbool in de menubalk, en de eerste keer opent een korte handleiding."},
+      {"title": "Zet een notitie en timer klaar", "text": "Kopieer je tekst en druk op `⌘⌃V`, typ dan de duur van je praatje in het timerveld."},
+      {"title": "Ga naar volledig scherm", "text": "Notitie en timer blijven bovenop."}
+    ]
+  },
+  "reference": {
+    "title": "Sneltoetsen en tijdnotaties",
+    "rows": [
+      ["⌘⌃N", "Nieuwe notitie"],
+      ["⌘⌃V", "Nieuwe notitie van het klembord"],
+      ["⌘⌃T", "Timers tonen of verbergen"],
+      ["⌘⌃B", "Pomodoro starten (25 min focus, 5 min pauze)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Alle notities tonen of verbergen"],
+      ["10", "Alleen een getal betekent minuten (10 min)"],
+      ["5:30 · 1:15:00", "Minuten:seconden, uren:minuten:seconden"],
+      ["1h 20m · 45s", "Met eenheden"],
+      ["25/5", "Focus/pauze, steeds opnieuw tot je stopt"]
+    ],
+    "note": "Alle sneltoetsen gebruiken Command (⌘) en Control (⌃) samen en werken ook als je in een andere app zit. Timers gaan tot 99:59:59."
+  },
+  "pricing": {
+    "title": "Alles is gratis",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Notities in zes kleuren, met doorzichtigheid, lettergrootte en bewerkingsslot",
+        "Aftellers, pomodoro en een widget in het berichtencentrum",
+        "Teleprompter met spiegelmodus",
+        "Achtergrondmuziek die met de timer start",
+        "Sneltoetsen die in elke app werken"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Starten, pauzeren en 30 seconden erbij of eraf",
+        "Grootte en positie van de widget vanaf het podium aanpassen",
+        "Timer van 3, 5, 10 of 15 minuten met één tik"
+      ],
+      "note": "Een aparte, gratis app. Vereist iOS 17 of nieuwer en StickyPresenter actief op een Mac in hetzelfde wifinetwerk."
+    },
+    "note": "Niets zit achter een betaalmuur. Heb je er wat aan, dan kun je de ontwikkelaar via Instellingen een fooi geven."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {"q": "Kan ik bij schermdeling of synchrone weergave alleen de timer laten zien?", "a": "Ja. Met de knop Venster in de rij van de timer open je hem als gewoon venster. Dan staat hij in de vensterlijst van schermdeling en AirPlay, en kun je alleen dat venster delen."},
+      {"q": "Ik heb een timerwidget verborgen en kan hem niet meer vinden.", "a": "Beweeg in het timervenster de aanwijzer over de rij van die timer, dan wordt de plek van de widget met een stippellijn aangegeven. Klik op Lijn uit om hem terug naast het timervenster te zetten."},
+      {"q": "Ik heb per ongeluk een notitie gesloten.", "a": "Met Heropen gesloten notitie in de menubalk haal je elk van de laatste 20 terug. Notities worden bewaard terwijl je typt en komen op dezelfde plek terug als je de app opnieuw opent."},
+      {"q": "Een sneltoets werkt niet.", "a": "Staat hij in de sneltoetstabel van de handleiding als Gebruikt door een andere app, dan heeft een andere app hem eerder geclaimd. Stop die app en de sneltoets werkt weer. Toegankelijkheidstoestemming is niet nodig."},
+      {"q": "Waarom vraagt het thema Kameleon om schermopname?", "a": "Kameleon leest de kleur van het scherm achter de widget en past zich daarop aan, en daarvoor is die toestemming nodig. Er wordt niets bewaard of verstuurd. Zonder toestemming werken de thema’s Systeem, Licht en Donker gewoon."},
+      {"q": "Hoe voeg ik achtergrondmuziek toe?", "a": "Kies een sfeer (Focus, Kalm, Jazz of Opgewekt) in de muziekbalk onderaan het timervenster, dan maakt de app voor elke sfeer een map. Zet daar je eigen nummers in en ze spelen op volgorde mee met de timer. De app bevat zelf geen muziek."},
+      {"q": "De afstandsbediening op mijn iPhone vindt mijn Mac niet.", "a": "Controleer in deze volgorde: draait StickyPresenter op de Mac (symbool in de menubalk)? Zitten beide apparaten op hetzelfde wifinetwerk en niet op een gastnetwerk of mobiel internet? Is Lokaal netwerk toegestaan onder Privacy en beveiliging op zowel iPhone als Mac? Staat de VPN uit?"},
+      {"q": "De afstandsbediening zegt dat de koppelcode niet klopt.", "a": "Voer de viercijferige code in die nu onder Afstandsbediening in de menubalk van de Mac staat. Heb je op Nieuwe koppelcode geklikt, dan geldt alleen de nieuwe. Na de eerste koppeling maakt hij meteen verbinding zodra je de app opent."},
+      {"q": "Kan iemand anders mijn timer bedienen?", "a": "Niet zonder jouw code. De Mac accepteert alleen afstandsbedieningen die de juiste code hebben ingevoerd, via een versleutelde directe verbinding in je lokale netwerk. Heeft iemand de code gezien, kies dan Nieuwe koppelcode of Gekoppelde afstandsbedieningen vergeten onder Afstandsbediening in de menubalk."},
+      {"q": "Waar worden mijn notities en teksten bewaard?", "a": "Alleen op deze Mac. Geen account, geen advertenties, en er gaat niets online behalve anonieme gebruiksstatistieken en feedback die je zelf verstuurt."}
+    ]
+  },
+  "closing": {
+    "headline": "Bij je volgende presentatie\nhoef je de klok niet te zoeken",
+    "cta": "Gratis downloaden in de Mac App Store"
+  },
+  "ui": {
+    "skip": "Naar de inhoud",
+    "languages": "Taal",
+    "privacy": "Privacybeleid",
+    "contact": "Vragen, fouten of ideeën? Mail naar {email}."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: catatan dan timer di atas Keynote layar penuh",
+  "description": "App bar menu Mac yang menaruh catatan presentasi, hitung mundur, dan teleprompter di atas Keynote layar penuh. Semua fitur gratis.",
+  "hero": {
+    "headline": "Naskah dan sisa waktu\nlangsung di atas slide",
+    "lead": "Jalankan Keynote dalam layar penuh, catatan dan timer tetap melayang di atasnya. Keduanya tidak merebut fokus dari app presentasi, jadi clicker tetap bisa mengganti slide seperti biasa.",
+    "cta": "Unduh gratis di Mac App Store",
+    "note": "Semua fitur gratis. Perlu macOS 14 atau lebih baru."
+  },
+  "demo": {
+    "title": "Coba di atas slide",
+    "lead": "Ketik waktu seperti di app. Ketuk 15s untuk melihat cara widget memberi tahu saat waktu hampir habis.",
+    "input": "Durasi timer",
+    "start": "Mulai",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "reset": "Atur ulang",
+    "h": "%d jam",
+    "m": "%d menit",
+    "s": "%d detik",
+    "focus": "Fokus",
+    "rest": "Istirahat",
+    "invalid": "Format ini tidak dikenali",
+    "almost": "Waktu hampir habis",
+    "done": "Waktu habis",
+    "slide": "Hasil Kuartal III",
+    "note": "Sapa audiens, sebutkan agenda\nBerhenti 3 detik di grafik penjualan\nSisakan 5 menit untuk tanya jawab",
+    "noteLabel": "Catatan",
+    "colorLabel": "Warna catatan",
+    "colors": ["Kuning", "Merah muda", "Hijau", "Biru", "Ungu", "Oranye"],
+    "footnote": "Ini tiruan layar. Di app, catatan dan timer melayang seperti ini di atas Keynote atau PowerPoint layar penuh."
+  },
+  "problem": {
+    "title": "Saat presentasi, di mana Anda menaruh naskah dan jam?",
+    "text": "Tampilan presenter butuh layar kedua, dan melirik jam tangan selalu ketahuan penonton. Mungkin Anda pernah menempel kertas di laptop lalu kertasnya jatuh. StickyPresenter menyematkan naskah dan sisa waktu tepat di atas slide, di tempat mata Anda memang tertuju."
+  },
+  "features": [
+    {
+      "title": "Sekali lirik, langsung tahu sisa waktu",
+      "text": "Widget persegi di pojok layar menampilkan sisa waktu. Warnanya berubah merah saat hampir selesai, lalu berbunyi dan bingkainya berkedip ketika waktu habis.\nKetik waktu sesukanya, misalnya `5:30` atau `1h 20m`, atau ketik `25/5` untuk Pomodoro yang bergantian antara fokus dan istirahat. Buka timer di jendela tersendiri agar hanya jendela itu yang dibagikan lewat berbagi layar atau AirPlay.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Baca naskah sambil menatap kamera",
+      "text": "Teleprompter menggulir naskah dengan kecepatan yang Anda atur dan berhenti sendiri di akhir. Salin naskah, tekan `⌘⌃P`, dan teleprompter langsung terbuka dengan teks itu.\nAda mode cermin untuk perangkat teleprompter berkaca pantul, dan kecepatan serta ukuran huruf tetap tersimpan untuk lain kali.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Tak perlu meninggalkan slide",
+      "text": "App berjalan tenang di bar menu, tanpa ikon di Dock dan tanpa jendela yang perlu diurus. Pintasan seperti `⌘⌃N` untuk catatan baru dan `⌘⌃T` untuk timer tetap jalan meski Keynote sedang layar penuh.\nDi panggung, app iPhone gratis Remote Controller for Sticky bisa memulai dan menjeda timer, serta memindahkan widget yang menutupi slide.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {"title": "Buka app", "text": "Ikon catatan muncul di bar menu, dan panduan singkat terbuka saat pertama kali."},
+      {"title": "Pasang catatan dan timer", "text": "Salin naskah lalu tekan `⌘⌃V`, kemudian ketik durasi presentasi di kolom timer."},
+      {"title": "Masuk layar penuh", "text": "Catatan dan timer tetap berada di atas."}
+    ]
+  },
+  "reference": {
+    "title": "Pintasan dan format waktu",
+    "rows": [
+      ["⌘⌃N", "Catatan baru"],
+      ["⌘⌃V", "Catatan baru dari papan klip"],
+      ["⌘⌃T", "Tampilkan atau sembunyikan timer"],
+      ["⌘⌃B", "Mulai Pomodoro (fokus 25 menit, istirahat 5 menit)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Tampilkan atau sembunyikan semua catatan"],
+      ["10", "Angka saja berarti menit (10 menit)"],
+      ["5:30 · 1:15:00", "Menit:detik, jam:menit:detik"],
+      ["1h 20m · 45s", "Dengan satuan"],
+      ["25/5", "Fokus/istirahat, berulang sampai Anda hentikan"]
+    ],
+    "note": "Semua pintasan memakai Command (⌘) dan Control (⌃) bersamaan, dan tetap berfungsi saat Anda berada di app lain. Timer bisa diatur hingga 99:59:59."
+  },
+  "pricing": {
+    "title": "Semuanya gratis",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Catatan dalam enam warna, dengan transparansi, ukuran huruf, dan kunci edit",
+        "Hitung mundur, Pomodoro, dan widget di Pusat Notifikasi",
+        "Teleprompter dengan mode cermin",
+        "Musik latar yang mulai bersama timer",
+        "Pintasan yang berfungsi dari app mana pun"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Mulai, jeda, serta tambah atau kurangi 30 detik",
+        "Ubah ukuran dan posisi widget langsung dari panggung",
+        "Timer 3, 5, 10, atau 15 menit dengan sekali ketuk"
+      ],
+      "note": "App terpisah yang gratis. Perlu iOS 17 atau lebih baru dan StickyPresenter yang sedang berjalan di Mac pada Wi‑Fi yang sama."
+    },
+    "note": "Tidak ada fitur yang dikunci di balik pembelian. Kalau app ini membantu, Anda bisa memberi tip kepada pengembang di Pengaturan."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {"q": "Bisakah saya menampilkan timer saja saat berbagi layar atau mirroring?", "a": "Bisa. Tombol Jendela di baris timer membukanya sebagai jendela biasa. Jendela itu lalu muncul di daftar jendela untuk berbagi layar dan AirPlay, jadi Anda bisa membagikan jendela itu saja."},
+      {"q": "Saya menyembunyikan widget timer dan tidak bisa menemukannya.", "a": "Di jendela timer, arahkan penunjuk ke baris timer tersebut, lalu posisi widget akan ditandai dengan garis putus-putus. Klik Ratakan untuk mengembalikannya ke samping jendela timer."},
+      {"q": "Saya tidak sengaja menutup catatan.", "a": "Pakai Buka Lagi Catatan yang Ditutup di bar menu untuk memulihkan salah satu dari 20 catatan terakhir. Catatan tersimpan saat Anda mengetik dan kembali ke posisi yang sama ketika app dibuka lagi."},
+      {"q": "Pintasan tidak berfungsi.", "a": "Jika tabel pintasan di panduan menandainya Dipakai aplikasi lain, artinya app lain sudah mengambilnya lebih dulu. Tutup app itu dan pintasan akan berfungsi lagi. Izin Aksesibilitas tidak diperlukan."},
+      {"q": "Kenapa tema Bunglon meminta izin Perekaman Layar?", "a": "Bunglon membaca warna layar di belakang widget untuk menyesuaikan diri, dan untuk itu perlu izin tersebut. Tidak ada yang disimpan atau dikirim. Tanpa izin itu, tema Sistem, Terang, dan Gelap tetap berfungsi normal."},
+      {"q": "Bagaimana cara menambahkan musik latar?", "a": "Pilih suasana (Fokus, Tenang, Jazz, atau Ceria) di bilah musik di bagian bawah jendela timer, dan app akan membuat folder untuk masing-masing. Masukkan lagu Anda sendiri ke sana, lalu lagu diputar berurutan bersama timer. App tidak menyertakan musik."},
+      {"q": "Remote di iPhone tidak menemukan Mac saya.", "a": "Periksa berurutan: StickyPresenter sedang berjalan di Mac (lihat ikon di bar menu); kedua perangkat ada di Wi‑Fi yang sama, bukan jaringan tamu atau data seluler; Jaringan Lokal sudah diizinkan di Privasi & Keamanan pada iPhone dan Mac; VPN dalam keadaan mati."},
+      {"q": "Remote bilang kode pemasangan salah.", "a": "Masukkan kode empat digit yang sedang tampil di menu Remote pada bar menu Mac. Jika Anda sudah mengeklik Kode Pemasangan Baru, hanya kode baru yang berlaku. Setelah dipasangkan sekali, remote langsung terhubung begitu app dibuka."},
+      {"q": "Apakah orang lain bisa mengendalikan timer saya?", "a": "Tidak tanpa kode Anda. Mac hanya menerima remote yang memasukkan kode yang benar, melalui koneksi langsung terenkripsi di jaringan lokal. Jika ada yang sempat melihat kode, pilih Kode Pemasangan Baru atau Lupakan Remote yang Dipasangkan di menu Remote."},
+      {"q": "Di mana catatan dan naskah saya disimpan?", "a": "Hanya di Mac ini. Tanpa akun, tanpa iklan, dan tidak ada yang dikirim ke internet selain statistik penggunaan anonim dan masukan yang Anda kirim sendiri."}
+    ]
+  },
+  "closing": {
+    "headline": "Di presentasi berikutnya,\ntak perlu lagi mencari jam",
+    "cta": "Unduh gratis di Mac App Store"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada pertanyaan, bug, atau ide? Kirim email ke {email}."
+  }
+}

@@ -1,106 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StickyPresenter</title>
-  <meta name="description" content="Svävande lappar, nedräkningstimers och en teleprompter ovanpå Keynote i helskärm – för macOS." />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/" />
-  <link rel="icon" href="../icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StickyPresenter: lappar och timer ovanpå Keynote i helskärm</title>
+  <meta name="description" content="Mac-app i menyraden som håller dina anteckningar, en nedräkning och en teleprompter ovanpå Keynote i helskärm. Allt är gratis.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6778457299">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StickyPresenter: lappar och timer ovanpå Keynote i helskärm">
+  <meta property="og:description" content="Mac-app i menyraden som håller dina anteckningar, en nedräkning och en teleprompter ovanpå Keynote i helskärm. Allt är gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/sv/">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/sv/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../icon.png" alt="Appsymbol för StickyPresenter" />
-    <h1>StickyPresenter</h1>
-    <p>Svävande lappar, timers och teleprompter för dina presentationer</p>
-    <div class="actions">
-      <a class="btn" href="support.html">Support</a>
-      <a class="btn" href="privacy.html">Integritetspolicy</a>
-      <a class="btn" href="remote.html">Fjärrkontroll för iPhone</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/index.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/index.html" hreflang="sv" lang="sv" aria-current="true">Svenska</a>
-      <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
+  <header class="bar">
+    <a class="brand" href="../sv/"><img src="../icon.png" alt="" width="32" height="32">StickyPresenter</a>
+    <a class="lang-link" href="#languages">Språk</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="sv">
-        <h2>Manus och klocka – alltid inom synhåll</h2>
-        <p>StickyPresenter är en lätt app för menyraden i macOS som låter lappar,
-        nedräkningstimers och en teleprompter sväva ovanpå Keynote i helskärm
-        eller vilken presentation som helst – så att du ser dina anteckningar och din tid medan du presenterar.</p>
-        <ul>
-          <li><strong>Svävande lappar</strong> – ligger kvar ovanpå bilder i helskärm, finns i sex färger med justerbar genomskinlighet och textstorlek, och kan låsas så att inget ändras av misstag.</li>
-          <li><strong>Timers</strong> – nedräkningswidgetar i valfri storlek, med en ljudsignal och en pulserande kant när tiden är slut. Öppna en timer i ett eget fönster för att dela den via skärmdelning eller AirPlay.</li>
-          <li><strong>Teleprompter</strong> – ett manus som rullar automatiskt, med justerbar hastighet och textstorlek samt spegelläge.</li>
-          <li><strong>Bor i menyraden</strong> – ingen symbol i Dock och inga extra fönster att hålla reda på.</li>
-        </ul>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Manus och återstående tid<br>mitt på bilden</h1>
+        <p class="lead">Sätt Keynote i helskärm så ligger lapparna och timern kvar ovanpå. De tar aldrig fokus från presentationsappen, så klickern bläddrar bilder precis som vanligt.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6778457299">Hämta gratis på Mac App Store</a><a class="try" href="#try">Testa på en bild ↓</a></div>
+        <p class="muted small">Alla funktioner är gratis. Kräver macOS 14 eller senare.</p>
       </div>
+      <div class="plain"><img src="../img/sv/01-sticky-notes.jpg" alt="Manus och återstående tid mitt på bilden" width="720" height="450" decoding="async"></div>
+    </section>
 
-      <div class="card">
-        <p class="lang">Tillhörande app</p>
-        <h2>Remote Controller för iPhone</h2>
-        <p>Mitt i ett föredrag når du inte din Mac. <strong>Remote Controller</strong> ger dig
-        timern i handen – starta och pausa, lägg till 30 sekunder, ändra storlek på widgeten och dra den
-        till ett annat ställe på Mac-skärmen om den skymmer en bild. Appen ansluter via ditt lokala
-        nätverk – utan konto och utan inställningar.</p>
-        <p><a href="remote.html">Läs mer →</a></p>
+
+    <section class="reveal" id="try">
+      <h2>Testa på en bild</h2>
+      <p class="muted">Skriv en tid som du skulle göra i appen. Tryck på 15s och se hur widgeten varnar när tiden håller på att ta slut.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Testa på en bild&quot;, &quot;lead&quot;: &quot;Skriv en tid som du skulle göra i appen. Tryck på 15s och se hur widgeten varnar när tiden håller på att ta slut.&quot;, &quot;input&quot;: &quot;Timerns längd&quot;, &quot;start&quot;: &quot;Starta&quot;, &quot;pause&quot;: &quot;Pausa&quot;, &quot;resume&quot;: &quot;Fortsätt&quot;, &quot;reset&quot;: &quot;Nollställ&quot;, &quot;h&quot;: &quot;%d tim&quot;, &quot;m&quot;: &quot;%d min&quot;, &quot;s&quot;: &quot;%d sek&quot;, &quot;focus&quot;: &quot;Fokus&quot;, &quot;rest&quot;: &quot;Paus&quot;, &quot;invalid&quot;: &quot;Formatet känns inte igen&quot;, &quot;almost&quot;: &quot;Tiden är snart slut&quot;, &quot;done&quot;: &quot;Tiden är slut&quot;, &quot;slide&quot;: &quot;Resultat för tredje kvartalet&quot;, &quot;note&quot;: &quot;Hälsa, gå igenom agendan\nStanna 3 sek vid försäljningsgrafen\nSpara 5 min till frågor&quot;, &quot;noteLabel&quot;: &quot;Lapp&quot;, &quot;colorLabel&quot;: &quot;Lappens färg&quot;, &quot;colors&quot;: [&quot;Gul&quot;, &quot;Rosa&quot;, &quot;Grön&quot;, &quot;Blå&quot;, &quot;Lila&quot;, &quot;Orange&quot;], &quot;footnote&quot;: &quot;Det här är en efterbildning av skärmen. I appen svävar lappen och timern så här ovanpå Keynote eller PowerPoint i helskärm.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Var har du manus och klocka när du presenterar?</h2>
+      <p>Presentatörsvyn kräver en extra skärm, och en blick på armbandsuret märker publiken alltid. Kanske har du tejpat en papperslapp på datorn och sett den ramla av. StickyPresenter fäster manuset och den återstående tiden precis ovanför bilden, där blicken redan är.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>En blick och du vet hur mycket tid som är kvar</h2>
+        <p>En kvadratisk widget i hörnet visar återstående tid. Den blir röd när slutet närmar sig, och när tiden är ute hörs en signal och kanten blinkar.<br>Skriv tider hur du vill, till exempel <code>5:30</code> eller <code>1h 20m</code>, eller <code>25/5</code> för en pomodoro som växlar mellan fokus och paus. Öppna timern i ett eget fönster för att bara dela det fönstret vid skärmdelning eller via AirPlay.</p>
       </div>
+      <div class="plain"><img src="../img/sv/02-timers.jpg" alt="En blick och du vet hur mycket tid som är kvar" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
 
-    </div>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Läs manuset och titta in i kameran</h2>
+        <p>Telepromptern rullar manuset i den takt du väljer och stannar av sig själv i slutet. Kopiera manuset, tryck på <code>⌘⌃P</code>, så öppnas den med texten.<br>Det finns spegelläge för teleprompterutrustning med spegelglas, och takt och textstorlek finns kvar till nästa gång.</p>
+      </div>
+      <div class="plain"><img src="../img/sv/03-teleprompter.jpg" alt="Läs manuset och titta in i kameran" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Du lämnar aldrig bilden</h2>
+        <p>Appen körs diskret i menyraden, utan symbol i Dock och utan fönster att hålla koll på. Kortkommandon som <code>⌘⌃N</code> för en ny lapp och <code>⌘⌃T</code> för timers fungerar även i Keynote i helskärm.<br>På scenen kan du med den kostnadsfria iPhone-appen Remote Controller for Sticky starta och pausa timern och flytta widgeten om den skymmer en bild.</p>
+      </div>
+      <div class="plain"><img src="../img/sv/04-menu-bar.jpg" alt="Du lämnar aldrig bilden" width="720" height="450" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kom igång i tre steg</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Öppna appen</h3><p>En lappsymbol dyker upp i menyraden, och första gången öppnas en kort guide.</p></li>
+<li class="card"><span class="n">2</span><h3>Lägg till lapp och timer</h3><p>Kopiera manuset och tryck på <code>⌘⌃V</code>, skriv sedan längden på din dragning i timerfältet.</p></li>
+<li class="card"><span class="n">3</span><h3>Gå till helskärm</h3><p>Lappen och timern ligger kvar överst.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kortkommandon och tidsformat</h2>
+      <div class="card table">
+        <dl><div><dt>⌘⌃N</dt><dd>Ny lapp</dd></div><div><dt>⌘⌃V</dt><dd>Ny lapp från urklipp</dd></div><div><dt>⌘⌃T</dt><dd>Visa eller göm timers</dd></div><div><dt>⌘⌃B</dt><dd>Starta en pomodoro (25 min fokus, 5 min paus)</dd></div><div><dt>⌘⌃P</dt><dd>Teleprompter</dd></div><div><dt>⌘⌃S · ⌘⌃H</dt><dd>Visa eller göm alla lappar</dd></div><div><dt>10</dt><dd>Bara en siffra betyder minuter (10 min)</dd></div><div><dt>5:30 · 1:15:00</dt><dd>Minuter:sekunder, timmar:minuter:sekunder</dd></div><div><dt>1h 20m · 45s</dt><dd>Med enheter</dd></div><div><dt>25/5</dt><dd>Fokus/paus om och om igen tills du stoppar</dd></div></dl>
+      </div>
+      <p class="muted">Alla kortkommandon använder Kommando (⌘) och Kontroll (⌃) tillsammans och fungerar även när du är i en annan app. Timers går upp till 99:59:59.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Allt är gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>StickyPresenter (Mac)</h3>
+          <ul><li>Lappar i sex färger med genomskinlighet, textstorlek och redigeringslås</li><li>Nedräkningar, pomodoro och en widget i Notiscenter</li><li>Teleprompter med spegelläge</li><li>Bakgrundsmusik som startar med timern</li><li>Kortkommandon som fungerar i alla appar</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Remote Controller for Sticky (iPhone)</h3>
+          <ul><li>Starta, pausa och lägg till eller dra av 30 sekunder</li><li>Ändra widgetens storlek och plats direkt från scenen</li><li>Timer på 3, 5, 10 eller 15 minuter med ett tryck</li></ul>
+          <p class="muted">En separat, kostnadsfri app. Kräver iOS 17 eller senare och att StickyPresenter körs på en Mac i samma wifi.</p>
+        </div>
+      </div>
+      <p class="muted">Inget är låst bakom ett köp. Om appen hjälper dig kan du ge utvecklaren dricks under Inställningar.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Vanliga frågor</h2>
+      <div class="faq"><details><summary>Kan jag visa bara timern vid skärmdelning eller skärmdubblering?</summary><p>Ja. Med knappen Fönster på timerns rad öppnar du den som ett vanligt fönster. Då syns den i fönsterlistan för skärmdelning och AirPlay, och du kan dela bara det.</p></details>
+<details><summary>Jag har gömt en timerwidget och hittar den inte.</summary><p>Håll pekaren över timerns rad i timerfönstret så markeras widgetens plats med en streckad linje. Klicka på Justera för att hämta tillbaka den bredvid timerfönstret.</p></details>
+<details><summary>Jag stängde en lapp av misstag.</summary><p>Med Öppna stängd lapp igen i menyraden får du tillbaka någon av de 20 senaste. Lappar sparas medan du skriver och hamnar på samma plats när appen öppnas igen.</p></details>
+<details><summary>Ett kortkommando fungerar inte.</summary><p>Står det i guidens tabell som Används av ett annat program har en annan app lagt beslag på det först. Avsluta den appen så fungerar det igen. Ingen behörighet för hjälpmedel behövs.</p></details>
+<details><summary>Varför ber temat Kameleont om skärminspelning?</summary><p>Kameleont läser av färgen på skärmen bakom widgeten och anpassar sig efter den, och det kräver den behörigheten. Inget sparas eller skickas. Utan den fungerar temana System, Ljust och Mörkt som vanligt.</p></details>
+<details><summary>Hur lägger jag till bakgrundsmusik?</summary><p>Välj en stämning (Fokus, Lugn, Jazz eller Pigg) i musikfältet längst ned i timerfönstret så skapar appen en mapp för varje. Lägg dina egna låtar där så spelas de i ordning tillsammans med timern. Appen har ingen egen musik.</p></details>
+<details><summary>Fjärrkontrollen på iPhone hittar inte min Mac.</summary><p>Kontrollera i tur och ordning: körs StickyPresenter på datorn (symbol i menyraden)? Är båda enheterna på samma wifi och inte på ett gästnätverk eller mobildata? Är Lokalt nätverk tillåtet under Integritet och säkerhet på både iPhone och Mac? Är VPN avstängt?</p></details>
+<details><summary>Fjärrkontrollen säger att ihopparningskoden är fel.</summary><p>Ange den fyrsiffriga kod som just nu visas under Fjärrkontroll i Macens menyrad. Har du klickat på Ny ihopparningskod gäller bara den nya. Efter första ihopparningen ansluter den så fort du öppnar appen.</p></details>
+<details><summary>Kan någon annan styra min timer?</summary><p>Inte utan din kod. Datorn tar bara emot fjärrkontroller som har angett rätt kod, via en krypterad direktanslutning i det lokala nätverket. Har någon sett koden, välj Ny ihopparningskod eller Glöm ihopparade fjärrkontroller under Fjärrkontroll i menyraden.</p></details>
+<details><summary>Var sparas mina lappar och manus?</summary><p>Bara på den här datorn. Inget konto, ingen reklam, och inget skickas ut på nätet förutom anonym användningsstatistik och feedback som du själv väljer att skicka.</p></details></div>
+      <p class="contact">Frågor, buggar eller idéer? Skriv till <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>På nästa föredrag<br>slipper du leta efter klockan</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6778457299">Hämta gratis på Mac App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="support.html">Support</a> · <a href="privacy.html">Integritetspolicy</a> · <a href="remote.html">Fjärrkontroll för iPhone</a>
+    <nav id="languages" class="langs" aria-label="Språk"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv" aria-current="page">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Integritetspolicy</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

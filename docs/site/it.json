@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: note e timer sopra Keynote a tutto schermo",
+  "description": "App per la barra dei menu del Mac che tiene note, un conto alla rovescia e un gobbo elettronico sopra Keynote a tutto schermo. Tutto gratis.",
+  "hero": {
+    "headline": "Il tuo testo e il tuo tempo,\nsulla slide",
+    "lead": "Metti Keynote a tutto schermo e le note e il timer restano sopra. Non tolgono mai il focus all’app di presentazione, quindi il telecomando continua a far scorrere le slide.",
+    "cta": "Scaricala gratis dal Mac App Store",
+    "note": "Tutte le funzioni sono gratuite. Richiede macOS 14 o successivo."
+  },
+  "demo": {
+    "title": "Provalo su una slide",
+    "lead": "Scrivi un tempo come faresti nell’app. Tocca 15s per vedere come il widget ti avvisa quando il tempo sta per finire.",
+    "input": "Durata del timer",
+    "start": "Avvia",
+    "pause": "Pausa",
+    "resume": "Riprendi",
+    "reset": "Azzera",
+    "h": "%d h",
+    "m": "%d min",
+    "s": "%d s",
+    "focus": "Concentrazione",
+    "rest": "Pausa",
+    "invalid": "Formato non riconosciuto",
+    "almost": "Manca poco",
+    "done": "Tempo scaduto",
+    "slide": "Risultati del terzo trimestre",
+    "note": "Saluto e indice\nFermarsi 3 s sul grafico delle vendite\nLasciare 5 min per le domande",
+    "noteLabel": "Nota",
+    "colorLabel": "Colore della nota",
+    "colors": ["Giallo", "Rosa", "Verde", "Blu", "Viola", "Arancione"],
+    "footnote": "Questa è una simulazione dello schermo. Nell’app, la nota e il timer galleggiano così sopra Keynote o PowerPoint a tutto schermo."
+  },
+  "problem": {
+    "title": "Dove metti testo e orologio mentre presenti?",
+    "text": "La vista relatore occupa un secondo schermo, e il pubblico nota sempre quando guardi l’orologio. Magari ti è capitato di attaccare un foglietto al portatile e vederlo cadere. StickyPresenter fissa il testo e il tempo rimasto proprio sopra la slide, dove hai già lo sguardo."
+  },
+  "features": [
+    {
+      "title": "Un’occhiata e sai quanto manca",
+      "text": "Un widget quadrato in un angolo mostra il tempo rimasto. Diventa rosso quando la fine si avvicina e, allo scadere, suona e fa lampeggiare il bordo.\nScrivi i tempi come ti viene, per esempio `5:30` o `1h 20m`, oppure `25/5` per un Pomodoro che alterna concentrazione e pausa. Apri il timer in una finestra a parte per condividere solo quella con la condivisione schermo o AirPlay.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Leggi il testo guardando in camera",
+      "text": "Il gobbo elettronico fa scorrere il testo alla velocità che scegli e si ferma da solo alla fine. Copia il testo, premi `⌘⌃P` e si apre già pronto.\nC’è anche la modalità specchio per i gobbi con vetro riflettente, e velocità e dimensione del testo restano uguali la volta successiva.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Senza lasciare la slide",
+      "text": "Funziona in silenzio dalla barra dei menu, senza icona nel Dock e senza finestre da tenere d’occhio. Abbreviazioni come `⌘⌃N` per una nuova nota o `⌘⌃T` per i timer rispondono anche con Keynote a tutto schermo.\nSul palco, l’app gratuita per iPhone Remote Controller for Sticky ti permette di avviare e mettere in pausa il timer e di spostare il widget se copre una slide.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Tre passaggi per iniziare",
+    "items": [
+      {"title": "Apri l’app", "text": "Nella barra dei menu compare l’icona di una nota e, la prima volta, si apre una breve guida."},
+      {"title": "Aggiungi nota e timer", "text": "Copia il testo e premi `⌘⌃V`, poi scrivi la durata del tuo intervento nel campo del timer."},
+      {"title": "Passa a tutto schermo", "text": "Nota e timer restano in primo piano."}
+    ]
+  },
+  "reference": {
+    "title": "Abbreviazioni e formati del tempo",
+    "rows": [
+      ["⌘⌃N", "Nuova nota"],
+      ["⌘⌃V", "Nuova nota dagli appunti"],
+      ["⌘⌃T", "Mostra o nascondi i timer"],
+      ["⌘⌃B", "Avvia un Pomodoro (25 min di concentrazione, 5 di pausa)"],
+      ["⌘⌃P", "Gobbo elettronico"],
+      ["⌘⌃S · ⌘⌃H", "Mostra o nascondi tutte le note"],
+      ["10", "Un numero da solo indica i minuti (10 min)"],
+      ["5:30 · 1:15:00", "Minuti:secondi, ore:minuti:secondi"],
+      ["1h 20m · 45s", "Con le unità"],
+      ["25/5", "Concentrazione/pausa, a ciclo finché non lo fermi"]
+    ],
+    "note": "Tutte le abbreviazioni usano insieme Comando (⌘) e Control (⌃) e funzionano anche mentre sei in un’altra app. I timer arrivano fino a 99:59:59."
+  },
+  "pricing": {
+    "title": "È tutto gratis",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Note in sei colori, con opacità, dimensione del testo e blocco della modifica",
+        "Conti alla rovescia, Pomodoro e widget per il Centro Notifiche",
+        "Gobbo elettronico con modalità specchio",
+        "Musica di sottofondo che parte con il timer",
+        "Abbreviazioni che funzionano da qualsiasi app"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Avvia, metti in pausa, aggiungi o togli 30 secondi",
+        "Ridimensiona e sposta il widget dal palco",
+        "Timer da 3, 5, 10 o 15 minuti con un tocco"
+      ],
+      "note": "È un’app separata e gratuita. Richiede iOS 17 o successivo e StickyPresenter aperto su un Mac nella stessa rete Wi‑Fi."
+    },
+    "note": "Nessuna funzione è bloccata dietro un acquisto. Se l’app ti è utile, puoi lasciare una mancia allo sviluppatore dalle Impostazioni."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {"q": "Posso mostrare solo il timer durante la condivisione o la duplicazione dello schermo?", "a": "Sì. Con il pulsante Finestra nella riga del timer lo apri come una finestra normale: compare così nell’elenco finestre della condivisione schermo e di AirPlay, e puoi condividere solo quella."},
+      {"q": "Ho nascosto un widget e non lo trovo più.", "a": "Nella finestra dei timer, passa il puntatore sulla riga di quel timer e la posizione del widget viene evidenziata con una linea tratteggiata. Fai clic su Allinea per riportarlo accanto alla finestra."},
+      {"q": "Ho chiuso una nota per sbaglio.", "a": "Con Riapri nota chiusa nella barra dei menu recuperi una qualsiasi delle ultime 20. Le note si salvano mentre scrivi e tornano nello stesso punto quando riapri l’app."},
+      {"q": "Un’abbreviazione non funziona.", "a": "Se nella tabella delle abbreviazioni della guida risulta Usata da un’altra app, vuol dire che un’altra app l’ha presa prima. Chiudi quell’app e tornerà a funzionare. Non serve il permesso di Accessibilità."},
+      {"q": "Perché il tema Camaleonte chiede la registrazione dello schermo?", "a": "Camaleonte legge il colore dello schermo dietro il widget per adattarsi, e per farlo serve quel permesso. Non viene salvato né inviato nulla. Senza permesso, i temi Sistema, Chiaro e Scuro funzionano normalmente."},
+      {"q": "Come aggiungo la musica di sottofondo?", "a": "Scegli un’atmosfera (Concentrazione, Calma, Jazz o Energia) nella barra della musica in fondo alla finestra dei timer e l’app crea una cartella per ciascuna. Mettici i tuoi brani e verranno riprodotti in ordine insieme al timer. L’app non include musica."},
+      {"q": "Il telecomando su iPhone non trova il mio Mac.", "a": "Controlla in ordine: StickyPresenter è aperto sul Mac (cerca l’icona nella barra dei menu); i due dispositivi sono sulla stessa rete Wi‑Fi, non su una rete ospiti né in cellulare; Rete locale è consentita per l’app in Privacy e sicurezza, sia su iPhone sia su Mac; la VPN è disattivata."},
+      {"q": "Il telecomando dice che il codice di abbinamento è sbagliato.", "a": "Inserisci il codice di quattro cifre mostrato in questo momento sotto Telecomando nella barra dei menu del Mac. Se hai fatto clic su Nuovo codice di abbinamento, vale solo quello nuovo. Dopo il primo abbinamento, si collega appena apri l’app."},
+      {"q": "Qualcun altro potrebbe controllare il mio timer?", "a": "Non senza il tuo codice. Il Mac accetta solo telecomandi che hanno inserito il codice giusto, tramite una connessione diretta cifrata sulla rete locale. Se qualcuno ha visto il codice, usa Nuovo codice di abbinamento o Dimentica i telecomandi abbinati sotto Telecomando nella barra dei menu."},
+      {"q": "Dove vengono salvati note e testi?", "a": "Solo su questo Mac. Niente account, niente pubblicità, e niente va online tranne statistiche d’uso anonime e i feedback che scegli di inviare."}
+    ]
+  },
+  "closing": {
+    "headline": "Al prossimo intervento,\nsmetti di cercare l’orologio",
+    "cta": "Scaricala gratis dal Mac App Store"
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "languages": "Lingua",
+    "privacy": "Informativa sulla privacy",
+    "contact": "Domande, bug o idee? Scrivi a {email}."
+  }
+}

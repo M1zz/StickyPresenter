@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: lappar och timer ovanpå Keynote i helskärm",
+  "description": "Mac-app i menyraden som håller dina anteckningar, en nedräkning och en teleprompter ovanpå Keynote i helskärm. Allt är gratis.",
+  "hero": {
+    "headline": "Manus och återstående tid\nmitt på bilden",
+    "lead": "Sätt Keynote i helskärm så ligger lapparna och timern kvar ovanpå. De tar aldrig fokus från presentationsappen, så klickern bläddrar bilder precis som vanligt.",
+    "cta": "Hämta gratis på Mac App Store",
+    "note": "Alla funktioner är gratis. Kräver macOS 14 eller senare."
+  },
+  "demo": {
+    "title": "Testa på en bild",
+    "lead": "Skriv en tid som du skulle göra i appen. Tryck på 15s och se hur widgeten varnar när tiden håller på att ta slut.",
+    "input": "Timerns längd",
+    "start": "Starta",
+    "pause": "Pausa",
+    "resume": "Fortsätt",
+    "reset": "Nollställ",
+    "h": "%d tim",
+    "m": "%d min",
+    "s": "%d sek",
+    "focus": "Fokus",
+    "rest": "Paus",
+    "invalid": "Formatet känns inte igen",
+    "almost": "Tiden är snart slut",
+    "done": "Tiden är slut",
+    "slide": "Resultat för tredje kvartalet",
+    "note": "Hälsa, gå igenom agendan\nStanna 3 sek vid försäljningsgrafen\nSpara 5 min till frågor",
+    "noteLabel": "Lapp",
+    "colorLabel": "Lappens färg",
+    "colors": ["Gul", "Rosa", "Grön", "Blå", "Lila", "Orange"],
+    "footnote": "Det här är en efterbildning av skärmen. I appen svävar lappen och timern så här ovanpå Keynote eller PowerPoint i helskärm."
+  },
+  "problem": {
+    "title": "Var har du manus och klocka när du presenterar?",
+    "text": "Presentatörsvyn kräver en extra skärm, och en blick på armbandsuret märker publiken alltid. Kanske har du tejpat en papperslapp på datorn och sett den ramla av. StickyPresenter fäster manuset och den återstående tiden precis ovanför bilden, där blicken redan är."
+  },
+  "features": [
+    {
+      "title": "En blick och du vet hur mycket tid som är kvar",
+      "text": "En kvadratisk widget i hörnet visar återstående tid. Den blir röd när slutet närmar sig, och när tiden är ute hörs en signal och kanten blinkar.\nSkriv tider hur du vill, till exempel `5:30` eller `1h 20m`, eller `25/5` för en pomodoro som växlar mellan fokus och paus. Öppna timern i ett eget fönster för att bara dela det fönstret vid skärmdelning eller via AirPlay.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Läs manuset och titta in i kameran",
+      "text": "Telepromptern rullar manuset i den takt du väljer och stannar av sig själv i slutet. Kopiera manuset, tryck på `⌘⌃P`, så öppnas den med texten.\nDet finns spegelläge för teleprompterutrustning med spegelglas, och takt och textstorlek finns kvar till nästa gång.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Du lämnar aldrig bilden",
+      "text": "Appen körs diskret i menyraden, utan symbol i Dock och utan fönster att hålla koll på. Kortkommandon som `⌘⌃N` för en ny lapp och `⌘⌃T` för timers fungerar även i Keynote i helskärm.\nPå scenen kan du med den kostnadsfria iPhone-appen Remote Controller for Sticky starta och pausa timern och flytta widgeten om den skymmer en bild.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Kom igång i tre steg",
+    "items": [
+      {"title": "Öppna appen", "text": "En lappsymbol dyker upp i menyraden, och första gången öppnas en kort guide."},
+      {"title": "Lägg till lapp och timer", "text": "Kopiera manuset och tryck på `⌘⌃V`, skriv sedan längden på din dragning i timerfältet."},
+      {"title": "Gå till helskärm", "text": "Lappen och timern ligger kvar överst."}
+    ]
+  },
+  "reference": {
+    "title": "Kortkommandon och tidsformat",
+    "rows": [
+      ["⌘⌃N", "Ny lapp"],
+      ["⌘⌃V", "Ny lapp från urklipp"],
+      ["⌘⌃T", "Visa eller göm timers"],
+      ["⌘⌃B", "Starta en pomodoro (25 min fokus, 5 min paus)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Visa eller göm alla lappar"],
+      ["10", "Bara en siffra betyder minuter (10 min)"],
+      ["5:30 · 1:15:00", "Minuter:sekunder, timmar:minuter:sekunder"],
+      ["1h 20m · 45s", "Med enheter"],
+      ["25/5", "Fokus/paus om och om igen tills du stoppar"]
+    ],
+    "note": "Alla kortkommandon använder Kommando (⌘) och Kontroll (⌃) tillsammans och fungerar även när du är i en annan app. Timers går upp till 99:59:59."
+  },
+  "pricing": {
+    "title": "Allt är gratis",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Lappar i sex färger med genomskinlighet, textstorlek och redigeringslås",
+        "Nedräkningar, pomodoro och en widget i Notiscenter",
+        "Teleprompter med spegelläge",
+        "Bakgrundsmusik som startar med timern",
+        "Kortkommandon som fungerar i alla appar"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Starta, pausa och lägg till eller dra av 30 sekunder",
+        "Ändra widgetens storlek och plats direkt från scenen",
+        "Timer på 3, 5, 10 eller 15 minuter med ett tryck"
+      ],
+      "note": "En separat, kostnadsfri app. Kräver iOS 17 eller senare och att StickyPresenter körs på en Mac i samma wifi."
+    },
+    "note": "Inget är låst bakom ett köp. Om appen hjälper dig kan du ge utvecklaren dricks under Inställningar."
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {"q": "Kan jag visa bara timern vid skärmdelning eller skärmdubblering?", "a": "Ja. Med knappen Fönster på timerns rad öppnar du den som ett vanligt fönster. Då syns den i fönsterlistan för skärmdelning och AirPlay, och du kan dela bara det."},
+      {"q": "Jag har gömt en timerwidget och hittar den inte.", "a": "Håll pekaren över timerns rad i timerfönstret så markeras widgetens plats med en streckad linje. Klicka på Justera för att hämta tillbaka den bredvid timerfönstret."},
+      {"q": "Jag stängde en lapp av misstag.", "a": "Med Öppna stängd lapp igen i menyraden får du tillbaka någon av de 20 senaste. Lappar sparas medan du skriver och hamnar på samma plats när appen öppnas igen."},
+      {"q": "Ett kortkommando fungerar inte.", "a": "Står det i guidens tabell som Används av ett annat program har en annan app lagt beslag på det först. Avsluta den appen så fungerar det igen. Ingen behörighet för hjälpmedel behövs."},
+      {"q": "Varför ber temat Kameleont om skärminspelning?", "a": "Kameleont läser av färgen på skärmen bakom widgeten och anpassar sig efter den, och det kräver den behörigheten. Inget sparas eller skickas. Utan den fungerar temana System, Ljust och Mörkt som vanligt."},
+      {"q": "Hur lägger jag till bakgrundsmusik?", "a": "Välj en stämning (Fokus, Lugn, Jazz eller Pigg) i musikfältet längst ned i timerfönstret så skapar appen en mapp för varje. Lägg dina egna låtar där så spelas de i ordning tillsammans med timern. Appen har ingen egen musik."},
+      {"q": "Fjärrkontrollen på iPhone hittar inte min Mac.", "a": "Kontrollera i tur och ordning: körs StickyPresenter på datorn (symbol i menyraden)? Är båda enheterna på samma wifi och inte på ett gästnätverk eller mobildata? Är Lokalt nätverk tillåtet under Integritet och säkerhet på både iPhone och Mac? Är VPN avstängt?"},
+      {"q": "Fjärrkontrollen säger att ihopparningskoden är fel.", "a": "Ange den fyrsiffriga kod som just nu visas under Fjärrkontroll i Macens menyrad. Har du klickat på Ny ihopparningskod gäller bara den nya. Efter första ihopparningen ansluter den så fort du öppnar appen."},
+      {"q": "Kan någon annan styra min timer?", "a": "Inte utan din kod. Datorn tar bara emot fjärrkontroller som har angett rätt kod, via en krypterad direktanslutning i det lokala nätverket. Har någon sett koden, välj Ny ihopparningskod eller Glöm ihopparade fjärrkontroller under Fjärrkontroll i menyraden."},
+      {"q": "Var sparas mina lappar och manus?", "a": "Bara på den här datorn. Inget konto, ingen reklam, och inget skickas ut på nätet förutom anonym användningsstatistik och feedback som du själv väljer att skicka."}
+    ]
+  },
+  "closing": {
+    "headline": "På nästa föredrag\nslipper du leta efter klockan",
+    "cta": "Hämta gratis på Mac App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Frågor, buggar eller idéer? Skriv till {email}."
+  }
+}

@@ -1,0 +1,63 @@
+/* StickyPresenter 웹 체험. 노트 · 위젯 색은 앱과 같다 (NoteColor, TimerWidgetView). */
+.demo-card { display: grid; grid-template-columns: 1.35fr 1fr; gap: var(--s5); align-items: center; }
+
+.sp-stage { position: relative; aspect-ratio: 16 / 10; border-radius: var(--r-inner); overflow: hidden;
+            background: linear-gradient(135deg, #1d2a44, #0e1424); container-type: inline-size; }
+.sp-slide { position: absolute; inset: 9% 8%; color: #fff; display: flex; flex-direction: column; gap: 4.5cqw; }
+.sp-slide b { font-size: 6cqw; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; max-width: 48%; }
+.sp-slide i { display: block; height: 2.4cqw; width: 46%; border-radius: 99px; background: rgb(255 255 255 / .16); }
+.sp-slide i:nth-of-type(2) { width: 38%; }
+.sp-slide i:nth-of-type(3) { width: 42%; }
+
+.sp-note { position: absolute; right: 4%; top: 6%; width: 44%; background: var(--note); color: #333;
+           border-radius: 6px; box-shadow: 0 10px 28px rgb(0 0 0 / .35); transition: background .25s var(--ease); }
+.sp-note::before { content: ""; display: block; height: 14px; background: rgb(0 0 0 / .06); border-radius: 6px 6px 0 0; }
+.sp-colors { display: flex; flex-wrap: wrap; gap: var(--s1); margin-bottom: var(--s2); }
+.sp-colors button { width: 44px; height: 44px; border: 0; padding: 0; cursor: pointer; background: none;
+                    display: grid; place-items: center; border-radius: 50%; }
+.sp-colors button::before { content: ""; width: 26px; height: 26px; border-radius: 50%; background: var(--c);
+                            box-shadow: inset 0 0 0 1px rgb(0 0 0 / .2); transition: transform .15s var(--ease); }
+.sp-colors button[aria-pressed="true"]::before { box-shadow: inset 0 0 0 1px rgb(0 0 0 / .2), 0 0 0 3px var(--surface), 0 0 0 5px var(--accent); }
+.sp-colors button:hover::before { transform: scale(1.1); }
+.sp-note textarea { display: block; width: 100%; min-height: 64px; resize: none; overflow: hidden; border: 0; background: none;
+                    color: inherit; font-family: inherit; font-weight: 500; font-size: clamp(11px, 2.6cqw, 15px); line-height: 1.45; padding: 8px 10px 10px; outline-offset: -3px; }
+
+.sp-widget { --sp-ink: #111; position: absolute; left: 6%; bottom: 7%; width: 28%; aspect-ratio: 1;
+             background: #FAFAFC; border-radius: 16%; display: grid; place-items: center; align-content: center;
+             box-shadow: 0 10px 28px rgb(0 0 0 / .35); }
+.sp-widget svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.sp-widget rect { fill: none; stroke-width: 6; }
+.sp-widget .track { stroke: rgb(0 0 0 / .12); }
+.sp-widget:not(.on) .ring { visibility: hidden; }
+.sp-widget .ring { stroke: var(--ring); stroke-linecap: round; stroke-dasharray: 0 1;
+                   transition: stroke-dasharray 1s linear, stroke .35s var(--ease); }
+.sp-time { position: relative; font: 700 6.4cqw/1 ui-rounded, -apple-system, sans-serif; color: var(--ink, #111);
+           font-variant-numeric: tabular-nums; transition: color .35s var(--ease); }
+.sp-phase { position: relative; font-size: 2.2cqw; font-weight: 600; color: var(--ring); min-height: 1em; margin-top: 2px; }
+.sp-widget.done::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 5px #FF385E;
+                         opacity: 0; animation: sp-pulse .5s ease-in-out 10 alternate; }
+@keyframes sp-pulse { to { opacity: .9; } }
+
+.sp-form { display: flex; gap: var(--s2); }
+.sp-form input { flex: 1; min-width: 0; min-height: 48px; font: inherit; color: var(--text); background: var(--bg);
+                 border: 2px solid var(--line); border-radius: 999px; padding: 0 var(--s4); }
+.sp-form input:focus { border-color: var(--accent); outline: none; }
+.sp-preview { min-height: 1.5em; margin: var(--s2) 0 var(--s4) var(--s4); }
+.demo-chips, .sp-row { display: flex; flex-wrap: wrap; gap: var(--s2); margin-bottom: var(--s3); }
+.chip { font: inherit; font-weight: 600; color: var(--accent); background: var(--bg); border: 0;
+        border-radius: 999px; padding: var(--s2) var(--s4); min-height: 44px; cursor: pointer;
+        transition: transform .15s var(--ease), background .15s var(--ease); }
+.chip:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); }
+.chip:active:not(:disabled) { transform: scale(.95); }
+.chip:disabled { opacity: .45; cursor: default; }
+.chip.sp-go, .chip.sp-go:hover { background: var(--accent); color: var(--on-accent); }
+.chip.hint { background: var(--accent); color: var(--on-accent); animation: hint 1.6s var(--ease) infinite; }
+@keyframes hint { 50% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 22%, transparent); } }
+.sp-status { font-weight: 600; color: #E5383B; min-height: 1.6em; margin-bottom: var(--s2); }
+
+@media (prefers-reduced-motion: reduce) {
+  .chip.hint { animation: none; }
+  .sp-widget .ring, .sp-time, .sp-note { transition: none; }
+  .sp-widget.done::after { animation: none; opacity: .9; }
+}
+@media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } }

@@ -1,0 +1,126 @@
+{
+  "title": "StickyPresenter: muistilaput ja ajastin koko näytön Keynoten päällä",
+  "description": "Macin valikkorivin appi, joka pitää puhujan muistiinpanot, ajastimen ja teleprompterin koko näytön Keynoten päällä. Kaikki on ilmaista.",
+  "hero": {
+    "headline": "Käsikirjoitus ja jäljellä oleva aika\nsuoraan dian päällä",
+    "lead": "Laita Keynote koko näytölle, niin muistilaput ja ajastin pysyvät sen päällä. Ne eivät koskaan vie fokusta esitysapilta, joten esitysohjain vaihtaa dioja tavalliseen tapaan.",
+    "cta": "Lataa ilmaiseksi Mac App Storesta",
+    "note": "Kaikki ominaisuudet ovat ilmaisia. Vaatii macOS 14:n tai uudemman."
+  },
+  "demo": {
+    "title": "Kokeile dian päällä",
+    "lead": "Kirjoita aika samoin kuin apissa. Napauta 15s, niin näet, miten widget varoittaa ajan käydessä vähiin.",
+    "input": "Ajastimen kesto",
+    "start": "Aloita",
+    "pause": "Tauko",
+    "resume": "Jatka",
+    "reset": "Nollaa",
+    "h": "%d h",
+    "m": "%d min",
+    "s": "%d s",
+    "focus": "Keskittyminen",
+    "rest": "Tauko",
+    "invalid": "Muotoa ei tunnistettu",
+    "almost": "Aika on loppumassa",
+    "done": "Aika loppui",
+    "slide": "Q3-tulokset",
+    "note": "Tervehdys ja aiheet\n3 s tauko myyntikaavion kohdalla\n5 min kysymyksille",
+    "noteLabel": "Muistilappu",
+    "colorLabel": "Lapun väri",
+    "colors": ["Keltainen", "Vaaleanpunainen", "Vihreä", "Sininen", "Violetti", "Oranssi"],
+    "footnote": "Tämä on jäljitelmä näytöstä. Apissa muistilappu ja ajastin leijuvat näin koko näytön Keynoten tai PowerPointin päällä."
+  },
+  "problem": {
+    "title": "Missä käsikirjoitus ja kello ovat, kun esität?",
+    "text": "Esittäjänäkymä vaatii toisen näytön, ja vilkaisun rannekelloon yleisö huomaa aina. Ehkä olet joskus teipannut paperilapun läppäriin ja nähnyt sen putoavan. StickyPresenter kiinnittää käsikirjoituksen ja jäljellä olevan ajan suoraan dian yläpuolelle, sinne mihin katseesi jo osuu."
+  },
+  "features": [
+    {
+      "title": "Yksi vilkaisu kertoo, paljonko aikaa on",
+      "text": "Neliön muotoinen widget nurkassa näyttää jäljellä olevan ajan. Se muuttuu punaiseksi lopun lähestyessä, ja kun aika loppuu, kuuluu merkkiääni ja reunus vilkkuu.\nKirjoita ajat miten haluat, esimerkiksi `5:30` tai `1h 20m`, tai `25/5`, jolloin saat pomodoron, joka vuorottelee keskittymistä ja taukoa. Avaa ajastin omaan ikkunaansa, niin voit jakaa näytönjaossa tai AirPlayllä vain sen.",
+      "shot": "02-timers"
+    },
+    {
+      "title": "Lue tekstiä ja katso kameraan",
+      "text": "Teleprompter vierittää tekstiä valitsemallasi nopeudella ja pysähtyy itsestään loppuun. Kopioi teksti, paina `⌘⌃P`, niin se aukeaa valmiina.\nPeilitila sopii puoliläpäisevällä lasilla varustettuihin telepromptereihin, ja nopeus ja fonttikoko säilyvät seuraavaan kertaan.",
+      "shot": "03-teleprompter"
+    },
+    {
+      "title": "Diaa ei tarvitse jättää",
+      "text": "Appi toimii hiljaa valikkorivillä ilman Dock-symbolia ja ilman ikkunoita, joita pitäisi vahtia. Pikanäppäimet, kuten `⌘⌃N` uudelle lapulle ja `⌘⌃T` ajastimille, toimivat myös koko näytön Keynotessa.\nLavalla ilmainen iPhone-appi Remote Controller for Sticky käynnistää ja pysäyttää ajastimen ja siirtää widgetin, jos se peittää dian.",
+      "shot": "04-menu-bar"
+    }
+  ],
+  "steps": {
+    "title": "Kolme askelta alkuun",
+    "items": [
+      {"title": "Avaa appi", "text": "Valikkoriville ilmestyy lappusymboli, ja ensimmäisellä kerralla aukeaa lyhyt opas."},
+      {"title": "Lisää lappu ja ajastin", "text": "Kopioi käsikirjoitus ja paina `⌘⌃V`, kirjoita sitten esityksen pituus ajastinkenttään."},
+      {"title": "Siirry koko näytölle", "text": "Lappu ja ajastin pysyvät päällimmäisinä."}
+    ]
+  },
+  "reference": {
+    "title": "Pikanäppäimet ja ajan merkintätavat",
+    "rows": [
+      ["⌘⌃N", "Uusi muistilappu"],
+      ["⌘⌃V", "Uusi lappu leikepöydältä"],
+      ["⌘⌃T", "Näytä tai kätke ajastimet"],
+      ["⌘⌃B", "Aloita pomodoro (25 min keskittymistä, 5 min taukoa)"],
+      ["⌘⌃P", "Teleprompter"],
+      ["⌘⌃S · ⌘⌃H", "Näytä tai kätke kaikki laput"],
+      ["10", "Pelkkä numero tarkoittaa minuutteja (10 min)"],
+      ["5:30 · 1:15:00", "Minuutit:sekunnit, tunnit:minuutit:sekunnit"],
+      ["1h 20m · 45s", "Yksiköiden kanssa"],
+      ["25/5", "Keskittyminen/tauko vuorotellen, kunnes pysäytät"]
+    ],
+    "note": "Kaikissa pikanäppäimissä painetaan yhtä aikaa Komentoa (⌘) ja Ctrl:ää (⌃), ja ne toimivat myös toisessa apissa. Ajastimen voi asettaa enintään 99:59:59."
+  },
+  "pricing": {
+    "title": "Kaikki on ilmaista",
+    "free": {
+      "name": "StickyPresenter (Mac)",
+      "items": [
+        "Muistilaput kuudessa värissä, läpinäkyvyys, fonttikoko ja muokkauslukko",
+        "Ajastimet, pomodoro ja widget Ilmoituskeskukseen",
+        "Teleprompter peilitilalla",
+        "Taustamusiikki, joka alkaa ajastimen kanssa",
+        "Pikanäppäimet, jotka toimivat mistä tahansa apista"
+      ]
+    },
+    "pro": {
+      "name": "Remote Controller for Sticky (iPhone)",
+      "items": [
+        "Aloita, pysäytä ja lisää tai vähennä 30 sekuntia",
+        "Muuta widgetin kokoa ja paikkaa suoraan lavalta",
+        "3, 5, 10 tai 15 minuutin ajastin yhdellä napautuksella"
+      ],
+      "note": "Erillinen ilmainen appi. Vaatii iOS 17:n tai uudemman ja StickyPresenterin käynnissä Macissa samassa Wi‑Fi-verkossa."
+    },
+    "note": "Mitään ei ole lukittu maksun taakse. Jos appi on sinulle hyödyllinen, voit antaa kehittäjälle juomarahaa asetuksista."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {"q": "Voinko näyttää näytönjaossa tai peilauksessa vain ajastimen?", "a": "Voit. Ajastimen rivin Ikkuna-painike avaa sen tavallisena ikkunana. Silloin se näkyy näytönjaon ja AirPlayn ikkunaluettelossa, ja voit jakaa pelkästään sen."},
+      {"q": "Kätkin ajastinwidgetin enkä löydä sitä.", "a": "Vie osoitin ajastinikkunassa kyseisen ajastimen rivin päälle, niin widgetin paikka merkitään katkoviivalla. Tasaa-painike tuo sen takaisin ajastinikkunan viereen."},
+      {"q": "Suljin lapun vahingossa.", "a": "Valikkorivin Avaa suljettu muistilappu uudelleen palauttaa minkä tahansa 20 viimeisimmästä. Laput tallentuvat kirjoittaessa ja palaavat samaan kohtaan, kun appi avataan uudelleen."},
+      {"q": "Pikanäppäin ei toimi.", "a": "Jos oppaan pikanäppäintaulukko näyttää sen kohdalla Toisen apin käytössä, toinen appi on varannut sen ensin. Sulje se appi, niin pikanäppäin toimii taas. Käyttöapuoikeutta ei tarvita."},
+      {"q": "Miksi Kameleontti-teema pyytää näytön tallennusoikeutta?", "a": "Kameleontti lukee widgetin takana olevan näytön värin ja mukautuu siihen, ja siihen tarvitaan tämä oikeus. Mitään ei tallenneta eikä lähetetä. Ilman oikeutta teemat Järjestelmä, Vaalea ja Tumma toimivat normaalisti."},
+      {"q": "Miten lisään taustamusiikkia?", "a": "Valitse tunnelma (Keskittyminen, Rauha, Jazz tai Eloisa) ajastinikkunan alareunan musiikkipalkista, niin appi luo jokaiselle kansion. Lisää sinne omia kappaleitasi, niin ne soivat järjestyksessä ajastimen kanssa. Apin mukana ei tule musiikkia."},
+      {"q": "iPhonen kauko-ohjain ei löydä Maciani.", "a": "Tarkista järjestyksessä: onko StickyPresenter käynnissä Macissa (symboli valikkorivillä); ovatko molemmat laitteet samassa Wi‑Fi-verkossa eivätkä vierasverkossa tai mobiilidatalla; onko Paikallisverkko sallittu Tietosuoja ja turvallisuus -asetuksissa sekä iPhonessa että Macissa; onko VPN pois päältä."},
+      {"q": "Kauko-ohjain sanoo, että parituskoodi on väärä.", "a": "Syötä nelinumeroinen koodi, joka näkyy juuri nyt Macin valikkorivin Kauko-ohjain-valikossa. Jos klikkasit Uusi parituskoodi, vain uusi koodi kelpaa. Ensimmäisen parituksen jälkeen yhteys syntyy heti, kun avaat apin."},
+      {"q": "Voiko joku muu ohjata ajastintani?", "a": "Ei ilman koodiasi. Mac hyväksyy vain kauko-ohjaimet, jotka ovat syöttäneet oikean koodin, ja yhteys kulkee salattuna suoraan paikallisverkossa. Jos joku on nähnyt koodin, valitse Kauko-ohjain-valikosta Uusi parituskoodi tai Unohda pariliitetyt kauko-ohjaimet."},
+      {"q": "Mihin lappuni ja käsikirjoitukseni tallentuvat?", "a": "Vain tähän Maciin. Ei tiliä eikä mainoksia, eikä verkkoon lähde mitään muuta kuin nimetöntä käyttötilastoa ja palautetta, jonka itse päätät lähettää."}
+    ]
+  },
+  "closing": {
+    "headline": "Seuraavassa esityksessä\nkelloa ei tarvitse etsiä",
+    "cta": "Lataa ilmaiseksi Mac App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Kysyttävää, virheitä tai ideoita? Kirjoita osoitteeseen {email}."
+  }
+}
