@@ -1,0 +1,114 @@
+{
+  "title": "Remote Controller: styr StickyPresenters föredragstimer från iPhone",
+  "description": "iPhone-fjärrkontrollen till StickyPresenter på Mac. Starta, pausa, förläng timern eller flytta bort den från en bild utan att gå till datorn. Gratis.",
+  "hero": {
+    "headline": "Macen står kvar.\nTimern har du i handen.",
+    "lead": "Styr timrarna i StickyPresenter på din Mac från din iPhone. Du står längst fram i rummet och ser ändå hur mycket tid som är kvar, pausar, lägger till 30 sekunder eller flyttar timern från diagrammet den skymmer.",
+    "cta": "Hämta gratis på App Store",
+    "note": "Gratis · iOS 17 eller senare · Kräver en Mac med StickyPresenter på samma Wi‑Fi."
+  },
+  "problem": {
+    "title": "Går du fortfarande tillbaka till datorn för att röra timern?",
+    "text": "Föredraget drar över och du behöver mer tid. Timern ligger precis ovanpå ditt viktigaste diagram. Hittills har det betytt att gå över scenen och sträcka dig efter styrplattan inför alla. Med Remote Controller står du kvar och trycker en gång på din iPhone."
+  },
+  "features": [
+    {
+      "title": "Se återstående tid och justera direkt",
+      "text": "Återstående tid och förlopp uppdateras varje sekund. Under en pomodoro ser du också om det är fokus eller paus och vilken cykel du är på.\nDrar det över? Lägg till 30 sekunder. Blir du klar tidigare? Dra bort 30. Starta en ny timer på 3, 5, 10 eller 15 minuter med ett tryck, och växla widgeten mellan S, M och L så att även bakersta raden kan läsa den.",
+      "shot": "02-pomodoro"
+    },
+    {
+      "title": "Ange koden en gång, sedan är det klart",
+      "text": "Öppna appen så visas alla Mac-datorer på ditt Wi‑Fi som kör StickyPresenter i en lista. Välj din och skriv in den fyrsiffriga koden från timerikon ▸ Fjärrkontroll i Macens menyrad.\nDärefter ansluter appen själv till den Macen varje gång du öppnar den. Inget konto, ingen server: de två enheterna pratar direkt med varandra över ditt lokala nätverk.",
+      "shot": "03-choose-mac"
+    }
+  ],
+  "steps": {
+    "title": "Igång i tre steg",
+    "items": [
+      {
+        "title": "Öppna StickyPresenter på din Mac",
+        "text": "När timerikonen syns i menyraden är du redo. Appen blir kvar där även om du stänger alla fönster."
+      },
+      {
+        "title": "Öppna appen på samma Wi‑Fi",
+        "text": "När den ber om åtkomst till lokalt nätverk trycker du på Tillåt. Det är så den hittar din Mac."
+      },
+      {
+        "title": "Välj din Mac och ange koden",
+        "text": "Skriv in den fyrsiffriga ihopparningskoden från timerikon ▸ Fjärrkontroll i Macens menyrad, så har du kontrollen."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Det här gör du från din iPhone",
+    "rows": [
+      ["Återstående tid", "Tid kvar, förlopp, pomodorofas fokus eller paus och cykelnummer, varje sekund"],
+      ["Starta · Pausa", "En stor knapp i mitten"],
+      ["−30 s · +30 s", "Knapparna på varsin sida justerar en pågående timer direkt"],
+      ["Ny timer", "3, 5, 10 eller 15 minuter"],
+      ["Widgetstorlek", "Widget i S, M eller L"],
+      ["Position", "Dra den på en miniatyr av din Macs skärmlayout, även över till en extra skärm"],
+      ["Dölj", "Dölj widgeten för publiken en stund"],
+      ["Justera", "Hämta tillbaka en borttappad widget bredvid timerfönstret"],
+      ["Återställ · Radera", "Börja om timern eller ta bort den"],
+      ["Genvägar · Siri", "Säg `Starta en timer med Remote Controller` så startar en timer på din Mac"]
+    ],
+    "note": "Fjärrkontrollen fungerar bara med timrar som körs på din Mac. Lappar och teleprompter-manus skickas aldrig till iPhone, och den byter inte bilder."
+  },
+  "faq": {
+    "title": "Frågor",
+    "items": [
+      {
+        "q": "Kan jag använda iPhone-appen på egen hand?",
+        "a": "Nej. Remote Controller är fjärrkontrollen till StickyPresenter på Mac, så StickyPresenter måste köras på en Mac på samma Wi‑Fi. Hämta Mac-appen via länken nedan eller under Hämta Mac-appen i appens inställningar."
+      },
+      {
+        "q": "Min Mac syns inte i listan.",
+        "a": "Om ingen Mac har dykt upp efter 10 sekunder visar appen en checklista. Gå igenom den uppifrån: StickyPresenter körs på din Mac (titta efter timerikonen i menyraden), båda enheterna är på samma Wi‑Fi (gästnätverk fungerar inte), Remote Controller är påslagen på iPhone under Inställningar ▸ Integritet och säkerhet ▸ Lokalt nätverk, StickyPresenter är tillåten på Macen under Systeminställningar ▸ Integritet och säkerhet ▸ Lokalt nätverk, och eventuellt VPN är avstängt."
+      },
+      {
+        "q": "Appen säger att ihopparningskoden är fel.",
+        "a": "Ange de fyra siffror som visas just nu under timerikon ▸ Fjärrkontroll i Macens menyrad. Om någon har klickat på Ny ihopparningskod på Macen fungerar bara den nya koden."
+      },
+      {
+        "q": "Appen säger att Macen inte känner igen den här iPhonen.",
+        "a": "Det händer efter Glöm ihopparade fjärrkontroller på Macen, eller efter att StickyPresenter har installerats om. Tryck på Macen i listan och ange ihopparningskoden en gång till."
+      },
+      {
+        "q": "Appen säger att Macen inte svarar.",
+        "a": "Kontrollera att Macen inte är i vila, att båda enheterna är på samma Wi‑Fi och att eventuellt VPN är avstängt."
+      },
+      {
+        "q": "Appen säger att Mac-appen behöver uppdateras.",
+        "a": "StickyPresenter på din Mac är äldre än fjärrkontrollen. Uppdatera den i Mac App Store och välj sedan Macen igen."
+      },
+      {
+        "q": "Är det säkert i ett mötesrum fullt av Mac-datorer?",
+        "a": "Ja. Fjärrkontrollen pratar bara med den enda Mac den är ihopparad med, och en fjärrkontroll som inte kan din kod kommer inte åt din Mac. Allt går över en krypterad, direkt anslutning på samma nätverk. Har du någon gång visat din kod för någon, klicka på Ny ihopparningskod på Macen."
+      },
+      {
+        "q": "Vad skickas över internet?",
+        "a": "Dina timrar och kommandon lämnar aldrig ditt lokala nätverk. Det enda som skickas över internet är anonym användningsstatistik, kraschrapporter och feedback som du själv väljer att skicka. Detaljerna finns i integritetspolicyn."
+      },
+      {
+        "q": "Kan Siri starta en timer precis innan jag går upp?",
+        "a": "Ja. Säg ”Starta en timer med Remote Controller”, eller använd åtgärden Starta timer på Mac i Genvägar. Appen öppnas och startar en timer med den längd du valt (1 till 600 minuter) så fort den har anslutit till din Mac."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "På nästa föredrag\nstår du kvar längst fram",
+    "cta": "Hämta gratis på App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Frågor, buggar eller idéer? Skriv till {email}, eller skicka dem direkt från din iPhone via kugghjulet uppe till vänster i appen ▸ Feedback.",
+    "links": [
+      ["StickyPresenter för Mac", "./"],
+      ["Supportsida", "support.html#remote"]
+    ]
+  }
+}

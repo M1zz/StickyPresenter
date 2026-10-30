@@ -1,153 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Remote Controller · StickyPresenter</title>
-  <meta name="description" content="Remote Controller · StickyPresenter" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html" />
-  <link rel="icon" href="../remote-icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Controller: το χρονόμετρο του StickyPresenter στο iPhone</title>
+  <meta name="description" content="Το τηλεχειριστήριο iPhone για το StickyPresenter στο Mac. Ξεκινήστε, κάντε παύση και παρατείνετε το χρονόμετρο χωρίς να γυρίσετε στον φορητό. Δωρεάν.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6803358945">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remote Controller: το χρονόμετρο του StickyPresenter στο iPhone">
+  <meta property="og:description" content="Το τηλεχειριστήριο iPhone για το StickyPresenter στο Mac. Ξεκινήστε, κάντε παύση και παρατείνετε το χρονόμετρο χωρίς να γυρίσετε στον φορητό. Δωρεάν.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/remote/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../remote-icon.png">
+  <link rel="apple-touch-icon" href="../remote-icon.png">
+  <link rel="stylesheet" href="../sitegen.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../remote-icon.png" alt="Εικονίδιο της εφαρμογής StickyPresenter Remote Controller" />
-    <h1>Remote Controller</h1>
-    <p>Χειριστείτε τα χρονόμετρα του StickyPresenter από το iPhone</p>
-    <div class="actions">
-      <a class="btn" href="remote-privacy.html">Πολιτική απορρήτου</a>
-      <a class="btn" href="support.html#remote">Υποστήριξη</a>
-      <a class="btn" href="index.html">StickyPresenter για Mac</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/remote.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/remote.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/remote.html" hreflang="el" lang="el" aria-current="true">Ελληνικά</a>
-      <a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/remote.html"><img src="../remote-icon.png" alt="" width="32" height="32">Remote Controller</a>
+    <a class="lang-link" href="#languages">Γλώσσα</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="el">
-        <h2>Τι είναι</h2>
-        <p><strong>Το Remote Controller είναι το τηλεχειριστήριο iPhone για το StickyPresenter για Mac.</strong>
-        Όσο παρουσιάζετε, το Mac είναι συνήθως μακριά σας — με αυτή την εφαρμογή ο έλεγχος του
-        χρονομέτρου βρίσκεται στο χέρι σας. Δεν λειτουργεί αυτόνομα: χρειάζεται το StickyPresenter
-        να εκτελείται σε ένα Mac στο ίδιο δίκτυο Wi‑Fi.</p>
-
-        <h3>Τι μπορείτε να κάνετε</h3>
-        <ul>
-          <li><strong>Να βλέπετε την αντίστροφη μέτρηση</strong> — υπολειπόμενο χρόνο, πρόοδο και
-          τη φάση Pomodoro (εστίαση / διάλειμμα) με τον αριθμό κύκλου, με ενημέρωση κάθε δευτερόλεπτο.</li>
-          <li><strong>Έναρξη, παύση, επαναφορά</strong> — και προσθήκη ή αφαίρεση 30 δευτερολέπτων
-          εν ώρα ομιλίας, όταν κάποιο κομμάτι τραβήξει σε μάκρος.</li>
-          <li><strong>Νέο χρονόμετρο</strong> — προεπιλογές 3, 5, 10 και 15 λεπτών.</li>
-          <li><strong>Αλλαγή μεγέθους του widget</strong> — S / M / L, ώστε να διαβάζεται και από τις πίσω σειρές.</li>
-          <li><strong>Μετακίνηση του widget</strong> — σύρετέ το σε μια μικρογραφία της διάταξης
-          οθονών του Mac. Αν καλύπτει μια διαφάνεια, το παραμερίζετε χωρίς να πάτε στο Mac· με
-          δεύτερη οθόνη, μπορείτε να το μεταφέρετε και σε εκείνη.</li>
-          <li><strong>Απόκρυψη, στοίχιση, διαγραφή</strong> — κρύψτε το widget από το κοινό, φέρτε
-          ένα χαμένο widget πίσω δίπλα στο πάνελ ή διαγράψτε το χρονόμετρο.</li>
-        </ul>
-
-        <h3>Τι χρειάζεστε</h3>
-        <ul>
-          <li>iPhone με iOS 17 ή νεότερο</li>
-          <li>Mac με ανοιχτό το StickyPresenter, στο <strong>ίδιο δίκτυο Wi‑Fi</strong></li>
-          <li>Άδεια πρόσβασης στο τοπικό δίκτυο και στις δύο συσκευές</li>
-        </ul>
-
-        <h3>Πώς συνδέεται</h3>
-        <p>Οι δύο εφαρμογές βρίσκουν η μία την άλλη στο τοπικό σας δίκτυο (Bonjour / Apple
-        MultipeerConnectivity) και επικοινωνούν απευθείας. Δεν χρειάζεται λογαριασμός και δεν
-        υπάρχει διακομιστής στη μέση. Τα χρονόμετρα και οι εντολές σας δεν βγαίνουν ποτέ από το
-        τοπικό δίκτυο· μέσω διαδικτύου στέλνονται μόνο ανώνυμα στατιστικά χρήσης, αναφορές σφαλμάτων
-        και σχόλια που επιλέγετε να στείλετε — δείτε την <a href="remote-privacy.html">πολιτική απορρήτου</a>.</p>
-        <p><strong>Ο κωδικός μπαίνει μόνο μία φορά.</strong> Ανοίξτε την εφαρμογή και θα εμφανιστούν
-        σε λίστα τα Mac που βρίσκει κοντά. Επιλέξτε το δικό σας και πληκτρολογήστε τον τετραψήφιο
-        κωδικό που δείχνει το Mac στη γραμμή μενού, στο εικονίδιο χρονομέτρου →
-        <code>Τηλεχειριστήριο</code> — και οι δύο συσκευές έχουν συζευχθεί. Από εκεί και πέρα η
-        εφαρμογή συνδέεται μόνη της σε εκείνο το Mac κάθε φορά που την ανοίγετε.</p>
-        <p>Πολλά Mac στο ίδιο Wi‑Fi, π.χ. σε μια αίθουσα συσκέψεων, δεν είναι πρόβλημα: το
-        τηλεχειριστήριο μιλά μόνο με το Mac με το οποίο έχει συζευχθεί, και ένα τηλεχειριστήριο που
-        δεν ξέρει τον κωδικό σας δεν μπορεί να φτάσει στο Mac σας.</p>
-
-        <h3 id="trouble">Όταν δεν συνδέεται</h3>
-        <p>Η εφαρμογή σάς λέει γιατί απέτυχε η σύνδεση και τι να κάνετε:</p>
-        <ul>
-          <li><strong>Λάθος κωδικός</strong> — πληκτρολογήστε τα τέσσερα ψηφία που εμφανίζονται
-          τώρα στη γραμμή μενού του Mac, στο εικονίδιο χρονομέτρου → <code>Τηλεχειριστήριο</code>.
-          Αν πατήσατε <code>Νέος κωδικός σύζευξης</code>, ισχύει μόνο ο νέος.</li>
-          <li><strong>Το Mac δεν αναγνωρίζει πλέον αυτό το iPhone</strong> — συμβαίνει μετά από
-          <code>Διαγραφή συζευγμένων τηλεχειριστηρίων</code> ή επανεγκατάσταση του StickyPresenter.
-          Πατήστε το Mac στη λίστα και πληκτρολογήστε ξανά τον κωδικό.</li>
-          <li><strong>Το Mac δεν απαντά</strong> — βεβαιωθείτε ότι το Mac δεν είναι σε αδράνεια,
-          ότι οι δύο συσκευές είναι στο ίδιο Wi‑Fi και ότι το VPN είναι απενεργοποιημένο.</li>
-          <li><strong>Δεν βρέθηκε Mac για πάνω από 10 δευτερόλεπτα</strong> — εμφανίζεται μια λίστα
-          ελέγχου: το StickyPresenter ανοιχτό στο Mac, ίδιο Wi‑Fi (όχι δίκτυο επισκεπτών), άδεια
-          τοπικού δικτύου σε iPhone και Mac, VPN κλειστό. Ελέγξτε τα με τη σειρά από την αρχή.</li>
-          <li><strong>Η εφαρμογή στο Mac χρειάζεται ενημέρωση</strong> — ενημερώστε το
-          StickyPresenter στο Mac και επιλέξτε το ξανά.</li>
-        </ul>
-        <p class="muted">Περισσότερη βοήθεια στη σελίδα <a href="support.html#remote">υποστήριξης</a>.</p>
-
-        <h3>Επικοινωνία</h3>
-        <p>Ερωτήσεις, σφάλματα ή ιδέες; Στείλτε email στο
-        <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> ή ανοίξτε τις Ρυθμίσεις
-        (το γρανάζι πάνω αριστερά στην εφαρμογή) → Σχόλια για να το στείλετε από το iPhone.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Το Mac μένει πίσω,<br>το χρονόμετρο στο χέρι σας</h1>
+        <p class="lead">Χειριστείτε τα χρονόμετρα του StickyPresenter στο Mac από το iPhone σας. Βγείτε μπροστά στην αίθουσα και συνεχίστε να βλέπετε τον χρόνο που απομένει, να κάνετε παύση, να προσθέτετε 30 δευτερόλεπτα ή να μετακινείτε το χρονόμετρο από το γράφημα που κρύβει.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6803358945">Δωρεάν λήψη από το App Store</a></div>
+        <p class="muted small">Δωρεάν · iOS 17 ή νεότερο · Χρειάζεται Mac με ανοιχτό το StickyPresenter στο ίδιο Wi‑Fi.</p>
       </div>
+      <div class="phone"><img src="../img/remote/el/01-timer.jpg" alt="Το Mac μένει πίσω, το χρονόμετρο στο χέρι σας" width="600" height="1303" decoding="async"></div>
+    </section>
 
-      <p style="text-align:center"><a class="back" href="index.html">← Επιστροφή στην αρχική</a></p>
-    </div>
+
+
+    <section class="problem reveal">
+      <h2>Ακόμη γυρίζετε στον φορητό για να αγγίξετε το χρονόμετρο;</h2>
+      <p>Η ομιλία τραβάει σε μάκρος και θέλετε περισσότερο χρόνο. Το χρονόμετρο κάθεται ακριβώς πάνω στο καλύτερο γράφημά σας. Μέχρι τώρα αυτό σήμαινε να διασχίσετε τη σκηνή και να πιάσετε την επιφάνεια αφής μπροστά σε όλους. Με το Remote Controller μένετε στη θέση σας και πατάτε μία φορά το iPhone.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Βλέπετε τον χρόνο που απομένει και τον διορθώνετε επιτόπου</h2>
+        <p>Ο χρόνος που απομένει και η πρόοδος ενημερώνονται κάθε δευτερόλεπτο. Σε Pomodoro βλέπετε επίσης αν είναι «Συγκέντρωση» ή «Διάλειμμα» και σε ποιον κύκλο βρίσκεστε.<br>Τραβάτε σε μάκρος; Προσθέστε 30 δευτερόλεπτα. Τελειώνετε νωρίτερα; Αφαιρέστε 30. Ξεκινήστε νέο χρονόμετρο 3, 5, 10 ή 15 λεπτών με ένα πάτημα και αλλάξτε το widget σε S, M ή L, ώστε να διαβάζεται και από την τελευταία σειρά.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/el/02-pomodoro.jpg" alt="Βλέπετε τον χρόνο που απομένει και τον διορθώνετε επιτόπου" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ο κωδικός μπαίνει μία φορά και τέλος</h2>
+        <p>Ανοίξτε την εφαρμογή και κάθε Mac στο Wi‑Fi σας με ανοιχτό το StickyPresenter εμφανίζεται σε λίστα. Επιλέξτε το δικό σας και πληκτρολογήστε τον τετραψήφιο κωδικό από το εικονίδιο χρονομέτρου ▸ Τηλεχειριστήριο στη γραμμή μενού του Mac.<br>Από εκεί και πέρα η εφαρμογή συνδέεται μόνη της σε αυτό το Mac κάθε φορά που την ανοίγετε. Χωρίς λογαριασμό, χωρίς διακομιστή: οι δύο συσκευές επικοινωνούν απευθείας στο τοπικό σας δίκτυο.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/el/03-choose-mac.jpg" alt="Ο κωδικός μπαίνει μία φορά και τέλος" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Έτοιμοι σε τρία βήματα</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Ανοίξτε το StickyPresenter στο Mac</h3><p>Όταν φαίνεται το εικονίδιο χρονομέτρου στη γραμμή μενού, είστε έτοιμοι. Η εφαρμογή μένει εκεί ακόμη κι αν κλείσετε όλα τα παράθυρα.</p></li>
+<li class="card"><span class="n">2</span><h3>Ανοίξτε την εφαρμογή στο ίδιο Wi‑Fi</h3><p>Όταν ζητήσει πρόσβαση στο τοπικό δίκτυο, πατήστε «Να επιτρέπεται». Έτσι βρίσκει το Mac σας.</p></li>
+<li class="card"><span class="n">3</span><h3>Επιλέξτε το Mac και βάλτε τον κωδικό</h3><p>Πληκτρολογήστε τον τετραψήφιο κωδικό σύζευξης από το εικονίδιο χρονομέτρου ▸ Τηλεχειριστήριο στη γραμμή μενού του Mac και ο έλεγχος είναι δικός σας.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Τι κάνετε από το iPhone</h2>
+      <div class="card table">
+        <dl><div><dt>Υπολειπόμενος χρόνος</dt><dd>Χρόνος που απομένει, πρόοδος, φάση Pomodoro (Συγκέντρωση ή Διάλειμμα) και αριθμός κύκλου, κάθε δευτερόλεπτο</dd></div><div><dt>Έναρξη · Παύση</dt><dd>Ένα μεγάλο κουμπί στη μέση</dd></div><div><dt>−30 δευτ. · +30 δευτ.</dt><dd>Τα κουμπιά δεξιά κι αριστερά διορθώνουν αμέσως το χρονόμετρο που τρέχει</dd></div><div><dt>Νέο χρονόμετρο</dt><dd>3, 5, 10 ή 15 λεπτά</dd></div><div><dt>Μέγεθος widget</dt><dd>Το widget σε S, M ή L</dd></div><div><dt>Θέση</dt><dd>Σύρετε το widget πάνω σε μικρογραφία της διάταξης οθονών του Mac, ακόμη και σε δεύτερη οθόνη</dd></div><div><dt>Απόκρυψη</dt><dd>Κρύψτε για λίγο το widget από το κοινό</dd></div><div><dt>Στοίχιση</dt><dd>Φέρτε ένα χαμένο widget δίπλα στο παράθυρο χρονομέτρου</dd></div><div><dt>Επαναφορά · Διαγραφή</dt><dd>Ξεκινήστε το χρονόμετρο από την αρχή ή διαγράψτε το</dd></div><div><dt>Συντομεύσεις · Siri</dt><dd>Πείτε <code>Έναρξη χρονομέτρου με το Remote Controller</code> και στο Mac εμφανίζεται χρονόμετρο</dd></div></dl>
+      </div>
+      <p class="muted">Το τηλεχειριστήριο δουλεύει μόνο με χρονόμετρα που τρέχουν στο Mac. Τα σημειώματα και τα κείμενα του τηλεπροτροπέα δεν στέλνονται ποτέ στο iPhone, και οι διαφάνειες δεν αλλάζουν από εδώ.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Ερωτήσεις</h2>
+      <div class="faq"><details><summary>Μπορώ να χρησιμοποιήσω την εφαρμογή iPhone μόνη της;</summary><p>Όχι. Το Remote Controller είναι το τηλεχειριστήριο του StickyPresenter για Mac, οπότε το StickyPresenter πρέπει να τρέχει σε Mac στο ίδιο Wi‑Fi. Κατεβάστε την εφαρμογή Mac από τον σύνδεσμο παρακάτω ή από το «Λήψη της εφαρμογής για Mac» στις Ρυθμίσεις της εφαρμογής.</p></details>
+<details><summary>Το Mac μου δεν εμφανίζεται στη λίστα.</summary><p>Αν δεν εμφανιστεί κανένα Mac μέσα σε 10 δευτερόλεπτα, η εφαρμογή δείχνει μια λίστα ελέγχου. Περάστε την από πάνω προς τα κάτω: το StickyPresenter τρέχει στο Mac (φαίνεται το εικονίδιο χρονομέτρου στη γραμμή μενού), οι δύο συσκευές είναι στο ίδιο Wi‑Fi (τα δίκτυα επισκεπτών δεν κάνουν), το Remote Controller είναι ενεργό στο iPhone στις Ρυθμίσεις ▸ Απόρρητο και ασφάλεια ▸ Τοπικό δίκτυο, το StickyPresenter επιτρέπεται στο Mac στις Ρυθμίσεις συστήματος ▸ Απόρρητο και ασφάλεια ▸ Τοπικό δίκτυο, και κάθε VPN είναι απενεργοποιημένο.</p></details>
+<details><summary>Λέει ότι ο κωδικός σύζευξης είναι λάθος.</summary><p>Πληκτρολογήστε τα τέσσερα ψηφία που εμφανίζονται αυτή τη στιγμή στο εικονίδιο χρονομέτρου ▸ Τηλεχειριστήριο στη γραμμή μενού του Mac. Αν κάποιος πάτησε «Νέος κωδικός σύζευξης» στο Mac, ισχύει μόνο ο νέος κωδικός.</p></details>
+<details><summary>Λέει ότι το Mac δεν αναγνωρίζει αυτό το iPhone.</summary><p>Συμβαίνει μετά από «Διαγραφή συζευγμένων τηλεχειριστηρίων» στο Mac ή μετά από επανεγκατάσταση του StickyPresenter. Πατήστε το Mac στη λίστα και πληκτρολογήστε ξανά τον κωδικό σύζευξης.</p></details>
+<details><summary>Λέει ότι το Mac δεν απαντά.</summary><p>Βεβαιωθείτε ότι το Mac δεν είναι σε αδράνεια, ότι οι δύο συσκευές είναι στο ίδιο Wi‑Fi και ότι κάθε VPN είναι απενεργοποιημένο.</p></details>
+<details><summary>Λέει ότι η εφαρμογή στο Mac χρειάζεται ενημέρωση.</summary><p>Το StickyPresenter στο Mac σας είναι παλαιότερο από το τηλεχειριστήριο. Ενημερώστε το από το Mac App Store και μετά επιλέξτε ξανά το Mac.</p></details>
+<details><summary>Είναι ασφαλές σε μια αίθουσα γεμάτη Mac;</summary><p>Ναι. Το τηλεχειριστήριο μιλά μόνο με το ένα Mac με το οποίο έχει συζευχθεί, και ένα τηλεχειριστήριο που δεν ξέρει τον κωδικό σας δεν φτάνει στο Mac σας. Όλα ταξιδεύουν μέσω κρυπτογραφημένης, απευθείας σύνδεσης στο ίδιο δίκτυο. Αν έχετε δείξει ποτέ τον κωδικό σε κάποιον, πατήστε «Νέος κωδικός σύζευξης» στο Mac.</p></details>
+<details><summary>Τι στέλνεται στο διαδίκτυο;</summary><p>Τα χρονόμετρα και οι εντολές σας δεν βγαίνουν ποτέ από το τοπικό δίκτυο. Στο διαδίκτυο στέλνονται μόνο ανώνυμα στατιστικά χρήσης, αναφορές σφαλμάτων και σχόλια που επιλέγετε να στείλετε. Λεπτομέρειες θα βρείτε στην Πολιτική απορρήτου.</p></details>
+<details><summary>Μπορεί το Siri να ξεκινήσει χρονόμετρο λίγο πριν βγω;</summary><p>Ναι. Πείτε «Έναρξη χρονομέτρου με το Remote Controller» ή χρησιμοποιήστε την ενέργεια «Έναρξη χρονομέτρου στο Mac» στις Συντομεύσεις. Η εφαρμογή ανοίγει και ξεκινά χρονόμετρο με τη διάρκεια που ορίσατε (από 1 έως 600 λεπτά) μόλις συνδεθεί με το Mac σας.</p></details></div>
+      <p class="contact">Ερωτήσεις, σφάλματα ή ιδέες; Γράψτε στο <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> ή στείλτε τα απευθείας από το iPhone: γρανάζι πάνω αριστερά στην εφαρμογή ▸ «Σχόλια».</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Στην επόμενη ομιλία σας<br>μείνετε μπροστά στο κοινό</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6803358945">Δωρεάν λήψη από το App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="remote-privacy.html">Πολιτική απορρήτου</a> · <a href="support.html#remote">Υποστήριξη</a>
+    <nav id="languages" class="langs" aria-label="Γλώσσα"><a href="../remote.html" hreflang="en" lang="en">English</a>
+<a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/remote.html" hreflang="es" lang="es">Español</a>
+<a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
+<a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
+<a href="../el/remote.html" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="remote-privacy.html">Πολιτική απορρήτου</a> · <a href="./">StickyPresenter για Mac</a> · <a href="support.html#remote">Σελίδα υποστήριξης</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    document.querySelectorAll(".langs a").forEach(a => a.addEventListener("click", () => {
+      try { localStorage.setItem("sitegen-lang", a.hreflang) } catch (e) {}
+    }));
+  </script>
 </body>
 </html>

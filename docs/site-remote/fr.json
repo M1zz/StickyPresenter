@@ -1,0 +1,150 @@
+{
+  "title": "Remote Controller : le minuteur de StickyPresenter sur votre iPhone",
+  "description": "La télécommande iPhone de StickyPresenter sur Mac. Lancez, arrêtez, prolongez ou écartez le minuteur d’une diapo sans revenir au portable. Gratuit.",
+  "hero": {
+    "headline": "Éloignez-vous du Mac.\nGardez le temps en main.",
+    "lead": "Pilotez depuis l’iPhone les minuteurs de StickyPresenter sur votre Mac. Avancez vers le public et gardez un œil sur le temps restant, mettez en pause, ajoutez 30 secondes ou écartez le minuteur du graphique qu’il masque.",
+    "cta": "Télécharger gratuitement sur l’App Store",
+    "note": "Gratuit · iOS 17 ou ultérieur · Nécessite un Mac sur le même Wi‑Fi avec StickyPresenter ouvert."
+  },
+  "problem": {
+    "title": "Vous retournez encore à l’ordinateur pour toucher au minuteur ?",
+    "text": "Votre exposé déborde et il vous faut plus de temps. Le minuteur est posé pile sur votre meilleur graphique. Jusqu’ici, il fallait traverser la scène et chercher le trackpad devant tout le monde. Avec Remote Controller, vous restez où vous êtes et touchez une fois votre iPhone."
+  },
+  "features": [
+    {
+      "title": "Voyez le temps restant, corrigez sur-le-champ",
+      "text": "Le temps restant et la progression se mettent à jour chaque seconde. En Pomodoro, vous voyez aussi si c’est Concentration ou Pause, et à quel cycle vous en êtes.\nVous débordez ? Ajoutez 30 secondes. Vous finissez plus tôt ? Retirez-en 30. Lancez un nouveau minuteur de 3, 5, 10 ou 15 minutes d’un seul toucher, et passez le widget en S, M ou L pour que le dernier rang puisse le lire.",
+      "shot": "02-pomodoro"
+    },
+    {
+      "title": "Un code à saisir une fois, et c’est tout",
+      "text": "Ouvrez l’app : chaque Mac de votre Wi‑Fi où StickyPresenter est ouvert apparaît dans une liste. Choisissez le vôtre et tapez le code à quatre chiffres affiché sous l’icône du minuteur ▸ Télécommande, dans la barre des menus du Mac.\nEnsuite, l’app se connecte toute seule à ce Mac chaque fois que vous l’ouvrez. Ni compte ni serveur : les deux appareils communiquent directement sur votre réseau local.",
+      "shot": "03-choose-mac"
+    }
+  ],
+  "steps": {
+    "title": "Prêt en trois étapes",
+    "items": [
+      {
+        "title": "Ouvrez StickyPresenter sur votre Mac",
+        "text": "Dès que l’icône du minuteur est dans la barre des menus, c’est bon. L’app y reste même quand toutes ses fenêtres sont fermées."
+      },
+      {
+        "title": "Ouvrez l’app sur le même Wi‑Fi",
+        "text": "Quand l’accès au réseau local vous est demandé, touchez Autoriser. C’est ainsi qu’elle trouve votre Mac."
+      },
+      {
+        "title": "Choisissez votre Mac et saisissez le code",
+        "text": "Tapez le code d’appairage à quatre chiffres affiché sous l’icône du minuteur ▸ Télécommande, dans la barre des menus du Mac, et vous avez la main."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Ce que vous pouvez faire depuis l’iPhone",
+    "rows": [
+      [
+        "Temps restant",
+        "Temps qui reste, progression, phase Pomodoro (Concentration ou Pause) et numéro du cycle, chaque seconde"
+      ],
+      [
+        "Démarrer · Pause",
+        "Un seul grand bouton au centre"
+      ],
+      [
+        "−30 s · +30 s",
+        "Les boutons de chaque côté ajustent aussitôt un minuteur en cours"
+      ],
+      [
+        "Nouveau minuteur",
+        "3, 5, 10 ou 15 minutes"
+      ],
+      [
+        "Taille",
+        "Widget en S, M ou L"
+      ],
+      [
+        "Position",
+        "Faites-le glisser sur une miniature de la disposition des écrans du Mac, jusque sur un écran étendu"
+      ],
+      [
+        "Masquer",
+        "Cache le widget au public un instant"
+      ],
+      [
+        "Aligner",
+        "Ramène un widget égaré à côté de la fenêtre du minuteur"
+      ],
+      [
+        "Réinitialiser · Supprimer",
+        "Remet le minuteur à zéro ou le supprime"
+      ],
+      [
+        "Raccourcis · Siri",
+        "Dites `Lancer un minuteur avec Remote Controller` pour afficher un minuteur sur le Mac"
+      ]
+    ],
+    "note": "La télécommande ne pilote que les minuteurs qui tournent sur le Mac. Vos notes et les textes du prompteur ne sont jamais envoyés à l’iPhone, et elle ne fait pas défiler les diapos."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Puis-je utiliser l’app iPhone toute seule ?",
+        "a": "Non. Remote Controller est la télécommande de StickyPresenter pour Mac : StickyPresenter doit donc être ouvert sur un Mac connecté au même Wi‑Fi. Téléchargez l’app Mac via le lien ci-dessous, ou depuis Obtenir l’app Mac dans les Réglages de l’app."
+      },
+      {
+        "q": "Mon Mac n’apparaît pas dans la liste.",
+        "a": "Si aucun Mac n’apparaît au bout de 10 secondes, l’app affiche une liste de vérifications. Suivez-la dans l’ordre : StickyPresenter est ouvert sur le Mac (cherchez l’icône du minuteur dans la barre des menus), les deux appareils sont sur le même Wi‑Fi (les réseaux invités ne fonctionnent pas), Remote Controller est activé dans Réglages ▸ Confidentialité et sécurité ▸ Réseau local sur l’iPhone, StickyPresenter est autorisé dans Réglages Système ▸ Confidentialité et sécurité ▸ Réseau local sur le Mac, et aucun VPN n’est activé."
+      },
+      {
+        "q": "L’app indique que le code d’appairage est incorrect.",
+        "a": "Saisissez les quatre chiffres affichés en ce moment sous l’icône du minuteur ▸ Télécommande, dans la barre des menus du Mac. Si quelqu’un a cliqué sur Nouveau code d’appairage sur le Mac, seul le nouveau code fonctionne."
+      },
+      {
+        "q": "L’app indique que le Mac ne reconnaît plus cet iPhone.",
+        "a": "Cela arrive après Oublier les télécommandes appairées sur le Mac, ou après une réinstallation de StickyPresenter. Touchez le Mac dans la liste et saisissez à nouveau le code d’appairage."
+      },
+      {
+        "q": "L’app indique que le Mac ne répond pas.",
+        "a": "Vérifiez que le Mac n’est pas en veille, que les deux appareils sont sur le même Wi‑Fi et qu’aucun VPN n’est activé."
+      },
+      {
+        "q": "L’app indique que l’app Mac doit être mise à jour.",
+        "a": "StickyPresenter sur votre Mac est plus ancien que la télécommande. Mettez-le à jour depuis le Mac App Store, puis choisissez à nouveau le Mac."
+      },
+      {
+        "q": "Est-ce sûr dans une salle de réunion pleine de Mac ?",
+        "a": "Oui. La télécommande ne parle qu’au Mac auquel elle est appairée, et une télécommande qui ne connaît pas votre code ne peut pas atteindre votre Mac. Tout passe par une connexion directe et chiffrée sur le même réseau. Si vous avez déjà montré votre code à quelqu’un, cliquez sur Nouveau code d’appairage sur le Mac."
+      },
+      {
+        "q": "Qu’est-ce qui passe par Internet ?",
+        "a": "Vos minuteurs et vos commandes ne quittent jamais votre réseau local. Seuls partent sur Internet des statistiques d’utilisation anonymes, des rapports de plantage et les avis que vous choisissez d’envoyer. La politique de confidentialité donne le détail."
+      },
+      {
+        "q": "Siri peut-il lancer un minuteur juste avant que je prenne la parole ?",
+        "a": "Oui. Dites « Lancer un minuteur avec Remote Controller », ou utilisez l’action Lancer un minuteur sur le Mac dans Raccourcis. L’app s’ouvre et démarre un minuteur de la durée choisie (de 1 à 600 minutes) dès qu’elle est connectée au Mac."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "À votre prochaine intervention,\nrestez face au public",
+    "cta": "Télécharger gratuitement sur l’App Store"
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "languages": "Langue",
+    "privacy": "Politique de confidentialité",
+    "contact": "Une question, un bug, une idée ? Écrivez à {email}, ou envoyez-les directement depuis l’iPhone via la roue dentée en haut à gauche de l’app ▸ Donner son avis.",
+    "links": [
+      [
+        "StickyPresenter pour Mac",
+        "./"
+      ],
+      [
+        "Page d’assistance",
+        "support.html#remote"
+      ]
+    ]
+  }
+}

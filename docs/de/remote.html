@@ -1,152 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Remote Controller · StickyPresenter</title>
-  <meta name="description" content="Remote Controller · StickyPresenter" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html" />
-  <link rel="icon" href="../remote-icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Controller: StickyPresenter-Vortragstimer per iPhone steuern</title>
+  <meta name="description" content="Die iPhone-Fernbedienung für StickyPresenter auf dem Mac. Timer starten, pausieren, verlängern oder von der Folie schieben, ohne zum Mac zu laufen.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6803358945">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remote Controller: StickyPresenter-Vortragstimer per iPhone steuern">
+  <meta property="og:description" content="Die iPhone-Fernbedienung für StickyPresenter auf dem Mac. Timer starten, pausieren, verlängern oder von der Folie schieben, ohne zum Mac zu laufen.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/remote/de/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../remote-icon.png">
+  <link rel="apple-touch-icon" href="../remote-icon.png">
+  <link rel="stylesheet" href="../sitegen.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../remote-icon.png" alt="App-Symbol von StickyPresenter Remote Controller" />
-    <h1>Remote Controller</h1>
-    <p>Steuere deine StickyPresenter-Timer vom iPhone aus</p>
-    <div class="actions">
-      <a class="btn" href="remote-privacy.html">Datenschutzerklärung</a>
-      <a class="btn" href="support.html#remote">Support</a>
-      <a class="btn" href="index.html">StickyPresenter für den Mac</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/remote.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/remote.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/remote.html" hreflang="de" lang="de" aria-current="true">Deutsch</a>
-      <a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="bar">
+    <a class="brand" href="../de/remote.html"><img src="../remote-icon.png" alt="" width="32" height="32">Remote Controller</a>
+    <a class="lang-link" href="#languages">Sprache</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="de">
-        <h2>Was ist das?</h2>
-        <p><strong>Remote Controller ist die iPhone-Fernbedienung für StickyPresenter auf dem Mac.</strong>
-        Während du präsentierst, ist dein Mac meist außer Reichweite – mit dieser App hast du die
-        Timer trotzdem in der Hand. Sie funktioniert nicht allein: StickyPresenter muss auf einem Mac
-        im selben WLAN laufen.</p>
-
-        <h3>Was du damit machen kannst</h3>
-        <ul>
-          <li><strong>Restzeit im Blick</strong> – verbleibende Zeit, Fortschritt und die
-          Pomodoro-Phase (Fokus / Pause) samt Zyklusnummer, jede Sekunde aktualisiert.</li>
-          <li><strong>Starten, pausieren, zurücksetzen</strong> – und mitten im Vortrag 30 Sekunden
-          hinzufügen oder abziehen, wenn ein Abschnitt länger dauert.</li>
-          <li><strong>Neuen Timer starten</strong> – Vorlagen für 3 / 5 / 10 / 15 Minuten.</li>
-          <li><strong>Widget-Größe ändern</strong> – S / M / L, damit man es auch in der letzten Reihe lesen kann.</li>
-          <li><strong>Widget verschieben</strong> – zieh es auf einer Miniatur deiner Mac-Bildschirme
-          an eine andere Stelle. Verdeckt es eine Folie, schiebst du den Timer beiseite, ohne den Mac
-          anzufassen. Mit einem zweiten Display ziehst du ihn auch auf den anderen Bildschirm.</li>
-          <li><strong>Ausblenden, ausrichten, löschen</strong> – blende das Widget vor dem Publikum
-          aus, hol ein verlorenes Widget neben das Panel zurück oder entferne den Timer.</li>
-        </ul>
-
-        <h3>Voraussetzungen</h3>
-        <ul>
-          <li>iPhone mit iOS 17 oder neuer</li>
-          <li>Ein Mac, auf dem StickyPresenter läuft, im <strong>selben WLAN</strong></li>
-          <li>Zugriff auf das lokale Netzwerk auf beiden Geräten erlaubt</li>
-        </ul>
-
-        <h3>So wird die Verbindung hergestellt</h3>
-        <p>Die beiden Apps finden sich über dein lokales Netzwerk (Bonjour / Apples
-        MultipeerConnectivity) und sprechen direkt miteinander. Du brauchst keinen Account, und es
-        gibt keinen Server dazwischen. Deine Timer und Befehle verlassen dein lokales Netzwerk nie;
-        über das Internet gehen nur anonyme Nutzungsstatistiken, Absturzberichte und Feedback, das du
-        selbst schickst – siehe <a href="remote-privacy.html">Datenschutzerklärung</a>.</p>
-        <p><strong>Den Code gibst du nur einmal ein.</strong> Öffne die App, und die Macs in der Nähe
-        erscheinen in einer Liste. Wähle deinen aus und gib den vierstelligen Code ein, der auf dem Mac
-        unter dem Timer-Symbol in der Menüleiste → <code>Fernbedienung</code> steht – schon sind die
-        beiden gekoppelt. Ab dann verbindet sich die App beim Öffnen von selbst mit diesem Mac.</p>
-        <p>Mehrere Macs im selben WLAN, etwa in einem Besprechungsraum, sind kein Problem: Die
-        Fernbedienung spricht nur mit dem Mac, mit dem sie gekoppelt ist, und eine Fernbedienung, die
-        deinen Code nicht kennt, kommt nicht an deinen Mac heran.</p>
-
-        <h3 id="trouble">Wenn keine Verbindung zustande kommt</h3>
-        <p>Die App sagt dir, woran es gescheitert ist und was du tun kannst:</p>
-        <ul>
-          <li><strong>Falscher Code</strong> – gib die vier Ziffern ein, die gerade unter dem
-          Timer-Symbol in der Menüleiste → <code>Fernbedienung</code> stehen. Hast du auf
-          <code>Neuer Kopplungscode</code> geklickt, gilt nur noch der neue Code.</li>
-          <li><strong>Der Mac kennt dieses iPhone nicht mehr</strong> – das passiert nach
-          <code>Gekoppelte Fernbedienungen entfernen</code> oder wenn StickyPresenter neu installiert
-          wurde. Tippe in der Liste auf den Mac und gib den Code erneut ein.</li>
-          <li><strong>Der Mac antwortet nicht</strong> – prüfe, ob der Mac nicht im Ruhezustand ist,
-          beide Geräte im selben WLAN sind und kein VPN aktiv ist.</li>
-          <li><strong>Seit über 10 Sekunden kein Mac gefunden</strong> – dann erscheint eine
-          Checkliste: StickyPresenter läuft auf dem Mac, selbes WLAN (kein Gastnetzwerk), lokales
-          Netzwerk auf iPhone und Mac erlaubt, VPN aus. Geh sie von oben nach unten durch.</li>
-          <li><strong>Die Mac-App muss aktualisiert werden</strong> – aktualisiere StickyPresenter auf
-          dem Mac und wähle ihn dann erneut aus.</li>
-        </ul>
-        <p class="muted">Weitere Hilfe findest du auf der <a href="support.html#remote">Support-Seite</a>.</p>
-
-        <h3>Kontakt</h3>
-        <p>Fragen, Fehler oder Ideen? Schreib an
-        <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> oder öffne in der App die
-        Einstellungen (Zahnrad oben links) → Feedback, um direkt vom iPhone aus zu schreiben.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Der Mac bleibt hinten.<br>Der Timer ist in deiner Hand.</h1>
+        <p class="lead">Steuere die Timer von StickyPresenter auf deinem Mac mit dem iPhone. Du stehst vorne im Raum und siehst trotzdem die Restzeit, pausierst, gibst 30 Sekunden dazu oder schiebst den Timer von dem Diagramm, das er gerade verdeckt.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6803358945">Kostenlos im App Store laden</a></div>
+        <p class="muted small">Kostenlos · Ab iOS 17 · Braucht einen Mac mit StickyPresenter im selben WLAN.</p>
       </div>
+      <div class="phone"><img src="../img/remote/de/01-timer.jpg" alt="Der Mac bleibt hinten. Der Timer ist in deiner Hand." width="600" height="1303" decoding="async"></div>
+    </section>
 
-      <p style="text-align:center"><a class="back" href="index.html">← Zurück zur Startseite</a></p>
-    </div>
+
+
+    <section class="problem reveal">
+      <h2>Läufst du noch zum Laptop, nur um den Timer zu bedienen?</h2>
+      <p>Dein Vortrag dauert länger und du brauchst mehr Zeit. Der Timer sitzt genau auf deinem wichtigsten Diagramm. Bisher hieß das: quer über die Bühne gehen und vor allen zum Trackpad greifen. Mit Remote Controller bleibst du stehen und tippst einmal aufs iPhone.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Restzeit sehen und sofort nachjustieren</h2>
+        <p>Restzeit und Fortschritt aktualisieren sich jede Sekunde. Beim Pomodoro siehst du außerdem, ob gerade Fokus oder Pause läuft und in welchem Zyklus du bist.<br>Du überziehst? 30 Sekunden dazu. Du bist früher fertig? 30 Sekunden weg. Ein neuer Timer mit 3, 5, 10 oder 15 Minuten startet mit einem Tippen, und mit S, M oder L stellst du das Widget so groß, dass es auch die letzte Reihe lesen kann.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/de/02-pomodoro.jpg" alt="Restzeit sehen und sofort nachjustieren" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Einmal den Code eingeben, fertig</h2>
+        <p>Öffne die App, und jeder Mac in deinem WLAN, auf dem StickyPresenter läuft, erscheint in einer Liste. Wähle deinen aus und gib den vierstelligen Code ein, den du in der Menüleiste des Macs unter Timer-Symbol ▸ Fernbedienung findest.<br>Ab dann verbindet sich die App bei jedem Öffnen von selbst mit diesem Mac. Kein Konto, kein Server: Die beiden Geräte sprechen direkt über dein lokales Netzwerk miteinander.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/de/03-choose-mac.jpg" alt="Einmal den Code eingeben, fertig" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>In drei Schritten startklar</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>StickyPresenter auf dem Mac öffnen</h3><p>Sobald das Timer-Symbol in der Menüleiste zu sehen ist, kann es losgehen. Die App bleibt dort, auch wenn du alle Fenster schließt.</p></li>
+<li class="card"><span class="n">2</span><h3>Die App im selben WLAN öffnen</h3><p>Fragt sie nach Zugriff auf das lokale Netzwerk, tippe auf „Erlauben“. Nur so findet sie deinen Mac.</p></li>
+<li class="card"><span class="n">3</span><h3>Mac wählen und Code eingeben</h3><p>Gib den vierstelligen Kopplungscode ein, der in der Menüleiste des Macs unter Timer-Symbol ▸ Fernbedienung steht, und schon hast du die Kontrolle.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Das steuerst du vom iPhone aus</h2>
+      <div class="card table">
+        <dl><div><dt>Verbleibende Zeit</dt><dd>Restzeit, Fortschritt, Pomodoro-Phase Fokus oder Pause und die Zyklusnummer, jede Sekunde aktuell</dd></div><div><dt>Start · Pause</dt><dd>Ein großer Knopf in der Mitte</dd></div><div><dt>−30 s · +30 s</dt><dd>Die Knöpfe links und rechts ändern einen laufenden Timer sofort</dd></div><div><dt>Neuer Timer</dt><dd>3, 5, 10 oder 15 Minuten</dd></div><div><dt>Widget-Größe</dt><dd>Widget in S, M oder L</dd></div><div><dt>Position</dt><dd>Auf einer Miniatur deiner Mac-Bildschirmanordnung ziehen, sogar hinüber auf ein zweites Display</dd></div><div><dt>Ausblenden</dt><dd>Das Widget kurz vor dem Publikum verstecken</dd></div><div><dt>Anordnen</dt><dd>Ein verlorenes Widget zurück neben das Timer-Fenster holen</dd></div><div><dt>Zurücksetzen · Löschen</dt><dd>Den Timer neu starten oder entfernen</dd></div><div><dt>Kurzbefehle · Siri</dt><dd>Sag <code>Starte einen Timer mit Remote Controller</code>, und auf deinem Mac läuft ein Timer</dd></div></dl>
+      </div>
+      <p class="muted">Die Fernbedienung steuert nur Timer, die auf deinem Mac laufen. Haftnotizen und Teleprompter-Skripte werden nie an das iPhone gesendet, und Folien blättert sie nicht weiter.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Fragen</h2>
+      <div class="faq"><details><summary>Kann ich die iPhone-App allein benutzen?</summary><p>Nein. Remote Controller ist die Fernbedienung für StickyPresenter auf dem Mac. StickyPresenter muss also auf einem Mac im selben WLAN laufen. Die Mac-App bekommst du über den Link unten oder in den Einstellungen der App unter „Mac-App laden“.</p></details>
+<details><summary>Mein Mac taucht nicht in der Liste auf.</summary><p>Erscheint nach 10 Sekunden kein Mac, zeigt die App eine Checkliste. Geh sie von oben nach unten durch: StickyPresenter läuft auf dem Mac (das Timer-Symbol ist in der Menüleiste zu sehen), beide Geräte sind im selben WLAN (ein Gast-WLAN funktioniert nicht), Remote Controller ist auf dem iPhone unter Einstellungen ▸ Datenschutz &amp; Sicherheit ▸ Lokales Netzwerk aktiviert, StickyPresenter ist auf dem Mac unter Systemeinstellungen ▸ Datenschutz &amp; Sicherheit ▸ Lokales Netzwerk erlaubt, und ein VPN ist ausgeschaltet.</p></details>
+<details><summary>Die App meldet einen falschen Kopplungscode.</summary><p>Gib die vier Ziffern ein, die gerade in der Menüleiste des Macs unter Timer-Symbol ▸ Fernbedienung stehen. Hat jemand am Mac auf „Neuer Kopplungscode“ geklickt, gilt nur noch der neue Code.</p></details>
+<details><summary>Die App meldet, dass der Mac dieses iPhone nicht mehr kennt.</summary><p>Das passiert nach „Gekoppelte Fernbedienungen entfernen“ am Mac oder nachdem StickyPresenter neu installiert wurde. Tippe in der Liste auf den Mac und gib den Kopplungscode noch einmal ein.</p></details>
+<details><summary>Die App meldet, dass der Mac nicht antwortet.</summary><p>Prüfe, ob der Mac nicht im Ruhezustand ist, beide Geräte im selben WLAN sind und kein VPN aktiv ist.</p></details>
+<details><summary>Die App meldet, dass die Mac-App aktualisiert werden muss.</summary><p>StickyPresenter auf deinem Mac ist älter als die Fernbedienung. Aktualisiere es im Mac App Store und wähle den Mac danach erneut aus.</p></details>
+<details><summary>Ist das sicher in einem Besprechungsraum voller Macs?</summary><p>Ja. Die Fernbedienung spricht nur mit dem einen Mac, mit dem sie gekoppelt ist, und eine Fernbedienung ohne deinen Code kommt nicht an deinen Mac heran. Alles läuft verschlüsselt und direkt im selben Netzwerk. Hast du deinen Code einmal jemandem gezeigt, klicke am Mac auf „Neuer Kopplungscode“.</p></details>
+<details><summary>Was geht über das Internet?</summary><p>Deine Timer und Befehle verlassen nie dein lokales Netzwerk. Über das Internet gehen nur anonyme Nutzungsstatistiken, Absturzberichte und Feedback, das du selbst abschickst. Details stehen in der Datenschutzerklärung.</p></details>
+<details><summary>Kann Siri kurz vor meinem Auftritt einen Timer starten?</summary><p>Ja. Sag „Starte einen Timer mit Remote Controller“ oder nutze die Aktion „Timer am Mac starten“ in der Kurzbefehle-App. Die App öffnet sich und startet einen Timer mit der gewählten Länge (1 bis 600 Minuten), sobald sie mit deinem Mac verbunden ist.</p></details></div>
+      <p class="contact">Fragen, Fehler oder Ideen? Schreib an <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> oder schick sie direkt vom iPhone: in der App oben links auf das Zahnrad ▸ Feedback.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Beim nächsten Vortrag<br>bleibst du vorne stehen</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6803358945">Kostenlos im App Store laden</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="remote-privacy.html">Datenschutzerklärung</a> · <a href="support.html#remote">Support</a>
+    <nav id="languages" class="langs" aria-label="Sprache"><a href="../remote.html" hreflang="en" lang="en">English</a>
+<a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/remote.html" hreflang="es" lang="es">Español</a>
+<a href="../de/remote.html" hreflang="de" lang="de" aria-current="page">Deutsch</a>
+<a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
+<a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
+<a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="remote-privacy.html">Datenschutzerklärung</a> · <a href="./">StickyPresenter für Mac</a> · <a href="support.html#remote">Support-Seite</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    document.querySelectorAll(".langs a").forEach(a => a.addEventListener("click", () => {
+      try { localStorage.setItem("sitegen-lang", a.hreflang) } catch (e) {}
+    }));
+  </script>
 </body>
 </html>

@@ -1,138 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Remote Controller · StickyPresenter</title>
-  <meta name="description" content="Remote Controller：用 iPhone 操控 StickyPresenter 计时器——功能介绍与支持" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html" />
-  <link rel="icon" href="../remote-icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Controller：用 iPhone 操控 StickyPresenter 演讲计时器</title>
+  <meta name="description" content="Mac 版 StickyPresenter 的 iPhone 遥控器。开始、暂停、延长演讲计时，或把挡住幻灯片的计时器挪开，都不用走回电脑前。免费。">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6803358945">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remote Controller：用 iPhone 操控 StickyPresenter 演讲计时器">
+  <meta property="og:description" content="Mac 版 StickyPresenter 的 iPhone 遥控器。开始、暂停、延长演讲计时，或把挡住幻灯片的计时器挪开，都不用走回电脑前。免费。">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/remote/zh-Hans/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../remote-icon.png">
+  <link rel="apple-touch-icon" href="../remote-icon.png">
+  <link rel="stylesheet" href="../sitegen.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../remote-icon.png" alt="StickyPresenter Remote Controller 应用图标" />
-    <h1>Remote Controller</h1>
-    <p>在 iPhone 上操控 StickyPresenter 计时器</p>
-    <div class="actions">
-      <a class="btn" href="remote-privacy.html">隐私政策</a>
-      <a class="btn" href="support.html#remote">支持</a>
-      <a class="btn" href="index.html">Mac 版 StickyPresenter</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/remote.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a>
-      <a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/remote.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hans/remote.html"><img src="../remote-icon.png" alt="" width="32" height="32">Remote Controller</a>
+    <a class="lang-link" href="#languages">语言</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="zh-Hans">
-        <h2>这是什么应用</h2>
-        <p><strong>Remote Controller 是 Mac 版 StickyPresenter 的 iPhone 遥控器。</strong>
-        演讲时，Mac 往往放在够不着的地方；有了它，计时器就握在你手里。它不能单独使用：
-        需要在同一 Wi-Fi 下的 Mac 上运行 StickyPresenter。</p>
-
-        <h3>可以做什么</h3>
-        <ul>
-          <li><strong>查看倒计时</strong>——剩余时间、进度，以及番茄钟阶段（专注 / 休息）和当前是第几轮，每秒刷新。</li>
-          <li><strong>开始、暂停、重置</strong>——某段讲得太长时，还能随手加减 30 秒。</li>
-          <li><strong>新建计时器</strong>——3 / 5 / 10 / 15 分钟预设。</li>
-          <li><strong>调整小组件大小</strong>——S / M / L，坐在后排也看得清。</li>
-          <li><strong>移动小组件</strong>——在按比例缩小的 Mac 屏幕布局上拖动即可。挡住了幻灯片，
-          不用碰 Mac 就能把计时器挪开；接了扩展显示器，还能把它拖到另一块屏幕上。</li>
-          <li><strong>隐藏、对齐、删除</strong>——不让观众看到小组件、把找不到的小组件叫回面板旁边，或删除计时器。</li>
-        </ul>
-
-        <h3>使用条件</h3>
-        <ul>
-          <li>运行 iOS 17 或更高版本的 iPhone</li>
-          <li>一台正在运行 StickyPresenter、并连接<strong>同一个 Wi-Fi</strong> 的 Mac</li>
-          <li>两台设备都已允许访问本地网络</li>
-        </ul>
-
-        <h3>连接方式</h3>
-        <p>两个应用通过本地网络互相发现（Bonjour / Apple 的 MultipeerConnectivity），并直接通信。
-        无需注册账户，中间也没有任何服务器。计时器和操作指令不会离开你的本地网络；
-        经互联网发送的只有匿名使用统计、崩溃报告和你主动发送的反馈——详见<a href="remote-privacy.html">隐私政策</a>。</p>
-        <p><strong>配对码只需输入一次。</strong>打开应用，附近找到的 Mac 会显示在列表中。选择你的 Mac，
-        输入 Mac 菜单栏计时器图标 → <code>遥控器</code> 中显示的四位数配对码，即可完成配对。
-        此后每次打开应用，都会自动连接这台 Mac。</p>
-        <p>会议室等场所的同一 Wi-Fi 下有多台 Mac 也没关系：遥控器只连接已配对的那一台 Mac，
-        不知道配对码的遥控器无法连接你的 Mac。</p>
-
-        <h3 id="trouble">连接不上时</h3>
-        <p>连接失败时，应用会告诉你原因以及该怎么做：</p>
-        <ul>
-          <li><strong>配对码不正确</strong>——请输入 Mac 菜单栏计时器图标 → <code>遥控器</code>
-          中当前显示的四位数。如果点过 <code>生成新配对码</code>，只有新的配对码有效。</li>
-          <li><strong>Mac 已不再记得这台 iPhone</strong>——在 Mac 上选择了
-          <code>忘记已配对的遥控器</code>，或重新安装了 StickyPresenter 后会出现。请在列表中轻点该 Mac，重新输入配对码。</li>
-          <li><strong>Mac 没有响应</strong>——请确认 Mac 没有进入睡眠、两台设备连接同一个 Wi-Fi，并且已关闭 VPN。</li>
-          <li><strong>超过 10 秒仍未找到 Mac</strong>——应用会显示检查清单：Mac 上的 StickyPresenter 是否正在运行、
-          是否连接同一个 Wi-Fi（不是访客网络）、iPhone 和 Mac 是否都已允许访问本地网络、VPN 是否已关闭。请从上到下逐项检查。</li>
-          <li><strong>需要更新 Mac 版 App</strong>——请先更新 Mac 上的 StickyPresenter，再重新选择它。</li>
-        </ul>
-        <p class="muted">更多帮助请参阅<a href="support.html#remote">支持</a>页面。</p>
-
-        <h3>联系我们</h3>
-        <p>有问题、发现错误或有功能建议？请发邮件至
-        <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>，也可以在应用左上角的齿轮 → 设置 →
-        发送反馈中，直接从 iPhone 发送。</p>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>人离开 Mac<br>计时器还在手里</h1>
+        <p class="lead">在 iPhone 上操控 Mac 里 StickyPresenter 的计时器。走到台前，照样能看剩余时间、暂停、加 30 秒，或把挡住图表的计时器挪到一边。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6803358945">在 App Store 免费下载</a></div>
+        <p class="muted small">免费 · iOS 17 或更高版本 · 需要同一 Wi‑Fi 下一台正在运行 StickyPresenter 的 Mac。</p>
       </div>
+      <div class="phone"><img src="../img/remote/zh-Hans/01-timer.jpg" alt="人离开 Mac 计时器还在手里" width="600" height="1303" decoding="async"></div>
+    </section>
 
-      <p style="text-align:center"><a class="back" href="index.html">← 返回首页</a></p>
-    </div>
+
+
+    <section class="problem reveal">
+      <h2>还在为了碰一下计时器走回电脑前？</h2>
+      <p>讲得超时，想再多要点时间；计时器偏偏压在最关键的那张图表上。以前只能当着观众穿过讲台，伸手去摸触控板。有了 Remote Controller，你站在原地，在 iPhone 上点一下就行。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>看着剩余时间，当场调整</h2>
+        <p>剩余时间和进度每秒刷新。用番茄钟时，还能看到现在是专注还是休息、进行到第几轮。<br>讲长了就加 30 秒，提前讲完就减 30 秒。3、5、10、15 分钟的新计时器点一下就开始；小组件可在 S、M、L 之间切换，坐在后排也看得清。</p>
+      </div>
+      <div class="phone"><img src="../img/remote/zh-Hans/02-pomodoro.jpg" alt="看着剩余时间，当场调整" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>配对码只需输入一次</h2>
+        <p>打开 App，同一 Wi‑Fi 下正在运行 StickyPresenter 的 Mac 都会出现在列表里。选中你的 Mac，输入 Mac 菜单栏计时器图标 ▸ 遥控器中显示的四位配对码即可。<br>之后每次打开 App，都会自动连上这台 Mac。无需账户，也没有服务器，两台设备在本地网络中直接通信。</p>
+      </div>
+      <div class="phone"><img src="../img/remote/zh-Hans/03-choose-mac.jpg" alt="配对码只需输入一次" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三步即可上手</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>在 Mac 上打开 StickyPresenter</h3><p>菜单栏出现计时器图标就准备好了。即使关掉所有窗口，App 也会留在菜单栏里。</p></li>
+<li class="card"><span class="n">2</span><h3>在同一 Wi‑Fi 下打开 App</h3><p>询问是否允许访问本地网络时，请点按“允许”，这样才能找到你的 Mac。</p></li>
+<li class="card"><span class="n">3</span><h3>选择 Mac 并输入配对码</h3><p>输入 Mac 菜单栏计时器图标 ▸ 遥控器中显示的四位配对码，就能开始操控。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>在 iPhone 上能做什么</h2>
+      <div class="card table">
+        <dl><div><dt>剩余时间</dt><dd>剩余时间、进度、番茄钟的专注或休息以及轮次，每秒刷新</dd></div><div><dt>开始 · 暂停</dt><dd>中间一个大按钮搞定</dd></div><div><dt>减 30 秒 · 加 30 秒</dt><dd>两侧按钮即时调整正在运行的计时器</dd></div><div><dt>新建计时器</dt><dd>3、5、10 或 15 分钟</dd></div><div><dt>大小</dt><dd>小组件 S、M、L 三档</dd></div><div><dt>位置</dt><dd>在缩小的 Mac 屏幕布局上拖动，接了扩展显示器还能拖到另一块屏幕</dd></div><div><dt>隐藏</dt><dd>暂时不让观众看到小组件</dd></div><div><dt>对齐</dt><dd>把找不到的小组件叫回计时器窗口旁边</dd></div><div><dt>重置 · 删除</dt><dd>让计时器从头开始，或删除它</dd></div><div><dt>快捷指令 · Siri</dt><dd>说 <code>用 Remote Controller 开始计时</code>，就能在 Mac 上启动计时器</dd></div></dl>
+      </div>
+      <p class="muted">遥控器只能操控 Mac 上正在运行的计时器。便签和提词器讲稿不会发送到 iPhone，也不能用来翻页。</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>常见问题</h2>
+      <div class="faq"><details><summary>只用 iPhone App 可以吗？</summary><p>不可以。Remote Controller 是 Mac 版 StickyPresenter 的遥控器，需要同一 Wi‑Fi 下的 Mac 正在运行 StickyPresenter。Mac 版 App 可以通过下方链接获取，也可以在 App 设置中的“获取 Mac 版 App”里获取。</p></details>
+<details><summary>列表里找不到我的 Mac。</summary><p>超过 10 秒仍未找到 Mac 时，App 会显示检查清单。请从上到下逐项确认：Mac 上的 StickyPresenter 正在运行（菜单栏有计时器图标）；两台设备连接的是同一个 Wi‑Fi（访客网络不行）；已在 iPhone 的“设置”▸“隐私与安全性”▸“本地网络”中打开 Remote Controller；已在 Mac 的“系统设置”▸“隐私与安全性”▸“本地网络”中允许 StickyPresenter；VPN 已关闭。</p></details>
+<details><summary>提示配对码不正确。</summary><p>请输入 Mac 菜单栏计时器图标 ▸ 遥控器中当前显示的四位数字。如果有人在 Mac 上点过“生成新配对码”，就只有新的配对码有效。</p></details>
+<details><summary>提示 Mac 已不再记得这台 iPhone。</summary><p>在 Mac 上点过“忘记已配对的遥控器”，或重新安装了 StickyPresenter 后会出现这种情况。在列表中轻点该 Mac，重新输入一次配对码即可。</p></details>
+<details><summary>提示 Mac 没有响应。</summary><p>请确认 Mac 没有进入睡眠、两台设备连接同一个 Wi‑Fi，并且已关闭 VPN。</p></details>
+<details><summary>提示“需要更新 Mac 版 App”。</summary><p>Mac 上的 StickyPresenter 版本比遥控器旧。请在 Mac App Store 中更新，然后在列表中重新选择这台 Mac。</p></details>
+<details><summary>会议室里有很多台 Mac，安全吗？</summary><p>安全。遥控器只连接已配对的那一台 Mac，不知道配对码的遥控器连不上你的 Mac。所有内容都通过同一网络内的加密直连传输。如果配对码曾被别人看到，请在 Mac 上点“生成新配对码”。</p></details>
+<details><summary>有哪些数据会通过互联网发送？</summary><p>计时器和操作指令不会离开你的本地网络。通过互联网发送的只有匿名使用统计、崩溃报告和你主动发送的反馈。详情请见隐私政策。</p></details>
+<details><summary>上台前能用 Siri 启动计时器吗？</summary><p>可以。对 Siri 说“用 Remote Controller 开始计时”，或在快捷指令中使用“在 Mac 上开始计时”操作。App 会打开，并在连上 Mac 后立即开始你设定时长（1 到 600 分钟）的计时。</p></details></div>
+      <p class="contact">有疑问、遇到故障或想提建议，请发邮件到 <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>。也可以在 App 左上角的齿轮 ▸ 发送反馈中，直接从 iPhone 发给我们。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>下一次演讲<br>站在台前就好</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6803358945">在 App Store 免费下载</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="remote-privacy.html">隐私政策</a> · <a href="support.html#remote">支持</a>
+    <nav id="languages" class="langs" aria-label="语言"><a href="../remote.html" hreflang="en" lang="en">English</a>
+<a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+<a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/remote.html" hreflang="es" lang="es">Español</a>
+<a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
+<a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
+<a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="remote-privacy.html">隐私政策</a> · <a href="./">Mac 版 StickyPresenter</a> · <a href="support.html#remote">支持</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    document.querySelectorAll(".langs a").forEach(a => a.addEventListener("click", () => {
+      try { localStorage.setItem("sitegen-lang", a.hreflang) } catch (e) {}
+    }));
+  </script>
 </body>
 </html>

@@ -1,153 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Remote Controller · StickyPresenter</title>
-  <meta name="description" content="Remote Controller · StickyPresenter" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html" />
-  <link rel="icon" href="../remote-icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Controller: minutnik StickyPresenter sterowany z iPhone’a</title>
+  <meta name="description" content="Pilot na iPhone’a do StickyPresenter na Macu. Uruchamiaj, wstrzymuj i wydłużaj minutnik wystąpienia bez wracania do laptopa. Za darmo.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6803358945">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remote Controller: minutnik StickyPresenter sterowany z iPhone’a">
+  <meta property="og:description" content="Pilot na iPhone’a do StickyPresenter na Macu. Uruchamiaj, wstrzymuj i wydłużaj minutnik wystąpienia bez wracania do laptopa. Za darmo.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/remote/pl/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../remote-icon.png">
+  <link rel="apple-touch-icon" href="../remote-icon.png">
+  <link rel="stylesheet" href="../sitegen.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../remote-icon.png" alt="Ikona aplikacji StickyPresenter Remote Controller" />
-    <h1>Remote Controller</h1>
-    <p>Steruj minutnikami StickyPresenter z iPhone’a</p>
-    <div class="actions">
-      <a class="btn" href="remote-privacy.html">Polityka prywatności</a>
-      <a class="btn" href="support.html#remote">Pomoc</a>
-      <a class="btn" href="index.html">StickyPresenter na Maca</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/remote.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/remote.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/remote.html" hreflang="pl" lang="pl" aria-current="true">Polski</a>
-      <a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="bar">
+    <a class="brand" href="../pl/remote.html"><img src="../remote-icon.png" alt="" width="32" height="32">Remote Controller</a>
+    <a class="lang-link" href="#languages">Język</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="pl">
-        <h2>Co to za aplikacja</h2>
-        <p><strong>Remote Controller to pilot na iPhone’a do StickyPresenter na Macu.</strong>
-        Podczas prezentacji Mac jest zwykle poza zasięgiem ręki — ta aplikacja daje ci sterowanie
-        minutnikiem prosto do dłoni. Nie działa samodzielnie: potrzebuje Maca z uruchomionym
-        StickyPresenter w tej samej sieci Wi‑Fi.</p>
-
-        <h3>Co możesz zrobić</h3>
-        <ul>
-          <li><strong>Śledzić odliczanie</strong> — pozostały czas, postęp i fazę Pomodoro
-          (skupienie / przerwa) z numerem cyklu, odświeżane co sekundę.</li>
-          <li><strong>Uruchamiać, wstrzymywać, zerować</strong> — a gdy któraś część się przeciąga,
-          w trakcie wystąpienia dodać lub odjąć 30 sekund.</li>
-          <li><strong>Uruchomić nowy minutnik</strong> — gotowe ustawienia: 3, 5, 10 i 15 minut.</li>
-          <li><strong>Zmienić wielkość widżetu</strong> — S / M / L, żeby był czytelny nawet z ostatniego rzędu.</li>
-          <li><strong>Przesuwać widżet</strong> — przeciągnij go na miniaturze układu ekranów Maca.
-          Jeśli zasłania slajd, odsuniesz go bez podchodzenia do Maca, a przy drugim monitorze
-          przeniesiesz go na drugi ekran.</li>
-          <li><strong>Ukrywać, wyrównywać, usuwać</strong> — ukryj widżet przed publicznością,
-          przywołaj zgubiony widżet z powrotem obok panelu albo usuń minutnik.</li>
-        </ul>
-
-        <h3>Wymagania</h3>
-        <ul>
-          <li>iPhone z iOS 17 lub nowszym</li>
-          <li>Mac z uruchomionym StickyPresenter w <strong>tej samej sieci Wi‑Fi</strong></li>
-          <li>Dostęp do sieci lokalnej dozwolony na obu urządzeniach</li>
-        </ul>
-
-        <h3>Jak to się łączy</h3>
-        <p>Obie aplikacje znajdują się nawzajem w sieci lokalnej (Bonjour / Apple
-        MultipeerConnectivity) i komunikują się bezpośrednio. Nie trzeba zakładać konta i nie ma
-        żadnego serwera pośredniczącego. Minutniki i polecenia nie opuszczają twojej sieci
-        lokalnej; przez internet wysyłane są tylko anonimowe statystyki użycia, raporty awarii i
-        opinie, które sam wyślesz — szczegóły w <a href="remote-privacy.html">polityce prywatności</a>.</p>
-        <p><strong>Kod wpisujesz tylko raz.</strong> Otwórz aplikację, a na liście pojawią się Maki
-        znalezione w pobliżu. Wybierz swojego i wpisz czterocyfrowy kod widoczny na Macu w menu
-        ikona minutnika → <code>Pilot</code> na pasku menu — i gotowe, urządzenia są sparowane.
-        Od tej pory aplikacja po otwarciu sama łączy się z tym Makiem.</p>
-        <p>Kilka Maków w tej samej sieci Wi‑Fi, na przykład w sali konferencyjnej, to żaden problem:
-        pilot łączy się tylko z tym jednym Makiem, z którym jest sparowany, a pilot, który nie zna
-        twojego kodu, nie połączy się z twoim Makiem.</p>
-
-        <h3 id="trouble">Gdy nie chce się połączyć</h3>
-        <p>Aplikacja mówi, dlaczego połączenie się nie udało i co zrobić dalej:</p>
-        <ul>
-          <li><strong>Zły kod</strong> — wpisz cztery cyfry widoczne w tej chwili w menu ikona
-          minutnika → <code>Pilot</code> na pasku menu Maca. Jeśli klikniesz
-          <code>Nowy kod parowania</code>, zadziała już tylko nowy kod.</li>
-          <li><strong>Mac nie pamięta już tego iPhone’a</strong> — tak się dzieje po użyciu
-          <code>Zapomnij sparowane piloty</code> albo po ponownej instalacji StickyPresenter.
-          Stuknij Maca na liście i wpisz kod ponownie.</li>
-          <li><strong>Mac nie odpowiada</strong> — sprawdź, czy Mac nie jest uśpiony, czy oba
-          urządzenia są w tej samej sieci Wi‑Fi i czy VPN jest wyłączony.</li>
-          <li><strong>Od ponad 10 sekund nie widać żadnego Maca</strong> — pojawi się lista
-          kontrolna: StickyPresenter działa na Macu, ta sama sieć Wi‑Fi (nie sieć dla gości),
-          dostęp do sieci lokalnej dozwolony na iPhonie i na Macu, VPN wyłączony. Sprawdzaj
-          po kolei od góry.</li>
-          <li><strong>Aplikację na Macu trzeba zaktualizować</strong> — zaktualizuj StickyPresenter
-          na Macu i wybierz go ponownie.</li>
-        </ul>
-        <p class="muted">Więcej wskazówek na stronie <a href="support.html#remote">pomocy</a>.</p>
-
-        <h3>Kontakt</h3>
-        <p>Pytania, błędy, pomysły? Napisz na
-        <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> albo otwórz Ustawienia
-        (koło zębate w lewym górnym rogu aplikacji) → Opinie, aby wysłać wiadomość prosto z iPhone’a.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Mac zostaje z tyłu,<br>minutnik masz w dłoni</h1>
+        <p class="lead">Steruj minutnikami StickyPresenter na Macu z iPhone’a. Wyjdź na środek sali, a nadal widzisz pozostały czas, wstrzymujesz, dodajesz 30 sekund albo odsuwasz minutnik z wykresu, który zasłania.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6803358945">Pobierz za darmo z App Store</a></div>
+        <p class="muted small">Za darmo · iOS 17 lub nowszy · Wymaga Maca z uruchomionym StickyPresenter w tej samej sieci Wi‑Fi.</p>
       </div>
+      <div class="phone"><img src="../img/remote/pl/01-timer.jpg" alt="Mac zostaje z tyłu, minutnik masz w dłoni" width="600" height="1303" decoding="async"></div>
+    </section>
 
-      <p style="text-align:center"><a class="back" href="index.html">← Strona główna</a></p>
-    </div>
+
+
+    <section class="problem reveal">
+      <h2>Wciąż wracasz do laptopa, żeby ruszyć minutnik?</h2>
+      <p>Wystąpienie się przeciąga i potrzebujesz więcej czasu. Minutnik leży akurat na Twoim najlepszym wykresie. Do tej pory oznaczało to przejście przez scenę i sięganie po gładzik na oczach wszystkich. Z Remote Controller zostajesz na miejscu i raz stukasz w iPhone’a.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Widzisz pozostały czas i od razu go poprawiasz</h2>
+        <p>Pozostały czas i postęp odświeżają się co sekundę. W Pomodoro widzisz też, czy trwa Skupienie, czy Przerwa, i który to cykl.<br>Przeciągasz? Dodaj 30 sekund. Kończysz wcześniej? Odejmij 30. Nowy minutnik na 3, 5, 10 lub 15 minut startuje jednym stuknięciem, a widżet przełączysz między S, M i L, żeby odczytał go też ostatni rząd.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/pl/02-pomodoro.jpg" alt="Widzisz pozostały czas i od razu go poprawiasz" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kod wpisujesz raz i gotowe</h2>
+        <p>Otwórz aplikację, a na liście pojawi się każdy Mac w Twojej sieci Wi‑Fi z uruchomionym StickyPresenter. Wybierz swojego i wpisz czterocyfrowy kod z menu ikona minutnika ▸ Pilot na pasku menu Maca.<br>Potem aplikacja sama łączy się z tym Makiem przy każdym otwarciu. Bez konta i bez serwera: oba urządzenia komunikują się bezpośrednio w sieci lokalnej.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/pl/03-choose-mac.jpg" alt="Kod wpisujesz raz i gotowe" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Trzy kroki i działa</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Uruchom StickyPresenter na Macu</h3><p>Gdy na pasku menu widać ikonę minutnika, wszystko gotowe. Aplikacja zostaje tam nawet po zamknięciu wszystkich okien.</p></li>
+<li class="card"><span class="n">2</span><h3>Otwórz aplikację w tej samej sieci Wi‑Fi</h3><p>Gdy zapyta o dostęp do sieci lokalnej, stuknij Pozwól. Dzięki temu znajdzie Twojego Maca.</p></li>
+<li class="card"><span class="n">3</span><h3>Wybierz Maca i wpisz kod</h3><p>Wpisz czterocyfrowy kod parowania z menu ikona minutnika ▸ Pilot na pasku menu Maca i minutnik jest w Twoich rękach.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Co zrobisz z iPhone’a</h2>
+      <div class="card table">
+        <dl><div><dt>Pozostały czas</dt><dd>Pozostały czas, postęp, faza Pomodoro (Skupienie lub Przerwa) i numer cyklu, co sekundę</dd></div><div><dt>Start · Wstrzymaj</dt><dd>Jeden duży przycisk pośrodku</dd></div><div><dt>−30 s · +30 s</dt><dd>Przyciski po bokach od razu poprawiają trwający minutnik</dd></div><div><dt>Nowy minutnik</dt><dd>3, 5, 10 lub 15 minut</dd></div><div><dt>Rozmiar widżetu</dt><dd>Widżet w rozmiarze S, M lub L</dd></div><div><dt>Położenie</dt><dd>Przeciągaj widżet na miniaturze układu ekranów Maca, także na drugi monitor</dd></div><div><dt>Ukryj</dt><dd>Schowaj widżet na chwilę przed publicznością</dd></div><div><dt>Wyrównaj</dt><dd>Przywołaj zagubiony widżet obok okna minutnika</dd></div><div><dt>Resetuj · Usuń</dt><dd>Zacznij minutnik od nowa albo go usuń</dd></div><div><dt>Skróty · Siri</dt><dd>Powiedz <code>Uruchom minutnik za pomocą Remote Controller</code>, a na Macu pojawi się minutnik</dd></div></dl>
+      </div>
+      <p class="muted">Pilot obsługuje tylko minutniki działające na Macu. Notatki i teksty do promptera nigdy nie trafiają na iPhone’a, a pilot nie przełącza slajdów.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Pytania</h2>
+      <div class="faq"><details><summary>Czy aplikacja na iPhone’a działa sama?</summary><p>Nie. Remote Controller to pilot do StickyPresenter na Macu, więc StickyPresenter musi działać na Macu w tej samej sieci Wi‑Fi. Aplikację na Maca pobierzesz z linku poniżej albo przez Pobierz aplikację na Maca w Ustawieniach aplikacji.</p></details>
+<details><summary>Mojego Maca nie ma na liście.</summary><p>Jeśli po 10 sekundach nie pojawi się żaden Mac, aplikacja pokaże listę kontrolną. Sprawdź ją od góry: StickyPresenter działa na Macu (na pasku menu widać ikonę minutnika), oba urządzenia są w tej samej sieci Wi‑Fi (sieć gościnna nie zadziała), Remote Controller jest włączony na iPhonie w Ustawienia ▸ Prywatność i ochrona ▸ Sieć lokalna, StickyPresenter ma zgodę na Macu w Ustawienia systemowe ▸ Prywatność i ochrona ▸ Sieć lokalna, a VPN jest wyłączony.</p></details>
+<details><summary>Aplikacja mówi, że kod parowania jest zły.</summary><p>Wpisz cztery cyfry widoczne w tej chwili w menu ikona minutnika ▸ Pilot na pasku menu Maca. Jeśli ktoś kliknął na Macu Nowy kod parowania, działa już tylko nowy kod.</p></details>
+<details><summary>Aplikacja mówi, że Mac nie pamięta tego iPhone’a.</summary><p>Tak się dzieje po użyciu Zapomnij sparowane piloty na Macu albo po ponownej instalacji StickyPresenter. Stuknij Maca na liście i wpisz kod parowania jeszcze raz.</p></details>
+<details><summary>Aplikacja mówi, że Mac nie odpowiada.</summary><p>Sprawdź, czy Mac nie jest uśpiony, czy oba urządzenia są w tej samej sieci Wi‑Fi i czy VPN jest wyłączony.</p></details>
+<details><summary>Aplikacja mówi, że aplikację na Macu trzeba zaktualizować.</summary><p>StickyPresenter na Macu jest starszy niż pilot. Zaktualizuj go z Mac App Store, a potem wybierz Maca ponownie.</p></details>
+<details><summary>Czy to bezpieczne w sali pełnej Maców?</summary><p>Tak. Pilot rozmawia tylko z jednym Makiem, z którym jest sparowany, a pilot, który nie zna Twojego kodu, nie dostanie się do Twojego Maca. Wszystko płynie szyfrowanym, bezpośrednim połączeniem w tej samej sieci. Jeśli kod widział ktoś postronny, kliknij na Macu Nowy kod parowania.</p></details>
+<details><summary>Co trafia do internetu?</summary><p>Minutniki i polecenia nie opuszczają sieci lokalnej. Do internetu trafiają tylko anonimowe statystyki użycia, raporty awarii i opinie, które zdecydujesz się wysłać. Szczegóły znajdziesz w polityce prywatności.</p></details>
+<details><summary>Czy Siri uruchomi minutnik tuż przed wejściem na scenę?</summary><p>Tak. Powiedz „Uruchom minutnik za pomocą Remote Controller” albo użyj czynności Uruchom minutnik na Macu w Skrótach. Aplikacja się otworzy i uruchomi minutnik o wybranej długości (od 1 do 600 minut), gdy tylko połączy się z Makiem.</p></details></div>
+      <p class="contact">Pytania, błędy albo pomysły? Napisz na <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> albo wyślij je prosto z iPhone’a: ikona zębatki w lewym górnym rogu aplikacji ▸ Opinie.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Na następnym wystąpieniu<br>zostań przed publicznością</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6803358945">Pobierz za darmo z App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="remote-privacy.html">Polityka prywatności</a> · <a href="support.html#remote">Pomoc</a>
+    <nav id="languages" class="langs" aria-label="Język"><a href="../remote.html" hreflang="en" lang="en">English</a>
+<a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/remote.html" hreflang="es" lang="es">Español</a>
+<a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
+<a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
+<a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/remote.html" hreflang="pl" lang="pl" aria-current="page">Polski</a>
+<a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="remote-privacy.html">Polityka prywatności</a> · <a href="./">StickyPresenter na Maca</a> · <a href="support.html#remote">Strona wsparcia</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    document.querySelectorAll(".langs a").forEach(a => a.addEventListener("click", () => {
+      try { localStorage.setItem("sitegen-lang", a.hreflang) } catch (e) {}
+    }));
+  </script>
 </body>
 </html>

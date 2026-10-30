@@ -1,152 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Remote Controller · StickyPresenter</title>
-  <meta name="description" content="Remote Controller: điều khiển bộ hẹn giờ StickyPresenter từ iPhone — giới thiệu và hỗ trợ" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html" />
-  <link rel="icon" href="../remote-icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Controller: điều khiển hẹn giờ StickyPresenter từ iPhone</title>
+  <meta name="description" content="Điều khiển từ xa trên iPhone cho StickyPresenter trên Mac. Bắt đầu, tạm dừng, thêm giờ hay dời bộ hẹn giờ khỏi slide mà không quay lại máy. Miễn phí.">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6803358945">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remote Controller: điều khiển hẹn giờ StickyPresenter từ iPhone">
+  <meta property="og:description" content="Điều khiển từ xa trên iPhone cho StickyPresenter trên Mac. Bắt đầu, tạm dừng, thêm giờ hay dời bộ hẹn giờ khỏi slide mà không quay lại máy. Miễn phí.">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/remote/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../remote-icon.png">
+  <link rel="apple-touch-icon" href="../remote-icon.png">
+  <link rel="stylesheet" href="../sitegen.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../remote-icon.png" alt="Biểu tượng ứng dụng StickyPresenter Remote Controller" />
-    <h1>Remote Controller</h1>
-    <p>Điều khiển bộ hẹn giờ StickyPresenter từ iPhone</p>
-    <div class="actions">
-      <a class="btn" href="remote-privacy.html">Chính sách quyền riêng tư</a>
-      <a class="btn" href="support.html#remote">Hỗ trợ</a>
-      <a class="btn" href="index.html">StickyPresenter cho Mac</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/remote.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
-      <a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/remote.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/remote.html" hreflang="vi" lang="vi" aria-current="true">Tiếng Việt</a>
-      <a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/remote.html"><img src="../remote-icon.png" alt="" width="32" height="32">Remote Controller</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="vi">
-        <h2>Ứng dụng này là gì</h2>
-        <p><strong>Remote Controller là ứng dụng điều khiển trên iPhone dành cho StickyPresenter trên Mac.</strong>
-        Khi thuyết trình, máy Mac thường nằm ngoài tầm với — ứng dụng này đưa các nút điều khiển bộ hẹn giờ
-        vào tay bạn. Đây không phải ứng dụng dùng riêng lẻ: bạn cần một máy Mac đang chạy StickyPresenter
-        trên cùng mạng Wi-Fi.</p>
-
-        <h3>Bạn có thể làm gì</h3>
-        <ul>
-          <li><strong>Xem thời gian đếm ngược</strong> — thời gian còn lại, tiến độ, giai đoạn Pomodoro
-          (Tập trung / Nghỉ) và số chu kỳ, cập nhật mỗi giây.</li>
-          <li><strong>Bắt đầu, tạm dừng, đặt lại</strong> — và thêm hoặc bớt 30 giây ngay giữa bài nói khi
-          một phần kéo dài hơn dự kiến.</li>
-          <li><strong>Bắt đầu bộ hẹn giờ mới</strong> — các mức cài sẵn 3 / 5 / 10 / 15 phút.</li>
-          <li><strong>Đổi kích thước tiện ích</strong> — S / M / L, để người ngồi cuối phòng vẫn đọc được.</li>
-          <li><strong>Di chuyển tiện ích</strong> — kéo trên bản thu nhỏ bố cục màn hình của Mac. Nếu tiện ích
-          che mất slide, bạn có thể dời nó đi mà không cần chạm vào Mac. Với màn hình mở rộng, bạn còn có thể
-          kéo nó sang màn hình bên cạnh.</li>
-          <li><strong>Ẩn, căn chỉnh, xóa</strong> — ẩn tiện ích khỏi khán giả, gọi tiện ích bị lạc về cạnh bảng
-          điều khiển, hoặc xóa bộ hẹn giờ.</li>
-        </ul>
-
-        <h3>Yêu cầu</h3>
-        <ul>
-          <li>iPhone chạy iOS 17 trở lên</li>
-          <li>Một máy Mac đang chạy StickyPresenter, trên <strong>cùng mạng Wi-Fi</strong></li>
-          <li>Cho phép quyền Mạng cục bộ trên cả hai thiết bị</li>
-        </ul>
-
-        <h3>Cách kết nối</h3>
-        <p>Hai ứng dụng tìm thấy nhau qua mạng cục bộ (Bonjour / MultipeerConnectivity của Apple) và trao đổi
-        trực tiếp với nhau. Không cần tạo tài khoản, cũng không có máy chủ trung gian. Bộ hẹn giờ và các lệnh
-        của bạn không bao giờ rời khỏi mạng cục bộ; thứ duy nhất được gửi qua Internet là thống kê sử dụng
-        ẩn danh, báo cáo sự cố và góp ý do bạn chủ động gửi — xem
-        <a href="remote-privacy.html">chính sách quyền riêng tư</a>.</p>
-        <p><strong>Bạn chỉ nhập mã một lần.</strong> Mở ứng dụng, các máy Mac tìm thấy ở gần sẽ hiện thành
-        danh sách. Chọn máy của bạn và nhập mã bốn chữ số hiển thị trên Mac ở biểu tượng bộ hẹn giờ trên
-        thanh menu → <code>Điều khiển từ xa</code>, thế là hai thiết bị đã được ghép nối. Từ đó trở đi, mỗi
-        khi bạn mở ứng dụng, nó sẽ tự kết nối với máy Mac đó.</p>
-        <p>Có nhiều máy Mac trên cùng mạng Wi-Fi — chẳng hạn trong phòng họp — cũng không sao: ứng dụng chỉ
-        kết nối với đúng máy Mac đã ghép nối, và một thiết bị không biết mã của bạn sẽ không thể kết nối với
-        Mac của bạn.</p>
-
-        <h3 id="trouble">Khi không kết nối được</h3>
-        <p>Khi kết nối thất bại, ứng dụng sẽ cho bạn biết lý do và việc cần làm tiếp theo:</p>
-        <ul>
-          <li><strong>Mã không đúng</strong> — nhập bốn chữ số đang hiện ở biểu tượng bộ hẹn giờ trên thanh
-          menu → <code>Điều khiển từ xa</code>. Nếu bạn đã nhấn <code>Mã ghép nối mới</code>, chỉ mã mới
-          mới dùng được.</li>
-          <li><strong>Mac không còn nhận ra iPhone này</strong> — xảy ra sau khi chọn
-          <code>Quên các điều khiển từ xa đã ghép nối</code> trên Mac hoặc cài lại StickyPresenter. Chạm vào
-          Mac trong danh sách và nhập lại mã.</li>
-          <li><strong>Mac không phản hồi</strong> — hãy kiểm tra Mac không ở chế độ ngủ, hai thiết bị cùng một
-          mạng Wi-Fi và VPN đã tắt.</li>
-          <li><strong>Đã hơn 10 giây mà chưa thấy Mac</strong> — một danh sách kiểm tra sẽ hiện ra:
-          StickyPresenter đang chạy trên Mac, cùng một mạng Wi-Fi (không phải mạng khách), đã cho phép Mạng
-          cục bộ trên iPhone và Mac, VPN đã tắt. Hãy kiểm tra lần lượt từ trên xuống.</li>
-          <li><strong>Cần cập nhật ứng dụng trên Mac</strong> — cập nhật StickyPresenter trên Mac rồi chọn lại
-          máy đó.</li>
-        </ul>
-        <p class="muted">Xem thêm trợ giúp ở trang <a href="support.html#remote">Hỗ trợ</a>.</p>
-
-        <h3>Liên hệ</h3>
-        <p>Có câu hỏi, gặp lỗi hay có ý tưởng? Gửi email tới
-        <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>, hoặc mở Cài đặt (biểu tượng bánh răng
-        ở góc trên bên trái ứng dụng) → Gửi góp ý để gửi ngay từ iPhone.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Rời xa Mac,<br>hẹn giờ vẫn trong tay</h1>
+        <p class="lead">Điều khiển bộ hẹn giờ StickyPresenter trên Mac ngay từ iPhone. Bước lên phía trước khán phòng mà vẫn xem được thời gian còn lại, tạm dừng, thêm 30 giây hoặc kéo bộ hẹn giờ ra khỏi biểu đồ nó đang che.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6803358945">Tải miễn phí trên App Store</a></div>
+        <p class="muted small">Miễn phí · iOS 17 trở lên · Cần một máy Mac đang chạy StickyPresenter trên cùng mạng Wi‑Fi.</p>
       </div>
+      <div class="phone"><img src="../img/remote/vi/01-timer.jpg" alt="Rời xa Mac, hẹn giờ vẫn trong tay" width="600" height="1303" decoding="async"></div>
+    </section>
 
-      <p style="text-align:center"><a class="back" href="index.html">← Về trang chủ</a></p>
-    </div>
+
+
+    <section class="problem reveal">
+      <h2>Vẫn phải quay về laptop chỉ để chỉnh bộ hẹn giờ?</h2>
+      <p>Bài nói kéo dài và bạn cần thêm thời gian. Bộ hẹn giờ lại nằm đè lên đúng biểu đồ quan trọng nhất. Trước giờ, điều đó nghĩa là đi ngang sân khấu và chạm vào trackpad trước mặt mọi người. Với Remote Controller, bạn đứng nguyên chỗ và chạm iPhone một lần.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Xem thời gian còn lại và chỉnh ngay tại chỗ</h2>
+        <p>Thời gian còn lại và tiến độ cập nhật mỗi giây. Khi dùng Pomodoro, bạn còn thấy đang ở phiên Tập trung hay Nghỉ và đến chu kỳ thứ mấy.<br>Nói quá giờ? Thêm 30 giây. Xong sớm? Bớt 30 giây. Bắt đầu bộ hẹn giờ mới 3, 5, 10 hoặc 15 phút chỉ với một chạm, và đổi widget sang cỡ S, M hoặc L để hàng ghế cuối cũng đọc được.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/vi/02-pomodoro.jpg" alt="Xem thời gian còn lại và chỉnh ngay tại chỗ" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nhập mã một lần là xong</h2>
+        <p>Mở ứng dụng, mọi máy Mac đang chạy StickyPresenter trên Wi‑Fi của bạn sẽ hiện trong danh sách. Chọn Mac của bạn và nhập mã bốn chữ số ở biểu tượng bộ hẹn giờ ▸ Điều khiển từ xa trên thanh menu của Mac.<br>Từ đó, mỗi lần mở, ứng dụng tự kết nối với Mac đó. Không tài khoản, không máy chủ: hai thiết bị trao đổi trực tiếp qua mạng cục bộ.</p>
+      </div>
+      <div class="phone"><img src="../img/remote/vi/03-choose-mac.jpg" alt="Nhập mã một lần là xong" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Sẵn sàng sau ba bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Mở StickyPresenter trên Mac</h3><p>Khi biểu tượng bộ hẹn giờ hiện trên thanh menu là đã sẵn sàng. Ứng dụng vẫn ở đó dù bạn đóng hết các cửa sổ.</p></li>
+<li class="card"><span class="n">2</span><h3>Mở ứng dụng trên cùng mạng Wi‑Fi</h3><p>Khi được hỏi quyền truy cập mạng cục bộ, hãy chạm Cho phép. Nhờ vậy ứng dụng mới tìm được Mac của bạn.</p></li>
+<li class="card"><span class="n">3</span><h3>Chọn Mac và nhập mã</h3><p>Nhập mã ghép nối bốn chữ số ở biểu tượng bộ hẹn giờ ▸ Điều khiển từ xa trên thanh menu của Mac, thế là bạn đã nắm quyền điều khiển.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Những gì bạn làm được từ iPhone</h2>
+      <div class="card table">
+        <dl><div><dt>Thời gian còn lại</dt><dd>Thời gian còn lại, tiến độ, phiên Tập trung hay Nghỉ của Pomodoro và số chu kỳ, cập nhật mỗi giây</dd></div><div><dt>Bắt đầu · Tạm dừng</dt><dd>Một nút lớn ở giữa</dd></div><div><dt>−30 giây · +30 giây</dt><dd>Hai nút hai bên chỉnh ngay bộ hẹn giờ đang chạy</dd></div><div><dt>Bộ hẹn giờ mới</dt><dd>3, 5, 10 hoặc 15 phút</dd></div><div><dt>Kích thước widget</dt><dd>Widget cỡ S, M hoặc L</dd></div><div><dt>Vị trí</dt><dd>Kéo trên bản thu nhỏ bố cục màn hình Mac, kể cả sang màn hình mở rộng</dd></div><div><dt>Ẩn</dt><dd>Tạm ẩn widget khỏi khán giả</dd></div><div><dt>Căn chỉnh</dt><dd>Đưa widget bị lạc về cạnh cửa sổ bộ hẹn giờ</dd></div><div><dt>Đặt lại · Xóa</dt><dd>Chạy lại bộ hẹn giờ từ đầu, hoặc xóa nó</dd></div><div><dt>Phím tắt · Siri</dt><dd>Nói <code>Bắt đầu hẹn giờ bằng Remote Controller</code> để mở bộ hẹn giờ trên Mac</dd></div></dl>
+      </div>
+      <p class="muted">Điều khiển từ xa chỉ làm việc với bộ hẹn giờ đang chạy trên Mac. Ghi chú và kịch bản máy nhắc chữ không bao giờ được gửi sang iPhone, và ứng dụng không chuyển slide.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Có dùng riêng ứng dụng iPhone được không?</summary><p>Không. Remote Controller là điều khiển từ xa cho StickyPresenter trên Mac, nên StickyPresenter phải đang chạy trên một máy Mac cùng mạng Wi‑Fi. Tải ứng dụng Mac qua liên kết bên dưới, hoặc từ mục Tải ứng dụng cho Mac trong Cài đặt của ứng dụng.</p></details>
+<details><summary>Mac của tôi không hiện trong danh sách.</summary><p>Nếu sau 10 giây vẫn chưa thấy Mac, ứng dụng sẽ hiện danh sách cần kiểm tra. Hãy đi lần lượt từ trên xuống: StickyPresenter đang chạy trên Mac (có biểu tượng bộ hẹn giờ trên thanh menu), hai thiết bị cùng một mạng Wi‑Fi (Wi‑Fi dành cho khách sẽ không được), Remote Controller đã bật trong Cài đặt ▸ Quyền riêng tư &amp; Bảo mật ▸ Mạng cục bộ trên iPhone, StickyPresenter được cho phép trong Cài đặt hệ thống ▸ Quyền riêng tư &amp; Bảo mật ▸ Mạng cục bộ trên Mac, và VPN đã tắt.</p></details>
+<details><summary>Ứng dụng báo mã không đúng.</summary><p>Nhập bốn chữ số đang hiện ở biểu tượng bộ hẹn giờ ▸ Điều khiển từ xa trên thanh menu của Mac. Nếu ai đó đã bấm Mã ghép nối mới trên Mac, chỉ mã mới còn dùng được.</p></details>
+<details><summary>Ứng dụng báo Mac không còn nhận ra iPhone này.</summary><p>Điều này xảy ra sau khi chọn Quên các điều khiển từ xa đã ghép nối trên Mac, hoặc sau khi cài lại StickyPresenter. Chạm vào Mac trong danh sách và nhập mã ghép nối thêm một lần.</p></details>
+<details><summary>Ứng dụng báo Mac không phản hồi.</summary><p>Hãy kiểm tra Mac không ở chế độ ngủ, hai thiết bị cùng một mạng Wi‑Fi và VPN đã tắt.</p></details>
+<details><summary>Ứng dụng báo cần cập nhật ứng dụng trên Mac.</summary><p>StickyPresenter trên Mac đang cũ hơn bản điều khiển từ xa. Hãy cập nhật qua Mac App Store rồi chọn lại Mac.</p></details>
+<details><summary>Dùng trong phòng họp có nhiều máy Mac có an toàn không?</summary><p>An toàn. Điều khiển từ xa chỉ trao đổi với đúng một máy Mac đã ghép nối, và điều khiển nào không biết mã thì không thể kết nối với Mac của bạn. Mọi dữ liệu đi qua kết nối trực tiếp được mã hóa trong cùng một mạng. Nếu từng để người khác thấy mã, hãy bấm Mã ghép nối mới trên Mac.</p></details>
+<details><summary>Những gì được gửi qua internet?</summary><p>Bộ hẹn giờ và lệnh điều khiển không bao giờ rời khỏi mạng cục bộ. Thứ duy nhất đi qua internet là thống kê sử dụng ẩn danh, báo cáo sự cố và góp ý do chính bạn gửi. Chi tiết có trong chính sách quyền riêng tư.</p></details>
+<details><summary>Siri có thể bật bộ hẹn giờ ngay trước khi tôi lên nói không?</summary><p>Có. Nói "Bắt đầu hẹn giờ bằng Remote Controller", hoặc dùng tác vụ Bắt đầu hẹn giờ trên Mac trong ứng dụng Phím tắt. Ứng dụng sẽ mở và chạy bộ hẹn giờ với độ dài bạn chọn (từ 1 đến 600 phút) ngay khi kết nối được với Mac.</p></details></div>
+      <p class="contact">Có câu hỏi, gặp lỗi hay muốn góp ý? Gửi thư đến <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>, hoặc gửi ngay từ iPhone qua biểu tượng bánh răng ở góc trên bên trái ứng dụng ▸ Gửi góp ý.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Buổi thuyết trình tới,<br>cứ đứng phía trước khán phòng</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6803358945">Tải miễn phí trên App Store</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="remote-privacy.html">Chính sách quyền riêng tư</a> · <a href="support.html#remote">Hỗ trợ</a>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../remote.html" hreflang="en" lang="en">English</a>
+<a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/remote.html" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/remote.html" hreflang="es" lang="es">Español</a>
+<a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
+<a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/remote.html" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
+<a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="remote-privacy.html">Chính sách quyền riêng tư</a> · <a href="./">StickyPresenter cho Mac</a> · <a href="support.html#remote">Trang hỗ trợ</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    document.querySelectorAll(".langs a").forEach(a => a.addEventListener("click", () => {
+      try { localStorage.setItem("sitegen-lang", a.hreflang) } catch (e) {}
+    }));
+  </script>
 </body>
 </html>

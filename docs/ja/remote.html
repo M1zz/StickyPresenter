@@ -1,150 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Remote Controller · StickyPresenter</title>
-  <meta name="description" content="iPhone から StickyPresenter のタイマーを操作できる Remote Controller の紹介とサポート" />
-  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/en/remote.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html" />
-  <link rel="icon" href="../remote-icon.png" />
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Controller：StickyPresenterの発表タイマーをiPhoneで操作</title>
+  <meta name="description" content="Mac版StickyPresenterのiPhoneリモコン。発表タイマーの開始、一時停止、延長も、スライドに重なったタイマーの移動も、Macに戻らずその場でできます。無料。">
+  <meta name="theme-color" content="#9A5B00" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6803358945">
+  <link rel="canonical" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StickyPresenter/ko/remote.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StickyPresenter/zh-Hans/remote.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StickyPresenter/zh-Hant/remote.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StickyPresenter/es/remote.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StickyPresenter/de/remote.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StickyPresenter/fr/remote.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StickyPresenter/it/remote.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StickyPresenter/pt-BR/remote.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StickyPresenter/ru/remote.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StickyPresenter/th/remote.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StickyPresenter/vi/remote.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StickyPresenter/cs/remote.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StickyPresenter/da/remote.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StickyPresenter/el/remote.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StickyPresenter/fi/remote.html">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StickyPresenter/id/remote.html">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StickyPresenter/nb/remote.html">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StickyPresenter/nl/remote.html">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StickyPresenter/pl/remote.html">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StickyPresenter/sv/remote.html">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StickyPresenter/tr/remote.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StickyPresenter/remote.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remote Controller：StickyPresenterの発表タイマーをiPhoneで操作">
+  <meta property="og:description" content="Mac版StickyPresenterのiPhoneリモコン。発表タイマーの開始、一時停止、延長も、スライドに重なったタイマーの移動も、Macに戻らずその場でできます。無料。">
+  <meta property="og:url" content="https://m1zz.github.io/StickyPresenter/ja/remote.html">
+  <meta property="og:image" content="https://m1zz.github.io/StickyPresenter/img/remote/ja/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../remote-icon.png">
+  <link rel="apple-touch-icon" href="../remote-icon.png">
+  <link rel="stylesheet" href="../sitegen.css">
+  <style>:root{--accent:#9A5B00}@media (prefers-color-scheme:dark){:root{--accent:#FFC233}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header>
-    <img class="icon" src="../remote-icon.png" alt="StickyPresenter Remote Controller のアプリアイコン" />
-    <h1>Remote Controller</h1>
-    <p>iPhone から StickyPresenter のタイマーを操作</p>
-    <div class="actions">
-      <a class="btn" href="remote-privacy.html">プライバシーポリシー</a>
-      <a class="btn" href="support.html#remote">サポート</a>
-      <a class="btn" href="index.html">Mac 版 StickyPresenter</a>
-    </div>
-    <nav class="langnav" aria-label="Language">
-      <a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
-      <a href="../en/remote.html" hreflang="en" lang="en">English</a>
-      <a href="../ja/remote.html" hreflang="ja" lang="ja" aria-current="true">日本語</a>
-      <a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-      <a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-      <a href="../es/remote.html" hreflang="es" lang="es">Español</a>
-      <a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
-      <a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
-      <a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
-      <a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-      <a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
-      <a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
-      <a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-      <a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
-      <a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
-      <a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
-      <a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
-      <a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-      <a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-      <a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
-      <a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
-      <a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
-      <a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a>
-    </nav>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <a class="brand" href="../ja/remote.html"><img src="../remote-icon.png" alt="" width="32" height="32">Remote Controller</a>
+    <a class="lang-link" href="#languages">言語</a>
   </header>
 
-  <main>
-    <div class="wrap">
-
-      <div class="card" id="ja">
-        <h2>どんなアプリ？</h2>
-        <p><strong>Remote Controller は、Mac 版 StickyPresenter のための iPhone リモコンです。</strong>
-        発表中、Mac は手の届かない場所にあることがほとんどです。このアプリがあれば、タイマーの操作を
-        手元で行えます。単体で使うアプリではなく、同じ Wi-Fi につながった Mac で StickyPresenter が
-        起動している必要があります。</p>
-
-        <h3>できること</h3>
-        <ul>
-          <li><strong>残り時間を確認</strong> — 残り時間と進み具合、ポモドーロのフェーズ（集中／休憩）と
-          何サイクル目かを、1 秒ごとに更新して表示します。</li>
-          <li><strong>スタート・一時停止・リセット</strong> — 話が長引いたら、その場で 30 秒の追加・短縮も。</li>
-          <li><strong>新しいタイマーを開始</strong> — 3 分／5 分／10 分／15 分のプリセット。</li>
-          <li><strong>ウィジェットのサイズ変更</strong> — S／M／L。後ろの席からでも読める大きさに。</li>
-          <li><strong>ウィジェットを移動</strong> — Mac の画面配置を縮小して描いたパッドの上でドラッグ
-          するだけ。スライドに重なってしまっても、Mac に触れずにタイマーをよけられます。拡張ディスプレイを
-          使っていれば、隣の画面へ移すこともできます。</li>
-          <li><strong>非表示・整列・削除</strong> — ウィジェットを聴衆から隠したり、見失ったウィジェットを
-          パネルの横に呼び戻したり、タイマーを削除したりできます。</li>
-        </ul>
-
-        <h3>必要なもの</h3>
-        <ul>
-          <li>iOS 17 以降の iPhone</li>
-          <li>StickyPresenter が起動していて、<strong>同じ Wi-Fi</strong> につながっている Mac</li>
-          <li>両方のデバイスでローカルネットワークへのアクセスを許可</li>
-        </ul>
-
-        <h3>接続のしくみ</h3>
-        <p>2 つのアプリはローカルネットワーク上でお互いを見つけ（Bonjour／Apple の
-        MultipeerConnectivity）、直接やり取りします。アカウントの作成は不要で、間に入るサーバも
-        ありません。タイマーと操作の内容がローカルネットワークの外に出ることはありません。
-        インターネットに送られるのは、匿名の利用統計、クラッシュレポート、お客様が送信したフィードバック
-        だけです。詳しくは<a href="remote-privacy.html">プライバシーポリシー</a>をご覧ください。</p>
-        <p><strong>コードの入力は最初の 1 回だけ。</strong>アプリを開くと、近くで見つかった Mac が
-        一覧に表示されます。お使いの Mac を選び、Mac のメニューバーにあるタイマーアイコン →
-        <code>リモコン</code>に表示される 4 桁のコードを入力すればペアリング完了です。次回からは
-        アプリを開くだけで、その Mac に自動的に接続します。</p>
-        <p>会議室などで同じ Wi-Fi に Mac が何台あっても大丈夫です。リモコンはペアリングした 1 台の
-        Mac にだけ接続し、コードを知らないリモコンがお使いの Mac に接続することはできません。</p>
-
-        <h3 id="trouble">接続できないとき</h3>
-        <p>接続に失敗すると、アプリがその理由と対処方法を表示します。</p>
-        <ul>
-          <li><strong>コードが違います</strong> — メニューバーのタイマーアイコン →
-          <code>リモコン</code>に今表示されている 4 桁を入力してください。
-          <code>新しいペアリングコード</code>を押した場合は、新しいコードだけが有効です。</li>
-          <li><strong>Mac がこの iPhone を覚えていません</strong> — Mac で
-          <code>ペアリング済みのリモコンを解除</code>を選んだときや、StickyPresenter を入れ直したときに
-          表示されます。一覧で Mac をタップして、コードをもう一度入力してください。</li>
-          <li><strong>Mac から応答がありません</strong> — Mac がスリープしていないか、2 台が同じ Wi-Fi に
-          つながっているか、VPN がオフになっているかを確認してください。</li>
-          <li><strong>10 秒以上 Mac が見つかりません</strong> — 確認項目の一覧が表示されます。Mac で
-          StickyPresenter が起動しているか、同じ Wi-Fi（ゲスト用ネットワークではない）か、iPhone と Mac で
-          ローカルネットワークが許可されているか、VPN がオフか。上から順に確認してください。</li>
-          <li><strong>Mac アプリのアップデートが必要です</strong> — Mac の StickyPresenter を
-          アップデートしてから、もう一度選んでください。</li>
-        </ul>
-        <p class="muted">詳しくは<a href="support.html#remote">サポート</a>ページをご覧ください。</p>
-
-        <h3>お問い合わせ</h3>
-        <p>ご質問、不具合の報告、機能のご要望は
-        <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> までお送りください。
-        アプリ左上の歯車 → 設定 → ご意見を送る から、iPhone で直接送ることもできます。</p>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Macから離れても<br>タイマーは手の中に</h1>
+        <p class="lead">MacのStickyPresenterのタイマーを、iPhoneから操作できます。前に出て話している間も、残り時間を確認し、一時停止し、30秒足し、グラフに重なったタイマーを脇へよけられます。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6803358945">App Storeで無料ダウンロード</a></div>
+        <p class="muted small">無料 · iOS 17以降 · 同じWi‑FiでStickyPresenterが起動しているMacが必要です。</p>
       </div>
+      <div class="phone"><img src="../img/remote/ja/01-timer.jpg" alt="Macから離れても タイマーは手の中に" width="600" height="1303" decoding="async"></div>
+    </section>
 
-      <p style="text-align:center"><a class="back" href="index.html">← ホームに戻る</a></p>
-    </div>
+
+
+    <section class="problem reveal">
+      <h2>タイマーに触るために、ノートパソコンまで戻っていませんか？</h2>
+      <p>話が延びてもう少し時間がほしいとき。タイマーがいちばん見せたいグラフに重なっているとき。これまでは聴衆の前を横切って、トラックパッドに手を伸ばすしかありませんでした。Remote Controllerがあれば、立ち位置はそのまま、iPhoneを1回タップするだけです。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>残り時間を見て、その場で調整</h2>
+        <p>残り時間と進み具合は1秒ごとに更新。ポモドーロなら、いまが集中か休憩か、何サイクル目かもわかります。<br>話が延びたら30秒増やし、早く終わりそうなら30秒減らす。3分、5分、10分、15分の新しいタイマーはワンタップで開始でき、ウィジェットのサイズをS、M、Lで切り替えれば後ろの席からも読めます。</p>
+      </div>
+      <div class="phone"><img src="../img/remote/ja/02-pomodoro.jpg" alt="残り時間を見て、その場で調整" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>コードの入力は最初の1回だけ</h2>
+        <p>アプリを開くと、同じWi‑FiでStickyPresenterが起動しているMacが一覧に並びます。自分のMacを選び、Macのメニューバーにあるタイマーアイコン ▸「リモコン」に表示される4桁のコードを入力すれば完了です。<br>次からはアプリを開くだけで、そのMacに自動でつながります。アカウントもサーバも不要。2台はローカルネットワーク上で直接やり取りします。</p>
+      </div>
+      <div class="phone"><img src="../img/remote/ja/03-choose-mac.jpg" alt="コードの入力は最初の1回だけ" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>3ステップで使い始められます</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>MacでStickyPresenterを起動</h3><p>メニューバーにタイマーアイコンが出ていれば準備完了です。ウインドウをすべて閉じても、アプリはメニューバーに残ります。</p></li>
+<li class="card"><span class="n">2</span><h3>同じWi‑Fiでアプリを開く</h3><p>ローカルネットワークへのアクセスを求められたら「許可」をタップしてください。これでMacを見つけられるようになります。</p></li>
+<li class="card"><span class="n">3</span><h3>Macを選んでコードを入力</h3><p>Macのメニューバーにあるタイマーアイコン ▸「リモコン」に表示される4桁のペアリングコードを入力すれば、すぐに操作できます。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>iPhoneからできること</h2>
+      <div class="card table">
+        <dl><div><dt>残り時間</dt><dd>残り時間、進み具合、ポモドーロの集中・休憩とサイクル数を1秒ごとに表示</dd></div><div><dt>開始 · 一時停止</dt><dd>中央の大きなボタンひとつで</dd></div><div><dt>−30秒 · +30秒</dt><dd>左右のボタンで、動いているタイマーをすぐに調整</dd></div><div><dt>新しいタイマー</dt><dd>3分、5分、10分、15分</dd></div><div><dt>サイズ</dt><dd>ウィジェットをS、M、Lで</dd></div><div><dt>位置</dt><dd>Macの画面配置を縮小したパッド上でドラッグ。拡張ディスプレイがあれば隣の画面へも移せます</dd></div><div><dt>非表示</dt><dd>聴衆からウィジェットを一時的に隠します</dd></div><div><dt>整列</dt><dd>見失ったウィジェットをタイマーウインドウの横に呼び戻します</dd></div><div><dt>リセット · 削除</dt><dd>タイマーを最初からやり直す、または削除します</dd></div><div><dt>ショートカット · Siri</dt><dd><code>Remote Controllerでタイマーを開始</code>と話しかけると、Macにタイマーを表示します</dd></div></dl>
+      </div>
+      <p class="muted">リモコンで操作できるのは、Macで動いているタイマーだけです。付箋やプロンプターの原稿がiPhoneに送られることはなく、スライドを送る機能もありません。</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>よくある質問</h2>
+      <div class="faq"><details><summary>iPhoneアプリだけで使えますか？</summary><p>いいえ。Remote ControllerはMac版StickyPresenterのリモコンなので、同じWi‑FiにつながっているMacでStickyPresenterが起動している必要があります。Macアプリは下のリンクか、アプリの設定にある「Macアプリを入手」から入手できます。</p></details>
+<details><summary>Macが一覧に表示されません。</summary><p>10秒たってもMacが見つからないと、アプリに確認リストが表示されます。上から順に確認してください。MacでStickyPresenterが起動しているか（メニューバーのタイマーアイコン）、2台が同じWi‑Fiにつながっているか（ゲストネットワークでは使えません）、iPhoneの「設定」▸「プライバシーとセキュリティ」▸「ローカルネットワーク」でRemote Controllerがオンになっているか、Macの「システム設定」▸「プライバシーとセキュリティ」▸「ローカルネットワーク」でStickyPresenterが許可されているか、VPNがオフになっているか。</p></details>
+<details><summary>コードが違うと表示されます。</summary><p>Macのメニューバーにあるタイマーアイコン ▸「リモコン」にいま表示されている4桁を入力してください。Macで「新しいペアリングコード」を押した場合は、新しいコードしか使えません。</p></details>
+<details><summary>MacがこのiPhoneを覚えていないと表示されます。</summary><p>Macで「ペアリング済みのリモコンを解除」を選んだか、StickyPresenterを再インストールした場合に表示されます。一覧でMacをタップし、ペアリングコードをもう一度入力してください。</p></details>
+<details><summary>Macから応答がないと表示されます。</summary><p>Macがスリープしていないか、2台が同じWi‑Fiにつながっているか、VPNがオフになっているかを確認してください。</p></details>
+<details><summary>「Macアプリのアップデートが必要です」と表示されます。</summary><p>MacのStickyPresenterがリモコンより古いバージョンです。Mac App Storeでアップデートしてから、一覧でもう一度Macを選んでください。</p></details>
+<details><summary>Macが何台もある会議室でも大丈夫ですか？</summary><p>大丈夫です。リモコンがつながるのはペアリングした1台のMacだけで、コードを知らないリモコンはあなたのMacに接続できません。やり取りはすべて、同じネットワーク内の暗号化された直接接続で行われます。誰かにコードを見られたことがあれば、Macで「新しいペアリングコード」を押してください。</p></details>
+<details><summary>インターネットに送られるものはありますか？</summary><p>タイマーと操作の内容がローカルネットワークの外に出ることはありません。インターネットに送られるのは、匿名の利用統計、クラッシュレポート、ご自身で送ったご意見だけです。詳しくはプライバシーポリシーをご覧ください。</p></details>
+<details><summary>出番の直前にSiriでタイマーを始められますか？</summary><p>はい。「Remote Controllerでタイマーを開始」と話しかけるか、ショートカットAppの「Macでタイマーを開始」アクションを使います。アプリが開き、Macにつながった時点で、指定した長さ（1〜600分）のタイマーが始まります。</p></details></div>
+      <p class="contact">ご質問、不具合、機能のご要望は<a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a>までお送りください。アプリ左上の歯車 ▸「ご意見を送る」から、iPhoneで直接送ることもできます。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>次の発表は<br>前に立ったままで</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6803358945">App Storeで無料ダウンロード</a>
+    </section>
   </main>
 
   <footer>
-    © 2026 StickyPresenter · <a href="remote-privacy.html">プライバシーポリシー</a> · <a href="support.html#remote">サポート</a>
+    <nav id="languages" class="langs" aria-label="言語"><a href="../remote.html" hreflang="en" lang="en">English</a>
+<a href="../ko/remote.html" hreflang="ko" lang="ko">한국어</a>
+<a href="../ja/remote.html" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+<a href="../zh-Hans/remote.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/remote.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../es/remote.html" hreflang="es" lang="es">Español</a>
+<a href="../de/remote.html" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/remote.html" hreflang="fr" lang="fr">Français</a>
+<a href="../it/remote.html" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/remote.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../ru/remote.html" hreflang="ru" lang="ru">Русский</a>
+<a href="../th/remote.html" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/remote.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/remote.html" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/remote.html" hreflang="da" lang="da">Dansk</a>
+<a href="../el/remote.html" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/remote.html" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/remote.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/remote.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/remote.html" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/remote.html" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/remote.html" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/remote.html" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="remote-privacy.html">プライバシーポリシー</a> · <a href="./">Mac版StickyPresenter</a> · <a href="support.html#remote">サポート</a> · <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a> · © 2026 StickyPresenter</p>
   </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    document.querySelectorAll(".langs a").forEach(a => a.addEventListener("click", () => {
+      try { localStorage.setItem("sitegen-lang", a.hreflang) } catch (e) {}
+    }));
+  </script>
 </body>
 </html>
