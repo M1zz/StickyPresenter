@@ -28,7 +28,8 @@ struct StickyPresenterApp: App {
 // MARK: - App Delegate
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
-    var noteManager = NoteManager.shared
+    /// lazy — 노트 관리자는 만들 때 설정을 읽는다. 백업 금고(`LeeoKit.bootstrap`)가 복원을 적용한 뒤에 만들어지게.
+    lazy var noteManager = NoteManager.shared
     var settingsWindow: NSWindow?
     var guideWindow: NSWindow?
     var onboardingWindow: NSWindow?

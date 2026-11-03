@@ -11,6 +11,8 @@ enum StickyPresenterSpec: LeeoAppSpec {
     /// App Store 숫자 ID — 설정의 친구에게 소개하기·리뷰 남기기 링크가 쓴다.
     static let appStoreID: String? = "6778457299"
     static let monetization = LeeoMonetization.free
+    /// 백업 금고가 함께 담는 앱 그룹.
+    static let appGroups = ["QGAQ3AY3R3.group.com.leeo.StickyPresenter"]
     /// 개발자 응원하기(팁, 소모성 세 가지 — 작은 것부터). 기능을 열지 않는다.
     /// 무료 앱이라 LeeoStore 가 없다 — 앱이 뜰 때 `startStandalone()` 으로 혼자 선다.
     @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
