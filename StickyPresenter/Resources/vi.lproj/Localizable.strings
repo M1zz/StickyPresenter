@@ -277,6 +277,7 @@
 "intent.timer.title" = "Bắt đầu hẹn giờ";
 "intent.timer.description" = "Bắt đầu bộ hẹn giờ đếm ngược nổi trên các trang chiếu của bạn.";
 "intent.timer.minutes" = "Phút";
+"intent.timer.minutes.description" = "Thời lượng hẹn giờ (phút)";
 "intent.timer.summary ${minutes}" = "Bắt đầu hẹn giờ ${minutes} phút";
 "intent.timer.short" = "Bắt đầu hẹn giờ";
 "intent.pomodoro.title" = "Bắt đầu Pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Hiện bộ hẹn giờ";
 "intent.timers.description" = "Mở bảng bộ hẹn giờ.";
 "intent.timers.short" = "Bộ hẹn giờ";
+"entity.note.type" = "Ghi chú";
+"intent.openNote.title" = "Mở ghi chú";
+"intent.openNote.description" = "Đưa một ghi chú trên màn hình lên trước cùng.";
+"intent.openNote.note" = "Ghi chú";
+"intent.openNote.note.description" = "Ghi chú cần đưa lên trước";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Hỗ trợ VoiceOver tốt hơn";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Lưu ghi chú ra một tệp rồi tải lại trên Mac khác.";
 "roadmap.notifications.title" = "Nhắc khi hết giờ";
 "roadmap.notifications.detail" = "Nhận thông báo khi bộ hẹn giờ kết thúc, kể cả khi bạn đang ở ứng dụng khác.";
+"roadmap.siri-ai.title" = "Chỉ cần nói với Siri";
+"roadmap.siri-ai.detail" = "Siri sẽ tìm ghi chú và bắt đầu hẹn giờ ngay, kể cả khi bạn không nói tên ứng dụng.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Bạn đã hoàn thành %d bài thuyết trình cùng StickyPresenter";

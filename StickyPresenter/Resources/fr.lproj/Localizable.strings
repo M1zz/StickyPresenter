@@ -277,6 +277,7 @@
 "intent.timer.title" = "Lancer un minuteur";
 "intent.timer.description" = "Lance un compte à rebours qui flotte au-dessus de vos diapositives.";
 "intent.timer.minutes" = "Minutes";
+"intent.timer.minutes.description" = "Durée du minuteur, en minutes";
 "intent.timer.summary ${minutes}" = "Lancer un minuteur de ${minutes} min";
 "intent.timer.short" = "Lancer un minuteur";
 "intent.pomodoro.title" = "Lancer un Pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Afficher les minuteurs";
 "intent.timers.description" = "Ouvre le panneau des minuteurs.";
 "intent.timers.short" = "Minuteurs";
+"entity.note.type" = "Note";
+"intent.openNote.title" = "Ouvrir une note";
+"intent.openNote.description" = "Place au premier plan l’une des notes de votre écran.";
+"intent.openNote.note" = "Note";
+"intent.openNote.note.description" = "La note à placer au premier plan";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Meilleure prise en charge de VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Enregistrez vos notes dans un fichier et rechargez-les sur un autre Mac.";
 "roadmap.notifications.title" = "Alertes de minuteur";
 "roadmap.notifications.detail" = "Recevez une notification à la fin d’un minuteur, même dans une autre app.";
+"roadmap.siri-ai.title" = "Demandez simplement à Siri";
+"roadmap.siri-ai.detail" = "Siri retrouvera vos notes et lancera vos minuteurs tout de suite, même sans dire le nom de l’app.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Déjà %d présentations menées avec StickyPresenter";

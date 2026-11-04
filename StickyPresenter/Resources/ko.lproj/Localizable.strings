@@ -277,6 +277,7 @@
 "intent.timer.title" = "타이머 시작";
 "intent.timer.description" = "슬라이드 위에 뜨는 카운트다운 타이머를 시작합니다.";
 "intent.timer.minutes" = "분";
+"intent.timer.minutes.description" = "타이머 길이(분)";
 "intent.timer.summary ${minutes}" = "${minutes}분 타이머 시작";
 "intent.timer.short" = "타이머 시작";
 "intent.pomodoro.title" = "뽀모도로 시작";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "타이머 보기";
 "intent.timers.description" = "타이머 패널을 엽니다.";
 "intent.timers.short" = "타이머";
+"entity.note.type" = "스티키 노트";
+"intent.openNote.title" = "스티키 노트 열기";
+"intent.openNote.description" = "화면에 붙인 스티키 노트 하나를 맨 앞으로 가져옵니다.";
+"intent.openNote.note" = "노트";
+"intent.openNote.note.description" = "맨 앞으로 가져올 노트";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "VoiceOver로 더 편하게";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "노트를 파일로 저장해 두고 다른 Mac에서 다시 불러와요.";
 "roadmap.notifications.title" = "타이머 끝 알림";
 "roadmap.notifications.detail" = "타이머가 끝나면 다른 앱을 보고 있어도 알림으로 알려 줘요.";
+"roadmap.siri-ai.title" = "Siri에게 그냥 말하기";
+"roadmap.siri-ai.detail" = "앱 이름을 말하지 않아도 Siri가 노트를 찾아 주고 타이머를 바로 시작해요.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "StickyPresenter 와 함께 발표를 %d번 마쳤어요";

@@ -277,6 +277,7 @@
 "intent.timer.title" = "Έναρξη χρονομέτρου";
 "intent.timer.description" = "Ξεκινά ένα χρονόμετρο αντίστροφης μέτρησης που επιπλέει πάνω από τις διαφάνειές σας.";
 "intent.timer.minutes" = "Λεπτά";
+"intent.timer.minutes.description" = "Διάρκεια του χρονομέτρου σε λεπτά";
 "intent.timer.summary ${minutes}" = "Έναρξη χρονομέτρου ${minutes} λεπτών";
 "intent.timer.short" = "Έναρξη χρονομέτρου";
 "intent.pomodoro.title" = "Έναρξη Pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Εμφάνιση χρονομέτρων";
 "intent.timers.description" = "Ανοίγει τον πίνακα χρονομέτρων.";
 "intent.timers.short" = "Χρονόμετρα";
+"entity.note.type" = "Σημείωμα";
+"intent.openNote.title" = "Άνοιγμα σημειώματος";
+"intent.openNote.description" = "Φέρνει μπροστά ένα από τα σημειώματα της οθόνης σας.";
+"intent.openNote.note" = "Σημείωμα";
+"intent.openNote.note.description" = "Το σημείωμα που θα έρθει μπροστά";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Καλύτερη υποστήριξη VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Αποθηκεύστε τα σημειώματά σας σε αρχείο και φορτώστε τα ξανά σε άλλο Mac.";
 "roadmap.notifications.title" = "Ειδοποιήσεις χρονομέτρου";
 "roadmap.notifications.detail" = "Λάβετε ειδοποίηση όταν τελειώνει ένα χρονόμετρο, ακόμη και όταν βρίσκεστε σε άλλη εφαρμογή.";
+"roadmap.siri-ai.title" = "Απλώς ζητήστε το από τη Siri";
+"roadmap.siri-ai.detail" = "Η Siri θα βρίσκει τα σημειώματά σας και θα ξεκινά αμέσως χρονόμετρα, ακόμη κι αν δεν πείτε το όνομα της εφαρμογής.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Έχετε ολοκληρώσει ήδη %d παρουσιάσεις με το StickyPresenter";

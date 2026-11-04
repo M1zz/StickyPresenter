@@ -277,6 +277,7 @@
 "intent.timer.title" = "开始计时";
 "intent.timer.description" = "开始一个悬浮在幻灯片之上的倒计时。";
 "intent.timer.minutes" = "分钟";
+"intent.timer.minutes.description" = "计时时长（分钟）";
 "intent.timer.summary ${minutes}" = "开始 ${minutes} 分钟计时";
 "intent.timer.short" = "开始计时";
 "intent.pomodoro.title" = "开始番茄钟";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "显示计时器";
 "intent.timers.description" = "打开计时器面板。";
 "intent.timers.short" = "计时器";
+"entity.note.type" = "便签";
+"intent.openNote.title" = "打开便签";
+"intent.openNote.description" = "把屏幕上的一张便签移到最前面。";
+"intent.openNote.note" = "便签";
+"intent.openNote.note.description" = "要移到最前面的便签";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "更好的旁白支持";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "把便签保存为文件，再在另一台 Mac 上载入。";
 "roadmap.notifications.title" = "计时器提醒";
 "roadmap.notifications.detail" = "计时器结束时发送通知，即使你正在使用其他 App。";
+"roadmap.siri-ai.title" = "直接对 Siri 说";
+"roadmap.siri-ai.detail" = "不用说出应用名称，Siri 也能找到你的便签并立即开始计时。";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "你已经用 StickyPresenter 完成了 %d 场演讲";

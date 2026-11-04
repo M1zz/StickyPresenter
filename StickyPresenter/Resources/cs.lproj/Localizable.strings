@@ -277,6 +277,7 @@
 "intent.timer.title" = "Spustit časovač";
 "intent.timer.description" = "Spustí odpočítávací časovač, který se vznáší nad vašimi snímky.";
 "intent.timer.minutes" = "Minuty";
+"intent.timer.minutes.description" = "Délka časovače v minutách";
 "intent.timer.summary ${minutes}" = "Spustit časovač na ${minutes} min";
 "intent.timer.short" = "Spustit časovač";
 "intent.pomodoro.title" = "Spustit pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Zobrazit časovače";
 "intent.timers.description" = "Otevře panel časovačů.";
 "intent.timers.short" = "Časovače";
+"entity.note.type" = "Poznámka";
+"intent.openNote.title" = "Otevřít poznámku";
+"intent.openNote.description" = "Přenese jednu z poznámek na obrazovce do popředí.";
+"intent.openNote.note" = "Poznámka";
+"intent.openNote.note.description" = "Poznámka, kterou chcete přenést do popředí";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Lepší podpora VoiceOveru";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Uložte poznámky do souboru a načtěte je na jiném Macu.";
 "roadmap.notifications.title" = "Upozornění časovače";
 "roadmap.notifications.detail" = "Dostaňte oznámení, když časovač skončí, i když jste v jiné aplikaci.";
+"roadmap.siri-ai.title" = "Stačí říct Siri";
+"roadmap.siri-ai.detail" = "Siri najde vaše poznámky a hned spustí časovač, i když neřeknete název aplikace.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Prezentace se StickyPresenter: %d";

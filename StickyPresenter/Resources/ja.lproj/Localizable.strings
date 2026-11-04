@@ -277,6 +277,7 @@
 "intent.timer.title" = "タイマーを開始";
 "intent.timer.description" = "スライドの上に浮かぶカウントダウンタイマーを開始します。";
 "intent.timer.minutes" = "分";
+"intent.timer.minutes.description" = "タイマーの長さ（分）";
 "intent.timer.summary ${minutes}" = "${minutes}分のタイマーを開始";
 "intent.timer.short" = "タイマー開始";
 "intent.pomodoro.title" = "ポモドーロを開始";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "タイマーを表示";
 "intent.timers.description" = "タイマーパネルを開きます。";
 "intent.timers.short" = "タイマー";
+"entity.note.type" = "付箋";
+"intent.openNote.title" = "付箋を開く";
+"intent.openNote.description" = "画面に貼った付箋を1枚、いちばん手前に表示します。";
+"intent.openNote.note" = "付箋";
+"intent.openNote.note.description" = "手前に表示する付箋";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "VoiceOverへの対応を強化";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "付箋をファイルに保存し、別のMacで読み込めます。";
 "roadmap.notifications.title" = "タイマーの通知";
 "roadmap.notifications.detail" = "ほかのアプリを使っていても、タイマーが終了したら通知でお知らせします。";
+"roadmap.siri-ai.title" = "Siriに話しかけるだけ";
+"roadmap.siri-ai.detail" = "アプリ名を言わなくても、Siriが付箋を見つけたり、タイマーをすぐ始めたりします。";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "StickyPresenterと一緒に%d回の発表をやり遂げました";

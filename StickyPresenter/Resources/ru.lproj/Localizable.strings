@@ -277,6 +277,7 @@
 "intent.timer.title" = "Запустить таймер";
 "intent.timer.description" = "Запускает таймер обратного отсчёта поверх слайдов.";
 "intent.timer.minutes" = "Минуты";
+"intent.timer.minutes.description" = "Длительность таймера в минутах";
 "intent.timer.summary ${minutes}" = "Запустить таймер на ${minutes} мин";
 "intent.timer.short" = "Запустить таймер";
 "intent.pomodoro.title" = "Запустить помодоро";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Показать таймеры";
 "intent.timers.description" = "Открывает панель таймеров.";
 "intent.timers.short" = "Таймеры";
+"entity.note.type" = "Заметка";
+"intent.openNote.title" = "Открыть заметку";
+"intent.openNote.description" = "Выводит одну из заметок на экране на передний план.";
+"intent.openNote.note" = "Заметка";
+"intent.openNote.note.description" = "Заметка, которую нужно вывести вперёд";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Лучшая поддержка VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Сохраняйте заметки в файл и загружайте их на другом Mac.";
 "roadmap.notifications.title" = "Уведомления таймера";
 "roadmap.notifications.detail" = "Получайте уведомление, когда таймер закончится, даже если вы в другом приложении.";
+"roadmap.siri-ai.title" = "Просто попросите Siri";
+"roadmap.siri-ai.detail" = "Siri найдёт ваши заметки и сразу запустит таймер, даже если не называть приложение.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Выступлений вместе со StickyPresenter: %d";

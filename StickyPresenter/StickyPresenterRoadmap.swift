@@ -45,6 +45,9 @@ extension StickyPresenterSpec {
         .init(id: "notifications", status: .planned,
               title: NSLocalizedString("roadmap.notifications.title", comment: "Roadmap item: Timer alerts"),
               detail: NSLocalizedString("roadmap.notifications.detail", comment: "Roadmap item detail: Timer alerts")),
+        .init(id: "siri-ai", status: .planned,
+              title: NSLocalizedString("roadmap.siri-ai.title", comment: "Roadmap item: Ask Siri without naming the app"),
+              detail: NSLocalizedString("roadmap.siri-ai.detail", comment: "Roadmap item detail: Ask Siri without naming the app")),
     ]}
 }
 

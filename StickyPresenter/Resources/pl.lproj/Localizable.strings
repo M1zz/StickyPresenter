@@ -277,6 +277,7 @@
 "intent.timer.title" = "Uruchom minutnik";
 "intent.timer.description" = "Uruchamia minutnik odliczający, który unosi się nad slajdami.";
 "intent.timer.minutes" = "Minuty";
+"intent.timer.minutes.description" = "Długość minutnika w minutach";
 "intent.timer.summary ${minutes}" = "Uruchom minutnik na ${minutes} min";
 "intent.timer.short" = "Uruchom minutnik";
 "intent.pomodoro.title" = "Uruchom Pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Pokaż minutniki";
 "intent.timers.description" = "Otwiera panel minutników.";
 "intent.timers.short" = "Minutniki";
+"entity.note.type" = "Notatka";
+"intent.openNote.title" = "Otwórz notatkę";
+"intent.openNote.description" = "Przenosi jedną z notatek na ekranie na wierzch.";
+"intent.openNote.note" = "Notatka";
+"intent.openNote.note.description" = "Notatka do przeniesienia na wierzch";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Lepsza obsługa VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Zapisz notatki do pliku i wczytaj je ponownie na innym Macu.";
 "roadmap.notifications.title" = "Alerty minutnika";
 "roadmap.notifications.detail" = "Otrzymaj powiadomienie, gdy minutnik się skończy, nawet gdy jesteś w innej aplikacji.";
+"roadmap.siri-ai.title" = "Po prostu poproś Siri";
+"roadmap.siri-ai.detail" = "Siri znajdzie twoje notatki i od razu uruchomi minutnik, nawet jeśli nie podasz nazwy aplikacji.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Wystąpienia ze StickyPresenter: %d";

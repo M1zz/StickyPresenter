@@ -277,6 +277,7 @@
 "intent.timer.title" = "Käynnistä ajastin";
 "intent.timer.description" = "Käynnistää diojesi päällä leijuvan laskuriajastimen.";
 "intent.timer.minutes" = "Minuutit";
+"intent.timer.minutes.description" = "Ajastimen kesto minuutteina";
 "intent.timer.summary ${minutes}" = "Käynnistä ${minutes} minuutin ajastin";
 "intent.timer.short" = "Käynnistä ajastin";
 "intent.pomodoro.title" = "Käynnistä pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Näytä ajastimet";
 "intent.timers.description" = "Avaa ajastinpaneelin.";
 "intent.timers.short" = "Ajastimet";
+"entity.note.type" = "Muistilappu";
+"intent.openNote.title" = "Avaa muistilappu";
+"intent.openNote.description" = "Tuo yhden näytön muistilapuista päällimmäiseksi.";
+"intent.openNote.note" = "Muistilappu";
+"intent.openNote.note.description" = "Päällimmäiseksi tuotava muistilappu";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Parempi VoiceOver-tuki";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Tallenna muistilaput tiedostoon ja lataa ne uudelleen toisella Macilla.";
 "roadmap.notifications.title" = "Ajastinhälytykset";
 "roadmap.notifications.detail" = "Saa ilmoitus, kun ajastin päättyy, vaikka olisit toisessa apissa.";
+"roadmap.siri-ai.title" = "Pyydä vain Siriä";
+"roadmap.siri-ai.detail" = "Siri löytää muistilappusi ja käynnistää ajastimet heti, vaikka et sanoisi apin nimeä.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Olet pitänyt StickyPresenterin kanssa jo %d esitystä";

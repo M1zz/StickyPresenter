@@ -290,6 +290,7 @@ class NoteManager: ObservableObject {
         let archive = NoteArchive(notes: notes.map(\.record), recentlyClosed: recentlyClosed)
         do {
             try store.save(archive)
+            NoteLibrary.reindex(archive.notes)   // Siri · Spotlight 가 지금 노트를 찾게 (→ AppShortcuts.swift)
         } catch {
             NSLog("StickyPresenter: failed to save notes — \(error.localizedDescription)")
         }

@@ -277,6 +277,7 @@
 "intent.timer.title" = "Start timer";
 "intent.timer.description" = "Starter en nedtællingstimer, der svæver over dine slides.";
 "intent.timer.minutes" = "Minutter";
+"intent.timer.minutes.description" = "Timerens længde i minutter";
 "intent.timer.summary ${minutes}" = "Start en timer på ${minutes} min.";
 "intent.timer.short" = "Start timer";
 "intent.pomodoro.title" = "Start pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Vis timere";
 "intent.timers.description" = "Åbner timerpanelet.";
 "intent.timers.short" = "Timere";
+"entity.note.type" = "Seddel";
+"intent.openNote.title" = "Åbn seddel";
+"intent.openNote.description" = "Henter en af sedlerne på din skærm frem forrest.";
+"intent.openNote.note" = "Seddel";
+"intent.openNote.note.description" = "Sedlen, der skal hentes frem";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Bedre understøttelse af VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Gem dine sedler i en fil, og indlæs dem igen på en anden Mac.";
 "roadmap.notifications.title" = "Timeradvarsler";
 "roadmap.notifications.detail" = "Få en notifikation, når en timer slutter, også mens du er i et andet program.";
+"roadmap.siri-ai.title" = "Bare spørg Siri";
+"roadmap.siri-ai.detail" = "Siri finder dine sedler og starter timere med det samme, også selvom du ikke siger appens navn.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Du har gennemført %d oplæg med StickyPresenter";

@@ -277,6 +277,7 @@
 "intent.timer.title" = "Zamanlayıcı Başlat";
 "intent.timer.description" = "Slaytlarınızın üzerinde süzülen bir geri sayım zamanlayıcısı başlatır.";
 "intent.timer.minutes" = "Dakika";
+"intent.timer.minutes.description" = "Zamanlayıcının süresi (dakika)";
 "intent.timer.summary ${minutes}" = "${minutes} dakikalık zamanlayıcı başlat";
 "intent.timer.short" = "Zamanlayıcı Başlat";
 "intent.pomodoro.title" = "Pomodoro Başlat";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Zamanlayıcıları Göster";
 "intent.timers.description" = "Zamanlayıcı panelini açar.";
 "intent.timers.short" = "Zamanlayıcılar";
+"entity.note.type" = "Not";
+"intent.openNote.title" = "Notu Aç";
+"intent.openNote.description" = "Ekrandaki notlardan birini en öne getirir.";
+"intent.openNote.note" = "Not";
+"intent.openNote.note.description" = "Öne getirilecek not";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Daha iyi VoiceOver desteği";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Notlarınızı bir dosyaya kaydedin ve başka bir Mac’te yeniden yükleyin.";
 "roadmap.notifications.title" = "Zamanlayıcı uyarıları";
 "roadmap.notifications.detail" = "Başka bir uygulamadayken bile zamanlayıcı bittiğinde bildirim alın.";
+"roadmap.siri-ai.title" = "Siri'ye söylemeniz yeterli";
+"roadmap.siri-ai.detail" = "Uygulamanın adını söylemeseniz de Siri notlarınızı bulur ve zamanlayıcıyı hemen başlatır.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "StickyPresenter ile %d sunumu tamamladın";

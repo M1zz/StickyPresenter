@@ -1,5 +1,6 @@
 import AppIntents
 import AppKit
+import CoreSpotlight
 
 // MARK: - App Shortcuts (단축어 · Spotlight · Siri)
 // 메뉴 막대 단축키(⌘⌃)와 같은 동작을 단축어 앱에서도 부른다.
@@ -14,7 +15,8 @@ struct StartTimerIntent: AppIntent {
     static var description = IntentDescription("intent.timer.description")
     static var openAppWhenRun = true
 
-    @Parameter(title: "intent.timer.minutes", default: 5, inclusiveRange: (1, 600))
+    @Parameter(title: "intent.timer.minutes", description: "intent.timer.minutes.description",
+               default: 5, inclusiveRange: (1, 600))
     var minutes: Int
 
     static var parameterSummary: some ParameterSummary {
@@ -67,6 +69,98 @@ struct ShowTimersIntent: AppIntent {
     func perform() async throws -> some IntentResult {
         NoteManager.shared.openTimerList()
         return .result()
+    }
+}
+
+// MARK: - 스티키 노트 (Siri · Spotlight)
+// 화면에 붙인 노트를 Siri · Spotlight 가 글로 찾는다. 누르면 그 노트가 맨 앞으로 온다.
+// 읽기는 저장 파일(notes.json)을 바로 읽는다 — 저장할 때마다 다시 색인하므로 늘 같은 내용이다.
+// 색인(IndexedEntity)은 macOS 15 부터라 그 부분만 나눠 둔다.
+
+struct NoteEntity: AppEntity {
+    static let typeDisplayRepresentation = TypeDisplayRepresentation(name: "entity.note.type")
+    static let defaultQuery = NoteQuery()
+
+    let id: UUID
+    let text: String
+
+    var displayRepresentation: DisplayRepresentation {
+        let firstLine = text.split(whereSeparator: \.isNewline).first.map(String.init) ?? text
+        return DisplayRepresentation(title: "\(String(firstLine.prefix(60)))")
+    }
+}
+
+@available(macOS 15.0, *)
+extension NoteEntity: IndexedEntity {
+    var attributeSet: CSSearchableItemAttributeSet {
+        let set = defaultAttributeSet
+        set.textContent = text
+        return set
+    }
+}
+
+struct NoteQuery: EntityStringQuery {
+    func entities(for identifiers: [UUID]) async throws -> [NoteEntity] {
+        let wanted = Set(identifiers)
+        return NoteLibrary.all().filter { wanted.contains($0.id) }
+    }
+
+    /// 노트 글에서 찾는다(대소문자 · 악센트 무시).
+    func entities(matching string: String) async throws -> [NoteEntity] {
+        let query = string.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty else { return [] }
+        return NoteLibrary.all().filter { $0.text.range(of: query, options: [.caseInsensitive, .diacriticInsensitive]) != nil }
+    }
+
+    func suggestedEntities() async throws -> [NoteEntity] {
+        NoteLibrary.all()
+    }
+}
+
+/// 노트를 맨 앞으로 가져온다. Spotlight · Siri 결과를 누르면 여기로 온다.
+struct OpenNoteIntent: OpenIntent {
+    static var title: LocalizedStringResource = "intent.openNote.title"
+    static var description = IntentDescription("intent.openNote.description")
+
+    @Parameter(title: "intent.openNote.note", description: "intent.openNote.note.description")
+    var target: NoteEntity
+
+    init() {}
+
+    @MainActor
+    func perform() async throws -> some IntentResult {
+        let manager = NoteManager.shared
+        if let note = manager.notes.first(where: { $0.id == target.id }) {
+            manager.showNote(note)
+            note.panel?.makeKeyAndOrderFront(nil)
+            NSApp.activate(ignoringOtherApps: true)
+        }
+        return .result()
+    }
+}
+
+enum NoteLibrary {
+    /// 글이 있는 노트만. 닫은 노트(되살리기 목록)는 넣지 않는다.
+    static func all() -> [NoteEntity] {
+        guard case .loaded(let archive) = NoteFileStore.default.load() else { return [] }
+        return entities(archive.notes)
+    }
+
+    static func entities(_ records: [NoteRecord]) -> [NoteEntity] {
+        records
+            .filter { !$0.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+            .map { NoteEntity(id: $0.id, text: $0.text) }
+    }
+
+    /// 저장할 때마다 부른다. 지운 노트가 남지 않게 통째로 다시 싣는다.
+    static func reindex(_ records: [NoteRecord]) {
+        guard #available(macOS 15.0, *) else { return }
+        let notes = entities(records)
+        Task {
+            let index = CSSearchableIndex.default()
+            try? await index.deleteAppEntities(ofType: NoteEntity.self)
+            try? await index.indexAppEntities(notes)
+        }
     }
 }
 

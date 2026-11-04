@@ -277,6 +277,7 @@
 "intent.timer.title" = "Start tidtaker";
 "intent.timer.description" = "Starter en nedtellingstidtaker som svever over lysbildene dine.";
 "intent.timer.minutes" = "Minutter";
+"intent.timer.minutes.description" = "Lengden på tidtakeren, i minutter";
 "intent.timer.summary ${minutes}" = "Start en tidtaker på ${minutes} minutter";
 "intent.timer.short" = "Start tidtaker";
 "intent.pomodoro.title" = "Start pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Vis tidtakere";
 "intent.timers.description" = "Åpner tidtakerpanelet.";
 "intent.timers.short" = "Tidtakere";
+"entity.note.type" = "Notat";
+"intent.openNote.title" = "Åpne notat";
+"intent.openNote.description" = "Henter et av notatene på skjermen frem øverst.";
+"intent.openNote.note" = "Notat";
+"intent.openNote.note.description" = "Notatet som skal hentes frem";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Bedre støtte for VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Lagre notatene dine i en fil og last dem inn igjen på en annen Mac.";
 "roadmap.notifications.title" = "Tidtakervarsler";
 "roadmap.notifications.detail" = "Få et varsel når en tidtaker er ferdig, selv når du er i en annen app.";
+"roadmap.siri-ai.title" = "Bare spør Siri";
+"roadmap.siri-ai.detail" = "Siri finner notatene dine og starter tidtakere med en gang, selv om du ikke sier navnet på appen.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Du har fullført %d presentasjoner med StickyPresenter";

@@ -277,6 +277,7 @@
 "intent.timer.title" = "Iniciar temporizador";
 "intent.timer.description" = "Inicia un temporizador de cuenta atrás que flota sobre tus diapositivas.";
 "intent.timer.minutes" = "Minutos";
+"intent.timer.minutes.description" = "Duración del temporizador, en minutos";
 "intent.timer.summary ${minutes}" = "Iniciar un temporizador de ${minutes} minutos";
 "intent.timer.short" = "Iniciar temporizador";
 "intent.pomodoro.title" = "Iniciar Pomodoro";
@@ -288,6 +289,11 @@
 "intent.timers.title" = "Mostrar temporizadores";
 "intent.timers.description" = "Abre el panel de temporizadores.";
 "intent.timers.short" = "Temporizadores";
+"entity.note.type" = "Nota adhesiva";
+"intent.openNote.title" = "Abrir nota adhesiva";
+"intent.openNote.description" = "Trae al frente una de las notas adhesivas de tu pantalla.";
+"intent.openNote.note" = "Nota";
+"intent.openNote.note.description" = "La nota que quieres traer al frente";
 
 /* ===== 앞으로 만들 기능 (원본: StickyPresenterRoadmap.swift) ===== */
 "roadmap.a11y.voiceover.title" = "Mejor compatibilidad con VoiceOver";
@@ -308,6 +314,8 @@
 "roadmap.backup.detail" = "Guarda tus notas en un archivo y cárgalas de nuevo en otro Mac.";
 "roadmap.notifications.title" = "Avisos del temporizador";
 "roadmap.notifications.detail" = "Recibe una notificación cuando termine un temporizador, aunque estés en otra app.";
+"roadmap.siri-ai.title" = "Solo pídeselo a Siri";
+"roadmap.siri-ai.detail" = "Siri encontrará tus notas e iniciará temporizadores al instante, aunque no digas el nombre de la app.";
 
 /* 응원(팁) — 나머지 문구는 LeeoKit 에 있다 */
 "tip.talks" = "Ya has dado %d presentaciones con StickyPresenter";
