@@ -68,6 +68,11 @@ iPhone 리모컨 (별도 무료 앱)
 
 macOS 14 이상에서 사용할 수 있습니다.
 
+구독 안내
+StickyPresenter Plus와 Pro 구독은 자동 갱신 구독입니다. 갱신일 24시간 전까지 해지하지 않으면 Apple 계정으로 자동 결제되며, 설정의 구독 관리에서 언제든 해지할 수 있습니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보처리방침: https://m1zz.github.io/StickyPresenter/ko/privacy.html
+
 ### 키워드
 
 발표타이머,발표메모,강사,연설,세미나,텔레프롬프터,프롬프터,프레젠테이션,슬라이드,카운트다운,뽀모도로,화면메모,대본,스피치,강연,강의,플로팅,리허설,원고,스티커,발표연습,수업
@@ -148,6 +153,11 @@ PRIVACY
 No account, no ads. Your notes and scripts never leave your Mac. Apart from anonymous usage statistics, the app goes online only when you choose to send feedback from Settings, and it talks to the iPhone remote over a direct, encrypted connection on your local network.
 
 Requires macOS 14 or later.
+
+Subscriptions
+StickyPresenter Plus and Pro are auto-renewing subscriptions. Payment is charged to your Apple Account, and the subscription renews unless canceled at least 24 hours before the current period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 ### 키워드
 
@@ -230,6 +240,11 @@ No account, no ads. Your notes and scripts never leave your Mac. Apart from anon
 
 Requires macOS 14 or later.
 
+Subscriptions
+StickyPresenter Plus and Pro are auto-renewing subscriptions. Payment is charged to your Apple Account, and the subscription renews unless cancelled at least 24 hours before the current period ends. Manage or cancel any time in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/StickyPresenter/en/privacy.html
+
 ### 키워드
 
 presentation,teleprompter,slides,countdown,pomodoro,rehearsal,overlay,script,speaker,cue,talk,clock
@@ -310,6 +325,11 @@ iPhoneリモコン (無料の別アプリ)
 アカウント登録も広告もありません。付箋や原稿がMacの外に出ることはありません。匿名の利用統計を除き、インターネットに接続するのは、設定からご意見を送信するときだけです。iPhoneリモコンとは、ローカルネットワーク上の暗号化された直接接続で通信します。
 
 macOS 14以降が必要です。
+
+サブスクリプションについて
+StickyPresenter の Plus と Pro は自動更新のサブスクリプションです。 期間終了の24時間前までに解約しない限り、Apple Account に自動で請求され更新されます。設定のサブスクリプション管理からいつでも解約できます。
+利用規約（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+プライバシーポリシー: https://m1zz.github.io/StickyPresenter/ja/privacy.html
 
 ### 키워드
 
@@ -392,6 +412,11 @@ IPHONE 遥控器（独立的免费 App）
 
 需要 macOS 14 或更高版本。
 
+订阅说明
+StickyPresenter Plus 和 Pro 均为自动续期订阅。 费用从你的 Apple 账户扣除，除非在当期结束前至少 24 小时取消，否则将自动续期。可随时在“设置”中管理或取消。
+使用条款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策: https://m1zz.github.io/StickyPresenter/zh-Hans/privacy.html
+
 ### 키워드
 
 演示,幻灯片,番茄钟,计时器,彩排,讲稿,悬浮,置顶,汇报,答辩,路演,台词,发言,课件,培训,全屏,提示,便利贴,专注,时钟,口播,备忘,定时器,倒数,会议,教学,直播,录课,主持,演说,闹钟,工作
@@ -434,7 +459,6 @@ NOTAS ADHESIVAS FLOTANTES
 • Bloquea una nota para que un clic accidental no la cambie en mitad de la charla
 • Convierte al instante lo que tengas en el portapapeles en una nota nueva
 • Las notas se guardan mientras escribes y se reabren justo donde las dejaste
-• ¿Cerraste una por error? Recupérala desde el menú
 
 TEMPORIZADORES DE CUENTA ATRÁS
 • Widgets cuadrados que puedes ampliar hasta leerlos desde el fondo de la sala
@@ -463,7 +487,7 @@ FÁCIL DE APRENDER
 • Si quieres, ábrela al iniciar sesión para tenerla lista antes de cada charla
 
 CONTROL REMOTO EN IPHONE (APP GRATUITA APARTE)
-Durante la charla, tu Mac queda fuera de alcance. Remote Controller for Sticky te pone el temporizador en la mano: inicia y pausa, suma o resta 30 segundos, cambia el tamaño y el tema del widget o muévelo si tapa algo de la diapositiva. Se vincula con tu Mac mediante un código de cuatro dígitos, así que en una sala llena de Mac solo habla con el tuyo.
+Durante la charla, tu Mac queda fuera de alcance. Remote Controller for Sticky te pone el temporizador en la mano: inicia y pausa, suma o resta 30 segundos, cambia el tamaño y el tema del widget o muévelo si tapa algo de la diapositiva.
 
 GRATIS, PLUS Y PRO
 Cinco notas, dos temporizadores, Pomodoro, el teleprompter y los atajos son gratis, suficiente para dar una presentación entera. Plus desbloquea notas y temporizadores ilimitados, el tema Camaleón, la música de fondo, la edición de ajustes rápidos y el teleprompter invertido. Pro añade el control remoto del iPhone, la ventana de temporizador para compartir pantalla, Atajos y Siri, y el widget del centro de notificaciones. Puedes probar el control remoto gratis en tres presentaciones. Paga al año o una sola vez para siempre.
@@ -472,6 +496,11 @@ PRIVACIDAD
 Sin cuenta y sin anuncios. Tus notas y guiones nunca salen de tu Mac. Salvo las estadísticas de uso anónimas, la app solo se conecta a internet cuando decides enviar comentarios desde Ajustes, y se comunica con el control remoto del iPhone mediante una conexión directa y cifrada en tu red local.
 
 Requiere macOS 14 o posterior.
+
+Suscripciones
+Las suscripciones a StickyPresenter Plus y Pro son de renovación automática. El cargo se realiza en tu cuenta de Apple y la suscripción se renueva salvo que la canceles al menos 24 horas antes de que termine el periodo. Puedes gestionarla o cancelarla cuando quieras en Ajustes.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidad: https://m1zz.github.io/StickyPresenter/es/privacy.html
 
 ### 키워드
 
@@ -515,7 +544,6 @@ SCHWEBENDE HAFTNOTIZEN
 • Sperre eine Notiz, damit ein versehentlicher Klick sie mitten im Vortrag nicht verändert
 • Mach aus dem Inhalt der Zwischenablage sofort eine neue Notiz
 • Notizen werden beim Tippen gespeichert und öffnen sich an derselben Stelle wieder
-• Aus Versehen geschlossen? Hol die Notiz über das Menü zurück
 
 COUNTDOWN-TIMER
 • Quadratische Widgets, die du so weit vergrößern kannst, dass man sie bis in die letzte Reihe liest
@@ -541,10 +569,9 @@ KURZBEFEHLE, DIE ÜBERALL FUNKTIONIEREN
 
 LEICHT ZU LERNEN
 • Beim ersten Start öffnet sich ein integriertes Handbuch, das du im Hilfe-Menü jederzeit mit einem Klick erreichst
-• Auf Wunsch öffnet sich die App beim Anmelden, damit sie vor jedem Vortrag bereitsteht
 
 IPHONE-FERNBEDIENUNG (EIGENE KOSTENLOSE APP)
-Während eines Vortrags ist dein Mac außer Reichweite. Remote Controller for Sticky legt den Timer in deine Hand: starten und pausieren, 30 Sekunden hinzufügen oder abziehen, Größe und Design des Widgets ändern oder es von einer Folie wegschieben, die es verdeckt. Die Kopplung mit deinem Mac läuft über einen vierstelligen Code, sodass die Fernbedienung selbst in einem Raum voller Macs nur mit deinem spricht.
+Während eines Vortrags ist dein Mac außer Reichweite. Remote Controller for Sticky legt den Timer in deine Hand: starten und pausieren, 30 Sekunden hinzufügen oder abziehen, Größe und Design des Widgets ändern oder es von einer Folie wegschieben, die es verdeckt.
 
 KOSTENLOS, PLUS UND PRO
 Fünf Notizen, zwei Timer, Pomodoro, der Teleprompter und die Tastaturkurzbefehle sind kostenlos – genug für einen ganzen Vortrag. Plus schaltet unbegrenzt Notizen und Timer, das Chamäleon-Design, Hintergrundmusik, das Bearbeiten von Schnellvorgaben und den gespiegelten Teleprompter frei. Pro ergänzt die iPhone-Fernbedienung, das Timer-Fenster für die Bildschirmfreigabe, Kurzbefehle und Siri sowie das Widget in der Mitteilungszentrale. Die Fernbedienung kannst du drei Vorträge lang kostenlos ausprobieren. Zahle jährlich oder einmal für immer.
@@ -553,6 +580,11 @@ DATENSCHUTZ
 Kein Konto, keine Werbung. Deine Notizen und Skripte verlassen deinen Mac nie. Abgesehen von anonymen Nutzungsstatistiken geht die App nur online, wenn du in den Einstellungen Feedback sendest, und mit der iPhone-Fernbedienung spricht sie über eine direkte, verschlüsselte Verbindung in deinem lokalen Netzwerk.
 
 Erfordert macOS 14 oder neuer.
+
+Abonnements
+StickyPresenter Plus und Pro sind sich automatisch verlängernde Abos. Die Zahlung erfolgt über deinen Apple Account. Das Abo verlängert sich, sofern du nicht mindestens 24 Stunden vor Ablauf des Zeitraums kündigst. Verwalten oder kündigen kannst du jederzeit in den Einstellungen.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Datenschutzerklärung: https://m1zz.github.io/StickyPresenter/de/privacy.html
 
 ### 키워드
 
@@ -586,7 +618,7 @@ Votre texte et votre compte à rebours au-dessus de Keynote en plein écran. Not
 
 ### 설명
 
-Quand on présente, les deux choses dont on a le plus besoin sont aussi les plus difficiles à voir : son texte et l’heure. StickyPresenter les garde toutes deux en surimpression au-dessus de ce qui s’affiche à l’écran, y compris Keynote en plein écran, sans jamais avoir à quitter vos diapositives pour les consulter.
+Quand on présente, les deux choses dont on a le plus besoin sont aussi les plus difficiles à voir : son texte et l’heure. StickyPresenter les garde toutes deux au-dessus de tout ce qui s’affiche, y compris Keynote en plein écran, sans quitter vos diapositives.
 
 L’app vit dans la barre des menus : pas d’icône dans le Dock, pas de fenêtres supplémentaires à gérer.
 
@@ -596,7 +628,6 @@ NOTES FLOTTANTES
 • Verrouillez une note pour qu’un clic malencontreux ne la modifie pas en pleine intervention
 • Transformez instantanément le contenu du presse-papiers en nouvelle note
 • Les notes s’enregistrent au fil de la frappe et se rouvrent exactement là où vous les avez laissées
-• Une note fermée par erreur ? Rouvrez-la depuis le menu
 
 MINUTEURS À COMPTE À REBOURS
 • Des widgets carrés que vous pouvez agrandir jusqu’à les lire depuis le fond de la salle
@@ -618,14 +649,12 @@ MUSIQUE DE FOND
 
 DES RACCOURCIS QUI FONCTIONNENT PARTOUT
 • Les raccourcis Commande-Contrôle ouvrent les notes, les minuteurs et le prompteur même quand une autre app est au premier plan
-• Aucune autorisation d’accessibilité requise
 
 SIMPLE À PRENDRE EN MAIN
 • Un guide intégré s’ouvre au premier lancement et reste à un clic dans le menu Aide
-• Option d’ouverture à la connexion pour être prêt avant chaque intervention
 
 TÉLÉCOMMANDE IPHONE (APP GRATUITE SÉPARÉE)
-Pendant une intervention, votre Mac est hors de portée. Remote Controller for Sticky met le minuteur au creux de votre main : démarrez et mettez en pause, ajoutez ou retirez 30 secondes, changez la taille et le thème du widget, ou écartez-le d’une diapositive qu’il masque. L’appairage se fait avec un code à quatre chiffres : même dans une salle remplie de Mac, la télécommande ne parle qu’au vôtre.
+Pendant une intervention, votre Mac est hors de portée. Remote Controller for Sticky met le minuteur au creux de votre main : démarrez et mettez en pause, ajoutez ou retirez 30 secondes, changez la taille et le thème du widget, ou écartez-le d’une diapositive qu’il masque.
 
 GRATUIT, PLUS ET PRO
 Cinq notes, deux minuteurs, le Pomodoro, le prompteur et les raccourcis sont gratuits, de quoi mener une présentation entière. Plus débloque les notes et minuteurs illimités, le thème Caméléon, la musique de fond, la modification des préréglages et le prompteur en miroir. Pro ajoute la télécommande iPhone, la fenêtre de minuteur pour le partage d’écran, Raccourcis et Siri, ainsi que le widget du Centre de notifications. Vous pouvez essayer la télécommande gratuitement pendant trois présentations. Payez à l’année ou une fois pour toujours.
@@ -634,6 +663,11 @@ CONFIDENTIALITÉ
 Pas de compte, pas de publicité. Vos notes et vos textes ne quittent jamais votre Mac. Hormis des statistiques d’utilisation anonymes, l’app ne se connecte à Internet que lorsque vous choisissez d’envoyer un commentaire depuis les Réglages, et elle dialogue avec la télécommande iPhone par une connexion directe et chiffrée sur votre réseau local.
 
 Nécessite macOS 14 ou ultérieur.
+
+Abonnements
+Les abonnements StickyPresenter Plus et Pro sont à renouvellement automatique. Le paiement est débité sur votre compte Apple, et l’abonnement est reconduit sauf résiliation au moins 24 heures avant la fin de la période en cours. Gérez-le ou résiliez-le à tout moment dans Réglages.
+Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité : https://m1zz.github.io/StickyPresenter/fr/privacy.html
 
 ### 키워드
 
@@ -716,6 +750,11 @@ Nessun account, nessuna pubblicità. Note e testi non lasciano mai il tuo Mac. O
 
 Richiede macOS 14 o successivo.
 
+Abbonamenti
+Gli abbonamenti StickyPresenter Plus e Pro si rinnovano automaticamente. Il pagamento viene addebitato sul tuo Account Apple e l’abbonamento si rinnova se non lo disdici almeno 24 ore prima della fine del periodo. Puoi gestirlo o disdirlo in qualsiasi momento in Impostazioni.
+Condizioni d’uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Informativa sulla privacy: https://m1zz.github.io/StickyPresenter/it/privacy.html
+
 ### 키워드
 
 presentazione,slide,relatore,pomodoro,conferenza,discorso,cronometro,promemoria,copione,lezione
@@ -796,6 +835,11 @@ PRIVACIDADE
 Sem conta, sem anúncios. Suas notas e roteiros nunca saem do seu Mac. Além de estatísticas de uso anônimas, o app só se conecta à internet quando você escolhe enviar um comentário em Ajustes, e conversa com o controle remoto do iPhone por uma conexão direta e criptografada na sua rede local.
 
 Requer macOS 14 ou posterior.
+
+Assinaturas
+As assinaturas StickyPresenter Plus e Pro são renovadas automaticamente. A cobrança é feita na sua Conta Apple, e a assinatura é renovada a menos que você cancele pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser em Ajustes.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de Privacidade: https://m1zz.github.io/StickyPresenter/pt-BR/privacy.html
 
 ### 키워드
 
@@ -878,6 +922,11 @@ StickyPresenter
 
 Требуется macOS 14 или новее.
 
+Подписки
+StickyPresenter Plus и Pro — подписки с автопродлением. Оплата списывается с вашего Аккаунта Apple, и подписка продлевается, если не отменить её минимум за 24 часа до конца периода. Управлять подпиской и отменить её можно в Настройках.
+Условия использования (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Политика конфиденциальности: https://m1zz.github.io/StickyPresenter/ru/privacy.html
+
 ### 키워드
 
 презентация,слайды,доклад,докладчик,помодоро,лекция,конференция,речь,секундомер,суфлёр,сценарий
@@ -958,6 +1007,11 @@ iPhone 遙控器（另一個免費 App）
 不需要帳號，也沒有廣告。你的便利貼與講稿絕不會離開你的 Mac。除了匿名的使用統計，App 只有在你從設定主動送出意見時才會連上網際網路，並透過區域網路上的加密直接連線與 iPhone 遙控器溝通。
 
 需要 macOS 14 或以上版本。
+
+訂閱說明
+StickyPresenter Plus 與 Pro 皆為自動續訂訂閱。 費用會從你的 Apple 帳號扣款，除非在當期結束前至少 24 小時取消，否則將自動續訂。可隨時在「設定」中管理或取消。
+使用條款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隱私權政策: https://m1zz.github.io/StickyPresenter/zh-Hant/privacy.html
 
 ### 키워드
 
@@ -1040,6 +1094,11 @@ StickyPresenter
 
 ต้องใช้ macOS 14 ขึ้นไป
 
+การสมัครสมาชิก
+StickyPresenter Plus และ Pro เป็นการสมัครสมาชิกที่ต่ออายุอัตโนมัติ ระบบจะเรียกเก็บเงินจากบัญชี Apple ของคุณและต่ออายุให้ เว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ จัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่า
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://m1zz.github.io/StickyPresenter/th/privacy.html
+
 ### 키워드
 
 พรีเซนต์,สไลด์,นำเสนอ,สุนทรพจน์,โพโมโดโร,บรรยาย,สัมมนา,นับถอยหลัง,สคริปต์,ซ้อมพูด,ไมโครโฟน,วิทยากร
@@ -1120,6 +1179,11 @@ QUYỀN RIÊNG TƯ
 Không tài khoản, không quảng cáo. Ghi chú và kịch bản của bạn không bao giờ rời khỏi Mac. Ngoài số liệu sử dụng ẩn danh, ứng dụng chỉ kết nối Internet khi bạn chọn gửi góp ý từ Cài đặt, và trao đổi với điều khiển từ xa trên iPhone qua kết nối trực tiếp, được mã hóa trong mạng cục bộ của bạn.
 
 Yêu cầu macOS 14 trở lên.
+
+Gói đăng ký
+StickyPresenter Plus và Pro là các gói đăng ký tự động gia hạn. Phí được tính vào Tài khoản Apple của bạn và gói sẽ tự gia hạn trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong Cài đặt.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Chính sách quyền riêng tư: https://m1zz.github.io/StickyPresenter/vi/privacy.html
 
 ### 키워드
 
@@ -1202,6 +1266,11 @@ SOUKROMÍ
 
 Vyžaduje macOS 14 nebo novější.
 
+Předplatné
+StickyPresenter Plus a Pro jsou automaticky obnovovaná předplatná. Platba se strhává z vašeho Apple účtu a předplatné se obnoví, pokud ho nezrušíte alespoň 24 hodin před koncem období. Spravovat nebo zrušit ho můžete kdykoli v Nastavení.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://m1zz.github.io/StickyPresenter/cs/privacy.html
+
 ### 키워드
 
 prezentace,slajdy,řečník,pomodoro,přednáška,projev,stopky,odpočet,scénář,zkouška,konference,prompter
@@ -1283,6 +1352,11 @@ Ingen konto, ingen reklamer. Dine sedler og manuskripter forlader aldrig din Mac
 
 Kræver macOS 14 eller nyere.
 
+Abonnementer
+StickyPresenter Plus og Pro er abonnementer, der fornyes automatisk. Betalingen trækkes på din Apple-konto, og abonnementet fornyes, medmindre du opsiger det mindst 24 timer før perioden slutter. Administrer eller opsig når som helst i Indstillinger.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatlivspolitik: https://m1zz.github.io/StickyPresenter/da/privacy.html
+
 ### 키워드
 
 præsentation,slides,foredrag,taler,pomodoro,undervisning,konference,tale,stopur,nedtælling
@@ -1315,7 +1389,7 @@ StickyPresenter
 
 ### 설명
 
-Όταν παρουσιάζετε, τα δύο πράγματα που χρειάζεστε περισσότερο είναι και τα πιο δύσκολα να τα βλέπετε: το κείμενό σας και το ρολόι. Το StickyPresenter κρατά και τα δύο να επιπλέουν πάνω από ό,τι υπάρχει στην οθόνη, ακόμη και πάνω από το Keynote σε πλήρη οθόνη, ώστε να μη χρειάζεται ποτέ να φύγετε από τις διαφάνειες για να τα δείτε.
+Όταν παρουσιάζετε, τα δύο πράγματα που χρειάζεστε περισσότερο είναι και τα πιο δύσκολα να τα βλέπετε: το κείμενό σας και το ρολόι. Το StickyPresenter κρατά και τα δύο να επιπλέουν πάνω από ό,τι υπάρχει στην οθόνη, ακόμη και πάνω από το Keynote σε πλήρη οθόνη, χωρίς να φύγετε ποτέ από τις διαφάνειες.
 
 Ζει διακριτικά στη γραμμή μενού: χωρίς εικονίδιο στο Dock, χωρίς επιπλέον παράθυρα να διαχειριστείτε.
 
@@ -1325,7 +1399,6 @@ StickyPresenter
 • Κλειδώστε ένα σημείωμα ώστε ένα τυχαίο κλικ να μην το αλλάξει στη μέση της ομιλίας
 • Μετατρέψτε αμέσως το περιεχόμενο του προχείρου σε νέο σημείωμα
 • Τα σημειώματα αποθηκεύονται καθώς πληκτρολογείτε και ανοίγουν ακριβώς εκεί που τα αφήσατε
-• Κλείσατε ένα σημείωμα κατά λάθος; Ανοίξτε το ξανά από το μενού
 
 ΧΡΟΝΟΜΕΤΡΑ ΑΝΤΙΣΤΡΟΦΗΣ ΜΕΤΡΗΣΗΣ
 • Τετράγωνα widget που μεγαλώνουν τόσο ώστε να διαβάζονται από το βάθος της αίθουσας
@@ -1347,14 +1420,12 @@ StickyPresenter
 
 ΣΥΝΤΟΜΕΥΣΕΙΣ ΠΟΥ ΛΕΙΤΟΥΡΓΟΥΝ ΠΑΝΤΟΥ
 • Οι συντομεύσεις Command-Control ανοίγουν σημειώματα, χρονόμετρα και τηλεπροτροπέα ακόμη και όταν άλλη εφαρμογή βρίσκεται μπροστά
-• Δεν απαιτείται άδεια προσβασιμότητας
 
 ΕΥΚΟΛΑ ΑΠΟ ΤΗΝ ΑΡΧΗ
 • Ένας ενσωματωμένος οδηγός ανοίγει την πρώτη φορά και είναι πάντα ένα κλικ μακριά στο μενού Βοήθεια
-• Επιλογή ανοίγματος κατά τη σύνδεση, ώστε να είστε έτοιμοι πριν από κάθε ομιλία
 
 ΤΗΛΕΧΕΙΡΙΣΤΗΡΙΟ iPhone (ΞΕΧΩΡΙΣΤΗ ΔΩΡΕΑΝ ΕΦΑΡΜΟΓΗ)
-Κατά την παρουσίαση, το Mac είναι μακριά σας. Το Remote Controller for Sticky βάζει το χρονόμετρο στο χέρι σας: ξεκινήστε και κάντε παύση, προσθέστε ή αφαιρέστε 30 δευτερόλεπτα, αλλάξτε μέγεθος και θέμα του widget ή μετακινήστε ένα widget που καλύπτει μια διαφάνεια. Η σύζευξη γίνεται με τετραψήφιο κωδικό: ακόμη και σε αίθουσα γεμάτη Mac, το τηλεχειριστήριο μιλά μόνο με το δικό σας.
+Κατά την παρουσίαση, το Mac είναι μακριά σας. Το Remote Controller for Sticky βάζει το χρονόμετρο στο χέρι σας: ξεκινήστε και κάντε παύση, προσθέστε ή αφαιρέστε 30 δευτερόλεπτα, αλλάξτε μέγεθος και θέμα του widget ή μετακινήστε ένα widget που καλύπτει μια διαφάνεια.
 
 ΔΩΡΕΑΝ, PLUS ΚΑΙ PRO
 Πέντε σημειώματα, δύο χρονόμετρα, Pomodoro, ο τηλεπροτροπέας και οι συντομεύσεις είναι δωρεάν, αρκετά για μια ολόκληρη παρουσίαση. Το Plus ξεκλειδώνει απεριόριστα σημειώματα και χρονόμετρα, το θέμα Χαμαιλέοντας, μουσική υπόκρουση, επεξεργασία προεπιλογών και κατοπτρικό τηλεπροτροπέα. Το Pro προσθέτει το τηλεχειριστήριο iPhone, το παράθυρο χρονομέτρου για κοινή χρήση οθόνης, Συντομεύσεις και Siri, και το widget στο Κέντρο γνωστοποιήσεων. Το τηλεχειριστήριο δοκιμάζεται δωρεάν σε τρεις παρουσιάσεις. Πληρώστε ετησίως ή μία φορά για πάντα.
@@ -1363,6 +1434,11 @@ StickyPresenter
 Χωρίς λογαριασμό, χωρίς διαφημίσεις. Τα σημειώματα και τα κείμενά σας δεν φεύγουν ποτέ από το Mac. Εκτός από ανώνυμα στατιστικά χρήσης, η εφαρμογή συνδέεται στο διαδίκτυο μόνο όταν επιλέξετε να στείλετε σχόλια από τις Ρυθμίσεις, και επικοινωνεί με το τηλεχειριστήριο iPhone μέσω άμεσης, κρυπτογραφημένης σύνδεσης στο τοπικό σας δίκτυο.
 
 Απαιτεί macOS 14 ή μεταγενέστερο.
+
+Συνδρομές
+Τα StickyPresenter Plus και Pro είναι συνδρομές με αυτόματη ανανέωση. Η χρέωση γίνεται στον λογαριασμό Apple σας και η συνδρομή ανανεώνεται, εκτός αν την ακυρώσετε τουλάχιστον 24 ώρες πριν λήξει η περίοδος. Διαχειριστείτε ή ακυρώστε τη συνδρομή οποτεδήποτε από τις Ρυθμίσεις.
+Όροι χρήσης (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Πολιτική απορρήτου: https://m1zz.github.io/StickyPresenter/el/privacy.html
 
 ### 키워드
 
@@ -1445,6 +1521,11 @@ Ei tiliä, ei mainoksia. Muistilappusi ja puheesi eivät koskaan poistu Macistas
 
 Vaatii macOS 14:n tai uudemman.
 
+Tilaukset
+StickyPresenter Plus ja Pro ovat automaattisesti uusiutuvia tilauksia. Maksu veloitetaan Apple-tililtäsi, ja tilaus uusiutuu, ellei sitä peruta vähintään 24 tuntia ennen jakson päättymistä. Hallitse tai peru tilaus milloin tahansa Asetuksissa.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://m1zz.github.io/StickyPresenter/fi/privacy.html
+
 ### 키워드
 
 diat,puhe,puhuja,pomodoro,luento,konferenssi,seminaari,laskuri,käsikirjoitus,harjoittelu,kello
@@ -1525,6 +1606,11 @@ PRIVASI
 Tanpa akun, tanpa iklan. Catatan dan naskah Anda tidak pernah meninggalkan Mac. Selain statistik penggunaan anonim, aplikasi hanya terhubung ke internet saat Anda memilih mengirim masukan dari Pengaturan, dan berkomunikasi dengan remote iPhone lewat koneksi langsung terenkripsi di jaringan lokal Anda.
 
 Membutuhkan macOS 14 atau lebih baru.
+
+Langganan
+StickyPresenter Plus dan Pro adalah langganan yang diperpanjang otomatis. Pembayaran ditagihkan ke Akun Apple Anda dan langganan diperpanjang kecuali dibatalkan paling lambat 24 jam sebelum periode berakhir. Kelola atau batalkan kapan saja di Pengaturan.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Kebijakan Privasi: https://m1zz.github.io/StickyPresenter/id/privacy.html
 
 ### 키워드
 
@@ -1607,6 +1693,11 @@ Ingen konto, ingen reklame. Notatene og manusene dine forlater aldri Macen. Bort
 
 Krever macOS 14 eller nyere.
 
+Abonnementer
+StickyPresenter Plus og Pro er abonnementer som fornyes automatisk. Betalingen belastes Apple-kontoen din, og abonnementet fornyes med mindre du sier det opp minst 24 timer før perioden er over. Administrer eller si opp når som helst i Innstillinger.
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://m1zz.github.io/StickyPresenter/nb/privacy.html
+
 ### 키워드
 
 presentasjon,lysbilder,foredrag,taler,pomodoro,konferanse,undervisning,stoppeklokke,manus,øving
@@ -1687,6 +1778,11 @@ PRIVACY
 Geen account, geen advertenties. Je notities en scripts verlaten je Mac nooit. Behalve anonieme gebruiksstatistieken maakt de app alleen verbinding met internet als jij zelf feedback verstuurt vanuit Instellingen, en praat ze met de iPhone-afstandsbediening via een directe, versleutelde verbinding op je lokale netwerk.
 
 Vereist macOS 14 of nieuwer.
+
+Abonnementen
+StickyPresenter Plus en Pro zijn automatisch verlengende abonnementen. De betaling loopt via je Apple Account en het abonnement wordt verlengd, tenzij je minstens 24 uur voor het einde van de periode opzegt. Beheer of zeg op wanneer je wilt in Instellingen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://m1zz.github.io/StickyPresenter/nl/privacy.html
 
 ### 키워드
 
@@ -1769,6 +1865,11 @@ Bez konta, bez reklam. Twoje notatki i teksty nigdy nie opuszczają Maca. Poza a
 
 Wymaga macOS 14 lub nowszego.
 
+Subskrypcje
+StickyPresenter Plus i Pro to subskrypcje odnawiane automatycznie. Opłata jest pobierana z Twojego konta Apple, a subskrypcja odnawia się, jeśli nie anulujesz jej co najmniej 24 godziny przed końcem okresu. Zarządzaj subskrypcją lub anuluj ją w dowolnej chwili w Ustawieniach.
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://m1zz.github.io/StickyPresenter/pl/privacy.html
+
 ### 키워드
 
 prezentacja,slajdy,prelegent,pomodoro,wykład,konferencja,przemówienie,stoper,scenariusz,próba
@@ -1850,6 +1951,11 @@ Inget konto, inga annonser. Dina lappar och manus lämnar aldrig din Mac. Förut
 
 Kräver macOS 14 eller senare.
 
+Prenumerationer
+StickyPresenter Plus och Pro är prenumerationer som förnyas automatiskt. Betalningen dras från ditt Apple-konto och prenumerationen förnyas om du inte avslutar den minst 24 timmar innan perioden slutar. Hantera eller avsluta när som helst i Inställningar.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Integritetspolicy: https://m1zz.github.io/StickyPresenter/sv/privacy.html
+
 ### 키워드
 
 presentation,föredrag,talare,pomodoro,föreläsning,konferens,stoppur,manus,repetition,seminarium
@@ -1930,6 +2036,11 @@ GİZLİLİK
 Hesap yok, reklam yok. Notlarınız ve konuşma metinleriniz Mac’inizden asla çıkmaz. Anonim kullanım istatistikleri dışında uygulama yalnızca siz Ayarlar’dan geri bildirim göndermeyi seçtiğinizde internete bağlanır; iPhone uzaktan kumandasıyla yerel ağınızda doğrudan, şifreli bir bağlantıyla konuşur.
 
 macOS 14 veya sonrası gerekir.
+
+Abonelikler
+StickyPresenter Plus ve Pro otomatik yenilenen aboneliklerdir. Ödeme Apple Hesabınızdan alınır ve dönem bitmeden en az 24 saat önce iptal edilmezse abonelik yenilenir. Ayarlar'dan istediğiniz zaman yönetebilir veya iptal edebilirsiniz.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik Politikası: https://m1zz.github.io/StickyPresenter/tr/privacy.html
 
 ### 키워드
 
