@@ -18,7 +18,7 @@
           "locale": "ko"
         }
       ],
-      "productID": "com.leeo.StickyPresenter.plus.lifetime",
+      "productID": "com.leeo.StickyPresenter.mac.plus.lifetime",
       "referenceName": "Plus Lifetime",
       "type": "NonConsumable"
     },
@@ -38,7 +38,7 @@
           "locale": "ko"
         }
       ],
-      "productID": "com.leeo.StickyPresenter.pro.lifetime",
+      "productID": "com.leeo.StickyPresenter.mac.pro.lifetime",
       "referenceName": "Pro Lifetime",
       "type": "NonConsumable"
     },
@@ -58,7 +58,7 @@
           "locale": "ko"
         }
       ],
-      "productID": "com.leeo.StickyPresenter.pro.upgrade",
+      "productID": "com.leeo.StickyPresenter.mac.pro.upgrade",
       "referenceName": "Pro Upgrade",
       "type": "NonConsumable"
     },
@@ -78,7 +78,7 @@
           "locale": "ko"
         }
       ],
-      "productID": "com.leeo.StickyPresenter.pro.graduate",
+      "productID": "com.leeo.StickyPresenter.mac.pro.graduate",
       "referenceName": "Pro Graduate",
       "type": "NonConsumable"
     },
@@ -177,7 +177,7 @@
               "locale": "ko"
             }
           ],
-          "productID": "com.leeo.StickyPresenter.pro.weekly",
+          "productID": "com.leeo.StickyPresenter.mac.pro.weekly",
           "recurringSubscriptionPeriod": "P1W",
           "referenceName": "StickyPresenter Pro Weekly",
           "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
@@ -203,7 +203,7 @@
               "locale": "ko"
             }
           ],
-          "productID": "com.leeo.StickyPresenter.pro.monthly",
+          "productID": "com.leeo.StickyPresenter.mac.pro.monthly",
           "recurringSubscriptionPeriod": "P1M",
           "referenceName": "StickyPresenter Pro Monthly",
           "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
@@ -229,7 +229,7 @@
               "locale": "ko"
             }
           ],
-          "productID": "com.leeo.StickyPresenter.pro.yearly",
+          "productID": "com.leeo.StickyPresenter.mac.pro.yearly",
           "recurringSubscriptionPeriod": "P1Y",
           "referenceName": "StickyPresenter Pro Yearly",
           "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
@@ -262,7 +262,7 @@
               "locale": "ko"
             }
           ],
-          "productID": "com.leeo.StickyPresenter.plus.weekly",
+          "productID": "com.leeo.StickyPresenter.mac.plus.weekly",
           "recurringSubscriptionPeriod": "P1W",
           "referenceName": "StickyPresenter Plus Weekly",
           "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
@@ -288,7 +288,7 @@
               "locale": "ko"
             }
           ],
-          "productID": "com.leeo.StickyPresenter.plus.monthly",
+          "productID": "com.leeo.StickyPresenter.mac.plus.monthly",
           "recurringSubscriptionPeriod": "P1M",
           "referenceName": "StickyPresenter Plus Monthly",
           "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
@@ -314,7 +314,7 @@
               "locale": "ko"
             }
           ],
-          "productID": "com.leeo.StickyPresenter.plus.yearly",
+          "productID": "com.leeo.StickyPresenter.mac.plus.yearly",
           "recurringSubscriptionPeriod": "P1Y",
           "referenceName": "StickyPresenter Plus Yearly",
           "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",

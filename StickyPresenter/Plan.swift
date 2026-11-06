@@ -42,19 +42,22 @@ enum PlanEntitlement {
     //    주 · 월 · 연 구독 여섯은 한 구독 그룹에 넣고 Pro 를 위 단계로 둔다(서로 갈아탈 때 남은 기간이 정산된다).
 
     private static let base = "com.leeo.StickyPresenter"
+    /// 유료 상품은 `.mac` 을 붙인다. `com.leeo.StickyPresenter.plus.*` 는 리모컨 앱 쪽에 한 번 만들어졌다가
+    /// 지워져 다시 쓸 수 없다(App Store Connect 는 지운 상품 ID 를 돌려주지 않는다).
+    private static let paid = base + ".mac"
 
-    static let plusWeeklyID   = base + ".plus.weekly"
-    static let plusMonthlyID  = base + ".plus.monthly"
-    static let plusYearlyID   = base + ".plus.yearly"
-    static let plusLifetimeID = base + ".plus.lifetime"
-    static let proWeeklyID    = base + ".pro.weekly"
-    static let proMonthlyID   = base + ".pro.monthly"
-    static let proYearlyID    = base + ".pro.yearly"
-    static let proLifetimeID  = base + ".pro.lifetime"
+    static let plusWeeklyID   = paid + ".plus.weekly"
+    static let plusMonthlyID  = paid + ".plus.monthly"
+    static let plusYearlyID   = paid + ".plus.yearly"
+    static let plusLifetimeID = paid + ".plus.lifetime"
+    static let proWeeklyID    = paid + ".pro.weekly"
+    static let proMonthlyID   = paid + ".pro.monthly"
+    static let proYearlyID    = paid + ".pro.yearly"
+    static let proLifetimeID  = paid + ".pro.lifetime"
     /// Plus 평생을 산 사람만 보는 Pro 평생 올리기.
-    static let upgradeID      = base + ".pro.upgrade"
+    static let upgradeID      = paid + ".pro.upgrade"
     /// 구독 중인 사람의 졸업가 Pro 평생 (→ LeeoGraduation).
-    static let graduateID     = base + ".pro.graduate"
+    static let graduateID     = paid + ".pro.graduate"
 
     /// 개발자 응원 팁. 아무것도 열지 않는다 — `tierByProduct` 에 넣지 않는다.
     static let tipProductIDs = [base + ".tip.small", base + ".tip.medium", base + ".tip.large"]

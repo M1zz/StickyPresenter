@@ -9,7 +9,7 @@ final class PlanTests: XCTestCase {
     // MARK: 상품 → 칸
 
     func testProductIDsMatchStoreConsole() {
-        let base = "com.leeo.StickyPresenter"
+        let base = "com.leeo.StickyPresenter.mac"
         XCTAssertEqual(E.plusYearlyID, base + ".plus.yearly")
         XCTAssertEqual(E.plusLifetimeID, base + ".plus.lifetime")
         XCTAssertEqual(E.proWeeklyID, base + ".pro.weekly")
