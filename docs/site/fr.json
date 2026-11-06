@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter : notes et minuteur au-dessus de Keynote en plein écran",
-  "description": "App de barre des menus pour Mac qui garde vos notes, un compte à rebours et un prompteur au-dessus de Keynote en plein écran. Tout est gratuit.",
+  "description": "App de barre des menus pour Mac qui garde vos notes, un compte à rebours et un prompteur au-dessus de Keynote en plein écran. Votre première présentation est gratuite du début à la fin.",
   "hero": {
     "headline": "Votre texte et votre temps,\nsur la diapo",
     "lead": "Passez Keynote en plein écran : vos notes et votre minuteur restent par-dessus. Ils ne volent jamais le focus à l’app de présentation, votre télécommande fait donc toujours défiler les diapos.",
     "cta": "Télécharger gratuitement sur le Mac App Store",
-    "note": "Toutes les fonctions sont gratuites. macOS 14 ou ultérieur."
+    "note": "Gratuit pour commencer, Plus et Pro quand il vous en faut plus. macOS 14 ou ultérieur."
   },
   "demo": {
     "title": "Essayez sur une diapo",
@@ -125,8 +125,8 @@
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "C’est vraiment gratuit ?",
-        "a": "Oui. Toutes les fonctions sont gratuites, et l’app iPhone Remote Controller for Sticky est une app distincte, elle aussi gratuite. Si l’app vous rend service, vous pouvez laisser un pourboire au développeur dans les Réglages ; cela ne débloque rien."
+        "q": "Qu’est-ce qui est gratuit, et qu’apportent Plus et Pro ?",
+        "a": "Cinq notes, deux minuteurs, le Pomodoro, le prompteur et les raccourcis sont gratuits, de quoi mener une présentation entière. Plus débloque les notes et minuteurs illimités, le thème Caméléon, la musique de fond, la modification des préréglages et le prompteur en miroir. Pro ajoute la télécommande iPhone, la fenêtre de minuteur pour le partage d’écran, Raccourcis et Siri, ainsi que le widget du Centre de notifications. Vous pouvez essayer la télécommande gratuitement pendant trois présentations. Payez à l’année ou une fois pour toujours. Les pourboires ne débloquent rien."
       },
       {
         "q": "Puis-je n’afficher que le minuteur en partage d’écran ou en recopie ?",

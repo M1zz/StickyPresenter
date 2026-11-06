@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Bitti";
 "widget.running" = "%@ · Çalışıyor";
 "widget.paused" = "%@ · Duraklatıldı";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "StickyPresenter Pro ile kalan süreyi doğrudan Bildirim Merkezi’nde görün.";
+"widget.locked.title" = "Pro ile açılır";

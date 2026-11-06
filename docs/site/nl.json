@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: notities en timer boven Keynote op volledig scherm",
-  "description": "Mac-app in de menubalk die je notities, een aftelling en een teleprompter boven Keynote op volledig scherm houdt. Alles is gratis.",
+  "description": "Mac-app in de menubalk die je notities, een aftelling en een teleprompter boven Keynote op volledig scherm houdt. Je eerste presentatie is van begin tot eind gratis.",
   "hero": {
     "headline": "Je tekst en je tijd,\nrecht op de dia",
     "lead": "Zet Keynote op volledig scherm en je notities en timer blijven erbovenop staan. Ze pakken nooit de focus van de presentatie-app af, dus je clicker bladert gewoon door de dia’s.",
     "cta": "Gratis downloaden in de Mac App Store",
-    "note": "Alle functies zijn gratis. Vereist macOS 14 of nieuwer."
+    "note": "Gratis beginnen, Plus en Pro als je meer nodig hebt. Vereist macOS 14 of nieuwer."
   },
   "demo": {
     "title": "Probeer het op een dia",
@@ -125,8 +125,8 @@
     "title": "Veelgestelde vragen",
     "items": [
       {
-        "q": "Is het echt gratis?",
-        "a": "Ja. Alle functies zijn gratis, en de iPhone-app Remote Controller for Sticky is een aparte, gratis app. Heb je er wat aan, dan kun je de ontwikkelaar via Instellingen een fooi geven; daarmee ontgrendel je niets."
+        "q": "Wat is gratis, en wat voegen Plus en Pro toe?",
+        "a": "Vijf notities, twee timers, Pomodoro, de teleprompter en de toetscombinaties zijn gratis, genoeg voor een hele presentatie. Plus ontgrendelt onbeperkt notities en timers, het Kameleon-thema, achtergrondmuziek, voorinstellingen bewerken en de gespiegelde teleprompter. Pro voegt de iPhone-afstandsbediening toe, het timervenster voor schermdeling, Opdrachten en Siri en de widget in het berichtencentrum. De afstandsbediening probeer je drie presentaties lang gratis. Betaal per jaar of eenmalig voor altijd. Fooien ontgrendelen niets."
       },
       {
         "q": "Kan ik bij schermdeling of synchrone weergave alleen de timer laten zien?",

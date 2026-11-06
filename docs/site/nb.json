@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: notater og tidtaker over Keynote i fullskjerm",
-  "description": "Mac-app i menylinjen som holder notatene dine, en nedtelling og en teleprompter over Keynote i fullskjerm. Alt er gratis.",
+  "description": "Mac-app i menylinjen som holder notatene dine, en nedtelling og en teleprompter over Keynote i fullskjerm. Den første presentasjonen din er gratis fra start til slutt.",
   "hero": {
     "headline": "Manus og gjenstående tid\nrett på lysbildet",
     "lead": "Sett Keynote i fullskjerm, så blir notatene og tidtakeren liggende oppå. De tar aldri fokus fra presentasjonsappen, så klikkeren blar fortsatt i lysbildene.",
     "cta": "Last ned gratis i Mac App Store",
-    "note": "Alle funksjoner er gratis. Krever macOS 14 eller nyere."
+    "note": "Start gratis, og velg Plus eller Pro når du trenger mer. Krever macOS 14 eller nyere."
   },
   "demo": {
     "title": "Prøv det på et lysbilde",
@@ -125,8 +125,8 @@
     "title": "Vanlige spørsmål",
     "items": [
       {
-        "q": "Er det virkelig gratis?",
-        "a": "Ja. Alle funksjoner er gratis, og iPhone-appen Remote Controller for Sticky er en egen, gratis app. Hvis appen hjelper deg, kan du gi utvikleren tips under Innstillinger; det låser ikke opp noe."
+        "q": "Hva er gratis, og hva gir Plus og Pro?",
+        "a": "Fem notater, to tidtakere, Pomodoro, teleprompteren og hurtigtastene er gratis – nok til en hel presentasjon. Plus låser opp ubegrensede notater og tidtakere, Kameleon-temaet, bakgrunnsmusikk, redigering av hurtigvalg og speilvendt teleprompter. Pro legger til iPhone-fjernkontrollen, tidtakervinduet for skjermdeling, Snarveier og Siri og widgeten i varslingssenteret. Du kan prøve fjernkontrollen gratis i tre presentasjoner. Betal årlig eller én gang for alltid. Tips låser ikke opp noe."
       },
       {
         "q": "Kan jeg vise bare tidtakeren ved skjermdeling eller speiling?",

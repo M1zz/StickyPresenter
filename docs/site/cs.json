@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: poznámky a časovač nad Keynote na celé obrazovce",
-  "description": "Aplikace pro řádek nabídek na Macu, která drží poznámky, odpočet a teleprompter nad Keynote na celé obrazovce. Vše je zdarma.",
+  "description": "Aplikace pro řádek nabídek na Macu, která drží poznámky, odpočet a teleprompter nad Keynote na celé obrazovce. První prezentaci odvedete od začátku do konce zdarma.",
   "hero": {
     "headline": "Text i zbývající čas\npřímo na snímku",
     "lead": "Přepněte Keynote na celou obrazovku a poznámky i časovač zůstanou nad ním. Prezentační aplikaci nikdy neberou fokus, takže ovladač dál přepíná snímky.",
     "cta": "Stáhnout zdarma v Mac App Store",
-    "note": "Všechny funkce jsou zdarma. Vyžaduje macOS 14 nebo novější."
+    "note": "Začněte zdarma, Plus a Pro až budete potřebovat víc. Vyžaduje macOS 14 nebo novější."
   },
   "demo": {
     "title": "Vyzkoušejte to na snímku",
@@ -125,8 +125,8 @@
     "title": "Časté dotazy",
     "items": [
       {
-        "q": "Je to opravdu zdarma?",
-        "a": "Ano. Všechny funkce jsou zdarma a aplikace pro iPhone Remote Controller for Sticky je samostatná bezplatná aplikace. Pokud vám pomáhá, můžete vývojáři v Nastavení nechat spropitné; nic tím neodemknete."
+        "q": "Co je zdarma a co přidávají Plus a Pro?",
+        "a": "Pět poznámek, dva časovače, Pomodoro, teleprompter a klávesové zkratky jsou zdarma – stačí na celou prezentaci. Plus odemyká neomezené poznámky a časovače, motiv Chameleon, hudbu na pozadí, úpravu předvoleb a zrcadlený teleprompter. Pro přidává dálkové ovládání z iPhonu, okno časovače pro sdílení obrazovky, Zkratky a Siri a widget v Oznamovacím centru. Dálkové ovládání si můžete zdarma vyzkoušet při třech prezentacích. Plaťte ročně, nebo jednou navždy. Spropitné nic neodemyká."
       },
       {
         "q": "Můžu při sdílení nebo zrcadlení obrazovky ukázat jen časovač?",

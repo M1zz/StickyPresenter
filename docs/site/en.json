@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: notes and a timer that float above full-screen Keynote",
-  "description": "A Mac menu bar app that keeps your speaker notes, a countdown timer and a teleprompter on top of full-screen Keynote. Every feature is free.",
+  "description": "A Mac menu bar app that keeps your speaker notes, a countdown timer and a teleprompter on top of full-screen Keynote. Your first talk is free from start to finish.",
   "hero": {
     "headline": "Your script and your time,\nright on the slide",
     "lead": "Put Keynote in full screen and your sticky notes and timer stay on top of it. They never take focus from the presentation app, so your clicker still advances the slides.",
     "cta": "Get it free on the Mac App Store",
-    "note": "Every feature is free. Requires macOS 14 or later."
+    "note": "Free to start, with Plus and Pro when you need more. Requires macOS 14 or later."
   },
   "demo": {
     "title": "Put it on a slide",
@@ -125,8 +125,8 @@
     "title": "Questions",
     "items": [
       {
-        "q": "Is it really free?",
-        "a": "Yes. Every feature is free, and the iPhone app Remote Controller for Sticky is a separate free app. If it helps you, you can leave the developer a tip in Settings; it doesn't unlock anything."
+        "q": "What's free, and what do Plus and Pro add?",
+        "a": "Five notes, two timers, Pomodoro, the teleprompter and the shortcuts are free, enough to give a whole talk. Plus unlocks unlimited notes and timers, the Chameleon theme, background music, preset editing and the mirrored teleprompter. Pro adds the iPhone remote, the timer window for screen sharing, Shortcuts and Siri, and the Notification Center widget. You can try the remote free for three talks. Pay yearly or once for life. Tips never unlock anything."
       },
       {
         "q": "Can I show just the timer over screen sharing or mirroring?",

@@ -20,6 +20,9 @@ struct TeleprompterView: View {
 
     let onClose: () -> Void
 
+    /// 좌우 반전은 Plus 에서 열린다. 켜 둔 채 칸이 내려가면 바로 읽히게 되돌려 보인다.
+    private var mirrored: Bool { isMirrored && Gate.isOpen(.mirror) }
+
     /// 마지막 줄이 화면 위쪽 40% 지점에 닿으면 끝난 것으로 본다 — 끝까지 밀어 올리면
     /// 빈 화면만 남아 발표자가 대본이 끝났는지 잠깐 헷갈린다.
     private var maxOffset: CGFloat {
@@ -110,7 +113,7 @@ struct TeleprompterView: View {
                             .lineSpacing(CGFloat(fontSize) * 0.5)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(20)
-                            .scaleEffect(x: isMirrored ? -1 : 1, y: 1)
+                            .scaleEffect(x: mirrored ? -1 : 1, y: 1)
                             .background(GeometryReader { g in
                                 Color.clear
                                     .onAppear { contentHeight = g.size.height }
@@ -181,15 +184,15 @@ struct TeleprompterView: View {
                 .accessibilityLabel(isScrolling ? L("teleprompter.pause") : L("teleprompter.play"))
                 
                 // 켜짐을 색(노랑)만으로 알리지 않도록 모양도 바꾼다.
-                Button(action: { isMirrored.toggle() }) {
-                    Image(systemName: isMirrored ? "arrow.left.arrow.right.square.fill" : "arrow.left.arrow.right")
+                Button(action: { if isMirrored || Gate.open(.mirror) { isMirrored.toggle() } }) {
+                    Image(systemName: mirrored ? "arrow.left.arrow.right.square.fill" : "arrow.left.arrow.right")
                         .font(.system(size: 14))
-                        .foregroundColor(isMirrored ? .yellow : .white.opacity(0.7))
+                        .foregroundColor(mirrored ? .yellow : .white.opacity(0.7))
                 }
                 .buttonStyle(.plain)
                 .help(L("Mirror text (for teleprompter glass)"))
                 .accessibilityLabel(L("Mirror text (for teleprompter glass)"))
-                .accessibilityAddTraits(isMirrored ? .isSelected : [])
+                .accessibilityAddTraits(mirrored ? .isSelected : [])
                 .accessibilityInputLabels([L("a11y.input.mirror"), L("Mirror text (for teleprompter glass)")])
             }
             

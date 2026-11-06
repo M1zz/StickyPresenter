@@ -43,6 +43,8 @@ final class RemoteControlHost: NSObject, ObservableObject {
         case outdatedRemote
         /// 광고를 시작하지 못했다 — 리모컨이 이 Mac 을 아예 찾을 수 없다.
         case advertisingFailed
+        /// 무료 체험(발표 3번)을 다 써서 리모컨의 명령을 받지 않는다. Pro 에서 열린다.
+        case trialEnded
     }
     @Published private(set) var problem: Problem?
 
@@ -184,8 +186,13 @@ final class RemoteControlHost: NSObject, ObservableObject {
                 placement: placement(of: entry.widgetPanel)
             )
         }
+        let purchases = Purchases.shared
+        let unlimited = purchases.allows(.remote)
         let packet = RemotePacket.state(
-            RemoteState(hostName: peerID.displayName, timers: timers, desktop: ScreenMap.desktop())
+            RemoteState(hostName: peerID.displayName, timers: timers, desktop: ScreenMap.desktop(),
+                        hostTier: purchases.effectiveTier.wireName,
+                        remoteTrialsLeft: unlimited ? nil : purchases.remoteTrial.left,
+                        remoteLocked: purchases.remoteLocked)
         )
         guard let data = try? packet.encoded() else { return }
         for session in sessions where !session.connectedPeers.isEmpty {
@@ -231,9 +238,25 @@ final class RemoteControlHost: NSObject, ObservableObject {
         )
     }
 
+    // MARK: 체험
+
+    /// 리모컨이 붙었다. Pro 가 아니면 체험 한 번을 쓴다(같은 발표 안에서 다시 붙은 것은 세지 않는다).
+    /// 다 썼으면 연결은 둔 채 명령만 받지 않고, Mac 에 Pro 카드를 한 번 띄운다.
+    private func admitTrialIfNeeded() {
+        let purchases = Purchases.shared
+        guard !purchases.allows(.remote), !purchases.remoteTrial.admit() else { return }
+        problem = .trialEnded
+        Paywall.offer(.feature(.remote))
+    }
+
     // MARK: 명령 적용
 
     private func apply(_ command: RemoteCommand) {
+        // 체험을 다 쓴 무료 본체는 상태만 알려 주고 명령은 받지 않는다 (리모컨이 이유를 한 줄로 보인다).
+        guard command.isStateRequest || Purchases.shared.remoteControlAllowed() else {
+            broadcastState()
+            return
+        }
         let manager = NoteManager.shared
         let entries = manager.timerListManager.entries
         func entry(_ id: UUID) -> TimerEntry? { entries.first { $0.id == id } }
@@ -288,11 +311,19 @@ final class RemoteControlHost: NSObject, ObservableObject {
             guard seconds.isFinite, seconds >= 1, seconds <= maxTimerSeconds else { return }
             let e = TimerEntry(name: name, targetSeconds: seconds)
             e.setRunning(true)
-            manager.timerListManager.add(e)
+            // 무료 한도(타이머 2개)에 닿았으면 받지 않는다 — 발표 중 Mac 에 페이월을 띄우지 않는다.
+            manager.timerListManager.add(e, offersPaywall: false)
         }
 
         // 명령 결과가 리모컨에 곧바로 보이도록 즉시 되돌려준다.
         broadcastState()
+    }
+}
+
+private extension RemoteCommand {
+    var isStateRequest: Bool {
+        if case .requestState = self { return true }
+        return false
     }
 }
 
@@ -305,6 +336,7 @@ extension RemoteControlHost: MCSessionDelegate {
             case .connected:
                 self.problem = nil
                 self.updateConnectedCount()
+                self.admitTrialIfNeeded()
                 self.broadcastState()
             case .notConnected:
                 // 세션 하나에 리모컨 하나라, 끊기면 그 세션은 다시 쓸 일이 없다.

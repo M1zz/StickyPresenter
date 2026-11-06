@@ -128,13 +128,20 @@ enum WidgetTheme: String, CaseIterable {
         }
     }
 
-    var next: WidgetTheme {
+    /// 순서대로 다음 테마 (칸과 상관없이).
+    var cycled: WidgetTheme {
         switch self {
         case .system:    return .light
         case .light:     return .dark
         case .dark:      return .chameleon
         case .chameleon: return .system
         }
+    }
+
+    /// 넘기기 단추 · 리모컨이 고르는 다음 테마. 카멜레온은 Plus 에서 열려, 무료면 건너뛴다.
+    var next: WidgetTheme {
+        let next = cycled
+        return next == .chameleon && !Gate.isOpen(.chameleon) ? next.cycled : next
     }
 }
 
@@ -311,6 +318,7 @@ class TimerEntry: ObservableObject, Identifiable {
             self.isRunning = false
             self.playFinishSound()   // 완료 청각 피드백 (위젯이 숨겨져 있어도 울림)
             LeeoEngagement.shared.registerSignificantEvent()   // 발표를 시간 안에 마쳤다 — 만족도 질문의 근거
+            Purchases.recordFinishedTalk()   // '지금까지 5번 발표 시간을 지켰어요' 의 근거
             WidgetSync.refresh()     // 데스크톱 위젯을 "완료" 표시로 전환
             // 완료 차임이 배경음악에 묻히지 않도록 페이드아웃
             MusicPlayer.shared.syncWithTimers()
@@ -372,7 +380,13 @@ class TimerListManager: ObservableObject {
     var onAdd: ((TimerEntry) -> Void)?
     var onRemove: ((TimerEntry) -> Void)?
 
-    func add(_ entry: TimerEntry) {
+    /// 타이머를 띄운다. 무료 한도(2개)에 닿았으면 띄우지 않고 페이월을 연다 —
+    /// 이미 도는 타이머는 그대로다. `offersPaywall` 이 false 면(리모컨) 조용히 받지 않는다.
+    func add(_ entry: TimerEntry, offersPaywall: Bool = true) {
+        guard Gate.admitsTimer(having: entries.count, offering: offersPaywall) else {
+            entry.invalidate()   // 만들자마자 시작한 티커를 멈춘다
+            return
+        }
         entries.append(entry)
         onAdd?(entry)
         WidgetSync.refresh()
@@ -402,6 +416,7 @@ class TimerListManager: ObservableObject {
 struct TimerListView: View {
     @ObservedObject var manager: TimerListManager
     @ObservedObject private var presetStore = TimerPresetStore.shared
+    @ObservedObject private var purchases = Purchases.shared
     @State private var inputText = ""
     @State private var showInputHelp = false
     @FocusState private var focused: Bool
@@ -610,7 +625,8 @@ struct TimerListView: View {
             }
 
             // 발표를 마친 뒤(도는 타이머가 없을 때)에만 드물게 응원을 부탁한다 — 화면을 공유 중일 수 있다.
-            if !showReviewGate, !manager.entries.contains(where: { $0.isRunning }) {
+            // 응원 부탁은 이미 Pro 를 가진 사람에게만.
+            if !showReviewGate, purchases.tier == .pro, !manager.entries.contains(where: { $0.isRunning }) {
                 LeeoTipAskSlot<StickyPresenterSpec>(tipJar: StickyPresenterSpec.tipJar,
                                                     reached: StickyTipMoments.reachedNow)
                     .padding(.horizontal, 16)
@@ -630,6 +646,11 @@ struct TimerListView: View {
     /// 끝난 타이머를 지운 때 — 발표를 마치고 정리하는 순간에 "즐겁게 쓰고 계신가요?"를 묻는다.
     /// 화면을 공유 중일 수 있으니 아직 도는 타이머가 하나라도 있으면 묻지 않는다.
     private func askForReviewAfterTalk() {
+        // 무료로 다섯 번째 발표를 마쳤으면 그때 한 번만 Plus 를 보인다 (만족도 질문은 다음으로).
+        if !manager.entries.contains(where: { $0.isRunning }), purchases.takeTalksMoment() {
+            Paywall.present(.talks)
+            return
+        }
         guard LeeoReviewRequest.shouldRequest() else { return }
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 1_000_000_000)
@@ -854,7 +875,10 @@ struct TimerRowView: View {
                     .help("Align widget next to the panel")
 
                     // 윈도우: 이 타이머를 별도 윈도우로 열기 (화면 공유 / AirPlay)
-                    Button(action: { NoteManager.shared.openTimerWindow(for: entry) }) {
+                    Button(action: {
+                        guard Gate.open(.timerWindow) else { return }
+                        NoteManager.shared.openTimerWindow(for: entry)
+                    }) {
                         Text("Window").modifier(CtrlButtonStyle(fg: .secondary, bg: Color.primary.opacity(0.06)))
                     }
                     .buttonStyle(.plain)
@@ -991,6 +1015,10 @@ struct TimerRowView: View {
     /// 다음 테마로. 카멜레온 차례인데 화면 기록 권한이 없으면 먼저 이유를 설명하고,
     /// 사용자가 건너뛰면 카멜레온을 지나 다음 테마로 간다.
     private func advanceTheme() {
+        // 무료면 카멜레온을 건너뛴다. 처음 건너뛸 때 한 번 Plus 를 보인다.
+        if entry.theme.cycled == .chameleon, !Gate.isOpen(.chameleon) {
+            Paywall.offer(.feature(.chameleon))
+        }
         var next = entry.theme.next
         if next == .chameleon, !ScreenCapturePrimer.confirmChameleon() {
             next = next.next
@@ -1352,7 +1380,7 @@ struct PresetEditButton: View {
     @State private var isEditing = false
 
     var body: some View {
-        Button(action: { isEditing = true }) {
+        Button(action: { if Gate.open(.presets) { isEditing = true } }) {
             Image(systemName: "slider.horizontal.3")
                 .font(.system(size: 10, weight: .semibold))
                 .foregroundStyle(Color.accentColor.opacity(0.8))

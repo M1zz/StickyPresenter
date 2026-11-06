@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: muistilaput ja ajastin koko näytön Keynoten päällä",
-  "description": "Macin valikkorivin appi, joka pitää puhujan muistiinpanot, ajastimen ja teleprompterin koko näytön Keynoten päällä. Kaikki on ilmaista.",
+  "description": "Macin valikkorivin appi, joka pitää puhujan muistiinpanot, ajastimen ja teleprompterin koko näytön Keynoten päällä. Ensimmäinen esityksesi on ilmainen alusta loppuun.",
   "hero": {
     "headline": "Käsikirjoitus ja jäljellä oleva aika\nsuoraan dian päällä",
     "lead": "Laita Keynote koko näytölle, niin muistilaput ja ajastin pysyvät sen päällä. Ne eivät koskaan vie fokusta esitysapilta, joten esitysohjain vaihtaa dioja tavalliseen tapaan.",
     "cta": "Lataa ilmaiseksi Mac App Storesta",
-    "note": "Kaikki ominaisuudet ovat ilmaisia. Vaatii macOS 14:n tai uudemman."
+    "note": "Aloita ilmaiseksi ja valitse Plus tai Pro, kun tarvitset enemmän. Vaatii macOS 14:n tai uudemman."
   },
   "demo": {
     "title": "Kokeile dian päällä",
@@ -125,8 +125,8 @@
     "title": "Usein kysyttyä",
     "items": [
       {
-        "q": "Onko se todella ilmainen?",
-        "a": "On. Kaikki ominaisuudet ovat ilmaisia, ja iPhone-appi Remote Controller for Sticky on erillinen ilmainen appi. Jos appi on sinulle hyödyllinen, voit antaa kehittäjälle juomarahaa asetuksista; se ei avaa mitään lisää."
+        "q": "Mikä on ilmaista ja mitä Plus ja Pro tuovat?",
+        "a": "Viisi muistilappua, kaksi ajastinta, Pomodoro, teleprompteri ja pikanäppäimet ovat ilmaisia – riittävästi kokonaiseen esitykseen. Plus avaa rajattomat muistilaput ja ajastimet, kameleonttiteeman, taustamusiikin, pika-asetusten muokkauksen ja peilatun teleprompterin. Pro tuo lisäksi iPhone-kauko-ohjaimen, ajastinikkunan näytön jakoon, Pikakomennot ja Sirin sekä ilmoituskeskuksen widgetin. Kauko-ohjainta voi kokeilla ilmaiseksi kolmessa esityksessä. Maksa vuosittain tai kerran ikuisesti. Tippi ei avaa mitään."
       },
       {
         "q": "Voinko näyttää näytönjaossa tai peilauksessa vain ajastimen?",

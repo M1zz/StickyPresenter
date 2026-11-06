@@ -57,11 +57,33 @@ struct StickyPresenterWidgetEntryView: View {
     private static let finishedColor = Color(red: 1, green: 0.22, blue: 0.37)
 
     var body: some View {
-        if let snapshot = entry.snapshot {
+        if SharedPlanStore.widgetLocked {
+            lockedBody
+        } else if let snapshot = entry.snapshot {
             timerBody(snapshot)
         } else {
             emptyBody
         }
+    }
+
+    // MARK: Pro 가 아닐 때
+
+    /// 알림 센터 위젯은 Pro 에서 열린다. 앱이 칸을 아직 모르거나 상품이 없으면 잠그지 않는다 (SharedPlanStore).
+    private var lockedBody: some View {
+        VStack(spacing: 6) {
+            Image(systemName: "lock.fill")
+                .font(.system(size: 22))
+                .accessibilityHidden(true)
+            Text(L("widget.locked.title"))
+                .font(.headline)
+            if family != .systemSmall {
+                Text(L("widget.locked.detail"))
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .multilineTextAlignment(.center)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     // MARK: 타이머가 있을 때

@@ -25,6 +25,7 @@ struct StartTimerIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
+        guard Gate.open(.shortcuts) else { throw ShortcutsLocked() }
         let seconds = TimeInterval(minutes * 60)
         let manager = NoteManager.shared
         manager.openTimerList()
@@ -43,6 +44,7 @@ struct StartPomodoroIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
+        guard Gate.open(.shortcuts) else { throw ShortcutsLocked() }
         NoteManager.shared.startPomodoro()
         return .result()
     }
@@ -55,6 +57,7 @@ struct NewStickyNoteIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
+        guard Gate.open(.shortcuts) else { throw ShortcutsLocked() }
         NoteManager.shared.addNoteAtRandomPosition()
         return .result()
     }
@@ -70,6 +73,13 @@ struct ShowTimersIntent: AppIntent {
         NoteManager.shared.openTimerList()
         return .result()
     }
+}
+
+/// 단축어 · Siri 로 시작하기는 Pro 에서 열린다. 막히면 Mac 에 Pro 페이월을 띄우고(앱이 열리므로)
+/// 단축어 · Siri 에는 한 줄로 알린다 — 시작하지 못했으니 단축어의 다음 동작도 멈춘다.
+/// 타이머 보기 · 노트 열기는 이미 있는 것을 보는 일이라 잠그지 않는다.
+struct ShortcutsLocked: Error, CustomLocalizedStringResourceConvertible {
+    var localizedStringResource: LocalizedStringResource { "plan.shortcuts.dialog" }
 }
 
 // MARK: - 스티키 노트 (Siri · Spotlight)

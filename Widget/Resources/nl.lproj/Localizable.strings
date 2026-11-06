@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Klaar";
 "widget.running" = "%@ · Actief";
 "widget.paused" = "%@ · Gepauzeerd";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "Zie de resterende tijd direct in het berichtencentrum met StickyPresenter Pro.";
+"widget.locked.title" = "Beschikbaar met Pro";

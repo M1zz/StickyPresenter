@@ -1,0 +1,338 @@
+{
+  "identifier": "2615C60D-3945-41ED-9EAE-B76815578056",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "23.99",
+      "familyShareable": false,
+      "internalID": "64362FA8-8E16-49B8-A58E-E343534F16EB",
+      "localizations": [
+        {
+          "description": "Unlimited notes and timers, forever",
+          "displayName": "StickyPresenter Plus (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "노트와 타이머를 평생 마음껏",
+          "displayName": "StickyPresenter Plus (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.plus.lifetime",
+      "referenceName": "Plus Lifetime",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "35.99",
+      "familyShareable": false,
+      "internalID": "A48CA9E5-85D2-45E8-9DF8-704E886BFE70",
+      "localizations": [
+        {
+          "description": "Everything in Pro, forever",
+          "displayName": "StickyPresenter Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "Pro의 모든 것을 평생",
+          "displayName": "StickyPresenter Pro (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.pro.lifetime",
+      "referenceName": "Pro Lifetime",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "11.99",
+      "familyShareable": false,
+      "internalID": "FCA9F8CF-5F15-4E1C-AA6C-DA41EC9B6F5A",
+      "localizations": [
+        {
+          "description": "For Plus Lifetime owners",
+          "displayName": "Plus to Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "Plus 평생을 산 분께",
+          "displayName": "Plus에서 Pro로 (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.pro.upgrade",
+      "referenceName": "Pro Upgrade",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "23.99",
+      "familyShareable": false,
+      "internalID": "627D1DB2-F519-4902-A67C-B62E60F87D2A",
+      "localizations": [
+        {
+          "description": "A lifetime price for subscribers",
+          "displayName": "StickyPresenter Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "구독하신 분께만 드리는 평생",
+          "displayName": "StickyPresenter Pro (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.pro.graduate",
+      "referenceName": "Pro Graduate",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "0.99",
+      "familyShareable": false,
+      "internalID": "AE406CAA-BFF8-4516-8DC3-AE16DF78263F",
+      "localizations": [
+        {
+          "description": "Cheer on the developer",
+          "displayName": "Small Tip",
+          "locale": "en_US"
+        },
+        {
+          "description": "개발자 응원하기",
+          "displayName": "작은 응원",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.tip.small",
+      "referenceName": "Tip Small",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "2.99",
+      "familyShareable": false,
+      "internalID": "DDDD897E-B95A-448E-8EC4-B895CB17432E",
+      "localizations": [
+        {
+          "description": "Cheer on the developer",
+          "displayName": "Medium Tip",
+          "locale": "en_US"
+        },
+        {
+          "description": "개발자 응원하기",
+          "displayName": "보통 응원",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.tip.medium",
+      "referenceName": "Tip Medium",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "4.99",
+      "familyShareable": false,
+      "internalID": "722E74B4-7E72-4640-84ED-14A9E5FC3974",
+      "localizations": [
+        {
+          "description": "Cheer on the developer",
+          "displayName": "Large Tip",
+          "locale": "en_US"
+        },
+        {
+          "description": "개발자 응원하기",
+          "displayName": "큰 응원",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.tip.large",
+      "referenceName": "Tip Large",
+      "type": "Consumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "6778457299",
+    "_developerTeamID": "QGAQ3AY3R3",
+    "_failTransactionsEnabled": false,
+    "_lastSynchronizedDate": 0,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [
+    {
+      "id": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+      "localizations": [],
+      "name": "StickyPresenter Plus · Pro",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "1.49",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "FE5B5613-0D9C-4D84-A0EA-4869FAD61E1C",
+          "localizations": [
+            {
+              "description": "Run your talk without touching your Mac",
+              "displayName": "StickyPresenter Pro (Weekly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "손이 Mac에 닿지 않아도 발표를 지휘해요",
+              "displayName": "StickyPresenter Pro (주간)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.pro.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "StickyPresenter Pro Weekly",
+          "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "3.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "6E756B22-A288-4B4D-85A2-EEFFAC152306",
+          "localizations": [
+            {
+              "description": "Run your talk without touching your Mac",
+              "displayName": "StickyPresenter Pro (Monthly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "손이 Mac에 닿지 않아도 발표를 지휘해요",
+              "displayName": "StickyPresenter Pro (월간)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.pro.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "StickyPresenter Pro Monthly",
+          "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "11.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "F1448D7A-6063-45E0-8312-78F2103322BC",
+          "localizations": [
+            {
+              "description": "Run your talk without touching your Mac",
+              "displayName": "StickyPresenter Pro (Yearly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "손이 Mac에 닿지 않아도 발표를 지휘해요",
+              "displayName": "StickyPresenter Pro (연간)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.pro.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "StickyPresenter Pro Yearly",
+          "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+          "type": "RecurringSubscription",
+          "winbackOffers": [],
+          "introductoryOffer": {
+            "displayPrice": "5.99",
+            "internalID": "F72D96EA-D49B-472B-814D-6921DF4AE624",
+            "numberOfPeriods": 1,
+            "paymentMode": "payUpFront",
+            "subscriptionPeriod": "P1Y"
+          }
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "0.99",
+          "familyShareable": false,
+          "groupNumber": 2,
+          "internalID": "3ABC99C1-323E-450F-B80C-0123AB1D4466",
+          "localizations": [
+            {
+              "description": "Unlimited notes and timers, your own stage",
+              "displayName": "StickyPresenter Plus (Weekly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "노트와 타이머를 마음껏, 내 무대에 맞게",
+              "displayName": "StickyPresenter Plus (주간)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.plus.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "StickyPresenter Plus Weekly",
+          "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "2.49",
+          "familyShareable": false,
+          "groupNumber": 2,
+          "internalID": "C758AACF-BEEF-45D3-9EA9-3742F6D5071B",
+          "localizations": [
+            {
+              "description": "Unlimited notes and timers, your own stage",
+              "displayName": "StickyPresenter Plus (Monthly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "노트와 타이머를 마음껏, 내 무대에 맞게",
+              "displayName": "StickyPresenter Plus (월간)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.plus.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "StickyPresenter Plus Monthly",
+          "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "7.99",
+          "familyShareable": false,
+          "groupNumber": 2,
+          "internalID": "4A5E23F9-186E-4557-822D-21D3AA5723E0",
+          "localizations": [
+            {
+              "description": "Unlimited notes and timers, your own stage",
+              "displayName": "StickyPresenter Plus (Yearly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "노트와 타이머를 마음껏, 내 무대에 맞게",
+              "displayName": "StickyPresenter Plus (연간)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.plus.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "StickyPresenter Plus Yearly",
+          "subscriptionGroupID": "3D719EF3-D336-41EB-8531-EABBA6AA3AD7",
+          "type": "RecurringSubscription",
+          "winbackOffers": [],
+          "introductoryOffer": {
+            "displayPrice": "3.99",
+            "internalID": "CAEC71AC-C9D9-4191-AAF1-8DA95E7A4C31",
+            "numberOfPeriods": 1,
+            "paymentMode": "payUpFront",
+            "subscriptionPeriod": "P1Y"
+          }
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

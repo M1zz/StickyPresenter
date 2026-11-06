@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · สิ้นสุดแล้ว";
 "widget.running" = "%@ · กำลังทำงาน";
 "widget.paused" = "%@ · หยุดชั่วคราว";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "ดูเวลาที่เหลือได้ทันทีในศูนย์การแจ้งเตือนด้วย StickyPresenter Pro";
+"widget.locked.title" = "ใช้ได้ใน Pro";

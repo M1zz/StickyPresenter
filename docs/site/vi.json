@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: ghi chú và hẹn giờ nổi trên Keynote toàn màn hình",
-  "description": "Ứng dụng thanh menu trên Mac giữ ghi chú bài nói, đồng hồ đếm ngược và máy nhắc chữ nằm trên Keynote toàn màn hình. Mọi tính năng đều miễn phí.",
+  "description": "Ứng dụng thanh menu trên Mac giữ ghi chú bài nói, đồng hồ đếm ngược và máy nhắc chữ nằm trên Keynote toàn màn hình. Bài thuyết trình đầu tiên miễn phí từ đầu đến cuối.",
   "hero": {
     "headline": "Kịch bản và thời gian còn lại\nngay trên slide",
     "lead": "Bật Keynote toàn màn hình, ghi chú và đồng hồ hẹn giờ vẫn nằm ngay phía trên. Chúng không giành tiêu điểm của ứng dụng trình chiếu, nên bút trình chiếu vẫn chuyển slide như thường.",
     "cta": "Tải miễn phí trên Mac App Store",
-    "note": "Mọi tính năng đều miễn phí. Cần macOS 14 trở lên."
+    "note": "Bắt đầu miễn phí, chọn Plus hoặc Pro khi cần thêm. Cần macOS 14 trở lên."
   },
   "demo": {
     "title": "Thử đặt lên một slide",
@@ -125,8 +125,8 @@
     "title": "Câu hỏi thường gặp",
     "items": [
       {
-        "q": "Có thật sự miễn phí không?",
-        "a": "Có. Mọi tính năng đều miễn phí, và ứng dụng iPhone Remote Controller for Sticky cũng là một ứng dụng miễn phí riêng. Nếu thấy hữu ích, bạn có thể gửi tiền tip cho nhà phát triển trong Cài đặt; tiền tip không mở thêm tính năng nào."
+        "q": "Miễn phí được gì, Plus và Pro thêm gì?",
+        "a": "Năm ghi chú, hai hẹn giờ, Pomodoro, máy nhắc chữ và phím tắt đều miễn phí, đủ cho trọn một bài thuyết trình. Plus mở ghi chú và hẹn giờ không giới hạn, chủ đề Tắc kè hoa, nhạc nền, sửa mốc nhanh và lật ngược máy nhắc chữ. Pro thêm điều khiển từ xa trên iPhone, cửa sổ hẹn giờ để chia sẻ màn hình, Phím tắt và Siri, cùng tiện ích Trung tâm thông báo. Bạn có thể dùng thử điều khiển từ xa miễn phí trong ba bài thuyết trình. Trả theo năm hoặc một lần dùng mãi mãi. Tiền tip không mở khóa tính năng nào."
       },
       {
         "q": "Khi chia sẻ hoặc phản chiếu màn hình, có thể chỉ hiện đồng hồ hẹn giờ không?",

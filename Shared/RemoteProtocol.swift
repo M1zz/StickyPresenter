@@ -193,10 +193,25 @@ public struct RemoteState: Codable, Sendable {
     /// 옵셔널이라 이 필드를 모르는 옛 패킷도 그대로 디코딩된다.
     public var desktop: RemoteDesktop?
 
-    public init(hostName: String, timers: [RemoteTimer], desktop: RemoteDesktop? = nil) {
+    // MARK: 본체 칸 — 판정은 늘 Mac 이 한다. 리모컨 안에서는 아무것도 팔지 않는다.
+    // 셋 다 옵셔널이다. 이 필드를 모르는 옛 Mac 이 보낸 패킷은 nil 이고, 리모컨은 그때 아무것도 잠그지 않는다.
+
+    /// 본체가 연 칸 — "free" / "plus" / "pro". 무료면 카멜레온 테마가 건너뛰어진다는 안내에 쓴다.
+    public var hostTier: String?
+    /// 리모컨을 써 볼 수 있는 남은 발표 수. 본체가 Pro 면 nil(횟수 없음).
+    public var remoteTrialsLeft: Int?
+    /// true 면 Mac 이 이 리모컨의 명령을 받지 않는다(체험을 다 썼다). 리모컨은 조작을 흐리게 하고
+    /// 'Mac의 StickyPresenter에서 Pro를 열면 계속 쓸 수 있어요' 한 줄을 띄운다.
+    public var remoteLocked: Bool?
+
+    public init(hostName: String, timers: [RemoteTimer], desktop: RemoteDesktop? = nil,
+                hostTier: String? = nil, remoteTrialsLeft: Int? = nil, remoteLocked: Bool? = nil) {
         self.hostName = hostName
         self.timers = timers
         self.desktop = desktop
+        self.hostTier = hostTier
+        self.remoteTrialsLeft = remoteTrialsLeft
+        self.remoteLocked = remoteLocked
     }
 }
 

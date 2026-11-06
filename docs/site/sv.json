@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: lappar och timer ovanpå Keynote i helskärm",
-  "description": "Mac-app i menyraden som håller dina anteckningar, en nedräkning och en teleprompter ovanpå Keynote i helskärm. Allt är gratis.",
+  "description": "Mac-app i menyraden som håller dina anteckningar, en nedräkning och en teleprompter ovanpå Keynote i helskärm. Din första presentation är gratis från början till slut.",
   "hero": {
     "headline": "Manus och återstående tid\nmitt på bilden",
     "lead": "Sätt Keynote i helskärm så ligger lapparna och timern kvar ovanpå. De tar aldrig fokus från presentationsappen, så klickern bläddrar bilder precis som vanligt.",
     "cta": "Hämta gratis på Mac App Store",
-    "note": "Alla funktioner är gratis. Kräver macOS 14 eller senare."
+    "note": "Börja gratis och välj Plus eller Pro när du behöver mer. Kräver macOS 14 eller senare."
   },
   "demo": {
     "title": "Testa på en bild",
@@ -125,8 +125,8 @@
     "title": "Vanliga frågor",
     "items": [
       {
-        "q": "Är det verkligen gratis?",
-        "a": "Ja. Alla funktioner är gratis, och iPhone-appen Remote Controller for Sticky är en separat, kostnadsfri app. Om appen hjälper dig kan du ge utvecklaren dricks under Inställningar; det låser inte upp något."
+        "q": "Vad är gratis, och vad ger Plus och Pro?",
+        "a": "Fem lappar, två timers, Pomodoro, telepromptern och kortkommandona är gratis – nog för en hel presentation. Plus låser upp obegränsat med lappar och timers, kameleonttemat, bakgrundsmusik, redigering av förinställningar och spegelvänd teleprompter. Pro lägger till iPhone-fjärrkontrollen, timerfönstret för skärmdelning, Genvägar och Siri samt widgeten i notiscenter. Fjärrkontrollen kan du prova gratis i tre presentationer. Betala per år eller en gång för alltid. Dricks låser inte upp något."
       },
       {
         "q": "Kan jag visa bara timern vid skärmdelning eller skärmdubblering?",

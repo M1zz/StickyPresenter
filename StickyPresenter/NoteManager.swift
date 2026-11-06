@@ -1,6 +1,7 @@
 import SwiftUI
 import AppKit
 import Combine
+import UniformTypeIdentifiers
 
 // MARK: - Screen Map
 //
@@ -225,7 +226,9 @@ class NoteManager: ObservableObject {
     }
 
     /// 기본 화면의 무작위 자리에 새 노트를 만든다. (메뉴 · 단축키 · 타이머 패널 버튼 공용)
+    /// 무료 한도(5장)에 닿았으면 만들지 않고 페이월을 연다 — 이미 붙은 노트는 그대로 쓴다.
     func addNoteAtRandomPosition(text: String = "") {
+        guard Gate.admitsNote(having: notes.count) else { return }
         let size = CGSize(width: 280, height: 220)
         let origin = randomNoteOrigin(in: ScreenMap.mainVisibleFrame(), noteSize: size)
         addNote(text: text, color: defaultColor, position: origin, size: size)
@@ -322,6 +325,63 @@ class NoteManager: ObservableObject {
                 NotificationCenter.default.removeObserver(token)
             }
         }
+    }
+
+    // MARK: - Export / Import
+
+    /// 지금 붙은 노트를 파일 하나로 저장한다. 다른 Mac 에서 `importNotes()` 로 그대로 되살린다.
+    /// 기본 내보내기라 칸과 상관없이 열려 있다.
+    func exportNotes() {
+        let panel = NSSavePanel()
+        panel.nameFieldStringValue = L("notes.export.filename")
+        panel.allowedContentTypes = [.json]
+        NSApp.activate(ignoringOtherApps: true)
+        guard panel.runModal() == .OK, let url = panel.url else { return }
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        do {
+            try encoder.encode(NoteArchive(notes: notes.map(\.record))).write(to: url, options: .atomic)
+        } catch {
+            inform(L("notes.export.failed"), error.localizedDescription)
+        }
+    }
+
+    /// 내보낸 파일의 노트를 화면에 다시 붙인다. 이미 붙어 있는 노트는 건너뛴다.
+    /// 무료 한도(5장)를 넘게 되면 하나도 붙이지 않고 페이월을 연다 — 파일은 그대로 남아 있다.
+    func importNotes() {
+        let panel = NSOpenPanel()
+        panel.allowedContentTypes = [.json]
+        panel.allowsMultipleSelection = false
+        NSApp.activate(ignoringOtherApps: true)
+        guard panel.runModal() == .OK, let url = panel.url else { return }
+        guard let data = try? Data(contentsOf: url),
+              let archive = try? JSONDecoder().decode(NoteArchive.self, from: data) else {
+            inform(L("notes.import.failed"), L("notes.import.failed.detail"))
+            return
+        }
+        let fresh = archive.notes.filter { record in !notes.contains { $0.id == record.id } }
+        guard !fresh.isEmpty else {
+            inform(L("notes.import.nothing"), nil)
+            return
+        }
+        guard Gate.admitsNote(having: notes.count + fresh.count - 1) else { return }
+        for record in fresh {
+            let note = StickyNote(record: record)
+            placeOnVisibleScreen(note)
+            notes.append(note)
+            showNote(note)
+        }
+        scheduleSave()
+        inform(L("notes.import.done", fresh.count), nil)
+    }
+
+    private func inform(_ title: String, _ detail: String?) {
+        let alert = NSAlert()
+        alert.messageText = title
+        alert.informativeText = detail ?? ""
+        alert.addButton(withTitle: L("alert.ok"))
+        NSApp.activate(ignoringOtherApps: true)
+        alert.runModal()
     }
 
     // MARK: - Reopen Closed Note

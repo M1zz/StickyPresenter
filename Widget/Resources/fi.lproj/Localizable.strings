@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Valmis";
 "widget.running" = "%@ · Käynnissä";
 "widget.paused" = "%@ · Tauolla";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "Näe jäljellä oleva aika suoraan ilmoituskeskuksessa StickyPresenter Prolla.";
+"widget.locked.title" = "Kuuluu Prohon";

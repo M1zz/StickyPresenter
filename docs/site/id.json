@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: catatan dan timer di atas Keynote layar penuh",
-  "description": "App bar menu Mac yang menaruh catatan presentasi, hitung mundur, dan teleprompter di atas Keynote layar penuh. Semua fitur gratis.",
+  "description": "App bar menu Mac yang menaruh catatan presentasi, hitung mundur, dan teleprompter di atas Keynote layar penuh. Presentasi pertama Anda gratis dari awal sampai akhir.",
   "hero": {
     "headline": "Naskah dan sisa waktu\nlangsung di atas slide",
     "lead": "Jalankan Keynote dalam layar penuh, catatan dan timer tetap melayang di atasnya. Keduanya tidak merebut fokus dari app presentasi, jadi clicker tetap bisa mengganti slide seperti biasa.",
     "cta": "Unduh gratis di Mac App Store",
-    "note": "Semua fitur gratis. Perlu macOS 14 atau lebih baru."
+    "note": "Mulai gratis, pilih Plus atau Pro saat perlu lebih. Perlu macOS 14 atau lebih baru."
   },
   "demo": {
     "title": "Coba di atas slide",
@@ -125,8 +125,8 @@
     "title": "Pertanyaan umum",
     "items": [
       {
-        "q": "Benar-benar gratis?",
-        "a": "Ya. Semua fitur gratis, dan app iPhone Remote Controller for Sticky juga app gratis tersendiri. Kalau app ini membantu, Anda bisa memberi tip kepada pengembang di Pengaturan; tip tidak membuka fitur apa pun."
+        "q": "Apa yang gratis, dan apa tambahan Plus dan Pro?",
+        "a": "Lima catatan, dua timer, Pomodoro, teleprompter, dan pintasan papan ketik gratis, cukup untuk satu presentasi penuh. Plus membuka catatan dan timer tanpa batas, tema Bunglon, musik latar, edit preset, dan teleprompter cermin. Pro menambahkan remote iPhone, jendela timer untuk berbagi layar, Pintasan dan Siri, serta widget Pusat Pemberitahuan. Remote bisa dicoba gratis untuk tiga presentasi. Bayar tahunan atau sekali untuk selamanya. Tip tidak membuka fitur apa pun."
       },
       {
         "q": "Bisakah saya menampilkan timer saja saat berbagi layar atau mirroring?",

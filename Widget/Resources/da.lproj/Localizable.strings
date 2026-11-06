@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Færdig";
 "widget.running" = "%@ · Kører";
 "widget.paused" = "%@ · På pause";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "Se den resterende tid direkte i Notifikationscenter med StickyPresenter Pro.";
+"widget.locked.title" = "Følger med Pro";

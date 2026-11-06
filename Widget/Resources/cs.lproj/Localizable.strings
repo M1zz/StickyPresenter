@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Dokončeno";
 "widget.running" = "%@ · Běží";
 "widget.paused" = "%@ · Pozastaveno";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "Zbývající čas uvidíte přímo v Oznamovacím centru se StickyPresenter Pro.";
+"widget.locked.title" = "Dostupné s Pro";

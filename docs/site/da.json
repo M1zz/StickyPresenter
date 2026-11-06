@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: sedler og timer oven på Keynote i fuld skærm",
-  "description": "En Mac-app i menulinjen, der holder dine noter, en nedtælling og en teleprompter oven på Keynote i fuld skærm. Alt er gratis.",
+  "description": "En Mac-app i menulinjen, der holder dine noter, en nedtælling og en teleprompter oven på Keynote i fuld skærm. Din første præsentation er gratis fra start til slut.",
   "hero": {
     "headline": "Manuskript og resttid\nlige på sliden",
     "lead": "Sæt Keynote i fuld skærm, og dine sedler og din timer bliver liggende ovenpå. De tager aldrig fokus fra præsentationsappen, så din klikker skifter stadig slides.",
     "cta": "Hent gratis i Mac App Store",
-    "note": "Alle funktioner er gratis. Kræver macOS 14 eller nyere."
+    "note": "Start gratis, og vælg Plus eller Pro, når du har brug for mere. Kræver macOS 14 eller nyere."
   },
   "demo": {
     "title": "Prøv det på en slide",
@@ -125,8 +125,8 @@
     "title": "Spørgsmål og svar",
     "items": [
       {
-        "q": "Er det virkelig gratis?",
-        "a": "Ja. Alle funktioner er gratis, og iPhone-appen Remote Controller for Sticky er en separat, gratis app. Hvis appen hjælper dig, kan du give udvikleren drikkepenge under Indstillinger; det låser ikke noget op."
+        "q": "Hvad er gratis, og hvad giver Plus og Pro?",
+        "a": "Fem sedler, to timere, Pomodoro, teleprompteren og tastaturgenvejene er gratis – nok til en hel præsentation. Plus låser op for ubegrænsede sedler og timere, Kamæleon-temaet, baggrundsmusik, redigering af forudindstillinger og spejlvendt teleprompter. Pro tilføjer iPhone-fjernbetjeningen, timervinduet til skærmdeling, Genveje og Siri samt widgetten i Notifikationscenter. Du kan prøve fjernbetjeningen gratis i tre præsentationer. Betal årligt eller én gang for altid. Drikkepenge låser ikke op for noget."
       },
       {
         "q": "Kan jeg vise kun timeren ved skærmdeling eller spejling?",

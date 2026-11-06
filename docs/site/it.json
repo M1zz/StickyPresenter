@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: note e timer sopra Keynote a tutto schermo",
-  "description": "App per la barra dei menu del Mac che tiene note, un conto alla rovescia e un gobbo elettronico sopra Keynote a tutto schermo. Tutto gratis.",
+  "description": "App per la barra dei menu del Mac che tiene note, un conto alla rovescia e un gobbo elettronico sopra Keynote a tutto schermo. La tua prima presentazione è gratis dall’inizio alla fine.",
   "hero": {
     "headline": "Il tuo testo e il tuo tempo,\nsulla slide",
     "lead": "Metti Keynote a tutto schermo e le note e il timer restano sopra. Non tolgono mai il focus all’app di presentazione, quindi il telecomando continua a far scorrere le slide.",
     "cta": "Scaricala gratis dal Mac App Store",
-    "note": "Tutte le funzioni sono gratuite. Richiede macOS 14 o successivo."
+    "note": "Si inizia gratis, con Plus e Pro quando serve di più. Richiede macOS 14 o successivo."
   },
   "demo": {
     "title": "Provalo su una slide",
@@ -125,8 +125,8 @@
     "title": "Domande frequenti",
     "items": [
       {
-        "q": "È davvero gratis?",
-        "a": "Sì. Tutte le funzioni sono gratuite, e l’app per iPhone Remote Controller for Sticky è un’altra app gratuita. Se ti è utile, puoi lasciare una mancia allo sviluppatore dalle Impostazioni; non sblocca nulla."
+        "q": "Cosa è gratis e cosa aggiungono Plus e Pro?",
+        "a": "Cinque note, due timer, il Pomodoro, il gobbo e le abbreviazioni da tastiera sono gratis, abbastanza per un’intera presentazione. Plus sblocca note e timer illimitati, il tema Camaleonte, la musica di sottofondo, la modifica dei preset e il gobbo a specchio. Pro aggiunge il telecomando iPhone, la finestra del timer per la condivisione schermo, Comandi Rapidi e Siri e il widget del Centro Notifiche. Puoi provare il telecomando gratis per tre presentazioni. Paga ogni anno o una volta per sempre. Le mance non sbloccano nulla."
       },
       {
         "q": "Posso mostrare solo il timer durante la condivisione o la duplicazione dello schermo?",

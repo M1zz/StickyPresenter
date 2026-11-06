@@ -226,9 +226,9 @@ final class MusicPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         isPlaying ? stop() : start()
     }
 
-    /// 재생 시작. 해당 분위기에 곡이 없으면 아무 일도 하지 않는다.
+    /// 재생 시작. 해당 분위기에 곡이 없거나 배경음악이 열려 있지 않으면(Plus) 아무 일도 하지 않는다.
     func start() {
-        guard !MusicLibrary.shared.tracks(for: mood).isEmpty else { return }
+        guard Gate.isOpen(.music), !MusicLibrary.shared.tracks(for: mood).isEmpty else { return }
         if player == nil || queue.isEmpty { rebuildQueue() }
         if player == nil {
             advance(fadeIn: true)
@@ -383,7 +383,7 @@ struct MusicBar: View {
 
             HStack(spacing: 10) {
                 // 재생/정지
-                Button(action: { player.toggle() }) {
+                Button(action: { if player.isPlaying || Gate.open(.music) { player.toggle() } }) {
                     Image(systemName: player.isPlaying ? "pause.circle.fill" : "play.circle.fill")
                         .font(.system(size: 22))
                         .foregroundStyle(isEmpty ? Color.secondary.opacity(0.4) : player.mood.tint)

@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: tam ekran Keynote’un üstünde notlar ve zamanlayıcı",
-  "description": "Konuşma notlarınızı, geri sayımı ve teleprompter’ı tam ekran Keynote’un üstünde tutan Mac menü çubuğu uygulaması. Her şey ücretsiz.",
+  "description": "Konuşma notlarınızı, geri sayımı ve teleprompter’ı tam ekran Keynote’un üstünde tutan Mac menü çubuğu uygulaması. İlk sunumunuz baştan sona ücretsiz.",
   "hero": {
     "headline": "Metniniz ve kalan süre\ndoğrudan slaytın üstünde",
     "lead": "Keynote’u tam ekrana alın, notlarınız ve zamanlayıcı üstte kalmaya devam eder. Sunum uygulamasının odağını hiç almadıkları için kumanda slaytları her zamanki gibi geçirir.",
     "cta": "Mac App Store’dan ücretsiz indirin",
-    "note": "Tüm özellikler ücretsiz. macOS 14 veya üstü gerekir."
+    "note": "Ücretsiz başlayın, daha fazlası gerektiğinde Plus ya da Pro’yu seçin. macOS 14 veya üstü gerekir."
   },
   "demo": {
     "title": "Bir slaytın üstünde deneyin",
@@ -125,8 +125,8 @@
     "title": "Sık sorulan sorular",
     "items": [
       {
-        "q": "Gerçekten ücretsiz mi?",
-        "a": "Evet. Tüm özellikler ücretsiz; iPhone uygulaması Remote Controller for Sticky de ayrı ve ücretsiz bir uygulamadır. İşinize yaradıysa Ayarlar’dan geliştiriciye bahşiş bırakabilirsiniz; bahşiş hiçbir özelliğin kilidini açmaz."
+        "q": "Neler ücretsiz, Plus ve Pro neler ekliyor?",
+        "a": "Beş not, iki zamanlayıcı, Pomodoro, teleprompter ve klavye kestirmeleri ücretsiz; bütün bir sunum için yeterli. Plus sınırsız not ve zamanlayıcı, Bukalemun teması, arka plan müziği, hazır ayar düzenleme ve ayna görünümlü teleprompter’ı açar. Pro bunlara iPhone kumandası, ekran paylaşımı için zamanlayıcı penceresi, Kestirmeler ve Siri ile Bildirim Merkezi widget’ını ekler. Kumandayı üç sunum boyunca ücretsiz deneyebilirsiniz. Yıllık ya da bir kez ödeyip ömür boyu kullanın. Bahşiş hiçbir özelliği açmaz."
       },
       {
         "q": "Ekran paylaşımı veya yansıtmada yalnızca zamanlayıcıyı gösterebilir miyim?",

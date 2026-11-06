@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Ολοκληρώθηκε";
 "widget.running" = "%@ · Σε εκτέλεση";
 "widget.paused" = "%@ · Σε παύση";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "Δείτε τον χρόνο που απομένει στο Κέντρο γνωστοποιήσεων με το StickyPresenter Pro.";
+"widget.locked.title" = "Διαθέσιμο με Pro";

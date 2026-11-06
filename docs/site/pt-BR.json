@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: notas e timer por cima do Keynote em tela cheia",
-  "description": "App de barra de menus do Mac que mantém suas notas, um timer regressivo e um teleprompter por cima do Keynote em tela cheia. Tudo grátis.",
+  "description": "App de barra de menus do Mac que mantém suas notas, um timer regressivo e um teleprompter por cima do Keynote em tela cheia. Sua primeira apresentação é grátis do começo ao fim.",
   "hero": {
     "headline": "Seu roteiro e seu tempo,\nem cima do slide",
     "lead": "Coloque o Keynote em tela cheia e suas notas e o timer continuam ali por cima. Eles nunca tiram o foco do app de apresentação, então o passador continua mudando os slides normalmente.",
     "cta": "Baixe grátis na Mac App Store",
-    "note": "Todos os recursos são grátis. Requer macOS 14 ou posterior."
+    "note": "Comece grátis e escolha Plus ou Pro quando precisar de mais. Requer macOS 14 ou posterior."
   },
   "demo": {
     "title": "Teste em cima de um slide",
@@ -125,8 +125,8 @@
     "title": "Perguntas frequentes",
     "items": [
       {
-        "q": "É grátis mesmo?",
-        "a": "Sim. Todos os recursos são grátis, e o app para iPhone Remote Controller for Sticky é outro app gratuito. Se ajudar você, dá para deixar uma gorjeta para o desenvolvedor nos Ajustes; ela não libera nada."
+        "q": "O que é grátis e o que o Plus e o Pro acrescentam?",
+        "a": "Cinco notas, dois timers, Pomodoro, o teleprompter e os atalhos são grátis, o bastante para uma apresentação inteira. O Plus libera notas e timers ilimitados, o tema Camaleão, música de fundo, edição de atalhos rápidos e o teleprompter espelhado. O Pro acrescenta o controle remoto no iPhone, a janela do timer para compartilhar a tela, Atalhos e Siri e o widget da Central de Notificações. Dá para testar o controle remoto grátis em três apresentações. Pague por ano ou uma vez para sempre. Gorjetas não liberam nada."
       },
       {
         "q": "Dá para mostrar só o timer no compartilhamento ou espelhamento de tela?",

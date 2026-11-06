@@ -39,7 +39,7 @@ extension StickyPresenterSpec {
         .init(id: "sync.icloud", status: .planned,
               title: NSLocalizedString("roadmap.sync.icloud.title", comment: "Roadmap item: Notes on all your Macs"),
               detail: NSLocalizedString("roadmap.sync.icloud.detail", comment: "Roadmap item detail: Notes on all your Macs")),
-        .init(id: "backup", status: .planned,
+        .init(id: "backup", status: .building,
               title: NSLocalizedString("roadmap.backup.title", comment: "Roadmap item: Export and import notes"),
               detail: NSLocalizedString("roadmap.backup.detail", comment: "Roadmap item detail: Export and import notes")),
         .init(id: "notifications", status: .planned,

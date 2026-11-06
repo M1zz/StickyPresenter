@@ -55,8 +55,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupMenuBar()
         setupGlobalHotkey()
 
-        // 개발자 응원하기(팁) — 상품을 불러오고, 끝나지 않은 팁을 마저 센다.
-        Task { await StickyPresenterSpec.tipJar.startStandalone() }
+        // StickyPresenter Plus · Pro — 영수증을 읽어 칸을 정하고 상품을 불러온다(팁도 같은 LeeoStore 가 받는다).
+        // 구독 6개월째 · 갱신 7일 전이면 '구독 졸업' 평생가를 한 번 보인다.
+        Task { @MainActor in
+            await Purchases.shared.refresh()
+            if Purchases.shared.graduationIsDue { Paywall.presentGraduation() }
+        }
 
         // iOS 리모컨이 붙을 수 있도록 광고 시작.
         // 로컬 네트워크 권한 프롬프트는 실제로 상대를 찾을 때 처음 뜬다.
@@ -280,6 +284,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // 붙지 못한 이유를 거절한 쪽에서 말한다. 리모컨은 "안 됨" 만 알 뿐 왜인지 모른다.
         if let problem = host.problem {
             menu.addItem(remoteProblemItem(problem))
+        } else if !Purchases.shared.allows(.remote) {
+            // 무료 본체 — 체험이 몇 번 남았는지. 누르면 Pro 를 보인다.
+            let left = Purchases.shared.remoteTrial.left
+            let trial = NSMenuItem(title: L("remote.trial.left", left), action: #selector(showRemotePlans), keyEquivalent: "")
+            trial.target = self
+            menu.addItem(trial)
         }
 
         menu.addItem(NSMenuItem.separator())
@@ -311,12 +321,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             title = L("remote.problem.advertising")
             // 손댈 곳이 시스템 설정 한 곳이라 바로 열어 준다.
             action = #selector(openLocalNetworkSettings)
+        case .trialEnded:
+            title = L("remote.problem.trialEnded", PlanEntitlement.freeRemoteTalks)
+            action = #selector(showRemotePlans)
         }
         let item = NSMenuItem(title: title, action: action, keyEquivalent: "")
         item.target = self
         item.image = NSImage(systemSymbolName: "exclamationmark.triangle.fill", accessibilityDescription: nil)?
             .withSymbolConfiguration(.init(paletteColors: [.systemOrange]))
         return item
+    }
+
+    @MainActor
+    @objc func showRemotePlans() {
+        Paywall.present(.feature(.remote))
     }
 
     @objc func openLocalNetworkSettings() {

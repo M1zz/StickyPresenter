@@ -19,7 +19,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.26.0
+    from: 3.30.1
 
 targets:
   StickyPresenter:
@@ -98,7 +98,7 @@ targets:
 
   # 순수 로직 단위 테스트. 앱을 호스트로 띄우지 않고 검사 대상 파일을 직접 컴파일한다 —
   # 앱을 띄우면 메뉴 막대·패널·Bonjour 광고까지 켜져 테스트가 느려지고 흔들린다.
-  # 그래서 여기 넣는 파일은 AppKit 창이나 싱글턴에 기대지 않아야 한다 (TimerCore · NoteStore).
+  # 그래서 여기 넣는 파일은 AppKit 창이나 싱글턴에 기대지 않아야 한다 (TimerCore · NoteStore · Plan).
   StickyPresenterTests:
     type: bundle.unit-test
     platform: macOS
@@ -107,7 +107,11 @@ targets:
       - path: StickyPresenterTests
       - path: StickyPresenter/TimerCore.swift
       - path: StickyPresenter/NoteStore.swift
+      - path: StickyPresenter/Plan.swift
       - path: Shared/Localization.swift
+      - path: Shared/PlanTier.swift
+      - path: Shared/SharedTimerStore.swift
+      - path: Shared/TimerSnapshot.swift
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.leeo.StickyPresenterTests
@@ -127,6 +131,8 @@ schemes:
         StickyPresenter: all
     run:
       config: Debug
+      # Xcode 에서 실행(⌘R)하면 이 파일의 상품으로 결제 · 복원 · 올리기 · 졸업을 시험한다. 출시 빌드와는 상관없다.
+      storeKitConfiguration: StickyPresenter.storekit
     test:
       config: Debug
       targets:

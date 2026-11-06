@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · 完了";
 "widget.running" = "%@ · 実行中";
 "widget.paused" = "%@ · 一時停止中";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "StickyPresenter Proなら、残り時間を通知センターですぐに確認できます。";
+"widget.locked.title" = "Proで使えます";

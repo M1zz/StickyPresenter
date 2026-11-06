@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: Notizen und Timer über Keynote im Vollbild",
-  "description": "Mac-App für die Menüleiste, die Sprechernotizen, einen Countdown und einen Teleprompter über Keynote im Vollbild hält. Alle Funktionen sind kostenlos.",
+  "description": "Mac-App für die Menüleiste, die Sprechernotizen, einen Countdown und einen Teleprompter über Keynote im Vollbild hält. Deinen ersten Vortrag hältst du kostenlos von Anfang bis Ende.",
   "hero": {
     "headline": "Skript und Restzeit\ndirekt auf der Folie",
     "lead": "Schalte Keynote in den Vollbildmodus, und deine Haftnotizen und der Timer bleiben darüber sichtbar. Sie nehmen der Präsentations-App nie den Fokus, dein Presenter blättert also weiter wie gewohnt.",
     "cta": "Kostenlos im Mac App Store laden",
-    "note": "Alle Funktionen sind kostenlos. Ab macOS 14."
+    "note": "Kostenlos starten, Plus und Pro bei Bedarf. Ab macOS 14."
   },
   "demo": {
     "title": "Probier es auf einer Folie aus",
@@ -125,8 +125,8 @@
     "title": "Häufige Fragen",
     "items": [
       {
-        "q": "Ist das wirklich kostenlos?",
-        "a": "Ja. Alle Funktionen sind kostenlos, und die iPhone-App Remote Controller for Sticky ist eine eigene, kostenlose App. Wenn dir die App hilft, kannst du dem Entwickler in den Einstellungen ein Trinkgeld geben; freigeschaltet wird dadurch nichts."
+        "q": "Was ist kostenlos, und was bringen Plus und Pro?",
+        "a": "Fünf Notizen, zwei Timer, Pomodoro, der Teleprompter und die Tastaturkurzbefehle sind kostenlos – genug für einen ganzen Vortrag. Plus schaltet unbegrenzt Notizen und Timer, das Chamäleon-Design, Hintergrundmusik, das Bearbeiten von Schnellvorgaben und den gespiegelten Teleprompter frei. Pro ergänzt die iPhone-Fernbedienung, das Timer-Fenster für die Bildschirmfreigabe, Kurzbefehle und Siri sowie das Widget in der Mitteilungszentrale. Die Fernbedienung kannst du drei Vorträge lang kostenlos ausprobieren. Zahle jährlich oder einmal für immer. Trinkgeld schaltet nichts frei."
       },
       {
         "q": "Kann ich bei Bildschirmfreigabe oder Spiegelung nur den Timer zeigen?",

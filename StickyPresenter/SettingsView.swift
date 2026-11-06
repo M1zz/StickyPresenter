@@ -33,6 +33,19 @@ struct SettingsView: View {
                 }
             }
 
+            Section {
+                PlanSettingsRows()
+            } header: {
+                Text(verbatim: "StickyPresenter Plus · Pro")
+            }
+
+            // 노트를 파일로 — 기본 내보내기라 칸과 상관없이 열려 있다.
+            Section(L("settings.notes")) {
+                Button(L("settings.exportNotes")) { notes.exportNotes() }
+                    .disabled(notes.notes.isEmpty)
+                Button(L("settings.importNotes")) { notes.importNotes() }
+            }
+
             Section(L("settings.help")) {
                 Button(L("settings.showGuide"), action: onShowGuide)
                 Button(L("settings.openSupport")) {
@@ -94,6 +107,45 @@ struct SettingsView: View {
         if service.status == .requiresApproval {
             launchError = L("settings.launchAtLogin.approval")
             SMAppService.openSystemSettingsLoginItems()
+        }
+    }
+}
+
+// MARK: - Plus · Pro
+
+/// 지금 쓰는 칸 · 요금제 보기 · 평생으로 바꾸기 · 구독 관리 · 구매 복원.
+private struct PlanSettingsRows: View {
+    @ObservedObject private var purchases = Purchases.shared
+    @Environment(\.openURL) private var openURL
+    /// 구매 복원을 누른 뒤에만 보이는 한 줄.
+    @State private var restoreMessage: String?
+
+    var body: some View {
+        LabeledContent(L("plan.current"), value: purchases.tier.title)
+        if purchases.isEarlyUser {
+            Text(L("plan.settings.earlyUser"))
+                .foregroundStyle(.secondary)
+        }
+        if purchases.tier < .pro {
+            Button(L("plan.settings.seePlans")) { Paywall.present() }
+        }
+        // 구독 중이면 졸업가, 아니면 평생을 고른 페이월. 이미 평생 Pro 면 바꿀 것이 없다.
+        if !purchases.ownsLifetime(.pro), !purchases.isEarlyUser {
+            Button(LeeoLadderText.switchToLifetimeEntry) { Paywall.presentGraduation() }
+        }
+        if purchases.subscription != nil, let url = URL(string: "https://apps.apple.com/account/subscriptions") {
+            Button(LeeoLadderText.manageSubscription) { openURL(url) }
+        }
+        Button(L("plan.restore")) {
+            Task {
+                await purchases.restore()
+                restoreMessage = purchases.failureMessage
+            }
+        }
+        .disabled(purchases.isWorking)
+        if let restoreMessage {
+            Text(restoreMessage)
+                .foregroundStyle(.secondary)
         }
     }
 }

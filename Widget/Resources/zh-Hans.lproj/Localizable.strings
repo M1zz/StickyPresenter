@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · 已结束";
 "widget.running" = "%@ · 进行中";
 "widget.paused" = "%@ · 已暂停";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "使用 StickyPresenter Pro，在通知中心直接查看剩余时间。";
+"widget.locked.title" = "Pro 可用";

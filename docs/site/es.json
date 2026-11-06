@@ -1,11 +1,11 @@
 {
   "title": "StickyPresenter: notas y temporizador sobre Keynote a pantalla completa",
-  "description": "App de la barra de menús del Mac que deja tus notas, una cuenta atrás y un teleprompter encima de Keynote a pantalla completa. Todo es gratis.",
+  "description": "App de la barra de menús del Mac que deja tus notas, una cuenta atrás y un teleprompter encima de Keynote a pantalla completa. Tu primera presentación es gratis de principio a fin.",
   "hero": {
     "headline": "Tu guion y tu tiempo,\nencima de la diapositiva",
     "lead": "Pon Keynote a pantalla completa y tus notas adhesivas y el temporizador siguen ahí, encima. No le quitan el foco a la app de presentaciones, así que el mando sigue pasando diapositivas.",
     "cta": "Descárgala gratis en la Mac App Store",
-    "note": "Todas las funciones son gratis. Requiere macOS 14 o posterior."
+    "note": "Empieza gratis y elige Plus o Pro cuando necesites más. Requiere macOS 14 o posterior."
   },
   "demo": {
     "title": "Pruébalo sobre una diapositiva",
@@ -125,8 +125,8 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
-        "q": "¿De verdad es gratis?",
-        "a": "Sí. Todas las funciones son gratis, y la app para iPhone Remote Controller for Sticky es otra app gratuita. Si te resulta útil, puedes dejarle una propina al desarrollador desde Ajustes; no desbloquea nada."
+        "q": "¿Qué es gratis y qué añaden Plus y Pro?",
+        "a": "Cinco notas, dos temporizadores, Pomodoro, el teleprompter y los atajos son gratis, suficiente para dar una presentación entera. Plus desbloquea notas y temporizadores ilimitados, el tema Camaleón, la música de fondo, la edición de ajustes rápidos y el teleprompter invertido. Pro añade el control remoto del iPhone, la ventana de temporizador para compartir pantalla, Atajos y Siri, y el widget del centro de notificaciones. Puedes probar el control remoto gratis en tres presentaciones. Paga al año o una sola vez para siempre. Las propinas no desbloquean nada."
       },
       {
         "q": "¿Puedo mostrar solo el temporizador al compartir pantalla o duplicarla?",

@@ -5,3 +5,7 @@
 "widget.finished" = "%@ · Đã xong";
 "widget.running" = "%@ · Đang chạy";
 "widget.paused" = "%@ · Tạm dừng";
+
+/* ===== Plus · Pro ===== */
+"widget.locked.detail" = "Xem thời gian còn lại ngay trong Trung tâm thông báo với StickyPresenter Pro.";
+"widget.locked.title" = "Có trong Pro";
