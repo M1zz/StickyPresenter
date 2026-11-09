@@ -21,6 +21,8 @@ struct StickyPresenterApp: App {
         Settings {
             SettingsView(onShowGuide: { (NSApp.delegate as? AppDelegate)?.showGuide() })
                 .leeoSatisfactionCheck(StickyPresenterSpec.self)
+                // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
+                .leeoFeedbackReplyNotice(StickyPresenterSpec.self)
         }
     }
 }
@@ -417,6 +419,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.contentView = NSHostingView(rootView:
             SettingsView(onShowGuide: { [weak self] in self?.showGuide() })
                 .leeoSatisfactionCheck(StickyPresenterSpec.self)
+                // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
+                .leeoFeedbackReplyNotice(StickyPresenterSpec.self)
         )
         window.center()
         settingsWindow = window
