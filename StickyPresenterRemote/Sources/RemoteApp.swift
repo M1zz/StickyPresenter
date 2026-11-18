@@ -123,6 +123,8 @@ struct RemoteRootView: View {
         .leeoSatisfactionCheck(RemoteSpec.self)
         // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
         .leeoFeedbackReplyNotice(RemoteSpec.self)
+        // 유료가 되면 콘페티, 모든 사용자에게 한 번은 감사 (LeeoKit — 판정은 LeeoStore 가 저절로 한다).
+        .leeoCelebrations(appName: "Remote Controller")
         // 단축어로 맡겨 둔 명령은 Mac 과 붙는 순간 보낸다.
         .onChange(of: client.isConnected) { _, _ in
             flushPendingCommands()
