@@ -1,0 +1,2 @@
+/* Фразы App Shortcuts (Siri · Spotlight · Команды). В каждой фразе должно быть ${applicationName}. */
+"Start a timer with ${applicationName}" = "Запустить таймер с ${applicationName}";

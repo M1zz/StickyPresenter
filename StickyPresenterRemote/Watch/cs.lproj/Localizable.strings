@@ -1,0 +1,24 @@
+/* Apple Watch 화면 문구. 키는 한국어 원문(코드의 문자열 그대로). */
+
+"iPhone에서 리모컨을 열어 두면 손목으로 조종할 수 있어요" = "Otevřete ovladač v iPhonu a ovládejte ho ze zápěstí";
+"Mac에 닿지 않았어요" = "Mac je nedostupný";
+"5분 남았어요" = "Zbývá 5 minut";
+"1분 남았어요" = "Zbývá 1 minuta";
+"시간이 다 됐어요" = "Čas vypršel";
+"5분 남으면 진동" = "Zavibruje při 5 min";
+"1분 남으면 진동" = "Zavibruje při 1 min";
+"끝나면 진동" = "Zavibruje na konci";
+"30초 빼기" = "Ubrat 30 sekund";
+"30초 더하기" = "Přidat 30 sekund";
+"iPhone 리모컨이 Mac에 연결되면 남은 시간이 여기 보여요" = "Zbývající čas se tu zobrazí, jakmile se ovladač v iPhonu připojí k Macu";
+"일시정지됨" = "Pozastaveno";
+"일시정지" = "Pozastavit";
+"시작" = "Spustit";
+"발표 타이머 시작·일시정지" = "Spustit nebo pozastavit časovač prezentace";
+"리모컨을 거쳐 Mac의 타이머를 시작하거나 일시정지합니다." = "Spustí nebo pozastaví časovač na Macu přes ovladač.";
+"시작하거나 멈출 타이머가 없어요" = "Není žádný časovač ke spuštění ani pozastavení";
+"iPhone에서 리모컨을 열어 주세요" = "Otevřete ovladač v iPhonu";
+"일시정지했어요" = "Časovač pozastaven";
+"시작했어요" = "Časovač spuštěn";
+"시작·일시정지" = "Spustit/Pozastavit";
+"iPhone 리모컨에서 Pro를 열면 손목에서 남은 시간을 볼 수 있어요" = "Získejte Pro v ovladači na iPhonu a uvidíte zbývající čas na zápěstí";

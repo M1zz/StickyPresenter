@@ -1,0 +1,7 @@
+/* 컴플리케이션 문구. 키는 한국어 원문. */
+
+"돌고 있는 발표 타이머가 없어요" = "No hay ningún temporizador de presentación en marcha";
+"발표 남은 시간" = "Tiempo restante de la presentación";
+"Mac에서 도는 발표 타이머의 남은 시간을 보여 줍니다." = "Muestra el tiempo que le queda al temporizador de presentación del Mac.";
+"일시정지됨" = "En pausa";
+"시간이 다 됐어요" = "Se acabó el tiempo";

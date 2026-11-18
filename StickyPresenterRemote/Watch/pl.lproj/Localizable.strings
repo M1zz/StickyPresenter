@@ -1,0 +1,24 @@
+/* Apple Watch 화면 문구. 키는 한국어 원문(코드의 문자열 그대로). */
+
+"iPhone에서 리모컨을 열어 두면 손목으로 조종할 수 있어요" = "Otwórz pilota na iPhonie, aby sterować z nadgarstka";
+"Mac에 닿지 않았어요" = "Brak połączenia z Makiem";
+"5분 남았어요" = "Zostało 5 minut";
+"1분 남았어요" = "Została 1 minuta";
+"시간이 다 됐어요" = "Czas minął";
+"5분 남으면 진동" = "Wibracja przy 5 min";
+"1분 남으면 진동" = "Wibracja przy 1 min";
+"끝나면 진동" = "Wibracja na koniec";
+"30초 빼기" = "Odejmij 30 sekund";
+"30초 더하기" = "Dodaj 30 sekund";
+"iPhone 리모컨이 Mac에 연결되면 남은 시간이 여기 보여요" = "Pozostały czas pojawi się tutaj, gdy pilot na iPhonie połączy się z Makiem";
+"일시정지됨" = "Wstrzymano";
+"일시정지" = "Wstrzymaj";
+"시작" = "Start";
+"발표 타이머 시작·일시정지" = "Uruchom lub wstrzymaj minutnik prezentacji";
+"리모컨을 거쳐 Mac의 타이머를 시작하거나 일시정지합니다." = "Uruchamia lub wstrzymuje minutnik na Macu przez pilota.";
+"시작하거나 멈출 타이머가 없어요" = "Brak minutnika do uruchomienia lub wstrzymania";
+"iPhone에서 리모컨을 열어 주세요" = "Otwórz pilota na iPhonie";
+"일시정지했어요" = "Minutnik wstrzymany";
+"시작했어요" = "Minutnik uruchomiony";
+"시작·일시정지" = "Start/Pauza";
+"iPhone 리모컨에서 Pro를 열면 손목에서 남은 시간을 볼 수 있어요" = "Przejdź na Pro w pilocie na iPhonie, aby widzieć pozostały czas na nadgarstku";

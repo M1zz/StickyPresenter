@@ -1,0 +1,24 @@
+/* Apple Watch 화면 문구. 키는 한국어 원문(코드의 문자열 그대로). */
+
+"iPhone에서 리모컨을 열어 두면 손목으로 조종할 수 있어요" = "Åbn fjernbetjeningen på iPhone for at styre fra håndleddet";
+"Mac에 닿지 않았어요" = "Kunne ikke nå din Mac";
+"5분 남았어요" = "5 minutter tilbage";
+"1분 남았어요" = "1 minut tilbage";
+"시간이 다 됐어요" = "Tiden er gået";
+"5분 남으면 진동" = "Vibrerer ved 5 min tilbage";
+"1분 남으면 진동" = "Vibrerer ved 1 min tilbage";
+"끝나면 진동" = "Vibrerer, når tiden er gået";
+"30초 빼기" = "Træk 30 sekunder fra";
+"30초 더하기" = "Læg 30 sekunder til";
+"iPhone 리모컨이 Mac에 연결되면 남은 시간이 여기 보여요" = "Den resterende tid vises her, når fjernbetjeningen på iPhone er forbundet til din Mac";
+"일시정지됨" = "Sat på pause";
+"일시정지" = "Pause";
+"시작" = "Start";
+"발표 타이머 시작·일시정지" = "Start eller sæt præsentationstimer på pause";
+"리모컨을 거쳐 Mac의 타이머를 시작하거나 일시정지합니다." = "Starter eller sætter timeren på din Mac på pause via fjernbetjeningen.";
+"시작하거나 멈출 타이머가 없어요" = "Ingen timer at starte eller sætte på pause";
+"iPhone에서 리모컨을 열어 주세요" = "Åbn fjernbetjeningen på iPhone";
+"일시정지했어요" = "Timer sat på pause";
+"시작했어요" = "Timer startet";
+"시작·일시정지" = "Start/Pause";
+"iPhone 리모컨에서 Pro를 열면 손목에서 남은 시간을 볼 수 있어요" = "Få Pro i iPhone-fjernbetjeningen for at se den resterende tid på håndleddet";

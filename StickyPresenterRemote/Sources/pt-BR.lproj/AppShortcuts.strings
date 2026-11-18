@@ -1,0 +1,2 @@
+/* Frases do App Shortcuts (Siri · Spotlight · Atalhos). Toda frase deve conter ${applicationName}. */
+"Start a timer with ${applicationName}" = "Iniciar um timer com o ${applicationName}";

@@ -1,0 +1,2 @@
+/* App Shortcuts phrases (Siri · Spotlight · Shortcuts). Every phrase must contain ${applicationName}. */
+"Start a timer with ${applicationName}" = "用${applicationName}开始计时";

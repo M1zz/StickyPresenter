@@ -1,0 +1,229 @@
+{
+  "identifier": "2AEB6318-015F-410E-A888-FFF6C4940C51",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "35.99",
+      "familyShareable": true,
+      "internalID": "CAD8F533-D976-4B92-9B5C-EF9AC56BC83F",
+      "localizations": [
+        {
+          "description": "Pay once, Pro forever",
+          "displayName": "Remote Controller Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "한 번 내고 Pro를 평생",
+          "displayName": "리모컨 Pro (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.mac.pro.lifetime",
+      "referenceName": "Remote Pro Lifetime",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "23.99",
+      "familyShareable": true,
+      "internalID": "C827BA9F-D1C0-4427-9B97-AC49942C0F40",
+      "localizations": [
+        {
+          "description": "For subscribers: switch to lifetime",
+          "displayName": "Remote Controller Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "구독하신 분께 드리는 평생",
+          "displayName": "리모컨 Pro (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.mac.pro.graduate",
+      "referenceName": "Remote Pro Graduate",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "0.99",
+      "familyShareable": false,
+      "internalID": "27A10B01-62E2-4ECA-8559-FEB5DBEDBF43",
+      "localizations": [
+        {
+          "description": "Thanks for the remote",
+          "displayName": "Small Tip",
+          "locale": "en_US"
+        },
+        {
+          "description": "리모컨이 고마울 때",
+          "displayName": "작은 응원",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.tip.small",
+      "referenceName": "Tip Small",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "2.99",
+      "familyShareable": false,
+      "internalID": "15DF7888-BCE8-4061-94D7-7F98F24E89C2",
+      "localizations": [
+        {
+          "description": "Thanks for the remote",
+          "displayName": "Medium Tip",
+          "locale": "en_US"
+        },
+        {
+          "description": "리모컨이 고마울 때",
+          "displayName": "보통 응원",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.tip.medium",
+      "referenceName": "Tip Medium",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "4.99",
+      "familyShareable": false,
+      "internalID": "8C5960A5-1467-4380-9E7A-104477F8F3C5",
+      "localizations": [
+        {
+          "description": "Thanks for the remote",
+          "displayName": "Large Tip",
+          "locale": "en_US"
+        },
+        {
+          "description": "리모컨이 고마울 때",
+          "displayName": "큰 응원",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.tip.large",
+      "referenceName": "Tip Large",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "11.99",
+      "familyShareable": true,
+      "internalID": "CAD8F533-D976-4B92-9B5C-EF9AC56BA001",
+      "localizations": [
+        {
+          "description": "Pay once, Pro forever",
+          "displayName": "Remote Controller Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "한 번 내고 Pro를 평생",
+          "displayName": "리모컨 Pro (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.leeo.StickyPresenter.mac.pro.upgrade",
+      "referenceName": "Plus 평생 → Pro 평생",
+      "type": "NonConsumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "6803358945",
+    "_developerTeamID": "QGAQ3AY3R3",
+    "_lastSynchronizedDate": 0
+  },
+  "subscriptionGroups": [
+    {
+      "id": "24E781F0-BBE7-4143-B13D-0C6913D3BB79",
+      "localizations": [],
+      "name": "Remote Controller Pro",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "11.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "A9065D81-E390-4EEE-8800-0A990AA774E7",
+          "introductoryOffer": {
+            "displayPrice": "2.99",
+            "internalID": "D634D857-7F05-458B-9E8D-529C66102812",
+            "numberOfPeriods": 1,
+            "paymentMode": "payUpFront",
+            "subscriptionPeriod": "P1Y"
+          },
+          "localizations": [
+            {
+              "description": "Style, move and feel your timer",
+              "displayName": "Remote Controller Pro (Yearly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "타이머 창을 꾸미고 옮기고 손목으로",
+              "displayName": "리모컨 Pro (연)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.mac.pro.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Remote Pro Yearly",
+          "subscriptionGroupID": "24E781F0-BBE7-4143-B13D-0C6913D3BB79",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "3.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "EEE4D542-0E74-4BC8-8351-42323E93FBC1",
+          "localizations": [
+            {
+              "description": "Style, move and feel your timer",
+              "displayName": "Remote Controller Pro (Monthly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "타이머 창을 꾸미고 옮기고 손목으로",
+              "displayName": "리모컨 Pro (월)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.mac.pro.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "Remote Pro Monthly",
+          "subscriptionGroupID": "24E781F0-BBE7-4143-B13D-0C6913D3BB79",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "1.49",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "45BE0C02-3821-4BDE-9723-944FDBF5DF47",
+          "localizations": [
+            {
+              "description": "Style, move and feel your timer",
+              "displayName": "Remote Controller Pro (Weekly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "타이머 창을 꾸미고 옮기고 손목으로",
+              "displayName": "리모컨 Pro (주)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.leeo.StickyPresenter.mac.pro.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "Remote Pro Weekly",
+          "subscriptionGroupID": "24E781F0-BBE7-4143-B13D-0C6913D3BB79",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

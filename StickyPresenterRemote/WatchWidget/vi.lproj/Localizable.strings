@@ -1,0 +1,7 @@
+/* 컴플리케이션 문구. 키는 한국어 원문. */
+
+"돌고 있는 발표 타이머가 없어요" = "Không có hẹn giờ thuyết trình nào đang chạy";
+"발표 남은 시간" = "Thời gian thuyết trình còn lại";
+"Mac에서 도는 발표 타이머의 남은 시간을 보여 줍니다." = "Hiển thị thời gian còn lại của bộ hẹn giờ thuyết trình đang chạy trên Mac.";
+"일시정지됨" = "Đang tạm dừng";
+"시간이 다 됐어요" = "Hết giờ";
