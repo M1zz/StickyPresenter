@@ -20,7 +20,7 @@ StickyPresenter
 
 ### 키워드
 
-프레젠터,진행자,발표리모컨,강의타이머,발표자,큐시트,발표연습,프레젠테이션리모컨,스피치타이머,프롬프터,발표대본,발표도우미,슬라이드넘기기,리모컨
+프레젠터,진행자,큐시트,사회자,리허설,연설,행사,남은시간,스티키,무선,세미나,강사,리모컨,타임키퍼,교사,워치,카운트다운,스피치,강연,설교,강단,회의,면접,수업,강의,무대,손목
 
 ### 프로모션 텍스트
 
@@ -88,7 +88,7 @@ Notes & timers for your talk
 
 ### 키워드
 
-presenter,countdown,speech,pomodoro,stopwatch,companion,rehearsal,lecture,meeting,seminar,speaker
+presenter,emcee,seminar,timekeeper,sermon,lecture,rehearsal,remote,public,speaking,stage,podium
 
 ### 프로모션 텍스트
 
@@ -224,7 +224,7 @@ StickyPresenter
 
 ### 키워드
 
-リモコン,プレゼン,カウントダウン,ポモドーロ,ストップウォッチ,講演,講義,授業,会議,セミナー,スピーチ,司会,講師,研修,時間管理,遠隔,ワイヤレス,学会,リハーサル,勉強会,タイムキーパー
+登壇,学会,司会,講演,講師,リハーサル,セミナー,研修,タイムキーパー,残り時間,スピーチ,遠隔,ワイヤレス,リモコン,プレゼン,カウントダウン,授業,講義,会議,振動,時間管理,ポモドーロ
 
 ### 프로모션 텍스트
 
@@ -292,7 +292,7 @@ StickyPresenter
 
 ### 키워드
 
-遥控器,倒数,番茄钟,秒表,演示,汇报,讲座,上课,会议,研讨会,主持,时间管理,答辩,路演,讲师,培训,幻灯片,无线,发言,彩排,番茄工作法,专注,课堂,讲课,时钟,提醒,面试,学习,大屏幕
+遥控器,研讨会,路演,发言,主持人,答辩,汇报,演示,讲师,讲座,面试,上课,讲课,会议,幻灯片,震动,培训,课堂,彩排,倒数,时间管理,无线,手表,提醒,时钟,专注,番茄钟,司仪,年会
 
 ### 프로모션 텍스트
 
@@ -360,7 +360,7 @@ Guion y cronómetro en pantalla
 
 ### 키워드
 
-mando,distancia,temporizador,cuenta,atrás,cronómetro,pomodoro,presentación,ponente,orador,discurso
+mando,distancia,temporizador,cuenta,atrás,conferencia,pomodoro,presentación,ponente,orador,discurso
 
 ### 프로모션 텍스트
 
@@ -836,7 +836,7 @@ StickyPresenter
 
 ### 키워드
 
-รีโมท,รีโมต,นับถอยหลัง,ตัวจับเวลา,นาฬิกาจับเวลา,โพโมโดโร,นำเสนอ,บรรยาย,ประชุม,สัมมนา,สอน,พิธีกร,ซ้อม
+รีโมท,รีโมต,นับถอยหลัง,ไทม์เมอร์,วิทยากร,โพโมโดโร,นำเสนอ,บรรยาย,ประชุม,สัมมนา,สอน,พิธีกร,ซ้อม
 
 ### 프로모션 텍스트
 
@@ -1108,7 +1108,7 @@ StickyPresenter
 
 ### 키워드
 
-τηλεχειριστήριο,παρουσίαση,αντίστροφη,μέτρηση,pomodoro,ομιλία,διάλεξη,σεμινάριο,ομιλητής,μάθημα
+τηλεχειριστήριο,παρουσίαση,αντίστροφη,μέτρηση,pomodoro,πρόβα,διάλεξη,σεμινάριο,ομιλητής,μάθημα
 
 ### 프로모션 텍스트
 
@@ -1584,7 +1584,7 @@ Konuşma için not ve süre
 
 ### 키워드
 
-kumanda,uzaktan,geri,sayım,kronometre,pomodoro,konuşma,konuşmacı,toplantı,seminer,ders,prova,eğitim
+kumanda,uzaktan,geri,sayım,kronometre,pomodoro,sunum,konuşmacı,toplantı,seminer,ders,prova,eğitim
 
 ### 프로모션 텍스트
 

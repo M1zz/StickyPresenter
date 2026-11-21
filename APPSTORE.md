@@ -75,7 +75,7 @@ StickyPresenter Plus와 Pro 구독은 자동 갱신 구독입니다. 갱신일 2
 
 ### 키워드
 
-발표타이머,발표메모,강사,연설,세미나,텔레프롬프터,프롬프터,프레젠테이션,슬라이드,카운트다운,뽀모도로,화면메모,대본,스피치,강연,강의,플로팅,리허설,원고,스티커,발표연습,수업
+진행자,프레젠터,사회자,큐시트,강사,온라인강의,항상위,큐카드,리허설,연설,세미나,아나운서,타임키퍼,화상회의,면접,낭독,대본,텔레프롬프터,웨비나,스티키,슬라이드,카운트다운,배경음악
 
 ### 지원 URL
 
@@ -161,7 +161,7 @@ Privacy Policy: https://m1zz.github.io/StickyPresenter/en/privacy.html
 
 ### 키워드
 
-presentation,teleprompter,slides,countdown,pomodoro,rehearsal,presenter,overlay,script,speaker,cue
+public,speaking,webinar,stickies,presenter,overlay,rehearsal,teleprompter,cue,script,speaker,lecture
 
 ### 지원 URL
 
@@ -333,7 +333,7 @@ StickyPresenter の Plus と Pro は自動更新のサブスクリプション�
 
 ### 키워드
 
-プレゼン,スライド,リハーサル,登壇,スピーチ,講演,発表者,台本,カンペ,ふせん,メモ,残り時間,カウントダウン,ポモドーロ,プロンプター,集中,時計,会議,授業,オーバーレイ,タイムキーパー
+登壇,司会,講師,セミナー,リハーサル,講演,カンペ,残り時間,タイムキーパー,プロンプター,台本,動画撮影,付箋,ふせん,プレゼン,スピーチ,ポモドーロ,カウントダウン,学会,ウェビナー,スライド
 
 ### 지원 URL
 
@@ -419,7 +419,7 @@ StickyPresenter Plus 和 Pro 均为自动续期订阅。 费用从你的 Apple �
 
 ### 키워드
 
-演示,幻灯片,番茄钟,计时器,彩排,讲稿,悬浮,置顶,汇报,答辩,路演,台词,发言,课件,培训,全屏,提示,便利贴,专注,时钟,口播,备忘,定时器,倒数,会议,教学,直播,录课,主持,演说,闹钟,工作
+发言,路演,彩排,答辩,汇报,演说,讲稿,课件,主持,培训,讲师,讲座,录课,台词,口播,定时器,番茄钟,幻灯片,演示,悬浮,置顶,全屏,会议,直播,教学,专注,备忘,时钟,便利贴,倒数
 
 ### 지원 URL
 
@@ -1015,7 +1015,7 @@ StickyPresenter Plus 與 Pro 皆為自動續訂訂閱。 費用會從你的 Appl
 
 ### 키워드
 
-簡報,投影片,演講,講者,番茄鐘,倒數,提詞機,講稿,排練,報告,上課,計時器
+投影片,演講,講者,番茄鐘,倒數,提詞機,講稿,排練,報告,上課,懸浮,置頂,會議,主持,研討會,講座,講師,教學,專注,口試,提案,直播,發言,答辯,台詞,口播,錄課,演說,便條紙
 
 ### 지원 URL
 
@@ -1187,7 +1187,7 @@ Chính sách quyền riêng tư: https://m1zz.github.io/StickyPresenter/vi/priva
 
 ### 키워드
 
-trình chiếu,slide,diễn thuyết,bài giảng,pomodoro,hội thảo,đếm ngược,kịch bản,tập dượt,diễn giả
+nhắc chữ,slide,giảng viên,bài giảng,pomodoro,hội thảo,đếm ngược,kịch bản,tập dượt,diễn giả
 
 ### 지원 URL
 
@@ -1442,7 +1442,7 @@ StickyPresenter
 
 ### 키워드
 
-παρουσίαση,διαφάνειες,ομιλητής,pomodoro,διάλεξη,συνέδριο,χρονόμετρο,αντίστροφη,σενάριο,πρόβα,ομιλία
+παρουσίαση,διαφάνειες,ομιλητής,pomodoro,διάλεξη,συνέδριο,χρονόμετρο,αντίστροφη,σενάριο,πρόβα,λόγος
 
 ### 지원 URL
 
