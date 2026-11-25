@@ -1639,3 +1639,43 @@ https://m1zz.github.io/StickyPresenter/tr/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/StickyPresenter/tr/remote.html
+
+## 심사 메모
+
+<!-- DeployBar 가 App Store Connect ▸ 앱 심사 정보 ▸ 메모 에 그대로 올린다. 영어, 4000자 이하.
+     2026-11 Guideline 2.1 Information Needed 리젝 대응 — 애플이 요구한 6가지에 번호 그대로 답한다. 빼지 말 것. -->
+
+Thank you for reviewing. Answers to the six items requested under Guideline 2.1, in order:
+
+1. SCREEN RECORDING (physical iPhone, latest iOS)
+https://m1zz.github.io/StickyPresenter/review/iphone.mp4
+It starts at app launch and shows: onboarding, finding the Mac, entering the pairing code, controlling the timer, the Pro paywall and a sandbox purchase, and Restore Purchases.
+A recording of the Mac app it controls: https://m1zz.github.io/StickyPresenter/review/mac.mp4
+The app has no account registration, no login and no user-generated content, so there is no account deletion, reporting or blocking flow.
+
+2. PURPOSE AND AUDIENCE
+This is the iPhone and Apple Watch companion of our Mac app StickyPresenter (same App Store record, universal purchase). People giving talks, lectures and demos run a countdown timer on the Mac, on top of Keynote in full screen. During the talk they cannot reach the Mac. This app lets them start, pause, add or remove 30 seconds, reset and start a new timer from the iPhone or Apple Watch, and move the on-screen timer if it covers a slide. The watch shows the remaining time and taps the wrist at 5 minutes, 1 minute and at the end.
+
+3. HOW TO TEST
+The app needs the Mac app, because it remote-controls it. No login or demo account is needed.
+a) On a Mac (macOS 14 or later) install StickyPresenter from the Mac App Store: https://apps.apple.com/app/id6778457299 and open it. It lives in the menu bar (timer icon). Start a timer from the menu bar icon > Timers.
+b) Put the iPhone on the same Wi-Fi as the Mac. Open this app, read the three intro pages, tap Find My Mac, and allow Local Network access.
+c) Tap the Mac in the list. On the Mac, click the menu bar icon, then Remote: a four-digit code is shown. Enter it on the iPhone. Next launches reconnect automatically.
+d) The remote screen now shows the Mac's timer. Try Start/Pause, +30s / -30s, Reset, and the 3/5/10/15 minute presets. These are free.
+e) Pro features: widget size S/M/L and theme, dragging the timer on the screen map, and Apple Watch. Tapping any of them opens the paywall. Settings (gear icon) has See Pro and Restore Purchases.
+f) Apple Watch: open the watch app while the iPhone app is connected.
+On the Mac side, remote control is free for 3 talks; after that the Mac app asks for Pro too. Pro is one product for both devices, so a sandbox purchase on either device unlocks both.
+If no Mac is available, the recordings in item 1 show the complete flow.
+
+4. EXTERNAL SERVICES
+No third-party SDKs, no AI services, no ads, no tracking, no accounts.
+iPhone and Mac talk directly over the local network with Apple MultipeerConnectivity (encryption required, paired by a four-digit code). Nothing goes through a server.
+Apple StoreKit for In-App Purchases (Pro subscriptions: weekly, monthly, yearly; Pro lifetime; optional tips that unlock nothing).
+Apple CloudKit (our own public container) for anonymous usage counts, feedback the user chooses to send, and a remote switch that can turn off automatic reconnect.
+Apple WatchConnectivity for the watch app.
+
+5. REGIONAL DIFFERENCES
+None. The app works the same in all regions. Only the language of the interface changes (24 languages).
+
+6. REGULATED INDUSTRY / THIRD-PARTY MATERIAL
+Not applicable. The app is not in a regulated industry and contains no third-party protected content. All icons, text and screenshots are our own.

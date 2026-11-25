@@ -57,8 +57,8 @@ StickyPresenter
 • 첫 실행 때 기능별 사용 가이드가 열리고, 도움말 메뉴에서 언제든 다시 볼 수 있습니다
 • 로그인할 때 자동으로 열리도록 설정할 수 있습니다
 
-iPhone 리모컨 (별도 무료 앱)
-발표 중에는 Mac에 손이 닿지 않습니다. Remote Controller for Sticky 앱을 쓰면 iPhone에서 타이머를 시작하고 멈추고, 30초씩 더하거나 빼고, 위젯 크기와 테마를 바꾸고, 슬라이드를 가리는 위젯을 옮길 수 있습니다. 네 자리 코드로 내 Mac과만 연결되어 Mac이 여러 대 있는 회의실에서도 엇갈리지 않습니다.
+iPhone · Apple Watch 리모컨
+발표 중에는 Mac에 손이 닿지 않습니다. iPhone에 StickyPresenter를 받으면 iPhone에서 타이머를 시작하고 멈추고, 30초씩 더하거나 빼고, 위젯 크기와 테마를 바꾸고, 슬라이드를 가리는 위젯을 옮길 수 있습니다. 네 자리 코드로 내 Mac과만 연결되어 Mac이 여러 대 있는 회의실에서도 엇갈리지 않습니다.
 
 무료와 Plus · Pro
 노트 5장, 타이머 2개, 뽀모도로, 텔레프롬프터, 단축키는 무료라 발표 하나를 처음부터 끝까지 치를 수 있습니다. Plus는 노트 · 타이머 무제한, 카멜레온 테마, 배경음악, 프리셋 편집, 텔레프롬프터 좌우 반전을 엽니다. Pro는 여기에 iPhone 리모컨, 화면 공유용 타이머 별도 창, 단축어 · Siri, 알림 센터 위젯을 더합니다. 리모컨은 발표 세 번까지 무료로 써 볼 수 있습니다. 연 구독이나 평생 중에 고르세요.
@@ -143,8 +143,8 @@ EASY TO LEARN
 • A built-in guide opens on first launch and is always one click away in the Help menu
 • Optionally open at login so it's ready before every talk
 
-IPHONE REMOTE (SEPARATE FREE APP)
-During a talk your Mac is out of reach. Remote Controller for Sticky puts the timer in your hand: start and pause, add or subtract 30 seconds, change the widget's size and theme, or move it off a slide it's covering. It pairs with your Mac using a four-digit code, so in a room full of Macs it only ever talks to yours.
+IPHONE AND APPLE WATCH REMOTE
+During a talk your Mac is out of reach. StickyPresenter for iPhone puts the timer in your hand: start and pause, add or subtract 30 seconds, change the widget's size and theme, or move it off a slide it's covering. It pairs with your Mac using a four-digit code, so in a room full of Macs it only ever talks to yours.
 
 FREE, PLUS AND PRO
 Five notes, two timers, Pomodoro, the teleprompter and the shortcuts are free, enough to give a whole talk. Plus unlocks unlimited notes and timers, the Chameleon theme, background music, preset editing and the mirrored teleprompter. Pro adds the iPhone remote, the timer window for screen sharing, Shortcuts and Siri, and the Notification Center widget. You can try the remote free for three talks. Pay yearly or once for life.
@@ -229,8 +229,8 @@ EASY TO LEARN
 • A built-in guide opens on first launch and is always one click away in the Help menu
 • Optionally open at login, so it's ready before every talk
 
-IPHONE REMOTE (SEPARATE FREE APP)
-During a talk your Mac is out of reach. Remote Controller for Sticky puts the timer in your hand: start and pause, add or subtract 30 seconds, change the widget's size and theme, or move it off a slide it's covering. It pairs with your Mac using a four-digit code, so in a room full of Macs it only ever talks to yours.
+IPHONE AND APPLE WATCH REMOTE
+During a talk your Mac is out of reach. StickyPresenter for iPhone puts the timer in your hand: start and pause, add or subtract 30 seconds, change the widget's size and theme, or move it off a slide it's covering. It pairs with your Mac using a four-digit code, so in a room full of Macs it only ever talks to yours.
 
 FREE, PLUS AND PRO
 Five notes, two timers, Pomodoro, the teleprompter and the shortcuts are free, enough to give a whole talk. Plus unlocks unlimited notes and timers, the Chameleon theme, background music, preset editing and the mirrored teleprompter. Pro adds the iPhone remote, the timer window for screen sharing, Shortcuts and Siri, and the Notification Centre widget. You can try the remote free for three talks. Pay annually or once for life.
@@ -315,8 +315,8 @@ BGM
 ・初回起動時にガイドが開き、ヘルプメニューからいつでも見返せます
 ・ログイン時に自動で開くよう設定すれば、毎回の発表前に準備が整います
 
-iPhoneリモコン (無料の別アプリ)
-発表中、Macには手が届きません。「Remote Controller for Sticky」なら、タイマーを手元で操作できます。開始と一時停止、30秒の増減、ウィジェットのサイズやテーマの変更、スライドにかかったウィジェットの移動もiPhoneから。Macとは4桁のコードでペアリングするので、Macが並ぶ会場でも、操作するのはあなたのMacだけです。
+iPhone・Apple Watchリモコン
+発表中、Macには手が届きません。iPhone版StickyPresenterなら、タイマーを手元で操作できます。開始と一時停止、30秒の増減、ウィジェットのサイズやテーマの変更、スライドにかかったウィジェットの移動もiPhoneから。Macとは4桁のコードでペアリングするので、Macが並ぶ会場でも、操作するのはあなたのMacだけです。
 
 無料とPlus・Pro
 付箋5枚、タイマー2個、ポモドーロ、プロンプター、キーボードショートカットは無料で、発表ひとつを最初から最後までこなせます。Plusでは付箋・タイマーが無制限になり、カメレオンテーマ、BGM、プリセット編集、プロンプターの左右反転が使えます。Proではさらに、iPhoneリモコン、画面共有用のタイマー別ウインドウ、ショートカット・Siri、通知センターのウィジェットが加わります。リモコンは発表3回まで無料で試せます。年額か買い切りかを選べます。
@@ -401,8 +401,8 @@ StickyPresenter
 • 首次启动时会打开内置使用指南，之后随时可从“帮助”菜单一键查看
 • 可选择登录时自动打开，每次演讲前都已准备就绪
 
-IPHONE 遥控器（独立的免费 App）
-演讲时，Mac 往往够不着。Remote Controller for Sticky 把计时器交到你手中：开始和暂停、增减 30 秒、调整小组件的大小和主题，或者把它从遮住内容的位置移开。它通过四位数字码与你的 Mac 配对，即使会场里有很多台 Mac，也只会与你的那一台通信。
+IPHONE 和 APPLE WATCH 遥控器
+演讲时，Mac 往往够不着。iPhone 版 StickyPresenter 把计时器交到你手中：开始和暂停、增减 30 秒、调整小组件的大小和主题，或者把它从遮住内容的位置移开。它通过四位数字码与你的 Mac 配对，即使会场里有很多台 Mac，也只会与你的那一台通信。
 
 免费版与 PLUS · PRO
 5 张便签、2 个计时器、番茄钟、提词器和键盘快捷键都免费，足够完成一整场演讲。Plus 解锁无限便签和计时器、变色龙主题、背景音乐、预设编辑和提词器镜像。Pro 在此基础上增加 iPhone 遥控器、用于屏幕共享的计时器独立窗口、快捷指令和 Siri，以及通知中心小组件。遥控器可免费试用三场演讲。可选按年订阅或一次买断。
@@ -486,8 +486,8 @@ FÁCIL DE APRENDER
 • Una guía integrada se abre al iniciar por primera vez y siempre está a un clic en el menú Ayuda
 • Si quieres, ábrela al iniciar sesión para tenerla lista antes de cada charla
 
-CONTROL REMOTO EN IPHONE (APP GRATUITA APARTE)
-Durante la charla, tu Mac queda fuera de alcance. Remote Controller for Sticky te pone el temporizador en la mano: inicia y pausa, suma o resta 30 segundos, cambia el tamaño y el tema del widget o muévelo si tapa algo de la diapositiva.
+CONTROL REMOTO EN IPHONE Y APPLE WATCH
+Durante la charla, tu Mac queda fuera de alcance. StickyPresenter para iPhone te pone el temporizador en la mano: inicia y pausa, suma o resta 30 segundos, cambia el tamaño y el tema del widget o muévelo si tapa algo de la diapositiva.
 
 GRATIS, PLUS Y PRO
 Cinco notas, dos temporizadores, Pomodoro, el teleprompter y los atajos son gratis, suficiente para dar una presentación entera. Plus desbloquea notas y temporizadores ilimitados, el tema Camaleón, la música de fondo, la edición de ajustes rápidos y el teleprompter invertido. Pro añade el control remoto del iPhone, la ventana de temporizador para compartir pantalla, Atajos y Siri, y el widget del centro de notificaciones. Puedes probar el control remoto gratis en tres presentaciones. Paga al año o una sola vez para siempre.
@@ -570,8 +570,8 @@ KURZBEFEHLE, DIE ÜBERALL FUNKTIONIEREN
 LEICHT ZU LERNEN
 • Beim ersten Start öffnet sich ein integriertes Handbuch, das du im Hilfe-Menü jederzeit mit einem Klick erreichst
 
-IPHONE-FERNBEDIENUNG (EIGENE KOSTENLOSE APP)
-Während eines Vortrags ist dein Mac außer Reichweite. Remote Controller for Sticky legt den Timer in deine Hand: starten und pausieren, 30 Sekunden hinzufügen oder abziehen, Größe und Design des Widgets ändern oder es von einer Folie wegschieben, die es verdeckt.
+FERNBEDIENUNG AUF IPHONE UND APPLE WATCH
+Während eines Vortrags ist dein Mac außer Reichweite. StickyPresenter für iPhone legt den Timer in deine Hand: starten und pausieren, 30 Sekunden hinzufügen oder abziehen, Größe und Design des Widgets ändern oder es von einer Folie wegschieben, die es verdeckt.
 
 KOSTENLOS, PLUS UND PRO
 Fünf Notizen, zwei Timer, Pomodoro, der Teleprompter und die Tastaturkurzbefehle sind kostenlos – genug für einen ganzen Vortrag. Plus schaltet unbegrenzt Notizen und Timer, das Chamäleon-Design, Hintergrundmusik, das Bearbeiten von Schnellvorgaben und den gespiegelten Teleprompter frei. Pro ergänzt die iPhone-Fernbedienung, das Timer-Fenster für die Bildschirmfreigabe, Kurzbefehle und Siri sowie das Widget in der Mitteilungszentrale. Die Fernbedienung kannst du drei Vorträge lang kostenlos ausprobieren. Zahle jährlich oder einmal für immer.
@@ -653,8 +653,8 @@ DES RACCOURCIS QUI FONCTIONNENT PARTOUT
 SIMPLE À PRENDRE EN MAIN
 • Un guide intégré s’ouvre au premier lancement et reste à un clic dans le menu Aide
 
-TÉLÉCOMMANDE IPHONE (APP GRATUITE SÉPARÉE)
-Pendant une intervention, votre Mac est hors de portée. Remote Controller for Sticky met le minuteur au creux de votre main : démarrez et mettez en pause, ajoutez ou retirez 30 secondes, changez la taille et le thème du widget, ou écartez-le d’une diapositive qu’il masque.
+TÉLÉCOMMANDE SUR IPHONE ET APPLE WATCH
+Pendant une intervention, votre Mac est hors de portée. StickyPresenter pour iPhone met le minuteur au creux de votre main : démarrez et mettez en pause, ajoutez ou retirez 30 secondes, changez la taille et le thème du widget, ou écartez-le d’une diapositive qu’il masque.
 
 GRATUIT, PLUS ET PRO
 Cinq notes, deux minuteurs, le Pomodoro, le prompteur et les raccourcis sont gratuits, de quoi mener une présentation entière. Plus débloque les notes et minuteurs illimités, le thème Caméléon, la musique de fond, la modification des préréglages et le prompteur en miroir. Pro ajoute la télécommande iPhone, la fenêtre de minuteur pour le partage d’écran, Raccourcis et Siri, ainsi que le widget du Centre de notifications. Vous pouvez essayer la télécommande gratuitement pendant trois présentations. Payez à l’année ou une fois pour toujours.
@@ -739,8 +739,8 @@ SEMPLICE DA SUBITO
 • Una guida integrata si apre al primo avvio e resta a un clic nel menu Aiuto
 • Opzione per aprire l’app al login, così sei pronto prima di ogni intervento
 
-TELECOMANDO IPHONE (APP GRATUITA A PARTE)
-Mentre presenti, il Mac è fuori portata. Remote Controller for Sticky mette il timer in mano tua: avvia e metti in pausa, aggiungi o togli 30 secondi, cambia dimensione e tema del widget o sposta quello che copre una slide. L’abbinamento usa un codice di quattro cifre: anche in una sala piena di Mac, il telecomando parla solo con il tuo.
+TELECOMANDO SU IPHONE E APPLE WATCH
+Mentre presenti, il Mac è fuori portata. StickyPresenter per iPhone mette il timer in mano tua: avvia e metti in pausa, aggiungi o togli 30 secondi, cambia dimensione e tema del widget o sposta quello che copre una slide. L’abbinamento usa un codice di quattro cifre: anche in una sala piena di Mac, il telecomando parla solo con il tuo.
 
 GRATIS, PLUS E PRO
 Cinque note, due timer, il Pomodoro, il gobbo e le abbreviazioni da tastiera sono gratis, abbastanza per un’intera presentazione. Plus sblocca note e timer illimitati, il tema Camaleonte, la musica di sottofondo, la modifica dei preset e il gobbo a specchio. Pro aggiunge il telecomando iPhone, la finestra del timer per la condivisione schermo, Comandi Rapidi e Siri e il widget del Centro Notifiche. Puoi provare il telecomando gratis per tre presentazioni. Paga ogni anno o una volta per sempre.
@@ -825,8 +825,8 @@ FÁCIL DE COMEÇAR
 • Um guia integrado abre no primeiro uso e fica a um clique no menu Ajuda
 • Opção de abrir ao iniciar a sessão, para você estar pronto antes de cada apresentação
 
-CONTROLE REMOTO NO IPHONE (APP GRATUITO À PARTE)
-Durante a apresentação, o Mac fica fora de alcance. O Remote Controller for Sticky coloca o timer na sua mão: inicie e pause, some ou tire 30 segundos, mude o tamanho e o tema do widget ou afaste o que estiver cobrindo um slide. O pareamento usa um código de quatro dígitos: mesmo numa sala cheia de Macs, o controle remoto só fala com o seu.
+CONTROLE REMOTO NO IPHONE E NO APPLE WATCH
+Durante a apresentação, o Mac fica fora de alcance. O StickyPresenter para iPhone coloca o timer na sua mão: inicie e pause, some ou tire 30 segundos, mude o tamanho e o tema do widget ou afaste o que estiver cobrindo um slide. O pareamento usa um código de quatro dígitos: mesmo numa sala cheia de Macs, o controle remoto só fala com o seu.
 
 GRÁTIS, PLUS E PRO
 Cinco notas, dois timers, Pomodoro, o teleprompter e os atalhos são grátis, o bastante para uma apresentação inteira. O Plus libera notas e timers ilimitados, o tema Camaleão, música de fundo, edição de atalhos rápidos e o teleprompter espelhado. O Pro acrescenta o controle remoto no iPhone, a janela do timer para compartilhar a tela, Atalhos e Siri e o widget da Central de Notificações. Dá para testar o controle remoto grátis em três apresentações. Pague por ano ou uma vez para sempre.
@@ -911,8 +911,8 @@ StickyPresenter
 • Встроенное руководство открывается при первом запуске, а потом всегда доступно в меню «Справка»
 • Можно включить открытие при входе, чтобы всё было готово перед каждым выступлением
 
-ПУЛЬТ НА IPHONE (ОТДЕЛЬНОЕ БЕСПЛАТНОЕ ПРИЛОЖЕНИЕ)
-Во время выступления Mac недосягаем. Remote Controller for Sticky отдаёт таймер вам в руки: запускайте и ставьте на паузу, прибавляйте или убавляйте по 30 секунд, меняйте размер и тему виджета или сдвигайте виджет, закрывший слайд. Сопряжение происходит по четырёхзначному коду: даже в зале, полном Mac, пульт общается только с вашим.
+ПУЛЬТ НА IPHONE И APPLE WATCH
+Во время выступления Mac недосягаем. StickyPresenter для iPhone отдаёт таймер вам в руки: запускайте и ставьте на паузу, прибавляйте или убавляйте по 30 секунд, меняйте размер и тему виджета или сдвигайте виджет, закрывший слайд. Сопряжение происходит по четырёхзначному коду: даже в зале, полном Mac, пульт общается только с вашим.
 
 БЕСПЛАТНО, PLUS И PRO
 Пять заметок, два таймера, Помодоро, телесуфлёр и сочетания клавиш бесплатны — этого хватит на целое выступление. Plus открывает неограниченные заметки и таймеры, тему «Хамелеон», фоновую музыку, изменение шаблонов и зеркальный телесуфлёр. Pro добавляет пульт на iPhone, отдельное окно таймера для демонстрации экрана, Быстрые команды и Siri, а также виджет в Центре уведомлений. Пульт можно бесплатно попробовать на трёх выступлениях. Платите за год или один раз навсегда.
@@ -997,8 +997,8 @@ StickyPresenter
 • 第一次開啟時會出現使用指南，之後可隨時從「輔助說明」選單再看
 • 可設定登入時自動開啟，每次簡報前都已準備就緒
 
-iPhone 遙控器（另一個免費 App）
-簡報時，Mac 往往伸手不及。Remote Controller for Sticky 讓計時器握在你手中：開始與暫停、加減 30 秒、變更小工具大小與主題，或把擋住投影片的小工具移開。配對只需四位數代碼：即使會議室裡有一堆 Mac，遙控器也只會連到你的那一部。
+iPhone 與 Apple Watch 遙控器
+簡報時，Mac 往往伸手不及。iPhone 版 StickyPresenter 讓計時器握在你手中：開始與暫停、加減 30 秒、變更小工具大小與主題，或把擋住投影片的小工具移開。配對只需四位數代碼：即使會議室裡有一堆 Mac，遙控器也只會連到你的那一部。
 
 免費版與 Plus · Pro
 5 張便利貼、2 個計時器、番茄鐘、提詞機和鍵盤快速鍵都免費，足以完成一整場簡報。Plus 解鎖無限便利貼和計時器、變色龍主題、背景音樂、預設值編輯和提詞機鏡像。Pro 再加上 iPhone 遙控器、用於螢幕共享的計時器獨立視窗、捷徑和 Siri，以及通知中心小工具。遙控器可以免費試用三場簡報。可選年訂閱或一次買斷。
@@ -1083,8 +1083,8 @@ StickyPresenter
 • คู่มือในแอปจะเปิดเมื่อใช้งานครั้งแรก และเปิดดูได้ในคลิกเดียวจากเมนูความช่วยเหลือ
 • ตั้งให้เปิดแอปเมื่อเข้าสู่ระบบ เพื่อให้พร้อมก่อนการนำเสนอทุกครั้ง
 
-รีโมต iPhone (แอปฟรีแยกต่างหาก)
-ระหว่างนำเสนอ คุณเอื้อมไม่ถึง Mac Remote Controller for Sticky ให้คุณถือตัวจับเวลาไว้ในมือ: เริ่มและหยุดชั่วคราว เพิ่มหรือลด 30 วินาที เปลี่ยนขนาดและธีมของวิดเจ็ต หรือย้ายวิดเจ็ตที่บังสไลด์ การจับคู่ใช้รหัสสี่หลัก แม้ในห้องประชุมที่มี Mac หลายเครื่อง รีโมตก็คุยกับเครื่องของคุณเท่านั้น
+รีโมตบน iPhone และ Apple Watch
+ระหว่างนำเสนอ คุณเอื้อมไม่ถึง Mac StickyPresenter บน iPhone ให้คุณถือตัวจับเวลาไว้ในมือ: เริ่มและหยุดชั่วคราว เพิ่มหรือลด 30 วินาที เปลี่ยนขนาดและธีมของวิดเจ็ต หรือย้ายวิดเจ็ตที่บังสไลด์ การจับคู่ใช้รหัสสี่หลัก แม้ในห้องประชุมที่มี Mac หลายเครื่อง รีโมตก็คุยกับเครื่องของคุณเท่านั้น
 
 ฟรี, PLUS และ PRO
 โน้ต 5 แผ่น ตัวจับเวลา 2 ตัว โพโมโดโร เทเลพรอมป์เตอร์ และปุ่มลัดใช้ได้ฟรี พอสำหรับการนำเสนอทั้งครั้ง Plus ปลดล็อกโน้ตและตัวจับเวลาไม่จำกัด ธีมกิ้งก่า เพลงประกอบ การแก้ไขค่าที่ตั้งไว้ และการกลับด้านเทเลพรอมป์เตอร์ Pro เพิ่มรีโมต iPhone หน้าต่างตัวจับเวลาสำหรับแชร์หน้าจอ คำสั่งลัดและ Siri และวิดเจ็ตในศูนย์การแจ้งเตือน ทดลองใช้รีโมตได้ฟรี 3 ครั้ง เลือกจ่ายรายปีหรือจ่ายครั้งเดียวใช้ได้ตลอดไป
@@ -1169,8 +1169,8 @@ DỄ LÀM QUEN
 • Hướng dẫn tích hợp mở ra ở lần đầu dùng và luôn cách một cú nhấp trong menu Trợ giúp
 • Tùy chọn mở khi đăng nhập để bạn sẵn sàng trước mỗi buổi trình bày
 
-ĐIỀU KHIỂN TỪ XA TRÊN iPhone (ỨNG DỤNG MIỄN PHÍ RIÊNG)
-Khi đang thuyết trình, Mac nằm ngoài tầm với. Remote Controller for Sticky đặt bộ hẹn giờ vào tay bạn: bắt đầu và tạm dừng, thêm hoặc bớt 30 giây, đổi kích thước và chủ đề widget, hay dời widget đang che trang chiếu. Việc ghép nối dùng mã bốn chữ số: ngay cả trong phòng đầy Mac, điều khiển chỉ nói chuyện với đúng Mac của bạn.
+ĐIỀU KHIỂN TỪ XA TRÊN iPhone VÀ Apple Watch
+Khi đang thuyết trình, Mac nằm ngoài tầm với. StickyPresenter trên iPhone đặt bộ hẹn giờ vào tay bạn: bắt đầu và tạm dừng, thêm hoặc bớt 30 giây, đổi kích thước và chủ đề widget, hay dời widget đang che trang chiếu. Việc ghép nối dùng mã bốn chữ số: ngay cả trong phòng đầy Mac, điều khiển chỉ nói chuyện với đúng Mac của bạn.
 
 MIỄN PHÍ, PLUS VÀ PRO
 Năm ghi chú, hai hẹn giờ, Pomodoro, máy nhắc chữ và phím tắt đều miễn phí, đủ cho trọn một bài thuyết trình. Plus mở ghi chú và hẹn giờ không giới hạn, chủ đề Tắc kè hoa, nhạc nền, sửa mốc nhanh và lật ngược máy nhắc chữ. Pro thêm điều khiển từ xa trên iPhone, cửa sổ hẹn giờ để chia sẻ màn hình, Phím tắt và Siri, cùng tiện ích Trung tâm thông báo. Bạn có thể dùng thử điều khiển từ xa miễn phí trong ba bài thuyết trình. Trả theo năm hoặc một lần dùng mãi mãi.
@@ -1255,8 +1255,8 @@ SNADNÝ START
 • Vestavěná příručka se otevře při prvním spuštění a zůstane na jedno kliknutí v nabídce Nápověda
 • Možnost otevřít při přihlášení, abyste byli připraveni před každým vystoupením
 
-DÁLKOVÉ OVLÁDÁNÍ Z iPhonu (SAMOSTATNÁ APLIKACE ZDARMA)
-Při vystoupení je Mac mimo dosah. Remote Controller for Sticky vám časovač vloží do ruky: spustíte a pozastavíte ho, přidáte nebo uberete 30 sekund, změníte velikost a motiv widgetu nebo odsunete widget, který zakrývá snímek. Párování probíhá čtyřmístným kódem: i v sále plném Maců komunikuje ovládání jen s tím vaším.
+DÁLKOVÉ OVLÁDÁNÍ Z iPhonu A Apple Watch
+Při vystoupení je Mac mimo dosah. StickyPresenter pro iPhone vám časovač vloží do ruky: spustíte a pozastavíte ho, přidáte nebo uberete 30 sekund, změníte velikost a motiv widgetu nebo odsunete widget, který zakrývá snímek. Párování probíhá čtyřmístným kódem: i v sále plném Maců komunikuje ovládání jen s tím vaším.
 
 ZDARMA, PLUS A PRO
 Pět poznámek, dva časovače, Pomodoro, teleprompter a klávesové zkratky jsou zdarma – stačí na celou prezentaci. Plus odemyká neomezené poznámky a časovače, motiv Chameleon, hudbu na pozadí, úpravu předvoleb a zrcadlený teleprompter. Pro přidává dálkové ovládání z iPhonu, okno časovače pro sdílení obrazovky, Zkratky a Siri a widget v Oznamovacím centru. Dálkové ovládání si můžete zdarma vyzkoušet při třech prezentacích. Plaťte ročně, nebo jednou navždy.
@@ -1341,8 +1341,8 @@ NEM AT KOMME I GANG
 • En indbygget guide åbner ved første start og er altid et klik væk i menuen Hjælp
 • Valgmulighed om at åbne ved login, så du er klar før hvert oplæg
 
-IPHONE-FJERNBETJENING (SEPARAT GRATIS APP)
-Under et oplæg er din Mac uden for rækkevidde. Remote Controller for Sticky lægger timeren i din hånd: start og sæt på pause, læg 30 sekunder til eller træk dem fra, skift widgettens størrelse og tema, eller flyt en widget, der skjuler et slide. Parringen sker med en firecifret kode: Selv i et lokale fuld af Mac’er taler fjernbetjeningen kun med din.
+FJERNBETJENING PÅ IPHONE OG APPLE WATCH
+Under et oplæg er din Mac uden for rækkevidde. StickyPresenter til iPhone lægger timeren i din hånd: start og sæt på pause, læg 30 sekunder til eller træk dem fra, skift widgettens størrelse og tema, eller flyt en widget, der skjuler et slide. Parringen sker med en firecifret kode: Selv i et lokale fuld af Mac’er taler fjernbetjeningen kun med din.
 
 GRATIS, PLUS OG PRO
 Fem sedler, to timere, Pomodoro, teleprompteren og tastaturgenvejene er gratis – nok til en hel præsentation. Plus låser op for ubegrænsede sedler og timere, Kamæleon-temaet, baggrundsmusik, redigering af forudindstillinger og spejlvendt teleprompter. Pro tilføjer iPhone-fjernbetjeningen, timervinduet til skærmdeling, Genveje og Siri samt widgetten i Notifikationscenter. Du kan prøve fjernbetjeningen gratis i tre præsentationer. Betal årligt eller én gang for altid.
@@ -1424,8 +1424,8 @@ StickyPresenter
 ΕΥΚΟΛΑ ΑΠΟ ΤΗΝ ΑΡΧΗ
 • Ένας ενσωματωμένος οδηγός ανοίγει την πρώτη φορά και είναι πάντα ένα κλικ μακριά στο μενού Βοήθεια
 
-ΤΗΛΕΧΕΙΡΙΣΤΗΡΙΟ iPhone (ΞΕΧΩΡΙΣΤΗ ΔΩΡΕΑΝ ΕΦΑΡΜΟΓΗ)
-Κατά την παρουσίαση, το Mac είναι μακριά σας. Το Remote Controller for Sticky βάζει το χρονόμετρο στο χέρι σας: ξεκινήστε και κάντε παύση, προσθέστε ή αφαιρέστε 30 δευτερόλεπτα, αλλάξτε μέγεθος και θέμα του widget ή μετακινήστε ένα widget που καλύπτει μια διαφάνεια.
+ΤΗΛΕΧΕΙΡΙΣΤΗΡΙΟ ΣΕ iPhone ΚΑΙ Apple Watch
+Κατά την παρουσίαση, το Mac είναι μακριά σας. Το StickyPresenter για iPhone βάζει το χρονόμετρο στο χέρι σας: ξεκινήστε και κάντε παύση, προσθέστε ή αφαιρέστε 30 δευτερόλεπτα, αλλάξτε μέγεθος και θέμα του widget ή μετακινήστε ένα widget που καλύπτει μια διαφάνεια.
 
 ΔΩΡΕΑΝ, PLUS ΚΑΙ PRO
 Πέντε σημειώματα, δύο χρονόμετρα, Pomodoro, ο τηλεπροτροπέας και οι συντομεύσεις είναι δωρεάν, αρκετά για μια ολόκληρη παρουσίαση. Το Plus ξεκλειδώνει απεριόριστα σημειώματα και χρονόμετρα, το θέμα Χαμαιλέοντας, μουσική υπόκρουση, επεξεργασία προεπιλογών και κατοπτρικό τηλεπροτροπέα. Το Pro προσθέτει το τηλεχειριστήριο iPhone, το παράθυρο χρονομέτρου για κοινή χρήση οθόνης, Συντομεύσεις και Siri, και το widget στο Κέντρο γνωστοποιήσεων. Το τηλεχειριστήριο δοκιμάζεται δωρεάν σε τρεις παρουσιάσεις. Πληρώστε ετησίως ή μία φορά για πάντα.
@@ -1510,8 +1510,8 @@ HELPPO ALOITTAA
 • Sisäänrakennettu opas avautuu ensimmäisellä käynnistyskerralla ja on aina yhden napsautuksen päässä Ohje-valikossa
 • Valinnainen avaaminen kirjautumisen yhteydessä, jotta olet valmis ennen jokaista esiintymistä
 
-IPHONE-KAUKO-OHJAIN (ERILLINEN ILMAINEN APPI)
-Esityksen aikana Mac on ulottumattomissa. Remote Controller for Sticky antaa ajastimen käteesi: käynnistä ja keskeytä, lisää tai vähennä 30 sekuntia, vaihda widgetin kokoa ja teemaa tai siirrä dian peittävä widget pois. Parinmuodostus tehdään nelinumeroisella koodilla: vaikka salissa olisi täynnä Maceja, kauko-ohjain puhuu vain omasi kanssa.
+KAUKO-OHJAIN IPHONESSA JA APPLE WATCHISSA
+Esityksen aikana Mac on ulottumattomissa. iPhonen StickyPresenter antaa ajastimen käteesi: käynnistä ja keskeytä, lisää tai vähennä 30 sekuntia, vaihda widgetin kokoa ja teemaa tai siirrä dian peittävä widget pois. Parinmuodostus tehdään nelinumeroisella koodilla: vaikka salissa olisi täynnä Maceja, kauko-ohjain puhuu vain omasi kanssa.
 
 ILMAINEN, PLUS JA PRO
 Viisi muistilappua, kaksi ajastinta, Pomodoro, teleprompteri ja pikanäppäimet ovat ilmaisia – riittävästi kokonaiseen esitykseen. Plus avaa rajattomat muistilaput ja ajastimet, kameleonttiteeman, taustamusiikin, pika-asetusten muokkauksen ja peilatun teleprompterin. Pro tuo lisäksi iPhone-kauko-ohjaimen, ajastinikkunan näytön jakoon, Pikakomennot ja Sirin sekä ilmoituskeskuksen widgetin. Kauko-ohjainta voi kokeilla ilmaiseksi kolmessa esityksessä. Maksa vuosittain tai kerran ikuisesti.
@@ -1596,8 +1596,8 @@ MUDAH DIMULAI
 • Panduan bawaan terbuka saat pertama kali dijalankan dan selalu satu klik jauhnya di menu Bantuan
 • Opsi membuka saat login agar Anda siap sebelum setiap presentasi
 
-REMOTE iPhone (APLIKASI GRATIS TERPISAH)
-Saat presentasi, Mac berada di luar jangkauan. Remote Controller for Sticky menaruh timer di tangan Anda: mulai dan jeda, tambah atau kurangi 30 detik, ubah ukuran dan tema widget, atau geser widget yang menutupi slide. Pemasangan memakai kode empat digit: bahkan di ruangan penuh Mac, remote hanya terhubung ke Mac Anda.
+REMOTE DI iPhone DAN Apple Watch
+Saat presentasi, Mac berada di luar jangkauan. StickyPresenter untuk iPhone menaruh timer di tangan Anda: mulai dan jeda, tambah atau kurangi 30 detik, ubah ukuran dan tema widget, atau geser widget yang menutupi slide. Pemasangan memakai kode empat digit: bahkan di ruangan penuh Mac, remote hanya terhubung ke Mac Anda.
 
 GRATIS, PLUS, DAN PRO
 Lima catatan, dua timer, Pomodoro, teleprompter, dan pintasan papan ketik gratis, cukup untuk satu presentasi penuh. Plus membuka catatan dan timer tanpa batas, tema Bunglon, musik latar, edit preset, dan teleprompter cermin. Pro menambahkan remote iPhone, jendela timer untuk berbagi layar, Pintasan dan Siri, serta widget Pusat Pemberitahuan. Remote bisa dicoba gratis untuk tiga presentasi. Bayar tahunan atau sekali untuk selamanya.
@@ -1682,8 +1682,8 @@ ENKELT Å KOMME I GANG
 • En innebygd veiledning åpnes ved første oppstart og er alltid ett klikk unna i Hjelp-menyen
 • Valg om å åpne ved pålogging, slik at du er klar før hvert innlegg
 
-IPHONE-FJERNKONTROLL (EGEN GRATIS APP)
-Under et innlegg er Macen utenfor rekkevidde. Remote Controller for Sticky legger tidtakeren i hånden din: start og pause, legg til eller trekk fra 30 sekunder, endre widgetens størrelse og tema, eller flytt en widget som skjuler et lysbilde. Paringen skjer med en firesifret kode: selv i et rom fullt av Mac-er snakker fjernkontrollen bare med din.
+FJERNKONTROLL PÅ IPHONE OG APPLE WATCH
+Under et innlegg er Macen utenfor rekkevidde. StickyPresenter for iPhone legger tidtakeren i hånden din: start og pause, legg til eller trekk fra 30 sekunder, endre widgetens størrelse og tema, eller flytt en widget som skjuler et lysbilde. Paringen skjer med en firesifret kode: selv i et rom fullt av Mac-er snakker fjernkontrollen bare med din.
 
 GRATIS, PLUS OG PRO
 Fem notater, to tidtakere, Pomodoro, teleprompteren og hurtigtastene er gratis – nok til en hel presentasjon. Plus låser opp ubegrensede notater og tidtakere, Kameleon-temaet, bakgrunnsmusikk, redigering av hurtigvalg og speilvendt teleprompter. Pro legger til iPhone-fjernkontrollen, tidtakervinduet for skjermdeling, Snarveier og Siri og widgeten i varslingssenteret. Du kan prøve fjernkontrollen gratis i tre presentasjoner. Betal årlig eller én gang for alltid.
@@ -1768,8 +1768,8 @@ MAKKELIJK BEGINNEN
 • Een ingebouwde handleiding opent bij de eerste start en staat altijd één klik weg in het menu Help
 • Optioneel openen bij het inloggen, zodat je klaar bent voor elke presentatie
 
-IPHONE-AFSTANDSBEDIENING (APARTE GRATIS APP)
-Tijdens een presentatie staat je Mac buiten bereik. Remote Controller for Sticky legt de timer in je hand: start en pauzeer, voeg 30 seconden toe of haal ze eraf, wijzig de grootte en het thema van de widget of schuif een widget weg die een dia afdekt. Koppelen gaat met een code van vier cijfers: ook in een zaal vol Macs praat de afstandsbediening alleen met die van jou.
+AFSTANDSBEDIENING OP IPHONE EN APPLE WATCH
+Tijdens een presentatie staat je Mac buiten bereik. StickyPresenter voor iPhone legt de timer in je hand: start en pauzeer, voeg 30 seconden toe of haal ze eraf, wijzig de grootte en het thema van de widget of schuif een widget weg die een dia afdekt. Koppelen gaat met een code van vier cijfers: ook in een zaal vol Macs praat de afstandsbediening alleen met die van jou.
 
 GRATIS, PLUS EN PRO
 Vijf notities, twee timers, Pomodoro, de teleprompter en de toetscombinaties zijn gratis, genoeg voor een hele presentatie. Plus ontgrendelt onbeperkt notities en timers, het Kameleon-thema, achtergrondmuziek, voorinstellingen bewerken en de gespiegelde teleprompter. Pro voegt de iPhone-afstandsbediening toe, het timervenster voor schermdeling, Opdrachten en Siri en de widget in het berichtencentrum. De afstandsbediening probeer je drie presentaties lang gratis. Betaal per jaar of eenmalig voor altijd.
@@ -1854,8 +1854,8 @@ SKRÓTY DZIAŁAJĄCE WSZĘDZIE
 • Wbudowany przewodnik otwiera się przy pierwszym uruchomieniu i jest zawsze o jedno kliknięcie od Ciebie w menu Pomoc
 • Opcja otwierania po zalogowaniu, abyś był gotowy przed każdym wystąpieniem
 
-PILOT NA iPhonie (OSOBNA DARMOWA APLIKACJA)
-Podczas wystąpienia Mac jest poza zasięgiem. Remote Controller for Sticky kładzie minutnik w Twojej dłoni: uruchamiaj i wstrzymuj, dodawaj lub odejmuj 30 sekund, zmieniaj rozmiar i motyw widżetu albo odsuwaj widżet zasłaniający slajd. Parowanie odbywa się czterocyfrowym kodem: nawet w sali pełnej Maców pilot rozmawia tylko z Twoim.
+PILOT NA iPhonie I Apple Watch
+Podczas wystąpienia Mac jest poza zasięgiem. StickyPresenter na iPhone'a kładzie minutnik w Twojej dłoni: uruchamiaj i wstrzymuj, dodawaj lub odejmuj 30 sekund, zmieniaj rozmiar i motyw widżetu albo odsuwaj widżet zasłaniający slajd. Parowanie odbywa się czterocyfrowym kodem: nawet w sali pełnej Maców pilot rozmawia tylko z Twoim.
 
 ZA DARMO, PLUS I PRO
 Pięć notatek, dwa minutniki, Pomodoro, teleprompter i skróty klawiszowe są za darmo – wystarczą na całą prezentację. Plus odblokowuje nielimitowane notatki i minutniki, motyw Kameleon, muzykę w tle, edycję ustawień wstępnych i lustrzany teleprompter. Pro dodaje pilota na iPhonie, okno minutnika do udostępniania ekranu, Skróty i Siri oraz widżet w Centrum powiadomień. Pilota możesz za darmo wypróbować podczas trzech prezentacji. Płać co roku albo raz na zawsze.
@@ -1940,8 +1940,8 @@ LÄTT ATT KOMMA IGÅNG
 • En inbyggd guide öppnas vid första start och finns alltid ett klick bort i menyn Hjälp
 • Alternativ för att öppna vid inloggning, så att du är redo före varje framträdande
 
-IPHONE-FJÄRRKONTROLL (SEPARAT GRATISAPP)
-Under ett framträdande är din Mac utom räckhåll. Remote Controller for Sticky lägger timern i din hand: starta och pausa, lägg till eller dra bort 30 sekunder, ändra widgetens storlek och tema eller flytta en widget som skymmer en bild. Ihopparningen sker med en fyrsiffrig kod: även i ett rum fullt av Mac-datorer pratar fjärrkontrollen bara med din.
+FJÄRRKONTROLL PÅ IPHONE OCH APPLE WATCH
+Under ett framträdande är din Mac utom räckhåll. StickyPresenter för iPhone lägger timern i din hand: starta och pausa, lägg till eller dra bort 30 sekunder, ändra widgetens storlek och tema eller flytta en widget som skymmer en bild. Ihopparningen sker med en fyrsiffrig kod: även i ett rum fullt av Mac-datorer pratar fjärrkontrollen bara med din.
 
 GRATIS, PLUS OCH PRO
 Fem lappar, två timers, Pomodoro, telepromptern och kortkommandona är gratis – nog för en hel presentation. Plus låser upp obegränsat med lappar och timers, kameleonttemat, bakgrundsmusik, redigering av förinställningar och spegelvänd teleprompter. Pro lägger till iPhone-fjärrkontrollen, timerfönstret för skärmdelning, Genvägar och Siri samt widgeten i notiscenter. Fjärrkontrollen kan du prova gratis i tre presentationer. Betala per år eller en gång för alltid.
@@ -2026,8 +2026,8 @@ KOLAY BAŞLANGIÇ
 • Yerleşik rehber ilk açılışta belirir ve Yardım menüsünde her zaman bir tık uzaktadır
 • Her sunumdan önce hazır olmanız için oturum açılınca açma seçeneği
 
-iPhone UZAKTAN KUMANDASI (AYRI ÜCRETSİZ UYGULAMA)
-Sunum sırasında Mac erişiminizin dışında kalır. Remote Controller for Sticky zamanlayıcıyı avucunuza koyar: başlatın ve duraklatın, 30 saniye ekleyin ya da çıkarın, widget’ın boyutunu ve temasını değiştirin veya bir slaydı kapatan widget’ı kenara alın. Eşleştirme dört haneli bir kodla yapılır; Mac dolu bir salonda bile uzaktan kumanda yalnızca sizinkiyle konuşur.
+iPhone VE Apple Watch İLE UZAKTAN KUMANDA
+Sunum sırasında Mac erişiminizin dışında kalır. iPhone için StickyPresenter zamanlayıcıyı avucunuza koyar: başlatın ve duraklatın, 30 saniye ekleyin ya da çıkarın, widget’ın boyutunu ve temasını değiştirin veya bir slaydı kapatan widget’ı kenara alın. Eşleştirme dört haneli bir kodla yapılır; Mac dolu bir salonda bile uzaktan kumanda yalnızca sizinkiyle konuşur.
 
 ÜCRETSİZ, PLUS VE PRO
 Beş not, iki zamanlayıcı, Pomodoro, teleprompter ve klavye kestirmeleri ücretsiz; bütün bir sunum için yeterli. Plus sınırsız not ve zamanlayıcı, Bukalemun teması, arka plan müziği, hazır ayar düzenleme ve ayna görünümlü teleprompter’ı açar. Pro bunlara iPhone kumandası, ekran paylaşımı için zamanlayıcı penceresi, Kestirmeler ve Siri ile Bildirim Merkezi widget’ını ekler. Kumandayı üç sunum boyunca ücretsiz deneyebilirsiniz. Yıllık ya da bir kez ödeyip ömür boyu kullanın.
@@ -2077,3 +2077,41 @@ darkInterface
 differentiateWithoutColor
 sufficientContrast
 reducedMotion
+
+## 심사 메모
+
+<!-- DeployBar 가 App Store Connect ▸ 앱 심사 정보 ▸ 메모 에 그대로 올린다 (macOS 버전). 영어, 4000자 이하.
+     2026-11 iPhone 판이 Guideline 2.1 Information Needed 로 멈춘 뒤, Mac 도 같은 6가지에 미리 답해 둔다. 빼지 말 것. -->
+
+Thank you for reviewing. Answers to the six items of Guideline 2.1 (Information Needed), in order:
+
+1. SCREEN RECORDING (physical Mac, latest macOS)
+https://m1zz.github.io/StickyPresenter/review/mac.mp4
+It starts at app launch and shows: the first-run guide, sticky notes over a full-screen presentation, the countdown timer, the teleprompter, the Plus/Pro paywall with a sandbox purchase, Restore Purchases, and pairing with the iPhone remote.
+The iPhone companion (same App Store record): https://m1zz.github.io/StickyPresenter/review/iphone.mp4
+The app has no account registration, no login and no user-generated content shared with others, so there is no account deletion, reporting or blocking flow. Notes stay on the Mac.
+
+2. PURPOSE AND AUDIENCE
+StickyPresenter is a menu bar app for people who give talks, lectures, classes and demos. While presenting they need their script and the remaining time, but Keynote in full screen hides other windows. StickyPresenter floats sticky notes and a countdown timer above full-screen presentations, and adds a teleprompter, background music for the timer and global shortcuts. An optional iPhone and Apple Watch remote controls the timer from the stage.
+
+3. HOW TO TEST
+No login or demo account is needed.
+a) Open the app. A user guide opens on first launch. The app lives in the menu bar (no Dock icon).
+b) Menu bar icon > New Sticky Note. Type text; it saves automatically. Open Keynote in full screen: the note stays on top.
+c) Menu bar icon > Timers to start a timer (or Pomodoro 25/5). It turns red near the end and alerts at zero.
+d) Menu bar icon > Teleprompter Mode.
+e) Free: 5 notes, 2 timers, Pomodoro, teleprompter, shortcuts. Making a 6th note or 3rd timer, or choosing a Plus/Pro feature (chameleon theme, background music, mirrored teleprompter, separate timer window, Shortcuts/Siri, widget, iPhone remote), opens the paywall. Menu bar icon > Settings > See Plans and Restore Purchases.
+f) iPhone remote: install the iPhone app from the same record on an iPhone on the same Wi-Fi, open it, pick this Mac, and enter the four-digit code shown under menu bar icon > Remote. It is free for 3 talks, then needs Pro.
+g) Background music uses audio files the user puts in the folders the app creates; no music is included or streamed.
+
+4. EXTERNAL SERVICES
+No third-party SDKs, no AI services, no ads, no tracking, no accounts.
+Apple StoreKit for In-App Purchases: Plus and Pro (weekly, monthly, yearly subscriptions and lifetime), a Plus-to-Pro lifetime upgrade, a lifetime offer for current subscribers, and optional tips that unlock nothing.
+Apple CloudKit (our own public container) for anonymous usage counts, feedback the user chooses to send, and remote switches for features.
+Apple MultipeerConnectivity (encryption required) for the iPhone remote on the local network. Nothing goes through a server.
+
+5. REGIONAL DIFFERENCES
+None. The app works the same in all regions. Only the language of the interface changes (24 languages).
+
+6. REGULATED INDUSTRY / THIRD-PARTY MATERIAL
+Not applicable. The app is not in a regulated industry and contains no third-party protected content. The app ships no music; users add their own files.
