@@ -111,6 +111,8 @@ struct RemoteRootView: View {
         }
         // 잠긴 조작을 누르면 그 조작을 짚은 페이월이 선다. 발표를 넘기는 조작은 잠그지 않는다.
         .sheet(item: $pro.paywall) { RemotePaywallView(feature: $0) }
+        // 할인 기간이면 앱을 연 뒤 한 번 할인 배너를 띄운다. 단추는 요금제를 연다 (LeeoKit).
+        .leeoSaleBanner { pro.paywall = .appearance }
         .sheet(isPresented: $showsGraduation) {
             LeeoGraduationOfferView(graduate: pro.product(RemoteProducts.graduate)) {
                 await pro.didPurchase()
