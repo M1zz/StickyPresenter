@@ -2085,10 +2085,10 @@ reducedMotion
 
 Thank you for reviewing. Answers to the six items of Guideline 2.1 (Information Needed), in order:
 
-1. SCREEN RECORDING (physical Mac, latest macOS)
-https://m1zz.github.io/StickyPresenter/review/mac.mp4
-It starts at app launch and shows: the first-run guide, sticky notes over a full-screen presentation, the countdown timer, the teleprompter, the Plus/Pro paywall with a sandbox purchase, Restore Purchases, and pairing with the iPhone remote.
-The iPhone companion (same App Store record): https://m1zz.github.io/StickyPresenter/review/iphone.mp4
+1. SCREEN RECORDING
+The Mac app is already on the Mac App Store. Its iPhone companion in the same App Store record was asked for a recording; it is here and shows this Mac app being paired and controlled from an iPhone:
+https://m1zz.github.io/StickyPresenter/review/iphone.mp4
+Item 3 below walks through every Mac feature step by step.
 The app has no account registration, no login and no user-generated content shared with others, so there is no account deletion, reporting or blocking flow. Notes stay on the Mac.
 
 2. PURPOSE AND AUDIENCE

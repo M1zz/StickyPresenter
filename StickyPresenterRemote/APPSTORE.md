@@ -1649,8 +1649,7 @@ Thank you for reviewing. Answers to the six items requested under Guideline 2.1,
 
 1. SCREEN RECORDING (physical iPhone, latest iOS)
 https://m1zz.github.io/StickyPresenter/review/iphone.mp4
-It starts at app launch and shows: onboarding, finding the Mac, entering the pairing code, controlling the timer, the Pro paywall and a sandbox purchase, and Restore Purchases.
-A recording of the Mac app it controls: https://m1zz.github.io/StickyPresenter/review/mac.mp4
+Recorded on an iPhone 14 Pro Max with iOS 27.2.1, paired with a Mac running StickyPresenter. It starts on the Home Screen and launches the app, then shows: the three intro pages, the Local Network permission, choosing the Mac and entering the four-digit pairing code, the free timer controls (new 5-minute timer, pause, +30 s / -30 s, resume, reset), a Pro feature opening the paywall, Get Pro bringing up the App Store purchase sheet, Restore Purchases, and Settings.
 The app has no account registration, no login and no user-generated content, so there is no account deletion, reporting or blocking flow.
 
 2. PURPOSE AND AUDIENCE
