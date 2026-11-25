@@ -72,7 +72,7 @@ targets:
         NSBonjourServices:
           - _sp-timer._tcp
           - _sp-timer._udp
-        NSLocalNetworkUsageDescription: 같은 네트워크에 있는 Mac의 StickyPresenter를 찾아 타이머를 조작합니다.
+        NSLocalNetworkUsageDescription: Finds StickyPresenter on a Mac on the same network so you can control the timer.
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
