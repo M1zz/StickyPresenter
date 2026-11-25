@@ -4,6 +4,152 @@ DeployBar 가 배포할 때 이 파일의 `## <버전>` ▸ `### 앱스토어 (.
 App Store Connect 의 '이 버전의 새로운 기능' 칸에 그대로 올린다.
 개발자용 상세 기록은 CHANGELOG.md 에 둔다.
 
+## 1.2.0
+
+### 앱스토어 (한국어)
+
+이제 iPhone 리모컨도 같은 앱으로 받아요
+Pro를 한 번 열면 Mac과 iPhone에서 함께 열려요
+작은 문제를 고쳐 더 안정적이에요
+
+### App Store (en-US)
+
+The iPhone remote is now part of this app
+Buy Pro once for Mac and iPhone
+Small fixes for a smoother app
+
+### App Store (en-GB)
+
+The iPhone remote is now part of this app
+Buy Pro once for Mac and iPhone
+Small fixes for a smoother app
+
+### 앱스토어 (일본어)
+
+iPhoneリモコンが同じアプリになりました
+Proは一度の購入でMacとiPhoneの両方で使えます
+細かな不具合を直し、より安定しました
+
+### 앱스토어 (zh-Hans)
+
+iPhone 遥控器现已与本 App 合为一体
+Pro 只需购买一次，Mac 和 iPhone 都能用
+修复了一些小问题，运行更稳定
+
+### 앱스토어 (스페인어)
+
+El control remoto de iPhone ya es esta misma app
+Compra Pro una vez para Mac y iPhone
+Pequeñas correcciones para más estabilidad
+
+### 앱스토어 (독일어)
+
+Die iPhone-Fernbedienung ist jetzt Teil dieser App
+Pro einmal kaufen für Mac und iPhone
+Kleine Fehler behoben, läuft stabiler
+
+### 앱스토어 (프랑스어)
+
+La télécommande iPhone fait désormais partie de l’app
+Un seul achat Pro pour Mac et iPhone
+Petites corrections pour plus de stabilité
+
+### 앱스토어 (이탈리아어)
+
+Il telecomando per iPhone ora è questa stessa app
+Un solo acquisto Pro per Mac e iPhone
+Piccole correzioni per una maggiore stabilità
+
+### 앱스토어 (pt-BR)
+
+O controle remoto do iPhone agora é este mesmo app
+Compre o Pro uma vez para Mac e iPhone
+Pequenas correções para mais estabilidade
+
+### 앱스토어 (러시아어)
+
+Пульт для iPhone теперь входит в это приложение
+Pro покупается один раз для Mac и iPhone
+Мелкие исправления для стабильной работы
+
+### 앱스토어 (zh-Hant)
+
+iPhone 遙控器現已與本 App 合為一體
+Pro 只需購買一次，Mac 和 iPhone 都能用
+修正了一些小問題，運作更穩定
+
+### 앱스토어 (태국어)
+
+รีโมต iPhone รวมอยู่ในแอปนี้แล้ว
+ซื้อ Pro ครั้งเดียว ใช้ได้ทั้ง Mac และ iPhone
+แก้ปัญหาเล็กน้อยให้ทำงานเสถียรขึ้น
+
+### 앱스토어 (베트남어)
+
+Điều khiển trên iPhone giờ là cùng một ứng dụng
+Mua Pro một lần cho cả Mac và iPhone
+Sửa vài lỗi nhỏ để chạy ổn định hơn
+
+### 앱스토어 (체코어)
+
+Ovladač pro iPhone je teď součástí aplikace
+Pro koupíte jednou pro Mac i iPhone
+Drobné opravy pro stabilnější chod
+
+### 앱스토어 (덴마크어)
+
+iPhone-fjernbetjeningen er nu en del af appen
+Køb Pro én gang til Mac og iPhone
+Små rettelser for en mere stabil app
+
+### 앱스토어 (그리스어)
+
+Το τηλεχειριστήριο iPhone είναι πλέον ίδια εφαρμογή
+Μία αγορά Pro για Mac και iPhone
+Μικρές διορθώσεις για πιο σταθερή λειτουργία
+
+### 앱스토어 (핀란드어)
+
+iPhonen kaukosäädin on nyt osa tätä appia
+Osta Pro kerran Macille ja iPhonelle
+Pieniä korjauksia vakaampaan käyttöön
+
+### 앱스토어 (인도네시아어)
+
+Remote iPhone kini menjadi bagian dari app ini
+Beli Pro sekali untuk Mac dan iPhone
+Perbaikan kecil agar lebih stabil
+
+### 앱스토어 (노르웨이어(보크말))
+
+iPhone-fjernkontrollen er nå en del av appen
+Kjøp Pro én gang for Mac og iPhone
+Små rettelser for en mer stabil app
+
+### 앱스토어 (네덜란드어)
+
+De iPhone-afstandsbediening hoort nu bij deze app
+Koop Pro één keer voor Mac en iPhone
+Kleine verbeteringen voor meer stabiliteit
+
+### 앱스토어 (폴란드어)
+
+Pilot na iPhone’a jest teraz częścią aplikacji
+Kup Pro raz na Maca i iPhone’a
+Drobne poprawki dla stabilniejszego działania
+
+### 앱스토어 (스웨덴어)
+
+iPhone-fjärrkontrollen är nu en del av appen
+Köp Pro en gång för Mac och iPhone
+Små rättningar för en stabilare app
+
+### 앱스토어 (튀르키예어)
+
+iPhone kumandası artık bu uygulamanın parçası
+Pro’yu bir kez alın: Mac ve iPhone
+Küçük düzeltmelerle daha kararlı
+
 ## 1.1.1
 
 ### 앱스토어 (한국어)
