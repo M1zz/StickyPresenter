@@ -421,6 +421,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 .leeoSatisfactionCheck(StickyPresenterSpec.self)
                 // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
                 .leeoFeedbackReplyNotice(StickyPresenterSpec.self)
+                // 유료가 되면 축하, 모든 사용자에게 한 번은 감사 인사 (LeeoKit). 메뉴 막대 앱이라 설정 창이 루트다.
+                .leeoCelebrations(appName: StickyPresenterSpec.displayName)
         )
         window.center()
         settingsWindow = window
