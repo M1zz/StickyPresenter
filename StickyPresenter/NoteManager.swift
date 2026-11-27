@@ -2,6 +2,7 @@ import SwiftUI
 import AppKit
 import Combine
 import UniformTypeIdentifiers
+import LeeoKit
 
 // MARK: - Screen Map
 //
@@ -232,6 +233,7 @@ class NoteManager: ObservableObject {
         let size = CGSize(width: 280, height: 220)
         let origin = randomNoteOrigin(in: ScreenMap.mainVisibleFrame(), noteSize: size)
         addNote(text: text, color: defaultColor, position: origin, size: size)
+        LeeoAnalyticsCenter.track(.custom(name: "note_created", parameters: [:]))
     }
 
     // MARK: - Persistence

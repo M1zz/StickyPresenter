@@ -1,6 +1,7 @@
 import SwiftUI
 import AppKit
 import ServiceManagement
+import LeeoKit
 
 // MARK: - Onboarding
 // 처음 켰을 때 한 번 뜨는 안내. 기능 설명서(GuideView)와 하는 일이 다르다.
@@ -173,6 +174,7 @@ struct OnboardingView: View {
 
     private func finish(showGuide: Bool) {
         UserDefaults.standard.set(true, forKey: Self.seenKey)
+        LeeoAnalyticsCenter.track(.custom(name: "onboarding_completed", parameters: [:]))
         showGuide ? onShowGuide() : onFinish()
     }
 

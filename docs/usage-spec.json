@@ -1,0 +1,20 @@
+{
+  "$comment": [
+    "FeedbackHubViewer 가 이 앱의 통계를 읽는 스펙. 원본은 이 파일이고, 허브는 scripts/sync-stats-specs.sh 로 복사해 간다.",
+    "release.coreAction 은 품질 탭의 '핵심 기능' 칸과 릴리즈 건강 카드가 읽는다. 이벤트 이름을 바꾸면 여기도 같이 바꿀 것."
+  ],
+  "specVersion": 1,
+  "appId": "com.leeo.StickyPresenter",
+  "appName": "StickyPresenter",
+  "eventLabels": {
+    "note_created": "메모 붙이기",
+    "onboarding_completed": "온보딩 마침"
+  },
+  "release": {
+    "coreAction": {
+      "label": "화면 위에 메모를 새로 붙인 사람",
+      "events": ["note_created"],
+      "note": "발표 화면 위에 내 메모를 직접 띄우는 순간이 이 앱을 쓰는 이유다."
+    }
+  }
+}
