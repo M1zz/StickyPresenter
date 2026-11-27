@@ -131,6 +131,7 @@
 "Refresh" = "Odśwież";
 "music.empty" = "Brak utworów – dodaj pliki audio do folderu %@";
 "music.openFolder" = "Otwórz folder %@";
+"music.credits" = "Autorzy muzyki";
 "music.count.one" = "%1$d utwór · %2$@";
 "music.count.other" = "Utworów: %1$d · %2$@";
 "music.chip.none" = " (brak utworów)";

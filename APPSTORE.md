@@ -47,7 +47,7 @@ StickyPresenter
 배경음악
 • 집중, 차분, 재즈, 활기 네 가지 분위기
 • 타이머와 함께 켜지고 꺼지며, 소리가 부드럽게 커지고 줄어듭니다
-• 음원은 직접 넣습니다. 앱이 분위기별 폴더를 만들어 두면 넣은 곡을 차례로 틀어 줍니다
+• 분위기마다 기본 곡이 들어 있고, 가진 음원을 분위기별 폴더에 넣으면 함께 틀어 줍니다
 
 어디서나 쓰는 단축키
 • Command와 Control 조합으로 다른 앱을 쓰는 중에도 노트, 타이머, 텔레프롬프터를 바로 엽니다
@@ -125,7 +125,7 @@ TELEPROMPTER
 BACKGROUND MUSIC
 • Four moods: Focus, Calm, Jazz, and Upbeat
 • Starts and stops with your timer, fading in and out
-• You supply the tracks. The app creates a folder for each mood and plays whatever you drop in
+• Every mood comes with built-in tracks, and anything you drop into its folder plays alongside them
 
 SHORTCUTS THAT WORK EVERYWHERE
 • Command-Control shortcuts open notes, timers, and the teleprompter while any other app is in front
@@ -203,7 +203,7 @@ TELEPROMPTER
 BACKGROUND MUSIC
 • Four moods: Focus, Calm, Jazz and Upbeat
 • Starts and stops with your timer, fading in and out
-• You supply the tracks. The app creates a folder for each mood and plays whatever you drop in
+• Every mood comes with built-in tracks, and anything you drop into its folder plays alongside them
 
 SHORTCUTS THAT WORK EVERYWHERE
 • Command-Control shortcuts open notes, timers and the teleprompter while any other app is in front

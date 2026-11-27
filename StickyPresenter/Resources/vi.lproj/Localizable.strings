@@ -131,6 +131,7 @@
 "Refresh" = "Làm mới";
 "music.empty" = "Chưa có bài hát — hãy thêm tệp âm thanh vào thư mục %@";
 "music.openFolder" = "Mở thư mục %@";
+"music.credits" = "Ghi công âm nhạc";
 "music.count.one" = "%1$d bài · %2$@";
 "music.count.other" = "%1$d bài · %2$@";
 "music.chip.none" = " (chưa có bài)";

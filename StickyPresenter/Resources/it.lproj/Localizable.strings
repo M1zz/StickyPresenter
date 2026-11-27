@@ -131,6 +131,7 @@
 "Refresh" = "Aggiorna";
 "music.empty" = "Nessun brano: aggiungi file audio alla cartella %@";
 "music.openFolder" = "Apri la cartella %@";
+"music.credits" = "Crediti musicali";
 "music.count.one" = "%1$d brano · %2$@";
 "music.count.other" = "%1$d brani · %2$@";
 "music.chip.none" = " (nessun brano)";

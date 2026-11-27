@@ -131,6 +131,7 @@
 "Refresh" = "重新整理";
 "music.empty" = "沒有曲目 — 請把音訊加入「%@」資料夾";
 "music.openFolder" = "開啟「%@」資料夾";
+"music.credits" = "音樂出處";
 "music.count.one" = "%1$d 首 · %2$@";
 "music.count.other" = "%1$d 首 · %2$@";
 "music.chip.none" = " (沒有曲目)";

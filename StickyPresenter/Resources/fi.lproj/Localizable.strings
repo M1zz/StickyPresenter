@@ -131,6 +131,7 @@
 "Refresh" = "Päivitä";
 "music.empty" = "Ei kappaleita – lisää äänitiedostoja kansioon %@";
 "music.openFolder" = "Avaa kansio %@";
+"music.credits" = "Musiikin tekijät";
 "music.count.one" = "%1$d kappale · %2$@";
 "music.count.other" = "%1$d kappaletta · %2$@";
 "music.chip.none" = " (ei kappaleita)";

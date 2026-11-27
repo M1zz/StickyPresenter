@@ -62,8 +62,8 @@ enum MusicMood: String, CaseIterable, Identifiable {
 }
 
 // MARK: - Music Library
-// 앱 컨테이너 안의 Music 폴더를 분위기별로 훑어 재생 목록을 만든다.
-// 음원은 앱에 번들하지 않는다 — 사용자가 직접 소유·확보한 파일만 재생한다.
+// 앱에 담긴 기본 곡(BundledMusic, Kevin MacLeod · CC BY 4.0)과
+// 앱 컨테이너 안의 Music 폴더에 사용자가 넣은 곡을 분위기별로 합쳐 재생 목록을 만든다.
 final class MusicLibrary: ObservableObject {
     static let shared = MusicLibrary()
 
@@ -103,19 +103,40 @@ final class MusicLibrary: ObservableObject {
         try? fm.removeItem(at: rootURL.appendingPathComponent("읽어주세요.txt"))
     }
 
+    /// 앱에 담긴 기본 곡 폴더 (BundledMusic/<분위기>)
+    func bundledFolderURL(for mood: MusicMood) -> URL? {
+        Bundle.main.resourceURL?
+            .appendingPathComponent("BundledMusic", isDirectory: true)
+            .appendingPathComponent(mood.folderName, isDirectory: true)
+    }
+
+    /// 기본 곡 출처 (CC BY 4.0 은 출처 표시가 조건이다)
+    var bundledCreditsURL: URL? {
+        Bundle.main.resourceURL?.appendingPathComponent("BundledMusic/CREDITS.txt")
+    }
+
     func reload() {
         var found: [MusicMood: [URL]] = [:]
         for mood in MusicMood.allCases {
-            let urls = (try? FileManager.default.contentsOfDirectory(
-                at: folderURL(for: mood),
-                includingPropertiesForKeys: nil,
-                options: [.skipsHiddenFiles]
-            )) ?? []
-            found[mood] = urls
-                .filter { Self.supportedExtensions.contains($0.pathExtension.lowercased()) }
-                .sorted { $0.lastPathComponent.localizedStandardCompare($1.lastPathComponent) == .orderedAscending }
+            // 사용자가 넣은 곡이 먼저, 같은 이름의 기본 곡은 건너뛴다 (예전에 손으로 넣은 같은 곡 mp3)
+            let user = audioFiles(in: folderURL(for: mood))
+            let userNames = Set(user.map { $0.deletingPathExtension().lastPathComponent.lowercased() })
+            let bundled = bundledFolderURL(for: mood).map(audioFiles(in:)) ?? []
+            found[mood] = (user + bundled.filter {
+                !userNames.contains($0.deletingPathExtension().lastPathComponent.lowercased())
+            })
+            .sorted { $0.lastPathComponent.localizedStandardCompare($1.lastPathComponent) == .orderedAscending }
         }
         tracks = found
+    }
+
+    private func audioFiles(in folder: URL) -> [URL] {
+        let urls = (try? FileManager.default.contentsOfDirectory(
+            at: folder,
+            includingPropertiesForKeys: nil,
+            options: [.skipsHiddenFiles]
+        )) ?? []
+        return urls.filter { Self.supportedExtensions.contains($0.pathExtension.lowercased()) }
     }
 
     func tracks(for mood: MusicMood) -> [URL] { tracks[mood] ?? [] }
@@ -130,8 +151,9 @@ final class MusicLibrary: ObservableObject {
     private static let readmeText = """
     StickyPresenter — Timer Background Music
 
-    Drop audio files into the mood folders below and they show up in the music bar
-    at the bottom of the timer panel.
+    Each mood already comes with built-in tracks. Drop your own audio files into the
+    mood folders below and they play alongside them in the music bar at the bottom
+    of the timer panel.
 
     Supported formats: mp3, m4a, aac, wav, aiff, caf, flac
 
@@ -437,6 +459,10 @@ struct MusicBar: View {
                         library.revealInFinder(player.mood)
                     }
                     Button("Refresh") { player.reloadLibrary() }
+                    if let credits = library.bundledCreditsURL {
+                        Divider()
+                        Button(L("music.credits")) { NSWorkspace.shared.open(credits) }
+                    }
                 } label: {
                     Image(systemName: "ellipsis")
                         .font(.system(size: 11, weight: .semibold))

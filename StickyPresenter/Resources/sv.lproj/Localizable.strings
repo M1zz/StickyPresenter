@@ -131,6 +131,7 @@
 "Refresh" = "Uppdatera";
 "music.empty" = "Inga spår – lägg ljudfiler i mappen %@";
 "music.openFolder" = "Öppna mappen %@";
+"music.credits" = "Musiktack";
 "music.count.one" = "%1$d spår · %2$@";
 "music.count.other" = "%1$d spår · %2$@";
 "music.chip.none" = " (inga spår)";

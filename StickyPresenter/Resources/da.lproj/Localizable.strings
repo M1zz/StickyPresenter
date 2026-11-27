@@ -131,6 +131,7 @@
 "Refresh" = "Opdater";
 "music.empty" = "Ingen numre – læg lydfiler i mappen %@";
 "music.openFolder" = "Åbn mappen %@";
+"music.credits" = "Musikkreditering";
 "music.count.one" = "%1$d nummer · %2$@";
 "music.count.other" = "%1$d numre · %2$@";
 "music.chip.none" = " (ingen numre)";

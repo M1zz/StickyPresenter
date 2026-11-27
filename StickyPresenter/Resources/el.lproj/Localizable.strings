@@ -131,6 +131,7 @@
 "Refresh" = "Ανανέωση";
 "music.empty" = "Κανένα κομμάτι — προσθέστε ήχο στον φάκελο %@";
 "music.openFolder" = "Άνοιγμα φακέλου %@";
+"music.credits" = "Δημιουργοί μουσικής";
 "music.count.one" = "%1$d κομμάτι · %2$@";
 "music.count.other" = "%1$d κομμάτια · %2$@";
 "music.chip.none" = " (κανένα κομμάτι)";

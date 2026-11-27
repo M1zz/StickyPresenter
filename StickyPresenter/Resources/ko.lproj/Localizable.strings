@@ -131,6 +131,7 @@
 "Refresh" = "새로 읽기";
 "music.empty" = "곡이 없습니다 — %@ 폴더에 음원을 넣으세요";
 "music.openFolder" = "%@ 폴더 열기";
+"music.credits" = "음악 출처";
 "music.count.one" = "%1$d곡 · %2$@";
 "music.count.other" = "%1$d곡 · %2$@";
 "music.chip.none" = " (곡 없음)";

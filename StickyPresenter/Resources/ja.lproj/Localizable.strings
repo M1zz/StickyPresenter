@@ -131,6 +131,7 @@
 "Refresh" = "更新";
 "music.empty" = "トラックがありません — %@フォルダにオーディオを追加してください";
 "music.openFolder" = "%@フォルダを開く";
+"music.credits" = "音楽のクレジット";
 "music.count.one" = "%1$d曲 · %2$@";
 "music.count.other" = "%1$d曲 · %2$@";
 "music.chip.none" = " (トラックなし)";

@@ -131,6 +131,7 @@
 "Refresh" = "Обновить";
 "music.empty" = "Нет треков — добавьте аудио в папку «%@»";
 "music.openFolder" = "Открыть папку «%@»";
+"music.credits" = "Авторы музыки";
 "music.count.one" = "%1$d трек · %2$@";
 "music.count.other" = "Треков: %1$d · %2$@";
 "music.chip.none" = " (нет треков)";

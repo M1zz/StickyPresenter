@@ -131,6 +131,7 @@
 "Refresh" = "Refresh";
 "music.empty" = "No tracks — add audio to the %@ folder";
 "music.openFolder" = "Open %@ Folder";
+"music.credits" = "Music Credits";
 "music.count.one" = "%1$d track · %2$@";
 "music.count.other" = "%1$d tracks · %2$@";
 "music.chip.none" = " (no tracks)";

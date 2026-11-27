@@ -131,6 +131,7 @@
 "Refresh" = "刷新";
 "music.empty" = "没有曲目 — 请把音频文件添加到“%@”文件夹";
 "music.openFolder" = "打开“%@”文件夹";
+"music.credits" = "音乐出处";
 "music.count.one" = "%1$d 首 · %2$@";
 "music.count.other" = "%1$d 首 · %2$@";
 "music.chip.none" = "（无曲目）";

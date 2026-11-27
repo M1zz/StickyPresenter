@@ -25,6 +25,7 @@
 		67D3A00AFE0F87842E702003 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D466572AD7F3D57FAAA5F5E /* Widget.swift */; };
 		70BCE66460F7DED7CAFEF3F6 /* TimerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862BBC3F743F7EB985DBECE9 /* TimerCore.swift */; };
 		719E424DAD236377B6DF5DC3 /* ScreenshotStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B594FFC55CDC889192FF62 /* ScreenshotStage.swift */; };
+		72249494A7AE606B2DA4695F /* BundledMusic in Resources */ = {isa = PBXBuildFile; fileRef = D2A9F335178F4C8AFCA7C890 /* BundledMusic */; };
 		74C5E04A0EAFD46C9EDEC500 /* SharedTimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9684AB311403806FC69164 /* SharedTimerStore.swift */; };
 		7BB7E24BBAE124472846CE8F /* TimerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862BBC3F743F7EB985DBECE9 /* TimerCore.swift */; };
 		913A9E80196553D08A72B789 /* StickyPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018C95EA063E261ED87C0981 /* StickyPresenterSpec.swift */; };
@@ -185,6 +186,7 @@
 		CD476D8DBC7C186167B71429 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0D84F6BCA2C1315B5E31A7D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/AppShortcuts.strings"; sourceTree = "<group>"; };
 		D13AC0F787A1E65BE412D7BC /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		D2A9F335178F4C8AFCA7C890 /* BundledMusic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BundledMusic; sourceTree = SOURCE_ROOT; };
 		D411AA8E39467C5CED5DF496 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D4E4B243FE824439E6D9BBD2 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7536C2AB4AF74D6D46D329F /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		93B576DEF5BFEEBEEF479A36 = {
 			isa = PBXGroup;
 			children = (
+				D2A9F335178F4C8AFCA7C890 /* BundledMusic */,
 				F7B2D12EADF5CEDB11E68579 /* Config */,
 				DA0B2E4013F037079BEEEDA4 /* Shared */,
 				7BCAE0F27A18C7ABDB17C839 /* StickyPresenter */,
@@ -483,6 +486,7 @@
 			files = (
 				F831A66C645B701AF1EA892D /* AppShortcuts.strings in Resources */,
 				FD24403C7B6C1997E5A41B7A /* Assets.xcassets in Resources */,
+				72249494A7AE606B2DA4695F /* BundledMusic in Resources */,
 				9D6A8492D0BBAE1E570437AE /* InfoPlist.strings in Resources */,
 				651F1EABC44F17252FC30D69 /* Localizable.strings in Resources */,
 			);
@@ -1003,7 +1007,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.29.0;
+				minimumVersion = 3.26.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -131,6 +131,7 @@
 "Refresh" = "Ververs";
 "music.empty" = "Geen nummers – voeg audio toe aan de map %@";
 "music.openFolder" = "Open map %@";
+"music.credits" = "Muziekvermelding";
 "music.count.one" = "%1$d nummer · %2$@";
 "music.count.other" = "%1$d nummers · %2$@";
 "music.chip.none" = " (geen nummers)";

@@ -32,6 +32,10 @@ targets:
           - "*.entitlements"
       # 앱과 위젯이 함께 컴파일하는 App Group 공유 모델·저장소
       - path: Shared
+      # 기본 배경음악 16곡 (Kevin MacLeod, CC BY 4.0) — 분위기별 하위 폴더를 그대로 담는 폴더 참조
+      - path: BundledMusic
+        type: folder
+        buildPhase: resources
     dependencies:
       - package: LeeoKit
       - target: WidgetExtension

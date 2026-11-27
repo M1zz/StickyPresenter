@@ -131,6 +131,7 @@
 "Refresh" = "Obnovit";
 "music.empty" = "Žádné skladby – přidejte zvuk do složky %@";
 "music.openFolder" = "Otevřít složku %@";
+"music.credits" = "Autoři hudby";
 "music.count.one" = "%1$d skladba · %2$@";
 "music.count.other" = "%1$d skladeb · %2$@";
 "music.chip.none" = " (žádné skladby)";

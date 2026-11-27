@@ -131,6 +131,7 @@
 "Refresh" = "Segarkan";
 "music.empty" = "Tidak ada lagu — tambahkan audio ke folder %@";
 "music.openFolder" = "Buka Folder %@";
+"music.credits" = "Kredit Musik";
 "music.count.one" = "%1$d lagu · %2$@";
 "music.count.other" = "%1$d lagu · %2$@";
 "music.chip.none" = " (tidak ada lagu)";
